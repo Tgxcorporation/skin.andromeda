@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window type="dialog">
+    <visible>![Skin.HasSetting(DisableOSDInfoOnPause)+Player.Paused] | Window.IsVisible(VideoOSD.xml) | Window.IsVisible(MusicOSD.xml)</visible>
+    <visible>![
+        Window.IsVisible(DialogPlayerProcessInfo.xml) |
+        Window.IsVisible(DialogSelect.xml) |
+        Window.IsVisible(SliderDialog) |
+        Window.IsVisible(OSDVideoSettings) |
+        Window.IsVisible(OSDAudioSettings) |
+        Window.IsVisible(osdcmssettings) |
+        Window.IsVisible(VideoBookmarks) |
+        Window.IsVisible(DialogSubtitles.xml) |
+        Window.IsVisible(DialogAddonSettings.xml) |
+        Window.IsVisible(PVROSDChannels) |
+        Window.IsVisible(PVROSDGuide) |
+        Window.IsVisible(script-cu-lrclyrics-main.xml)
+        ]
+    </visible>
+    <visible>
+        Window.IsVisible(DialogFullscreenInfo.xml) |
+        Window.IsVisible(MusicOSD.xml) |
+        Window.IsVisible(VideoOSD.xml) |
+        Window.IsVisible(visualisation) |
+        [
+        Window.IsVisible(FullScreenVideo) +
+        [Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek | Player.Paused]
+        ]
+    </visible>
+    <controls>
+        <control type="image">
+            <include>TopBarOSDVisibleFadeEffectOverlay</include>
+            <posx>0</posx>
+            <bottom>0</bottom>
+            <width>1920</width>
+            <height>83</height>
+            <colordiffuse>bbffffff</colordiffuse>
+            <texture border="1">common/BlackDot.png</texture>
+        </control>
+        <control type="image">
+            <include>TopBarOSDVisibleFadeEffectOverlay</include>
+            <posx>0</posx>
+            <bottom>0</bottom>
+            <width>1920</width>
+            <height>83</height>
+            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+            <texture border="2">common/overlay_player.png</texture>
+        </control>
+        <control type="image">
+            <include>TopBarOSDVisibleFadeEffectOverlay</include>
+            <posx>0</posx>
+            <bottom>83</bottom>
+            <width>1920</width>
+            <height>2</height>
+            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+            <texture border="2,0,2,0">common/line_gray_horizontal.png</texture>
+        </control>
+        <control type="group">
+            <include>TopBarOSDVisibleFadeEffect</include>
+            <control type="slider" id="401">
+                <visible>Player.Seeking</visible>
+                <include>ScrollOffsetLabelVisibleFadeEffect</include>
+                <description>Seek Position</description>
+                <posx>0</posx>
+                <posy>955</posy>
+                <width>1920</width>
+                <height>50</height>
+                <texturesliderbar>common/osd_progress_dummy_50.png</texturesliderbar>
+            </control>
+            <include content="ProgressBar">
+                <param name="id" value="0"/>
+                <param name="visible" value="Player.Caching"/>
+                <param name="x" value="0"/>
+                <param name="y" value="995"/>
+                <param name="width" value="1920"/>
+                <param name="info" value="Player.CacheLevel"/>
+                <param name="visiblefocus" value="true"/>
+                <param name="direction" value="horizontal"/>
+                <param name="gfx" value="_chaching"/>
+            </include>
+            <include content="ProgressBar">
+                <param name="id" value="0"/>
+                <param name="visible" value="true"/>
+                <param name="x" value="0"/>
+                <param name="y" value="995"/>
+                <param name="width" value="1920"/>
+                <param name="info" value="Player.ProgressCache"/>
+                <param name="visiblefocus" value="true"/>
+                <param name="direction" value="horizontal"/>
+                <param name="gfx" value="_chaching"/>
+            </include>
+            <include content="ProgressBar">
+                <param name="id" value="23"/>
+                <param name="visible" value="true"/>
+                <param name="x" value="0"/>
+                <param name="y" value="995"/>
+                <param name="width" value="1920"/>
+                <param name="info" value="Player.Progress"/>
+                <param name="visiblefocus" value="true"/>
+                <param name="direction" value="horizontal"/>
+            </include>
+            <include content="ProgressBar">
+                <param name="id" value="0"/>
+                <param name="visible" value="PVR.IsTimeshift"/>
+                <param name="x" value="0"/>
+                <param name="y" value="995"/>
+                <param name="width" value="1920"/>
+                <param name="info" value="PVR.TimeshiftProgress"/>
+                <param name="visiblefocus" value="true"/>
+                <param name="direction" value="horizontal"/>
+                <param name="gfx" value="_timeshift"/>
+            </include>
+            <control type="grouplist">
+                <animation type="Conditional" pulse="true" reversible="false" condition="true">
+                    <include>PulseBasicVisible</include>
+                </animation>
+                <posx>70</posx>
+                <posy>1013</posy>
+                <height>90</height>
+                <width>480</width>
+                <itemgap>15</itemgap>
+                <align>left</align>
+                <orientation>horizontal</orientation>
+                <usecontrolcoords>true</usecontrolcoords>
+                <control type="label">
+                    <top>6</top>
+                    <width>auto</width>
+                    <height>90</height>
+                    <font>OSDSubFontMat</font>
+                    <include>TextColor_MidColor</include>
+                    <label></label>
+                </control>
+                <control type="label">
+                    <width>auto</width>
+                    <height>90</height>
+                    <font>OSDSubFont</font>
+                    <include>TextColor_MainColor</include>
+                    <label>$INFO[Player.Time]</label>
+                </control>
+            </control>
+            <control type="grouplist">
+                <animation type="Conditional" pulse="true" reversible="false" condition="true">
+                    <include>PulseBasicHidden</include>
+                </animation>
+                <posx>70</posx>
+                <posy>1013</posy>
+                <height>90</height>
+                <width>480</width>
+                <itemgap>15</itemgap>
+                <align>left</align>
+                <orientation>horizontal</orientation>
+                <usecontrolcoords>true</usecontrolcoords>
+                <control type="label">
+                    <top>6</top>
+                    <width>auto</width>
+                    <height>90</height>
+                    <font>OSDSubFontMat</font>
+                    <include>TextColor_MidColor</include>
+                    <label></label>
+                </control>
+                <control type="label">
+                    <width>auto</width>
+                    <height>90</height>
+                    <font>OSDSubFont</font>
+                    <include>TextColor_MainColor</include>
+                    <label>$INFO[System.Time]</label>
+                </control>
+            </control>
+            <control type="grouplist">
+                <animation type="Conditional" pulse="true" reversible="false" condition="true">
+                    <include>PulseBasicVisible</include>
+                </animation>
+                <right>70</right>
+                <posy>1013</posy>
+                <height>90</height>
+                <width>480</width>
+                <itemgap>15</itemgap>
+                <align>right</align>
+                <orientation>horizontal</orientation>
+                <usecontrolcoords>true</usecontrolcoords>
+                <control type="label">
+                    <width>auto</width>
+                    <height>90</height>
+                    <font>OSDSubFont</font>
+                    <include>TextColor_MainColor</include>
+                    <label>$INFO[Player.TimeRemaining]</label>
+                </control>
+                <control type="label">
+                    <top>6</top>
+                    <width>auto</width>
+                    <height>90</height>
+                    <font>OSDSubFontMat</font>
+                    <include>TextColor_MidColor</include>
+                    <label></label>
+                </control>
+            </control>
+            <control type="grouplist">
+                <animation type="Conditional" pulse="true" reversible="false" condition="true">
+                    <include>PulseBasicHidden</include>
+                </animation>
+                <right>70</right>
+                <posy>1013</posy>
+                <height>90</height>
+                <width>480</width>
+                <itemgap>15</itemgap>
+                <align>right</align>
+                <orientation>horizontal</orientation>
+                <usecontrolcoords>true</usecontrolcoords>
+                <control type="label">
+                    <width>auto</width>
+                    <height>90</height>
+                    <font>OSDSubFont</font>
+                    <include>TextColor_MainColor</include>
+                    <label>$INFO[Player.FinishTime]</label>
+                </control>
+                <control type="label">
+                    <top>6</top>
+                    <width>auto</width>
+                    <height>90</height>
+                    <font>OSDSubFontMat</font>
+                    <include>TextColor_MidColor</include>
+                    <label></label>
+                </control>
+            </control>
+            <!--MIDDLE-->
+            <control type="label">
+                <include>Icon_Fade</include>
+                <left>350</left>
+                <posy>1013</posy>
+                <height>90</height>
+                <width>1220</width>
+                <align>center</align>
+                <include>TextColor_MainColor</include>
+                <font>OSDSubFont</font>
+                <label>$VAR[SeekLabel]</label>
+            </control>
+        </control>
+    </controls>
+</window>

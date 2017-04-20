@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<includes>
+    <expression name="facadeHasFocus">
+        [Control.HasFocus(50)|
+        Control.HasFocus(51)|
+        Control.HasFocus(57)|
+        Control.HasFocus(58)|
+        Control.HasFocus(59)|
+        Control.HasFocus(54)|
+        Control.HasFocus(53)|
+        Control.HasFocus(56)|
+        Control.HasFocus(5050)|
+        Control.HasFocus(8999)|
+        ControlGroup(9000).Hasfocus]
+    </expression>
+    <expression name="ContentIsPoster">
+        [Container.content(actors) |
+        Container.Content(musicvideos) |
+        container.content(movies) |
+        container.content(TVshows) |
+        container.content(seasons) |
+        Container.Content(sets)]
+    </expression>
+    <expression name="ContentIsEpisode">
+        [Container.content(episodes)]
+    </expression>
+    <expression name="ContentIsChannel">
+        [Window.IsActive(MyPVRChannels.xml)]
+    </expression>
+    <expression name="ContentIsSquare">
+        ![Container.content(actors) |
+        Container.Content(musicvideos) |
+        container.content(movies) |
+        container.content(TVshows) |
+        container.content(seasons) |
+        Window.IsActive(MyPVRChannels.xml) |
+        container.content(episodes) |
+        Container.Content(sets)]
+    </expression>
+</includes>

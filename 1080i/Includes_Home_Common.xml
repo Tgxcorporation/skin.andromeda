@@ -1,0 +1,1570 @@
+<?xml version="1.0" encoding="utf-8"?>
+<includes>
+    <include name="CustomWidget">
+        <control type="group">
+            <include>OpenClose</include>
+            <visible>$PARAM[visibility]</visible>
+            <height>$PARAM[height]</height>
+            <control type="label">
+                <visible>control.hasfocus($PARAM[id])</visible>
+                <posx>TextMargin</posx>
+                <posy>45</posy>
+                <height>40</height>
+                <width>1920</width>
+                <font>FacadeListMainFont</font>
+                <include>TextColor_MainColor</include>
+                <scroll>false</scroll>
+                <label>$PARAM[title]</label>
+            </control>
+            <control type="label">
+                <visible>!control.hasfocus($PARAM[id])</visible>
+                <posx>TextMargin</posx>
+                <posy>45</posy>
+                <height>40</height>
+                <width>1920</width>
+                <font>FacadeListMainFont</font>
+                <include>TextColor_AlternateColor</include>
+                <scroll>false</scroll>
+                <label>$PARAM[title]</label>
+            </control>
+            <control type="fixedlist" id="$PARAM[id]">
+                <onright>$PARAM[id]</onright>
+                <onup>$PARAM[onup]</onup>
+                <ondown>$PARAM[ondown]</ondown>
+                <onleft>$PARAM[id]</onleft>
+                <include content="Widget_$PARAM[gfxType]">
+                    <param name="id" value="$PARAM[id]"/>
+                    <param name="labelPosy" value="$PARAM[labelPosy]"/>
+                    <param name="labelTitle" value="$PARAM[labelTitle]"/>
+                    <param name="labelSubTitle" value="$PARAM[labelSubTitle]"/>
+                </include>
+                <content target="$PARAM[target]">$PARAM[content]</content>
+            </control>
+            <include content="Widget_NavButtons_$PARAM[gfxType]">
+                <param name="id" value="$PARAM[id]"/>
+                <param name="height" value="$PARAM[height]"/>
+            </include>
+        </control>
+    </include>
+    <include name="Widget_NavButtons_Poster">
+        <control type="button">
+            <posx>0</posx>
+            <posy>20</posy>
+            <width>73</width>
+            <height>$PARAM[height]</height>
+            <texturefocus>-</texturefocus>
+            <texturenofocus>-</texturenofocus>
+            <include>TextColor_AlternateColor</include>
+            <font>FacadeListMainFontMat</font>
+            <textoffsetx>10</textoffsetx>
+            <textoffsety>19</textoffsety>
+            <align>left</align>
+            <aligny>top</aligny>
+            <!--<label></label>-->
+            <onclick>Control.Move($PARAM[id],-1)</onclick>
+        </control>
+        <control type="button">
+            <posx>382</posx>
+            <posy>20</posy>
+            <width>1538</width>
+            <height>$PARAM[height]</height>
+            <texturefocus>-</texturefocus>
+            <texturenofocus>-</texturenofocus>
+            <include>TextColor_AlternateColor</include>
+            <font>FacadeListMainFontMat</font>
+            <textoffsetx>10</textoffsetx>
+            <textoffsety>19</textoffsety>
+            <align>right</align>
+            <aligny>top</aligny>
+            <!--<label></label>-->
+            <onclick>Control.Move($PARAM[id],1)</onclick>
+        </control>
+    </include>
+    <include name="Widget_NavButtons_Square">
+        <control type="button">
+            <posx>0</posx>
+            <posy>20</posy>
+            <width>73</width>
+            <height>$PARAM[height]</height>
+            <texturefocus>-</texturefocus>
+            <texturenofocus>-</texturenofocus>
+            <include>TextColor_AlternateColor</include>
+            <font>FacadeListMainFontMat</font>
+            <textoffsetx>10</textoffsetx>
+            <textoffsety>19</textoffsety>
+            <align>left</align>
+            <aligny>top</aligny>
+            <!--<label></label>-->
+            <onclick>Control.Move($PARAM[id],-1)</onclick>
+        </control>
+        <control type="button">
+            <posx>450</posx>
+            <posy>20</posy>
+            <width>1470</width>
+            <height>$PARAM[height]</height>
+            <texturefocus>-</texturefocus>
+            <texturenofocus>-</texturenofocus>
+            <include>TextColor_AlternateColor</include>
+            <font>FacadeListMainFontMat</font>
+            <textoffsetx>10</textoffsetx>
+            <textoffsety>19</textoffsety>
+            <align>right</align>
+            <aligny>top</aligny>
+            <!--<label></label>-->
+            <onclick>Control.Move($PARAM[id],1)</onclick>
+        </control>
+    </include>
+    <include name="Widget_NavButtons_Episode">
+        <control type="button">
+            <posx>0</posx>
+            <posy>20</posy>
+            <width>73</width>
+            <height>$PARAM[height]</height>
+            <texturefocus>-</texturefocus>
+            <texturenofocus>-</texturenofocus>
+            <include>TextColor_AlternateColor</include>
+            <font>FacadeListMainFontMat</font>
+            <textoffsetx>10</textoffsetx>
+            <textoffsety>19</textoffsety>
+            <align>left</align>
+            <aligny>top</aligny>
+            <!--<label></label>-->
+            <onclick>Control.Move($PARAM[id],-1)</onclick>
+        </control>
+        <control type="button">
+            <posx>572</posx>
+            <posy>20</posy>
+            <width>1445</width>
+            <height>$PARAM[height]</height>
+            <texturefocus>-</texturefocus>
+            <texturenofocus>-</texturenofocus>
+            <include>TextColor_AlternateColor</include>
+            <font>FacadeListMainFontMat</font>
+            <textoffsetx>10</textoffsetx>
+            <textoffsety>19</textoffsety>
+            <align>right</align>
+            <aligny>top</aligny>
+            <!--<label></label>-->
+            <onclick>Control.Move($PARAM[id],1)</onclick>
+        </control>
+    </include>
+    <include name="Widget_NavButtons_Channel">
+        <control type="button">
+            <posx>0</posx>
+            <posy>20</posy>
+            <width>73</width>
+            <height>$PARAM[height]</height>
+            <texturefocus>-</texturefocus>
+            <texturenofocus>-</texturenofocus>
+            <include>TextColor_AlternateColor</include>
+            <font>FacadeListMainFontMat</font>
+            <textoffsetx>10</textoffsetx>
+            <textoffsety>19</textoffsety>
+            <align>left</align>
+            <aligny>top</aligny>
+            <!--<label></label>-->
+            <onclick>Control.Move($PARAM[id],-1)</onclick>
+        </control>
+        <control type="button">
+            <posx>506</posx>
+            <posy>20</posy>
+            <width>1348</width>
+            <height>$PARAM[height]</height>
+            <texturefocus>-</texturefocus>
+            <texturenofocus>-</texturenofocus>
+            <include>TextColor_AlternateColor</include>
+            <font>FacadeListMainFontMat</font>
+            <textoffsetx>10</textoffsetx>
+            <textoffsety>19</textoffsety>
+            <align>right</align>
+            <aligny>top</aligny>
+            <!--<label></label>-->
+            <onclick>Control.Move($PARAM[id],1)</onclick>
+        </control>
+    </include>
+    <include name="Widget">
+        <control type="group">
+            <include>OpenClose</include>
+            <visible>$PARAM[visibility]</visible>
+            <height>$PARAM[height]</height>
+            <control type="label">
+                <visible>control.hasfocus($PARAM[id])</visible>
+                <posx>TextMargin</posx>
+                <posy>45</posy>
+                <height>40</height>
+                <width>1920</width>
+                <font>FacadeListMainFont</font>
+                <include>TextColor_MainColor</include>
+                <scroll>false</scroll>
+                <label>$PARAM[title]</label>
+            </control>
+            <control type="label">
+                <visible>!control.hasfocus($PARAM[id])</visible>
+                <posx>TextMargin</posx>
+                <posy>45</posy>
+                <height>40</height>
+                <width>1920</width>
+                <font>FacadeListMainFont</font>
+                <include>TextColor_AlternateColor</include>
+                <scroll>false</scroll>
+                <label>$PARAM[title]</label>
+            </control>
+            <control type="fixedlist" id="$PARAM[id]">
+                <onright>$PARAM[id]</onright>
+                <onup>$PARAM[onup]</onup>
+                <ondown>$PARAM[ondown]</ondown>
+                <onleft>$PARAM[id]</onleft>
+                <include content="Widget_$PARAM[gfxType]">
+                    <param name="id" value="$PARAM[id]"/>
+                    <param name="labelPosy" value="$PARAM[labelPosy]"/>
+                    <param name="labelTitle" value="$PARAM[labelTitle]"/>
+                    <param name="labelSubTitle" value="$PARAM[labelSubTitle]"/>
+                </include>
+                <include>$PARAM[content]</include>
+            </control>
+            <include content="Widget_NavButtons_$PARAM[gfxType]">
+                <param name="id" value="$PARAM[id]"/>
+                <param name="height" value="$PARAM[height]"/>
+            </include>
+        </control>
+    </include>
+    <include name="Widget_Poster">
+        <posx>-245</posx>
+        <posy>97</posy>
+        <width>2410</width>
+        <height>583</height>
+        <onleft>300</onleft>
+        <onback>300</onback>
+        <movement>0</movement>
+        <focusposition>1</focusposition>
+        <orientation>horizontal</orientation>
+        <itemlayout height="583" width="315">
+            <include content="ThumbsImages">
+                <param name="visible" value="true"/>
+                <param name="x" value="0"/>
+                <param name="y" value="0"/>
+                <param name="width" value="305"/>
+                <param name="height" value="455"/>
+                <param name="aspectratio" value="scale"/>
+                <param name="align" value="center"/>
+                <param name="aligny" value="center"/>
+                <param name="flipy" value="false"/>
+                <param name="texturediffuse" value="ThumbsUnfocusedColor"/>
+                <param name="borderdiffuse" value="BorderUnfocusedColor"/>
+            </include>
+            <control type="group">
+                <posy>$PARAM[labelPosy]</posy>
+                <include content="ProgressBar">
+                    <param name="id" value="0"/>
+                    <param name="visible" value="Integer.IsGreater(ListItem.PercentPlayed,0)"/>
+                    <param name="x" value="1"/>
+                    <param name="y" value="0"/>
+                    <param name="width" value="304"/>
+                    <param name="info" value="ListItem.PercentPlayed"/>
+                    <param name="endRotation" value="0"/>
+                    <param name="centerRotation" value="auto"/>
+                    <param name="visiblefocus" value="false"/>
+                    <param name="direction" value="horizontal"/>
+                </include>
+                <include content="ProgressBar">
+                    <param name="id" value="0"/>
+                    <param name="visible" value="Integer.IsGreater(ListItem.Progress,0)"/>
+                    <param name="x" value="1"/>
+                    <param name="y" value="0"/>
+                    <param name="width" value="304"/>
+                    <param name="info" value="ListItem.Progress"/>
+                    <param name="endRotation" value="0"/>
+                    <param name="centerRotation" value="auto"/>
+                    <param name="visiblefocus" value="false"/>
+                    <param name="direction" value="horizontal"/>
+                </include>
+                <control type="label">
+                    <posx>0</posx>
+                    <posy>30</posy>
+                    <width>295</width>
+                    <aligny>top</aligny>
+                    <font>WidgetTitleFont</font>
+                    <include>TextColor_AlternateColor</include>
+                    <scroll>false</scroll>
+                    <label>$PARAM[labelTitle]</label>
+                </control>
+                <control type="label">
+                    <posx>0</posx>
+                    <posy>80</posy>
+                    <width>295</width>
+                    <aligny>top</aligny>
+                    <font>WidgetSubTitleFont</font>
+                    <include>TextColor_AlternateColor</include>
+                    <scroll>false</scroll>
+                    <label>$PARAM[labelSubTitle]</label>
+                </control>
+            </control>
+        </itemlayout>
+        <focusedlayout height="583" width="315">
+            <control type="group">
+                <include>ButtonFocusAnimation</include>
+                <include content="ThumbsImages">
+                    <param name="visible" value="control.hasfocus($PARAM[id])"/>
+                    <param name="x" value="0"/>
+                    <param name="y" value="0"/>
+                    <param name="width" value="305"/>
+                    <param name="height" value="455"/>
+                    <param name="aspectratio" value="scale"/>
+                    <param name="align" value="center"/>
+                    <param name="aligny" value="center"/>
+                    <param name="flipy" value="false"/>
+                    <param name="texturediffuse" value="ThumbsFocusedColor"/>
+                    <param name="borderdiffuse" value="$VAR[Picked.Theme.Color]"/>
+                </include>
+                <include content="ThumbsImages">
+                    <param name="visible" value="!control.hasfocus($PARAM[id])"/>
+                    <param name="x" value="0"/>
+                    <param name="y" value="0"/>
+                    <param name="width" value="305"/>
+                    <param name="height" value="455"/>
+                    <param name="aspectratio" value="scale"/>
+                    <param name="align" value="center"/>
+                    <param name="aligny" value="center"/>
+                    <param name="flipy" value="false"/>
+                    <param name="texturediffuse" value="ThumbsUnfocusedColor"/>
+                    <param name="borderdiffuse" value="BorderUnfocusedColor"/>
+                </include>
+                <control type="group">
+                    <posy>$PARAM[labelPosy]</posy>
+                    <include content="ProgressBar">
+                        <param name="id" value="0"/>
+                        <param name="visible" value="Integer.IsGreater(ListItem.PercentPlayed,0)"/>
+                        <param name="x" value="1"/>
+                        <param name="y" value="0"/>
+                        <param name="width" value="304"/>
+                        <param name="info" value="ListItem.PercentPlayed"/>
+                        <param name="endRotation" value="0"/>
+                        <param name="centerRotation" value="auto"/>
+                        <param name="visiblefocus" value="control.hasfocus($PARAM[id])"/>
+                        <param name="direction" value="horizontal"/>
+                    </include>
+                    <include content="ProgressBar">
+                        <param name="id" value="0"/>
+                        <param name="visible" value="Integer.IsGreater(ListItem.Progress,0)"/>
+                        <param name="x" value="1"/>
+                        <param name="y" value="0"/>
+                        <param name="width" value="304"/>
+                        <param name="info" value="ListItem.Progress"/>
+                        <param name="endRotation" value="0"/>
+                        <param name="centerRotation" value="auto"/>
+                        <param name="visiblefocus" value="control.hasfocus($PARAM[id])"/>
+                        <param name="direction" value="horizontal"/>
+                    </include>
+                    <include content="FocusedIndicator">
+                        <param name="x" value="0"/>
+                        <param name="y" value="30"/>
+                        <param name="height" value="50"/>
+                        <param name="visible" value="control.hasfocus($PARAM[id])"/>
+                    </include>
+                    <control type="label">
+                        <visible>control.hasfocus($PARAM[id])</visible>
+                        <posx>15</posx>
+                        <posy>30</posy>
+                        <width>280</width>
+                        <aligny>top</aligny>
+                        <font>WidgetTitleFont</font>
+                        <include>TextColor_MainColor</include>
+                        <scroll>true</scroll>
+                        <label>$PARAM[labelTitle]</label>
+                    </control>
+                    <control type="label">
+                        <visible>control.hasfocus($PARAM[id])</visible>
+                        <posx>15</posx>
+                        <posy>80</posy>
+                        <width>280</width>
+                        <aligny>top</aligny>
+                        <font>WidgetSubTitleFont</font>
+                        <include>TextColor_MainColor</include>
+                        <scroll>true</scroll>
+                        <label>$PARAM[labelSubTitle]</label>
+                    </control>
+                    <control type="label">
+                        <visible>!control.hasfocus($PARAM[id])</visible>
+                        <posx>0</posx>
+                        <posy>30</posy>
+                        <width>295</width>
+                        <aligny>top</aligny>
+                        <font>WidgetTitleFont</font>
+                        <include>TextColor_AlternateColor</include>
+                        <scroll>false</scroll>
+                        <label>$PARAM[labelTitle]</label>
+                    </control>
+                    <control type="label">
+                        <visible>!control.hasfocus($PARAM[id])</visible>
+                        <posx>0</posx>
+                        <posy>80</posy>
+                        <width>295</width>
+                        <aligny>top</aligny>
+                        <font>WidgetSubTitleFont</font>
+                        <include>TextColor_AlternateColor</include>
+                        <scroll>false</scroll>
+                        <label>$PARAM[labelSubTitle]</label>
+                    </control>
+                </control>
+            </control>
+        </focusedlayout>
+    </include>
+    <include name="Widget_Square">
+        <posx>-313</posx>
+        <posy>97</posy>
+        <width>2546</width>
+        <height>501</height>
+        <onleft>300</onleft>
+        <onback>300</onback>
+        <movement>0</movement>
+        <focusposition>1</focusposition>
+        <orientation>horizontal</orientation>
+        <itemlayout height="501" width="383">
+            <include content="ThumbsImages">
+                <param name="visible" value="true"/>
+                <param name="x" value="0"/>
+                <param name="y" value="0"/>
+                <param name="width" value="373"/>
+                <param name="height" value="373"/>
+                <param name="aspectratio" value="scale"/>
+                <param name="align" value="center"/>
+                <param name="aligny" value="center"/>
+                <param name="flipy" value="false"/>
+                <param name="texturediffuse" value="ThumbsUnfocusedColor"/>
+                <param name="borderdiffuse" value="BorderUnfocusedColor"/>
+            </include>
+            <control type="group">
+                <posy>$PARAM[labelPosy]</posy>
+                <include content="ProgressBar">
+                    <param name="id" value="0"/>
+                    <param name="visible" value="Integer.IsGreater(ListItem.PercentPlayed,0)"/>
+                    <param name="x" value="1"/>
+                    <param name="y" value="0"/>
+                    <param name="width" value="372"/>
+                    <param name="info" value="ListItem.PercentPlayed"/>
+                    <param name="endRotation" value="0"/>
+                    <param name="centerRotation" value="auto"/>
+                    <param name="visiblefocus" value="false"/>
+                    <param name="direction" value="horizontal"/>
+                </include>
+                <include content="ProgressBar">
+                    <param name="id" value="0"/>
+                    <param name="visible" value="Integer.IsGreater(ListItem.Progress,0)"/>
+                    <param name="x" value="1"/>
+                    <param name="y" value="0"/>
+                    <param name="width" value="372"/>
+                    <param name="info" value="ListItem.Progress"/>
+                    <param name="endRotation" value="0"/>
+                    <param name="centerRotation" value="auto"/>
+                    <param name="visiblefocus" value="false"/>
+                    <param name="direction" value="horizontal"/>
+                </include>
+                <control type="label">
+                    <posx>0</posx>
+                    <posy>30</posy>
+                    <width>363</width>
+                    <aligny>top</aligny>
+                    <font>WidgetTitleFont</font>
+                    <include>TextColor_AlternateColor</include>
+                    <scroll>false</scroll>
+                    <label>$PARAM[labelTitle]</label>
+                </control>
+                <control type="label">
+                    <posx>0</posx>
+                    <posy>80</posy>
+                    <width>363</width>
+                    <aligny>top</aligny>
+                    <font>WidgetSubTitleFont</font>
+                    <include>TextColor_AlternateColor</include>
+                    <scroll>false</scroll>
+                    <label>$PARAM[labelSubTitle]</label>
+                </control>
+            </control>
+        </itemlayout>
+        <focusedlayout height="501" width="383">
+            <control type="group">
+                <include>ButtonFocusAnimation</include>
+                <include content="ThumbsImages">
+                    <param name="visible" value="control.hasfocus($PARAM[id])"/>
+                    <param name="x" value="0"/>
+                    <param name="y" value="0"/>
+                    <param name="width" value="373"/>
+                    <param name="height" value="373"/>
+                    <param name="aspectratio" value="scale"/>
+                    <param name="align" value="center"/>
+                    <param name="aligny" value="center"/>
+                    <param name="flipy" value="false"/>
+                    <param name="texturediffuse" value="ThumbsFocusedColor"/>
+                    <param name="borderdiffuse" value="$VAR[Picked.Theme.Color]"/>
+                </include>
+                <include content="ThumbsImages">
+                    <param name="visible" value="!control.hasfocus($PARAM[id])"/>
+                    <param name="x" value="0"/>
+                    <param name="y" value="0"/>
+                    <param name="width" value="373"/>
+                    <param name="height" value="373"/>
+                    <param name="aspectratio" value="scale"/>
+                    <param name="align" value="center"/>
+                    <param name="aligny" value="center"/>
+                    <param name="flipy" value="false"/>
+                    <param name="texturediffuse" value="ThumbsUnfocusedColor"/>
+                    <param name="borderdiffuse" value="BorderUnfocusedColor"/>
+                </include>
+                <control type="group">
+                    <posy>$PARAM[labelPosy]</posy>
+                    <include content="ProgressBar">
+                        <param name="id" value="0"/>
+                        <param name="visible" value="Integer.IsGreater(ListItem.PercentPlayed,0)"/>
+                        <param name="x" value="1"/>
+                        <param name="y" value="0"/>
+                        <param name="width" value="372"/>
+                        <param name="info" value="ListItem.PercentPlayed"/>
+                        <param name="endRotation" value="0"/>
+                        <param name="centerRotation" value="auto"/>
+                        <param name="visiblefocus" value="control.hasfocus($PARAM[id])"/>
+                        <param name="direction" value="horizontal"/>
+                    </include>
+                    <include content="ProgressBar">
+                        <param name="id" value="0"/>
+                        <param name="visible" value="Integer.IsGreater(ListItem.Progress,0)"/>
+                        <param name="x" value="1"/>
+                        <param name="y" value="0"/>
+                        <param name="width" value="372"/>
+                        <param name="info" value="ListItem.Progress"/>
+                        <param name="endRotation" value="0"/>
+                        <param name="centerRotation" value="auto"/>
+                        <param name="visiblefocus" value="control.hasfocus($PARAM[id])"/>
+                        <param name="direction" value="horizontal"/>
+                    </include>
+                    <include content="FocusedIndicator">
+                        <param name="x" value="0"/>
+                        <param name="y" value="30"/>
+                        <param name="height" value="50"/>
+                        <param name="visible" value="control.hasfocus($PARAM[id])"/>
+                    </include>
+                    <control type="label">
+                        <visible>control.hasfocus($PARAM[id])</visible>
+                        <posx>15</posx>
+                        <posy>30</posy>
+                        <width>358</width>
+                        <aligny>top</aligny>
+                        <font>WidgetTitleFont</font>
+                        <include>TextColor_MainColor</include>
+                        <scroll>true</scroll>
+                        <label>$PARAM[labelTitle]</label>
+                    </control>
+                    <control type="label">
+                        <visible>control.hasfocus($PARAM[id])</visible>
+                        <posx>15</posx>
+                        <posy>80</posy>
+                        <width>358</width>
+                        <aligny>top</aligny>
+                        <font>WidgetSubTitleFont</font>
+                        <include>TextColor_MainColor</include>
+                        <scroll>true</scroll>
+                        <label>$PARAM[labelSubTitle]</label>
+                    </control>
+                    <control type="label">
+                        <visible>!control.hasfocus($PARAM[id])</visible>
+                        <posx>0</posx>
+                        <posy>30</posy>
+                        <width>363</width>
+                        <aligny>top</aligny>
+                        <font>WidgetTitleFont</font>
+                        <include>TextColor_AlternateColor</include>
+                        <scroll>false</scroll>
+                        <label>$PARAM[labelTitle]</label>
+                    </control>
+                    <control type="label">
+                        <visible>!control.hasfocus($PARAM[id])</visible>
+                        <posx>0</posx>
+                        <posy>80</posy>
+                        <width>363</width>
+                        <aligny>top</aligny>
+                        <font>WidgetSubTitleFont</font>
+                        <include>TextColor_AlternateColor</include>
+                        <scroll>false</scroll>
+                        <label>$PARAM[labelSubTitle]</label>
+                    </control>
+                </control>
+            </control>
+        </focusedlayout>
+    </include>
+    <include name="Widget_Episode">
+        <posx>-435</posx>
+        <posy>97</posy>
+        <width>2790</width>
+        <height>408</height>
+        <onleft>300</onleft>
+        <onback>300</onback>
+        <movement>0</movement>
+        <focusposition>1</focusposition>
+        <orientation>horizontal</orientation>
+        <itemlayout height="408" width="505">
+            <include content="ThumbsImages">
+                <param name="visible" value="true"/>
+                <param name="x" value="0"/>
+                <param name="y" value="0"/>
+                <param name="width" value="495"/>
+                <param name="height" value="280"/>
+                <param name="aspectratio" value="scale"/>
+                <param name="align" value="center"/>
+                <param name="aligny" value="center"/>
+                <param name="flipy" value="false"/>
+                <param name="texturediffuse" value="ThumbsUnfocusedColor"/>
+                <param name="borderdiffuse" value="BorderUnfocusedColor"/>
+            </include>
+            <control type="group">
+                <posy>$PARAM[labelPosy]</posy>
+                <include content="ProgressBar">
+                    <param name="id" value="0"/>
+                    <param name="visible" value="Integer.IsGreater(ListItem.PercentPlayed,0)"/>
+                    <param name="x" value="1"/>
+                    <param name="y" value="0"/>
+                    <param name="width" value="494"/>
+                    <param name="info" value="ListItem.PercentPlayed"/>
+                    <param name="endRotation" value="0"/>
+                    <param name="centerRotation" value="auto"/>
+                    <param name="visiblefocus" value="false"/>
+                    <param name="direction" value="horizontal"/>
+                </include>
+                <include content="ProgressBar">
+                    <param name="id" value="0"/>
+                    <param name="visible" value="Integer.IsGreater(ListItem.Progress,0)"/>
+                    <param name="x" value="1"/>
+                    <param name="y" value="0"/>
+                    <param name="width" value="494"/>
+                    <param name="info" value="ListItem.Progress"/>
+                    <param name="endRotation" value="0"/>
+                    <param name="centerRotation" value="auto"/>
+                    <param name="visiblefocus" value="false"/>
+                    <param name="direction" value="horizontal"/>
+                </include>
+                <control type="label">
+                    <posx>0</posx>
+                    <posy>30</posy>
+                    <width>485</width>
+                    <aligny>top</aligny>
+                    <font>WidgetTitleFont</font>
+                    <include>TextColor_AlternateColor</include>
+                    <scroll>false</scroll>
+                    <label>$PARAM[labelTitle]</label>
+                </control>
+                <control type="label">
+                    <posx>0</posx>
+                    <posy>80</posy>
+                    <width>485</width>
+                    <aligny>top</aligny>
+                    <font>WidgetSubTitleFont</font>
+                    <include>TextColor_AlternateColor</include>
+                    <scroll>false</scroll>
+                    <label>$PARAM[labelSubTitle]</label>
+                </control>
+            </control>
+        </itemlayout>
+        <focusedlayout height="408" width="505">
+            <control type="group">
+                <include>ButtonFocusAnimation</include>
+                <include content="ThumbsImages">
+                    <param name="visible" value="control.hasfocus($PARAM[id])"/>
+                    <param name="x" value="0"/>
+                    <param name="y" value="0"/>
+                    <param name="width" value="495"/>
+                    <param name="height" value="280"/>
+                    <param name="aspectratio" value="scale"/>
+                    <param name="align" value="center"/>
+                    <param name="aligny" value="center"/>
+                    <param name="flipy" value="false"/>
+                    <param name="texturediffuse" value="ThumbsFocusedColor"/>
+                    <param name="borderdiffuse" value="$VAR[Picked.Theme.Color]"/>
+                </include>
+                <include content="ThumbsImages">
+                    <param name="visible" value="!control.hasfocus($PARAM[id])"/>
+                    <param name="x" value="0"/>
+                    <param name="y" value="0"/>
+                    <param name="width" value="495"/>
+                    <param name="height" value="280"/>
+                    <param name="aspectratio" value="scale"/>
+                    <param name="align" value="center"/>
+                    <param name="aligny" value="center"/>
+                    <param name="flipy" value="false"/>
+                    <param name="texturediffuse" value="ThumbsUnfocusedColor"/>
+                    <param name="borderdiffuse" value="BorderUnfocusedColor"/>
+                </include>
+                <control type="group">
+                    <posy>$PARAM[labelPosy]</posy>
+                    <include content="ProgressBar">
+                        <param name="id" value="0"/>
+                        <param name="visible" value="Integer.IsGreater(ListItem.PercentPlayed,0)"/>
+                        <param name="x" value="1"/>
+                        <param name="y" value="0"/>
+                        <param name="width" value="494"/>
+                        <param name="info" value="ListItem.PercentPlayed"/>
+                        <param name="endRotation" value="0"/>
+                        <param name="centerRotation" value="auto"/>
+                        <param name="visiblefocus" value="control.hasfocus($PARAM[id])"/>
+                        <param name="direction" value="horizontal"/>
+                    </include>
+                    <include content="ProgressBar">
+                        <param name="id" value="0"/>
+                        <param name="visible" value="Integer.IsGreater(ListItem.Progress,0)"/>
+                        <param name="x" value="1"/>
+                        <param name="y" value="0"/>
+                        <param name="width" value="494"/>
+                        <param name="info" value="ListItem.Progress"/>
+                        <param name="endRotation" value="0"/>
+                        <param name="centerRotation" value="auto"/>
+                        <param name="visiblefocus" value="control.hasfocus($PARAM[id])"/>
+                        <param name="direction" value="horizontal"/>
+                    </include>
+                    <include content="FocusedIndicator">
+                        <param name="x" value="0"/>
+                        <param name="y" value="30"/>
+                        <param name="height" value="50"/>
+                        <param name="visible" value="control.hasfocus($PARAM[id])"/>
+                    </include>
+                    <control type="label">
+                        <visible>control.hasfocus($PARAM[id])</visible>
+                        <posx>15</posx>
+                        <posy>30</posy>
+                        <width>470</width>
+                        <aligny>top</aligny>
+                        <font>WidgetTitleFont</font>
+                        <include>TextColor_MainColor</include>
+                        <scroll>true</scroll>
+                        <label>$PARAM[labelTitle]</label>
+                    </control>
+                    <control type="label">
+                        <visible>control.hasfocus($PARAM[id])</visible>
+                        <posx>15</posx>
+                        <posy>80</posy>
+                        <width>470</width>
+                        <aligny>top</aligny>
+                        <font>WidgetSubTitleFont</font>
+                        <include>TextColor_MainColor</include>
+                        <scroll>true</scroll>
+                        <label>$PARAM[labelSubTitle]</label>
+                    </control>
+                    <control type="label">
+                        <visible>!control.hasfocus($PARAM[id])</visible>
+                        <posx>0</posx>
+                        <posy>30</posy>
+                        <width>485</width>
+                        <aligny>top</aligny>
+                        <font>WidgetTitleFont</font>
+                        <include>TextColor_AlternateColor</include>
+                        <scroll>false</scroll>
+                        <label>$PARAM[labelTitle]</label>
+                    </control>
+                    <control type="label">
+                        <visible>!control.hasfocus($PARAM[id])</visible>
+                        <posx>0</posx>
+                        <posy>80</posy>
+                        <width>485</width>
+                        <aligny>top</aligny>
+                        <font>WidgetSubTitleFont</font>
+                        <include>TextColor_AlternateColor</include>
+                        <scroll>false</scroll>
+                        <label>$PARAM[labelSubTitle]</label>
+                    </control>
+                </control>
+            </control>
+        </focusedlayout>
+    </include>
+    <include name="Widget_Channel">
+        <posx>-369</posx>
+        <posy>97</posy>
+        <width>2658</width>
+        <height>450</height>
+        <onleft>300</onleft>
+        <onback>300</onback>
+        <movement>0</movement>
+        <focusposition>1</focusposition>
+        <orientation>horizontal</orientation>
+        <itemlayout height="450" width="439">
+            <include content="ThumbsImages">
+                <param name="visible" value="true"/>
+                <param name="x" value="0"/>
+                <param name="y" value="0"/>
+                <param name="width" value="429"/>
+                <param name="height" value="322"/>
+                <param name="aspectratio" value="scale"/>
+                <param name="align" value="center"/>
+                <param name="aligny" value="center"/>
+                <param name="flipy" value="false"/>
+                <param name="texturediffuse" value="ThumbsUnfocusedColor"/>
+                <param name="borderdiffuse" value="BorderUnfocusedColor"/>
+            </include>
+            <control type="group">
+                <posy>$PARAM[labelPosy]</posy>
+                <include content="ProgressBar">
+                    <param name="id" value="0"/>
+                    <param name="visible" value="Integer.IsGreater(ListItem.PercentPlayed,0)"/>
+                    <param name="x" value="1"/>
+                    <param name="y" value="0"/>
+                    <param name="width" value="428"/>
+                    <param name="info" value="ListItem.PercentPlayed"/>
+                    <param name="endRotation" value="0"/>
+                    <param name="centerRotation" value="auto"/>
+                    <param name="visiblefocus" value="false"/>
+                    <param name="direction" value="horizontal"/>
+                </include>
+                <include content="ProgressBar">
+                    <param name="id" value="0"/>
+                    <param name="visible" value="Integer.IsGreater(ListItem.Progress,0)"/>
+                    <param name="x" value="1"/>
+                    <param name="y" value="0"/>
+                    <param name="width" value="428"/>
+                    <param name="info" value="ListItem.Progress"/>
+                    <param name="endRotation" value="0"/>
+                    <param name="centerRotation" value="auto"/>
+                    <param name="visiblefocus" value="false"/>
+                    <param name="direction" value="horizontal"/>
+                </include>
+                <control type="label">
+                    <posx>0</posx>
+                    <posy>30</posy>
+                    <width>419</width>
+                    <aligny>top</aligny>
+                    <font>WidgetTitleFont</font>
+                    <include>TextColor_AlternateColor</include>
+                    <scroll>false</scroll>
+                    <label>$PARAM[labelTitle]</label>
+                </control>
+                <control type="label">
+                    <posx>0</posx>
+                    <posy>80</posy>
+                    <width>419</width>
+                    <aligny>top</aligny>
+                    <font>WidgetSubTitleFont</font>
+                    <include>TextColor_AlternateColor</include>
+                    <scroll>false</scroll>
+                    <label>$PARAM[labelSubTitle]</label>
+                </control>
+            </control>
+        </itemlayout>
+        <focusedlayout height="450" width="439">
+            <control type="group">
+                <include>ButtonFocusAnimation</include>
+                <include content="ThumbsImages">
+                    <param name="visible" value="control.hasfocus($PARAM[id])"/>
+                    <param name="x" value="0"/>
+                    <param name="y" value="0"/>
+                    <param name="width" value="429"/>
+                    <param name="height" value="322"/>
+                    <param name="aspectratio" value="scale"/>
+                    <param name="align" value="center"/>
+                    <param name="aligny" value="center"/>
+                    <param name="flipy" value="false"/>
+                    <param name="texturediffuse" value="ThumbsFocusedColor"/>
+                    <param name="borderdiffuse" value="$VAR[Picked.Theme.Color]"/>
+                </include>
+                <include content="ThumbsImages">
+                    <param name="visible" value="!control.hasfocus($PARAM[id])"/>
+                    <param name="x" value="0"/>
+                    <param name="y" value="0"/>
+                    <param name="width" value="429"/>
+                    <param name="height" value="322"/>
+                    <param name="aspectratio" value="scale"/>
+                    <param name="align" value="center"/>
+                    <param name="aligny" value="center"/>
+                    <param name="flipy" value="false"/>
+                    <param name="texturediffuse" value="ThumbsUnfocusedColor"/>
+                    <param name="borderdiffuse" value="BorderUnfocusedColor"/>
+                </include>
+                <control type="group">
+                    <posy>$PARAM[labelPosy]</posy>
+                    <include content="ProgressBar">
+                        <param name="id" value="0"/>
+                        <param name="visible" value="Integer.IsGreater(ListItem.PercentPlayed,0)"/>
+                        <param name="x" value="1"/>
+                        <param name="y" value="0"/>
+                        <param name="width" value="428"/>
+                        <param name="info" value="ListItem.PercentPlayed"/>
+                        <param name="endRotation" value="0"/>
+                        <param name="centerRotation" value="auto"/>
+                        <param name="visiblefocus" value="control.hasfocus($PARAM[id])"/>
+                        <param name="direction" value="horizontal"/>
+                    </include>
+                    <include content="ProgressBar">
+                        <param name="id" value="0"/>
+                        <param name="visible" value="Integer.IsGreater(ListItem.Progress,0)"/>
+                        <param name="x" value="1"/>
+                        <param name="y" value="0"/>
+                        <param name="width" value="428"/>
+                        <param name="info" value="ListItem.Progress"/>
+                        <param name="endRotation" value="0"/>
+                        <param name="centerRotation" value="auto"/>
+                        <param name="visiblefocus" value="control.hasfocus($PARAM[id])"/>
+                        <param name="direction" value="horizontal"/>
+                    </include>
+                    <include content="FocusedIndicator">
+                        <param name="x" value="0"/>
+                        <param name="y" value="30"/>
+                        <param name="height" value="50"/>
+                        <param name="visible" value="control.hasfocus($PARAM[id])"/>
+                    </include>
+                    <control type="label">
+                        <visible>control.hasfocus($PARAM[id])</visible>
+                        <posx>15</posx>
+                        <posy>30</posy>
+                        <width>404</width>
+                        <aligny>top</aligny>
+                        <font>WidgetTitleFont</font>
+                        <include>TextColor_MainColor</include>
+                        <scroll>true</scroll>
+                        <label>$PARAM[labelTitle]</label>
+                    </control>
+                    <control type="label">
+                        <visible>control.hasfocus($PARAM[id])</visible>
+                        <posx>15</posx>
+                        <posy>80</posy>
+                        <width>404</width>
+                        <aligny>top</aligny>
+                        <font>WidgetSubTitleFont</font>
+                        <include>TextColor_MainColor</include>
+                        <scroll>true</scroll>
+                        <label>$PARAM[labelSubTitle]</label>
+                    </control>
+                    <control type="label">
+                        <visible>!control.hasfocus($PARAM[id])</visible>
+                        <posx>0</posx>
+                        <posy>30</posy>
+                        <width>419</width>
+                        <aligny>top</aligny>
+                        <font>WidgetTitleFont</font>
+                        <include>TextColor_AlternateColor</include>
+                        <scroll>false</scroll>
+                        <label>$PARAM[labelTitle]</label>
+                    </control>
+                    <control type="label">
+                        <visible>!control.hasfocus($PARAM[id])</visible>
+                        <posx>0</posx>
+                        <posy>80</posy>
+                        <width>419</width>
+                        <aligny>top</aligny>
+                        <font>WidgetSubTitleFont</font>
+                        <include>TextColor_AlternateColor</include>
+                        <scroll>false</scroll>
+                        <label>$PARAM[labelSubTitle]</label>
+                    </control>
+                </control>
+            </control>
+        </focusedlayout>
+    </include>
+
+
+    <include name="WidgetsCollection">
+
+
+
+        <!-- -->
+        <!--PLEX-->
+        <!-- -->
+
+        <!--PICTURES-->
+        <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="Widget">
+            <param name="title" value="$LOCALIZE[31961]"/>
+            <param name="ondown" value="901"/>
+            <param name="onup" value="300"/>
+            <param name="height" value="608"/>
+            <param name="gfxType" value="Square"/>
+            <param name="content" value="PlexRecentPhotoContent"/>
+            <param name="id" value="900"/>
+            <param name="visibility" value="!String.IsEmpty(Window.Property(Plexbmc.LatestPhoto.1.Path))+String.IsEqual(Container(300).ListItem.Property(type),photo) + Skin.HasSetting(plexbmc)"/>
+            <param name="labelTitle" value="$INFO[ListItem.Label]"/>
+            <param name="labelSubTitle" value=""/>
+            <param name="labelPosy" value="372"/>
+        </include>
+        <!--QUEUE-->
+        <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="Widget">
+            <param name="title" value="$LOCALIZE[31961]"/>
+            <param name="ondown" value="311"/>
+            <param name="onup" value="900"/>
+            <param name="height" value="608"/>
+            <param name="gfxType" value="Square"/>
+            <param name="content" value="PlexQueueContent"/>
+            <param name="id" value="901"/>
+            <param name="visibility" value="!String.IsEmpty(Window.Property(Plexbmc.Queue.1.Path))+String.IsEqual(Container(300).ListItem.Label,$LOCALIZE[31010]) + Skin.HasSetting(plexbmc)"/>
+            <param name="labelTitle" value="$INFO[ListItem.Label]"/>
+            <param name="labelSubTitle" value="-"/>
+            <param name="labelPosy" value="372"/>
+        </include>
+        <!--MOVIES-->
+        <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="Widget">
+            <param name="title" value="$LOCALIZE[31961]"/>
+            <param name="height" value="690"/>
+            <param name="ondown" value="312"/>
+            <param name="onup" value="901"/>
+            <param name="gfxType" value="Poster"/>
+            <param name="content" value="PlexRecentMovieContent"/>
+            <param name="id" value="311"/>
+            <param name="visibility" value="!String.IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.1.Path))+String.IsEqual(Container(300).ListItem.Property(type),movie) + Skin.HasSetting(plexbmc)"/>
+            <param name="labelTitle" value="$INFO[ListItem.Label]"/>
+            <param name="labelSubTitle" value="$INFO[ListItem.Property(Rating),,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Property(Year),,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Property(Runtime),, $LOCALIZE[31297]]"/>
+            <param name="labelPosy" value="454"/>
+        </include>
+        <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="Widget">
+            <param name="title" value="$LOCALIZE[31011]"/>
+            <param name="height" value="690"/>
+            <param name="ondown" value="511"/>
+            <param name="onup" value="311"/>
+            <param name="gfxType" value="Poster"/>
+            <param name="content" value="PlexOnDeckMovieContent"/>
+            <param name="id" value="312"/>
+            <param name="visibility" value="!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckMovie.1.Path))+String.IsEqual(Container(300).ListItem.Property(type),movie) + Skin.HasSetting(plexbmc)"/>
+            <param name="labelTitle" value="$INFO[ListItem.Label]"/>
+            <param name="labelSubTitle" value="$INFO[ListItem.Property(Rating),,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Property(Year),,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Property(Runtime),, $LOCALIZE[31297]]"/>
+            <param name="labelPosy" value="454"/>
+        </include>
+        <!--ALBUMS-->
+        <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="Widget">
+            <param name="title" value="$LOCALIZE[31961]"/>
+            <param name="ondown" value="212"/>
+            <param name="onup" value="312"/>
+            <param name="height" value="608"/>
+            <param name="gfxType" value="Square"/>
+            <param name="content" value="PlexRecentAlbumContent"/>
+            <param name="id" value="511"/>
+            <param name="visibility" value="!String.IsEmpty(Window(Home).Property(Plexbmc.LatestAlbum.1.Title))+String.IsEqual(Container(300).ListItem.Property(type),artist) + Skin.HasSetting(plexbmc)"/>
+            <param name="labelTitle" value="$INFO[ListItem.Label]"/>
+            <param name="labelSubTitle" value="$INFO[ListItem.Label2]"/>
+            <param name="labelPosy" value="372"/>
+        </include>
+        <!--CHANNELS-->
+        <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="Widget">
+            <param name="title" value="$LOCALIZE[31961]"/>
+            <param name="ondown" value="411"/>
+            <param name="onup" value="511"/>
+            <param name="height" value="608"/>
+            <param name="gfxType" value="Square"/>
+            <param name="content" value="PlexRecentChannelContent"/>
+            <param name="id" value="212"/>
+            <param name="visibility" value="!String.IsEmpty(Window.Property(Plexbmc.LatestChannel.1.Path))+Container(300).HasFocus(50) + Skin.HasSetting(plexbmc)"/>
+            <param name="labelTitle" value="$INFO[ListItem.Label]"/>
+            <param name="labelSubTitle" value="-"/>
+            <param name="labelPosy" value="372"/>
+        </include>
+        <!--EPISODES-->
+        <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="Widget">
+            <param name="title" value="$LOCALIZE[31961]"/>
+            <param name="height" value="690"/>
+            <param name="ondown" value="412"/>
+            <param name="onup" value="212"/>
+            <param name="gfxType" value="Poster"/>
+            <param name="content" value="PlexRecentEpisodeContent"/>
+            <param name="id" value="411"/>
+            <param name="visibility" value="!String.IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.1.Path))+String.IsEqual(Container(300).ListItem.Property(type),show) + Skin.HasSetting(plexbmc)"/>
+            <param name="labelTitle" value="$INFO[ListItem.Property(TVshowTitle)]"/>
+            <param name="labelSubTitle" value="$INFO[ListItem.Property(SeasonEpisode)]$INFO[ListItem.Property(Rating),[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Property(Runtime),[COLOR=SeparatorColor] › [/COLOR], $LOCALIZE[31297]]"/>
+            <param name="labelPosy" value="454"/>
+        </include>
+        <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="Widget">
+            <param name="title" value="$LOCALIZE[31011]"/>
+            <param name="height" value="690"/>
+            <param name="ondown" value="413"/>
+            <param name="onup" value="411"/>
+            <param name="gfxType" value="Poster"/>
+            <param name="content" value="PlexOnDeckEpisodeContent"/>
+            <param name="id" value="412"/>
+            <param name="visibility" value="!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.1.Path))+String.IsEqual(Container(300).ListItem.Property(type),show) + Skin.HasSetting(plexbmc)"/>
+            <param name="labelTitle" value="$INFO[ListItem.Property(TVshowTitle)]"/>
+            <param name="labelSubTitle" value="$INFO[ListItem.Property(SeasonEpisode)]$INFO[ListItem.Property(Rating),[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Property(Runtime),[COLOR=SeparatorColor] › [/COLOR], $LOCALIZE[31297]]"/>
+            <param name="labelPosy" value="454"/>
+        </include>
+        <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="Widget">
+            <param name="title" value="$LOCALIZE[31932]"/>
+            <param name="height" value="690"/>
+            <param name="ondown" value="700011"/>
+            <param name="onup" value="412"/>
+            <param name="gfxType" value="Poster"/>
+            <param name="content" value="PlexRecentlyViewedShowContent"/>
+            <param name="id" value="413"/>
+            <param name="visibility" value="!String.IsEmpty(Window(Home).Property(Plexbmc.RecentlyViewedShow.1.Path))+String.IsEqual(Container(300).ListItem.Property(type),show) + Skin.HasSetting(plexbmc)"/>
+            <param name="labelTitle" value="$INFO[ListItem.Label]"/>
+            <param name="labelSubTitle" value="$INFO[ListItem.Property(Rating),,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Property(Year),,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Property(Runtime),, $LOCALIZE[31297]]"/>
+            <param name="labelPosy" value="454"/>
+        </include>
+
+        <!-- -->
+        <!--CUSTOM WIDGETS-->
+        <!-- -->
+
+        <!--WIDGET 1-->
+        <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
+            <param name="title" value="$INFO[Container(300).ListItem.Property(widgetName)]"/>
+            <param name="height" value="690"/>
+            <param name="ondown" value="700012"/>
+            <param name="onup" value="300"/>
+            <param name="gfxType" value="Poster"/>
+            <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath)]"/>
+            <param name="id" value="700011"/>
+            <param name="visibility" value="[String.StartsWith(Container(300).ListItem.Property(widgetType),season)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType),actor)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType),director)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType),set)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType),video)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType),movie)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType),tvshow)|
+                    [String.StartsWith(Container(300).ListItem.Property(widgetType),musicvideo)+String.IsEqual(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]]"/>
+            <param name="labelTitle" value="$INFO[ListItem.TVShowTitle,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Label]"/>
+            <param name="labelSubTitle" value="$INFO[ListItem.Rating,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year]$INFO[ListItem.Duration,[COLOR=SeparatorColor] › [/COLOR], $LOCALIZE[31297]]"/>
+            <param name="labelPosy" value="454"/>
+            <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget)]"/>
+        </include>
+        <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
+            <param name="title" value="$INFO[Container(300).ListItem.Property(widgetName)]"/>
+            <param name="height" value="515"/>
+            <param name="ondown" value="700013"/>
+            <param name="onup" value="700011"/>
+            <param name="gfxType" value="Episode"/>
+            <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath)]"/>
+            <param name="id" value="700012"/>
+            <param name="visibility" value="[String.StartsWith(Container(300).ListItem.Property(widgetType),episode)|
+                    [String.StartsWith(Container(300).ListItem.Property(widgetType),musicvideo)+!String.IsEqual(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]]"/>
+            <param name="labelTitle" value="$INFO[ListItem.TVShowTitle,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Label]"/>
+            <param name="labelSubTitle" value="$INFO[ListItem.Rating,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration,, $LOCALIZE[31297]]"/>
+            <param name="labelPosy" value="279"/>
+            <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget)]"/>
+        </include>
+        <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
+            <param name="title" value="$INFO[Container(300).ListItem.Property(widgetName)]"/>
+            <param name="ondown" value="700014"/>
+            <param name="onup" value="700012"/>
+            <param name="height" value="608"/>
+            <param name="gfxType" value="Square"/>
+            <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath)]"/>
+            <param name="id" value="700013"/>
+            <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(widgetType),audio)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType),album)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType),song)"/>
+            <param name="labelTitle" value="$INFO[ListItem.Label]"/>
+            <param name="labelSubTitle" value="$INFO[ListItem.Artist]$INFO[ListItem.Rating,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration,[COLOR=SeparatorColor] › [/COLOR], $LOCALIZE[31297]]"/>
+            <param name="labelPosy" value="372"/>
+            <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget)]"/>
+        </include>
+        <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
+            <param name="title" value="$INFO[Container(300).ListItem.Property(widgetName)]"/>
+            <param name="ondown" value="700015"/>
+            <param name="onup" value="700013"/>
+            <param name="height" value="557"/>
+            <param name="gfxType" value="Channel"/>
+            <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath)]"/>
+            <param name="id" value="700014"/>
+            <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(widgetType),tv)|
+                    String.IsEqual(Container(300).ListItem.Property(widgetType),radio)"/>
+            <param name="labelTitle" value="$INFO[ListItem.Label]"/>
+            <param name="labelSubTitle" value="$INFO[ListItem.Label2,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration]"/>
+            <param name="labelPosy" value="321"/>
+            <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget)]"/>
+        </include>
+        <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
+            <param name="title" value="$INFO[Container(300).ListItem.Property(widgetName)]"/>
+            <param name="ondown" value="700021"/>
+            <param name="onup" value="700014"/>
+            <param name="height" value="608"/>
+            <param name="gfxType" value="Square"/>
+            <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath)]"/>
+            <param name="id" value="700015"/>
+            <param name="visibility" value="String.StartsWith(Container(300).ListItem.Property(widgetType),genre)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType),year)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType),playlist)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType),plugin)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType),studio)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType),tag)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType),countr)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType),role)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType),image)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType),artist)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType),file)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType),picture)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType),addon)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType),program)"/>
+            <param name="labelTitle" value="$INFO[ListItem.Label]"/>
+            <param name="labelSubTitle" value="$INFO[ListItem.Artist]$INFO[ListItem.Rating,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration,[COLOR=SeparatorColor] › [/COLOR], $LOCALIZE[31297]]"/>
+            <param name="labelPosy" value="372"/>
+            <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget)]"/>
+        </include>
+        <!--WIDGET 2-->
+        <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
+            <param name="title" value="$INFO[Container(300).ListItem.Property(widgetName.1)]"/>
+            <param name="ondown" value="700022"/>
+            <param name="onup" value="700015"/>
+            <param name="height" value="690"/>
+            <param name="gfxType" value="Poster"/>
+            <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.1)]"/>
+            <param name="id" value="700021"/>
+            <param name="visibility" value="String.StartsWith(Container(300).ListItem.Property(widgetType.1),season)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.1),actor)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.1),director)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.1),set)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.1),video)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.1),movie)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.1),tvshow)|
+                    [String.StartsWith(Container(300).ListItem.Property(widgetType.1),musicvideo)+String.IsEqual(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]"/>
+            <param name="labelTitle" value="$INFO[ListItem.TVShowTitle,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Label]"/>
+            <param name="labelSubTitle" value="$INFO[ListItem.Rating,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year]$INFO[ListItem.Duration,[COLOR=SeparatorColor] › [/COLOR], $LOCALIZE[31297]]"/>
+            <param name="labelPosy" value="454"/>
+            <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.1)]"/>
+        </include>
+        <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
+            <param name="title" value="$INFO[Container(300).ListItem.Property(widgetName.1)]"/>
+            <param name="ondown" value="700023"/>
+            <param name="onup" value="700021"/>
+            <param name="height" value="540"/>
+            <param name="gfxType" value="Episode"/>
+            <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.1)]"/>
+            <param name="id" value="700022"/>
+            <param name="visibility" value="String.StartsWith(Container(300).ListItem.Property(widgetType.1),episode)|
+                    [String.StartsWith(Container(300).ListItem.Property(widgetType.1),musicvideo)+!String.IsEqual(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]"/>
+            <param name="labelTitle" value="$INFO[ListItem.TVShowTitle,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Label]"/>
+            <param name="labelSubTitle" value="$INFO[ListItem.Rating,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration,, $LOCALIZE[31297]]"/>
+            <param name="labelPosy" value="279"/>
+            <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.1)]"/>
+        </include>
+        <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
+            <param name="title" value="$INFO[Container(300).ListItem.Property(widgetName.1)]"/>
+            <param name="ondown" value="700024"/>
+            <param name="onup" value="700022"/>
+            <param name="height" value="608"/>
+            <param name="gfxType" value="Square"/>
+            <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.1)]"/>
+            <param name="id" value="700023"/>
+            <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(widgetType.1),audio)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.1),album)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.1),song)"/>
+            <param name="labelTitle" value="$INFO[ListItem.Label]"/>
+            <param name="labelSubTitle" value="$INFO[ListItem.Artist]$INFO[ListItem.Rating,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration,[COLOR=SeparatorColor] › [/COLOR], $LOCALIZE[31297]]"/>
+            <param name="labelPosy" value="372"/>
+            <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.1)]"/>
+        </include>
+        <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
+            <param name="title" value="$INFO[Container(300).ListItem.Property(widgetName.1)]"/>
+            <param name="ondown" value="700025"/>
+            <param name="onup" value="700023"/>
+            <param name="height" value="540"/>
+            <param name="gfxType" value="Channel"/>
+            <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.1)]"/>
+            <param name="id" value="700024"/>
+            <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(widgetType.1),tv)|
+                    String.IsEqual(Container(300).ListItem.Property(widgetType.1),radio)"/>
+            <param name="labelTitle" value="$INFO[ListItem.Label]"/>
+            <param name="labelSubTitle" value="$INFO[ListItem.Label2,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration]"/>
+            <param name="labelPosy" value="321"/>
+            <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.1)]"/>
+        </include>
+        <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
+            <param name="title" value="$INFO[Container(300).ListItem.Property(widgetName.1)]"/>
+            <param name="ondown" value="700031"/>
+            <param name="onup" value="700024"/>
+            <param name="height" value="608"/>
+            <param name="gfxType" value="Square"/>
+            <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.1)]"/>
+            <param name="id" value="700025"/>
+            <param name="visibility" value="String.StartsWith(Container(300).ListItem.Property(widgetType.1),genre)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.1),year)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.1),playlist)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.1),plugin)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.1),studio)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.1),tag)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.1),countr)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.1),role)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.1),image)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.1),artist)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.1),file)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.1),picture)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.1),addon)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.1),program)"/>
+            <param name="labelTitle" value="$INFO[ListItem.Label]"/>
+            <param name="labelSubTitle" value="$INFO[ListItem.Artist]$INFO[ListItem.Rating,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration,[COLOR=SeparatorColor] › [/COLOR], $LOCALIZE[31297]]"/>
+            <param name="labelPosy" value="372"/>
+            <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.1)]"/>
+        </include>
+        <!--WIDGET 3-->
+        <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
+            <param name="title" value="$INFO[Container(300).ListItem.Property(widgetName.2)]"/>
+            <param name="ondown" value="700032"/>
+            <param name="onup" value="700025"/>
+            <param name="height" value="690"/>
+            <param name="gfxType" value="Poster"/>
+            <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.2)]"/>
+            <param name="id" value="700031"/>
+            <param name="visibility" value="String.StartsWith(Container(300).ListItem.Property(widgetType.2),season)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.2),actor)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.2),director)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.2),set)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.2),video)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.2),movie)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.2),tvshow)|
+                    [String.StartsWith(Container(300).ListItem.Property(widgetType.2),musicvideo)+String.IsEqual(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]"/>
+            <param name="labelTitle" value="$INFO[ListItem.TVShowTitle,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Label]"/>
+            <param name="labelSubTitle" value="$INFO[ListItem.Rating,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year]$INFO[ListItem.Duration,[COLOR=SeparatorColor] › [/COLOR], $LOCALIZE[31297]]"/>
+            <param name="labelPosy" value="454"/>
+            <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.2)]"/>
+        </include>
+        <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
+            <param name="title" value="$INFO[Container(300).ListItem.Property(widgetName.2)]"/>
+            <param name="ondown" value="700033"/>
+            <param name="onup" value="700031"/>
+            <param name="height" value="540"/>
+            <param name="gfxType" value="Episode"/>
+            <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.2)]"/>
+            <param name="id" value="700032"/>
+            <param name="visibility" value="String.StartsWith(Container(300).ListItem.Property(widgetType.2),episode)|
+                    [String.StartsWith(Container(300).ListItem.Property(widgetType.2),musicvideo)+!String.IsEqual(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]"/>
+            <param name="labelTitle" value="$INFO[ListItem.TVShowTitle,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Label]"/>
+            <param name="labelSubTitle" value="$INFO[ListItem.Rating,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration,, $LOCALIZE[31297]]"/>
+            <param name="labelPosy" value="279"/>
+            <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.2)]"/>
+        </include>
+        <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
+            <param name="title" value="$INFO[Container(300).ListItem.Property(widgetName.2)]"/>
+            <param name="ondown" value="700034"/>
+            <param name="onup" value="700032"/>
+            <param name="height" value="608"/>
+            <param name="gfxType" value="Square"/>
+            <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.2)]"/>
+            <param name="id" value="700033"/>
+            <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(widgetType.2),audio)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.2),album)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.2),song)"/>
+            <param name="labelTitle" value="$INFO[ListItem.Label]"/>
+            <param name="labelSubTitle" value="$INFO[ListItem.Artist]$INFO[ListItem.Rating,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration,[COLOR=SeparatorColor] › [/COLOR], $LOCALIZE[31297]]"/>
+            <param name="labelPosy" value="372"/>
+            <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.2)]"/>
+        </include>
+        <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
+            <param name="title" value="$INFO[Container(300).ListItem.Property(widgetName.2)]"/>
+            <param name="ondown" value="700035"/>
+            <param name="onup" value="700033"/>
+            <param name="height" value="540"/>
+            <param name="gfxType" value="Channel"/>
+            <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.2)]"/>
+            <param name="id" value="700034"/>
+            <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(widgetType.2),tv)|
+                    String.IsEqual(Container(300).ListItem.Property(widgetType.2),radio)"/>
+            <param name="labelTitle" value="$INFO[ListItem.Label]"/>
+            <param name="labelSubTitle" value="$INFO[ListItem.Label2,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration]"/>
+            <param name="labelPosy" value="321"/>
+            <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.2)]"/>
+        </include>
+        <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
+            <param name="title" value="$INFO[Container(300).ListItem.Property(widgetName.2)]"/>
+            <param name="ondown" value="700041"/>
+            <param name="onup" value="700034"/>
+            <param name="height" value="608"/>
+            <param name="gfxType" value="Square"/>
+            <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.2)]"/>
+            <param name="id" value="700035"/>
+            <param name="visibility" value="String.StartsWith(Container(300).ListItem.Property(widgetType.2),genre)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.2),year)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.2),playlist)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.2),plugin)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.2),studio)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.2),tag)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.2),countr)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.2),role)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.2),image)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.2),artist)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.2),file)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.2),picture)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.2),addon)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.2),program)"/>
+            <param name="labelTitle" value="$INFO[ListItem.Label]"/>
+            <param name="labelSubTitle" value="$INFO[ListItem.Artist]$INFO[ListItem.Rating,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration,[COLOR=SeparatorColor] › [/COLOR], $LOCALIZE[31297]]"/>
+            <param name="labelPosy" value="372"/>
+            <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.2)]"/>
+        </include>
+        <!--WIDGET 4-->
+        <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
+            <param name="title" value="$INFO[Container(300).ListItem.Property(widgetName.3)]"/>
+            <param name="ondown" value="700042"/>
+            <param name="onup" value="700035"/>
+            <param name="height" value="690"/>
+            <param name="gfxType" value="Poster"/>
+            <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.3)]"/>
+            <param name="id" value="700041"/>
+            <param name="visibility" value="String.StartsWith(Container(300).ListItem.Property(widgetType.3),season)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.3),actor)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.3),director)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.3),set)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.3),video)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.3),movie)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.3),tvshow)|
+                    [String.StartsWith(Container(300).ListItem.Property(widgetType.3),musicvideo)+String.IsEqual(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]"/>
+            <param name="labelTitle" value="$INFO[ListItem.TVShowTitle,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Label]"/>
+            <param name="labelSubTitle" value="$INFO[ListItem.Rating,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year]$INFO[ListItem.Duration,[COLOR=SeparatorColor] › [/COLOR], $LOCALIZE[31297]]"/>
+            <param name="labelPosy" value="454"/>
+            <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.3)]"/>
+        </include>
+        <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
+            <param name="title" value="$INFO[Container(300).ListItem.Property(widgetName.3)]"/>
+            <param name="ondown" value="700043"/>
+            <param name="onup" value="700041"/>
+            <param name="height" value="540"/>
+            <param name="gfxType" value="Episode"/>
+            <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.3)]"/>
+            <param name="id" value="700042"/>
+            <param name="visibility" value="String.StartsWith(Container(300).ListItem.Property(widgetType.3),episode)|
+                    [String.StartsWith(Container(300).ListItem.Property(widgetType.3),musicvideo)+!String.IsEqual(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]"/>
+            <param name="labelTitle" value="$INFO[ListItem.TVShowTitle,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Label]"/>
+            <param name="labelSubTitle" value="$INFO[ListItem.Rating,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration,, $LOCALIZE[31297]]"/>
+            <param name="labelPosy" value="279"/>
+            <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.3)]"/>
+        </include>
+        <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
+            <param name="title" value="$INFO[Container(300).ListItem.Property(widgetName.3)]"/>
+            <param name="ondown" value="700044"/>
+            <param name="onup" value="700042"/>
+            <param name="height" value="608"/>
+            <param name="gfxType" value="Square"/>
+            <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.3)]"/>
+            <param name="id" value="700043"/>
+            <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(widgetType.3),audio)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.3),album)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.3),song)"/>
+            <param name="labelTitle" value="$INFO[ListItem.Label]"/>
+            <param name="labelSubTitle" value="$INFO[ListItem.Artist]$INFO[ListItem.Rating,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration,[COLOR=SeparatorColor] › [/COLOR], $LOCALIZE[31297]]"/>
+            <param name="labelPosy" value="372"/>
+            <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.3)]"/>
+        </include>
+        <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
+            <param name="title" value="$INFO[Container(300).ListItem.Property(widgetName.3)]"/>
+            <param name="ondown" value="700045"/>
+            <param name="onup" value="700043"/>
+            <param name="height" value="540"/>
+            <param name="gfxType" value="Channel"/>
+            <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.3)]"/>
+            <param name="id" value="700044"/>
+            <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(widgetType.3),tv)|
+                    String.IsEqual(Container(300).ListItem.Property(widgetType.3),radio)"/>
+            <param name="labelTitle" value="$INFO[ListItem.Label]"/>
+            <param name="labelSubTitle" value="$INFO[ListItem.Label2,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration]"/>
+            <param name="labelPosy" value="321"/>
+            <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.3)]"/>
+        </include>
+        <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
+            <param name="title" value="$INFO[Container(300).ListItem.Property(widgetName.3)]"/>
+            <param name="ondown" value="700051"/>
+            <param name="onup" value="700044"/>
+            <param name="height" value="608"/>
+            <param name="gfxType" value="Square"/>
+            <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.3)]"/>
+            <param name="id" value="700045"/>
+            <param name="visibility" value="String.StartsWith(Container(300).ListItem.Property(widgetType.3),genre)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.3),year)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.3),playlist)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.3),plugin)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.3),studio)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.3),tag)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.3),countr)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.3),role)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.3),image)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.3),artist)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.3),file)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.3),picture)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.3),addon)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.3),program)"/>
+            <param name="labelTitle" value="$INFO[ListItem.Label]"/>
+            <param name="labelSubTitle" value="$INFO[ListItem.Artist]$INFO[ListItem.Rating,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration,[COLOR=SeparatorColor] › [/COLOR], $LOCALIZE[31297]]"/>
+            <param name="labelPosy" value="372"/>
+            <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.3)]"/>
+        </include>
+        <!--WIDGET 5-->
+        <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
+            <param name="title" value="$INFO[Container(300).ListItem.Property(widgetName.4)]"/>
+            <param name="ondown" value="700052"/>
+            <param name="onup" value="700045"/>
+            <param name="height" value="690"/>
+            <param name="gfxType" value="Poster"/>
+            <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.4)]"/>
+            <param name="id" value="700051"/>
+            <param name="visibility" value="String.StartsWith(Container(300).ListItem.Property(widgetType.4),season)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.4),actor)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.4),director)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.4),set)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.4),video)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.4),movie)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.4),tvshow)|
+                    [String.StartsWith(Container(300).ListItem.Property(widgetType.4),musicvideo)+String.IsEqual(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]"/>
+            <param name="labelTitle" value="$INFO[ListItem.TVShowTitle,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Label]"/>
+            <param name="labelSubTitle" value="$INFO[ListItem.Rating,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year]$INFO[ListItem.Duration,[COLOR=SeparatorColor] › [/COLOR], $LOCALIZE[31297]]"/>
+            <param name="labelPosy" value="454"/>
+            <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.4)]"/>
+        </include>
+        <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
+            <param name="title" value="$INFO[Container(300).ListItem.Property(widgetName.4)]"/>
+            <param name="ondown" value="700053"/>
+            <param name="onup" value="700051"/>
+            <param name="height" value="540"/>
+            <param name="gfxType" value="Episode"/>
+            <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.4)]"/>
+            <param name="id" value="700052"/>
+            <param name="visibility" value="String.StartsWith(Container(300).ListItem.Property(widgetType.4),episode)|
+                    [String.StartsWith(Container(300).ListItem.Property(widgetType.4),musicvideo)+!String.IsEqual(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]"/>
+            <param name="labelTitle" value="$INFO[ListItem.TVShowTitle,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Label]"/>
+            <param name="labelSubTitle" value="$INFO[ListItem.Rating,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration,, $LOCALIZE[31297]]"/>
+            <param name="labelPosy" value="279"/>
+            <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.4)]"/>
+        </include>
+        <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
+            <param name="title" value="$INFO[Container(300).ListItem.Property(widgetName.4)]"/>
+            <param name="ondown" value="700054"/>
+            <param name="onup" value="700052"/>
+            <param name="height" value="608"/>
+            <param name="gfxType" value="Square"/>
+            <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.4)]"/>
+            <param name="id" value="700053"/>
+            <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(widgetType.4),audio)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.4),album)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.4),song)"/>
+            <param name="labelTitle" value="$INFO[Container(700053).ListItem.Label]"/>
+            <param name="labelTitle" value="$INFO[ListItem.Label]"/>
+            <param name="labelSubTitle" value="$INFO[ListItem.Rating,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration,, $LOCALIZE[31297]]"/>
+            <param name="labelPosy" value="372"/>
+            <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.4)]"/>
+        </include>
+        <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
+            <param name="title" value="$INFO[Container(300).ListItem.Property(widgetName.4)]"/>
+            <param name="ondown" value="700055"/>
+            <param name="onup" value="700053"/>
+            <param name="height" value="540"/>
+            <param name="gfxType" value="Channel"/>
+            <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.4)]"/>
+            <param name="id" value="700054"/>
+            <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(widgetType.4),tv)|
+                    String.IsEqual(Container(300).ListItem.Property(widgetType.4),radio)"/>
+            <param name="labelTitle" value="$INFO[ListItem.Label]"/>
+            <param name="labelSubTitle" value="$INFO[ListItem.Label2,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration]"/>
+            <param name="labelPosy" value="321"/>
+            <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.4)]"/>
+        </include>
+        <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
+            <param name="title" value="$INFO[Container(300).ListItem.Property(widgetName.4)]"/>
+            <param name="ondown" value="700011"/>
+            <param name="onup" value="700054"/>
+            <param name="height" value="608"/>
+            <param name="gfxType" value="Square"/>
+            <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.4)]"/>
+            <param name="id" value="700055"/>
+            <param name="visibility" value="String.StartsWith(Container(300).ListItem.Property(widgetType.4),genre)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.4),year)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.4),playlist)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.4),plugin)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.4),studio)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.4),tag)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.4),countr)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.4),role)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.4),image)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.4),artist)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.4),file)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.4),picture)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.4),addon)|
+                    String.StartsWith(Container(300).ListItem.Property(widgetType.4),program)"/>
+            <param name="labelTitle" value="$INFO[ListItem.Label]"/>
+            <param name="labelSubTitle" value="$INFO[ListItem.Artist]$INFO[ListItem.Rating,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration,[COLOR=SeparatorColor] › [/COLOR], $LOCALIZE[31297]]"/>
+            <param name="labelPosy" value="372"/>
+            <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.4)]"/>
+        </include>
+    </include>
+</includes>
