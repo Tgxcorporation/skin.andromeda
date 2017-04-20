@@ -137,7 +137,7 @@
             <width>1920</width>
             <height>187</height>
             <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-            <texture border="10">common/overlay_topbar_gradient2.png</texture>
+            <texture border="10">common/overlay_topbar_gradient.png</texture>
         </control>
         <control type="button" id="8998">
             <include>TopBarVisibleFadeEffect</include>
