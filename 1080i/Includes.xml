@@ -361,7 +361,7 @@
     <include name="Time">
         <control type="label">
             <include>HeaderVisibleFadeEffect</include>
-            <posx>TextMarginR</posx>
+            <posx>1850</posx>
             <posy>23</posy>
             <height>50</height>
             <width>500</width>
@@ -373,7 +373,7 @@
         </control>
         <control type="label">
             <include>HeaderVisibleFadeEffect</include>
-            <posx>TextMarginR</posx>
+            <posx>1850</posx>
             <posy>86</posy>
             <width>500</width>
             <align>right</align>
