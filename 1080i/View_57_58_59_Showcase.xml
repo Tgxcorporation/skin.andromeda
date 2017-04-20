@@ -43,7 +43,7 @@
             <control type="label">
                 <posx>70</posx>
                 <posy>227</posy>
-                <height>50</height>
+                <height>40</height>
                 <width>1410</width>
                 <font>FacadeListSubTitleFont</font>
                 <include>TextColor_MainColor</include>

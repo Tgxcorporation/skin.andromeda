@@ -39,9 +39,9 @@
         <control type="image">
             <include>TopBarOSDVisibleFadeEffectOverlay</include>
             <posx>0</posx>
-            <bottom>0</bottom>
+            <top>997</top>
             <width>1920</width>
-            <height>83</height>
+            <height>283</height>
             <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
             <texture border="2">common/overlay_player.png</texture>
         </control>

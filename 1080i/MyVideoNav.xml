@@ -72,7 +72,6 @@
                     <visible>Control.IsEnabled(19)</visible>
                     <visible>Container.CanFilter + !Container.CanFilterAdvanced</visible>
                     <description>Filter</description>
-                    <textwidth>620</textwidth>
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[587]</label>
                 </control>

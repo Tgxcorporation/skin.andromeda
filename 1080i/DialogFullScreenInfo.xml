@@ -67,16 +67,8 @@
                         <aspectratio aligny="top">keep</aspectratio>
                         <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                         <texture>defaultVideoBig.png</texture>
-                    </control>
-                    <control type="image">
-                        <visible>String.IsEmpty(VideoPlayer.Cover)</visible>
-                        <posx>70</posx>
-                        <posy>10</posy>
-                        <width>321</width>
-                        <height>321</height>
-                        <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-                        <texture border="3,3,3,3">common/frame_focus.png</texture>
-                        <aspectratio>stretch</aspectratio>
+                        <bordertexture border="2" colordiffuse="$VAR[Picked.Theme.Color]">common/frame_focus.png</bordertexture>
+                        <bordersize>2</bordersize>
                     </control>
                     <control type="image">
                         <animation effect="slide" time="0" start="0,0" end="50,0" condition="!Skin.HasSetting(plexbmc)+Skin.HasSetting(EnableCdArt)">Conditional</animation>
@@ -87,17 +79,8 @@
                         <height>321</height>
                         <aspectratio aligny="top">scale</aspectratio>
                         <texture background="true">$INFO[VideoPlayer.Cover]</texture>
-                    </control>
-                    <control type="image">
-                        <animation effect="slide" time="0" start="0,0" end="50,0" condition="!Skin.HasSetting(plexbmc)+Skin.HasSetting(EnableCdArt)">Conditional</animation>
-                        <visible>VideoPlayer.Content(movies)|VideoPlayer.Content(musicvideos)</visible>
-                        <posx>124</posx>
-                        <posy>10</posy>
-                        <width>212</width>
-                        <height>321</height>
-                        <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-                        <texture border="3,3,3,3">common/frame_focus.png</texture>
-                        <aspectratio>stretch</aspectratio>
+                        <bordertexture border="2" colordiffuse="$VAR[Picked.Theme.Color]">common/frame_focus.png</bordertexture>
+                        <bordersize>2</bordersize>
                     </control>
                     <control type="image">
                         <visible>VideoPlayer.Content(episodes)</visible>
@@ -107,16 +90,8 @@
                         <height>180</height>
                         <aspectratio>scale</aspectratio>
                         <texture background="true">$INFO[VideoPlayer.Cover]</texture>
-                    </control>
-                    <control type="image">
-                        <visible>VideoPlayer.Content(episodes)</visible>
-                        <posx>70</posx>
-                        <posy>10</posy>
-                        <width>321</width>
-                        <height>180</height>
-                        <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-                        <texture border="3,3,3,3">common/frame_focus.png</texture>
-                        <aspectratio>stretch</aspectratio>
+                        <bordertexture border="2" colordiffuse="$VAR[Picked.Theme.Color]">common/frame_focus.png</bordertexture>
+                        <bordersize>2</bordersize>
                     </control>
                     <control type="image">
                         <visible>VideoPlayer.Content(livetv)</visible>
@@ -126,16 +101,8 @@
                         <height>241</height>
                         <aspectratio>scale</aspectratio>
                         <texture background="true">$INFO[VideoPlayer.Cover]</texture>
-                    </control>
-                    <control type="image">
-                        <visible>VideoPlayer.Content(livetv)</visible>
-                        <posx>70</posx>
-                        <posy>10</posy>
-                        <width>321</width>
-                        <height>241</height>
-                        <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-                        <texture border="3,3,3,3">common/frame_focus.png</texture>
-                        <aspectratio>stretch</aspectratio>
+                        <bordertexture border="2" colordiffuse="$VAR[Picked.Theme.Color]">common/frame_focus.png</bordertexture>
+                        <bordersize>2</bordersize>
                     </control>
                     <control type="image">
                         <visible>VideoPlayer.Content(files)</visible>
@@ -143,18 +110,10 @@
                         <posy>10</posy>
                         <width>321</width>
                         <height>321</height>
-                        <aspectratio>scale</aspectratio>
+                        <aspectratio aligny="top">keep</aspectratio>
                         <texture background="true">$INFO[VideoPlayer.Cover]</texture>
-                    </control>
-                    <control type="image">
-                        <visible>VideoPlayer.Content(files)</visible>
-                        <posx>70</posx>
-                        <posy>10</posy>
-                        <width>321</width>
-                        <height>321</height>
-                        <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-                        <texture border="3,3,3,3">common/frame_focus.png</texture>
-                        <aspectratio>stretch</aspectratio>
+                        <bordertexture border="2" colordiffuse="$VAR[Picked.Theme.Color]">common/frame_focus.png</bordertexture>
+                        <bordersize>2</bordersize>
                     </control>
                 </control>
                 <control type="label">
