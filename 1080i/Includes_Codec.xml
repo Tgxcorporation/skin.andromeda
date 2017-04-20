@@ -163,7 +163,7 @@
         <control type="group">
             <visible>!String.IsEqual(ListItem.Label,..)</visible>
             <visible>![Container.content(tvshows)|Container.content(seasons)|Container.content(addons)]</visible>
-            <posx>$PARAM[x]</posx>
+            <right>$PARAM[x]</right>
             <posy>$PARAM[y]</posy>
             <control type="label">
                 <right>0</right>

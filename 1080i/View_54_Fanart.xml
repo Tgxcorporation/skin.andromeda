@@ -173,7 +173,7 @@
                         <label>$VAR[Plots]</label>
                     </control>
                     <include content="CodecsRight">
-                        <param name="x" value="1480"/>
+                        <param name="x" value="-60"/>
                         <param name="y" value="125"/>
                         <param name="width" value="240"/>
                     </include>

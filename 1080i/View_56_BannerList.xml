@@ -96,6 +96,7 @@
             <visible>Control.IsVisible(56)</visible>
             <include>Facade_Fade</include>
             <control type="list" id="56">
+                <visible>[Container.Content(movies)|Container.Content(sets)|Container.Content(tvshows)]</visible>
                 <viewtype label="31094">Banner List</viewtype>
                 <posx>0</posx>
                 <posy>0</posy>
