@@ -33,17 +33,17 @@
             <bottom>0</bottom>
             <width>1920</width>
             <height>83</height>
-            <colordiffuse>bbffffff</colordiffuse>
+            <colordiffuse>99ffffff</colordiffuse>
             <texture border="1">common/BlackDot.png</texture>
         </control>
         <control type="image">
             <include>TopBarOSDVisibleFadeEffectOverlay</include>
             <posx>0</posx>
-            <top>997</top>
+            <top>995</top>
             <width>1920</width>
-            <height>283</height>
+            <height>190</height>
             <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-            <texture border="2" flipY="true">common/overlay_topbar_gradient.png</texture>
+            <texture border="2">common/overlay_dialog_gradient.png</texture>
         </control>
         <control type="image">
             <include>TopBarOSDVisibleFadeEffectOverlay</include>
