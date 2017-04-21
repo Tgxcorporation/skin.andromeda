@@ -43,7 +43,7 @@
             <width>1920</width>
             <height>283</height>
             <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-            <texture border="2">common/overlay_player.png</texture>
+            <texture border="2" flipY="true">common/overlay_topbar_gradient.png</texture>
         </control>
         <control type="image">
             <include>TopBarOSDVisibleFadeEffectOverlay</include>

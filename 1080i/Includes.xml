@@ -206,6 +206,7 @@
             <onleft>9900</onleft>
             <onright>9900</onright>
             <onup>9901</onup>
+            <ondown condition="Window.IsActive(DialogFavourites.xml)">450</ondown>
             <ondown condition="Window.isactive(CustomStartupWindow.xml)">9001</ondown>
             <ondown condition="window.isactive(FileManager.xml)">20</ondown>
             <ondown condition="Window.IsActive(DialogMediaSource.xml)|Window.IsActive(FileBrowser.xml)">9001</ondown>
@@ -213,7 +214,6 @@
             <ondown condition="Window.IsActive(DialogContentSettings.xml)">21</ondown>
             <ondown condition="Window.IsActive(SettingsCategory.xml)">3</ondown>
             <ondown condition="Window.IsActive(DialogAddonSettings.xml)">9</ondown>
-            <ondown condition="Window.IsActive(DialogFavourites.xml)">450</ondown>
             <ondown condition="Window.IsActive(script-XBMC_Lyrics-main.xml)">110</ondown>
             <ondown>50</ondown>
             <align>center</align>
