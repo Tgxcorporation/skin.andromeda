@@ -17,11 +17,6 @@
                         <param name="width" value="360"/>
                         <param name="height" value="360"/>
                         <param name="texture" value="$VAR[VideoCdArt]"/>
-                        <param name="visibleShadow" value="true"/>
-                        <param name="xShadow" value="20"/>
-                        <param name="yShadow" value="510"/>
-                        <param name="widthShadow" value="340"/>
-                        <param name="flipyShadow" value="true"/>
                     </include>
                     <include content="ThumbsImages">
                         <param name="visible" value="true"/>
@@ -209,11 +204,6 @@
                         <param name="width" value="475"/>
                         <param name="height" value="475"/>
                         <param name="texture" value="$VAR[MusicCdArt]"/>
-                        <param name="visibleShadow" value="true"/>
-                        <param name="xShadow" value="0"/>
-                        <param name="yShadow" value="380"/>
-                        <param name="widthShadow" value="380"/>
-                        <param name="flipyShadow" value="true"/>
                     </include>
                     <include content="ThumbsImages">
                         <param name="visible" value="true"/>

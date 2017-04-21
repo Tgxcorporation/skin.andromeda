@@ -91,11 +91,6 @@
                     <param name="width" value="320"/>
                     <param name="height" value="320"/>
                     <param name="texture" value="$VAR[VideoCdArt]"/>
-                    <param name="visibleShadow" value="true"/>
-                    <param name="xShadow" value="20"/>
-                    <param name="yShadow" value="510"/>
-                    <param name="widthShadow" value="340"/>
-                    <param name="flipyShadow" value="true"/>
                 </include>
                 <include content="ThumbsImages">
                     <param name="visible" value="true"/>

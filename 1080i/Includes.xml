@@ -151,7 +151,7 @@
             <texturenofocus>-</texturenofocus>
             <texturefocus>-</texturefocus>
             <visible>true</visible>
-            <!--<onfocus>SetFocus(9900)</onfocus>-->
+            <onfocus>SetFocus(9900)</onfocus>
         </control>
         <control type="grouplist" id="9901">
             <include>TopBarVisibleFadeEffect</include>
@@ -164,7 +164,7 @@
             <orientation>horizontal</orientation>
             <onleft>9901</onleft>
             <onright>9901</onright>
-            <onup>9001</onup>
+            <onup>505050</onup>
             <ondown>9900</ondown>
             <align>center</align>
             <control type="button" id="1628">

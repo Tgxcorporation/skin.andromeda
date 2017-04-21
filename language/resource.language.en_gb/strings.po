@@ -394,6 +394,10 @@ msgctxt "#31097"
 msgid "Fullscreen"
 msgstr ""
 
+msgctxt "#31098"
+msgid "Strip"
+msgstr ""
+
 #empty strings from id 31097 to 31109
 
 msgctxt "#31110"
