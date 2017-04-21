@@ -25,7 +25,10 @@
         [Container.content(episodes)]
     </expression>
     <expression name="ContentIsChannel">
-        [Window.IsActive(MyPVRChannels.xml)]
+        [Window.IsActive(MyPVRChannels.xml)|
+        Window.IsActive(MyPVRTimers.xml)|
+        Window.IsActive(MyPVRRecordings.xml)|
+        Window.IsActive(MyPVRSearch.xml)]
     </expression>
     <expression name="ContentIsSquare">
         ![Container.content(actors) |
@@ -34,6 +37,9 @@
         container.content(TVshows) |
         container.content(seasons) |
         Window.IsActive(MyPVRChannels.xml) |
+        Window.IsActive(MyPVRTimers.xml) |
+        Window.IsActive(MyPVRRecordings.xml) |
+        Window.IsActive(MyPVRSearch.xml) |
         container.content(episodes) |
         Container.Content(sets)]
     </expression>

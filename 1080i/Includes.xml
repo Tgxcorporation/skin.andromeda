@@ -133,11 +133,11 @@
         <control type="image">
             <include>TopBarVisibleFadeEffectOverlay</include>
             <posx>0</posx>
-            <posy>0</posy>
+            <posy>-200</posy>
             <width>1920</width>
-            <height>187</height>
+            <height>387</height>
             <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-            <texture border="10">common/overlay_topbar_gradient.png</texture>
+            <texture border="3">common/overlay_topbar_gradient.png</texture>
         </control>
         <control type="button" id="8998">
             <include>TopBarVisibleFadeEffect</include>

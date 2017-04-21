@@ -91,7 +91,7 @@
     <include name="Codecs">
         <control type="group">
             <visible>!String.IsEqual(ListItem.Label,..)</visible>
-            <visible>![Container.content(tvshows)|Container.content(seasons)|Container.content(addons)]</visible>
+            <visible>[Container.content(movies)|Container.content(episodes)|Container.content(musicvideos)]</visible>
             <posx>$PARAM[x]</posx>
             <posy>$PARAM[y]</posy>
             <control type="label">

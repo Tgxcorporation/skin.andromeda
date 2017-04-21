@@ -92,6 +92,10 @@
         <value condition="Window.IsActive(Settings.xml) | Window.IsActive(SettingsCategory.xml)">$LOCALIZE[5]</value>
         <value condition="Window.IsActive(MyPVRChannels.xml) + String.IsEmpty(Window.Property(IsRadio))">$LOCALIZE[19023]</value>
         <value condition="Window.IsActive(MyPVRChannels.xml) + !String.IsEmpty(Window.Property(IsRadio))">$LOCALIZE[19024]</value>
+        <value condition="Window.IsActive(MyPVRRecordings.xml)">$LOCALIZE[19163]</value>
+        <value condition="Window.IsActive(MyPVRSearch.xml)">$LOCALIZE[137]</value>
+        <value condition="Window.isactive(RadioTimers) | Window.isactive(TVTimers)">$LOCALIZE[19040]</value>
+        <value condition="Window.isactive(RadioTimerRules) | Window.isactive(TVTimerRules)">$LOCALIZE[19138]</value>
         <value condition="Window.IsActive(CustomAddons.xml)">$LOCALIZE[31291]</value>
         <value condition="Window.IsActive(EventLog.xml)">$LOCALIZE[14111]</value>
         <value condition="Window.IsActive(MyPlaylist.xml)">$LOCALIZE[136]</value>

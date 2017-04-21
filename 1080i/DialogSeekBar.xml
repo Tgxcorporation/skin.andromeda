@@ -30,18 +30,9 @@
         <control type="image">
             <include>TopBarOSDVisibleFadeEffectOverlay</include>
             <posx>0</posx>
-            <bottom>0</bottom>
-            <width>1920</width>
-            <height>83</height>
-            <colordiffuse>99ffffff</colordiffuse>
-            <texture border="1">common/BlackDot.png</texture>
-        </control>
-        <control type="image">
-            <include>TopBarOSDVisibleFadeEffectOverlay</include>
-            <posx>0</posx>
             <top>995</top>
             <width>1920</width>
-            <height>190</height>
+            <height>290</height>
             <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
             <texture border="2">common/overlay_dialog_gradient.png</texture>
         </control>
