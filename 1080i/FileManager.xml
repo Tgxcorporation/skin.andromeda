@@ -7,7 +7,6 @@
         <include>OverlayFull</include>
         <control type="group" id="505052">
             <include>FacadeFocusAnimation</include>
-            <include condition="Skin.HasSetting(plexbmc)">PlexbmcFixTrick</include>
             <include>Header</include>
             <include>FacadeOverlay</include>
             <control type="group">

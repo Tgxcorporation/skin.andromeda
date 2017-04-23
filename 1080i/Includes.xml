@@ -1302,7 +1302,8 @@
             <texturenofocus>-</texturenofocus>
             <texturefocus>-</texturefocus>
             <visible>true</visible>
-            <onfocus>back</onfocus>
+            <onclick>back</onclick>
+            <!--<onfocus>back</onfocus>-->
         </control>
     </include>
     <include name="Stars">

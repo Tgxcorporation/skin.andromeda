@@ -124,408 +124,372 @@
         </control>
     </include>
     <include name="OSD_Channels_BottomScreen">
+        <include>WindowClosingButton</include>
         <control type="group">
-            <posy>340</posy>
+            <posy>550</posy>
             <control type="image">
+                <include>OverlayTransparency</include>
                 <posx>0</posx>
-                <posy>140</posy>
+                <posy>0</posy>
                 <width>1920</width>
-                <height>1080</height>
-                <!--<include>DialogTransparency</include>-->
+                <height>530</height>
                 <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-                <texture border="50">common/background_menu.png</texture>
-            </control>
-            <include content="WindowClosingButton">
-                <param name="id" value="99010"/>
-                <param name="x" value="1870"/>
-                <param name="y" value="140"/>
-                <param name="onleft" value="6060"/>
-            </include>
-            <control type="image">
-                <posx>1010r</posx>
-                <posy>190</posy>
-                <width>480</width>
-                <height>900</height>
-                <texture border="1">common/background_strip_horizontal_right.png</texture>
+                <texture>common/overlay.png</texture>
             </control>
             <control type="image">
-                <posx>530r</posx>
-                <posy>190</posy>
-                <width>480</width>
-                <height>900</height>
-                <texture border="1">common/background_strip_horizontal_right.png</texture>
+                <include>OverlayTransparency</include>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>1920</width>
+                <height>530</height>
+                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                <texture border="10">common/overlay_dialog_gradient.png</texture>
             </control>
-            <control type="group">
-                <posx>50</posx>
-                <posy>240</posy>
-                <control type="label">
-                    <posx>TextMargin</posx>
-                    <posy>0</posy>
-                    <width>760</width>
-                    <height>50</height>
-                    <font>InfoTitleFont</font>
-                    <include>TextColor_MainColor</include>
-                    <scroll>true</scroll>
-                    <label>$INFO[VideoPlayer.ChannelGroup]</label>
-                </control>
-                <control type="label">
-                    <posx>TextMargin</posx>
-                    <posy>50</posy>
-                    <width>760</width>
-                    <height>35</height>
-                    <font>InfoTitleSubFont</font>
-                    <include>TextColor_MidColor</include>
-                    <label>$INFO[System.Time] - $INFO[Container(11).NumItems,, $LOCALIZE[31025]]</label>
-                </control>
-                <control type="list" id="11">
-                    <posx>0</posx>
-                    <posy>100</posy>
-                    <width>860</width>
-                    <height>350</height>
-                    <!-- <onleft>61</onleft> -->
-                    <onleft>PreviousChannelGroup</onleft>
-                    <onright>6061</onright>
-                    <onup>11</onup>
-                    <ondown>11</ondown>
-                    <pagecontrol>6061</pagecontrol>
-                    <itemlayout height="50" width="860">
-                        <include content="ProgressBar">
-                            <param name="id" value="0"/>
-                            <param name="visible" value="Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)"/>
-                            <param name="x" value="0"/>
-                            <param name="y" value="0"/>
-                            <param name="width" value="860"/>
-                            <param name="height" value="49"/>
-                            <param name="texturebg" value="common/osd_progress_dummy.png"/>
-                            <param name="gfx" value="OSD/osd_progress.png"/>
-                            <param name="border" value="1,1,1,1"/>
-                            <param name="info" value="ListItem.Progress"/>
+            <control type="image">
+                <include>TopBarOSDVisibleFadeEffectOverlay</include>
+                <posx>0</posx>
+                <posy>-1</posy>
+                <width>1920</width>
+                <height>2</height>
+                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                <texture border="2,0,2,0">common/line_white_horizontal.png</texture>
+            </control>
+            <control type="label">
+                <posx>TextMargin</posx>
+                <posy>-70</posy>
+                <width>1780</width>
+                <height>50</height>
+                <font>InfoTitleFont</font>
+                <include>TextColor_MainColor</include>
+                <scroll>true</scroll>
+                <label>$INFO[VideoPlayer.ChannelGroup]</label>
+            </control>
+            <control type="label">
+                <right>TextMargin</right>
+                <posy>-70</posy>
+                <width>1780</width>
+                <height>50</height>
+                <font>InfoTitleFont</font>
+                <include>TextColor_MainColor</include>
+                <align>right</align>
+                <scroll>true</scroll>
+                <label>$INFO[System.Time]</label>
+            </control>
+            <control type="list" id="11">
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>1920</width>
+                <height>530</height>
+                <!-- <onleft>61</onleft> -->
+                <onleft>PreviousChannelGroup</onleft>
+                <onright>6061</onright>
+                <onup>11</onup>
+                <ondown>11</ondown>
+                <pagecontrol>6061</pagecontrol>
+                <itemlayout height="120" width="1920">
+                    <include content="ThumbsImages">
+                        <param name="visible" value="true"/>
+                        <param name="x" value="70"/>
+                        <param name="y" value="10"/>
+                        <param name="width" value="146"/>
+                        <param name="height" value="110"/>
+                        <param name="aspectratio" value="scale"/>
+                        <param name="align" value="center"/>
+                        <param name="aligny" value="center"/>
+                        <param name="flipy" value="false"/>
+                        <param name="texturediffuse" value="ThumbsUnfocusedColor"/>
+                        <param name="borderdiffuse" value="BorderUnfocusedColor"/>
+                    </include>
+                    <include content="WatchedRecOverlay">
+                        <param name="x" value="169"/>
+                        <param name="y" value="6"/>
+                        <param name="width" value="50"/>
+                        <param name="height" value="50"/>
+                        <param name="color" value="Alternate"/>
+                    </include>
+                    <include content="ProgressBar">
+                        <param name="id" value="0"/>
+                        <param name="visible" value="Integer.IsGreater(ListItem.Progress,0)"/>
+                        <param name="x" value="222"/>
+                        <param name="y" value="11"/>
+                        <param name="width" value="104"/>
+                        <param name="info" value="ListItem.Progress"/>
+                        <param name="endRotation" value="-90"/>
+                        <param name="centerRotation" value="222,11"/>
+                        <param name="visiblefocus" value="false"/>
+                        <param name="direction" value="vertical"/>
+                    </include>
+                    <control type="label">
+                        <posx>285</posx>
+                        <posy>18</posy>
+                        <width>1565</width>
+                        <font>FacadeListTitleFont</font>
+                        <textcolor>NoFocusedColor</textcolor>
+                        <label>$VAR[DetailsTitle]</label>
+                    </control>
+                    <control type="label">
+                        <posx>285</posx>
+                        <posy>68</posy>
+                        <width>1565</width>
+                        <font>FacadeListSubTitleFont</font>
+                        <textcolor>NoFocusedColor</textcolor>
+                        <label>$VAR[DetailsRow1]$VAR[DetailsRow2,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow3,[COLOR=SeparatorColor] › [/COLOR]]</label>
+                    </control>
+                </itemlayout>
+                <focusedlayout height="120" width="1920">
+                    <control type="group">
+                        <include>ListFocusAnimation</include>
+                        <include content="ThumbsImages">
+                            <param name="visible" value="true"/>
+                            <param name="x" value="70"/>
+                            <param name="y" value="10"/>
+                            <param name="width" value="146"/>
+                            <param name="height" value="110"/>
+                            <param name="aspectratio" value="scale"/>
+                            <param name="align" value="center"/>
+                            <param name="aligny" value="center"/>
+                            <param name="flipy" value="false"/>
+                            <param name="texturediffuse" value="ThumbsFocusedColor"/>
+                            <param name="borderdiffuse" value="$VAR[Picked.Theme.Color]"/>
                         </include>
-                        <control type="label">
-                            <posx>TextMargin</posx>
-                            <height>50</height>
-                            <width>760</width>
-                            <font>FacadeListMainFont</font>
-                            <textcolor>NoFocusedColor</textcolor>
-                            <label>$VAR[UnfocusedTitle]</label>
-                        </control>
                         <include content="WatchedRecOverlay">
-                            <param name="x" value="0"/>
-                            <param name="y" value="2"/>
+                            <param name="x" value="169"/>
+                            <param name="y" value="6"/>
                             <param name="width" value="50"/>
                             <param name="height" value="50"/>
-                            <param name="transparency" value="50"/>
+                            <param name="color" value="Main"/>
                         </include>
-                    </itemlayout>
-                    <focusedlayout height="50" width="860">
-                        <control type="group">
-                            <include>ListFocusAnimation</include>
-                            <include content="ProgressBar">
-                                <param name="id" value="0"/>
-                                <param name="visible" value="Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)"/>
-                                <param name="x" value="0"/>
-                                <param name="y" value="0"/>
-                                <param name="width" value="860"/>
-                                <param name="height" value="49"/>
-                                <param name="texturebg" value="common/osd_progress_dummy.png"/>
-                                <param name="gfx" value="OSD/osd_progress.png"/>
-                                <param name="border" value="1,1,1,1"/>
-                                <param name="info" value="ListItem.Progress"/>
-                            </include>
-                            <control type="image">
-                                <posx>0</posx>
-                                <posy>0</posy>
-                                <height>50</height>
-                                <width>860</width>
-                                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-                                <texture border="1">list/bg_facade_focus.png</texture>
-                            </control>
-                            <control type="label">
-                                <posx>TextMargin</posx>
-                                <height>50</height>
-                                <width>760</width>
-                                <font>FacadeListMainFont</font>
-                                <include>TextColor_MainColor</include>
-                                <scroll>true</scroll>
-                                <label>$VAR[DetailsTitle]</label>
-                            </control>
-                            <include content="WatchedRecOverlay">
-                                <param name="x" value="0"/>
-                                <param name="y" value="2"/>
-                                <param name="width" value="50"/>
-                                <param name="height" value="50"/>
-                                <param name="transparency" value="100"/>
-                            </include>
+                        <include content="ProgressBar">
+                            <param name="id" value="0"/>
+                            <param name="visible" value="Integer.IsGreater(ListItem.Progress,0)"/>
+                            <param name="x" value="222"/>
+                            <param name="y" value="11"/>
+                            <param name="width" value="104"/>
+                            <param name="info" value="ListItem.Progress"/>
+                            <param name="endRotation" value="-90"/>
+                            <param name="centerRotation" value="222,11"/>
+                            <param name="visiblefocus" value="true"/>
+                            <param name="direction" value="vertical"/>
+                        </include>
+                        <include content="FocusedIndicator">
+                            <param name="x" value="265"/>
+                            <param name="y" value="18"/>
+                            <param name="height" value="57"/>
+                            <param name="visible" value="true"/>
+                        </include>
+                        <control type="label">
+                            <posx>285</posx>
+                            <posy>18</posy>
+                            <width>1565</width>
+                            <font>FacadeListTitleFont</font>
+                            <include>TextColor_MainColor</include>
+                            <label>$VAR[DetailsTitle]</label>
                         </control>
-                    </focusedlayout>
-                </control>
-                <control type="scrollbar" id="6061">
-                    <posx>810</posx>
-                    <posy>100</posy>
-                    <height>350</height>
-                    <include>VerticalScroller</include>
-                    <ondown>6061</ondown>
-                    <onup>6061</onup>
-                    <onleft>11</onleft>
-                    <onright>NextChannelGroup</onright>
-                </control>
+                        <control type="label">
+                            <posx>285</posx>
+                            <posy>68</posy>
+                            <width>1565</width>
+                            <font>FacadeListSubTitleFont</font>
+                            <include>TextColor_MainColor</include>
+                            <label>$VAR[DetailsRow1]$VAR[DetailsRow2,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow3,[COLOR=SeparatorColor] › [/COLOR]]</label>
+                        </control>
+                    </control>
+                </focusedlayout>
             </control>
-            <control type="group">
-                <posx>960</posx>
-                <posy>240</posy>
-                <control type="label">
-                    <posx>0</posx>
-                    <posy>0</posy>
-                    <width>380</width>
-                    <height>50</height>
-                    <font>InfoDetailsFont</font>
-                    <textcolor>AlternateColor</textcolor>
-                    <scroll>true</scroll>
-                    <label>$VAR[DetailsRow1]</label>
-                </control>
-                <control type="label">
-                    <posx>0</posx>
-                    <posy>65</posy>
-                    <width>380</width>
-                    <height>50</height>
-                    <font>InfoDetailsFont</font>
-                    <include>TextColor_MainColor</include>
-                    <scroll>false</scroll>
-                    <label>$VAR[DetailsRow2]</label>
-                </control>
-                <control type="label">
-                    <posx>0</posx>
-                    <posy>130</posy>
-                    <width>380</width>
-                    <height>50</height>
-                    <font>InfoDetailsFont</font>
-                    <textcolor>AlternateColor</textcolor>
-                    <scroll>false</scroll>
-                    <label>$VAR[DetailsRow3]</label>
-                </control>
-                <control type="label">
-                    <posx>0</posx>
-                    <posy>195</posy>
-                    <width>380</width>
-                    <height>50</height>
-                    <font>InfoDetailsFont</font>
-                    <include>TextColor_MainColor</include>
-                    <scroll>false</scroll>
-                    <label>$VAR[DetailsRow4]</label>
-                </control>
-                <control type="textbox">
-                    <posx>0</posx>
-                    <posy>265</posy>
-                    <width>380</width>
-                    <height>195</height>
-                    <font>InfoPlotFont</font>
-                    <textcolor>AlternateColor</textcolor>
-                    <label>$INFO[Container(11).ListItem.Plot]</label>
-                    <include>myautoscroll</include>
-                </control>
-            </control>
-            <control type="group">
-                <posx>1440</posx>
-                <posy>240</posy>
-                <control type="image">
-                    <visible>String.IsEmpty(Container(11).ListItem.Icon)</visible>
-                    <posx>0</posx>
-                    <posy>0</posy>
-                    <width>380</width>
-                    <height>380</height>
-                    <aspectratio aligny="top">keep</aspectratio>
-                    <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-                    <texture>defaultChannelTvBig.png</texture>
-                </control>
-                <control type="image">
-                    <posx>0</posx>
-                    <posy>0</posy>
-                    <width>380</width>
-                    <height>380</height>
-                    <aspectratio aligny="top">keep</aspectratio>
-                    <texture background="true">$INFO[Container(11).ListItem.Icon]</texture>
-                </control>
+            <control type="scrollbar" id="6061">
+                <posx>1870</posx>
+                <posy>0</posy>
+                <height>530</height>
+                <include>VerticalScroller</include>
+                <ondown>6061</ondown>
+                <onup>6061</onup>
+                <onleft>11</onleft>
+                <onright>NextChannelGroup</onright>
             </control>
         </control>
     </include>
     <include name="OSD_Guide_BottomScreen">
+        <include>WindowClosingButton</include>
         <control type="group">
-            <posy>340</posy>
+            <posy>550</posy>
             <control type="image">
+                <include>OverlayTransparency</include>
                 <posx>0</posx>
-                <posy>140</posy>
+                <posy>0</posy>
                 <width>1920</width>
-                <height>1080</height>
-                <!--<include>DialogTransparency</include>-->
+                <height>530</height>
                 <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-                <texture border="50">common/background_menu.png</texture>
-            </control>
-            <include content="WindowClosingButton">
-                <param name="id" value="99010"/>
-                <param name="x" value="1870"/>
-                <param name="y" value="140"/>
-                <param name="onleft" value="6060"/>
-            </include>
-            <control type="image">
-                <posx>1010r</posx>
-                <posy>190</posy>
-                <width>480</width>
-                <height>900</height>
-                <texture border="1">common/background_strip_horizontal_right.png</texture>
+                <texture>common/overlay.png</texture>
             </control>
             <control type="image">
-                <posx>530r</posx>
-                <posy>190</posy>
-                <width>480</width>
-                <height>900</height>
-                <texture border="1">common/background_strip_horizontal_right.png</texture>
+                <include>OverlayTransparency</include>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>1920</width>
+                <height>530</height>
+                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                <texture border="10">common/overlay_dialog_gradient.png</texture>
             </control>
-            <control type="group">
-                <posx>50</posx>
-                <posy>240</posy>
-                <control type="label">
-                    <posx>TextMargin</posx>
-                    <posy>0</posy>
-                    <width>760</width>
-                    <height>50</height>
-                    <font>InfoTitleFont</font>
-                    <include>TextColor_MainColor</include>
-                    <scroll>true</scroll>
-                    <label>$INFO[Container(11).ListItem.ChannelNumberLabel,, - ]$INFO[VideoPlayer.ChannelName]$INFO[Container(11).ListItem.StartDate, - ]</label>
-                </control>
-                <control type="label">
-                    <posx>TextMargin</posx>
-                    <posy>50</posy>
-                    <width>760</width>
-                    <height>35</height>
-                    <font>InfoTitleSubFont</font>
-                    <include>TextColor_MidColor</include>
-                    <label>$INFO[System.Time] - $INFO[Container(11).NumItems,, $LOCALIZE[31025]]</label>
-                </control>
-                <control type="list" id="11">
-                    <posx>0</posx>
-                    <posy>100</posy>
-                    <width>860</width>
-                    <height>350</height>
-                    <!-- <onleft>61</onleft> -->
-                    <onleft>PreviousChannelGroup</onleft>
-                    <onright>6061</onright>
-                    <onup>11</onup>
-                    <ondown>11</ondown>
-                    <pagecontrol>6061</pagecontrol>
-                    <itemlayout height="50" width="860">
-                        <control type="label">
-                            <posx>TextMargin</posx>
-                            <height>50</height>
-                            <width>760</width>
-                            <font>FacadeListMainFont</font>
-                            <textcolor>NoFocusedColor</textcolor>
-                            <label>$VAR[UnfocusedTitle]</label>
-                        </control>
+            <control type="image">
+                <include>TopBarOSDVisibleFadeEffectOverlay</include>
+                <posx>0</posx>
+                <posy>-1</posy>
+                <width>1920</width>
+                <height>2</height>
+                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                <texture border="2,0,2,0">common/line_white_horizontal.png</texture>
+            </control>
+            <control type="label">
+                <posx>TextMargin</posx>
+                <posy>-70</posy>
+                <width>1780</width>
+                <height>50</height>
+                <font>InfoTitleFont</font>
+                <include>TextColor_MainColor</include>
+                <scroll>true</scroll>
+                <label>$INFO[Container(11).ListItem.ChannelNumberLabel,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[VideoPlayer.ChannelName]$INFO[Container(11).ListItem.StartDate,[COLOR=SeparatorColor] › [/COLOR]]</label>
+            </control>
+            <control type="label">
+                <right>TextMargin</right>
+                <posy>-70</posy>
+                <width>1780</width>
+                <height>50</height>
+                <font>InfoTitleFont</font>
+                <include>TextColor_MainColor</include>
+                <align>right</align>
+                <scroll>true</scroll>
+                <label>$INFO[System.Time]</label>
+            </control>
+            <control type="list" id="11">
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>1920</width>
+                <height>530</height>
+                <!-- <onleft>61</onleft> -->
+                <onleft>PreviousChannelGroup</onleft>
+                <onright>6061</onright>
+                <onup>11</onup>
+                <ondown>11</ondown>
+                <pagecontrol>6061</pagecontrol>
+                <itemlayout height="120" width="1920">
+                    <include content="ThumbsImages">
+                        <param name="visible" value="true"/>
+                        <param name="x" value="70"/>
+                        <param name="y" value="10"/>
+                        <param name="width" value="146"/>
+                        <param name="height" value="110"/>
+                        <param name="aspectratio" value="scale"/>
+                        <param name="align" value="center"/>
+                        <param name="aligny" value="center"/>
+                        <param name="flipy" value="false"/>
+                        <param name="texturediffuse" value="ThumbsUnfocusedColor"/>
+                        <param name="borderdiffuse" value="BorderUnfocusedColor"/>
+                    </include>
+                    <include content="WatchedRecOverlay">
+                        <param name="x" value="169"/>
+                        <param name="y" value="6"/>
+                        <param name="width" value="50"/>
+                        <param name="height" value="50"/>
+                        <param name="color" value="Alternate"/>
+                    </include>
+                    <include content="ProgressBar">
+                        <param name="id" value="0"/>
+                        <param name="visible" value="Integer.IsGreater(ListItem.Progress,0)"/>
+                        <param name="x" value="222"/>
+                        <param name="y" value="11"/>
+                        <param name="width" value="104"/>
+                        <param name="info" value="ListItem.Progress"/>
+                        <param name="endRotation" value="-90"/>
+                        <param name="centerRotation" value="222,11"/>
+                        <param name="visiblefocus" value="false"/>
+                        <param name="direction" value="vertical"/>
+                    </include>
+                    <control type="label">
+                        <posx>285</posx>
+                        <posy>18</posy>
+                        <width>1565</width>
+                        <font>FacadeListTitleFont</font>
+                        <textcolor>NoFocusedColor</textcolor>
+                        <label>$VAR[DetailsTitle]</label>
+                    </control>
+                    <control type="label">
+                        <posx>285</posx>
+                        <posy>68</posy>
+                        <width>1565</width>
+                        <font>FacadeListSubTitleFont</font>
+                        <textcolor>NoFocusedColor</textcolor>
+                        <label>$VAR[DetailsRow3]</label>
+                    </control>
+                </itemlayout>
+                <focusedlayout height="120" width="1920">
+                    <control type="group">
+                        <include>ListFocusAnimation</include>
+                        <include content="ThumbsImages">
+                            <param name="visible" value="true"/>
+                            <param name="x" value="70"/>
+                            <param name="y" value="10"/>
+                            <param name="width" value="146"/>
+                            <param name="height" value="110"/>
+                            <param name="aspectratio" value="scale"/>
+                            <param name="align" value="center"/>
+                            <param name="aligny" value="center"/>
+                            <param name="flipy" value="false"/>
+                            <param name="texturediffuse" value="ThumbsFocusedColor"/>
+                            <param name="borderdiffuse" value="$VAR[Picked.Theme.Color]"/>
+                        </include>
                         <include content="WatchedRecOverlay">
-                            <param name="x" value="0"/>
-                            <param name="y" value="2"/>
+                            <param name="x" value="169"/>
+                            <param name="y" value="6"/>
                             <param name="width" value="50"/>
                             <param name="height" value="50"/>
-                            <param name="transparency" value="50"/>
+                            <param name="color" value="Main"/>
                         </include>
-                    </itemlayout>
-                    <focusedlayout height="50" width="860">
-                        <control type="group">
-                            <include>ListFocusAnimation</include>
-                            <control type="image">
-                                <posx>0</posx>
-                                <posy>0</posy>
-                                <height>50</height>
-                                <width>860</width>
-                                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-                                <texture border="1">list/bg_facade_focus.png</texture>
-                            </control>
-                            <control type="label">
-                                <posx>TextMargin</posx>
-                                <height>50</height>
-                                <width>760</width>
-                                <font>FacadeListMainFont</font>
-                                <include>TextColor_MainColor</include>
-                                <scroll>true</scroll>
-                                <label>$VAR[DetailsTitle]</label>
-                            </control>
-                            <include content="WatchedRecOverlay">
-                                <param name="x" value="0"/>
-                                <param name="y" value="2"/>
-                                <param name="width" value="50"/>
-                                <param name="height" value="50"/>
-                                <param name="transparency" value="100"/>
-                            </include>
+                        <include content="ProgressBar">
+                            <param name="id" value="0"/>
+                            <param name="visible" value="Integer.IsGreater(ListItem.Progress,0)"/>
+                            <param name="x" value="222"/>
+                            <param name="y" value="11"/>
+                            <param name="width" value="104"/>
+                            <param name="info" value="ListItem.Progress"/>
+                            <param name="endRotation" value="-90"/>
+                            <param name="centerRotation" value="222,11"/>
+                            <param name="visiblefocus" value="true"/>
+                            <param name="direction" value="vertical"/>
+                        </include>
+                        <include content="FocusedIndicator">
+                            <param name="x" value="265"/>
+                            <param name="y" value="18"/>
+                            <param name="height" value="57"/>
+                            <param name="visible" value="true"/>
+                        </include>
+                        <control type="label">
+                            <posx>285</posx>
+                            <posy>18</posy>
+                            <width>1565</width>
+                            <font>FacadeListTitleFont</font>
+                            <include>TextColor_MainColor</include>
+                            <label>$VAR[DetailsTitle]</label>
                         </control>
-                    </focusedlayout>
-                </control>
-                <control type="scrollbar" id="6061">
-                    <posx>810</posx>
-                    <posy>100</posy>
-                    <height>350</height>
-                    <include>VerticalScroller</include>
-                    <ondown>6061</ondown>
-                    <onup>6061</onup>
-                    <onleft>11</onleft>
-                    <onright>NextChannelGroup</onright>
-                </control>
+                        <control type="label">
+                            <posx>285</posx>
+                            <posy>68</posy>
+                            <width>1565</width>
+                            <font>FacadeListSubTitleFont</font>
+                            <include>TextColor_MainColor</include>
+                            <label>$VAR[DetailsRow3]</label>
+                        </control>
+                    </control>
+                </focusedlayout>
             </control>
-            <control type="group">
-                <posx>960</posx>
-                <posy>240</posy>
-                <control type="label">
-                    <posx>0</posx>
-                    <posy>0</posy>
-                    <width>380</width>
-                    <height>50</height>
-                    <font>InfoDetailsFont</font>
-                    <textcolor>AlternateColor</textcolor>
-                    <scroll>false</scroll>
-                    <label>$VAR[DetailsRow2]</label>
-                </control>
-                <control type="label">
-                    <posx>0</posx>
-                    <posy>65</posy>
-                    <width>380</width>
-                    <height>50</height>
-                    <font>InfoDetailsFont</font>
-                    <include>TextColor_MainColor</include>
-                    <scroll>false</scroll>
-                    <label>$VAR[DetailsRow3]</label>
-                </control>
-                <control type="textbox">
-                    <posx>0</posx>
-                    <posy>140</posy>
-                    <width>380</width>
-                    <height>310</height>
-                    <font>InfoPlotFont</font>
-                    <textcolor>AlternateColor</textcolor>
-                    <label>$INFO[Container(11).ListItem.Plot]</label>
-                    <include>myautoscroll</include>
-                </control>
-            </control>
-            <control type="group">
-                <posx>1440</posx>
-                <posy>240</posy>
-                <control type="image">
-                    <visible>String.IsEmpty(Container(11).ListItem.Icon)</visible>
-                    <posx>0</posx>
-                    <posy>0</posy>
-                    <width>380</width>
-                    <height>380</height>
-                    <aspectratio aligny="top">keep</aspectratio>
-                    <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-                    <texture>defaultChannelTvBig.png</texture>
-                </control>
-                <control type="image">
-                    <posx>0</posx>
-                    <posy>0</posy>
-                    <width>380</width>
-                    <height>380</height>
-                    <aspectratio aligny="top">keep</aspectratio>
-                    <texture background="true">$INFO[Container(11).ListItem.Icon]</texture>
-                </control>
+            <control type="scrollbar" id="6061">
+                <posx>1870</posx>
+                <posy>0</posy>
+                <height>530</height>
+                <include>VerticalScroller</include>
+                <ondown>6061</ondown>
+                <onup>6061</onup>
+                <onleft>11</onleft>
+                <onright>NextChannelGroup</onright>
             </control>
         </control>
     </include>

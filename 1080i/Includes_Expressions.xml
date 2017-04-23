@@ -26,6 +26,7 @@
     </expression>
     <expression name="ContentIsChannel">
         [Window.IsActive(MyPVRChannels.xml)|
+        Window.IsActive(MyPVRGuide.xml)|
         Window.IsActive(MyPVRTimers.xml)|
         Window.IsActive(MyPVRRecordings.xml)|
         Window.IsActive(MyPVRSearch.xml)]
@@ -37,6 +38,7 @@
         container.content(TVshows) |
         container.content(seasons) |
         Window.IsActive(MyPVRChannels.xml) |
+        Window.IsActive(MyPVRGuide.xml)|
         Window.IsActive(MyPVRTimers.xml) |
         Window.IsActive(MyPVRRecordings.xml) |
         Window.IsActive(MyPVRSearch.xml) |

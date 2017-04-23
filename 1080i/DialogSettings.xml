@@ -63,7 +63,7 @@
                 <control type="edit" id="12">
                     <description>Default Edit</description>
                     <width>1760</width>
-                    <textwidth>1740</textwidth>
+                    <textwidth>1720</textwidth>
                     <include>SettingsButton</include>
                 </control>
                 <control type="sliderex" id="13">
