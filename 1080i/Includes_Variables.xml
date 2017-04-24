@@ -125,6 +125,7 @@
         <value condition="!String.IsEmpty(Container.FolderName)">$INFO[Container.FolderName]</value>
     </variable>
     <variable name="GlobalSubTitles">
+        <value condition="Window.isvisible(SkinSettings.xml)">Andromeda</value>
         <value condition="Window.isvisible(CustomStartupWindow.xml)">$LOCALIZE[512]</value>
         <value condition="Window.isvisible(FileManager.xml)">$LOCALIZE[130]</value>
         <value condition="Window.isvisible(DialogFavourites.xml)">$INFO[Container(450).NumItems] $LOCALIZE[31025]</value>

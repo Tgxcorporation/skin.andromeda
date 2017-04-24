@@ -206,6 +206,7 @@
             <onleft>9900</onleft>
             <onright>9900</onright>
             <onup>9901</onup>
+            <ondown condition="Window.IsActive(SkinSettings.xml)">9000</ondown>
             <ondown condition="Window.IsActive(DialogFavourites.xml)">450</ondown>
             <ondown condition="Window.isactive(CustomStartupWindow.xml)">9001</ondown>
             <ondown condition="window.isactive(FileManager.xml)">20</ondown>
@@ -418,6 +419,7 @@
             <texturenofocus>-</texturenofocus>
             <onup>9900</onup>
             <onleft>9900</onleft>
+            <ondown condition="Window.isactive(SkinSettings.xml)">9000</ondown>
             <ondown condition="Window.isactive(CustomStartupWindow.xml)">9001</ondown>
             <ondown condition="window.isactive(FileManager.xml)">20</ondown>
             <ondown condition="window.isactive(DialogFavourites.xml)">450</ondown>
@@ -961,34 +963,36 @@
     </include>
     <include name="SkinSettingsButton">
         <width>380</width>
-        <height>50</height>
+        <height>60</height>
         <radioposx>0</radioposx>
         <align>left</align>
         <aligny>center</aligny>
-        <font>ButtonFont</font>
-        <textoffsetx>TextMargin</textoffsetx>
+        <font>LeftMenuButtonFont</font>
+        <textoffsetx>20</textoffsetx>
         <textcolor>NoFocusedColor</textcolor>
         <disabledcolor>DisabledColor</disabledcolor>
         <pulseonselect>false</pulseonselect>
     </include>
     <include name="SkinSettings_DefaultLayout">
-        <itemlayout width="1340" height="50">
+        <itemlayout width="1340" height="60">
             <control type="label">
                 <visible>!String.IsEqual(ListItem.Label,)</visible>
-                <posx>TextMargin</posx>
-                <height>50</height>
+                <posx>20</posx>
+                <height>60</height>
                 <width>795</width>
-                <font>FacadeListMainFont</font>
+                <aligny>center</aligny>
+                <font>LeftMenuButtonFont</font>
                 <textcolor>NoFocusedColor</textcolor>
                 <label>$INFO[ListItem.Label]</label>
             </control>
             <control type="label">
                 <posx>445r</posx>
                 <visible>!String.IsEqual(ListItem.Label,) + [!String.IsEqual(ListItem.Label2,$LOCALIZE[106])+!String.IsEqual(ListItem.Label2,$LOCALIZE[107])]</visible>
-                <height>50</height>
+                <height>60</height>
                 <width>395</width>
                 <align>right</align>
-                <font>FacadeListMainFont</font>
+                <aligny>center</aligny>
+                <font>LeftMenuButtonFont</font>
                 <textcolor>NoFocusedColor</textcolor>
                 <label>$INFO[ListItem.Label2]</label>
             </control>
@@ -996,14 +1000,14 @@
                 <visible>String.IsEqual(ListItem.Label,)+!String.IsEqual(ListItem.Label2,$LOCALIZE[128])</visible>
                 <posy>-10</posy>
                 <width>1340</width>
-                <height>50</height>
+                <height>60</height>
                 <texture border="51,0,51,0">common/TransparentDot.png</texture>
             </control>
             <control type="label">
                 <visible>String.IsEqual(ListItem.Label,)</visible>
-                <posx>TextMargin</posx>
-                <posy>9</posy>
-                <height>50</height>
+                <posx>20</posx>
+                <posy>29</posy>
+                <height>60</height>
                 <width>795</width>
                 <font>LeftMenuTitleFont</font>
                 <include>TextColor_MidColor</include>
@@ -1011,9 +1015,9 @@
             </control>
             <control type="image">
                 <visible>!String.IsEqual(ListItem.Label,) + String.IsEqual(ListItem.Label2,$LOCALIZE[106])</visible>
-                <posx>1240</posx>
+                <posx>1255</posx>
                 <posy>0</posy>
-                <height>50</height>
+                <height>60</height>
                 <width>50</width>
                 <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                 <aspectratio align="right" aligny="center">keep</aspectratio>
@@ -1021,44 +1025,44 @@
             </control>
             <control type="image">
                 <visible>!String.IsEqual(ListItem.Label,) + String.IsEqual(ListItem.Label2,$LOCALIZE[107])</visible>
-                <posx>1240</posx>
+                <posx>1255</posx>
                 <posy>0</posy>
-                <height>50</height>
+                <height>60</height>
                 <width>50</width>
                 <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                 <aspectratio align="right" aligny="center">keep</aspectratio>
                 <texture>buttons/RadioOnNF.png</texture>
             </control>
         </itemlayout>
-        <focusedlayout width="1340" height="50">
+        <focusedlayout width="1340" height="60">
             <control type="group">
                 <include>ButtonWideFocusAnimation</include>
-                <control type="image">
-                    <posx>0</posx>
-                    <posy>0</posy>
-                    <height>50</height>
-                    <width>1340</width>
-                    <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-                    <texture border="1">list/bg_facade_focus.png</texture>
-                </control>
+                <include content="FocusedIndicator">
+                    <param name="x" value="0"/>
+                    <param name="y" value="0"/>
+                    <param name="height" value="60"/>
+                    <param name="visible" value="true"/>
+                </include>
                 <control type="label">
                     <visible>!String.IsEqual(ListItem.Label,)</visible>
-                    <posx>TextMargin</posx>
-                    <height>50</height>
+                    <posx>20</posx>
+                    <height>60</height>
                     <width>795</width>
                     <scroll>true</scroll>
-                    <font>FacadeListMainFont</font>
+                    <aligny>center</aligny>
+                    <font>LeftMenuButtonFont</font>
                     <include>TextColor_MainColor</include>
                     <label>$INFO[ListItem.Label]</label>
                 </control>
                 <control type="label">
                     <posx>445r</posx>
                     <visible>!String.IsEqual(ListItem.Label,) + [!String.IsEqual(ListItem.Label2,$LOCALIZE[106])+!String.IsEqual(ListItem.Label2,$LOCALIZE[107])]</visible>
-                    <height>50</height>
+                    <height>60</height>
                     <width>395</width>
                     <scroll>true</scroll>
                     <align>right</align>
-                    <font>FacadeListMainFont</font>
+                    <aligny>center</aligny>
+                    <font>LeftMenuButtonFont</font>
                     <include>TextColor_MainColor</include>
                     <label>$INFO[ListItem.Label2]</label>
                 </control>
@@ -1066,14 +1070,14 @@
                     <visible>String.IsEqual(ListItem.Label,)+!String.IsEqual(ListItem.Label2,$LOCALIZE[128])</visible>
                     <posy>-10</posy>
                     <width>1340</width>
-                    <height>50</height>
+                    <height>60</height>
                     <texture border="51,0,51,0">common/TransparentDot.png</texture>
                 </control>
                 <control type="label">
                     <visible>String.IsEqual(ListItem.Label,)</visible>
-                    <posx>TextMargin</posx>
-                    <posy>9</posy>
-                    <height>50</height>
+                    <posx>20</posx>
+                    <posy>29</posy>
+                    <height>60</height>
                     <width>795</width>
                     <scroll>true</scroll>
                     <font>LeftMenuTitleFont</font>
@@ -1082,9 +1086,9 @@
                 </control>
                 <control type="image">
                     <visible>!String.IsEqual(ListItem.Label,) + String.IsEqual(ListItem.Label2,$LOCALIZE[106])</visible>
-                    <posx>1240</posx>
+                    <posx>1255</posx>
                     <posy>0</posy>
-                    <height>50</height>
+                    <height>60</height>
                     <width>50</width>
                     <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                     <aspectratio align="right" aligny="center">keep</aspectratio>
@@ -1092,9 +1096,9 @@
                 </control>
                 <control type="image">
                     <visible>!String.IsEqual(ListItem.Label,) + String.IsEqual(ListItem.Label2,$LOCALIZE[107])</visible>
-                    <posx>1240</posx>
+                    <posx>1255</posx>
                     <posy>0</posy>
-                    <height>50</height>
+                    <height>60</height>
                     <width>50</width>
                     <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                     <aspectratio align="right" aligny="center">keep</aspectratio>
