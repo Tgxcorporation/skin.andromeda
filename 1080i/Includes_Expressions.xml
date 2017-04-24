@@ -45,4 +45,16 @@
         container.content(episodes) |
         Container.Content(sets)]
     </expression>
+    <expression name="CdArtVideoIsEnabled">
+        !Skin.HasSetting(plexbmc)+Skin.HasSetting(EnableCdArt)+[Container.content(movies)|Container.content(sets)|Container.content(musicvideos)]
+    </expression>
+    <expression name="CdArtVideoIsNotEnabled">
+        !Skin.HasSetting(EnableCdArt)
+    </expression>
+    <expression name="CdArtAudioIsEnabled">
+        !Skin.HasSetting(plexbmc)+Skin.HasSetting(EnableCdArt)+[Container.content(songs)|Container.content(albums)]
+    </expression>
+    <expression name="CdArtAudioIsNotEnabled">
+        !Skin.HasSetting(EnableCdArt)
+    </expression>
 </includes>

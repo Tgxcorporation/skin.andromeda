@@ -307,7 +307,7 @@
         <value condition="Container.Content(Seasons) + !String.IsEmpty(ListItem.Plot) + !String.IsEmpty(ListItem.Title)">$INFO[ListItem.Plot]</value>
         <value condition="Container.Content(Seasons) + !String.IsEmpty(Container.ShowPlot) + !String.IsEmpty(ListItem.Title)">$INFO[Container.ShowPlot]</value>
         <value condition="Container.Content(albums) + !String.IsEmpty(ListItem.Property(Album_Description))">$INFO[ListItem.Property(Album_Description)]</value>
-        <value condition="Container.Content(albums) + String.IsEmpty(ListItem.Property(Album_Description)) + !Control.isvisible(52)">$LOCALIZE[414]</value>
+        <!--<value condition="Container.Content(albums) + String.IsEmpty(ListItem.Property(Album_Description)) + !Control.isvisible(52) + !String.IsEqual(ListItem.Label,..)">$LOCALIZE[414]</value>-->
         <value condition="Container.Content(artists) + !String.IsEmpty(ListItem.Property(Artist_Description))">$INFO[ListItem.Property(Artist_Description)]</value>
         <value condition="Window.IsActive(MyPics.xml) + !String.IsEmpty(ListItem.PictureDesc)">$INFO[ListItem.PictureDesc]</value>
         <value condition="Window.IsActive(MyPics.xml) + !String.IsEmpty(ListItem.PictureComment)">$INFO[ListItem.PictureComment]</value>
@@ -875,6 +875,7 @@
     </variable>
     <variable name="VideoPlayerCdArt">
         <value condition="!String.IsEmpty(Player.Art(discart))">$INFO[Player.Art(discart)]</value>
+        <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.Player.Art.DiscArt))">$INFO[Window(Home).Property(SkinHelper.Player.Art.DiscArt)]</value>
         <!--<value condition="!VideoPlayer.Content(episodes)">$INFO[VideoPlayer.Cover]</value>-->
         <value condition="!VideoPlayer.Content(episodes)">common/cdart.png</value>
     </variable>

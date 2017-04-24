@@ -6,10 +6,10 @@
             <control type="group">
                 <visible>$EXP[ContentIsPoster]</visible>
                 <control type="group">
-                    <animation effect="slide" time="0" start="0,0" end="50,0" condition="!Skin.HasSetting(plexbmc)+Skin.HasSetting(EnableCdArt)+[Container.content(movies)|Container.content(sets)|Container.content(musicvideos)]">Conditional</animation>
+                    <animation effect="slide" time="0" start="0,0" end="95,0" condition="$EXP[CdArtVideoIsEnabled]">Conditional</animation>
                     <include content="ThumbsImages">
                         <param name="visible" value="true"/>
-                        <param name="x" value="115"/>
+                        <param name="x" value="70"/>
                         <param name="y" value="10"/>
                         <param name="width" value="212"/>
                         <param name="height" value="321"/>
@@ -23,40 +23,64 @@
                     <include content="ProgressBar">
                         <param name="id" value="0"/>
                         <param name="visible" value="Integer.IsGreater(ListItem.PercentPlayed,0)"/>
-                        <param name="x" value="333"/>
+                        <param name="x" value="288"/>
                         <param name="y" value="11"/>
                         <param name="width" value="305"/>
                         <param name="info" value="ListItem.PercentPlayed"/>
                         <param name="endRotation" value="-90"/>
-                        <param name="centerRotation" value="333,11"/>
+                        <param name="centerRotation" value="288,11"/>
                         <param name="visiblefocus" value="false"/>
                         <param name="direction" value="vertical"/>
                     </include>
                     <include content="WatchedRecOverlay">
-                        <param name="x" value="270"/>
+                        <param name="x" value="225"/>
                         <param name="y" value="12"/>
                         <param name="width" value="50"/>
                         <param name="height" value="50"/>
                         <param name="color" value="Alternate"/>
                     </include>
                 </control>
-                <control type="label">
-                    <posx>440</posx>
-                    <posy>30</posy>
-                    <height>50</height>
-                    <width>1410</width>
-                    <font>FacadeListTitleFont</font>
-                    <textcolor>NoFocusedColor</textcolor>
-                    <label>$VAR[DetailsTitle]</label>
+                <control type="group">
+                    <visible>$EXP[CdArtVideoIsEnabled]</visible>
+                    <control type="label">
+                        <posx>440</posx>
+                        <posy>30</posy>
+                        <height>50</height>
+                        <width>1410</width>
+                        <font>FacadeListTitleFont</font>
+                        <textcolor>NoFocusedColor</textcolor>
+                        <label>$VAR[DetailsTitle]</label>
+                    </control>
+                    <control type="label">
+                        <posx>440</posx>
+                        <posy>80</posy>
+                        <height>50</height>
+                        <width>1410</width>
+                        <font>FacadeListSubTitleFont</font>
+                        <textcolor>NoFocusedColor</textcolor>
+                        <label>$VAR[DetailsRow1]$VAR[DetailsRow2,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow3,[COLOR=SeparatorColor] › [/COLOR]]</label>
+                    </control>
                 </control>
-                <control type="label">
-                    <posx>440</posx>
-                    <posy>80</posy>
-                    <height>50</height>
-                    <width>1410</width>
-                    <font>FacadeListSubTitleFont</font>
-                    <textcolor>NoFocusedColor</textcolor>
-                    <label>$VAR[DetailsRow1]$VAR[DetailsRow2,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow3,[COLOR=SeparatorColor] › [/COLOR]]</label>
+                <control type="group">
+                    <visible>$EXP[CdArtVideoIsNotEnabled]</visible>
+                    <control type="label">
+                        <posx>352</posx>
+                        <posy>30</posy>
+                        <height>50</height>
+                        <width>1498</width>
+                        <font>FacadeListTitleFont</font>
+                        <textcolor>NoFocusedColor</textcolor>
+                        <label>$VAR[DetailsTitle]</label>
+                    </control>
+                    <control type="label">
+                        <posx>352</posx>
+                        <posy>80</posy>
+                        <height>50</height>
+                        <width>1498</width>
+                        <font>FacadeListSubTitleFont</font>
+                        <textcolor>NoFocusedColor</textcolor>
+                        <label>$VAR[DetailsRow1]$VAR[DetailsRow2,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow3,[COLOR=SeparatorColor] › [/COLOR]]</label>
+                    </control>
                 </control>
             </control>
             <!--EPISODES-->
@@ -119,6 +143,7 @@
             <control type="group">
                 <visible>$EXP[ContentIsSquare]</visible>
                 <control type="group">
+                    <animation effect="slide" time="0" start="0,0" end="95,0" condition="$EXP[CdArtAudioIsEnabled]">Conditional</animation>
                     <include content="ThumbsImages">
                         <param name="visible" value="true"/>
                         <param name="x" value="70"/>
@@ -152,23 +177,47 @@
                         <param name="color" value="Alternate"/>
                     </include>
                 </control>
-                <control type="label">
-                    <posx>460</posx>
-                    <posy>30</posy>
-                    <height>50</height>
-                    <width>1390</width>
-                    <font>FacadeListTitleFont</font>
-                    <textcolor>NoFocusedColor</textcolor>
-                    <label>$VAR[DetailsTitle]</label>
+                <control type="group">
+                    <visible>$EXP[CdArtAudioIsEnabled]</visible>
+                    <control type="label">
+                        <posx>555</posx>
+                        <posy>30</posy>
+                        <height>50</height>
+                        <width>1335</width>
+                        <font>FacadeListTitleFont</font>
+                        <textcolor>NoFocusedColor</textcolor>
+                        <label>$VAR[DetailsTitle]</label>
+                    </control>
+                    <control type="label">
+                        <posx>555</posx>
+                        <posy>80</posy>
+                        <height>50</height>
+                        <width>1335</width>
+                        <font>FacadeListSubTitleFont</font>
+                        <textcolor>NoFocusedColor</textcolor>
+                        <label>$VAR[DetailsRow1]$VAR[DetailsRow2,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow3,[COLOR=SeparatorColor] › [/COLOR]]</label>
+                    </control>
                 </control>
-                <control type="label">
-                    <posx>460</posx>
-                    <posy>80</posy>
-                    <height>50</height>
-                    <width>1390</width>
-                    <font>FacadeListSubTitleFont</font>
-                    <textcolor>NoFocusedColor</textcolor>
-                    <label>$VAR[DetailsRow1]$VAR[DetailsRow2,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow3,[COLOR=SeparatorColor] › [/COLOR]]</label>
+                <control type="group">
+                    <visible>$EXP[CdArtAudioIsNotEnabled]</visible>
+                    <control type="label">
+                        <posx>460</posx>
+                        <posy>30</posy>
+                        <height>50</height>
+                        <width>1390</width>
+                        <font>FacadeListTitleFont</font>
+                        <textcolor>NoFocusedColor</textcolor>
+                        <label>$VAR[DetailsTitle]</label>
+                    </control>
+                    <control type="label">
+                        <posx>460</posx>
+                        <posy>80</posy>
+                        <height>50</height>
+                        <width>1390</width>
+                        <font>FacadeListSubTitleFont</font>
+                        <textcolor>NoFocusedColor</textcolor>
+                        <label>$VAR[DetailsRow1]$VAR[DetailsRow2,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow3,[COLOR=SeparatorColor] › [/COLOR]]</label>
+                    </control>
                 </control>
             </control>
             <!--CHANNELS-->
@@ -234,15 +283,6 @@
                 <include>ListFocusAnimation</include>
                 <control type="group">
                     <visible>$EXP[ContentIsPoster]</visible>
-                    <!-- CDART AUDIO -->
-                    <include content="DiscArt">
-                        <param name="visible" value="!ListItem.IsParentFolder+!String.IsEmpty(ListItem.Thumb)+[Container.content(songs)|Container.content(albums)]"/>
-                        <param name="x" value="20"/>
-                        <param name="y" value="200"/>
-                        <param name="width" value="360"/>
-                        <param name="height" value="360"/>
-                        <param name="texture" value="$VAR[MusicCdArt]"/>
-                    </include>
                     <!-- CDART VIDEO -->
                     <include content="DiscArt">
                         <param name="visible" value="!ListItem.IsParentFolder+!String.IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)]"/>
@@ -253,10 +293,10 @@
                         <param name="texture" value="$VAR[VideoCdArt]"/>
                     </include>
                     <control type="group">
-                        <animation effect="slide" time="0" start="0,0" end="50,0" condition="!Skin.HasSetting(plexbmc)+Skin.HasSetting(EnableCdArt)+[Container.content(movies)|Container.content(sets)|Container.content(musicvideos)]">Conditional</animation>
+                        <animation effect="slide" time="0" start="0,0" end="95,0" condition="$EXP[CdArtVideoIsEnabled]">Conditional</animation>
                         <include content="ThumbsImages">
                             <param name="visible" value="true"/>
-                            <param name="x" value="115"/>
+                            <param name="x" value="70"/>
                             <param name="y" value="10"/>
                             <param name="width" value="212"/>
                             <param name="height" value="321"/>
@@ -270,58 +310,100 @@
                         <include content="ProgressBar">
                             <param name="id" value="0"/>
                             <param name="visible" value="Integer.IsGreater(ListItem.PercentPlayed,0)"/>
-                            <param name="x" value="333"/>
+                            <param name="x" value="288"/>
                             <param name="y" value="11"/>
                             <param name="width" value="305"/>
                             <param name="info" value="ListItem.PercentPlayed"/>
                             <param name="endRotation" value="-90"/>
-                            <param name="centerRotation" value="333,11"/>
+                            <param name="centerRotation" value="288,11"/>
                             <param name="visiblefocus" value="true"/>
                             <param name="direction" value="vertical"/>
                         </include>
                         <include content="WatchedRecOverlay">
-                            <param name="x" value="270"/>
+                            <param name="x" value="225"/>
                             <param name="y" value="12"/>
                             <param name="width" value="50"/>
                             <param name="height" value="50"/>
                             <param name="color" value="Main"/>
                         </include>
                     </control>
-                    <include content="FocusedIndicator">
-                        <param name="x" value="420"/>
-                        <param name="y" value="30"/>
-                        <param name="height" value="57"/>
-                        <param name="visible" value="true"/>
-                    </include>
-                    <control type="label">
-                        <posx>440</posx>
-                        <posy>30</posy>
-                        <height>50</height>
-                        <width>1410</width>
-                        <font>FacadeListTitleFont</font>
-                        <include>TextColor_MainColor</include>
-                        <scroll>true</scroll>
-                        <label>$VAR[DetailsTitle]</label>
+                    <control type="group">
+                        <visible>$EXP[CdArtVideoIsEnabled]</visible>
+                        <include content="FocusedIndicator">
+                            <param name="x" value="420"/>
+                            <param name="y" value="30"/>
+                            <param name="height" value="57"/>
+                            <param name="visible" value="true"/>
+                        </include>
+                        <control type="label">
+                            <posx>440</posx>
+                            <posy>30</posy>
+                            <height>50</height>
+                            <width>1410</width>
+                            <font>FacadeListTitleFont</font>
+                            <include>TextColor_MainColor</include>
+                            <scroll>true</scroll>
+                            <label>$VAR[DetailsTitle]</label>
+                        </control>
+                        <control type="label">
+                            <posx>440</posx>
+                            <posy>80</posy>
+                            <height>50</height>
+                            <width>1410</width>
+                            <font>FacadeListSubTitleFont</font>
+                            <include>TextColor_MainColor</include>
+                            <scroll>true</scroll>
+                            <label>$VAR[DetailsRow1]$VAR[DetailsRow2,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow3,[COLOR=SeparatorColor] › [/COLOR]]</label>
+                        </control>
+                        <control type="textbox">
+                            <posx>440</posx>
+                            <posy>135</posy>
+                            <height>170</height>
+                            <width>1030</width>
+                            <font>FacadeListSubTitleFont</font>
+                            <include>TextColor_MainColor</include>
+                            <label>$VAR[Plots]</label>
+                            <include>myautoscroll</include>
+                        </control>
                     </control>
-                    <control type="label">
-                        <posx>440</posx>
-                        <posy>80</posy>
-                        <height>50</height>
-                        <width>1410</width>
-                        <font>FacadeListSubTitleFont</font>
-                        <include>TextColor_MainColor</include>
-                        <scroll>true</scroll>
-                        <label>$VAR[DetailsRow1]$VAR[DetailsRow2,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow3,[COLOR=SeparatorColor] › [/COLOR]]</label>
-                    </control>
-                    <control type="textbox">
-                        <posx>440</posx>
-                        <posy>135</posy>
-                        <height>170</height>
-                        <width>1030</width>
-                        <font>FacadeListSubTitleFont</font>
-                        <include>TextColor_MainColor</include>
-                        <label>$VAR[Plots]</label>
-                        <include>myautoscroll</include>
+                    <control type="group">
+                        <visible>$EXP[CdArtVideoIsNotEnabled]</visible>
+                        <include content="FocusedIndicator">
+                            <param name="x" value="332"/>
+                            <param name="y" value="30"/>
+                            <param name="height" value="57"/>
+                            <param name="visible" value="true"/>
+                        </include>
+                        <control type="label">
+                            <posx>352</posx>
+                            <posy>30</posy>
+                            <height>50</height>
+                            <width>1498</width>
+                            <font>FacadeListTitleFont</font>
+                            <include>TextColor_MainColor</include>
+                            <scroll>true</scroll>
+                            <label>$VAR[DetailsTitle]</label>
+                        </control>
+                        <control type="label">
+                            <posx>352</posx>
+                            <posy>80</posy>
+                            <height>50</height>
+                            <width>1498</width>
+                            <font>FacadeListSubTitleFont</font>
+                            <include>TextColor_MainColor</include>
+                            <scroll>true</scroll>
+                            <label>$VAR[DetailsRow1]$VAR[DetailsRow2,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow3,[COLOR=SeparatorColor] › [/COLOR]]</label>
+                        </control>
+                        <control type="textbox">
+                            <posx>352</posx>
+                            <posy>135</posy>
+                            <height>170</height>
+                            <width>1118</width>
+                            <font>FacadeListSubTitleFont</font>
+                            <include>TextColor_MainColor</include>
+                            <label>$VAR[Plots]</label>
+                            <include>myautoscroll</include>
+                        </control>
                     </control>
                     <include content="Codecs">
                         <param name="x" value="1550"/>
@@ -413,32 +495,30 @@
                     <include>ListFocusAnimation</include>
                     <control type="group">
                         <visible>$EXP[ContentIsSquare]</visible>
+                        <include content="DiscArt">
+                            <param name="visible" value="!ListItem.IsParentFolder+!String.IsEmpty(ListItem.Thumb)+[Container.content(songs)|Container.content(albums)]"/>
+                            <param name="x" value="20"/>
+                            <param name="y" value="20"/>
+                            <param name="width" value="300"/>
+                            <param name="height" value="300"/>
+                            <param name="texture" value="$VAR[MusicCdArt]"/>
+                        </include>
                         <control type="group">
+                            <animation effect="slide" time="0" start="0,0" end="95,0" condition="$EXP[CdArtAudioIsEnabled]">Conditional</animation>
                             <!-- CDART AUDIO -->
-                            <include content="DiscArt">
-                                <param name="visible" value="!ListItem.IsParentFolder+!String.IsEmpty(ListItem.Thumb)+[Container.content(songs)|Container.content(albums)]"/>
-                                <param name="x" value="80"/>
-                                <param name="y" value="20"/>
-                                <param name="width" value="300"/>
-                                <param name="height" value="300"/>
-                                <param name="texture" value="$VAR[MusicCdArt]"/>
+                            <include content="ThumbsImages">
+                                <param name="visible" value="true"/>
+                                <param name="x" value="70"/>
+                                <param name="y" value="10"/>
+                                <param name="width" value="321"/>
+                                <param name="height" value="321"/>
+                                <param name="aspectratio" value="keep"/>
+                                <param name="align" value="center"/>
+                                <param name="aligny" value="top"/>
+                                <param name="flipy" value="false"/>
+                                <param name="texturediffuse" value="ThumbsFocusedColor"/>
+                                <param name="borderdiffuse" value="$VAR[Picked.Theme.Color]"/>
                             </include>
-                            <control type="group">
-                                <include>PulseThumb</include>
-                                <include content="ThumbsImages">
-                                    <param name="visible" value="true"/>
-                                    <param name="x" value="70"/>
-                                    <param name="y" value="10"/>
-                                    <param name="width" value="321"/>
-                                    <param name="height" value="321"/>
-                                    <param name="aspectratio" value="keep"/>
-                                    <param name="align" value="center"/>
-                                    <param name="aligny" value="top"/>
-                                    <param name="flipy" value="false"/>
-                                    <param name="texturediffuse" value="ThumbsFocusedColor"/>
-                                    <param name="borderdiffuse" value="$VAR[Picked.Theme.Color]"/>
-                                </include>
-                            </control>
                             <include content="ProgressBar">
                                 <param name="id" value="0"/>
                                 <param name="visible" value="Integer.IsGreater(ListItem.PercentPlayed,0)"/>
@@ -459,41 +539,83 @@
                                 <param name="color" value="Main"/>
                             </include>
                         </control>
-                        <include content="FocusedIndicator">
-                            <param name="x" value="440"/>
-                            <param name="y" value="30"/>
-                            <param name="height" value="57"/>
-                            <param name="visible" value="true"/>
-                        </include>
-                        <control type="label">
-                            <posx>460</posx>
-                            <posy>30</posy>
-                            <height>50</height>
-                            <width>1390</width>
-                            <font>FacadeListTitleFont</font>
-                            <include>TextColor_MainColor</include>
-                            <scroll>true</scroll>
-                            <label>$VAR[DetailsTitle]</label>
+                        <control type="group">
+                            <visible>$EXP[CdArtAudioIsEnabled]</visible>
+                            <include content="FocusedIndicator">
+                                <param name="x" value="535"/>
+                                <param name="y" value="30"/>
+                                <param name="height" value="57"/>
+                                <param name="visible" value="true"/>
+                            </include>
+                            <control type="label">
+                                <posx>555</posx>
+                                <posy>30</posy>
+                                <height>50</height>
+                                <width>1295</width>
+                                <font>FacadeListTitleFont</font>
+                                <include>TextColor_MainColor</include>
+                                <scroll>true</scroll>
+                                <label>$VAR[DetailsTitle]</label>
+                            </control>
+                            <control type="label">
+                                <posx>555</posx>
+                                <posy>80</posy>
+                                <height>50</height>
+                                <width>1295</width>
+                                <font>FacadeListSubTitleFont</font>
+                                <include>TextColor_MainColor</include>
+                                <scroll>true</scroll>
+                                <label>$VAR[DetailsRow1]$VAR[DetailsRow2,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow3,[COLOR=SeparatorColor] › [/COLOR]]</label>
+                            </control>
+                            <control type="textbox">
+                                <posx>555</posx>
+                                <posy>135</posy>
+                                <height>170</height>
+                                <width>1295</width>
+                                <font>FacadeListSubTitleFont</font>
+                                <include>TextColor_MainColor</include>
+                                <label>$VAR[Plots]</label>
+                                <include>myautoscroll</include>
+                            </control>
                         </control>
-                        <control type="label">
-                            <posx>460</posx>
-                            <posy>80</posy>
-                            <height>50</height>
-                            <width>1390</width>
-                            <font>FacadeListSubTitleFont</font>
-                            <include>TextColor_MainColor</include>
-                            <scroll>true</scroll>
-                            <label>$VAR[DetailsRow1]$VAR[DetailsRow2,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow3,[COLOR=SeparatorColor] › [/COLOR]]</label>
-                        </control>
-                        <control type="textbox">
-                            <posx>460</posx>
-                            <posy>135</posy>
-                            <height>170</height>
-                            <width>1390</width>
-                            <font>FacadeListSubTitleFont</font>
-                            <include>TextColor_MainColor</include>
-                            <label>$VAR[Plots]</label>
-                            <include>myautoscroll</include>
+                        <control type="group">
+                            <visible>$EXP[CdArtAudioIsNotEnabled]</visible>
+                            <include content="FocusedIndicator">
+                                <param name="x" value="440"/>
+                                <param name="y" value="30"/>
+                                <param name="height" value="57"/>
+                                <param name="visible" value="true"/>
+                            </include>
+                            <control type="label">
+                                <posx>460</posx>
+                                <posy>30</posy>
+                                <height>50</height>
+                                <width>1390</width>
+                                <font>FacadeListTitleFont</font>
+                                <include>TextColor_MainColor</include>
+                                <scroll>true</scroll>
+                                <label>$VAR[DetailsTitle]</label>
+                            </control>
+                            <control type="label">
+                                <posx>460</posx>
+                                <posy>80</posy>
+                                <height>50</height>
+                                <width>1390</width>
+                                <font>FacadeListSubTitleFont</font>
+                                <include>TextColor_MainColor</include>
+                                <scroll>true</scroll>
+                                <label>$VAR[DetailsRow1]$VAR[DetailsRow2,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow3,[COLOR=SeparatorColor] › [/COLOR]]</label>
+                            </control>
+                            <control type="textbox">
+                                <posx>460</posx>
+                                <posy>135</posy>
+                                <height>170</height>
+                                <width>1390</width>
+                                <font>FacadeListSubTitleFont</font>
+                                <include>TextColor_MainColor</include>
+                                <label>$VAR[Plots]</label>
+                                <include>myautoscroll</include>
+                            </control>
                         </control>
                     </control>
                 </control>
