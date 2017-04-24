@@ -965,6 +965,7 @@
         <width>380</width>
         <height>60</height>
         <radioposx>0</radioposx>
+        <textwidth>300</textwidth>
         <align>left</align>
         <aligny>center</aligny>
         <font>LeftMenuButtonFont</font>
