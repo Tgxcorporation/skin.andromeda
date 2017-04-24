@@ -5,6 +5,7 @@
     <!--<useDefaultThumbAsIcon>True</useDefaultThumbAsIcon>-->
     <icon labelID="videos">special://skin/backgrounds/Videos.jpg</icon>
     <icon labelID="movies">special://skin/backgrounds/Movies.jpg</icon>
+    <icon labelID="19017">special://skin/backgrounds/Movies.jpg</icon>
     <icon labelID="pictures">special://skin/backgrounds/Pictures.jpg</icon>
     <icon labelID="tvshows">special://skin/backgrounds/TVShows.jpg</icon>
     <icon labelID="livetv">special://skin/backgrounds/Tv.jpg</icon>
@@ -40,6 +41,7 @@
     <backgroundBrowse>True</backgroundBrowse>
     <backgrounddefault labelID="videos">Videos.Art</backgrounddefault>
     <backgrounddefault labelID="movies">Movies.Art</backgrounddefault>
+    <backgrounddefault labelID="19017">Movies.Art</backgrounddefault>
     <backgrounddefault labelID="pictures">Pictures.Art</backgrounddefault>
     <backgrounddefault labelID="tvshows">TVShows.Art</backgrounddefault>
     <backgrounddefault labelID="livetv">Tv.Art</backgrounddefault>

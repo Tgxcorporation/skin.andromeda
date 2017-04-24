@@ -19,36 +19,27 @@
         <include>Player_Show</include>
         <include>OverlayFull</include>
         <include>FooterInfo</include>
-        <control type="group">
-            <animation effect="slide" tween="circle" easing="inout" time="150" start="0,0" end="-2200,0" condition="Control.HasFocus(505050)">conditional</animation>
-            <include>NowPlayingSlideEffect</include>
-            <include>OpenClose</include>
+        <control type="group" id="505052">
+            <include>FacadeFocusAnimation</include>
+            <include condition="Skin.HasSetting(plexbmc)">PlexbmcFixTrick</include>
+            <include>Header</include>
+            <include>FacadeOverlay</include>
             <control type="group">
-                <include condition="Skin.HasSetting(plexbmc)">PlexbmcFixTrick</include>
-                <include>View_50_BigList</include>
-                <include>Info_50_BigList</include>
-                <include>View_51_Fullscreen</include>
-                <include>View_52_FixedList</include>
-                <include>Info_52_FixedList</include>
-                <include>View_57_58_59_Showcase</include>
-                <include>View_54_Fanart</include>
-                <include>View_53_Grid</include>
-                <include>Info_53_Grid</include>
-                <include>View_5050_CardList</include>
+                <animation effect="slide" tween="circle" easing="inout" time="150" start="0,0" end="-2200,0" condition="Control.HasFocus(505050)">conditional</animation>
+                <include>OpenClose</include>
+                <control type="group">
+                    <include>View_50_BigList</include>
+                    <include>View_51_Fullscreen</include>
+                    <include>View_52_FixedList</include>
+                    <include>Info_52_FixedList</include>
+                    <include>View_57_58_59_Showcase</include>
+                    <include>View_53_Grid</include>
+                    <include>Info_53_Grid</include>
+                    <include>View_5050_CardList</include>
+                </control>
             </control>
         </control>
-        <control type="label">
-            <include>WindowTitle</include>
-            <label>$VAR[GlobalTitles]</label>
-        </control>
-        <control type="label">
-            <include>WindowTitleSub</include>
-            <label>$INFO[Container.NumItems,, $LOCALIZE[31025]]$INFO[Container.CurrentPage,  -  ]$INFO[Container.NumPages,/]</label>
-        </control>
-        <include>Header_Logo</include>
-        <include>Time</include>
-        <include>NowPlaying</include>
-        <include>TopBar</include>
+        <include>FooterInfo</include>
         <!-- SIDE MENU -->
         <control type="group">
             <visible>!Skin.HasSetting(EnableKioskMode)</visible>
@@ -115,5 +106,7 @@
             </control>
             <include>LeftMenuScroller</include>
         </control>
+        <include>NowPlaying</include>
+        <include>TopBar</include>
     </controls>
 </window>

@@ -881,7 +881,7 @@
         <textureradiooffdisabled colordiffuse="90ffffff" border="1">buttons/RadioOffNFsmall.png</textureradiooffdisabled>
     </include>
     <include name="DialogMenuButton">
-        <!--<width>480</width>-->
+        <width>380</width>
         <!--<radioposx>430</radioposx>-->
         <!--<textwidth>380</textwidth>-->
         <include>LeftMenuButton</include>
@@ -889,7 +889,7 @@
     <include name="DialogMenuButtonGroup">
         <posx>0</posx>
         <posy>380</posy>
-        <width>450</width>
+        <width>380</width>
         <height>600</height>
         <itemgap>0</itemgap>
         <orientation>vertical</orientation>
