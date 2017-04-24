@@ -7,8 +7,8 @@
         <label2>Common Shortcut</label2>
         <icon>DefaultShortcut.png</icon>
         <thumb></thumb>
-        <action>ActivateWindow(Videos,MovieTitles,return)</action>
-        <!--<action>ActivateWindow(Videos,library://video/Plex-1/1_all.xml/,return)</action>-->
+        <!--<action>ActivateWindow(Videos,MovieTitles,return)</action>-->
+        <action>ActivateWindow(Videos,library://video/Plex-1/1_all.xml/,return)</action>
     </shortcut>
     <shortcut>
         <visible>!Skin.HasSetting(plexbmc) + Library.HasContent(TVShows)</visible>
@@ -55,15 +55,15 @@
         <thumb></thumb>
         <action>ActivateWindow(Music)</action>
     </shortcut>
-    <shortcut>
-        <visible>!Skin.HasSetting(plexbmc) + Library.HasContent(Movies)</visible>
-        <defaultID>19017</defaultID>
-        <label>19017</label>
-        <label2>Common Shortcut</label2>
-        <icon>DefaultShortcut.png</icon>
-        <thumb></thumb>
-        <action>ActivateWindow(Videos,library://video/Plex-4/4_all.xml/,return)</action>
-    </shortcut>
+    <!--<shortcut>-->
+        <!--<visible>!Skin.HasSetting(plexbmc) + Library.HasContent(Movies)</visible>-->
+        <!--<defaultID>19017</defaultID>-->
+        <!--<label>19017</label>-->
+        <!--<label2>Common Shortcut</label2>-->
+        <!--<icon>DefaultShortcut.png</icon>-->
+        <!--<thumb></thumb>-->
+        <!--<action>ActivateWindow(Videos,library://video/Plex-4/4_all.xml/,return)</action>-->
+    <!--</shortcut>-->
     <shortcut>
         <visible>Pvr.HasTVChannels</visible>
         <defaultID>livetv</defaultID>
