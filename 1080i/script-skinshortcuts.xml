@@ -5,44 +5,38 @@
         <include>Fanart_Art</include>
         <include>Player_Show</include>
         <include>OverlayFull</include>
+        <include>DimBG</include>
         <control type="group">
-            <include>NowPlayingSlideEffect</include>
-            <include>OpenClose</include>
+            <include>DialogOverlay</include>
+            <include>WindowClosingButton</include>
             <control type="group">
-                <control type="image">
-                    <posx>0</posx>
-                    <posy>280</posy>
-                    <width>1920</width>
-                    <height>800</height>
-                    <texture border="51">common/background_strip_horizontal.png</texture>
-                </control>
-                <control type="image">
-                    <posx>0</posx>
-                    <posy>330</posy>
-                    <width>50</width>
-                    <height>700</height>
-                    <texture border="1">common/background_strip_horizontal_left.png</texture>
-                </control>
-                <control type="image">
-                    <posx>50</posx>
-                    <posy>330</posy>
-                    <width>480</width>
-                    <height>700</height>
-                    <texture flipx="true" border="1">common/background_strip_horizontal_right.png</texture>
-                </control>
-                <control type="image">
-                    <posx>1870</posx>
-                    <posy>330</posy>
-                    <width>50</width>
-                    <height>700</height>
-                    <texture flipx="true" border="1">common/background_strip_horizontal_left.png</texture>
+                <include>DialogOpenClose</include>
+                <control type="label" id="500">
+                    <posx>100</posx>
+                    <posy>0</posy>
+                    <width>1720</width>
+                    <height>177</height>
+                    <aligny>center</aligny>
+                    <font>InfoTitleFont</font>
+                    <scroll>true</scroll>
+                    <include>TextColor_MainColor</include>
                 </control>
                 <!-- SIDE MENU -->
                 <control type="group">
+                    <control type="button" id="312">
+                        <posy>-10000</posy>
+                        <visible>!Skin.HasSetting(Hide.RecentlyAdded)</visible>
+                        <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
+                        <description>Select Widgets Advanced</description>
+                        <include>DialogMenuButton</include>
+                        <label>$ADDON[script.skinshortcuts 32044] 1</label>
+                    </control>
                     <control type="grouplist" id="9000">
-                        <height>600</height>
+                        <posx>80</posx>
+                        <posy>180</posy>
+                        <height>840</height>
                         <onup>9900</onup>
-                        <onright>9060</onright>
+                        <onright>211</onright>
                         <ondown>9000</ondown>
                         <onback>211</onback>
                         <include>DialogMenuButtonGroup</include>
@@ -94,14 +88,14 @@
                             <onclick>noop</onclick>
                             <label>$ADDON[script.skinshortcuts 32025]</label>
                         </control>
-                        <control type="button" id="306">
-                            <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
-                            <visible>!Skin.HasSetting(VerticalHome)</visible>
-                            <description>Change shortcut thumbnail</description>
-                            <include>DialogMenuButton</include>
-                            <onclick>noop</onclick>
-                            <label>$ADDON[script.skinshortcuts 32026]</label>
-                        </control>
+                        <!--<control type="button" id="306">-->
+                        <!--<visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>-->
+                        <!--<visible>!Skin.HasSetting(VerticalHome)</visible>-->
+                        <!--<description>Change shortcut thumbnail</description>-->
+                        <!--<include>DialogMenuButton</include>-->
+                        <!--<onclick>noop</onclick>-->
+                        <!--<label>$ADDON[script.skinshortcuts 32026]</label>-->
+                        <!--</control>-->
                         <control type="button" id="310">
                             <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
                             <visible>[[!Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(Home_DefaultBG)]|[Skin.HasSetting(BlackGlassMode)+Skin.HasSetting(VerticalHome)]]</visible>
@@ -111,58 +105,13 @@
                             <label>$ADDON[script.skinshortcuts 32045]</label>
                         </control>
                         <!--<control type="button" id="309">-->
-                            <!--<visible>!Skin.HasSetting(Hide.RecentlyAdded)</visible>-->
-                            <!--<visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>-->
-                            <!--<description>Select Widgets</description>-->
-                            <!--<include>DialogMenuButton</include>-->
-                            <!--<onclick>noop</onclick>-->
-                            <!--<label>$ADDON[script.skinshortcuts 32044]</label>-->
+                        <!--<visible>!Skin.HasSetting(Hide.RecentlyAdded)</visible>-->
+                        <!--<visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>-->
+                        <!--<description>Select Widgets</description>-->
+                        <!--<include>DialogMenuButton</include>-->
+                        <!--<onclick>noop</onclick>-->
+                        <!--<label>$ADDON[script.skinshortcuts 32044]</label>-->
                         <!--</control>-->
-                        <control type="button" id="312">
-                            <visible>!Skin.HasSetting(Hide.RecentlyAdded)</visible>
-                            <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
-                            <description>Select Widgets Advanced</description>
-                            <include>DialogMenuButton</include>
-                            <!--<onclick>SetProperty(widgetID,0)</onclick>-->
-                            <!--<onclick>SendClick(312)</onclick>-->
-                            <label>$ADDON[script.skinshortcuts 32044] 1</label>
-                        </control>
-                        <control type="button" id="3121">
-                            <visible>!Skin.HasSetting(Hide.RecentlyAdded)</visible>
-                            <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
-                            <description>Select Widgets Advanced</description>
-                            <include>DialogMenuButton</include>
-                            <onclick>SetProperty(widgetID,1)</onclick>
-                            <onclick>SendClick(312)</onclick>
-                            <label>$ADDON[script.skinshortcuts 32044] 2</label>
-                        </control>
-                        <control type="button" id="3122">
-                            <visible>!Skin.HasSetting(Hide.RecentlyAdded)</visible>
-                            <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
-                            <description>Select Widgets Advanced</description>
-                            <include>DialogMenuButton</include>
-                            <onclick>SetProperty(widgetID,2)</onclick>
-                            <onclick>SendClick(312)</onclick>
-                            <label>$ADDON[script.skinshortcuts 32044] 3</label>
-                        </control>
-                        <control type="button" id="3123">
-                            <visible>!Skin.HasSetting(Hide.RecentlyAdded)</visible>
-                            <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
-                            <description>Select Widgets Advanced</description>
-                            <include>DialogMenuButton</include>
-                            <onclick>SetProperty(widgetID,3)</onclick>
-                            <onclick>SendClick(312)</onclick>
-                            <label>$ADDON[script.skinshortcuts 32044] 4</label>
-                        </control>
-                        <control type="button" id="3124">
-                            <visible>!Skin.HasSetting(Hide.RecentlyAdded)</visible>
-                            <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
-                            <description>Select Widgets Advanced</description>
-                            <include>DialogMenuButton</include>
-                            <onclick>SetProperty(widgetID,4)</onclick>
-                            <onclick>SendClick(312)</onclick>
-                            <label>$ADDON[script.skinshortcuts 32044] 5</label>
-                        </control>
                         <control type="button" id="405">
                             <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
                             <description>Submenu</description>
@@ -176,12 +125,6 @@
                         <!--<label>$ADDON[script.skinshortcuts 32028]</label>-->
                         <!--</control>-->
                     </control>
-                    <include content="DialogMenuScroller">
-                        <param name="y" value="380"/>
-                        <param name="height" value="600"/>
-                        <param name="onright" value="211"/>
-                        <param name="onleft" value="9000"/>
-                    </include>
                 </control>
                 <!--MAIN MENU-->
                 <control type="group">
@@ -195,44 +138,32 @@
                     <include>SkinShortcuts_Widgets_Horizontal</include>
                     <include>SkinShortcuts_Window_Navigation</include>
                     <control type="scrollbar" id="260">
-                        <posx>530</posx>
-                        <posy>861</posy>
-                        <width>1340</width>
+                        <posx>532</posx>
+                        <posy>143</posy>
+                        <width>1286</width>
                         <include>HorizontalScroller</include>
-                        <onup>211</onup>
-                        <ondown>9000</ondown>
+                        <onup>9000</onup>
+                        <ondown>211</ondown>
                     </control>
-                    <control type="group">
-                        <control type="label">
-                            <posx>580</posx>
-                            <posy>380</posy>
-                            <width>1240</width>
-                            <height>50</height>
-                            <align>center</align>
-                            <font>SmallButtonFont</font>
-                            <include>TextColor_MainColor</include>
-                            <label>$LOCALIZE[31059]: [B]$VAR[SkinShortcutBackgroundDescription][/B]</label>
-                        </control>
-                        <control type="label">
-                            <posx>580</posx>
-                            <posy>880</posy>
-                            <width>1240</width>
-                            <height>50</height>
-                            <align>center</align>
-                            <font>SmallButtonFont</font>
-                            <textcolor>AlternateColor</textcolor>
-                            <label>$LOCALIZE[31052]: [B]$INFO[Container(211).ListItem.Label][/B]</label>
-                        </control>
-                        <control type="label">
-                            <posx>580</posx>
-                            <posy>920</posy>
-                            <width>1240</width>
-                            <height>50</height>
-                            <align>center</align>
-                            <font>SmallButtonFont</font>
-                            <include>TextColor_MainColor</include>
-                            <label>$ADDON[script.skinshortcuts 32041]: [B]$INFO[Container(211).ListItem.Property(Path)][/B]</label>
-                        </control>
+                    <control type="label">
+                        <posx>600</posx>
+                        <posy>760</posy>
+                        <width>1146</width>
+                        <height>50</height>
+                        <align>left</align>
+                        <font>SmallButtonFont</font>
+                        <include>TextColor_MainColor</include>
+                        <label>$LOCALIZE[31059][COLOR=SeparatorColor] › [/COLOR]$VAR[SkinShortcutBackgroundDescription]</label>
+                    </control>
+                    <control type="label">
+                        <posx>600</posx>
+                        <posy>820</posy>
+                        <width>1146</width>
+                        <height>50</height>
+                        <align>left</align>
+                        <font>SmallButtonFont</font>
+                        <include>TextColor_MainColor</include>
+                        <label>$LOCALIZE[31052][COLOR=SeparatorColor] › [/COLOR]$INFO[Container(211).ListItem.Label]</label>
                     </control>
                 </control>
                 <!--SUBMENU-->
@@ -242,9 +173,9 @@
                     <control type="List" id="211">
                         <visible>!String.IsEqual(Window.Property(groupname),mainmenu)</visible>
                         <posx>530</posx>
-                        <posy>380</posy>
+                        <posy>180</posy>
                         <width>1340</width>
-                        <height>600</height>
+                        <height>840</height>
                         <itemgap>0</itemgap>
                         <onright>266</onright>
                         <onleft>9000</onleft>
@@ -254,62 +185,60 @@
                         <pagecontrol>266</pagecontrol>
                         <itemlayout width="1340" height="100">
                             <control type="label">
-                                <posx>TextMargin</posx>
+                                <posx>20</posx>
                                 <posy>6</posy>
                                 <height>50</height>
-                                <width>1240</width>
+                                <width>1270</width>
                                 <font>FacadeListMainFont</font>
-                                <include>TextColor_MidColor</include>
+                                <textcolor>NoFocusedColor</textcolor>
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                             <control type="label">
-                                <posx>TextMargin</posx>
+                                <posx>20</posx>
                                 <posy>44</posy>
                                 <height>50</height>
-                                <width>1240</width>
+                                <width>1270</width>
                                 <font>FacadeListSubFont</font>
                                 <textcolor>NoFocusedColor</textcolor>
-                                <label>$INFO[ListItem.Label2]$INFO[ListItem.Property(Path), - ]</label>
+                                <label>$INFO[ListItem.Label2]$INFO[ListItem.Property(Path),[COLOR=SeparatorColor] › [/COLOR]]</label>
                             </control>
                         </itemlayout>
                         <focusedlayout width="1340" height="100">
                             <control type="group">
                                 <include>ButtonWideFocusAnimation</include>
-                                <control type="image">
-                                    <posx>0</posx>
-                                    <posy>0</posy>
-                                    <height>100</height>
-                                    <width>1340</width>
-                                    <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-                                    <texture border="1">list/bg_facade_focus_2.png</texture>
-                                </control>
+                                <include content="FocusedIndicator">
+                                    <param name="x" value="0"/>
+                                    <param name="y" value="0"/>
+                                    <param name="height" value="90"/>
+                                    <param name="visible" value="true"/>
+                                </include>
                                 <control type="label">
-                                    <posx>TextMargin</posx>
+                                    <posx>20</posx>
                                     <posy>6</posy>
                                     <height>50</height>
-                                    <width>1240</width>
+                                    <width>1270</width>
                                     <font>FacadeListMainFont</font>
                                     <scroll>true</scroll>
                                     <include>TextColor_MainColor</include>
                                     <label>$INFO[ListItem.Label]</label>
                                 </control>
                                 <control type="label">
-                                    <posx>TextMargin</posx>
+                                    <posx>20</posx>
                                     <posy>44</posy>
                                     <height>50</height>
-                                    <width>1240</width>
+                                    <width>1270</width>
                                     <font>FacadeListSubFont</font>
                                     <scroll>true</scroll>
-                                    <textcolor>AlternateColor</textcolor>
-                                    <label>$INFO[ListItem.Label2]$INFO[ListItem.Property(Path), - ]</label>
+                                    <include>TextColor_MainColor</include>
+                                    <label>$INFO[ListItem.Label2]$INFO[ListItem.Property(Path),[COLOR=SeparatorColor] › [/COLOR]]</label>
                                 </control>
                             </control>
                         </focusedlayout>
                     </control>
                     <control type="scrollbar" id="266">
-                        <posx>1820</posx>
-                        <posy>380</posy>
-                        <height>600</height>
+                        <posx>1870</posx>
+                        <posy>180</posy>
+                        <height>840</height>
                         <include>VerticalScroller</include>
                         <onleft>211</onleft>
                         <onright>266</onright>
@@ -317,16 +246,5 @@
                 </control>
             </control>
         </control>
-        <control type="label" id="500">
-            <include>WindowTitle</include>
-        </control>
-        <control type="label">
-            <include>WindowTitleSub</include>
-            <label>$LOCALIZE[5]</label>
-        </control>
-        <include>Header_Logo</include>
-        <include>Time</include>
-        <include>NowPlaying</include>
-        <include>TopBar</include>
     </controls>
 </window>

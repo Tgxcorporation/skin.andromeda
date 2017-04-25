@@ -155,7 +155,7 @@
     <include name="ListFocusAnimation">
         <animation type="Focus" reversible="false">
             <effect type="slide" start="-10,0" end="0,0" time="150" tween="back" easing="out"/>
-            <effect type="fade" start="25" end="100" time="150"/>
+            <!--<effect type="fade" start="25" end="100" time="150"/>-->
         </animation>
     </include>
     <include name="NowPlayingVisibleFadeEffect">
