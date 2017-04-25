@@ -2,108 +2,107 @@
 <window>
     <defaultcontrol always="true">5</defaultcontrol>
     <controls>
-    <include>DimBG</include>
-    <control type="group">
-        <include>DialogOpenClose</include>
-        <animation effect="slide" start="0,0" end="0,100" time="0" condition="!control.isvisible(5)">Conditional</animation>
-        <control type="image">
-            <posx>160</posx>
-            <posy>140</posy>
-            <width>1600</width>
-            <height>1080</height>
-            <!--<include>DialogTransparency</include>-->
-            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-            <texture border="50">common/background_menu.png</texture>
-        </control>
-        <include content="WindowClosingButton">
-            <param name="id" value="9010"/>
-            <param name="x" value="1710"/>
-            <param name="y" value="140"/>
-            <param name="onleft" value="6060"/>
-        </include>
-        <control type="label">
-            <posx>260</posx>
-            <posy>240</posy>
-            <width>1400</width>
-            <height>50</height>
-            <font>InfoTitleFont</font>
-            <include>TextColor_MainColor</include>
-            <scroll>true</scroll>
-            <label>$LOCALIZE[13406]</label>
-        </control>
-        <control type="list" id="5">
-            <posx>210</posx>
-            <posy>340</posy>
-            <width>1500</width>
-            <height>700</height>
-            <itemgap>0</itemgap>
-            <orientation>vertical</orientation>
-            <onleft>5</onleft>
-            <onright>60</onright>
-            <onup>5</onup>
-            <ondown>5</ondown>
-            <pagecontrol>60</pagecontrol>
-            <itemlayout width="1500" height="100">
-                <control type="label">
-                    <posx>TextMargin</posx>
-                    <posy>4</posy>
-                    <height>50</height>
-                    <width>1400</width>
-                    <font>FacadeListSubFont</font>
-                    <textcolor>NoFocusedColor</textcolor>
-                    <label>$INFO[ListItem.Label]</label>
-                </control>
-                <control type="label">
-                    <posx>TextMargin</posx>
-                    <posy>42</posy>
-                    <height>50</height>
-                    <width>1400</width>
-                    <font>FacadeListMainFont</font>
-                    <include>TextColor_MidColor</include>
-                    <label>$INFO[ListItem.Label2]</label>
-                </control>
-            </itemlayout>
-            <focusedlayout width="1500" height="100">
-                <control type="group">
-                    <include>ButtonFocusAnimation</include>
-                    <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <height>100</height>
-                        <width>1500</width>
-                        <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-                        <texture border="1">list/bg_facade_focus_2.png</texture>
-                    </control>
+        <include>DimBG</include>
+        <control type="group">
+        <include>DialogOverlay</include>
+        <include>WindowClosingButton</include>
+        <control type="group">
+            <include>DialogOpenClose</include>
+            <control type="label">
+                <posx>660</posx>
+                <posy>40</posy>
+                <width>1180</width>
+                <height>50</height>
+                <label>$LOCALIZE[13406]</label>
+                <font>InfoTitleFont</font>
+                <scroll>true</scroll>
+                <include>TextColor_MainColor</include>
+            </control>
+            <include content="ThumbsImages">
+                <param name="visible" value="true"/>
+                <param name="x" value="120"/>
+                <param name="y" value="193"/>
+                <param name="width" value="460"/>
+                <param name="height" value="690"/>
+                <param name="aspectratio" value="keep"/>
+                <param name="align" value="center"/>
+                <param name="aligny" value="top"/>
+                <param name="flipy" value="false"/>
+                <param name="texturediffuse" value="ThumbsFocusedColor"/>
+                <param name="borderdiffuse" value="$VAR[Picked.Theme.Color]"/>
+            </include>
+            <control type="list" id="5">
+                <posx>640</posx>
+                <posy>185</posy>
+                <width>1300</width>
+                <height>840</height>
+                <itemgap>0</itemgap>
+                <orientation>vertical</orientation>
+                <onleft>5</onleft>
+                <onright>60</onright>
+                <onup>5</onup>
+                <ondown>5</ondown>
+                <pagecontrol>60</pagecontrol>
+                <itemlayout width="1300" height="109">
                     <control type="label">
-                        <posx>TextMargin</posx>
+                        <posx>20</posx>
                         <posy>4</posy>
                         <height>50</height>
-                        <width>1400</width>
+                        <width>1280</width>
                         <font>FacadeListSubFont</font>
-                        <textcolor>AlternateColor</textcolor>
+                        <textcolor>NoFocusedColor</textcolor>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="label">
-                        <posx>TextMargin</posx>
+                        <posx>20</posx>
                         <posy>42</posy>
                         <height>50</height>
                         <width>1400</width>
-                        <scroll>true</scroll>
                         <font>FacadeListMainFont</font>
-                        <include>TextColor_MainColor</include>
+                        <textcolor>NoFocusedColor</textcolor>
                         <label>$INFO[ListItem.Label2]</label>
                     </control>
-                </control>
-            </focusedlayout>
+                </itemlayout>
+                <focusedlayout width="1300" height="109">
+                    <control type="group">
+                        <include>ButtonFocusAnimation</include>
+                        <include content="FocusedIndicator">
+                            <param name="x" value="0"/>
+                            <param name="y" value="7"/>
+                            <param name="height" value="75"/>
+                            <param name="visible" value="true"/>
+                        </include>
+                        <control type="label">
+                            <posx>20</posx>
+                            <posy>4</posy>
+                            <height>50</height>
+                            <width>1280</width>
+                            <font>FacadeListSubFont</font>
+                            <include>TextColor_MainColor</include>
+                            <label>$INFO[ListItem.Label]</label>
+                        </control>
+                        <control type="label">
+                            <posx>20</posx>
+                            <posy>42</posy>
+                            <height>50</height>
+                            <width>1280</width>
+                            <scroll>true</scroll>
+                            <font>FacadeListMainFont</font>
+                            <include>TextColor_MainColor</include>
+                            <label>$INFO[ListItem.Label2]</label>
+                        </control>
+                    </control>
+                </focusedlayout>
+            </control>
+            <control type="scrollbar" id="60">
+                <posx>1870</posx>
+                <posy>180</posy>
+                <height>840</height>
+                <include>VerticalScroller</include>
+                <onleft>5</onleft>
+                <onright>5</onright>
+            </control>
         </control>
-        <control type="scrollbar" id="60">
-            <posx>1660</posx>
-            <posy>340</posy>
-            <height>700</height>
-            <include>VerticalScroller</include>
-            <onleft>5</onleft>
-            <onright>5</onright>
         </control>
-    </control>
-</controls>
+    </controls>
 </window>

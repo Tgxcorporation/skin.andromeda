@@ -1,165 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window type="dialog">
-    <defaultcontrol always="true">9000</defaultcontrol>
+    <defaultcontrol always="true">49</defaultcontrol>
     <controls>
         <include>DimBG</include>
         <control type="group">
-            <include>DialogOpenClose</include>
             <control type="image">
-                <posx>0</posx>
-                <posy>140</posy>
-                <width>1920</width>
+                <include>DialogOpenCloseOverlay</include>
+                <posx>-960</posx>
+                <posy>0</posy>
+                <width>2880</width>
                 <height>1080</height>
-                <!--<include>DialogTransparency</include>-->
                 <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-                <texture border="50">common/background_menu.png</texture>
+                <texture>common/overlay_dialog_gradient.png</texture>
             </control>
-            <include content="WindowClosingButton">
-                <param name="id" value="99010"/>
-                <param name="x" value="1870"/>
-                <param name="y" value="140"/>
-                <param name="onleft" value="6060"/>
-            </include>
-            <control type="image">
-                <posx>530</posx>
-                <posy>190</posy>
-                <width>480</width>
-                <height>900</height>
-                <texture border="1">common/background_strip_horizontal_right.png</texture>
-            </control>
-            <control type="image">
-                <posx>530r</posx>
-                <posy>190</posy>
-                <width>480</width>
-                <height>900</height>
-                <texture border="1">common/background_strip_horizontal_right.png</texture>
-            </control>
-            <!-- SIDE MENU -->
+            <include>WindowClosingButton</include>
             <control type="group">
-                <posy>240</posy>
-                <control type="grouplist" id="9000">
-                    <posy>0</posy>
-                    <height>800</height>
-                    <include>DialogMenuButtonGroup</include>
-                    <ondown>9000</ondown>
-                    <onright>9060</onright>
-                    <control type="button" id="500">
-                        <visible>String.IsEqual(ListItem.DBType,artist)</visible>
-                        <description>Biography</description>
-                        <include>DialogMenuButton</include>
-                        <label>21887</label>
-                        <onright>49</onright>
-                    </control>
-                    <control type="button" id="501">
-                        <visible>String.IsEqual(ListItem.DBType,album)</visible>
-                        <description>Review</description>
-                        <include>DialogMenuButton</include>
-                        <label>183</label>
-                        <onright>49</onright>
-                    </control>
-                    <control type="button" id="502">
-                        <visible>String.IsEqual(ListItem.DBType,artist)</visible>
-                        <description>Discography</description>
-                        <include>DialogMenuButton</include>
-                        <label>21888</label>
-                        <onright>50</onright>
-                    </control>
-                    <control type="button" id="503">
-                        <visible>String.IsEqual(ListItem.DBType,album)</visible>
-                        <description>Tracks</description>
-                        <include>DialogMenuButton</include>
-                        <label>182</label>
-                        <onright>50</onright>
-                    </control>
-                    <control type="label" id="7895">
-                        <visible>control.isvisible(500)|control.isvisible(501)|control.isvisible(502)|control.isvisible(503)</visible>
-                        <height>200</height>
-                        <width>480</width>
-                        <label>-</label>
-                    </control>
-                    <control type="button" id="10">
-                        <description>Get Thumb</description>
-                        <include>DialogMenuButton</include>
-                        <label>13405</label>
-                        <onright>49</onright>
-                    </control>
-                    <control type="button" id="12">
-                        <visible>String.IsEqual(ListItem.DBType,artist)</visible>
-                        <description>Get Fanart</description>
-                        <include>DialogMenuButton</include>
-                        <label>20413</label>
-                        <onright>49</onright>
-                    </control>
-                    <control type="button" id="7">
-                        <description>Set my rating</description>
-                        <include>DialogMenuButton</include>
-                        <label>31033</label>
-                        <visible>String.IsEqual(ListItem.DBType,album) | String.IsEqual(ListItem.DBType,song)</visible>
-                    </control>
-                    <control type="button" id="6">
-                        <description>Refresh</description>
-                        <include>DialogMenuButton</include>
-                        <label>184</label>
-                        <onright>49</onright>
-                    </control>
-                </control>
-                <include content="DialogMenuScroller">
-                    <param name="y" value="0"/>
-                    <param name="height" value="800"/>
-                    <param name="onright" value="49"/>
-                    <param name="onleft" value="9000"/>
-                </include>
-            </control>
-            <control type="group">
-                <posx>530</posx>
-                <posy>240</posy>
-                <control type="label">
-                    <visible>!String.IsEqual(ListItem.DBType,artist)</visible>
-                    <posx>TextMargin</posx>
-                    <posy>0</posy>
-                    <width>760</width>
-                    <height>50</height>
-                    <font>InfoTitleFont</font>
-                    <include>TextColor_MainColor</include>
-                    <scroll>true</scroll>
-                    <label>$INFO[ListItem.Album]</label>
-                </control>
-                <control type="label">
-                    <visible>String.IsEqual(ListItem.DBType,artist)</visible>
-                    <posx>TextMargin</posx>
-                    <posy>0</posy>
-                    <width>760</width>
-                    <height>50</height>
-                    <font>InfoTitleFont</font>
-                    <include>TextColor_MainColor</include>
-                    <scroll>true</scroll>
-                    <label>$INFO[ListItem.Artist]</label>
-                </control>
+                <include>DialogOpenClose</include>
                 <!--BIOGRAPHY REVIEW-->
                 <control type="group" id="5000">
                     <visible>![Control.HasFocus(503)|Control.HasFocus(502)|ControlGroup(5020).HasFocus]</visible>
                     <include>VisibleFadeEffect</include>
+                    <include content="DummyButton">
+                        <param name="x" value="0"/>
+                        <param name="y" value="70"/>
+                        <param name="width" value="1920"/>
+                        <param name="height" value="1080"/>
+                        <param name="onfocus" value="noop"/>
+                        <param name="SlideTo" value="960,0"/>
+                        <param name="SlideCondition" value="ControlGroup(9000).hasfocus"/>
+                    </include>
+                    <include content="DiscArt">
+                        <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[String.IsEqual(ListItem.DBType,album)|String.IsEqual(ListItem.DBType,song)]"/>
+                        <param name="x" value="170"/>
+                        <param name="y" value="20"/>
+                        <param name="width" value="360"/>
+                        <param name="height" value="360"/>
+                        <param name="texture" value="$VAR[MusicCdArt]"/>
+                        <param name="visibleShadow" value="true"/>
+                        <param name="xShadow" value="0"/>
+                        <param name="yShadow" value="-25"/>
+                        <param name="widthShadow" value="380"/>
+                        <param name="flipyShadow" value="false"/>
+                    </include>
+                    <include content="ThumbsImages">
+                        <param name="visible" value="true"/>
+                        <param name="x" value="120"/>
+                        <param name="y" value="200"/>
+                        <param name="width" value="460"/>
+                        <param name="height" value="460"/>
+                        <param name="aspectratio" value="keep"/>
+                        <param name="align" value="center"/>
+                        <param name="aligny" value="top"/>
+                        <param name="flipy" value="false"/>
+                        <param name="texturediffuse" value="ThumbsFocusedColor"/>
+                        <param name="borderdiffuse" value="$VAR[Picked.Theme.Color]"/>
+                    </include>
+                    <include content="StudioArt">
+                        <param name="x" value="120"/>
+                        <param name="y" value="900"/>
+                        <param name="width" value="210"/>
+                        <param name="height" value="130"/>
+                        <param name="visible" value="true"/>
+                        <param name="align" value="left"/>
+                        <param name="aligny" value="center"/>
+                    </include>
+                    <include content="ClearArtLogo">
+                        <param name="x" value="370"/>
+                        <param name="y" value="900"/>
+                        <param name="width" value="210"/>
+                        <param name="height" value="130"/>
+                        <param name="visible" value="true"/>
+                        <param name="align" value="left"/>
+                        <param name="aligny" value="center"/>
+                    </include>
                     <control type="group">
                         <visible>String.IsEqual(ListItem.DBType,album)</visible>
                         <include>VisibleFadeEffect</include>
                         <control type="label">
-                            <posx>TextMargin</posx>
-                            <posy>50</posy>
-                            <width>760</width>
+                            <posx>660</posx>
+                            <posy>40</posy>
+                            <width>1180</width>
+                            <height>50</height>
+                            <font>InfoTitleFont</font>
+                            <include>TextColor_MainColor</include>
+                            <scroll>true</scroll>
+                            <label>$INFO[ListItem.Album]</label>
+                        </control>
+                        <control type="label">
+                            <posx>660</posx>
+                            <posy>100</posy>
+                            <width>1180</width>
                             <height>35</height>
                             <font>InfoTitleSubFont</font>
-                            <include>TextColor_MidColor</include>
+                            <include>TextColor_MainColor</include>
                             <label>$LOCALIZE[10523]</label>
                         </control>
-                        <include content="DummyButton">
-                            <param name="x" value="0"/>
-                            <param name="y" value="0"/>
-                            <param name="width" value="860"/>
-                            <param name="height" value="800"/>
-                            <param name="onfocus" value="noop"/>
-                        </include>
                         <control type="panel" id="49">
-                            <height>300</height>
                             <onleft>9000</onleft>
                             <onright>60</onright>
                             <onup>49</onup>
@@ -230,9 +166,9 @@
                             </content>
                         </control>
                         <control type="scrollbar" id="60">
-                            <posx>810</posx>
-                            <posy>100</posy>
-                            <height>300</height>
+                            <posx>1870</posx>
+                            <posy>195</posy>
+                            <height>360</height>
                             <include>VerticalScroller</include>
                             <onleft>49</onleft>
                             <onright>60</onright>
@@ -243,16 +179,25 @@
                         <visible>String.IsEqual(ListItem.DBType,artist)</visible>
                         <include>VisibleFadeEffect</include>
                         <control type="label">
-                            <posx>TextMargin</posx>
-                            <posy>50</posy>
-                            <width>760</width>
+                            <posx>660</posx>
+                            <posy>40</posy>
+                            <width>1180</width>
+                            <height>50</height>
+                            <font>InfoTitleFont</font>
+                            <include>TextColor_MainColor</include>
+                            <scroll>true</scroll>
+                            <label>$INFO[ListItem.Artist]</label>
+                        </control>
+                        <control type="label">
+                            <posx>660</posx>
+                            <posy>100</posy>
+                            <width>1180</width>
                             <height>35</height>
                             <font>InfoTitleSubFont</font>
-                            <include>TextColor_MidColor</include>
+                            <include>TextColor_MainColor</include>
                             <label>$LOCALIZE[21891]</label>
                         </control>
                         <control type="panel" id="49">
-                            <height>300</height>
                             <onleft>9000</onleft>
                             <onright>60</onright>
                             <onup>49</onup>
@@ -317,9 +262,9 @@
                             </content>
                         </control>
                         <control type="scrollbar" id="60">
-                            <posx>810</posx>
-                            <posy>100</posy>
-                            <height>300</height>
+                            <posx>1870</posx>
+                            <posy>195</posy>
+                            <height>360</height>
                             <include>VerticalScroller</include>
                             <onleft>49</onleft>
                             <onright>9000</onright>
@@ -330,16 +275,25 @@
                         <visible>String.IsEqual(ListItem.DBType,song)</visible>
                         <include>VisibleFadeEffect</include>
                         <control type="label">
-                            <posx>TextMargin</posx>
-                            <posy>50</posy>
-                            <width>760</width>
+                            <posx>660</posx>
+                            <posy>40</posy>
+                            <width>1180</width>
+                            <height>50</height>
+                            <font>InfoTitleFont</font>
+                            <include>TextColor_MainColor</include>
+                            <scroll>true</scroll>
+                            <label>$INFO[ListItem.Album]</label>
+                        </control>
+                        <control type="label">
+                            <posx>660</posx>
+                            <posy>100</posy>
+                            <width>1180</width>
                             <height>35</height>
                             <font>InfoTitleSubFont</font>
-                            <include>TextColor_MidColor</include>
+                            <include>TextColor_MainColor</include>
                             <label>$LOCALIZE[658]</label>
                         </control>
                         <control type="panel" id="49">
-                            <height>300</height>
                             <onleft>9000</onleft>
                             <onright>60</onright>
                             <onup>49</onup>
@@ -355,7 +309,7 @@
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[558]:</label>
-                                    <label2>$INFO[ListItem.Album]$INFO[listitem.discnumber, - $LOCALIZE[427] ]</label2>
+                                    <label2>$INFO[ListItem.Album]$INFO[listitem.discnumber,[COLOR=SeparatorColor] › [/COLOR]$LOCALIZE[427] ]</label2>
                                     <onclick>noop</onclick>
                                     <visible>!String.IsEmpty(ListItem.Album)</visible>
                                 </item>
@@ -434,124 +388,131 @@
                             </content>
                         </control>
                         <control type="scrollbar" id="60">
-                            <posx>810</posx>
-                            <posy>100</posy>
-                            <height>300</height>
+                            <posx>1870</posx>
+                            <posy>195</posy>
+                            <height>360</height>
                             <include>VerticalScroller</include>
                             <onleft>49</onleft>
                             <onright>9000</onright>
                             <ondown>6060</ondown>
                         </control>
                     </control>
-                    <control type="group">
-                        <posx>0</posx>
-                        <posy>450</posy>
-                        <control type="textbox">
-                            <description>Description</description>
-                            <posx>TextMargin</posx>
-                            <posy>10</posy>
-                            <width>760</width>
-                            <height>310</height>
-                            <font>InfoPlotFont</font>
-                            <textcolor>AlternateColor</textcolor>
-                            <label>$VAR[MusicInfoTextboxVar]</label>
-                            <pagecontrol>6060</pagecontrol>
-                        </control>
-                        <control type="scrollbar" id="6060">
-                            <visible>Skin.HasSetting(ManualScroll)</visible>
-                            <posx>810</posx>
-                            <posy>10</posy>
-                            <height>310</height>
-                            <include>VerticalScroller</include>
-                            <onleft>49</onleft>
-                            <onup>60</onup>
-                            <onright>6060</onright>
-                        </control>
-                    </control>
-                    <control type="group">
-                        <posx>910</posx>
-                        <posy>0</posy>
-                        <include content="DiscArt">
-                            <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[String.IsEqual(ListItem.DBType,album)|String.IsEqual(ListItem.DBType,song)]"/>
-                            <param name="x" value="10"/>
-                            <param name="y" value="-180"/>
-                            <param name="width" value="360"/>
-                            <param name="height" value="360"/>
-                            <param name="texture" value="$VAR[MusicCdArt]"/>
-                            <param name="visibleShadow" value="true"/>
-                            <param name="xShadow" value="0"/>
-                            <param name="yShadow" value="-25"/>
-                            <param name="widthShadow" value="380"/>
-                            <param name="flipyShadow" value="false"/>
-                        </include>
-                        <include content="ThumbsImages">
-                            <param name="visible" value="true"/>
-                            <param name="x" value="0"/>
-                            <param name="y" value="0"/>
-                            <param name="width" value="380"/>
-                            <param name="height" value="380"/>
-                            <param name="aspectratio" value="keep"/>
-                            <param name="align" value="center"/>
-                            <param name="aligny" value="top"/>
-                            <param name="flipy" value="false"/>
-                        </include>
-                        <include content="StudioArt">
-                            <param name="x" value="0"/>
-                            <param name="y" value="430"/>
-                            <param name="width" value="380"/>
-                            <param name="height" value="150"/>
-                            <param name="visible" value="true"/>
-                            <param name="align" value="center"/>
-                            <param name="aligny" value="center"/>
-                        </include>
-                        <include content="ClearArtLogo">
-                            <param name="x" value="0"/>
-                            <param name="y" value="620"/>
-                            <param name="width" value="380"/>
-                            <param name="height" value="180"/>
-                            <param name="visible" value="true"/>
-                            <param name="align" value="center"/>
-                            <param name="aligny" value="center"/>
-                            <param name="flipy" value="false"/>
-                        </include>
+                    <control type="textbox">
+                        <posx>660</posx>
+                        <posy>580</posy>
+                        <width>1160</width>
+                        <height>440</height>
+                        <font>InfoPlotFont</font>
+                        <include>TextColor_MainColor</include>
+                        <include>myautoscroll</include>
+                        <label>$VAR[MusicInfoTextboxVar]</label>
+                        <pagecontrol>6060</pagecontrol>
                     </control>
                 </control>
                 <!--DISCOGRAPHY TRACKS-->
                 <control type="group" id="5020">
                     <visible>Control.HasFocus(502)|Control.HasFocus(503)|ControlGroup(5020).HasFocus</visible>
                     <include>VisibleFadeEffect</include>
+                    <include content="DummyButton">
+                        <param name="x" value="0"/>
+                        <param name="y" value="70"/>
+                        <param name="width" value="1920"/>
+                        <param name="height" value="1080"/>
+                        <param name="onfocus" value="noop"/>
+                        <param name="SlideTo" value="960,0"/>
+                        <param name="SlideCondition" value="ControlGroup(9000).hasfocus"/>
+                    </include>
+                    <include content="DiscArt">
+                        <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+String.IsEqual(ListItem.DBType,album)"/>
+                        <param name="x" value="170"/>
+                        <param name="y" value="20"/>
+                        <param name="width" value="360"/>
+                        <param name="height" value="360"/>
+                        <param name="texture" value="$VAR[MusicCdArt]"/>
+                        <param name="visibleShadow" value="true"/>
+                        <param name="xShadow" value="0"/>
+                        <param name="yShadow" value="-25"/>
+                        <param name="widthShadow" value="380"/>
+                        <param name="flipyShadow" value="false"/>
+                    </include>
+                    <include content="ThumbsImages">
+                        <param name="visible" value="true"/>
+                        <param name="x" value="120"/>
+                        <param name="y" value="200"/>
+                        <param name="width" value="460"/>
+                        <param name="height" value="460"/>
+                        <param name="aspectratio" value="keep"/>
+                        <param name="align" value="center"/>
+                        <param name="aligny" value="top"/>
+                        <param name="flipy" value="false"/>
+                        <param name="texturediffuse" value="ThumbsFocusedColor"/>
+                        <param name="borderdiffuse" value="$VAR[Picked.Theme.Color]"/>
+                    </include>
+                    <include content="StudioArt">
+                        <param name="x" value="120"/>
+                        <param name="y" value="900"/>
+                        <param name="width" value="210"/>
+                        <param name="height" value="130"/>
+                        <param name="visible" value="true"/>
+                        <param name="align" value="left"/>
+                        <param name="aligny" value="center"/>
+                    </include>
+                    <include content="ClearArtLogo">
+                        <param name="x" value="370"/>
+                        <param name="y" value="900"/>
+                        <param name="width" value="210"/>
+                        <param name="height" value="130"/>
+                        <param name="visible" value="true"/>
+                        <param name="align" value="left"/>
+                        <param name="aligny" value="center"/>
+                    </include>
+                    <control type="label">
+                        <visible>String.IsEqual(ListItem.DBType,album)</visible>
+                        <posx>660</posx>
+                        <posy>40</posy>
+                        <width>1180</width>
+                        <height>50</height>
+                        <font>InfoTitleFont</font>
+                        <include>TextColor_MainColor</include>
+                        <scroll>true</scroll>
+                        <label>$INFO[ListItem.Album]</label>
+                    </control>
                     <control type="label">
                         <visible>String.IsEqual(ListItem.DBType,artist)</visible>
-                        <posx>TextMargin</posx>
-                        <posy>50</posy>
+                        <posx>660</posx>
+                        <posy>40</posy>
+                        <width>1180</width>
+                        <height>50</height>
+                        <font>InfoTitleFont</font>
+                        <include>TextColor_MainColor</include>
+                        <scroll>true</scroll>
+                        <label>$INFO[ListItem.Artist]</label>
+                    </control>
+                    <control type="label">
+                        <visible>String.IsEqual(ListItem.DBType,artist)</visible>
+                        <posx>660</posx>
+                        <posy>100</posy>
                         <width>760</width>
                         <height>35</height>
                         <font>InfoTitleSubFont</font>
-                        <include>TextColor_MidColor</include>
-                        <label>$LOCALIZE[21888] - $INFO[Container(50).NumItems] $LOCALIZE[31025]</label>
+                        <include>TextColor_MainColor</include>
+                        <label>$LOCALIZE[21888][COLOR=SeparatorColor] › [/COLOR]$INFO[Container(50).NumItems] $LOCALIZE[31025]</label>
                     </control>
                     <control type="label">
                         <visible>String.IsEqual(ListItem.DBType,album)</visible>
-                        <posx>TextMargin</posx>
-                        <posy>50</posy>
+                        <posx>660</posx>
+                        <posy>100</posy>
                         <width>760</width>
                         <height>35</height>
                         <font>InfoTitleSubFont</font>
-                        <include>TextColor_MidColor</include>
-                        <label>$LOCALIZE[182] - $INFO[Container(50).NumItems] $LOCALIZE[31025]</label>
+                        <include>TextColor_MainColor</include>
+                        <label>$LOCALIZE[182][COLOR=SeparatorColor] › [/COLOR]$INFO[Container(50).NumItems] $LOCALIZE[31025]</label>
                     </control>
-                    <include content="DummyButton">
-                        <param name="x" value="0"/>
-                        <param name="y" value="0"/>
-                        <param name="width" value="860"/>
-                        <param name="height" value="800"/>
-                        <param name="onfocus" value="noop"/>
-                    </include>
                     <control type="panel" id="50">
-                        <posx>0</posx>
-                        <posy>100</posy>
-                        <width>860</width>
-                        <height>700</height>
+                        <posx>640</posx>
+                        <posy>185</posy>
+                        <width>1300</width>
+                        <height>840</height>
                         <onleft>9000</onleft>
                         <onright>62</onright>
                         <onup>50</onup>
@@ -559,167 +520,191 @@
                         <viewtype label="">list</viewtype>
                         <pagecontrol>62</pagecontrol>
                         <orientation>vertical</orientation>
-                        <itemlayout height="100" width="860" condition="String.IsEqual(ListItem.DBType,album)">
+                        <itemlayout height="109" width="1180" condition="String.IsEqual(ListItem.DBType,album)">
                             <control type="label">
-                                <posx>TextMargin</posx>
+                                <posx>20</posx>
                                 <posy>6</posy>
                                 <height>50</height>
-                                <width>760</width>
+                                <width>1160</width>
                                 <font>FacadeListMainFont</font>
-                                <include>TextColor_MidColor</include>
-                                <label>$INFO[ListItem.TrackNumber,, - ]$INFO[ListItem.Label]</label>
+                                <textcolor>NoFocusedColor</textcolor>
+                                <label>$INFO[ListItem.TrackNumber,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Label]</label>
                             </control>
                             <control type="label">
-                                <posx>TextMargin</posx>
+                                <posx>20</posx>
                                 <posy>44</posy>
                                 <height>50</height>
-                                <width>760</width>
+                                <width>1160</width>
                                 <font>FacadeListSubFont</font>
                                 <textcolor>NoFocusedColor</textcolor>
                                 <label>$INFO[ListItem.Duration]</label>
                             </control>
                         </itemlayout>
-                        <focusedlayout height="100" width="860" condition="String.IsEqual(ListItem.DBType,album)">
+                        <focusedlayout height="109" width="1180" condition="String.IsEqual(ListItem.DBType,album)">
                             <control type="group">
                                 <include>ButtonWideFocusAnimation</include>
-                                <control type="image">
-                                    <posx>0</posx>
-                                    <posy>0</posy>
-                                    <height>100</height>
-                                    <width>860</width>
-                                    <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-                                    <texture border="1">list/bg_facade_focus_2.png</texture>
-                                </control>
+                                <include content="FocusedIndicator">
+                                    <param name="x" value="0"/>
+                                    <param name="y" value="17"/>
+                                    <param name="height" value="57"/>
+                                    <param name="visible" value="true"/>
+                                </include>
                                 <control type="label">
-                                    <posx>TextMargin</posx>
+                                    <posx>20</posx>
                                     <posy>6</posy>
                                     <height>50</height>
-                                    <width>760</width>
+                                    <width>1160</width>
                                     <font>FacadeListMainFont</font>
                                     <scroll>true</scroll>
                                     <include>TextColor_MainColor</include>
-                                    <label>$INFO[ListItem.TrackNumber,, - ]$INFO[ListItem.Label]</label>
+                                    <label>$INFO[ListItem.TrackNumber,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Label]</label>
                                 </control>
                                 <control type="label">
-                                    <posx>TextMargin</posx>
+                                    <posx>20</posx>
                                     <posy>44</posy>
                                     <height>50</height>
-                                    <width>760</width>
+                                    <width>1160</width>
                                     <font>FacadeListSubFont</font>
                                     <scroll>true</scroll>
-                                    <textcolor>AlternateColor</textcolor>
+                                    <include>TextColor_MainColor</include>
                                     <label>$INFO[ListItem.Duration]</label>
                                 </control>
                             </control>
                         </focusedlayout>
-                        <itemlayout height="100" width="860" condition="String.IsEqual(ListItem.DBType,artist)|Container.Content(songs)">
+                        <itemlayout height="109" width="1180" condition="String.IsEqual(ListItem.DBType,artist)|Container.Content(songs)">
                             <control type="label">
-                                <posx>TextMargin</posx>
+                                <posx>20</posx>
                                 <posy>6</posy>
                                 <height>50</height>
-                                <width>760</width>
+                                <width>1160</width>
                                 <font>FacadeListMainFont</font>
-                                <include>TextColor_MidColor</include>
+                                <textcolor>NoFocusedColor</textcolor>
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                             <control type="label">
-                                <posx>TextMargin</posx>
+                                <posx>20</posx>
                                 <posy>44</posy>
                                 <height>50</height>
-                                <width>760</width>
+                                <width>1160</width>
                                 <font>FacadeListSubFont</font>
                                 <textcolor>NoFocusedColor</textcolor>
                                 <label>$INFO[ListItem.Label2]</label>
                             </control>
                         </itemlayout>
-                        <focusedlayout height="100" width="860" condition="String.IsEqual(ListItem.DBType,artist)|Container.Content(songs)">
+                        <focusedlayout height="109" width="1180" condition="String.IsEqual(ListItem.DBType,artist)|Container.Content(songs)">
                             <control type="group">
                                 <include>ButtonWideFocusAnimation</include>
-                                <control type="image">
-                                    <posx>0</posx>
-                                    <posy>0</posy>
-                                    <height>100</height>
-                                    <width>860</width>
-                                    <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-                                    <texture border="1">list/bg_facade_focus_2.png</texture>
-                                </control>
+                                <include content="FocusedIndicator">
+                                    <param name="x" value="0"/>
+                                    <param name="y" value="17"/>
+                                    <param name="height" value="57"/>
+                                    <param name="visible" value="true"/>
+                                </include>
                                 <control type="label">
-                                    <posx>TextMargin</posx>
+                                    <posx>20</posx>
                                     <posy>6</posy>
                                     <height>50</height>
-                                    <width>760</width>
+                                    <width>1160</width>
                                     <font>FacadeListMainFont</font>
                                     <scroll>true</scroll>
                                     <include>TextColor_MainColor</include>
                                     <label>$INFO[ListItem.Label]</label>
                                 </control>
                                 <control type="label">
-                                    <posx>TextMargin</posx>
+                                    <posx>20</posx>
                                     <posy>44</posy>
                                     <height>50</height>
-                                    <width>760</width>
+                                    <width>1160</width>
                                     <font>FacadeListSubFont</font>
                                     <scroll>true</scroll>
-                                    <textcolor>AlternateColor</textcolor>
+                                    <include>TextColor_MainColor</include>
                                     <label>$INFO[ListItem.Label2]</label>
                                 </control>
                             </control>
                         </focusedlayout>
                     </control>
                     <control type="scrollbar" id="62">
-                        <posx>810</posx>
-                        <posy>100</posy>
-                        <height>700</height>
+                        <posx>1870</posx>
+                        <posy>185</posy>
+                        <height>840</height>
                         <include>VerticalScroller</include>
                         <onleft>50</onleft>
                         <onright>62</onright>
                     </control>
-                    <control type="group">
-                        <posx>910</posx>
-                        <posy>0</posy>
-                        <include content="DiscArt">
-                            <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+String.IsEqual(ListItem.DBType,album)"/>
-                            <param name="x" value="10"/>
-                            <param name="y" value="-180"/>
-                            <param name="width" value="360"/>
-                            <param name="height" value="360"/>
-                            <param name="texture" value="$VAR[MusicCdArt]"/>
-                            <param name="visibleShadow" value="true"/>
-                            <param name="xShadow" value="0"/>
-                            <param name="yShadow" value="-25"/>
-                            <param name="widthShadow" value="380"/>
-                            <param name="flipyShadow" value="false"/>
-                        </include>
-                        <include content="ThumbsImages">
-                            <param name="visible" value="true"/>
-                            <param name="x" value="0"/>
-                            <param name="y" value="0"/>
-                            <param name="width" value="380"/>
-                            <param name="height" value="380"/>
-                            <param name="aspectratio" value="keep"/>
-                            <param name="align" value="center"/>
-                            <param name="aligny" value="top"/>
-                            <param name="flipy" value="false"/>
-                        </include>
-                        <include content="StudioArt">
-                            <param name="x" value="0"/>
-                            <param name="y" value="430"/>
-                            <param name="width" value="380"/>
-                            <param name="height" value="150"/>
-                            <param name="visible" value="true"/>
-                            <param name="align" value="center"/>
-                            <param name="aligny" value="center"/>
-                        </include>
-                        <include content="ClearArtLogo">
-                            <param name="x" value="0"/>
-                            <param name="y" value="620"/>
-                            <param name="width" value="380"/>
-                            <param name="height" value="180"/>
-                            <param name="visible" value="true"/>
-                            <param name="align" value="center"/>
-                            <param name="aligny" value="center"/>
-                            <param name="flipy" value="false"/>
-                        </include>
+                </control>
+                <!-- SIDE MENU -->
+                <control type="group">
+                    <include>LeftMenu</include>
+                    <control type="grouplist" id="9000">
+                        <include>LeftMenuButtonGroup</include>
+                        <ondown>9000</ondown>
+                        <onright>9060</onright>
+                        <control type="button" id="500">
+                            <visible>String.IsEqual(ListItem.DBType,artist)</visible>
+                            <description>Biography</description>
+                            <include>LeftMenuButton</include>
+                            <label>21887</label>
+                            <onright>49</onright>
+                            <onclick>SetFocus(49)</onclick>
+                        </control>
+                        <control type="button" id="501">
+                            <visible>String.IsEqual(ListItem.DBType,album)</visible>
+                            <description>Review</description>
+                            <include>LeftMenuButton</include>
+                            <label>183</label>
+                            <onright>49</onright>
+                            <onclick>SetFocus(49)</onclick>
+                        </control>
+                        <control type="button" id="502">
+                            <visible>String.IsEqual(ListItem.DBType,artist)</visible>
+                            <description>Discography</description>
+                            <include>LeftMenuButton</include>
+                            <label>21888</label>
+                            <onright>50</onright>
+                            <onclick>SetFocus(50)</onclick>
+                        </control>
+                        <control type="button" id="503">
+                            <visible>String.IsEqual(ListItem.DBType,album)</visible>
+                            <description>Tracks</description>
+                            <include>LeftMenuButton</include>
+                            <label>182</label>
+                            <onright>50</onright>
+                            <onclick>SetFocus(50)</onclick>
+                        </control>
+                        <control type="label" id="7895">
+                            <visible>control.isvisible(500)|control.isvisible(501)|control.isvisible(502)|control.isvisible(503)</visible>
+                            <height>60</height>
+                            <width>480</width>
+                            <label>-</label>
+                        </control>
+                        <control type="button" id="10">
+                            <description>Get Thumb</description>
+                            <include>LeftMenuButton</include>
+                            <label>13405</label>
+                            <onright>49</onright>
+                            <onclick>SetFocus(49)</onclick>
+                        </control>
+                        <control type="button" id="12">
+                            <visible>String.IsEqual(ListItem.DBType,artist)</visible>
+                            <description>Get Fanart</description>
+                            <include>LeftMenuButton</include>
+                            <label>20413</label>
+                            <onright>49</onright>
+                            <onclick>SetFocus(49)</onclick>
+                        </control>
+                        <control type="button" id="7">
+                            <description>Set my rating</description>
+                            <include>LeftMenuButton</include>
+                            <label>31033</label>
+                            <visible>String.IsEqual(ListItem.DBType,album) | String.IsEqual(ListItem.DBType,song)</visible>
+                        </control>
+                        <control type="button" id="6">
+                            <description>Refresh</description>
+                            <include>LeftMenuButton</include>
+                            <label>184</label>
+                            <onright>49</onright>
+                            <onclick>SetFocus(49)</onclick>
+                        </control>
                     </control>
                 </control>
             </control>
