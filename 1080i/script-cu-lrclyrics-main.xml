@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
     <defaultcontrol always="false">101</defaultcontrol>
-    <zorder>13</zorder>
     <controls>
         <include>DimBG</include>
         <control type="group">
@@ -9,6 +8,7 @@
             <include>WindowClosingButton</include>
             <control type="group">
                 <include>DialogOpenClose</include>
+                <animation effect="slide" start="0,0" end="0,183" tween="circle" easing="inout" time="150" condition="window.isvisible(MusicOSD.xml)">Conditional</animation>
                 <control type="label">
                     <visible>Control.IsVisible(110)</visible>
                     <posx>100</posx>

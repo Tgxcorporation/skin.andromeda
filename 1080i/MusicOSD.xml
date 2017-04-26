@@ -2,7 +2,6 @@
 <window>
     <defaultcontrol always="false">100</defaultcontrol>
     <onload condition="!MusicPlayer.Content(LiveTV)">SetFocus(602)</onload>
-    <visible>!Window.isvisible(script-cu-lrclyrics-main.xml)</visible>
     <controls>
         <control type="group">
             <include>TopBarOSDOpenClose</include>
