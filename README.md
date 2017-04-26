@@ -1,15 +1,15 @@
-## Chroma skin for Kodi 17 KRYPTON
-Full-featured modern skin designed for Full HD TV screens.
+## Andromeda skin for Kodi 17 KRYPTON
+Minimalist skin optimized for Full HD TV screens.
 
-![](http://i.imgur.com/8ifMwfF.jpg)
+![](http://imgur.com/S8HUjaw.jpg)
 
-#### [Screenshots](https://github.com/Tgxcorporation/skin.chroma/wiki/Screenshots)
+#### [Screenshots](https://github.com/Tgxcorporation/skin.andromeda/wiki/Screenshots)
 
-#### [Wiki](https://github.com/Tgxcorporation/skin.chroma/wiki)
+#### [Wiki](https://github.com/Tgxcorporation/skin.andromeda/wiki)
 
-#### [Changelog](https://github.com/Tgxcorporation/skin.chroma/blob/master/changelog.txt)
+#### [Changelog](https://github.com/Tgxcorporation/skin.andromeda/blob/master/changelog.txt)
 
-#### [Download from GitHub](https://github.com/Tgxcorporation/skin.chroma/wiki/Install-from-GitHub)
+#### [Download from GitHub](https://github.com/Tgxcorporation/skin.andromeda/wiki/Install-from-GitHub)
 
 #### Thanks
 All the Kodi/XBMC team and addon developers.
