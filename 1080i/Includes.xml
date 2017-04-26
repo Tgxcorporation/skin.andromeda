@@ -1136,7 +1136,7 @@
                 <width>$PARAM[width]</width>
                 <height>$PARAM[height]</height>
                 <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-                <aspectratio align="$PARAM[align]" aligny="$PARAM[aligny]">$PARAM[aspectratio]</aspectratio>
+                <aspectratio align="$PARAM[align]" aligny="top">keep</aspectratio>
                 <texture colordiffuse="$PARAM[texturediffuse]">$VAR[ThumbsExceptions]</texture>
                 <bordertexture border="2" colordiffuse="$PARAM[borderdiffuse]">common/frame_focus.png</bordertexture>
                 <bordersize>2</bordersize>
@@ -1189,7 +1189,7 @@
                 <width>$PARAM[width]</width>
                 <height>$PARAM[height]</height>
                 <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-                <aspectratio align="$PARAM[align]" aligny="$PARAM[aligny]">$PARAM[aspectratio]</aspectratio>
+                <aspectratio align="$PARAM[align]" aligny="top">keep</aspectratio>
                 <texture colordiffuse="$PARAM[texturediffuse]">$VAR[ThumbsMissing]</texture>
                 <bordertexture border="2" colordiffuse="$PARAM[borderdiffuse]">common/frame_focus.png</bordertexture>
                 <bordersize>2</bordersize>
