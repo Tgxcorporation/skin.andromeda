@@ -97,8 +97,6 @@
                                 <visible>System.HasLocks + System.IsMaster</visible>
                                 <onclick>mastermode</onclick>
                                 <label>$LOCALIZE[20046]</label>
-                                <thumb>topbar/topbar_master_nofocus.png</thumb>
-                                <icon>topbar/topbar_master_focus.png</icon>
                                 <label2></label2>
                             </item>
                             <item id="9">
