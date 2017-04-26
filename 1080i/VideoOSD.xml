@@ -214,14 +214,7 @@
                     <visible>Player.PauseEnabled</visible>
                     <animation effect="fade" start="100" end="50" time="0" condition="!Player.PauseEnabled">Conditional</animation>
                     <include>TopBarButton</include>
-                    <label></label>
-                    <onclick>PlayerControl(Play)</onclick>
-                </control>
-                <control type="button" id="2021">
-                    <visible>Player.PauseEnabled</visible>
-                    <animation effect="fade" start="100" end="50" time="0" condition="!Player.PauseEnabled">Conditional</animation>
-                    <include>TopBarButton</include>
-                    <label></label>
+                    <label></label>
                     <onclick>PlayerControl(Play)</onclick>
                 </control>
                 <control type="button" id="203">
@@ -276,7 +269,7 @@
                 <aligny>center</aligny>
                 <font>MainMenuFont</font>
                 <include>TextColor_AlternateColor</include>
-                <label>$VAR[TopbarOSDLabel]</label>
+                <label>$VAR[TopbarVideoOSDLabel]</label>
             </control>
         </control>
     </controls>

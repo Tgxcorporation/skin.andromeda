@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
-
     <variable name="videosource">
         <value condition="[String.Contains(ListItem(0).Filenameandpath,bluray) | String.Contains(ListItem(0).Filenameandpath,blu-ray) | String.Contains(ListItem(0).Filenameandpath,bdrip)]">bluray</value>
         <value condition="String.Contains(ListItem.Filenameandpath,web)">webtv</value>
@@ -15,9 +14,6 @@
         <value condition="String.Contains(Player.Filenameandpath,dvd) | String.EndsWith(Player.Filenameandpath,.ifo) | String.EndsWith(Player.Filenameandpath,.iso)">dvd</value>
         <value condition="String.Contains(Player.Filenameandpath,4k)">4kbis</value>
     </variable>
-
-
-
     <variable name="videoresolution">
         <value condition="!String.IsEmpty(ListItem.VideoResolution)">$INFO[ListItem.VideoResolution]</value>
         <value>???</value>
@@ -236,7 +232,7 @@
             </control>
         </control>
     </include>
-    <include name="CodecsOSD">
+    <include name="CodecsVideoOSD">
         <control type="group">
             <posx>$PARAM[x]</posx>
             <posy>$PARAM[y]</posy>
@@ -305,28 +301,31 @@
             </control>
         </control>
     </include>
-
-
-
-
-
-
     <include name="CodecsMusicOSD">
-        <control type="image">
-            <visible>!String.IsEmpty(VideoPlayer.AudioChannels)</visible>
-            <description>Audio Codec Image</description>
-            <width>100</width>
-            <height>70</height>
-            <aspectratio>keep</aspectratio>
-            <texture>badges/audio/$INFO[VideoPlayer.AudioChannels,,.png]</texture>
-        </control>
-        <control type="image">
-            <visible>!String.IsEmpty(VideoPlayer.AudioCodec)</visible>
-            <description>Audio Codec Image</description>
-            <width>100</width>
-            <height>70</height>
-            <aspectratio>keep</aspectratio>
-            <texture>badges/audio/$INFO[VideoPlayer.AudioCodec,,.png]</texture>
+        <control type="group">
+            <posx>$PARAM[x]</posx>
+            <posy>$PARAM[y]</posy>
+            <control type="label">
+                <posx>0</posx>
+                <posy>0</posy>
+                <height>50</height>
+                <width>100</width>
+                <aligny>center</aligny>
+                <font>DialogMatFont</font>
+                <include>TextColor_MainColor</include>
+                <label></label>
+            </control>
+            <control type="label">
+                <posx>60</posx>
+                <posy>0</posy>
+                <height>50</height>
+                <width>$PARAM[width]</width>
+                <aligny>center</aligny>
+                <font>CodecFont</font>
+                <include>TextColor_MainColor</include>
+                <scroll>true</scroll>
+                <label>$VAR[audiochannelsOSD,,[COLOR=SeparatorColor] › [/COLOR]]$VAR[audiocodecOSD,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[MusicPlayer.Bitrate]</label>
+            </control>
         </control>
     </include>
 </includes>

@@ -827,6 +827,7 @@
         <value condition="Player.hasvideo + !VideoPlayer.Content(livetv) + Player.ChapterCount">$INFO[MusicPlayer.Title]$INFO[VideoPlayer.Album,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[VideoPlayer.Season,$LOCALIZE[31973],.]$INFO[VideoPlayer.Episode,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[VideoPlayer.Title]$INFO[Player.Chapter,[COLOR=SeparatorColor] › [/COLOR]]$INFO[Player.ChapterCount, / ]</value>
         <value condition="Player.hasvideo + VideoPlayer.Content(livetv) + !Player.ChapterCount">$INFO[VideoPlayer.ChannelNumber,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[VideoPlayer.ChannelName]$INFO[VideoPlayer.Title,[COLOR=SeparatorColor] › [/COLOR]]</value>
         <value condition="Player.hasvideo + !VideoPlayer.Content(livetv) + !Player.ChapterCount">$INFO[MusicPlayer.Title]$INFO[VideoPlayer.Album,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[VideoPlayer.Season,$LOCALIZE[31973],.]$INFO[VideoPlayer.Episode,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[VideoPlayer.Title]</value>
+        <value condition="Player.HasAudio + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia)) + ![Window.IsActive(MusicOSD.xml)|Window.IsActive(MusicVisualisation.xml)]">$INFO[MusicPlayer.Artist]</value>
         <value condition="Player.HasAudio + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))">$INFO[MusicPlayer.Artist]$INFO[MusicPlayer.Title,[COLOR=SeparatorColor] › [/COLOR]]</value>
     </variable>
     <variable name="StartupWindowName">
@@ -1034,7 +1035,7 @@
         <value condition="control.hasfocus(1636)">$LOCALIZE[13200]</value>
         <value></value>
     </variable>
-    <variable name="TopbarOSDLabel">
+    <variable name="TopbarVideoOSDLabel">
         <value condition="control.hasfocus(306)">$LOCALIZE[19069]</value>
         <value condition="control.hasfocus(307)">$LOCALIZE[19069]$INFO[VideoPlayer.ChannelName,[COLOR=SeparatorColor] › [/COLOR]]</value>
         <value condition="control.hasfocus(350)">$LOCALIZE[23050]</value>
@@ -1067,5 +1068,44 @@
         <value condition="control.hasfocus(1618)">$LOCALIZE[31302]</value>
         <value condition="control.hasfocus(1620)">$LOCALIZE[31303]</value>
         <value></value>
+    </variable>
+    <variable name="TopbarMusicOSDLabel">
+        <value condition="control.hasfocus(306)">$LOCALIZE[19069]</value>
+        <value condition="control.hasfocus(307)">$LOCALIZE[19069]$INFO[MusicPlayer.ChannelName,[COLOR=SeparatorColor] › [/COLOR]]</value>
+        <value condition="control.hasfocus(9)">$LOCALIZE[24013]</value>
+        <value condition="control.hasfocus(500)">$LOCALIZE[250]</value>
+        <value condition="control.hasfocus(19)">$LOCALIZE[250][COLOR=SeparatorColor] › [/COLOR]$LOCALIZE[5]</value>
+        <value condition="control.hasfocus(20)">$LOCALIZE[250][COLOR=SeparatorColor] › [/COLOR]$LOCALIZE[13388]</value>
+        <value condition="control.hasfocus(556)">$LOCALIZE[20445]</value>
+        <value condition="control.hasfocus(555)">$LOCALIZE[559]</value>
+        <value condition="control.hasfocus(1624)">$LOCALIZE[5]</value>
+        <value condition="control.hasfocus(1626)">$LOCALIZE[13009]</value>
+        <value condition="control.hasfocus(1623)">$LOCALIZE[13014]</value>
+        <value condition="control.hasfocus(704)">$LOCALIZE[31298]</value>
+        <value condition="control.hasfocus(705)">$LOCALIZE[10000]</value>
+        <value condition="control.hasfocus(300)">$LOCALIZE[210]</value>
+        <value condition="control.hasfocus(301)">$LOCALIZE[209]</value>
+        <value condition="control.hasfocus(600)">$LOCALIZE[210]</value>
+        <value condition="control.hasfocus(601)">$LOCALIZE[31354]</value>
+        <value condition="control.hasfocus(202)">$LOCALIZE[31351]</value>
+        <value condition="control.hasfocus(603)">$LOCALIZE[31352]</value>
+        <value condition="control.hasfocus(699)">$LOCALIZE[486]</value>
+        <value condition="control.hasfocus(21)">$LOCALIZE[590]</value>
+        <value condition="control.hasfocus(353)">$LOCALIZE[264]</value>
+        <value condition="control.hasfocus(604)">$LOCALIZE[31353]</value>
+        <value condition="control.hasfocus(605)">$LOCALIZE[209]</value>
+        <value condition="control.hasfocus(1616)">$LOCALIZE[31301]</value>
+        <value condition="control.hasfocus(1618)">$LOCALIZE[31302]</value>
+        <value condition="control.hasfocus(1620)">$LOCALIZE[31303]</value>
+        <value></value>
+    </variable>
+    <variable name="RepeatMusicOSD">
+        <value condition="Playlist.IsRepeatOne"></value>
+        <value condition="Playlist.IsRepeat"></value>
+        <value></value>
+    </variable>
+    <variable name="RandomMusicOSD">
+        <value condition="Playlist.IsRandom"></value>
+        <value></value>
     </variable>
 </includes>

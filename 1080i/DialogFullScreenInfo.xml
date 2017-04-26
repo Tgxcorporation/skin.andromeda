@@ -144,7 +144,7 @@
                     <label fallback="19055">$INFO[VideoPlayer.Plot]</label>
                     <include>myautoscroll</include>
                 </control>
-                <include content="CodecsOSD">
+                <include content="CodecsVideoOSD">
                     <param name="x" value="1550"/>
                     <param name="y" value="115"/>
                     <param name="width" value="240"/>
