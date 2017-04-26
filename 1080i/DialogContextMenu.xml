@@ -6,18 +6,18 @@
         <control type="image">
             <include>DialogOpenCloseOverlay</include>
             <posx>0</posx>
-            <posy>-560</posy>
+            <posy>-660</posy>
             <width>1920</width>
-            <height>2160</height>
+            <height>2360</height>
             <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
             <texture>common/overlay_dialog_gradient.png</texture>
         </control>
         <control type="button">
             <description>Fake button for mouse control</description>
             <posx>1620</posx>
-            <posy>-560</posy>
+            <posy>-660</posy>
             <width>300</width>
-            <height>2160</height>
+            <height>2360</height>
             <label>-</label>
             <font>-</font>
             <texturenofocus>-</texturenofocus>

@@ -85,6 +85,7 @@
         <value condition="!String.IsEmpty(ListItem.Art(thumb))+!String.StartsWith(ListItem.Art(thumb),Default)">$INFO[ListItem.Art(thumb)]</value>
     </variable>
     <variable name="GlobalTitles">
+        <value condition="Window.isvisible(MyMusicPlaylistEditor.xml)">$LOCALIZE[10503]</value>
         <value condition="Window.isvisible(CustomStartupWindow.xml)">$LOCALIZE[5]</value>
         <value condition="Window.isvisible(LoginScreen.xml)">$LOCALIZE[10029]</value>
         <value condition="Window.isvisible(FileManager.xml)">$LOCALIZE[7]</value>
@@ -127,6 +128,7 @@
         <value condition="!String.IsEmpty(Container.FolderName)">$INFO[Container.FolderName]</value>
     </variable>
     <variable name="GlobalSubTitles">
+        <value condition="Window.isvisible(MyMusicPlaylistEditor.xml)">$LOCALIZE[2]</value>
         <value condition="Window.isvisible(LoginScreen.xml)">$LOCALIZE[13200]</value>
         <value condition="Window.isvisible(SkinSettings.xml)">Andromeda</value>
         <value condition="Window.isvisible(CustomStartupWindow.xml)">$LOCALIZE[512]</value>
@@ -1059,8 +1061,7 @@
         <value condition="control.hasfocus(301)">$LOCALIZE[209]</value>
         <value condition="control.hasfocus(200)">$LOCALIZE[210]</value>
         <value condition="control.hasfocus(201)">$LOCALIZE[31354]</value>
-        <value condition="control.hasfocus(202)">$LOCALIZE[31351]</value>
-        <value condition="control.hasfocus(2021)">$LOCALIZE[208]</value>
+        <value condition="control.hasfocus(202)">$LOCALIZE[31351] / $LOCALIZE[208]</value>
         <value condition="control.hasfocus(203)">$LOCALIZE[31352]</value>
         <value condition="control.hasfocus(204)">$LOCALIZE[31353]</value>
         <value condition="control.hasfocus(205)">$LOCALIZE[209]</value>
@@ -1087,7 +1088,7 @@
         <value condition="control.hasfocus(301)">$LOCALIZE[209]</value>
         <value condition="control.hasfocus(600)">$LOCALIZE[210]</value>
         <value condition="control.hasfocus(601)">$LOCALIZE[31354]</value>
-        <value condition="control.hasfocus(202)">$LOCALIZE[31351]</value>
+        <value condition="control.hasfocus(202)">$LOCALIZE[31351] / $LOCALIZE[208]</value>
         <value condition="control.hasfocus(603)">$LOCALIZE[31352]</value>
         <value condition="control.hasfocus(699)">$LOCALIZE[486]</value>
         <value condition="control.hasfocus(21)">$LOCALIZE[590]</value>
