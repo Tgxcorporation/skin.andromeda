@@ -206,6 +206,7 @@
             <onleft>9900</onleft>
             <onright>9900</onright>
             <onup>9901</onup>
+            <ondown condition="Window.IsActive(LoginScreen.xml)">52</ondown>
             <ondown condition="Window.IsActive(EventLog.xml)">570</ondown>
             <ondown condition="Window.IsActive(SkinSettings.xml)">9000</ondown>
             <ondown condition="Window.IsActive(DialogFavourites.xml)">450</ondown>
@@ -420,6 +421,7 @@
             <texturenofocus>-</texturenofocus>
             <onup>9900</onup>
             <onleft>9900</onleft>
+            <ondown condition="Window.IsActive(LoginScreen.xml)">52</ondown>
             <ondown condition="Window.IsActive(EventLog.xml)">570</ondown>
             <ondown condition="Window.isactive(SkinSettings.xml)">9000</ondown>
             <ondown condition="Window.isactive(CustomStartupWindow.xml)">9001</ondown>

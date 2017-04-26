@@ -51,6 +51,7 @@
         <value condition="ListItem.IsParentFolder">$VAR[ThumbsFolderBack]</value>
     </variable>
     <variable name="ThumbsMissing">
+        <value condition="window.IsActive(SettingsProfile.xml)">defaultArtistBig.png</value>
         <value condition="[Window.IsActive(DialogPVRChannelManager.xml)|Window.IsActive(DialogPVRGroupManager.xml)]+String.IsEmpty(Window.Property(IsRadio))">defaultChannelTvBig.png</value>
         <value condition="[Window.IsActive(DialogPVRChannelManager.xml)|Window.IsActive(DialogPVRGroupManager.xml)]+!String.IsEmpty(Window.Property(IsRadio))">defaultRadioBig.png</value>
         <value condition="[Window.IsActive(DialogPVRInfo.xml)]">defaultChannelTvBig_Wide.png</value>
@@ -85,6 +86,7 @@
     </variable>
     <variable name="GlobalTitles">
         <value condition="Window.isvisible(CustomStartupWindow.xml)">$LOCALIZE[5]</value>
+        <value condition="Window.isvisible(LoginScreen.xml)">$LOCALIZE[10029]</value>
         <value condition="Window.isvisible(FileManager.xml)">$LOCALIZE[7]</value>
         <value condition="Skin.hassetting(plexbmc) + !Window.IsActive(Home) + !String.IsEmpty(Window.Property(heading2))">$INFO[Window.Property(heading),,[COLOR=SeparatorColor] › [/COLOR]]$INFO[Window.Property(heading2)]</value>
         <value condition="Skin.hassetting(plexbmc) + !Window.IsActive(Home) + !String.IsEmpty(Window.Property(heading))">$INFO[Window.Property(heading)]</value>
@@ -125,6 +127,7 @@
         <value condition="!String.IsEmpty(Container.FolderName)">$INFO[Container.FolderName]</value>
     </variable>
     <variable name="GlobalSubTitles">
+        <value condition="Window.isvisible(LoginScreen.xml)">$LOCALIZE[13200]</value>
         <value condition="Window.isvisible(SkinSettings.xml)">Andromeda</value>
         <value condition="Window.isvisible(CustomStartupWindow.xml)">$LOCALIZE[512]</value>
         <value condition="Window.isvisible(FileManager.xml)">$LOCALIZE[130]</value>
