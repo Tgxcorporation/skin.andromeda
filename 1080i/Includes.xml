@@ -918,7 +918,7 @@
     </include>
     <include name="DialogMenuScroller">
         <control type="scrollbar" id="9060">
-            <posx>350</posx>
+            <posx>460</posx>
             <posy>$PARAM[y]</posy>
             <height>$PARAM[height]</height>
             <include>VerticalScroller</include>
