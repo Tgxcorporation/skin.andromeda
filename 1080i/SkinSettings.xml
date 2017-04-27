@@ -1558,7 +1558,7 @@
                                 <onclick>Skin.Reset(Theme.Color.titanium)</onclick>
                                 <onclick>Skin.Reset(Theme.Color.custom)</onclick>
                                 <onclick>Skin.ToggleSetting(Theme.Color.green)</onclick>
-                                <selected>[Skin.HasSetting(Theme.Color.green)|![Skin.HasSetting(Theme.Color.amber)|Skin.HasSetting(Theme.Color.fuchsia)|Skin.HasSetting(Theme.Color.lilac)|Skin.HasSetting(Theme.Color.indigo)|Skin.HasSetting(Theme.Color.titanium)|Skin.HasSetting(Theme.Color.custom)|Skin.HasSetting(Theme.Color.sweep)]]</selected>
+                                <selected>Skin.HasSetting(Theme.Color.green)</selected>
                                 <onclick>ReloadSkin()</onclick>
                             </control>
                             <!-- amber -->
@@ -1683,7 +1683,7 @@
                                 <onclick>Skin.Reset(Theme.Color.titanium)</onclick>
                                 <onclick>Skin.Reset(Theme.Color.custom)</onclick>
                                 <onclick>Skin.ToggleSetting(Theme.Color.titanium)</onclick>
-                                <selected>Skin.HasSetting(Theme.Color.titanium)</selected>
+                                <selected>[Skin.HasSetting(Theme.Color.titanium)|![Skin.HasSetting(Theme.Color.amber)|Skin.HasSetting(Theme.Color.fuchsia)|Skin.HasSetting(Theme.Color.lilac)|Skin.HasSetting(Theme.Color.indigo)|Skin.HasSetting(Theme.Color.titanium)|Skin.HasSetting(Theme.Color.custom)|Skin.HasSetting(Theme.Color.sweep)]]</selected>
                                 <onclick>ReloadSkin()</onclick>
                             </control>
                             <!--custom-->
