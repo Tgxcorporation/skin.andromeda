@@ -2,8 +2,6 @@
 <window type="dialog">
     <controls>
         <control type="group">
-            <visible>!WindowIsVisible(DialogExtendedProgressBar.xml)</visible>
-            <include>Icon_Fade</include>
             <include>SeekBarVisibleSlideEffect</include>
             <control type="group">
                 <include>NotificationVisibleFadeEffect</include>

@@ -70,11 +70,8 @@
     </include>
     <include name="SeekBarVisibleSlideEffect">
         <animation type="Conditional" reversible="true" condition="Window.IsVisible(DialogSeekBar.xml)">
-            <effect type="slide" start="0,0" end="0,-100" time="0" delay="0" tween="cubic" easing="inout"/>
+            <effect type="slide" start="0,0" end="0,-50" time="100" delay="0" tween="cubic" easing="inout"/>
         </animation>
-        <!--<animation type="Conditional" reversible="false" condition="!Window.IsVisible(DialogSeekBar.xml)">-->
-            <!--<effect type="slide" start="0,-100" end="0,0" time="150" delay="0" tween="cubic" easing="inout"/>-->
-        <!--</animation>-->
     </include>
     <include name="TopDialogVisibleFadeEffect">
         <animation type="WindowOpen" reversible="false">

@@ -4,45 +4,48 @@
     <onunload>Dialog.close(all,true)</onunload>
     <controls>
         <control type="group" id="0">
-            <posx>0</posx>
-            <posy>0</posy>
-            <include>OSDOpenClose</include>
-            <control type="label" id="10">
-                <left>TextMargin</left>
-                <top>15</top>
-                <width>1820</width>
-                <height>100</height>
-                <label>-</label>
-                <include>TextColor_MainColor</include>
-                <font>NotificationFont</font>
+            <include>DimBG</include>
+            <control type="group">
+                <include>DialogOverlay</include>
+                <include>OSDOpenClose</include>
+                <control type="label" id="10">
+                    <left>100</left>
+                    <top>60</top>
+                    <width>1720</width>
+                    <height>100</height>
+                    <label>-</label>
+                    <include>TextColor_MainColor</include>
+                    <font>NotificationFont</font>
+                </control>
+                <control type="label" id="11">
+                    <left>100</left>
+                    <top>120</top>
+                    <width>1720</width>
+                    <height>100</height>
+                    <label>-</label>
+                    <include>TextColor_MainColor</include>
+                    <font>NotificationFont</font>
+                </control>
+                <control type="label" id="12">
+                    <left>100</left>
+                    <top>180</top>
+                    <width>1720</width>
+                    <height>100</height>
+                    <label>-</label>
+                    <include>TextColor_MainColor</include>
+                    <font>NotificationFont</font>
+                </control>
+                <control type="label" id="1">
+                    <description>buffering value</description>
+                    <label>$LOCALIZE[439]: $INFO[Player.CacheLevel]%</label>
+                    <left>100</left>
+                    <top>240</top>
+                    <width>1720</width>
+                    <height>100</height>
+                    <include>TextColor_MainColor</include>
+                    <font>NotificationFont</font>
+                </control>
             </control>
-            <control type="label" id="11">
-                <left>TextMargin</left>
-                <top>45</top>
-                <width>1820</width>
-                <height>100</height>
-                <label>-</label>
-                <include>TextColor_MainColor</include>
-                <font>NotificationFont</font>
-            </control>
-            <control type="label" id="12">
-                <left>TextMargin</left>
-                <top>75</top>
-                <width>1820</width>
-                <height>100</height>
-                <label>-</label>
-                <include>TextColor_MainColor</include>
-                <font>NotificationFont</font>
-            </control>
-        </control>
-        <control type="label" id="1">
-            <left>0</left>
-            <top>0</top>
-            <width>1920</width>
-            <height>1080</height>
-            <label>$INFO[Player.SeekNumeric]</label>
-            <include>TextColor_MainColor</include>
-            <font>NotificationFont</font>
         </control>
     </controls>
 </window>

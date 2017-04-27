@@ -27,9 +27,9 @@
                     <texture border="25,2,25,2">buttons/editNF.png</texture>
                 </control>
                 <control type="label" id="4">
-                    <posx>80</posx>
+                    <posx>100</posx>
                     <posy>330</posy>
-                    <width>1250</width>
+                    <width>500</width>
                     <height>60</height>
                     <include>TextColor_MainColor</include>
                     <font>LeftMenuButtonFont</font>

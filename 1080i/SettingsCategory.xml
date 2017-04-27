@@ -127,14 +127,12 @@
                     <posx>550</posx>
                     <posy>930</posy>
                     <width>1290</width>
-                    <height>100</height>
+                    <height>95</height>
                     <include>TextColor_MainColor</include>
                     <font>InfoPlotFont</font>
                     <include>myautoscroll</include>
                 </control>
             </control>
         </control>
-        <include>NowPlaying</include>
-        <!--<include>TopBar</include>-->
     </controls>
 </window>
