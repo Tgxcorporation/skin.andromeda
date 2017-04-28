@@ -87,30 +87,20 @@
                         </content>
                     </control>
                     <control type="label">
-                        <visible>!String.IsEmpty(ListItem.AddonBroken)</visible>
+                        <visible>!String.IsEmpty(ListItem.AddonDisclaimer)</visible>
                         <posx>660</posx>
                         <posy>320</posy>
-                        <height>50</height>
-                        <width>1160</width>
-                        <font>FacadeListSubFont</font>
-                        <include>TextColor_MainColor</include>
-                        <label>[COLOR=WarningColor]$LOCALIZE[24052]:[/COLOR]</label>
-                    </control>
-                    <control type="label">
-                        <visible>!String.IsEmpty(ListItem.AddonBroken)</visible>
-                        <posx>660</posx>
-                        <posy>353</posy>
                         <height>50</height>
                         <width>1160</width>
                         <scroll>true</scroll>
                         <font>FacadeListMainFont</font>
                         <include>TextColor_MainColor</include>
-                        <label>$INFO[ListItem.AddonDisclaimer]</label>
+                        <label>[COLOR=WarningColor]$INFO[ListItem.AddonDisclaimer][/COLOR]</label>
                     </control>
                     <control type="label">
-                        <visible>String.IsEmpty(ListItem.AddonBroken)</visible>
+                        <visible>!String.IsEmpty(ListItem.AddonBroken)</visible>
                         <posx>660</posx>
-                        <posy>353</posy>
+                        <posy>370</posy>
                         <height>50</height>
                         <width>1160</width>
                         <scroll>true</scroll>
