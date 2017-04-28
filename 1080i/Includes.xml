@@ -164,7 +164,7 @@
             <orientation>horizontal</orientation>
             <onleft>9901</onleft>
             <onright>9901</onright>
-            <onup>505050</onup>
+            <onup>50</onup>
             <ondown>9900</ondown>
             <align>center</align>
             <control type="button" id="1628">
