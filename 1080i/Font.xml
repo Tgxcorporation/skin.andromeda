@@ -24,26 +24,9 @@
             <size>20</size>
         </font>
         <font>
-            <name>HomeItemFont</name>
-            <filename>OpenSans-Light.ttf</filename>
-            <size>55</size>
-            <!--<style>bold</style>-->
-            <aspect>1</aspect>
-        </font>
-        <font>
             <name>NotificationFont</name>
             <filename>OpenSans-Light.ttf</filename>
             <size>36</size>
-        </font>
-        <font>
-            <name>NotificationSubFont</name>
-            <filename>OpenSans-Light.ttf</filename>
-            <size>30</size>
-        </font>
-        <font>
-            <name>NotificationFontAwesome</name>
-            <filename>materialdesignicons-webfont.ttf</filename>
-            <size>24</size>
         </font>
         <font>
             <name>LeftMenuButtonFont</name>
@@ -61,11 +44,6 @@
             <size>35</size>
         </font>
         <font>
-            <name>DialogSubFont</name>
-            <filename>OpenSans-Light.ttf</filename>
-            <size>28</size>
-        </font>
-        <font>
             <name>DialogMatFont</name>
             <filename>materialdesignicons-webfont.ttf</filename>
             <size>40</size>
@@ -73,11 +51,6 @@
         <font>
             <name>WidgetTitleFont</name>
             <filename>OpenSans-Light.ttf</filename>
-            <size>33</size>
-        </font>
-        <font>
-            <name>WidgetTitleSelectedFont</name>
-            <filename>OpenSans-Regular.ttf</filename>
             <size>33</size>
         </font>
         <font>
@@ -91,19 +64,9 @@
             <size>40</size>
         </font>
         <font>
-            <name>FacadeListTitleSelectedFont</name>
-            <filename>OpenSans-Regular.ttf</filename>
-            <size>40</size>
-        </font>
-        <font>
             <name>FacadeListSubTitleFont</name>
             <filename>OpenSans-Light.ttf</filename>
             <size>30</size>
-        </font>
-        <font>
-            <name>LoadingMatFont</name>
-            <filename>MaterialIcons-Regular.ttf</filename>
-            <size>150</size>
         </font>
         <font>
             <name>TopbarMatFont</name>
@@ -123,11 +86,6 @@
         <font>
             <name>FacadeListMainFont</name>
             <filename>OpenSans-Light.ttf</filename>
-            <size>30</size>
-        </font>
-        <font>
-            <name>FacadeListMainSelectedFont</name>
-            <filename>OpenSans-Regular.ttf</filename>
             <size>30</size>
         </font>
         <font>
@@ -189,18 +147,8 @@
             <size>45</size>
         </font>
         <font>
-            <name>MainMenuSelectedFont</name>
-            <filename>OpenSans-Regular.ttf</filename>
-            <size>45</size>
-        </font>
-        <font>
             <name>ButtonFont</name>
             <filename>OpenSans-Light.ttf</filename>
-            <size>40</size>
-        </font>
-        <font>
-            <name>ButtonSelectedFont</name>
-            <filename>OpenSans-Regular.ttf</filename>
             <size>40</size>
         </font>
         <font>
@@ -242,11 +190,6 @@
             <name>OSDMainFont</name>
             <filename>OpenSans-Light.ttf</filename>
             <size>45</size>
-        </font>
-        <font>
-            <name>OSDSubFont</name>
-            <filename>OpenSans-Light.ttf</filename>
-            <size>35</size>
         </font>
         <font>
             <name>OSDSubFontMat</name>
