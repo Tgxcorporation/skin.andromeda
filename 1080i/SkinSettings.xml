@@ -520,20 +520,7 @@
                                     <onclick>Skin.ToggleSetting(OverlayTransparency30)</onclick>
                                 </item>
                                 <item id="29">
-                                    <visible>Skin.HasSetting(OverlayTransparency50)|
-                                        [
-                                        !Skin.HasSetting(OverlayTransparency00)+
-                                        !Skin.HasSetting(OverlayTransparency10)+
-                                        !Skin.HasSetting(OverlayTransparency20)+
-                                        !Skin.HasSetting(OverlayTransparency30)+
-                                        !Skin.HasSetting(OverlayTransparency40)+
-                                        !Skin.HasSetting(OverlayTransparency50)+
-                                        !Skin.HasSetting(OverlayTransparency60)+
-                                        !Skin.HasSetting(OverlayTransparency70)+
-                                        !Skin.HasSetting(OverlayTransparency80)+
-                                        !Skin.HasSetting(OverlayTransparency90)+
-                                        !Skin.HasSetting(OverlayTransparency100)
-                                        ]</visible>
+                                    <visible>Skin.HasSetting(OverlayTransparency50)</visible>
                                     <label>$LOCALIZE[13324]</label>
                                     <label2>50%</label2>
                                     <onclick>Skin.Reset(OverlayTransparency00)</onclick>
@@ -567,7 +554,20 @@
                                     <onclick>Skin.ToggleSetting(OverlayTransparency50)</onclick>
                                 </item>
                                 <item id="29">
-                                    <visible>Skin.HasSetting(OverlayTransparency70)</visible>
+                                    <visible>Skin.HasSetting(OverlayTransparency70)|
+                                        [
+                                        !Skin.HasSetting(OverlayTransparency00)+
+                                        !Skin.HasSetting(OverlayTransparency10)+
+                                        !Skin.HasSetting(OverlayTransparency20)+
+                                        !Skin.HasSetting(OverlayTransparency30)+
+                                        !Skin.HasSetting(OverlayTransparency40)+
+                                        !Skin.HasSetting(OverlayTransparency50)+
+                                        !Skin.HasSetting(OverlayTransparency60)+
+                                        !Skin.HasSetting(OverlayTransparency70)+
+                                        !Skin.HasSetting(OverlayTransparency80)+
+                                        !Skin.HasSetting(OverlayTransparency90)+
+                                        !Skin.HasSetting(OverlayTransparency100)
+                                        ]</visible>
                                     <label>$LOCALIZE[13324]</label>
                                     <label2>70%</label2>
                                     <onclick>Skin.Reset(OverlayTransparency00)</onclick>

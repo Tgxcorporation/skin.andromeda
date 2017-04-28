@@ -352,8 +352,7 @@
     <include name="OverlayTransparency">
         <animation effect="fade" start="90" end="90" time="0" reversible="false" condition="skin.hassetting(OverlayTransparency90)">Conditional</animation>
         <animation effect="fade" start="80" end="80" time="0" reversible="false" condition="skin.hassetting(OverlayTransparency80)">Conditional</animation>
-        <animation effect="fade" start="70" end="70" time="0" reversible="false" condition="skin.hassetting(OverlayTransparency70)">Conditional</animation>
-        <animation effect="fade" start="60" end="60" time="0" reversible="false" condition="skin.hassetting(OverlayTransparency60)|[
+        <animation effect="fade" start="70" end="70" time="0" reversible="false" condition="skin.hassetting(OverlayTransparency70)|[
                                     !Skin.HasSetting(OverlayTransparency00)+
                                     !Skin.HasSetting(OverlayTransparency10)+
                                     !Skin.HasSetting(OverlayTransparency20)+
@@ -365,7 +364,8 @@
                                     !Skin.HasSetting(OverlayTransparency80)+
                                     !Skin.HasSetting(OverlayTransparency90)+
                                     !Skin.HasSetting(OverlayTransparency100)
-                                    ]">Conditional</animation>
+                                    ]skin.hassetting(OverlayTransparency70)">Conditional</animation>
+        <animation effect="fade" start="60" end="60" time="0" reversible="false" condition="skin.hassetting(OverlayTransparency60)">Conditional</animation>
         <animation effect="fade" start="50" end="50" time="0" reversible="false" condition="skin.hassetting(OverlayTransparency50)">Conditional</animation>
         <animation effect="fade" start="40" end="40" time="0" reversible="false" condition="skin.hassetting(OverlayTransparency40)">Conditional</animation>
         <animation effect="fade" start="30" end="30" time="0" reversible="false" condition="skin.hassetting(OverlayTransparency30)">Conditional</animation>
