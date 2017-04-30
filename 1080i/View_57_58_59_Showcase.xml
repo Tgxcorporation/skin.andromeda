@@ -282,13 +282,13 @@
                                 <param name="direction" value="horizontal"/>
                             </include>
                             <include content="FocusedIndicator">
-                                <param name="x" value="0"/>
+                                <param name="x" value="-15"/>
                                 <param name="y" value="30"/>
                                 <param name="height" value="50"/>
                                 <param name="visible" value="true"/>
                             </include>
                             <control type="label">
-                                <posx>15</posx>
+                                <posx>0</posx>
                                 <posy>30</posy>
                                 <width>360</width>
                                 <aligny>top</aligny>
@@ -298,7 +298,7 @@
                                 <label>$VAR[DetailsTitle]</label>
                             </control>
                             <control type="label">
-                                <posx>15</posx>
+                                <posx>0</posx>
                                 <posy>80</posy>
                                 <width>360</width>
                                 <aligny>top</aligny>
@@ -308,7 +308,7 @@
                                 <label>$VAR[DetailsRow1]$VAR[DetailsRow2,[COLOR=SeparatorColor] › [/COLOR]]</label>
                             </control>
                             <control type="label">
-                                <posx>15</posx>
+                                <posx>0</posx>
                                 <posy>122</posy>
                                 <width>360</width>
                                 <aligny>top</aligny>
@@ -318,7 +318,7 @@
                                 <label>$VAR[DetailsRow3]</label>
                             </control>
                             <include content="Codecs">
-                                <param name="x" value="10"/>
+                                <param name="x" value="-5"/>
                                 <param name="y" value="200"/>
                                 <param name="width" value="240"/>
                             </include>
@@ -504,7 +504,7 @@
                                 <param name="direction" value="horizontal"/>
                             </include>
                             <include content="FocusedIndicator">
-                                <param name="x" value="0"/>
+                                <param name="x" value="-15"/>
                                 <param name="y" value="30"/>
                                 <param name="height" value="50"/>
                                 <param name="visible" value="true"/>
@@ -520,9 +520,9 @@
                                 <label>$VAR[DetailsTitle]</label>
                             </control>
                             <control type="label">
-                                <posx>15</posx>
+                                <posx>0</posx>
                                 <posy>80</posy>
-                                <width>500</width>
+                                <width>515</width>
                                 <aligny>top</aligny>
                                 <font>WidgetSubTitleFont</font>
                                 <include>TextColor_MainColor</include>
@@ -530,9 +530,9 @@
                                 <label>$VAR[DetailsRow1]$VAR[DetailsRow2,[COLOR=SeparatorColor] › [/COLOR]]</label>
                             </control>
                             <control type="label">
-                                <posx>15</posx>
+                                <posx>0</posx>
                                 <posy>122</posy>
-                                <width>500</width>
+                                <width>515</width>
                                 <aligny>top</aligny>
                                 <font>WidgetSubTitleFont</font>
                                 <include>TextColor_MainColor</include>
@@ -540,10 +540,10 @@
                                 <label>$VAR[DetailsRow3]</label>
                             </control>
                             <control type="textbox">
-                                <posx>15</posx>
+                                <posx>0</posx>
                                 <posy>177</posy>
                                 <height>205</height>
-                                <width>500</width>
+                                <width>515</width>
                                 <font>FacadeListSubTitleFont</font>
                                 <include>TextColor_MainColor</include>
                                 <label>$VAR[Plots]</label>
@@ -723,15 +723,15 @@
                                 <param name="direction" value="horizontal"/>
                             </include>
                             <include content="FocusedIndicator">
-                                <param name="x" value="0"/>
+                                <param name="x" value="-15"/>
                                 <param name="y" value="30"/>
                                 <param name="height" value="57"/>
                                 <param name="visible" value="true"/>
                             </include>
                             <control type="label">
-                                <posx>15</posx>
+                                <posx>0</posx>
                                 <posy>30</posy>
-                                <width>745</width>
+                                <width>780</width>
                                 <height>50</height>
                                 <font>FacadeListTitleFont</font>
                                 <include>TextColor_MainColor</include>
@@ -739,9 +739,9 @@
                                 <label>$VAR[DetailsTitle]</label>
                             </control>
                             <control type="label">
-                                <posx>15</posx>
+                                <posx>0</posx>
                                 <posy>80</posy>
-                                <width>745</width>
+                                <width>780</width>
                                 <height>50</height>
                                 <font>FacadeListSubTitleFont</font>
                                 <include>TextColor_MainColor</include>
@@ -749,17 +749,17 @@
                                 <label>$VAR[DetailsRow1]$VAR[DetailsRow2,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow3,[COLOR=SeparatorColor] › [/COLOR]]</label>
                             </control>
                             <control type="textbox">
-                                <posx>15</posx>
+                                <posx>0</posx>
                                 <posy>135</posy>
                                 <height>170</height>
-                                <width>745</width>
+                                <width>780</width>
                                 <font>FacadeListSubTitleFont</font>
                                 <include>TextColor_MainColor</include>
                                 <label>$VAR[Plots]</label>
                                 <include>myautoscroll</include>
                             </control>
                             <include content="Codecs">
-                                <param name="x" value="10"/>
+                                <param name="x" value="-5"/>
                                 <param name="y" value="340"/>
                                 <param name="width" value="240"/>
                             </include>
@@ -938,15 +938,15 @@
                                 <param name="direction" value="horizontal"/>
                             </include>
                             <include content="FocusedIndicator">
-                                <param name="x" value="0"/>
+                                <param name="x" value="-15"/>
                                 <param name="y" value="30"/>
                                 <param name="height" value="50"/>
                                 <param name="visible" value="true"/>
                             </include>
                             <control type="label">
-                                <posx>15</posx>
+                                <posx>0</posx>
                                 <posy>30</posy>
-                                <width>500</width>
+                                <width>515</width>
                                 <aligny>top</aligny>
                                 <font>WidgetTitleFont</font>
                                 <include>TextColor_MainColor</include>
@@ -954,9 +954,9 @@
                                 <label>$VAR[DetailsTitle]</label>
                             </control>
                             <control type="label">
-                                <posx>15</posx>
+                                <posx>0</posx>
                                 <posy>80</posy>
-                                <width>500</width>
+                                <width>515</width>
                                 <aligny>top</aligny>
                                 <font>WidgetSubTitleFont</font>
                                 <include>TextColor_MainColor</include>
@@ -964,9 +964,9 @@
                                 <label>$VAR[DetailsRow1]$VAR[DetailsRow2,[COLOR=SeparatorColor] › [/COLOR]]</label>
                             </control>
                             <control type="label">
-                                <posx>15</posx>
+                                <posx>0</posx>
                                 <posy>122</posy>
-                                <width>500</width>
+                                <width>515</width>
                                 <aligny>top</aligny>
                                 <font>WidgetSubTitleFont</font>
                                 <include>TextColor_MainColor</include>

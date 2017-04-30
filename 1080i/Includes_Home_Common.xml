@@ -380,16 +380,16 @@
                         <param name="direction" value="horizontal"/>
                     </include>
                     <include content="FocusedIndicator">
-                        <param name="x" value="0"/>
+                        <param name="x" value="-15"/>
                         <param name="y" value="30"/>
                         <param name="height" value="50"/>
                         <param name="visible" value="control.hasfocus($PARAM[id])"/>
                     </include>
                     <control type="label">
                         <visible>control.hasfocus($PARAM[id])</visible>
-                        <posx>15</posx>
+                        <posx>0</posx>
                         <posy>30</posy>
-                        <width>280</width>
+                        <width>295</width>
                         <aligny>top</aligny>
                         <font>WidgetTitleFont</font>
                         <include>TextColor_MainColor</include>
@@ -398,9 +398,9 @@
                     </control>
                     <control type="label">
                         <visible>control.hasfocus($PARAM[id])</visible>
-                        <posx>15</posx>
+                        <posx>0</posx>
                         <posy>80</posy>
-                        <width>280</width>
+                        <width>295</width>
                         <aligny>top</aligny>
                         <font>WidgetSubTitleFont</font>
                         <include>TextColor_MainColor</include>
@@ -561,16 +561,16 @@
                         <param name="direction" value="horizontal"/>
                     </include>
                     <include content="FocusedIndicator">
-                        <param name="x" value="0"/>
+                        <param name="x" value="-15"/>
                         <param name="y" value="30"/>
                         <param name="height" value="50"/>
                         <param name="visible" value="control.hasfocus($PARAM[id])"/>
                     </include>
                     <control type="label">
                         <visible>control.hasfocus($PARAM[id])</visible>
-                        <posx>15</posx>
+                        <posx>0</posx>
                         <posy>30</posy>
-                        <width>358</width>
+                        <width>363</width>
                         <aligny>top</aligny>
                         <font>WidgetTitleFont</font>
                         <include>TextColor_MainColor</include>
@@ -579,9 +579,9 @@
                     </control>
                     <control type="label">
                         <visible>control.hasfocus($PARAM[id])</visible>
-                        <posx>15</posx>
+                        <posx>0</posx>
                         <posy>80</posy>
-                        <width>358</width>
+                        <width>363</width>
                         <aligny>top</aligny>
                         <font>WidgetSubTitleFont</font>
                         <include>TextColor_MainColor</include>
@@ -742,16 +742,16 @@
                         <param name="direction" value="horizontal"/>
                     </include>
                     <include content="FocusedIndicator">
-                        <param name="x" value="0"/>
+                        <param name="x" value="-15"/>
                         <param name="y" value="30"/>
                         <param name="height" value="50"/>
                         <param name="visible" value="control.hasfocus($PARAM[id])"/>
                     </include>
                     <control type="label">
                         <visible>control.hasfocus($PARAM[id])</visible>
-                        <posx>15</posx>
+                        <posx>0</posx>
                         <posy>30</posy>
-                        <width>470</width>
+                        <width>485</width>
                         <aligny>top</aligny>
                         <font>WidgetTitleFont</font>
                         <include>TextColor_MainColor</include>
@@ -760,9 +760,9 @@
                     </control>
                     <control type="label">
                         <visible>control.hasfocus($PARAM[id])</visible>
-                        <posx>15</posx>
+                        <posx>0</posx>
                         <posy>80</posy>
-                        <width>470</width>
+                        <width>485</width>
                         <aligny>top</aligny>
                         <font>WidgetSubTitleFont</font>
                         <include>TextColor_MainColor</include>
@@ -923,7 +923,7 @@
                         <param name="direction" value="horizontal"/>
                     </include>
                     <include content="FocusedIndicator">
-                        <param name="x" value="0"/>
+                        <param name="x" value="-15"/>
                         <param name="y" value="30"/>
                         <param name="height" value="50"/>
                         <param name="visible" value="control.hasfocus($PARAM[id])"/>
@@ -932,7 +932,7 @@
                         <visible>control.hasfocus($PARAM[id])</visible>
                         <posx>15</posx>
                         <posy>30</posy>
-                        <width>404</width>
+                        <width>419</width>
                         <aligny>top</aligny>
                         <font>WidgetTitleFont</font>
                         <include>TextColor_MainColor</include>
@@ -943,7 +943,7 @@
                         <visible>control.hasfocus($PARAM[id])</visible>
                         <posx>15</posx>
                         <posy>80</posy>
-                        <width>404</width>
+                        <width>419</width>
                         <aligny>top</aligny>
                         <font>WidgetSubTitleFont</font>
                         <include>TextColor_MainColor</include>
