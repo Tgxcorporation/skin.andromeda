@@ -329,7 +329,7 @@
                     </control>
                     <control type="group">
                         <visible>$EXP[CdArtVideoIsEnabled]</visible>
-                        <include content="FocusedIndicator">
+                        <include content="FocusedIndicatorVertical">
                             <param name="x" value="420"/>
                             <param name="y" value="30"/>
                             <param name="height" value="57"/>
@@ -368,7 +368,7 @@
                     </control>
                     <control type="group">
                         <visible>$EXP[CdArtVideoIsNotEnabled]</visible>
-                        <include content="FocusedIndicator">
+                        <include content="FocusedIndicatorVertical">
                             <param name="x" value="332"/>
                             <param name="y" value="30"/>
                             <param name="height" value="57"/>
@@ -448,7 +448,7 @@
                             <param name="color" value="Main"/>
                         </include>
                     </control>
-                    <include content="FocusedIndicator">
+                    <include content="FocusedIndicatorVertical">
                         <param name="x" value="690"/>
                         <param name="y" value="30"/>
                         <param name="height" value="57"/>
@@ -541,7 +541,7 @@
                         </control>
                         <control type="group">
                             <visible>$EXP[CdArtAudioIsEnabled]</visible>
-                            <include content="FocusedIndicator">
+                            <include content="FocusedIndicatorVertical">
                                 <param name="x" value="535"/>
                                 <param name="y" value="30"/>
                                 <param name="height" value="57"/>
@@ -580,7 +580,7 @@
                         </control>
                         <control type="group">
                             <visible>$EXP[CdArtAudioIsNotEnabled]</visible>
-                            <include content="FocusedIndicator">
+                            <include content="FocusedIndicatorVertical">
                                 <param name="x" value="440"/>
                                 <param name="y" value="30"/>
                                 <param name="height" value="57"/>
@@ -658,7 +658,7 @@
                                 <param name="color" value="Main"/>
                             </include>
                         </control>
-                        <include content="FocusedIndicator">
+                        <include content="FocusedIndicatorVertical">
                             <param name="x" value="545"/>
                             <param name="y" value="30"/>
                             <param name="height" value="57"/>

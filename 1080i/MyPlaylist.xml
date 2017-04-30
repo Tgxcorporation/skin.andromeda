@@ -75,7 +75,7 @@
                                 <param name="texturediffuse" value="ThumbsFocusedColor"/>
                                 <param name="borderdiffuse" value="$VAR[Picked.Theme.Color]"/>
                             </include>
-                            <include content="FocusedIndicator">
+                            <include content="FocusedIndicatorVertical">
                                 <param name="x" value="220"/>
                                 <param name="y" value="10"/>
                                 <param name="height" value="57"/>

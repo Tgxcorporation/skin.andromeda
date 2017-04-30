@@ -271,7 +271,7 @@
                             <param name="visiblefocus" value="true"/>
                             <param name="direction" value="vertical"/>
                         </include>
-                        <include content="FocusedIndicator">
+                        <include content="FocusedIndicatorVertical">
                             <param name="x" value="265"/>
                             <param name="y" value="18"/>
                             <param name="height" value="57"/>
@@ -456,7 +456,7 @@
                             <param name="visiblefocus" value="true"/>
                             <param name="direction" value="vertical"/>
                         </include>
-                        <include content="FocusedIndicator">
+                        <include content="FocusedIndicatorVertical">
                             <param name="x" value="265"/>
                             <param name="y" value="18"/>
                             <param name="height" value="57"/>

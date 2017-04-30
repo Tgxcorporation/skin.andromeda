@@ -111,7 +111,7 @@
             </control>
         </itemlayout>
         <focusedlayout height="80" width="384">
-            <include content="FocusedIndicator">
+            <include content="FocusedIndicatorVertical">
                 <param name="x" value="50"/>
                 <param name="y" value="25"/>
                 <param name="height" value="60"/>

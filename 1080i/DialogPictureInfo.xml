@@ -66,7 +66,7 @@
                 <focusedlayout width="1300" height="109">
                     <control type="group">
                         <include>ButtonFocusAnimation</include>
-                        <include content="FocusedIndicator">
+                        <include content="FocusedIndicatorVertical">
                             <param name="x" value="0"/>
                             <param name="y" value="7"/>
                             <param name="height" value="75"/>

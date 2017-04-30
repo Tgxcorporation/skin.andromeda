@@ -56,7 +56,7 @@
                     </itemlayout>
                     <focusedlayout height="60">
                         <control type="group">
-                            <include content="FocusedIndicator">
+                            <include content="FocusedIndicatorVertical">
                                 <param name="x" value="0"/>
                                 <param name="y" value="0"/>
                                 <param name="height" value="60"/>
@@ -108,7 +108,7 @@
                     </itemlayout>
                     <focusedlayout height="60">
                         <control type="group">
-                            <include content="FocusedIndicator">
+                            <include content="FocusedIndicatorVertical">
                                 <param name="x" value="0"/>
                                 <param name="y" value="0"/>
                                 <param name="height" value="60"/>

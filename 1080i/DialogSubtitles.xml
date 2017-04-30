@@ -73,7 +73,7 @@
                     <focusedlayout width="480" height="60">
                         <control type="group">
                             <include>ButtonFocusAnimation</include>
-                            <include content="FocusedIndicator">
+                            <include content="FocusedIndicatorVertical">
                                 <param name="x" value="50"/>
                                 <param name="y" value="0"/>
                                 <param name="height" value="45"/>
@@ -163,7 +163,7 @@
                     <focusedlayout height="100" width="1340">
                         <control type="group">
                             <include>ButtonWideFocusAnimation</include>
-                            <include content="FocusedIndicator">
+                            <include content="FocusedIndicatorVertical">
                                 <param name="x" value="0"/>
                                 <param name="y" value="0"/>
                                 <param name="height" value="100"/>

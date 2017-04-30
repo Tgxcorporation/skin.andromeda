@@ -638,7 +638,7 @@
         <focusedlayout height="120" width="393">
             <control type="group">
                 <include>ButtonWideFocusAnimation</include>
-                <include content="FocusedIndicator">
+                <include content="FocusedIndicatorVertical">
                     <param name="x" value="0"/>
                     <param name="y" value="33"/>
                     <param name="height" value="45"/>
@@ -1055,7 +1055,7 @@
         <focusedlayout width="1340" height="60">
             <control type="group">
                 <include>ButtonWideFocusAnimation</include>
-                <include content="FocusedIndicator">
+                <include content="FocusedIndicatorVertical">
                     <param name="x" value="0"/>
                     <param name="y" value="0"/>
                     <param name="height" value="60"/>
@@ -1688,7 +1688,7 @@
             </control>
         </control>
     </include>
-    <include name="FocusedIndicator">
+    <include name="FocusedIndicatorVertical">
         <control type="image">
             <visible>$PARAM[visible]</visible>
             <posx>$PARAM[x]</posx>
@@ -1697,6 +1697,17 @@
             <height>$PARAM[height]</height>
             <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
             <texture border="0,2,0,2">common/line_white_vertical.png</texture>
+        </control>
+    </include>
+    <include name="FocusedIndicatorHorizontal">
+        <control type="image">
+            <visible>$PARAM[visible]</visible>
+            <posx>$PARAM[x]</posx>
+            <posy>$PARAM[y]</posy>
+            <height>2</height>
+            <width>$PARAM[width]</width>
+            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+            <texture border="2,0,2,0">common/line_white_horizontal.png</texture>
         </control>
     </include>
     <include name="FacadeOverlay">

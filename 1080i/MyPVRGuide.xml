@@ -118,7 +118,7 @@
                                         <bordertexture border="2" colordiffuse="$VAR[Picked.Theme.Color]">common/frame_focus.png</bordertexture>
                                         <bordersize>2</bordersize>
                                     </control>
-                                    <include content="FocusedIndicator">
+                                    <include content="FocusedIndicatorVertical">
                                         <param name="x" value="155"/>
                                         <param name="y" value="13"/>
                                         <param name="height" value="50"/>
@@ -161,7 +161,7 @@
                                 </control>
                             </itemlayout>
                             <focusedlayout height="75" width="60">
-                                <include content="FocusedIndicator">
+                                <include content="FocusedIndicatorVertical">
                                     <param name="x" value="0"/>
                                     <param name="y" value="13"/>
                                     <param name="height" value="50"/>

@@ -62,7 +62,7 @@
                     <param name="height" value="150"/>
                     <param name="color" value="Main"/>
                 </include>
-                <include content="FocusedIndicator">
+                <include content="FocusedIndicatorVertical">
                     <param name="x" value="930"/>
                     <param name="y" value="35"/>
                     <param name="height" value="57"/>

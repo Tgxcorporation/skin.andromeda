@@ -244,7 +244,7 @@
             <control type="group">
                 <include>ListFocusAnimation</include>
                 <control type="group">
-                    <include content="FocusedIndicator">
+                    <include content="FocusedIndicatorVertical">
                         <param name="x" value="545"/>
                         <param name="y" value="60"/>
                         <param name="height" value="57"/>
