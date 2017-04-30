@@ -7,8 +7,7 @@
         <label2>Common Shortcut</label2>
         <icon>DefaultShortcut.png</icon>
         <thumb></thumb>
-        <!--<action>ActivateWindow(Videos,MovieTitles,return)</action>-->
-        <action>ActivateWindow(Videos,library://video/Plex-1/1_all.xml/,return)</action>
+        <action>ActivateWindow(Videos,MovieTitles,return)</action>
     </shortcut>
     <shortcut>
         <visible>!Skin.HasSetting(plexbmc) + Library.HasContent(TVShows)</visible>
@@ -55,15 +54,6 @@
         <thumb></thumb>
         <action>ActivateWindow(Music)</action>
     </shortcut>
-    <!--<shortcut>-->
-        <!--<visible>!Skin.HasSetting(plexbmc) + Library.HasContent(Movies)</visible>-->
-        <!--<defaultID>19017</defaultID>-->
-        <!--<label>19017</label>-->
-        <!--<label2>Common Shortcut</label2>-->
-        <!--<icon>DefaultShortcut.png</icon>-->
-        <!--<thumb></thumb>-->
-        <!--<action>ActivateWindow(Videos,library://video/Plex-4/4_all.xml/,return)</action>-->
-    <!--</shortcut>-->
     <shortcut>
         <visible>Pvr.HasTVChannels</visible>
         <defaultID>livetv</defaultID>
@@ -99,14 +89,6 @@
         <thumb></thumb>
         <action>ActivateWindow(1119)</action>
     </shortcut>
-    <!--<shortcut>-->
-        <!--<defaultID>favourites</defaultID>-->
-        <!--<label>1036</label>-->
-        <!--<label2>Common Shortcut</label2>-->
-        <!--<icon>special://skin/backgrounds/Favourites.jpg</icon>-->
-        <!--<thumb></thumb>-->
-        <!--<action>ActivateWindow(Favourites)</action>-->
-    <!--</shortcut>-->
     <shortcut>
         <visible>System.HasMediaDVD</visible>
         <defaultID>dvd</defaultID>
@@ -116,37 +98,4 @@
         <thumb></thumb>
         <action>PlayDVD()</action>
     </shortcut>
-    <!--<shortcut>-->
-        <!--<defaultID>weather</defaultID>-->
-        <!--<label>12600</label>-->
-        <!--<label2>Common Shortcut</label2>-->
-        <!--<icon>DefaultShortcut.png</icon>-->
-        <!--<thumb></thumb>-->
-        <!--<action>ActivateWindow(Weather)</action>-->
-    <!--</shortcut>-->
-    <!--<shortcut>-->
-        <!--<defaultID>settings</defaultID>-->
-        <!--<label>10004</label>-->
-        <!--<label2>Common Shortcut</label2>-->
-        <!--<icon>DefaultShortcut.png</icon>-->
-        <!--<thumb></thumb>-->
-        <!--<action>ActivateWindow(Settings)</action>-->
-    <!--</shortcut>-->
-    <!--<shortcut>-->
-        <!--<visible>!Skin.HasSetting(plexbmc) + System.HasAddon(script.globalsearch)</visible>-->
-        <!--<defaultID>script.globalsearch</defaultID>-->
-        <!--<label>137</label>-->
-        <!--<label2>Program</label2>-->
-        <!--<icon>DefaultShortcut.png</icon>-->
-        <!--<thumb></thumb>-->
-        <!--<action>RunAddOn(script.globalsearch)</action>-->
-    <!--</shortcut>-->
-    <!--<shortcut>-->
-        <!--<defaultID>1114</defaultID>-->
-        <!--<label>13009</label>-->
-        <!--<label2>Common Shortcut</label2>-->
-        <!--<icon>DefaultShortcut.png</icon>-->
-        <!--<thumb></thumb>-->
-        <!--<action>ActivateWindow(shutdownmenu)</action>-->
-    <!--</shortcut>-->
 </shortcuts>
