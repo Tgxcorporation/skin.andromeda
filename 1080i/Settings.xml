@@ -20,9 +20,9 @@
                 <include>OpenClose</include>
                 <control type="list" id="50">
                     <posx>100</posx>
-                    <posy>210</posy>
+                    <posy>180</posy>
                     <width>760</width>
-                    <height>660</height>
+                    <height>720</height>
                     <itemgap>0</itemgap>
                     <aligny>top</aligny>
                     <align>center</align>
