@@ -187,9 +187,9 @@
             <size>28</size>
         </font>
         <font>
-            <name>OSDMainFont</name>
+            <name>OSDSubFont</name>
             <filename>OpenSans-Light.ttf</filename>
-            <size>45</size>
+            <size>35</size>
         </font>
         <font>
             <name>OSDSubFontMat</name>
