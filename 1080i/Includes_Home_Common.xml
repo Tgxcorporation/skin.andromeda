@@ -930,7 +930,7 @@
                     </include>
                     <control type="label">
                         <visible>control.hasfocus($PARAM[id])</visible>
-                        <posx>15</posx>
+                        <posx>0</posx>
                         <posy>30</posy>
                         <width>419</width>
                         <aligny>top</aligny>
@@ -941,7 +941,7 @@
                     </control>
                     <control type="label">
                         <visible>control.hasfocus($PARAM[id])</visible>
-                        <posx>15</posx>
+                        <posx>0</posx>
                         <posy>80</posy>
                         <width>419</width>
                         <aligny>top</aligny>
@@ -1171,7 +1171,7 @@
             <param name="title" value="$INFO[Container(300).ListItem.Property(widgetName)]"/>
             <param name="ondown" value="700015"/>
             <param name="onup" value="700013"/>
-            <param name="height" value="557"/>
+            <param name="height" value="547"/>
             <param name="gfxType" value="Channel"/>
             <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath)]"/>
             <param name="id" value="700014"/>
@@ -1266,7 +1266,7 @@
             <param name="title" value="$INFO[Container(300).ListItem.Property(widgetName.1)]"/>
             <param name="ondown" value="700025"/>
             <param name="onup" value="700023"/>
-            <param name="height" value="530"/>
+            <param name="height" value="547"/>
             <param name="gfxType" value="Channel"/>
             <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.1)]"/>
             <param name="id" value="700024"/>
@@ -1361,7 +1361,7 @@
             <param name="title" value="$INFO[Container(300).ListItem.Property(widgetName.2)]"/>
             <param name="ondown" value="700035"/>
             <param name="onup" value="700033"/>
-            <param name="height" value="530"/>
+            <param name="height" value="547"/>
             <param name="gfxType" value="Channel"/>
             <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.2)]"/>
             <param name="id" value="700034"/>
@@ -1456,7 +1456,7 @@
             <param name="title" value="$INFO[Container(300).ListItem.Property(widgetName.3)]"/>
             <param name="ondown" value="700045"/>
             <param name="onup" value="700043"/>
-            <param name="height" value="530"/>
+            <param name="height" value="547"/>
             <param name="gfxType" value="Channel"/>
             <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.3)]"/>
             <param name="id" value="700044"/>
@@ -1552,7 +1552,7 @@
             <param name="title" value="$INFO[Container(300).ListItem.Property(widgetName.4)]"/>
             <param name="ondown" value="700055"/>
             <param name="onup" value="700053"/>
-            <param name="height" value="530"/>
+            <param name="height" value="547"/>
             <param name="gfxType" value="Channel"/>
             <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.4)]"/>
             <param name="id" value="700054"/>
