@@ -1328,19 +1328,8 @@
             <!--<onfocus>back</onfocus>-->
         </control>
     </include>
-    <include name="Stars">
-        <control type="image">
-            <posx>$PARAM[x]</posx>
-            <posy>$PARAM[y]</posy>
-            <width>40</width>
-            <height>40</height>
-            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-            <texture>badges/star_focus_$PARAM[color].png</texture>
-        </control>
-    </include>
     <include name="WatchedRecOverlay">
         <control type="label">
-            <animation effect="fade" start="$PARAM[transparency]" end="$PARAM[transparency]" time="0" reversible="false" condition="true">Conditional</animation>
             <posx>$PARAM[x]</posx>
             <posy>$PARAM[y]</posy>
             <width>$PARAM[width]</width>
@@ -1352,7 +1341,7 @@
             <label>$VAR[Overlay]</label>
         </control>
         <control type="image">
-            <animation effect="fade" start="$PARAM[transparency]" end="$PARAM[transparency]" time="0" reversible="false" condition="true">Conditional</animation>
+            <animation effect="slide" start="0,0" end="11,-7" time="0" reversible="false" condition="true">Conditional</animation>
             <posx>$PARAM[x]</posx>
             <posy>$PARAM[y]</posy>
             <width>$PARAM[width]</width>
