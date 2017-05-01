@@ -231,8 +231,7 @@
                             <pagecontrol>6649</pagecontrol>
                         </control>
                         <control type="scrollbar" id="6649">
-                            <visible>Skin.HasSetting(ManualScroll)</visible>
-                            <posx>810</posx>
+                                <posx>810</posx>
                             <posy>10</posy>
                             <height>310</height>
                             <include>VerticalScroller</include>

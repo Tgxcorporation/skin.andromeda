@@ -322,6 +322,21 @@
             <onfocus>SetFocus(9900)</onfocus>
         </control>
         <control type="label">
+            <visible>Skin.HasSetting(ScrollOffsetLabelEnabled)</visible>
+            <visible>Container.Scrolling + [String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | String.IsEqual(Container.SortMethod,$LOCALIZE[561]) | String.IsEqual(Container.SortMethod,$LOCALIZE[558]) | String.IsEqual(Container.SortMethod,$LOCALIZE[557]) | String.IsEqual(Container.SortMethod,$LOCALIZE[556])]</visible>
+            <include>ScrollOffsetLabelVisibleFadeEffect</include>
+            <!--<include>VisibleFadeEffect</include>-->
+            <right>0</right>
+            <top>0</top>
+            <height>70</height>
+            <width>70</width>
+            <align>center</align>
+            <aligny>center</aligny>
+            <font>WindowTitleFont</font>
+            <include>TextColor_MainColor</include>
+            <label>$INFO[ListItem.SortLetter]</label>
+        </control>
+        <control type="label">
             <animation effect="fade" start="65" time="3000" condition="true" pulse="true">Conditional</animation>
             <visible>PVR.IsRecording</visible>
             <include>VisibleFadeEffect</include>

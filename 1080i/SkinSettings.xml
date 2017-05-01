@@ -200,18 +200,18 @@
                                     <label2>$LOCALIZE[106]</label2>
                                     <onclick>Skin.ToggleSetting(AutoScroll)</onclick>
                                 </item>
-                                <item id="6">
-                                    <visible>Skin.HasSetting(ManualScroll)</visible>
-                                    <label>$LOCALIZE[31026]</label>
-                                    <label2>$LOCALIZE[107]</label2>
-                                    <onclick>Skin.ToggleSetting(ManualScroll)</onclick>
-                                </item>
-                                <item id="6">
-                                    <visible>!Skin.HasSetting(ManualScroll)</visible>
-                                    <label>$LOCALIZE[31026]</label>
-                                    <label2>$LOCALIZE[106]</label2>
-                                    <onclick>Skin.ToggleSetting(ManualScroll)</onclick>
-                                </item>
+                                <!--<item id="6">-->
+                                    <!--<visible>Skin.HasSetting(ManualScroll)</visible>-->
+                                    <!--<label>$LOCALIZE[31026]</label>-->
+                                    <!--<label2>$LOCALIZE[107]</label2>-->
+                                    <!--<onclick>Skin.ToggleSetting(ManualScroll)</onclick>-->
+                                <!--</item>-->
+                                <!--<item id="6">-->
+                                    <!--<visible>!Skin.HasSetting(ManualScroll)</visible>-->
+                                    <!--<label>$LOCALIZE[31026]</label>-->
+                                    <!--<label2>$LOCALIZE[106]</label2>-->
+                                    <!--<onclick>Skin.ToggleSetting(ManualScroll)</onclick>-->
+                                <!--</item>-->
                                 <!--<item id="18">-->
                                 <!--<visible>Skin.HasSetting(WindowClosingIcon)</visible>-->
                                 <!--<label>$LOCALIZE[31949]</label>-->

@@ -874,7 +874,6 @@
                         <pagecontrol>6060</pagecontrol>
                     </control>
                     <control type="scrollbar" id="6060">
-                        <visible>Skin.HasSetting(ManualScroll)</visible>
                         <include>VisibleFadeEffect</include>
                         <posx>810</posx>
                         <posy>100</posy>
@@ -2103,8 +2102,7 @@
                             <pagecontrol>6062</pagecontrol>
                         </control>
                         <control type="scrollbar" id="6062">
-                            <visible>Skin.HasSetting(ManualScroll)</visible>
-                            <posx>810</posx>
+                                <posx>810</posx>
                             <posy>10</posy>
                             <height>310</height>
                             <include>VerticalScroller</include>
