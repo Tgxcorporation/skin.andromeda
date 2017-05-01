@@ -58,7 +58,7 @@
                         <width>1410</width>
                         <font>FacadeListSubTitleFont</font>
                         <textcolor>NoFocusedColor</textcolor>
-                        <label>$VAR[DetailsRow1]$VAR[DetailsRow2,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow3,[COLOR=SeparatorColor] › [/COLOR]]</label>
+                        <label>$VAR[DetailsRow1]$VAR[DetailsRow2,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow3,[COLOR=SeparatorColor] › [/COLOR]$VAR[DetailsRow4,[COLOR=SeparatorColor] › [/COLOR]]</label>
                     </control>
                 </control>
                 <control type="group">
@@ -79,7 +79,7 @@
                         <width>1498</width>
                         <font>FacadeListSubTitleFont</font>
                         <textcolor>NoFocusedColor</textcolor>
-                        <label>$VAR[DetailsRow1]$VAR[DetailsRow2,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow3,[COLOR=SeparatorColor] › [/COLOR]]</label>
+                        <label>$VAR[DetailsRow1]$VAR[DetailsRow2,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow3,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow4,[COLOR=SeparatorColor] › [/COLOR]]</label>
                     </control>
                 </control>
             </control>
@@ -136,7 +136,7 @@
                     <width>1140</width>
                     <font>FacadeListSubTitleFont</font>
                     <textcolor>NoFocusedColor</textcolor>
-                    <label>$VAR[DetailsRow1]$VAR[DetailsRow2,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow3,[COLOR=SeparatorColor] › [/COLOR]]</label>
+                    <label>$VAR[DetailsRow1]$VAR[DetailsRow2,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow3,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow4,[COLOR=SeparatorColor] › [/COLOR]]</label>
                 </control>
             </control>
             <!--SQUARES-->
@@ -195,7 +195,7 @@
                         <width>1335</width>
                         <font>FacadeListSubTitleFont</font>
                         <textcolor>NoFocusedColor</textcolor>
-                        <label>$VAR[DetailsRow1]$VAR[DetailsRow2,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow3,[COLOR=SeparatorColor] › [/COLOR]]</label>
+                        <label>$VAR[DetailsRow1]$VAR[DetailsRow2,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow3,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow4,[COLOR=SeparatorColor] › [/COLOR]]</label>
                     </control>
                 </control>
                 <control type="group">
@@ -216,7 +216,7 @@
                         <width>1390</width>
                         <font>FacadeListSubTitleFont</font>
                         <textcolor>NoFocusedColor</textcolor>
-                        <label>$VAR[DetailsRow1]$VAR[DetailsRow2,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow3,[COLOR=SeparatorColor] › [/COLOR]]</label>
+                        <label>$VAR[DetailsRow1]$VAR[DetailsRow2,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow3,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow4,[COLOR=SeparatorColor] › [/COLOR]]</label>
                     </control>
                 </control>
             </control>
@@ -273,7 +273,7 @@
                     <width>1285</width>
                     <font>FacadeListSubTitleFont</font>
                     <textcolor>NoFocusedColor</textcolor>
-                    <label>$VAR[DetailsRow1]$VAR[DetailsRow2,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow3,[COLOR=SeparatorColor] › [/COLOR]]</label>
+                    <label>$VAR[DetailsRow1]$VAR[DetailsRow2,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow3,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow4,[COLOR=SeparatorColor] › [/COLOR]]</label>
                 </control>
             </control>
         </itemlayout>
@@ -353,7 +353,7 @@
                             <font>FacadeListSubTitleFont</font>
                             <include>TextColor_MainColor</include>
                             <scroll>true</scroll>
-                            <label>$VAR[DetailsRow1]$VAR[DetailsRow2,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow3,[COLOR=SeparatorColor] › [/COLOR]]</label>
+                            <label>$VAR[DetailsRow1]$VAR[DetailsRow2,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow3,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow4,[COLOR=SeparatorColor] › [/COLOR]]</label>
                         </control>
                         <control type="textbox">
                             <posx>440</posx>
@@ -392,7 +392,7 @@
                             <font>FacadeListSubTitleFont</font>
                             <include>TextColor_MainColor</include>
                             <scroll>true</scroll>
-                            <label>$VAR[DetailsRow1]$VAR[DetailsRow2,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow3,[COLOR=SeparatorColor] › [/COLOR]]</label>
+                            <label>$VAR[DetailsRow1]$VAR[DetailsRow2,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow3,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow4,[COLOR=SeparatorColor] › [/COLOR]]</label>
                         </control>
                         <control type="textbox">
                             <posx>352</posx>
@@ -472,7 +472,7 @@
                         <font>FacadeListSubTitleFont</font>
                         <include>TextColor_MainColor</include>
                         <scroll>true</scroll>
-                        <label>$VAR[DetailsRow1]$VAR[DetailsRow2,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow3,[COLOR=SeparatorColor] › [/COLOR]]</label>
+                        <label>$VAR[DetailsRow1]$VAR[DetailsRow2,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow3,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow4,[COLOR=SeparatorColor] › [/COLOR]]</label>
                     </control>
                     <control type="textbox">
                         <posx>710</posx>
@@ -565,7 +565,7 @@
                                 <font>FacadeListSubTitleFont</font>
                                 <include>TextColor_MainColor</include>
                                 <scroll>true</scroll>
-                                <label>$VAR[DetailsRow1]$VAR[DetailsRow2,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow3,[COLOR=SeparatorColor] › [/COLOR]]</label>
+                                <label>$VAR[DetailsRow1]$VAR[DetailsRow2,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow3,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow4,[COLOR=SeparatorColor] › [/COLOR]]</label>
                             </control>
                             <control type="textbox">
                                 <posx>555</posx>
@@ -604,7 +604,7 @@
                                 <font>FacadeListSubTitleFont</font>
                                 <include>TextColor_MainColor</include>
                                 <scroll>true</scroll>
-                                <label>$VAR[DetailsRow1]$VAR[DetailsRow2,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow3,[COLOR=SeparatorColor] › [/COLOR]]</label>
+                                <label>$VAR[DetailsRow1]$VAR[DetailsRow2,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow3,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow4,[COLOR=SeparatorColor] › [/COLOR]]</label>
                             </control>
                             <control type="textbox">
                                 <posx>460</posx>
@@ -682,7 +682,7 @@
                             <font>FacadeListSubTitleFont</font>
                             <include>TextColor_MainColor</include>
                             <scroll>true</scroll>
-                            <label>$VAR[DetailsRow1]$VAR[DetailsRow2,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow3,[COLOR=SeparatorColor] › [/COLOR]]</label>
+                            <label>$VAR[DetailsRow1]$VAR[DetailsRow2,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow3,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow4,[COLOR=SeparatorColor] › [/COLOR]]</label>
                         </control>
                         <control type="textbox">
                             <posx>565</posx>

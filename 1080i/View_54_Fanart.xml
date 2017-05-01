@@ -160,7 +160,7 @@
                         <font>FacadeListSubTitleFont</font>
                         <include>TextColor_MainColor</include>
                         <scroll>true</scroll>
-                        <label>$VAR[DetailsRow1]$VAR[DetailsRow2,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow3,[COLOR=SeparatorColor] › [/COLOR]]</label>
+                        <label>$VAR[DetailsRow1]$VAR[DetailsRow2,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow3,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow4,[COLOR=SeparatorColor] › [/COLOR]]</label>
                     </control>
                     <control type="label">
                         <posx>70</posx>

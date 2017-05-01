@@ -231,7 +231,7 @@
                             <font>WidgetSubTitleFont</font>
                             <include>TextColor_AlternateColor</include>
                             <scroll>false</scroll>
-                            <label>$VAR[DetailsRow3]</label>
+                            <label>$VAR[DetailsRow3]$VAR[DetailsRow4,[COLOR=SeparatorColor] › [/COLOR]]</label>
                         </control>
                     </control>
                 </itemlayout>
@@ -314,7 +314,7 @@
                                 <font>WidgetSubTitleFont</font>
                                 <include>TextColor_MainColor</include>
                                 <scroll>true</scroll>
-                                <label>$VAR[DetailsRow3]</label>
+                                <label>$VAR[DetailsRow3]$VAR[DetailsRow4,[COLOR=SeparatorColor] › [/COLOR]]</label>
                             </control>
                             <include content="Codecs">
                                 <param name="x" value="-5"/>
@@ -322,24 +322,6 @@
                                 <param name="width" value="240"/>
                             </include>
                         </control>
-                        <!--<include content="ClearArtLogo">-->
-                            <!--<param name="x" value="400"/>-->
-                            <!--<param name="y" value="860"/>-->
-                            <!--<param name="width" value="390"/>-->
-                            <!--<param name="height" value="150"/>-->
-                            <!--<param name="visible" value="true"/>-->
-                            <!--<param name="align" value="center"/>-->
-                            <!--<param name="aligny" value="center"/>-->
-                        <!--</include>-->
-                        <!--<include content="StudioArt">-->
-                            <!--<param name="x" value="800"/>-->
-                            <!--<param name="y" value="860"/>-->
-                            <!--<param name="width" value="390"/>-->
-                            <!--<param name="height" value="150"/>-->
-                            <!--<param name="visible" value="true"/>-->
-                            <!--<param name="align" value="center"/>-->
-                            <!--<param name="aligny" value="center"/>-->
-                        <!--</include>-->
                     </control>
                 </focusedlayout>
             </control>
@@ -453,7 +435,7 @@
                             <font>WidgetSubTitleFont</font>
                             <include>TextColor_AlternateColor</include>
                             <scroll>false</scroll>
-                            <label>$VAR[DetailsRow3]</label>
+                            <label>$VAR[DetailsRow3]$VAR[DetailsRow4,[COLOR=SeparatorColor] › [/COLOR]]</label>
                         </control>
                     </control>
                 </itemlayout>
@@ -509,9 +491,9 @@
                                 <param name="visible" value="true"/>
                             </include>
                             <control type="label">
-                                <posx>15</posx>
+                                <posx>0</posx>
                                 <posy>30</posy>
-                                <width>500</width>
+                                <width>515</width>
                                 <aligny>top</aligny>
                                 <font>WidgetTitleFont</font>
                                 <include>TextColor_MainColor</include>
@@ -536,7 +518,7 @@
                                 <font>WidgetSubTitleFont</font>
                                 <include>TextColor_MainColor</include>
                                 <scroll>true</scroll>
-                                <label>$VAR[DetailsRow3]</label>
+                                <label>$VAR[DetailsRow3]$VAR[DetailsRow4,[COLOR=SeparatorColor] › [/COLOR]]</label>
                             </control>
                             <control type="textbox">
                                 <posx>0</posx>
@@ -549,24 +531,6 @@
                                 <include>myautoscroll</include>
                             </control>
                         </control>
-                        <!--<include content="ClearArtLogo">-->
-                        <!--<param name="x" value="400"/>-->
-                        <!--<param name="y" value="860"/>-->
-                        <!--<param name="width" value="390"/>-->
-                        <!--<param name="height" value="150"/>-->
-                        <!--<param name="visible" value="true"/>-->
-                        <!--<param name="align" value="center"/>-->
-                        <!--<param name="aligny" value="center"/>-->
-                        <!--</include>-->
-                        <!--<include content="StudioArt">-->
-                        <!--<param name="x" value="800"/>-->
-                        <!--<param name="y" value="860"/>-->
-                        <!--<param name="width" value="390"/>-->
-                        <!--<param name="height" value="150"/>-->
-                        <!--<param name="visible" value="true"/>-->
-                        <!--<param name="align" value="center"/>-->
-                        <!--<param name="aligny" value="center"/>-->
-                        <!--</include>-->
                     </control>
                 </focusedlayout>
             </control>
@@ -669,18 +633,8 @@
                             <height>50</height>
                             <font>FacadeListSubTitleFont</font>
                             <include>TextColor_AlternateColor</include>
-                            <scroll>false</scroll>
-                            <label>$VAR[DetailsRow1]$VAR[DetailsRow2,[COLOR=SeparatorColor] › [/COLOR]]</label>
-                        </control>
-                        <control type="label">
-                            <posx>0</posx>
-                            <posy>122</posy>
-                            <width>780</width>
-                            <aligny>top</aligny>
-                            <font>WidgetSubTitleFont</font>
-                            <include>TextColor_AlternateColor</include>
-                            <scroll>false</scroll>
-                            <label>$VAR[DetailsRow3]</label>
+                            <scroll>true</scroll>
+                            <label>$VAR[DetailsRow1]$VAR[DetailsRow2,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow3,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow4,[COLOR=SeparatorColor] › [/COLOR]]</label>
                         </control>
                     </control>
                 </itemlayout>
@@ -723,7 +677,7 @@
                             </include>
                             <include content="FocusedIndicatorHorizontal">
                                 <param name="x" value="0"/>
-                                <param name="y" value="77"/>
+                                <param name="y" value="82"/>
                                 <param name="width" value="50"/>
                                 <param name="visible" value="true"/>
                             </include>
@@ -745,7 +699,7 @@
                                 <font>FacadeListSubTitleFont</font>
                                 <include>TextColor_MainColor</include>
                                 <scroll>true</scroll>
-                                <label>$VAR[DetailsRow1]$VAR[DetailsRow2,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow3,[COLOR=SeparatorColor] › [/COLOR]]</label>
+                                <label>$VAR[DetailsRow1]$VAR[DetailsRow2,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow3,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow4,[COLOR=SeparatorColor] › [/COLOR]]</label>
                             </control>
                             <control type="textbox">
                                 <posx>0</posx>
@@ -763,24 +717,6 @@
                                 <param name="width" value="240"/>
                             </include>
                         </control>
-                        <!--<include content="ClearArtLogo">-->
-                            <!--<param name="x" value="950"/>-->
-                            <!--<param name="y" value="860"/>-->
-                            <!--<param name="width" value="380"/>-->
-                            <!--<param name="height" value="150"/>-->
-                            <!--<param name="visible" value="true"/>-->
-                            <!--<param name="align" value="right"/>-->
-                            <!--<param name="aligny" value="center"/>-->
-                        <!--</include>-->
-                        <!--<include content="StudioArt">-->
-                            <!--<param name="x" value="1400"/>-->
-                            <!--<param name="y" value="860"/>-->
-                            <!--<param name="width" value="380"/>-->
-                            <!--<param name="height" value="150"/>-->
-                            <!--<param name="visible" value="true"/>-->
-                            <!--<param name="align" value="right"/>-->
-                            <!--<param name="aligny" value="center"/>-->
-                        <!--</include>-->
                     </control>
                 </focusedlayout>
             </control>
@@ -884,7 +820,7 @@
                             <aligny>top</aligny>
                             <font>WidgetSubTitleFont</font>
                             <include>TextColor_AlternateColor</include>
-                            <scroll>false</scroll>
+                            <scroll>true</scroll>
                             <label>$VAR[DetailsRow1]$VAR[DetailsRow2,[COLOR=SeparatorColor] › [/COLOR]]</label>
                         </control>
                         <control type="label">
@@ -894,8 +830,18 @@
                             <aligny>top</aligny>
                             <font>WidgetSubTitleFont</font>
                             <include>TextColor_AlternateColor</include>
-                            <scroll>false</scroll>
+                            <scroll>true</scroll>
                             <label>$VAR[DetailsRow3]</label>
+                        </control>
+                        <control type="label">
+                            <posx>0</posx>
+                            <posy>164</posy>
+                            <width>515</width>
+                            <aligny>top</aligny>
+                            <font>WidgetSubTitleFont</font>
+                            <include>TextColor_AlternateColor</include>
+                            <scroll>true</scroll>
+                            <label>$VAR[DetailsRow4]</label>
                         </control>
                     </control>
                 </itemlayout>
@@ -972,35 +918,27 @@
                                 <scroll>true</scroll>
                                 <label>$VAR[DetailsRow3]</label>
                             </control>
+                            <control type="label">
+                                <posx>0</posx>
+                                <posy>164</posy>
+                                <width>515</width>
+                                <aligny>top</aligny>
+                                <font>WidgetSubTitleFont</font>
+                                <include>TextColor_MainColor</include>
+                                <scroll>true</scroll>
+                                <label>$VAR[DetailsRow4]</label>
+                            </control>
                             <control type="textbox">
-                                <posx>15</posx>
-                                <posy>177</posy>
+                                <posx>0</posx>
+                                <posy>219</posy>
                                 <height>330</height>
-                                <width>500</width>
+                                <width>515</width>
                                 <font>FacadeListSubTitleFont</font>
                                 <include>TextColor_MainColor</include>
                                 <label>$VAR[Plots]</label>
                                 <include>myautoscroll</include>
                             </control>
                         </control>
-                        <!--<include content="ClearArtLogo">-->
-                        <!--<param name="x" value="400"/>-->
-                        <!--<param name="y" value="860"/>-->
-                        <!--<param name="width" value="390"/>-->
-                        <!--<param name="height" value="150"/>-->
-                        <!--<param name="visible" value="true"/>-->
-                        <!--<param name="align" value="center"/>-->
-                        <!--<param name="aligny" value="center"/>-->
-                        <!--</include>-->
-                        <!--<include content="StudioArt">-->
-                        <!--<param name="x" value="800"/>-->
-                        <!--<param name="y" value="860"/>-->
-                        <!--<param name="width" value="390"/>-->
-                        <!--<param name="height" value="150"/>-->
-                        <!--<param name="visible" value="true"/>-->
-                        <!--<param name="align" value="center"/>-->
-                        <!--<param name="aligny" value="center"/>-->
-                        <!--</include>-->
                     </control>
                 </focusedlayout>
             </control>
