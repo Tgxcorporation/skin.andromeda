@@ -275,7 +275,7 @@
         <value condition="Window.IsActive(MusicVisualisation.xml) + !Skin.HasSetting(plexbmc)">$INFO[MusicPlayer.offset(1).Title,$LOCALIZE[209]: ]</value>
         <value condition="VideoPlayer.IsFullscreen + ![VideoPlayer.Content(LiveTV)+!VideoPlayer.HasEpg]">$INFO[VideoPlayer.MPAA]</value>
         <value condition="Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)">$INFO[ListItem.NextTitle,$LOCALIZE[209]: ]</value>
-        <value condition="Window.IsActive(AddonBrowser.xml)">$INFO[ListItem.AddonSize]</value>
+        <value condition="Window.IsActive(AddonBrowser.xml)">$INFO[ListItem.AddonSize]$INFO[ListItem.Label2,[COLOR=SeparatorColor] › [/COLOR]]</value>
         <value condition="!Container.content(Addons) + Window.IsActive(MyPics.xml)">$INFO[ListItem.PictureCamModel]</value>
         <value condition="[Container.Content(TVShows) | Container.Content(Seasons)] + Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0)">$INFO[ListItem.Property(UnWatchedEpisodes),, $LOCALIZE[16101]]</value>
         <!--<value condition="String.IsEmpty(ListItem.VideoResolution)">$INFO[ListItem.Label2]</value>-->
