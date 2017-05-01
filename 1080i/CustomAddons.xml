@@ -13,7 +13,7 @@
                 <animation effect="slide" tween="circle" easing="inout" time="150" start="0,0" end="-2200,0" condition="Control.HasFocus(505050)">conditional</animation>
                 <include>OpenClose</include>
                 <control type="group">
-                    <include>View_50_BigList_Custom_Addons</include>
+                    <include>View_55_SlimList_Custom_Addons</include>
                 </control>
             </control>
         </control>

@@ -518,4 +518,87 @@
             </control>
         </control>
     </include>
+    <include name="View_55_SlimList_Custom_Addons">
+        <control type="group">
+            <visible>Control.IsVisible(50)</visible>
+            <include>Facade_Fade</include>
+            <control type="group">
+                <control type="list" id="50">
+                    <viewtype label="537">Big List</viewtype>
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>1920</width>
+                    <height>1080</height>
+                    <pagecontrol>60</pagecontrol>
+                    <onleft>9000</onleft>
+                    <onright>60</onright>
+                    <onup>505051</onup>
+                    <ondown>50</ondown>
+                    <preloaditems>4</preloaditems>
+                    <include>SlimList_Layout</include>
+                    <content>
+                        <item id="2">
+                            <visible>!Skin.HasSetting(Addons.Hide)</visible>
+                            <label>$LOCALIZE[0]</label>
+                            <label2>$INFO[Window(Home).Property(SkinHelper.TotalProgramAddons),, $LOCALIZE[24001]]</label2>
+                            <onclick condition="!System.Platform.Android">ActivateWindow(Programs,Addons,return)</onclick>
+                            <onclick condition="System.Platform.Android">ActivateWindow(Programs)</onclick>
+                        </item>
+                        <item id="3">
+                            <visible>!Skin.HasSetting(Addons.Hide)</visible>
+                            <label>$LOCALIZE[1037]</label>
+                            <label2>$INFO[Window(Home).Property(SkinHelper.TotalVideoAddons),, $LOCALIZE[24001]]</label2>
+                            <onclick>ActivateWindow(Videos,Addons,return)</onclick>
+                        </item>
+                        <item id="4">
+                            <visible>!Skin.HasSetting(Addons.Hide)</visible>
+                            <label>$LOCALIZE[1038]</label>
+                            <label2>$INFO[Window(Home).Property(SkinHelper.TotalAudioAddons),, $LOCALIZE[24001]]</label2>
+                            <onclick>ActivateWindow(Music,Addons,return)</onclick>
+                        </item>
+                        <item id="5">
+                            <visible>!Skin.HasSetting(Addons.Hide)</visible>
+                            <label>$LOCALIZE[1039]</label>
+                            <label2>$INFO[Window(Home).Property(SkinHelper.TotalPicturesAddons),, $LOCALIZE[24001]]</label2>
+                            <onclick>XBMC.ActivateWindow(Pictures,Addons,return)</onclick>
+                        </item>
+                        <item id="51">
+                            <visible>Skin.HasSetting(plexbmc)</visible>
+                            <label>$LOCALIZE[31000]</label>
+                            <onclick>ActivateWindow(pictures,"plugin://plugin.video.plexbmc/?url=http://photo&amp;mode=22",return)</onclick>
+                        </item>
+                        <item id="52">
+                            <visible>Skin.HasSetting(plexbmc)</visible>
+                            <label>$LOCALIZE[31001]</label>
+                            <onclick>ActivateWindow(Videos,"plugin://plugin.video.plexbmc/?url=http://video&amp;mode=22",return)</onclick>
+                        </item>
+                        <item id="53">
+                            <visible>Skin.HasSetting(plexbmc)</visible>
+                            <label>$LOCALIZE[31002]</label>
+                            <onclick>ActivateWindow(Music,"plugin://plugin.video.plexbmc/?url=http://music&amp;mode=22",return)</onclick>
+                        </item>
+                        <item id="50">
+                            <visible>Skin.HasSetting(plexbmc)</visible>
+                            <label>$LOCALIZE[31003]</label>
+                            <onclick>ActivateWindow(Videos,"plugin://plugin.video.plexbmc/?mode=22&amp;url=http://online%2fsystem%2fplugins%2fall",return)</onclick>
+                        </item>
+                        <item id="2">
+                            <visible>!Skin.HasSetting(Addons.Hide)</visible>
+                            <label>$LOCALIZE[10040]</label>
+                            <label2>$INFO[Window(Home).Property(SkinHelper.TotalAddons),, $LOCALIZE[24001]]</label2>
+                            <onclick>ActivateWindow(AddonBrowser,root)</onclick>
+                        </item>
+                    </content>
+                </control>
+            </control>
+            <control type="scrollbar" id="60">
+                <posx>1870</posx>
+                <posy>0</posy>
+                <height>1080</height>
+                <include>VerticalScroller</include>
+                <onleft>50</onleft>
+                <onright>505050</onright>
+            </control>
+        </control>
+    </include>
 </includes>
