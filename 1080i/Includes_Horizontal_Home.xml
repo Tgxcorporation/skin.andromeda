@@ -160,7 +160,6 @@
             <control type="group">
                 <include>OpenClose</include>
                 <height>131</height>
-                <!--<include>NowPlayingSlideEffect</include>-->
                 <control type="group">
                     <posy>50</posy>
                     <include>Icon_Fade</include>

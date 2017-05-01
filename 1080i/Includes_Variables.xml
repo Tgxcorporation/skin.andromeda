@@ -34,7 +34,7 @@
         <!--<value>$INFO[ListItem.Icon]</value>-->
     </variable>
     <variable name="ThumbsFolderBack">
-        <value condition="[Container.content(episodes)|Window.IsActive(MyPics.xml)|Window.IsActive(MyPlaylist.xml)]">defaultFolderBackEpisode.png</value>
+        <value condition="[Container.content(episodes)|Window.IsActive(MyPics.xml)|Window.IsActive(MyPlaylist.xml)|[container.content(movies)+String.IsEqual(Container.FolderName,$LOCALIZE[19017])]]">defaultFolderBackEpisode.png</value>
         <value condition="[Container.content(actors)|Container.content(movies)|Container.content(musicvideos)|Container.content(tvshows)|Container.Content(Seasons)|Container.Content(sets)]">defaultFolderBackPoster.png</value>
         <value>defaultFolderBack.png</value>
     </variable>
