@@ -28,6 +28,7 @@
     <include file="View_52_FixedList.xml"/>
     <include file="View_54_Fanart.xml"/>
     <include file="View_53_Grid.xml"/>
+    <include file="View_55_SlimList.xml"/>
     <include file="View_56_BannerList.xml"/>
     <include file="View_57_58_59_Showcase.xml"/>
     <include file="View_5050_CardList.xml"/>

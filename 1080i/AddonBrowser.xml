@@ -20,6 +20,7 @@
                     <include>View_51_Fullscreen</include>
                     <include>View_52_FixedList</include>
                     <include>Info_52_FixedList</include>
+                    <include>View_55_SlimList</include>
                     <include>View_57_58_59_Showcase</include>
                     <include>View_54_Fanart</include>
                     <include>View_53_Grid</include>

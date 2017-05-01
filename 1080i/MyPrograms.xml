@@ -17,6 +17,7 @@
                 <control type="group">
                     <include>View_50_BigList</include>
                     <include>View_51_Fullscreen</include>
+                    <include>View_55_SlimList</include>
                     <include>View_57_58_59_Showcase</include>
                     <include>View_54_Fanart</include>
                     <include>View_53_Grid</include>
