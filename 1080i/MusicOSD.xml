@@ -153,13 +153,13 @@
                 <control type="button" id="300">
                     <visible>MusicPlayer.Content(LiveTV)</visible>
                     <include>TopBarButton</include>
-                    <label></label>
+                    <label></label>
                     <onclick>PlayerControl(Previous)</onclick>
                 </control>
                 <control type="button" id="301">
                     <visible>MusicPlayer.Content(LiveTV)</visible>
                     <include>TopBarButton</include>
-                    <label></label>
+                    <label></label>
                     <onclick>PlayerControl(Next)</onclick>
                 </control>
                 <control type="button" id="600">
