@@ -639,6 +639,10 @@
                         <include>LeftMenuButtonGroup</include>
                         <ondown>9000</ondown>
                         <onright>9060</onright>
+                        <control type="label" id="7965">
+                            <include>LeftMenuTitleLabel</include>
+                            <label>$LOCALIZE[582]</label>
+                        </control>
                         <control type="button" id="500">
                             <visible>String.IsEqual(ListItem.DBType,artist)</visible>
                             <description>Biography</description>
@@ -671,11 +675,10 @@
                             <onright>50</onright>
                             <onclick>SetFocus(50)</onclick>
                         </control>
-                        <control type="label" id="7895">
+                        <control type="label" id="9183">
                             <visible>control.isvisible(500)|control.isvisible(501)|control.isvisible(502)|control.isvisible(503)</visible>
-                            <height>60</height>
-                            <width>480</width>
-                            <label>-</label>
+                            <include>LeftMenuTitleLabel</include>
+                            <label>$LOCALIZE[31509]</label>
                         </control>
                         <control type="button" id="10">
                             <description>Get Thumb</description>

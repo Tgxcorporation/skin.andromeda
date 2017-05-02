@@ -923,17 +923,6 @@
                 <control type="grouplist" id="9000">
                     <include>LeftMenuButtonGroup</include>
                     <ondown>9000</ondown>
-                    <control type="label" id="7965">
-                        <include>LeftMenuTitleLabel</include>
-                        <label>$LOCALIZE[582]</label>
-                    </control>
-                    <control type="button" id="2">
-                        <description>Info</description>
-                        <label>$LOCALIZE[31021]</label>
-                        <include>LeftMenuButton</include>
-                        <onright>9009</onright>
-                        <onclick>SetFocus(9009)</onclick>
-                    </control>
                     <control type="togglebutton" id="8">
                         <description>play</description>
                         <include>LeftMenuButton</include>
@@ -964,6 +953,17 @@
                         <include>LeftMenuButton</include>
                         <label>$LOCALIZE[20410]</label>
                     </control>
+                    <control type="label" id="7965">
+                        <include>LeftMenuTitleLabel</include>
+                        <label>$LOCALIZE[582]</label>
+                    </control>
+                    <control type="button" id="2">
+                        <description>Info</description>
+                        <label>$LOCALIZE[31021]</label>
+                        <include>LeftMenuButton</include>
+                        <onright>9009</onright>
+                        <onclick>SetFocus(9009)</onclick>
+                    </control>
                     <control type="togglebutton" id="9012">
                         <visible>Integer.IsGreater(Container(50).NumItems,0)</visible>
                         <description>Actors</description>
@@ -974,7 +974,7 @@
                     </control>
                     <control type="label" id="9183">
                         <include>LeftMenuTitleLabel</include>
-                        <label>$LOCALIZE[1034]</label>
+                        <label>$LOCALIZE[31509]</label>
                     </control>
                     <control type="togglebutton" id="9010">
                         <visible>System.HasAddon(script.extendedinfo)</visible>

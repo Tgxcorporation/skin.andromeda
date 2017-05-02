@@ -66,7 +66,7 @@
                 <control type="label" id="9183">
                     <include>LeftMenuTitleLabel</include>
                     <include>LeftMenuButton</include>
-                    <label>$LOCALIZE[1034]</label>
+                    <label>$LOCALIZE[31509]</label>
                 </control>
                 <control type="radiobutton" id="7">
                     <visible>Control.IsEnabled(7)</visible>

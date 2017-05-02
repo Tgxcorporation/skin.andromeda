@@ -463,7 +463,7 @@
                 <control type="label" id="9183">
                     <include>LeftMenuTitleLabel</include>
                     <include>LeftMenuButton</include>
-                    <label>$LOCALIZE[1034]</label>
+                    <label>$LOCALIZE[31509]</label>
                 </control>
                 <control type="button" id="2">
                     <include>LeftMenuButton</include>

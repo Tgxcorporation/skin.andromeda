@@ -139,7 +139,7 @@
                 <control type="label" id="201">
                     <include>LeftMenuTitleLabel</include>
                     <include>LeftMenuButton</include>
-                    <label>$LOCALIZE[1034]</label>
+                    <label>$LOCALIZE[31509]</label>
                 </control>
                 <control type="button" id="21">
                     <description>Level button</description>
