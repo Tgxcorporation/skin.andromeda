@@ -41,7 +41,7 @@
                         <param name="width" value="1920"/>
                         <param name="height" value="1080"/>
                         <param name="onfocus" value="noop"/>
-                        <param name="SlideTo" value="960,0"/>
+                        <param name="SlideTo" value="610,0"/>
                         <param name="SlideCondition" value="ControlGroup(9000).hasfocus"/>
                     </include>
                     <include content="DiscArt">
@@ -51,11 +51,6 @@
                         <param name="width" value="360"/>
                         <param name="height" value="360"/>
                         <param name="texture" value="$VAR[VideoCdArt]"/>
-                        <param name="visibleShadow" value="true"/>
-                        <param name="xShadow" value="0"/>
-                        <param name="yShadow" value="-25"/>
-                        <param name="widthShadow" value="380"/>
-                        <param name="flipyShadow" value="false"/>
                     </include>
                     <include content="ThumbsImages">
                         <param name="visible" value="true"/>
@@ -786,15 +781,15 @@
                         <param name="width" value="1920"/>
                         <param name="height" value="1080"/>
                         <param name="onfocus" value="noop"/>
-                        <param name="SlideTo" value="960,0"/>
+                        <param name="SlideTo" value="610,0"/>
                         <param name="SlideCondition" value="ControlGroup(9000).hasfocus"/>
                     </include>
                     <control type="image">
                         <visible>String.IsEmpty(Container(50).Listitem.Thumb)</visible>
-                        <posx>140</posx>
-                        <posy>190</posy>
-                        <width>380</width>
-                        <height>570</height>
+                        <posx>120</posx>
+                        <posy>200</posy>
+                        <width>460</width>
+                        <height>690</height>
                         <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                         <texture>defaultArtistBig.png</texture>
                         <aspectratio aligny="top">keep</aspectratio>
@@ -802,8 +797,8 @@
                     </control>
                     <control type="image">
                         <visible>!String.IsEmpty(Container(50).Listitem.Thumb)</visible>
-                        <posx>100</posx>
-                        <posy>190</posy>
+                        <posx>120</posx>
+                        <posy>200</posy>
                         <width>460</width>
                         <height>690</height>
                         <texture background="true">$INFO[Container(50).ListItem.Thumb]</texture>
@@ -821,7 +816,7 @@
                     </control>
                     <control type="panel" id="50">
                         <posx>660</posx>
-                        <posy>185</posy>
+                        <posy>195</posy>
                         <width>1280</width>
                         <height>840</height>
                         <pagecontrol>61</pagecontrol>
@@ -855,7 +850,7 @@
                             </control>
                             <control type="label">
                                 <posx>113</posx>
-                                <posy>37</posy>
+                                <posy>42</posy>
                                 <height>50</height>
                                 <width>460</width>
                                 <font>FacadeListSubFont</font>
@@ -896,7 +891,7 @@
                                 </control>
                                 <control type="label">
                                     <posx>113</posx>
-                                    <posy>37</posy>
+                                    <posy>42</posy>
                                     <height>50</height>
                                     <width>460</width>
                                     <scroll>true</scroll>
@@ -909,7 +904,7 @@
                     </control>
                     <control type="scrollbar" id="61">
                         <posx>1870</posx>
-                        <posy>185</posy>
+                        <posy>195</posy>
                         <height>840</height>
                         <include>VerticalScroller</include>
                         <onleft>50</onleft>

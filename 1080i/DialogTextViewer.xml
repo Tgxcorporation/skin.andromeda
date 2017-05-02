@@ -23,6 +23,7 @@
                     <width>1720</width>
                     <height>705</height>
                     <font>InfoDetailsFontBig</font>
+                    <include>TextColor_MainColor</include>
                     <pagecontrol>61</pagecontrol>
                 </control>
                 <control type="scrollbar" id="61">

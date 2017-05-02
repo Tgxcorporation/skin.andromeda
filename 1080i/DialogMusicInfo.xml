@@ -26,7 +26,7 @@
                         <param name="width" value="1920"/>
                         <param name="height" value="1080"/>
                         <param name="onfocus" value="noop"/>
-                        <param name="SlideTo" value="960,0"/>
+                        <param name="SlideTo" value="610,0"/>
                         <param name="SlideCondition" value="ControlGroup(9000).hasfocus"/>
                     </include>
                     <include content="DiscArt">
@@ -36,11 +36,6 @@
                         <param name="width" value="360"/>
                         <param name="height" value="360"/>
                         <param name="texture" value="$VAR[MusicCdArt]"/>
-                        <param name="visibleShadow" value="true"/>
-                        <param name="xShadow" value="0"/>
-                        <param name="yShadow" value="-25"/>
-                        <param name="widthShadow" value="380"/>
-                        <param name="flipyShadow" value="false"/>
                     </include>
                     <include content="ThumbsImages">
                         <param name="visible" value="true"/>
@@ -419,7 +414,7 @@
                         <param name="width" value="1920"/>
                         <param name="height" value="1080"/>
                         <param name="onfocus" value="noop"/>
-                        <param name="SlideTo" value="960,0"/>
+                        <param name="SlideTo" value="610,0"/>
                         <param name="SlideCondition" value="ControlGroup(9000).hasfocus"/>
                     </include>
                     <include content="DiscArt">
@@ -429,11 +424,6 @@
                         <param name="width" value="360"/>
                         <param name="height" value="360"/>
                         <param name="texture" value="$VAR[MusicCdArt]"/>
-                        <param name="visibleShadow" value="true"/>
-                        <param name="xShadow" value="0"/>
-                        <param name="yShadow" value="-25"/>
-                        <param name="widthShadow" value="380"/>
-                        <param name="flipyShadow" value="false"/>
                     </include>
                     <include content="ThumbsImages">
                         <param name="visible" value="true"/>

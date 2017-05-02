@@ -11,17 +11,25 @@
             <texture>special://skin/backgrounds/default/background.png</texture>
         </control>
         <include>OverlayFull</include>
-        <control type="multiimage">
+        <control type="image">
             <visible>!Container(5000).OnScrollPrevious + !Container(5000).OnScrollNext</visible>
             <include>Icon_Fade</include>
-            <posx>910</posx>
-            <posy>490</posy>
-            <width>101</width>
-            <height>101</height>
-            <imagepath>special://skin/extras/loading</imagepath>
-            <timeperimage>60</timeperimage>
-            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-            <fadetime>0</fadetime>
+            <centerleft>50%</centerleft>
+            <centertop>50%</centertop>
+            <width>180</width>
+            <height>180</height>
+            <texture>OSD/loading.png</texture>
+            <animation effect="rotate" center="auto" start="360" end="0" time="1500" loop="true" tween="circle" easing="inout" condition="true">Conditional</animation>
+        </control>
+        <control type="image">
+            <visible>!Container(5000).OnScrollPrevious + !Container(5000).OnScrollNext</visible>
+            <include>Icon_Fade</include>
+            <centerleft>50%</centerleft>
+            <centertop>50%</centertop>
+            <width>180</width>
+            <height>180</height>
+            <texture>OSD/loading.png</texture>
+            <animation effect="rotate" center="auto" start="360" end="0" time="750" loop="true" tween="sine" easing="in" condition="true">Conditional</animation>
         </control>
         <control type="list" id="5000">
             <left>0</left>
@@ -70,11 +78,6 @@
             <texturenofocus>-</texturenofocus>
             <onclick>Control.Move(5000,-1)</onclick>
         </control>
-        <include content="WindowClosingButton">
-            <param name="id" value="99010"/>
-            <param name="x" value="1870"/>
-            <param name="y" value="0"/>
-            <param name="onleft" value="6060"/>
-        </include>
+        <include>WindowClosingButton</include>
     </controls>
 </window>

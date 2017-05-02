@@ -5,115 +5,22 @@
     <controls>
         <include>DimBG</include>
         <control type="group">
-            <include>DialogOpenClose</include>
             <control type="image">
-                <posx>0</posx>
-                <posy>140</posy>
-                <width>1920</width>
+                <include>DialogOpenCloseOverlay</include>
+                <posx>-960</posx>
+                <posy>0</posy>
+                <width>2880</width>
                 <height>1080</height>
-                <!--<include>DialogTransparency</include>-->
                 <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-                <texture border="50">common/background_menu.png</texture>
+                <texture>common/overlay_dialog_gradient.png</texture>
             </control>
-            <include content="WindowClosingButton">
-                <param name="id" value="99010"/>
-                <param name="x" value="1870"/>
-                <param name="y" value="140"/>
-                <param name="onleft" value="6060"/>
-            </include>
-            <control type="image">
-                <posx>530</posx>
-                <posy>190</posy>
-                <width>480</width>
-                <height>900</height>
-                <texture border="1">common/background_strip_horizontal_right.png</texture>
-            </control>
-            <control type="image">
-                <posx>530r</posx>
-                <posy>190</posy>
-                <width>480</width>
-                <height>900</height>
-                <texture border="1">common/background_strip_horizontal_right.png</texture>
-            </control>
-            <!-- SIDE MENU -->
+            <include>WindowClosingButton</include>
             <control type="group">
-                <posy>240</posy>
-                <control type="grouplist" id="9000">
-                    <posy>0</posy>
-                    <height>800</height>
-                    <include>DialogMenuButtonGroup</include>
-                    <ondown>9000</ondown>
-                    <onright>9060</onright>
-                    <control type="button" id="20">
-                        <description>Biography</description>
-                        <include>LeftMenuButton</include>
-                        <label>21887</label>
-                        <onright>49</onright>
-                    </control>
-                    <control type="button" id="105">
-                        <visible>Integer.IsGreater(Container(150).NumItems,0)</visible>
-                        <description>Movie actor roles</description>
-                        <include>LeftMenuButton</include>
-                        <label>342</label>
-                        <onright>150</onright>
-                    </control>
-                    <control type="button" id="205">
-                        <visible>Integer.IsGreater(Container(250).NumItems,0)</visible>
-                        <description>TV Show actor roles</description>
-                        <include>LeftMenuButton</include>
-                        <label>20343</label>
-                        <onright>250</onright>
-                    </control>
-                    <control type="button" id="505">
-                        <visible>Integer.IsGreater(Container(550).NumItems,0)</visible>
-                        <description>Movie crew member</description>
-                        <include>LeftMenuButton</include>
-                        <label>$ADDON[script.extendedinfo 32122]</label>
-                        <onright>550</onright>
-                    </control>
-                    <control type="button" id="605">
-                        <visible>Integer.IsGreater(Container(650).NumItems,0)</visible>
-                        <description>TVShow crew member</description>
-                        <include>LeftMenuButton</include>
-                        <label>$ADDON[script.extendedinfo 32123]</label>
-                        <onright>650</onright>
-                    </control>
-                    <control type="button" id="305">
-                        <visible>Integer.IsGreater(Container(350).NumItems,0)</visible>
-                        <description>Youtube</description>
-                        <include>LeftMenuButton</include>
-                        <label>$ADDON[script.extendedinfo 32118]</label>
-                        <onright>350</onright>
-                    </control>
-                    <control type="button" id="405">
-                        <visible>Integer.IsGreater(Container(450).NumItems,0)</visible>
-                        <description>Pictures</description>
-                        <include>LeftMenuButton</include>
-                        <label>1</label>
-                        <onright>450</onright>
-                    </control>
-                    <control type="button" id="705">
-                        <visible>Integer.IsGreater(Container(750).NumItems,0)</visible>
-                        <description>Fanart</description>
-                        <include>LeftMenuButton</include>
-                        <label>20445</label>
-                        <onright>750</onright>
-                    </control>
-                </control>
-                <include content="DialogMenuScroller">
-                    <param name="y" value="0"/>
-                    <param name="height" value="800"/>
-                    <param name="onright" value="150"/>
-                    <param name="onleft" value="9000"/>
-                </include>
-            </control>
-            <control type="group">
-                <posx>530</posx>
-                <posy>240</posy>
+                <include>DialogOpenClose</include>
                 <control type="label">
-                    <posx>TextMargin</posx>
-                    <posy>0</posy>
-                    <width>760</width>
+                    <posx>660</posx>
+                    <posy>40</posy>
+                    <width>1180</width>
                     <height>50</height>
                     <font>InfoTitleFont</font>
                     <include>TextColor_MainColor</include>
@@ -127,24 +34,45 @@
                         ControlGroup(3500).HasFocus|ControlGroup(4500).HasFocus|ControlGroup(5500).HasFocus|ControlGroup(6500).HasFocus|
                         ControlGroup(7500).HasFocus]</visible>
                     <include>VisibleFadeEffect</include>
-                    <control type="label">
-                        <posx>TextMargin</posx>
-                        <posy>50</posy>
-                        <width>760</width>
-                        <height>35</height>
-                        <font>InfoTitleSubFont</font>
-                        <include>TextColor_MidColor</include>
-                        <label>21887</label>
-                    </control>
                     <include content="DummyButton">
                         <param name="x" value="0"/>
-                        <param name="y" value="0"/>
-                        <param name="width" value="860"/>
-                        <param name="height" value="800"/>
+                        <param name="y" value="70"/>
+                        <param name="width" value="1920"/>
+                        <param name="height" value="1080"/>
                         <param name="onfocus" value="noop"/>
+                        <param name="SlideTo" value="610,0"/>
+                        <param name="SlideCondition" value="ControlGroup(9000).hasfocus"/>
                     </include>
+                    <control type="image">
+                        <visible>String.IsEmpty(Window.Property(Poster))</visible>
+                        <posx>120</posx>
+                        <posy>200</posy>
+                        <width>460</width>
+                        <height>690</height>
+                        <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                        <texture>defaultArtistBig.png</texture>
+                        <aspectratio aligny="top">keep</aspectratio>
+                        <include>ThumbBorder</include>
+                    </control>
+                    <control type="image">
+                        <posx>120</posx>
+                        <posy>200</posy>
+                        <width>460</width>
+                        <height>690</height>
+                        <texture background="true">$INFO[Window.Property(Poster)]</texture>
+                        <aspectratio aligny="top">keep</aspectratio>
+                        <include>ThumbBorder</include>
+                    </control>
+                    <control type="label">
+                        <posx>660</posx>
+                        <posy>100</posy>
+                        <width>1180</width>
+                        <height>35</height>
+                        <font>InfoTitleSubFont</font>
+                        <include>TextColor_MainColor</include>
+                        <label>$LOCALIZE[21887]</label>
+                    </control>
                     <control type="panel" id="49">
-                        <height>300</height>
                         <onleft>9000</onleft>
                         <onright>649</onright>
                         <onup>49</onup>
@@ -209,57 +137,23 @@
                         </content>
                     </control>
                     <control type="scrollbar" id="649">
-                        <posx>810</posx>
-                        <posy>100</posy>
-                        <height>300</height>
+                        <posx>1870</posx>
+                        <posy>195</posy>
+                        <height>360</height>
                         <include>VerticalScroller</include>
                         <onleft>49</onleft>
                         <onright>649</onright>
                         <ondown>6649</ondown>
                     </control>
-                    <control type="group">
-                        <posx>0</posx>
-                        <posy>450</posy>
-                        <control type="textbox" id="800">
-                            <posx>TextMargin</posx>
-                            <posy>10</posy>
-                            <width>760</width>
-                            <height>310</height>
-                            <font>InfoPlotFont</font>
-                            <textcolor>AlternateColor</textcolor>
-                            <label fallback="416">$INFO[Window.Property(Biography)]</label>
-                            <pagecontrol>6649</pagecontrol>
-                        </control>
-                        <control type="scrollbar" id="6649">
-                                <posx>810</posx>
-                            <posy>10</posy>
-                            <height>310</height>
-                            <include>VerticalScroller</include>
-                            <onleft>49</onleft>
-                            <onright>6649</onright>
-                        </control>
-                    </control>
-                    <control type="group">
-                        <posx>910</posx>
-                        <posy>0</posy>
-                        <control type="image">
-                            <visible>String.IsEmpty(Window.Property(Poster))</visible>
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>380</width>
-                            <height>570</height>
-                            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-                            <texture>defaultArtistBig.png</texture>
-                            <aspectratio aligny="top">keep</aspectratio>
-                        </control>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>380</width>
-                            <height>570</height>
-                            <texture background="true">$INFO[Window.Property(Poster)]</texture>
-                            <aspectratio aligny="top">keep</aspectratio>
-                        </control>
+                    <control type="textbox">
+                        <posx>660</posx>
+                        <posy>580</posy>
+                        <width>1160</width>
+                        <height>440</height>
+                        <font>InfoPlotFont</font>
+                        <include>TextColor_MainColor</include>
+                        <label fallback="416">$INFO[Window.Property(Biography)]</label>
+                        <include>myautoscroll</include>
                     </control>
                 </control>
                 <!--Movie actor roles-->
@@ -267,55 +161,90 @@
                     <visible>control.hasfocus(105)|ControlGroup(1500).HasFocus</visible>
                     <visible>Integer.IsGreater(Container(150).NumItems,0)</visible>
                     <include>VisibleFadeEffect</include>
+                    <include content="DummyButton">
+                        <param name="x" value="0"/>
+                        <param name="y" value="60"/>
+                        <param name="width" value="1920"/>
+                        <param name="height" value="1080"/>
+                        <param name="onfocus" value="noop"/>
+                        <param name="SlideTo" value="610,0"/>
+                        <param name="SlideCondition" value="ControlGroup(9000).hasfocus"/>
+                    </include>
+                    <control type="image">
+                        <visible>String.IsEmpty(Container(150).ListItem.Thumb)</visible>
+                        <posx>120</posx>
+                        <posy>200</posy>
+                        <width>460</width>
+                        <height>690</height>
+                        <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                        <texture>defaultVideoBig.png</texture>
+                        <aspectratio aligny="top">keep</aspectratio>
+                        <include>ThumbBorder</include>
+                    </control>
+                    <control type="image">
+                        <posx>120</posx>
+                        <posy>200</posy>
+                        <width>460</width>
+                        <height>690</height>
+                        <texture background="true">$INFO[Container(150).ListItem.Thumb]</texture>
+                        <aspectratio aligny="top">keep</aspectratio>
+                        <include>ThumbBorder</include>
+                    </control>
                     <control type="label">
-                        <posx>TextMargin</posx>
-                        <posy>50</posy>
+                        <posx>660</posx>
+                        <posy>100</posy>
                         <width>760</width>
                         <height>35</height>
                         <font>InfoTitleSubFont</font>
-                        <include>TextColor_MidColor</include>
-                        <label>$LOCALIZE[342] - $INFO[Container(150).NumItems] $LOCALIZE[31025]</label>
+                        <include>TextColor_MainColor</include>
+                        <label>$LOCALIZE[342][COLOR=SeparatorColor] › [/COLOR]$INFO[Container(150).NumItems] $LOCALIZE[31025]</label>
                     </control>
-                    <include content="DummyButton">
-                        <param name="x" value="0"/>
-                        <param name="y" value="0"/>
-                        <param name="width" value="860"/>
-                        <param name="height" value="800"/>
-                        <param name="onfocus" value="noop"/>
-                    </include>
                     <control type="panel" id="150">
                         <description>movies list</description>
-                        <posx>0</posx>
-                        <posy>100</posy>
-                        <width>860</width>
-                        <height>700</height>
+                        <posx>660</posx>
+                        <posy>195</posy>
+                        <width>1280</width>
+                        <height>840</height>
                         <onleft>9000</onleft>
                         <onright>6150</onright>
                         <onup>150</onup>
                         <ondown>150</ondown>
                         <pagecontrol>6150</pagecontrol>
-                        <itemlayout height="100" width="860">
+                        <itemlayout height="120" width="640">
+                            <include content="ThumbsImages">
+                                <param name="visible" value="true"/>
+                                <param name="x" value="0"/>
+                                <param name="y" value="5"/>
+                                <param name="width" value="73"/>
+                                <param name="height" value="110"/>
+                                <param name="aspectratio" value="scale"/>
+                                <param name="align" value="center"/>
+                                <param name="aligny" value="center"/>
+                                <param name="flipy" value="false"/>
+                                <param name="texturediffuse" value="ThumbsUnfocusedColor"/>
+                                <param name="borderdiffuse" value="BorderUnfocusedColor"/>
+                            </include>
                             <control type="label">
-                                <posx>TextMargin</posx>
-                                <posy>6</posy>
+                                <posx>113</posx>
+                                <posy>4</posy>
                                 <height>50</height>
-                                <width>760</width>
+                                <width>460</width>
                                 <font>FacadeListMainFont</font>
-                                <include>TextColor_MidColor</include>
+                                <textcolor>NoFocusedColor</textcolor>
                                 <label>$INFO[ListItem.Label]$INFO[ListItem.Year, (,)]</label>
                             </control>
                             <control type="label">
-                                <posx>TextMargin</posx>
-                                <posy>44</posy>
+                                <posx>113</posx>
+                                <posy>42</posy>
                                 <height>50</height>
-                                <width>760</width>
+                                <width>460</width>
                                 <font>FacadeListSubFont</font>
                                 <textcolor>NoFocusedColor</textcolor>
                                 <label>$INFO[ListItem.Property(Character),$LOCALIZE[20347] ]</label>
                             </control>
                             <control type="image">
-                                <posx>0</posx>
-                                <posy>7</posy>
+                                <posx>96</posx>
+                                <posy>67</posy>
                                 <width>50</width>
                                 <height>50</height>
                                 <include>NoFocusedIcon</include>
@@ -325,40 +254,50 @@
                                 <visible>!String.IsEmpty(ListItem.Property(DBID))</visible>
                             </control>
                         </itemlayout>
-                        <focusedlayout height="100" width="860">
+                        <focusedlayout height="120" width="640">
                             <control type="group">
                                 <include>ButtonWideFocusAnimation</include>
-                                <control type="image">
-                                    <posx>0</posx>
-                                    <posy>0</posy>
-                                    <height>100</height>
-                                    <width>860</width>
-                                    <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-                                    <texture border="1">list/bg_facade_focus_2.png</texture>
-                                </control>
+                                <include content="ThumbsImages">
+                                    <param name="visible" value="true"/>
+                                    <param name="x" value="0"/>
+                                    <param name="y" value="5"/>
+                                    <param name="width" value="73"/>
+                                    <param name="height" value="110"/>
+                                    <param name="aspectratio" value="scale"/>
+                                    <param name="align" value="center"/>
+                                    <param name="aligny" value="center"/>
+                                    <param name="flipy" value="false"/>
+                                    <param name="texturediffuse" value="ThumbsFocusedColor"/>
+                                    <param name="borderdiffuse" value="$VAR[Picked.Theme.Color]"/>
+                                </include>
+                                <include content="FocusedIndicatorVertical">
+                                    <param name="x" value="93"/>
+                                    <param name="y" value="7"/>
+                                    <param name="height" value="42"/>
+                                    <param name="visible" value="control.hasfocus(150)"/>
+                                </include>
                                 <control type="label">
-                                    <posx>TextMargin</posx>
-                                    <posy>6</posy>
+                                    <posx>113</posx>
+                                    <posy>4</posy>
                                     <height>50</height>
-                                    <width>760</width>
+                                    <width>460</width>
                                     <font>FacadeListMainFont</font>
-                                    <scroll>true</scroll>
                                     <include>TextColor_MainColor</include>
                                     <label>$INFO[ListItem.Label]$INFO[ListItem.Year, (,)]</label>
                                 </control>
                                 <control type="label">
-                                    <posx>TextMargin</posx>
-                                    <posy>44</posy>
+                                    <posx>113</posx>
+                                    <posy>42</posy>
                                     <height>50</height>
-                                    <width>760</width>
-                                    <font>FacadeListSubFont</font>
+                                    <width>460</width>
                                     <scroll>true</scroll>
-                                    <textcolor>AlternateColor</textcolor>
+                                    <font>FacadeListSubFont</font>
+                                    <include>TextColor_MainColor</include>
                                     <label>$INFO[ListItem.Property(Character),$LOCALIZE[20347] ]</label>
                                 </control>
                                 <control type="image">
-                                    <posx>0</posx>
-                                    <posy>7</posy>
+                                    <posx>96</posx>
+                                    <posy>67</posy>
                                     <width>50</width>
                                     <height>50</height>
                                     <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
@@ -370,34 +309,12 @@
                         </focusedlayout>
                     </control>
                     <control type="scrollbar" id="6150">
-                        <posx>810</posx>
-                        <posy>100</posy>
-                        <height>700</height>
+                        <posx>1870</posx>
+                        <posy>195</posy>
+                        <height>840</height>
                         <include>VerticalScroller</include>
                         <onleft>150</onleft>
                         <onright>9000</onright>
-                    </control>
-                    <control type="group">
-                        <posx>910</posx>
-                        <posy>0</posy>
-                        <control type="image">
-                            <visible>String.IsEmpty(Container(150).ListItem.Thumb)</visible>
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>380</width>
-                            <height>570</height>
-                            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-                            <texture>defaultVideoBig.png</texture>
-                            <aspectratio aligny="top">keep</aspectratio>
-                        </control>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>380</width>
-                            <height>570</height>
-                            <texture background="true">$INFO[Container(150).ListItem.Thumb]</texture>
-                            <aspectratio aligny="top">keep</aspectratio>
-                        </control>
                     </control>
                 </control>
                 <!--TV Show actor roles-->
@@ -405,55 +322,90 @@
                     <visible>control.hasfocus(205)|ControlGroup(2500).HasFocus</visible>
                     <visible>Integer.IsGreater(Container(250).NumItems,0)</visible>
                     <include>VisibleFadeEffect</include>
+                    <include content="DummyButton">
+                        <param name="x" value="0"/>
+                        <param name="y" value="60"/>
+                        <param name="width" value="1920"/>
+                        <param name="height" value="1080"/>
+                        <param name="onfocus" value="noop"/>
+                        <param name="SlideTo" value="610,0"/>
+                        <param name="SlideCondition" value="ControlGroup(9000).hasfocus"/>
+                    </include>
+                    <control type="image">
+                        <visible>String.IsEmpty(Container(250).ListItem.Thumb)</visible>
+                        <posx>120</posx>
+                        <posy>200</posy>
+                        <width>460</width>
+                        <height>690</height>
+                        <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                        <texture>defaultVideoBig.png</texture>
+                        <aspectratio aligny="top">keep</aspectratio>
+                        <include>ThumbBorder</include>
+                    </control>
+                    <control type="image">
+                        <posx>120</posx>
+                        <posy>200</posy>
+                        <width>460</width>
+                        <height>690</height>
+                        <texture background="true">$INFO[Container(250).ListItem.Thumb]</texture>
+                        <aspectratio aligny="top">keep</aspectratio>
+                        <include>ThumbBorder</include>
+                    </control>
                     <control type="label">
-                        <posx>TextMargin</posx>
-                        <posy>50</posy>
+                        <posx>660</posx>
+                        <posy>100</posy>
                         <width>760</width>
                         <height>35</height>
                         <font>InfoTitleSubFont</font>
-                        <include>TextColor_MidColor</include>
-                        <label>$LOCALIZE[20343] - $INFO[Container(250).NumItems] $LOCALIZE[31025]</label>
+                        <include>TextColor_MainColor</include>
+                        <label>$LOCALIZE[20343][COLOR=SeparatorColor] › [/COLOR]$INFO[Container(250).NumItems] $LOCALIZE[31025]</label>
                     </control>
-                    <include content="DummyButton">
-                        <param name="x" value="0"/>
-                        <param name="y" value="0"/>
-                        <param name="width" value="860"/>
-                        <param name="height" value="800"/>
-                        <param name="onfocus" value="noop"/>
-                    </include>
                     <control type="panel" id="250">
                         <description>movies list</description>
-                        <posx>0</posx>
-                        <posy>100</posy>
-                        <width>760</width>
-                        <height>700</height>
+                        <posx>660</posx>
+                        <posy>195</posy>
+                        <width>1280</width>
+                        <height>840</height>
                         <onleft>9000</onleft>
                         <onright>6250</onright>
                         <onup>250</onup>
                         <ondown>250</ondown>
                         <pagecontrol>6250</pagecontrol>
-                        <itemlayout height="100" width="860">
+                        <itemlayout height="120" width="640">
+                            <include content="ThumbsImages">
+                                <param name="visible" value="true"/>
+                                <param name="x" value="0"/>
+                                <param name="y" value="5"/>
+                                <param name="width" value="73"/>
+                                <param name="height" value="110"/>
+                                <param name="aspectratio" value="scale"/>
+                                <param name="align" value="center"/>
+                                <param name="aligny" value="center"/>
+                                <param name="flipy" value="false"/>
+                                <param name="texturediffuse" value="ThumbsUnfocusedColor"/>
+                                <param name="borderdiffuse" value="BorderUnfocusedColor"/>
+                            </include>
                             <control type="label">
-                                <posx>TextMargin</posx>
-                                <posy>6</posy>
+                                <posx>113</posx>
+                                <posy>4</posy>
                                 <height>50</height>
-                                <width>760</width>
+                                <width>460</width>
                                 <font>FacadeListMainFont</font>
-                                <include>TextColor_MidColor</include>
+                                <textcolor>NoFocusedColor</textcolor>
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                             <control type="label">
-                                <posx>TextMargin</posx>
-                                <posy>44</posy>
+                                <posx>113</posx>
+                                <posy>42</posy>
                                 <height>50</height>
-                                <width>760</width>
+                                <width>460</width>
                                 <font>FacadeListSubFont</font>
                                 <textcolor>NoFocusedColor</textcolor>
                                 <label>$INFO[ListItem.Property(Character),$LOCALIZE[20347] ]</label>
                             </control>
                             <control type="image">
-                                <posx>0</posx>
-                                <posy>7</posy>
+                                <posx>96</posx>
+                                <posy>67</posy>
                                 <width>50</width>
                                 <height>50</height>
                                 <include>NoFocusedIcon</include>
@@ -463,40 +415,50 @@
                                 <visible>!String.IsEmpty(ListItem.Property(DBID))</visible>
                             </control>
                         </itemlayout>
-                        <focusedlayout height="100" width="860">
+                        <focusedlayout height="120" width="640">
                             <control type="group">
                                 <include>ButtonWideFocusAnimation</include>
-                                <control type="image">
-                                    <posx>0</posx>
-                                    <posy>0</posy>
-                                    <height>100</height>
-                                    <width>860</width>
-                                    <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-                                    <texture border="1">list/bg_facade_focus_2.png</texture>
-                                </control>
+                                <include content="ThumbsImages">
+                                    <param name="visible" value="true"/>
+                                    <param name="x" value="0"/>
+                                    <param name="y" value="5"/>
+                                    <param name="width" value="73"/>
+                                    <param name="height" value="110"/>
+                                    <param name="aspectratio" value="scale"/>
+                                    <param name="align" value="center"/>
+                                    <param name="aligny" value="center"/>
+                                    <param name="flipy" value="false"/>
+                                    <param name="texturediffuse" value="ThumbsFocusedColor"/>
+                                    <param name="borderdiffuse" value="$VAR[Picked.Theme.Color]"/>
+                                </include>
+                                <include content="FocusedIndicatorVertical">
+                                    <param name="x" value="93"/>
+                                    <param name="y" value="7"/>
+                                    <param name="height" value="42"/>
+                                    <param name="visible" value="control.hasfocus(250)"/>
+                                </include>
                                 <control type="label">
-                                    <posx>TextMargin</posx>
-                                    <posy>6</posy>
+                                    <posx>113</posx>
+                                    <posy>4</posy>
                                     <height>50</height>
-                                    <width>760</width>
+                                    <width>460</width>
                                     <font>FacadeListMainFont</font>
-                                    <scroll>true</scroll>
                                     <include>TextColor_MainColor</include>
                                     <label>$INFO[ListItem.Label]</label>
                                 </control>
                                 <control type="label">
-                                    <posx>TextMargin</posx>
-                                    <posy>44</posy>
+                                    <posx>113</posx>
+                                    <posy>42</posy>
                                     <height>50</height>
-                                    <width>760</width>
-                                    <font>FacadeListSubFont</font>
+                                    <width>460</width>
                                     <scroll>true</scroll>
-                                    <textcolor>AlternateColor</textcolor>
+                                    <font>FacadeListSubFont</font>
+                                    <include>TextColor_MainColor</include>
                                     <label>$INFO[ListItem.Property(Character),$LOCALIZE[20347] ]</label>
                                 </control>
                                 <control type="image">
-                                    <posx>0</posx>
-                                    <posy>7</posy>
+                                    <posx>96</posx>
+                                    <posy>67</posy>
                                     <width>50</width>
                                     <height>50</height>
                                     <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
@@ -508,34 +470,12 @@
                         </focusedlayout>
                     </control>
                     <control type="scrollbar" id="6250">
-                        <posx>810</posx>
-                        <posy>100</posy>
-                        <height>700</height>
+                        <posx>1870</posx>
+                        <posy>195</posy>
+                        <height>840</height>
                         <include>VerticalScroller</include>
                         <onleft>250</onleft>
                         <onright>9000</onright>
-                    </control>
-                    <control type="group">
-                        <posx>910</posx>
-                        <posy>0</posy>
-                        <control type="image">
-                            <visible>String.IsEmpty(Container(250).ListItem.Thumb)</visible>
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>380</width>
-                            <height>570</height>
-                            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-                            <texture>defaultVideoBig.png</texture>
-                            <aspectratio aligny="top">keep</aspectratio>
-                        </control>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>380</width>
-                            <height>570</height>
-                            <texture background="true">$INFO[Container(250).ListItem.Thumb]</texture>
-                            <aspectratio aligny="top">keep</aspectratio>
-                        </control>
                     </control>
                 </control>
                 <!--Movie crew member-->
@@ -543,55 +483,90 @@
                     <visible>control.hasfocus(505)|ControlGroup(5500).HasFocus</visible>
                     <visible>Integer.IsGreater(Container(550).NumItems,0)</visible>
                     <include>VisibleFadeEffect</include>
+                    <include content="DummyButton">
+                        <param name="x" value="0"/>
+                        <param name="y" value="60"/>
+                        <param name="width" value="1920"/>
+                        <param name="height" value="1080"/>
+                        <param name="onfocus" value="noop"/>
+                        <param name="SlideTo" value="610,0"/>
+                        <param name="SlideCondition" value="ControlGroup(9000).hasfocus"/>
+                    </include>
+                    <control type="image">
+                        <visible>String.IsEmpty(Container(550).ListItem.Thumb)</visible>
+                        <posx>120</posx>
+                        <posy>200</posy>
+                        <width>460</width>
+                        <height>690</height>
+                        <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                        <texture>defaultVideoBig.png</texture>
+                        <aspectratio aligny="top">keep</aspectratio>
+                        <include>ThumbBorder</include>
+                    </control>
+                    <control type="image">
+                        <posx>120</posx>
+                        <posy>200</posy>
+                        <width>460</width>
+                        <height>690</height>
+                        <texture background="true">$INFO[Container(550).ListItem.Thumb]</texture>
+                        <aspectratio aligny="top">keep</aspectratio>
+                        <include>ThumbBorder</include>
+                    </control>
                     <control type="label">
-                        <posx>TextMargin</posx>
-                        <posy>50</posy>
+                        <posx>660</posx>
+                        <posy>100</posy>
                         <width>760</width>
                         <height>35</height>
                         <font>InfoTitleSubFont</font>
-                        <include>TextColor_MidColor</include>
-                        <label>$ADDON[script.extendedinfo 32122] - $INFO[Container(550).NumItems] $LOCALIZE[31025]</label>
+                        <include>TextColor_MainColor</include>
+                        <label>$ADDON[script.extendedinfo 32122][COLOR=SeparatorColor] › [/COLOR]$INFO[Container(550).NumItems] $LOCALIZE[31025]</label>
                     </control>
-                    <include content="DummyButton">
-                        <param name="x" value="0"/>
-                        <param name="y" value="0"/>
-                        <param name="width" value="860"/>
-                        <param name="height" value="800"/>
-                        <param name="onfocus" value="noop"/>
-                    </include>
                     <control type="panel" id="550">
                         <description>movies list</description>
-                        <posx>0</posx>
-                        <posy>100</posy>
-                        <width>860</width>
-                        <height>700</height>
+                        <posx>660</posx>
+                        <posy>195</posy>
+                        <width>1280</width>
+                        <height>840</height>
                         <onleft>9000</onleft>
                         <onright>6550</onright>
                         <onup>550</onup>
                         <ondown>550</ondown>
                         <pagecontrol>6550</pagecontrol>
-                        <itemlayout height="100" width="860">
+                        <itemlayout height="120" width="640">
+                            <include content="ThumbsImages">
+                                <param name="visible" value="true"/>
+                                <param name="x" value="0"/>
+                                <param name="y" value="5"/>
+                                <param name="width" value="73"/>
+                                <param name="height" value="110"/>
+                                <param name="aspectratio" value="scale"/>
+                                <param name="align" value="center"/>
+                                <param name="aligny" value="center"/>
+                                <param name="flipy" value="false"/>
+                                <param name="texturediffuse" value="ThumbsUnfocusedColor"/>
+                                <param name="borderdiffuse" value="BorderUnfocusedColor"/>
+                            </include>
                             <control type="label">
-                                <posx>TextMargin</posx>
-                                <posy>6</posy>
+                                <posx>113</posx>
+                                <posy>4</posy>
                                 <height>50</height>
-                                <width>760</width>
+                                <width>460</width>
                                 <font>FacadeListMainFont</font>
-                                <include>TextColor_MidColor</include>
+                                <textcolor>NoFocusedColor</textcolor>
                                 <label>$INFO[ListItem.Label]$INFO[ListItem.Year, (,)]</label>
                             </control>
                             <control type="label">
-                                <posx>TextMargin</posx>
-                                <posy>44</posy>
+                                <posx>113</posx>
+                                <posy>42</posy>
                                 <height>50</height>
-                                <width>760</width>
+                                <width>460</width>
                                 <font>FacadeListSubFont</font>
                                 <textcolor>NoFocusedColor</textcolor>
                                 <label>$INFO[ListItem.Property(Job)]</label>
                             </control>
                             <control type="image">
-                                <posx>0</posx>
-                                <posy>7</posy>
+                                <posx>96</posx>
+                                <posy>67</posy>
                                 <width>50</width>
                                 <height>50</height>
                                 <include>NoFocusedIcon</include>
@@ -601,40 +576,50 @@
                                 <visible>!String.IsEmpty(ListItem.Property(DBID))</visible>
                             </control>
                         </itemlayout>
-                        <focusedlayout height="100" width="860">
+                        <focusedlayout height="120" width="640">
                             <control type="group">
                                 <include>ButtonWideFocusAnimation</include>
-                                <control type="image">
-                                    <posx>0</posx>
-                                    <posy>0</posy>
-                                    <height>100</height>
-                                    <width>860</width>
-                                    <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-                                    <texture border="1">list/bg_facade_focus_2.png</texture>
-                                </control>
+                                <include content="ThumbsImages">
+                                    <param name="visible" value="true"/>
+                                    <param name="x" value="0"/>
+                                    <param name="y" value="5"/>
+                                    <param name="width" value="73"/>
+                                    <param name="height" value="110"/>
+                                    <param name="aspectratio" value="scale"/>
+                                    <param name="align" value="center"/>
+                                    <param name="aligny" value="center"/>
+                                    <param name="flipy" value="false"/>
+                                    <param name="texturediffuse" value="ThumbsFocusedColor"/>
+                                    <param name="borderdiffuse" value="$VAR[Picked.Theme.Color]"/>
+                                </include>
+                                <include content="FocusedIndicatorVertical">
+                                    <param name="x" value="93"/>
+                                    <param name="y" value="7"/>
+                                    <param name="height" value="42"/>
+                                    <param name="visible" value="control.hasfocus(550)"/>
+                                </include>
                                 <control type="label">
-                                    <posx>TextMargin</posx>
-                                    <posy>6</posy>
+                                    <posx>113</posx>
+                                    <posy>4</posy>
                                     <height>50</height>
-                                    <width>760</width>
+                                    <width>460</width>
                                     <font>FacadeListMainFont</font>
-                                    <scroll>true</scroll>
                                     <include>TextColor_MainColor</include>
                                     <label>$INFO[ListItem.Label]$INFO[ListItem.Year, (,)]</label>
                                 </control>
                                 <control type="label">
-                                    <posx>TextMargin</posx>
-                                    <posy>44</posy>
+                                    <posx>113</posx>
+                                    <posy>42</posy>
                                     <height>50</height>
-                                    <width>760</width>
-                                    <font>FacadeListSubFont</font>
+                                    <width>460</width>
                                     <scroll>true</scroll>
-                                    <textcolor>AlternateColor</textcolor>
+                                    <font>FacadeListSubFont</font>
+                                    <include>TextColor_MainColor</include>
                                     <label>$INFO[ListItem.Property(Job)]</label>
                                 </control>
                                 <control type="image">
-                                    <posx>0</posx>
-                                    <posy>7</posy>
+                                    <posx>96</posx>
+                                    <posy>67</posy>
                                     <width>50</width>
                                     <height>50</height>
                                     <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
@@ -646,34 +631,12 @@
                         </focusedlayout>
                     </control>
                     <control type="scrollbar" id="6550">
-                        <posx>810</posx>
-                        <posy>100</posy>
-                        <height>700</height>
+                        <posx>1870</posx>
+                        <posy>195</posy>
+                        <height>840</height>
                         <include>VerticalScroller</include>
                         <onleft>550</onleft>
                         <onright>9000</onright>
-                    </control>
-                    <control type="group">
-                        <posx>910</posx>
-                        <posy>0</posy>
-                        <control type="image">
-                            <visible>String.IsEmpty(Container(550).ListItem.Thumb)</visible>
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>380</width>
-                            <height>570</height>
-                            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-                            <texture>defaultVideoBig.png</texture>
-                            <aspectratio aligny="top">keep</aspectratio>
-                        </control>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>380</width>
-                            <height>570</height>
-                            <texture background="true">$INFO[Container(550).ListItem.Thumb]</texture>
-                            <aspectratio aligny="top">keep</aspectratio>
-                        </control>
                     </control>
                 </control>
                 <!--TVShow crew member-->
@@ -681,55 +644,90 @@
                     <visible>control.hasfocus(605)|ControlGroup(6500).HasFocus</visible>
                     <visible>Integer.IsGreater(Container(650).NumItems,0)</visible>
                     <include>VisibleFadeEffect</include>
+                    <include content="DummyButton">
+                        <param name="x" value="0"/>
+                        <param name="y" value="60"/>
+                        <param name="width" value="1920"/>
+                        <param name="height" value="1080"/>
+                        <param name="onfocus" value="noop"/>
+                        <param name="SlideTo" value="610,0"/>
+                        <param name="SlideCondition" value="ControlGroup(9000).hasfocus"/>
+                    </include>
+                    <control type="image">
+                        <visible>String.IsEmpty(Container(650).ListItem.Thumb)</visible>
+                        <posx>120</posx>
+                        <posy>200</posy>
+                        <width>460</width>
+                        <height>690</height>
+                        <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                        <texture>defaultArtistBig.png</texture>
+                        <aspectratio aligny="top">keep</aspectratio>
+                        <include>ThumbBorder</include>
+                    </control>
+                    <control type="image">
+                        <posx>120</posx>
+                        <posy>200</posy>
+                        <width>460</width>
+                        <height>690</height>
+                        <texture background="true">$INFO[Container(650).ListItem.Thumb]</texture>
+                        <aspectratio aligny="top">keep</aspectratio>
+                        <include>ThumbBorder</include>
+                    </control>
                     <control type="label">
-                        <posx>TextMargin</posx>
-                        <posy>50</posy>
+                        <posx>660</posx>
+                        <posy>100</posy>
                         <width>760</width>
                         <height>35</height>
                         <font>InfoTitleSubFont</font>
-                        <include>TextColor_MidColor</include>
-                        <label>$ADDON[script.extendedinfo 32123] - $INFO[Container(650).NumItems] $LOCALIZE[31025]</label>
+                        <include>TextColor_MainColor</include>
+                        <label>$ADDON[script.extendedinfo 32123][COLOR=SeparatorColor] › [/COLOR]$INFO[Container(650).NumItems] $LOCALIZE[31025]</label>
                     </control>
-                    <include content="DummyButton">
-                        <param name="x" value="0"/>
-                        <param name="y" value="0"/>
-                        <param name="width" value="860"/>
-                        <param name="height" value="800"/>
-                        <param name="onfocus" value="noop"/>
-                    </include>
                     <control type="panel" id="650">
                         <description>movies list</description>
-                        <posx>0</posx>
-                        <posy>100</posy>
-                        <width>860</width>
-                        <height>700</height>
+                        <posx>660</posx>
+                        <posy>195</posy>
+                        <width>1280</width>
+                        <height>840</height>
                         <onleft>9000</onleft>
                         <onright>6650</onright>
                         <onup>650</onup>
                         <ondown>650</ondown>
                         <pagecontrol>6650</pagecontrol>
-                        <itemlayout height="100" width="860">
+                        <itemlayout height="120" width="640">
+                            <include content="ThumbsImages">
+                                <param name="visible" value="true"/>
+                                <param name="x" value="0"/>
+                                <param name="y" value="5"/>
+                                <param name="width" value="73"/>
+                                <param name="height" value="110"/>
+                                <param name="aspectratio" value="scale"/>
+                                <param name="align" value="center"/>
+                                <param name="aligny" value="center"/>
+                                <param name="flipy" value="false"/>
+                                <param name="texturediffuse" value="ThumbsUnfocusedColor"/>
+                                <param name="borderdiffuse" value="BorderUnfocusedColor"/>
+                            </include>
                             <control type="label">
-                                <posx>TextMargin</posx>
-                                <posy>6</posy>
+                                <posx>113</posx>
+                                <posy>4</posy>
                                 <height>50</height>
-                                <width>760</width>
+                                <width>460</width>
                                 <font>FacadeListMainFont</font>
-                                <include>TextColor_MidColor</include>
+                                <textcolor>NoFocusedColor</textcolor>
                                 <label>$INFO[ListItem.Label]$INFO[ListItem.Year, (,)]</label>
                             </control>
                             <control type="label">
-                                <posx>TextMargin</posx>
-                                <posy>44</posy>
+                                <posx>113</posx>
+                                <posy>42</posy>
                                 <height>50</height>
-                                <width>760</width>
+                                <width>460</width>
                                 <font>FacadeListSubFont</font>
                                 <textcolor>NoFocusedColor</textcolor>
                                 <label>$INFO[ListItem.Property(Job)]</label>
                             </control>
                             <control type="image">
-                                <posx>0</posx>
-                                <posy>7</posy>
+                                <posx>96</posx>
+                                <posy>67</posy>
                                 <width>50</width>
                                 <height>50</height>
                                 <include>NoFocusedIcon</include>
@@ -739,40 +737,50 @@
                                 <visible>!String.IsEmpty(ListItem.Property(DBID))</visible>
                             </control>
                         </itemlayout>
-                        <focusedlayout height="100" width="860">
+                        <focusedlayout height="120" width="640">
                             <control type="group">
                                 <include>ButtonWideFocusAnimation</include>
-                                <control type="image">
-                                    <posx>0</posx>
-                                    <posy>0</posy>
-                                    <height>100</height>
-                                    <width>860</width>
-                                    <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-                                    <texture border="1">list/bg_facade_focus_2.png</texture>
-                                </control>
+                                <include content="ThumbsImages">
+                                    <param name="visible" value="true"/>
+                                    <param name="x" value="0"/>
+                                    <param name="y" value="5"/>
+                                    <param name="width" value="73"/>
+                                    <param name="height" value="110"/>
+                                    <param name="aspectratio" value="scale"/>
+                                    <param name="align" value="center"/>
+                                    <param name="aligny" value="center"/>
+                                    <param name="flipy" value="false"/>
+                                    <param name="texturediffuse" value="ThumbsFocusedColor"/>
+                                    <param name="borderdiffuse" value="$VAR[Picked.Theme.Color]"/>
+                                </include>
+                                <include content="FocusedIndicatorVertical">
+                                    <param name="x" value="93"/>
+                                    <param name="y" value="7"/>
+                                    <param name="height" value="42"/>
+                                    <param name="visible" value="control.hasfocus(650)"/>
+                                </include>
                                 <control type="label">
-                                    <posx>TextMargin</posx>
-                                    <posy>6</posy>
+                                    <posx>113</posx>
+                                    <posy>4</posy>
                                     <height>50</height>
-                                    <width>760</width>
+                                    <width>460</width>
                                     <font>FacadeListMainFont</font>
-                                    <scroll>true</scroll>
                                     <include>TextColor_MainColor</include>
                                     <label>$INFO[ListItem.Label]$INFO[ListItem.Year, (,)]</label>
                                 </control>
                                 <control type="label">
-                                    <posx>TextMargin</posx>
-                                    <posy>44</posy>
+                                    <posx>113</posx>
+                                    <posy>42</posy>
                                     <height>50</height>
-                                    <width>760</width>
-                                    <font>FacadeListSubFont</font>
+                                    <width>460</width>
                                     <scroll>true</scroll>
-                                    <textcolor>AlternateColor</textcolor>
+                                    <font>FacadeListSubFont</font>
+                                    <include>TextColor_MainColor</include>
                                     <label>$INFO[ListItem.Property(Job)]</label>
                                 </control>
                                 <control type="image">
-                                    <posx>0</posx>
-                                    <posy>7</posy>
+                                    <posx>96</posx>
+                                    <posy>67</posy>
                                     <width>50</width>
                                     <height>50</height>
                                     <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
@@ -784,9 +792,9 @@
                         </focusedlayout>
                     </control>
                     <control type="scrollbar" id="6650">
-                        <posx>810</posx>
-                        <posy>100</posy>
-                        <height>700</height>
+                        <posx>1870</posx>
+                        <posy>195</posy>
+                        <height>840</height>
                         <include>VerticalScroller</include>
                         <onleft>650</onleft>
                         <onright>9000</onright>
@@ -797,97 +805,121 @@
                     <visible>control.hasfocus(305)|ControlGroup(3500).HasFocus</visible>
                     <visible>Integer.IsGreater(Container(350).NumItems,0)</visible>
                     <include>VisibleFadeEffect</include>
+                    <include content="DummyButton">
+                        <param name="x" value="0"/>
+                        <param name="y" value="60"/>
+                        <param name="width" value="1920"/>
+                        <param name="height" value="1080"/>
+                        <param name="onfocus" value="noop"/>
+                        <param name="SlideTo" value="610,0"/>
+                        <param name="SlideCondition" value="ControlGroup(9000).hasfocus"/>
+                    </include>
+                    <control type="image">
+                        <visible>String.IsEmpty(Container(350).ListItem.Thumb)</visible>
+                        <posx>120</posx>
+                        <posy>200</posy>
+                        <width>460</width>
+                        <height>690</height>
+                        <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                        <texture>defaultVideoBig.png</texture>
+                        <aspectratio aligny="top">keep</aspectratio>
+                        <include>ThumbBorder</include>
+                    </control>
+                    <control type="image">
+                        <posx>120</posx>
+                        <posy>200</posy>
+                        <width>460</width>
+                        <height>690</height>
+                        <texture background="true">$INFO[Container(350).ListItem.Thumb]</texture>
+                        <aspectratio aligny="top">keep</aspectratio>
+                        <include>ThumbBorder</include>
+                    </control>
                     <control type="label">
-                        <posx>TextMargin</posx>
-                        <posy>50</posy>
+                        <posx>660</posx>
+                        <posy>100</posy>
                         <width>760</width>
                         <height>35</height>
                         <font>InfoTitleSubFont</font>
-                        <include>TextColor_MidColor</include>
-                        <label>$ADDON[script.extendedinfo 32118] - $INFO[Container(350).NumItems] $LOCALIZE[31025]</label>
+                        <include>TextColor_MainColor</include>
+                        <label>$ADDON[script.extendedinfo 32118][COLOR=SeparatorColor] › [/COLOR]$INFO[Container(350).NumItems] $LOCALIZE[31025]</label>
                     </control>
-                    <include content="DummyButton">
-                        <param name="x" value="0"/>
-                        <param name="y" value="0"/>
-                        <param name="width" value="860"/>
-                        <param name="height" value="800"/>
-                        <param name="onfocus" value="noop"/>
-                    </include>
                     <control type="panel" id="350">
                         <description>movies list</description>
-                        <posx>0</posx>
-                        <posy>100</posy>
-                        <width>860</width>
-                        <height>700</height>
+                        <posx>660</posx>
+                        <posy>195</posy>
+                        <width>1280</width>
+                        <height>840</height>
                         <onleft>9000</onleft>
                         <onright>6350</onright>
                         <onup>350</onup>
                         <ondown>350</ondown>
                         <pagecontrol>6350</pagecontrol>
-                        <itemlayout height="50" width="860">
+                        <itemlayout height="120" width="1280">
+                            <include content="ThumbsImages">
+                                <param name="visible" value="true"/>
+                                <param name="x" value="0"/>
+                                <param name="y" value="5"/>
+                                <param name="width" value="146"/>
+                                <param name="height" value="110"/>
+                                <param name="aspectratio" value="scale"/>
+                                <param name="align" value="center"/>
+                                <param name="aligny" value="center"/>
+                                <param name="flipy" value="false"/>
+                                <param name="texturediffuse" value="ThumbsUnfocusedColor"/>
+                                <param name="borderdiffuse" value="BorderUnfocusedColor"/>
+                            </include>
                             <control type="label">
-                                <posx>TextMargin</posx>
-                                <posy>0</posy>
+                                <posx>186</posx>
+                                <posy>4</posy>
                                 <height>50</height>
-                                <width>760</width>
+                                <width>974</width>
                                 <font>FacadeListMainFont</font>
                                 <textcolor>NoFocusedColor</textcolor>
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                         </itemlayout>
-                        <focusedlayout height="50" width="860">
+                        <focusedlayout height="120" width="1280">
                             <control type="group">
                                 <include>ButtonWideFocusAnimation</include>
-                                <control type="image">
-                                    <posx>0</posx>
-                                    <posy>0</posy>
-                                    <height>50</height>
-                                    <width>860</width>
-                                    <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-                                    <texture border="1">list/bg_facade_focus.png</texture>
-                                </control>
+                                <include content="ThumbsImages">
+                                    <param name="visible" value="true"/>
+                                    <param name="x" value="0"/>
+                                    <param name="y" value="5"/>
+                                    <param name="width" value="146"/>
+                                    <param name="height" value="110"/>
+                                    <param name="aspectratio" value="scale"/>
+                                    <param name="align" value="center"/>
+                                    <param name="aligny" value="center"/>
+                                    <param name="flipy" value="false"/>
+                                    <param name="texturediffuse" value="ThumbsFocusedColor"/>
+                                    <param name="borderdiffuse" value="$VAR[Picked.Theme.Color]"/>
+                                </include>
+                                <include content="FocusedIndicatorVertical">
+                                    <param name="x" value="166"/>
+                                    <param name="y" value="7"/>
+                                    <param name="height" value="42"/>
+                                    <param name="visible" value="control.hasfocus(350)"/>
+                                </include>
                                 <control type="label">
-                                    <posx>TextMargin</posx>
-                                    <posy>0</posy>
+                                    <posx>186</posx>
+                                    <posy>4</posy>
                                     <height>50</height>
-                                    <width>760</width>
+                                    <width>974</width>
                                     <font>FacadeListMainFont</font>
-                                    <scroll>true</scroll>
                                     <include>TextColor_MainColor</include>
+                                    <scroll>true</scroll>
                                     <label>$INFO[ListItem.Label]</label>
                                 </control>
                             </control>
                         </focusedlayout>
                     </control>
                     <control type="scrollbar" id="6350">
-                        <posx>810</posx>
-                        <posy>100</posy>
-                        <height>700</height>
+                        <posx>1870</posx>
+                        <posy>195</posy>
+                        <height>840</height>
                         <include>VerticalScroller</include>
                         <onleft>350</onleft>
                         <onright>9000</onright>
-                    </control>
-                    <control type="group">
-                        <posx>910</posx>
-                        <posy>0</posy>
-                        <control type="image">
-                            <visible>String.IsEmpty(Container(350).ListItem.Thumb)</visible>
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>380</width>
-                            <height>570</height>
-                            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-                            <texture>defaultVideoBig.png</texture>
-                            <aspectratio aligny="top">keep</aspectratio>
-                        </control>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>380</width>
-                            <height>570</height>
-                            <texture background="true">$INFO[Container(350).ListItem.Thumb]</texture>
-                            <aspectratio aligny="top">keep</aspectratio>
-                        </control>
                     </control>
                 </control>
                 <!--PICTURES-->
@@ -895,99 +927,92 @@
                     <visible>control.hasfocus(405)|ControlGroup(4500).HasFocus</visible>
                     <visible>Integer.IsGreater(Container(450).NumItems,0)</visible>
                     <include>VisibleFadeEffect</include>
+                    <include content="DummyButton">
+                        <param name="x" value="0"/>
+                        <param name="y" value="60"/>
+                        <param name="width" value="1920"/>
+                        <param name="height" value="1080"/>
+                        <param name="onfocus" value="noop"/>
+                        <param name="SlideTo" value="610,0"/>
+                        <param name="SlideCondition" value="ControlGroup(9000).hasfocus"/>
+                    </include>
+                    <control type="image">
+                        <visible>String.IsEmpty(Container(450).ListItem.Thumb)</visible>
+                        <posx>120</posx>
+                        <posy>200</posy>
+                        <width>460</width>
+                        <height>690</height>
+                        <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                        <texture>defaultPictureBig.png</texture>
+                        <aspectratio aligny="top">keep</aspectratio>
+                        <include>ThumbBorder</include>
+                    </control>
+                    <control type="image">
+                        <posx>120</posx>
+                        <posy>200</posy>
+                        <width>460</width>
+                        <height>690</height>
+                        <texture background="true">$INFO[Container(450).ListItem.Thumb]</texture>
+                        <aspectratio aligny="top">keep</aspectratio>
+                        <include>ThumbBorder</include>
+                    </control>
                     <control type="label">
-                        <posx>TextMargin</posx>
-                        <posy>50</posy>
+                        <posx>660</posx>
+                        <posy>100</posy>
                         <width>760</width>
                         <height>35</height>
                         <font>InfoTitleSubFont</font>
-                        <include>TextColor_MidColor</include>
-                        <label>$LOCALIZE[1] - $INFO[Container(450).NumItems] $LOCALIZE[31025]</label>
+                        <include>TextColor_MainColor</include>
+                        <label>$LOCALIZE[1][COLOR=SeparatorColor] › [/COLOR]$INFO[Container(450).NumItems] $LOCALIZE[31025]</label>
                     </control>
-                    <include content="DummyButton">
-                        <param name="x" value="0"/>
-                        <param name="y" value="0"/>
-                        <param name="width" value="860"/>
-                        <param name="height" value="800"/>
-                        <param name="onfocus" value="noop"/>
-                    </include>
                     <control type="panel" id="450">
-                        <posx>42</posx>
-                        <posy>100</posy>
-                        <width>860</width>
-                        <height>700</height>
+                        <posx>660</posx>
+                        <posy>200</posy>
+                        <width>1180</width>
+                        <height>880</height>
                         <onleft>9000</onleft>
                         <onright>456</onright>
                         <onup>450</onup>
                         <ondown>450</ondown>
                         <pagecontrol>456</pagecontrol>
-                        <itemlayout height="233" width="155">
-                            <control type="image">
-                                <posx>0</posx>
-                                <posy>0</posy>
-                                <width>155</width>
-                                <height>233</height>
-                                <texture background="true">$INFO[ListItem.Thumb]</texture>
-                                <aspectratio>scale</aspectratio>
-                            </control>
-                            <control type="image">
-                                <posx>0</posx>
-                                <posy>0</posy>
-                                <width>155</width>
-                                <height>233</height>
-                                <include>NoFocusedThumb</include>
-                                <texture>common/BlackDot.png</texture>
-                            </control>
+                        <itemlayout height="222" width="147">
+                            <include content="ThumbsImages">
+                                <param name="visible" value="true"/>
+                                <param name="x" value="0"/>
+                                <param name="y" value="0"/>
+                                <param name="width" value="147"/>
+                                <param name="height" value="222"/>
+                                <param name="aspectratio" value="scale"/>
+                                <param name="align" value="center"/>
+                                <param name="aligny" value="center"/>
+                                <param name="flipy" value="false"/>
+                                <param name="texturediffuse" value="ThumbsUnfocusedColor"/>
+                                <param name="borderdiffuse" value="BorderUnfocusedColor"/>
+                            </include>
                         </itemlayout>
-                        <focusedlayout height="233" width="155">
-                            <control type="image">
-                                <posx>0</posx>
-                                <posy>0</posy>
-                                <width>155</width>
-                                <height>233</height>
-                                <texture background="true">$INFO[ListItem.Thumb]</texture>
-                                <aspectratio>scale</aspectratio>
-                            </control>
-                            <control type="image">
-                                <posx>0</posx>
-                                <posy>0</posy>
-                                <width>155</width>
-                                <height>233</height>
-                                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-                                <texture border="1,50,1,50">common/frame_focus.png</texture>
-                                <aspectratio>stretch</aspectratio>
-                            </control>
+                        <focusedlayout height="222" width="147">
+                            <include content="ThumbsImages">
+                                <param name="visible" value="true"/>
+                                <param name="x" value="0"/>
+                                <param name="y" value="0"/>
+                                <param name="width" value="147"/>
+                                <param name="height" value="222"/>
+                                <param name="aspectratio" value="scale"/>
+                                <param name="align" value="center"/>
+                                <param name="aligny" value="center"/>
+                                <param name="flipy" value="false"/>
+                                <param name="texturediffuse" value="ThumbsFocusedColor"/>
+                                <param name="borderdiffuse" value="$VAR[Picked.Theme.Color]"/>
+                            </include>
                         </focusedlayout>
                     </control>
                     <control type="scrollbar" id="456">
-                        <posx>810</posx>
-                        <posy>100</posy>
-                        <height>700</height>
+                        <posx>1870</posx>
+                        <posy>200</posy>
+                        <height>880</height>
                         <include>VerticalScroller</include>
                         <onleft>450</onleft>
                         <onright>456</onright>
-                    </control>
-                    <control type="group">
-                        <posx>910</posx>
-                        <posy>0</posy>
-                        <control type="image">
-                            <visible>String.IsEmpty(Container(450).ListItem.Thumb)</visible>
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>380</width>
-                            <height>570</height>
-                            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-                            <texture>defaultPictureBig.png</texture>
-                            <aspectratio aligny="top">keep</aspectratio>
-                        </control>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>380</width>
-                            <height>570</height>
-                            <texture background="true">$INFO[Container(450).ListItem.Thumb]</texture>
-                            <aspectratio aligny="top">keep</aspectratio>
-                        </control>
                     </control>
                 </control>
                 <!--FANART-->
@@ -995,99 +1020,174 @@
                     <visible>control.hasfocus(705)|ControlGroup(7500).HasFocus</visible>
                     <visible>Integer.IsGreater(Container(750).NumItems,0)</visible>
                     <include>VisibleFadeEffect</include>
+                    <include content="DummyButton">
+                        <param name="x" value="0"/>
+                        <param name="y" value="60"/>
+                        <param name="width" value="1920"/>
+                        <param name="height" value="1080"/>
+                        <param name="onfocus" value="noop"/>
+                        <param name="SlideTo" value="610,0"/>
+                        <param name="SlideCondition" value="ControlGroup(9000).hasfocus"/>
+                    </include>
+                    <control type="image">
+                        <visible>String.IsEmpty(Container(750).ListItem.Thumb)</visible>
+                        <posx>120</posx>
+                        <posy>200</posy>
+                        <width>460</width>
+                        <height>690</height>
+                        <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                        <texture>defaultVideoBig.png</texture>
+                        <aspectratio aligny="top">keep</aspectratio>
+                        <include>ThumbBorder</include>
+                    </control>
+                    <control type="image">
+                        <posx>120</posx>
+                        <posy>200</posy>
+                        <width>460</width>
+                        <height>690</height>
+                        <texture background="true">$INFO[Container(750).ListItem.Thumb]</texture>
+                        <aspectratio aligny="top">keep</aspectratio>
+                        <include>ThumbBorder</include>
+                    </control>
                     <control type="label">
-                        <posx>TextMargin</posx>
-                        <posy>50</posy>
+                        <posx>660</posx>
+                        <posy>100</posy>
                         <width>760</width>
                         <height>35</height>
                         <font>InfoTitleSubFont</font>
-                        <include>TextColor_MidColor</include>
-                        <label>$LOCALIZE[20445] - $INFO[Container(750).NumItems] $LOCALIZE[31025]</label>
+                        <include>TextColor_MainColor</include>
+                        <label>$LOCALIZE[20445][COLOR=SeparatorColor] › [/COLOR]$INFO[Container(750).NumItems] $LOCALIZE[31025]</label>
                     </control>
-                    <include content="DummyButton">
-                        <param name="x" value="0"/>
-                        <param name="y" value="0"/>
-                        <param name="width" value="860"/>
-                        <param name="height" value="800"/>
-                        <param name="onfocus" value="noop"/>
-                    </include>
                     <control type="panel" id="750">
-                        <posx>42</posx>
-                        <posy>100</posy>
-                        <width>860</width>
-                        <height>725</height>
+                        <posx>660</posx>
+                        <posy>200</posy>
+                        <width>1180</width>
+                        <height>880</height>
                         <onleft>9000</onleft>
                         <onright>756</onright>
                         <onup>750</onup>
                         <ondown>750</ondown>
                         <pagecontrol>756</pagecontrol>
-                        <itemlayout height="145" width="258">
-                            <control type="image">
-                                <posx>0</posx>
-                                <posy>0</posy>
-                                <width>258</width>
-                                <height>145</height>
-                                <texture background="true">$INFO[ListItem.Thumb]</texture>
-                                <aspectratio>scale</aspectratio>
-                            </control>
-                            <control type="image">
-                                <posx>0</posx>
-                                <posy>0</posy>
-                                <width>258</width>
-                                <height>145</height>
-                                <include>NoFocusedThumb</include>
-                                <texture>common/BlackDot.png</texture>
-                            </control>
+                        <itemlayout height="133" width="236">
+                            <include content="ThumbsImages">
+                                <param name="visible" value="true"/>
+                                <param name="x" value="0"/>
+                                <param name="y" value="0"/>
+                                <param name="width" value="236"/>
+                                <param name="height" value="133"/>
+                                <param name="aspectratio" value="scale"/>
+                                <param name="align" value="center"/>
+                                <param name="aligny" value="center"/>
+                                <param name="flipy" value="false"/>
+                                <param name="texturediffuse" value="ThumbsUnfocusedColor"/>
+                                <param name="borderdiffuse" value="BorderUnfocusedColor"/>
+                            </include>
                         </itemlayout>
-                        <focusedlayout height="145" width="258">
-                            <control type="image">
-                                <posx>0</posx>
-                                <posy>0</posy>
-                                <width>258</width>
-                                <height>145</height>
-                                <texture background="true">$INFO[ListItem.Thumb]</texture>
-                                <aspectratio>scale</aspectratio>
-                            </control>
-                            <control type="image">
-                                <posx>0</posx>
-                                <posy>0</posy>
-                                <width>258</width>
-                                <height>145</height>
-                                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-                                <texture border="1,50,1,50">common/frame_focus.png</texture>
-                                <aspectratio>stretch</aspectratio>
-                            </control>
+                        <focusedlayout height="133" width="236">
+                            <include content="ThumbsImages">
+                                <param name="visible" value="true"/>
+                                <param name="x" value="0"/>
+                                <param name="y" value="0"/>
+                                <param name="width" value="236"/>
+                                <param name="height" value="133"/>
+                                <param name="aspectratio" value="scale"/>
+                                <param name="align" value="center"/>
+                                <param name="aligny" value="center"/>
+                                <param name="flipy" value="false"/>
+                                <param name="texturediffuse" value="ThumbsFocusedColor"/>
+                                <param name="borderdiffuse" value="$VAR[Picked.Theme.Color]"/>
+                            </include>
                         </focusedlayout>
                     </control>
                     <control type="scrollbar" id="756">
-                        <posx>810</posx>
-                        <posy>100</posy>
-                        <height>725</height>
+                        <posx>1870</posx>
+                        <posy>200</posy>
+                        <height>880</height>
                         <include>VerticalScroller</include>
                         <onleft>750</onleft>
                         <onright>756</onright>
                     </control>
+                </control>
+                <!-- SIDE MENU -->
+                <control type="group">
+                    <include>LeftMenu</include>
+                    <control type="grouplist" id="9000">
+                        <ondown>9000</ondown>
+                        <onright>9060</onright>
+                        <include>LeftMenuButtonGroup</include>
+                        <control type="button" id="20">
+                            <description>Biography</description>
+                            <include>LeftMenuButton</include>
+                            <label>21887</label>
+                            <onright>49</onright>
+                            <onclick>SetFocus(9009)</onclick>
+                        </control>
+                        <control type="button" id="105">
+                            <visible>Integer.IsGreater(Container(150).NumItems,0)</visible>
+                            <description>Movie actor roles</description>
+                            <include>LeftMenuButton</include>
+                            <label>342</label>
+                            <onright>150</onright>
+                            <onclick>SetFocus(150)</onclick>
+                        </control>
+                        <control type="button" id="205">
+                            <visible>Integer.IsGreater(Container(250).NumItems,0)</visible>
+                            <description>TV Show actor roles</description>
+                            <include>LeftMenuButton</include>
+                            <label>20343</label>
+                            <onright>250</onright>
+                            <onclick>SetFocus(250)</onclick>
+                        </control>
+                        <control type="button" id="505">
+                            <visible>Integer.IsGreater(Container(550).NumItems,0)</visible>
+                            <description>Movie crew member</description>
+                            <include>LeftMenuButton</include>
+                            <label>$ADDON[script.extendedinfo 32122]</label>
+                            <onright>550</onright>
+                            <onclick>SetFocus(550)</onclick>
+                        </control>
+                        <control type="button" id="605">
+                            <visible>Integer.IsGreater(Container(650).NumItems,0)</visible>
+                            <description>TVShow crew member</description>
+                            <include>LeftMenuButton</include>
+                            <label>$ADDON[script.extendedinfo 32123]</label>
+                            <onright>650</onright>
+                            <onclick>SetFocus(650)</onclick>
+                        </control>
+                        <control type="button" id="305">
+                            <visible>Integer.IsGreater(Container(350).NumItems,0)</visible>
+                            <description>Youtube</description>
+                            <include>LeftMenuButton</include>
+                            <label>$ADDON[script.extendedinfo 32118]</label>
+                            <onright>350</onright>
+                            <onclick>SetFocus(350)</onclick>
+                        </control>
+                        <control type="button" id="405">
+                            <visible>Integer.IsGreater(Container(450).NumItems,0)</visible>
+                            <description>Pictures</description>
+                            <include>LeftMenuButton</include>
+                            <label>1</label>
+                            <onright>450</onright>
+                            <onclick>SetFocus(450)</onclick>
+                        </control>
+                        <control type="button" id="705">
+                            <visible>Integer.IsGreater(Container(750).NumItems,0)</visible>
+                            <description>Fanart</description>
+                            <include>LeftMenuButton</include>
+                            <label>20445</label>
+                            <onright>750</onright>
+                            <onclick>SetFocus(750)</onclick>
+                        </control>
+                    </control>
                     <control type="group">
-                        <posx>910</posx>
-                        <posy>0</posy>
-                        <control type="image">
-                            <visible>String.IsEmpty(Container(750).ListItem.Thumb)</visible>
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>380</width>
-                            <height>570</height>
-                            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-                            <texture>defaultPictureBig.png</texture>
-                            <aspectratio aligny="top">keep</aspectratio>
-                        </control>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>380</width>
-                            <height>570</height>
-                            <texture background="true">$INFO[Container(750).ListItem.Thumb]</texture>
-                            <aspectratio aligny="top">keep</aspectratio>
-                        </control>
+                        <animation effect="slide" tween="circle" easing="inout" time="150" start="0,0" end="1920,0" condition="control.isvisible(9000)+[ControlGroup(9000).HasFocus()|Control.HasFocus(8999)|Control.HasFocus(9060)]">Conditional</animation>
+                        <posx>-1700</posx>
+                        <include content="DialogMenuScroller">
+                            <param name="y" value="60"/>
+                            <param name="height" value="960"/>
+                            <param name="onright" value="150"/>
+                            <param name="onleft" value="9000"/>
+                        </include>
                     </control>
                 </control>
             </control>

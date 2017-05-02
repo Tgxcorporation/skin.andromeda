@@ -29,7 +29,7 @@
                         <param name="width" value="1920"/>
                         <param name="height" value="1080"/>
                         <param name="onfocus" value="noop"/>
-                        <param name="SlideTo" value="960,0"/>
+                        <param name="SlideTo" value="610,0"/>
                         <param name="SlideCondition" value="ControlGroup(9000).hasfocus"/>
                     </include>
                     <include content="ThumbsImages">
@@ -157,7 +157,7 @@
                         <param name="width" value="1920"/>
                         <param name="height" value="1080"/>
                         <param name="onfocus" value="noop"/>
-                        <param name="SlideTo" value="960,0"/>
+                        <param name="SlideTo" value="610,0"/>
                         <param name="SlideCondition" value="ControlGroup(9000).hasfocus"/>
                     </include>
                     <include content="ThumbsImages">
@@ -223,7 +223,7 @@
                         <param name="width" value="1920"/>
                         <param name="height" value="1080"/>
                         <param name="onfocus" value="noop"/>
-                        <param name="SlideTo" value="960,0"/>
+                        <param name="SlideTo" value="610,0"/>
                         <param name="SlideCondition" value="ControlGroup(9000).hasfocus"/>
                     </include>
                     <include content="ThumbsImages">
