@@ -542,6 +542,14 @@ msgctxt "#31395"
 msgid "Arial (Regular)"
 msgstr ""
 
+msgctxt "#31396"
+msgid "Open Sans (Light)"
+msgstr ""
+
+msgctxt "#31397"
+msgid "Open Sans (Regular)"
+msgstr ""
+
 #empty strings from id 31396 to 31399
 #Skin Fontsets
 
