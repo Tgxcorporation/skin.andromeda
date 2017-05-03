@@ -57,4 +57,7 @@
     <expression name="CdArtAudioIsNotEnabled">
         !Skin.HasSetting(EnableCdArt)|![!Skin.HasSetting(plexbmc)+Skin.HasSetting(EnableCdArt)+[Container.content(songs)|Container.content(albums)]]
     </expression>
+    <expression name="LeftMenuHasFocus">
+        control.isvisible(9000)+[ControlGroup(9000).HasFocus()|Control.HasFocus(8999)|Control.HasFocus(9060)]
+    </expression>
 </includes>

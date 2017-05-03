@@ -16,6 +16,7 @@
             </control>
             <include>WindowClosingButton</include>
             <control type="group">
+                <include>LeftMenuHasFocusAnimation</include>
                 <include>DialogOpenClose</include>
                 <control type="label">
                     <posx>660</posx>
@@ -1108,87 +1109,87 @@
                         <onright>756</onright>
                     </control>
                 </control>
-                <!-- SIDE MENU -->
+            </control>
+            <!-- SIDE MENU -->
+            <control type="group">
+                <include>LeftMenu</include>
+                <control type="grouplist" id="9000">
+                    <ondown>9000</ondown>
+                    <onright>9060</onright>
+                    <include>LeftMenuButtonGroup</include>
+                    <control type="button" id="20">
+                        <description>Biography</description>
+                        <include>LeftMenuButton</include>
+                        <label>21887</label>
+                        <onright>49</onright>
+                        <onclick>SetFocus(9009)</onclick>
+                    </control>
+                    <control type="button" id="105">
+                        <visible>Integer.IsGreater(Container(150).NumItems,0)</visible>
+                        <description>Movie actor roles</description>
+                        <include>LeftMenuButton</include>
+                        <label>342</label>
+                        <onright>150</onright>
+                        <onclick>SetFocus(150)</onclick>
+                    </control>
+                    <control type="button" id="205">
+                        <visible>Integer.IsGreater(Container(250).NumItems,0)</visible>
+                        <description>TV Show actor roles</description>
+                        <include>LeftMenuButton</include>
+                        <label>20343</label>
+                        <onright>250</onright>
+                        <onclick>SetFocus(250)</onclick>
+                    </control>
+                    <control type="button" id="505">
+                        <visible>Integer.IsGreater(Container(550).NumItems,0)</visible>
+                        <description>Movie crew member</description>
+                        <include>LeftMenuButton</include>
+                        <label>$ADDON[script.extendedinfo 32122]</label>
+                        <onright>550</onright>
+                        <onclick>SetFocus(550)</onclick>
+                    </control>
+                    <control type="button" id="605">
+                        <visible>Integer.IsGreater(Container(650).NumItems,0)</visible>
+                        <description>TVShow crew member</description>
+                        <include>LeftMenuButton</include>
+                        <label>$ADDON[script.extendedinfo 32123]</label>
+                        <onright>650</onright>
+                        <onclick>SetFocus(650)</onclick>
+                    </control>
+                    <control type="button" id="305">
+                        <visible>Integer.IsGreater(Container(350).NumItems,0)</visible>
+                        <description>Youtube</description>
+                        <include>LeftMenuButton</include>
+                        <label>$ADDON[script.extendedinfo 32118]</label>
+                        <onright>350</onright>
+                        <onclick>SetFocus(350)</onclick>
+                    </control>
+                    <control type="button" id="405">
+                        <visible>Integer.IsGreater(Container(450).NumItems,0)</visible>
+                        <description>Pictures</description>
+                        <include>LeftMenuButton</include>
+                        <label>1</label>
+                        <onright>450</onright>
+                        <onclick>SetFocus(450)</onclick>
+                    </control>
+                    <control type="button" id="705">
+                        <visible>Integer.IsGreater(Container(750).NumItems,0)</visible>
+                        <description>Fanart</description>
+                        <include>LeftMenuButton</include>
+                        <label>20445</label>
+                        <onright>750</onright>
+                        <onclick>SetFocus(750)</onclick>
+                    </control>
+                </control>
                 <control type="group">
-                    <include>LeftMenu</include>
-                    <control type="grouplist" id="9000">
-                        <ondown>9000</ondown>
-                        <onright>9060</onright>
-                        <include>LeftMenuButtonGroup</include>
-                        <control type="button" id="20">
-                            <description>Biography</description>
-                            <include>LeftMenuButton</include>
-                            <label>21887</label>
-                            <onright>49</onright>
-                            <onclick>SetFocus(9009)</onclick>
-                        </control>
-                        <control type="button" id="105">
-                            <visible>Integer.IsGreater(Container(150).NumItems,0)</visible>
-                            <description>Movie actor roles</description>
-                            <include>LeftMenuButton</include>
-                            <label>342</label>
-                            <onright>150</onright>
-                            <onclick>SetFocus(150)</onclick>
-                        </control>
-                        <control type="button" id="205">
-                            <visible>Integer.IsGreater(Container(250).NumItems,0)</visible>
-                            <description>TV Show actor roles</description>
-                            <include>LeftMenuButton</include>
-                            <label>20343</label>
-                            <onright>250</onright>
-                            <onclick>SetFocus(250)</onclick>
-                        </control>
-                        <control type="button" id="505">
-                            <visible>Integer.IsGreater(Container(550).NumItems,0)</visible>
-                            <description>Movie crew member</description>
-                            <include>LeftMenuButton</include>
-                            <label>$ADDON[script.extendedinfo 32122]</label>
-                            <onright>550</onright>
-                            <onclick>SetFocus(550)</onclick>
-                        </control>
-                        <control type="button" id="605">
-                            <visible>Integer.IsGreater(Container(650).NumItems,0)</visible>
-                            <description>TVShow crew member</description>
-                            <include>LeftMenuButton</include>
-                            <label>$ADDON[script.extendedinfo 32123]</label>
-                            <onright>650</onright>
-                            <onclick>SetFocus(650)</onclick>
-                        </control>
-                        <control type="button" id="305">
-                            <visible>Integer.IsGreater(Container(350).NumItems,0)</visible>
-                            <description>Youtube</description>
-                            <include>LeftMenuButton</include>
-                            <label>$ADDON[script.extendedinfo 32118]</label>
-                            <onright>350</onright>
-                            <onclick>SetFocus(350)</onclick>
-                        </control>
-                        <control type="button" id="405">
-                            <visible>Integer.IsGreater(Container(450).NumItems,0)</visible>
-                            <description>Pictures</description>
-                            <include>LeftMenuButton</include>
-                            <label>1</label>
-                            <onright>450</onright>
-                            <onclick>SetFocus(450)</onclick>
-                        </control>
-                        <control type="button" id="705">
-                            <visible>Integer.IsGreater(Container(750).NumItems,0)</visible>
-                            <description>Fanart</description>
-                            <include>LeftMenuButton</include>
-                            <label>20445</label>
-                            <onright>750</onright>
-                            <onclick>SetFocus(750)</onclick>
-                        </control>
-                    </control>
-                    <control type="group">
-                        <animation effect="slide" tween="circle" easing="inout" time="150" start="0,0" end="1920,0" condition="control.isvisible(9000)+[ControlGroup(9000).HasFocus()|Control.HasFocus(8999)|Control.HasFocus(9060)]">Conditional</animation>
-                        <posx>-1700</posx>
-                        <include content="DialogMenuScroller">
-                            <param name="y" value="60"/>
-                            <param name="height" value="960"/>
-                            <param name="onright" value="150"/>
-                            <param name="onleft" value="9000"/>
-                        </include>
-                    </control>
+                    <animation effect="slide" tween="circle" easing="inout" time="150" start="0,0" end="1920,0" condition="$EXP[LeftMenuHasFocus]">Conditional</animation>
+                    <posx>-1700</posx>
+                    <include content="DialogMenuScroller">
+                        <param name="y" value="60"/>
+                        <param name="height" value="960"/>
+                        <param name="onright" value="150"/>
+                        <param name="onleft" value="9000"/>
+                    </include>
                 </control>
             </control>
         </control>

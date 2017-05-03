@@ -197,8 +197,6 @@
                 <onup>505051</onup>
                 <ondown>60</ondown>
                 <orientation>horizontal</orientation>
-                <focusposition>0</focusposition>
-                <movement>1</movement>
                 <preloaditems>4</preloaditems>
                 <include>Fanart_Layout</include>
             </control>

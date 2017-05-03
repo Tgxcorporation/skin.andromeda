@@ -53,7 +53,7 @@
             <control type="group">
                 <include>OpenClose</include>
                 <posy>0</posy>
-                <control type="fixedlist" id="9001">
+                <control type="list" id="9001">
                     <posx>0</posx>
                     <posy>0</posy>
                     <height>50</height>
@@ -64,8 +64,6 @@
                     <viewtype>list</viewtype>
                     <onback>SetFocus(300)</onback>
                     <ondown>300</ondown>
-                    <focusposition>0</focusposition>
-                    <movement>0</movement>
                     <orientation>horizontal</orientation>
                     <pagecontrol>-</pagecontrol>
                     <itemlayout height="50" width="384">
@@ -126,7 +124,7 @@
                     <visible>Integer.IsGreater(Container(9001).NumItems,0)</visible>
                     <posx>0</posx>
                     <posy>0</posy>
-                    <width>60</width>
+                    <width>70</width>
                     <height>50</height>
                     <texturefocus>-</texturefocus>
                     <texturenofocus>-</texturenofocus>
@@ -141,9 +139,9 @@
                 </control>
                 <control type="button">
                     <visible>Integer.IsGreater(Container(9001).NumItems,0)</visible>
-                    <posx>384</posx>
+                    <right>0</right>
                     <posy>0</posy>
-                    <width>1536</width>
+                    <width>150</width>
                     <height>50</height>
                     <texturefocus>-</texturefocus>
                     <texturenofocus>-</texturenofocus>
@@ -163,7 +161,7 @@
                 <control type="group">
                     <posy>50</posy>
                     <include>Icon_Fade</include>
-                    <control type="fixedlist" id="300">
+                    <control type="list" id="300">
                         <posx>0</posx>
                         <posy>0</posy>
                         <width>1920</width>
@@ -174,8 +172,6 @@
                         <!--<onup condition="control.isvisible(378432)">7010</onup>-->
                         <onup>9001</onup>
                         <pagecontrol>-</pagecontrol>
-                        <focusposition>0</focusposition>
-                        <movement>0</movement>
                         <preloaditems>4</preloaditems>
                         <orientation>horizontal</orientation>
                         <itemlayout height="60" width="384">
@@ -232,7 +228,7 @@
                         <visible>Integer.IsGreater(Container(300).NumItems,0)</visible>
                         <posx>0</posx>
                         <posy>0</posy>
-                        <width>60</width>
+                        <width>70</width>
                         <height>60</height>
                         <texturefocus>-</texturefocus>
                         <texturenofocus>-</texturenofocus>
@@ -247,9 +243,9 @@
                     </control>
                     <control type="button">
                         <visible>Integer.IsGreater(Container(300).NumItems,0)</visible>
-                        <posx>384</posx>
+                        <right>0</right>
                         <posy>0</posy>
-                        <width>1536</width>
+                        <width>150</width>
                         <height>70</height>
                         <texturefocus>-</texturefocus>
                         <texturenofocus>-</texturenofocus>
@@ -263,7 +259,6 @@
                         <onclick>Control.Move(300,1)</onclick>
                     </control>
                 </control>
-
             </control>
             <include>WidgetsCollection</include>
         </control>

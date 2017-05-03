@@ -386,4 +386,10 @@
     <include name="unfocusConditionalAnimation">
         <animation effect="fade" start="100" end="50" time="0" condition="$PARAM[condition]">Conditional</animation>
     </include>
+    <include name="LeftMenuHasFocusAnimation">
+        <animation effect="slide" tween="circle" easing="inout" time="150" start="0,0" end="660,0" condition="$EXP[LeftMenuHasFocus]">Conditional</animation>
+    </include>
+    <include name="FanartHasFocusAnimation">
+        <animation effect="slide" tween="circle" easing="inout" time="150" start="0,0" end="-2200,0" condition="Control.HasFocus(505050)">conditional</animation>
+    </include>
 </includes>

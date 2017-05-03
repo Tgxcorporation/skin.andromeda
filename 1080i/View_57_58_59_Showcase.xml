@@ -63,6 +63,7 @@
             <control type="group">
                 <include>OpenClose</include>
                 <control type="group">
+                    <include>LeftMenuHasFocusAnimation</include>
                     <include>Facade_Fade</include>
                     <visible>Control.hasfocus(505050)|Control.isvisible(51)</visible>
                     <include>InfoData</include>
@@ -74,28 +75,27 @@
         <control type="group">
             <visible>Control.IsVisible(59)</visible>
             <include>Facade_Fade</include>
-            <control type="fixedlist" id="59">
+            <control type="list" id="59">
                 <visible>$EXP[ContentIsPoster]</visible>
-                <posx>-330</posx>
+                <posx>0</posx>
                 <posy>0</posy>
-                <width>2250</width>
+                <width>1920</width>
                 <height>1080</height>
                 <onleft>300</onleft>
                 <onback>300</onback>
-                <movement>0</movement>
-                <focusposition>1</focusposition>
                 <orientation>horizontal</orientation>
                 <onleft>59</onleft>
                 <onright>59</onright>
                 <onup>505051</onup>
                 <ondown>609</ondown>
+                <preloaditems>4</preloaditems>
                 <viewtype label="31098">Strip</viewtype>
                 <pagecontrol>609</pagecontrol>
                 <itemlayout height="1080" width="400">
                     <!-- CDART VIDEO -->
                     <include content="ThumbsImages">
                         <param name="visible" value="true"/>
-                        <param name="x" value="0"/>
+                        <param name="x" value="70"/>
                         <param name="y" value="70"/>
                         <param name="width" value="390"/>
                         <param name="height" value="589"/>
@@ -107,7 +107,7 @@
                         <param name="borderdiffuse" value="BorderUnfocusedColor"/>
                     </include>
                     <include content="WatchedRecOverlay">
-                        <param name="x" value="333"/>
+                        <param name="x" value="403"/>
                         <param name="y" value="71"/>
                         <param name="width" value="50"/>
                         <param name="height" value="50"/>
@@ -118,7 +118,7 @@
                         <include content="ProgressBar">
                             <param name="id" value="0"/>
                             <param name="visible" value="Integer.IsGreater(ListItem.PercentPlayed,0)"/>
-                            <param name="x" value="1"/>
+                            <param name="x" value="71"/>
                             <param name="y" value="0"/>
                             <param name="width" value="304"/>
                             <param name="info" value="ListItem.PercentPlayed"/>
@@ -128,7 +128,7 @@
                             <param name="direction" value="horizontal"/>
                         </include>
                         <control type="label">
-                            <posx>0</posx>
+                            <posx>70</posx>
                             <posy>30</posy>
                             <width>360</width>
                             <aligny>top</aligny>
@@ -138,7 +138,7 @@
                             <label>$VAR[DetailsTitle]</label>
                         </control>
                         <control type="label">
-                            <posx>0</posx>
+                            <posx>70</posx>
                             <posy>80</posy>
                             <width>360</width>
                             <aligny>top</aligny>
@@ -148,7 +148,7 @@
                             <label>$VAR[DetailsRow1]$VAR[DetailsRow2,[COLOR=SeparatorColor] › [/COLOR]]</label>
                         </control>
                         <control type="label">
-                            <posx>0</posx>
+                            <posx>70</posx>
                             <posy>122</posy>
                             <width>360</width>
                             <aligny>top</aligny>
@@ -164,7 +164,7 @@
                         <include>ButtonFocusAnimation</include>
                         <include content="DiscArt">
                             <param name="visible" value="!ListItem.IsParentFolder+!String.IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)]"/>
-                            <param name="x" value="205"/>
+                            <param name="x" value="275"/>
                             <param name="y" value="180"/>
                             <param name="width" value="370"/>
                             <param name="height" value="370"/>
@@ -172,7 +172,7 @@
                         </include>
                         <include content="ThumbsImages">
                             <param name="visible" value="true"/>
-                            <param name="x" value="0"/>
+                            <param name="x" value="70"/>
                             <param name="y" value="70"/>
                             <param name="width" value="390"/>
                             <param name="height" value="589"/>
@@ -184,7 +184,7 @@
                             <param name="borderdiffuse" value="$VAR[Picked.Theme.Color]"/>
                         </include>
                         <include content="WatchedRecOverlay">
-                            <param name="x" value="333"/>
+                            <param name="x" value="403"/>
                             <param name="y" value="71"/>
                             <param name="width" value="50"/>
                             <param name="height" value="50"/>
@@ -195,7 +195,7 @@
                             <include content="ProgressBar">
                                 <param name="id" value="0"/>
                                 <param name="visible" value="Integer.IsGreater(ListItem.PercentPlayed,0)"/>
-                                <param name="x" value="1"/>
+                                <param name="x" value="71"/>
                                 <param name="y" value="0"/>
                                 <param name="width" value="304"/>
                                 <param name="info" value="ListItem.PercentPlayed"/>
@@ -205,13 +205,13 @@
                                 <param name="direction" value="horizontal"/>
                             </include>
                             <include content="FocusedIndicatorVertical">
-                                <param name="x" value="-12"/>
+                                <param name="x" value="58"/>
                                 <param name="y" value="30"/>
                                 <param name="height" value="50"/>
                                 <param name="visible" value="true"/>
                             </include>
                             <control type="label">
-                                <posx>0</posx>
+                                <posx>70</posx>
                                 <posy>30</posy>
                                 <width>360</width>
                                 <aligny>top</aligny>
@@ -221,7 +221,7 @@
                                 <label>$VAR[DetailsTitle]</label>
                             </control>
                             <control type="label">
-                                <posx>0</posx>
+                                <posx>70</posx>
                                 <posy>80</posy>
                                 <width>360</width>
                                 <aligny>top</aligny>
@@ -231,7 +231,7 @@
                                 <label>$VAR[DetailsRow1]$VAR[DetailsRow2,[COLOR=SeparatorColor] › [/COLOR]]</label>
                             </control>
                             <control type="label">
-                                <posx>0</posx>
+                                <posx>70</posx>
                                 <posy>122</posy>
                                 <width>360</width>
                                 <aligny>top</aligny>
@@ -241,7 +241,7 @@
                                 <label>$VAR[DetailsRow3]$VAR[DetailsRow4,[COLOR=SeparatorColor] › [/COLOR]]</label>
                             </control>
                             <include content="Codecs">
-                                <param name="x" value="-5"/>
+                                <param name="x" value="65"/>
                                 <param name="y" value="200"/>
                                 <param name="width" value="240"/>
                             </include>
@@ -252,16 +252,16 @@
             <control type="button">
                 <posx>0</posx>
                 <posy>0</posy>
-                <width>150</width>
+                <width>90</width>
                 <height>1080</height>
                 <texturefocus>-</texturefocus>
                 <texturenofocus>-</texturenofocus>
                 <onclick>Control.Move(59,-1)</onclick>
             </control>
             <control type="button">
-                <posx>460</posx>
+                <right>0</right>
                 <posy>0</posy>
-                <width>1460</width>
+                <width>150</width>
                 <height>1080</height>
                 <texturefocus>-</texturefocus>
                 <texturenofocus>-</texturenofocus>
@@ -279,16 +279,15 @@
         <control type="group">
             <visible>Control.IsVisible(58)</visible>
             <include>Facade_Fade</include>
-            <control type="fixedlist" id="58">
+            <control type="list" id="58">
                 <visible>$EXP[ContentIsSquare]</visible>
-                <posx>-475</posx>
+                <posx>0</posx>
                 <posy>0</posy>
-                <width>2395</width>
+                <width>1920</width>
                 <height>1080</height>
                 <onleft>300</onleft>
                 <onback>300</onback>
-                <movement>0</movement>
-                <focusposition>1</focusposition>
+                <preloaditems>4</preloaditems>
                 <orientation>horizontal</orientation>
                 <onleft>58</onleft>
                 <onright>58</onright>
@@ -299,7 +298,7 @@
                 <itemlayout height="1080" width="545">
                     <include content="ThumbsImages">
                         <param name="visible" value="true"/>
-                        <param name="x" value="0"/>
+                        <param name="x" value="70"/>
                         <param name="y" value="70"/>
                         <param name="width" value="535"/>
                         <param name="height" value="535"/>
@@ -311,7 +310,7 @@
                         <param name="borderdiffuse" value="BorderUnfocusedColor"/>
                     </include>
                     <include content="WatchedRecOverlay">
-                        <param name="x" value="478"/>
+                        <param name="x" value="548"/>
                         <param name="y" value="71"/>
                         <param name="width" value="50"/>
                         <param name="height" value="50"/>
@@ -322,7 +321,7 @@
                         <include content="ProgressBar">
                             <param name="id" value="0"/>
                             <param name="visible" value="Integer.IsGreater(ListItem.PercentPlayed,0)"/>
-                            <param name="x" value="1"/>
+                            <param name="x" value="71"/>
                             <param name="y" value="0"/>
                             <param name="width" value="531"/>
                             <param name="info" value="ListItem.PercentPlayed"/>
@@ -332,7 +331,7 @@
                             <param name="direction" value="horizontal"/>
                         </include>
                         <control type="label">
-                            <posx>0</posx>
+                            <posx>70</posx>
                             <posy>30</posy>
                             <width>515</width>
                             <aligny>top</aligny>
@@ -342,7 +341,7 @@
                             <label>$VAR[DetailsTitle]</label>
                         </control>
                         <control type="label">
-                            <posx>0</posx>
+                            <posx>70</posx>
                             <posy>80</posy>
                             <width>515</width>
                             <aligny>top</aligny>
@@ -352,7 +351,7 @@
                             <label>$VAR[DetailsRow1]$VAR[DetailsRow2,[COLOR=SeparatorColor] › [/COLOR]]</label>
                         </control>
                         <control type="label">
-                            <posx>0</posx>
+                            <posx>70</posx>
                             <posy>122</posy>
                             <width>515</width>
                             <aligny>top</aligny>
@@ -368,7 +367,7 @@
                         <include>ButtonFocusAnimation</include>
                         <include content="DiscArt">
                             <param name="visible" value="!ListItem.IsParentFolder+!String.IsEmpty(ListItem.Thumb)+[Container.content(songs)|Container.content(albums)]"/>
-                            <param name="x" value="277"/>
+                            <param name="x" value="347"/>
                             <param name="y" value="80"/>
                             <param name="width" value="515"/>
                             <param name="height" value="515"/>
@@ -376,7 +375,7 @@
                         </include>
                         <include content="ThumbsImages">
                             <param name="visible" value="true"/>
-                            <param name="x" value="0"/>
+                            <param name="x" value="70"/>
                             <param name="y" value="70"/>
                             <param name="width" value="535"/>
                             <param name="height" value="535"/>
@@ -388,7 +387,7 @@
                             <param name="borderdiffuse" value="$VAR[Picked.Theme.Color]"/>
                         </include>
                         <include content="WatchedRecOverlay">
-                            <param name="x" value="478"/>
+                            <param name="x" value="548"/>
                             <param name="y" value="71"/>
                             <param name="width" value="50"/>
                             <param name="height" value="50"/>
@@ -399,7 +398,7 @@
                             <include content="ProgressBar">
                                 <param name="id" value="0"/>
                                 <param name="visible" value="Integer.IsGreater(ListItem.PercentPlayed,0)"/>
-                                <param name="x" value="1"/>
+                                <param name="x" value="71"/>
                                 <param name="y" value="0"/>
                                 <param name="width" value="531"/>
                                 <param name="info" value="ListItem.PercentPlayed"/>
@@ -409,13 +408,13 @@
                                 <param name="direction" value="horizontal"/>
                             </include>
                             <include content="FocusedIndicatorVertical">
-                                <param name="x" value="-12"/>
+                                <param name="x" value="58"/>
                                 <param name="y" value="30"/>
                                 <param name="height" value="50"/>
                                 <param name="visible" value="true"/>
                             </include>
                             <control type="label">
-                                <posx>0</posx>
+                                <posx>70</posx>
                                 <posy>30</posy>
                                 <width>515</width>
                                 <aligny>top</aligny>
@@ -425,7 +424,7 @@
                                 <label>$VAR[DetailsTitle]</label>
                             </control>
                             <control type="label">
-                                <posx>0</posx>
+                                <posx>70</posx>
                                 <posy>80</posy>
                                 <width>515</width>
                                 <aligny>top</aligny>
@@ -435,7 +434,7 @@
                                 <label>$VAR[DetailsRow1]$VAR[DetailsRow2,[COLOR=SeparatorColor] › [/COLOR]]</label>
                             </control>
                             <control type="label">
-                                <posx>0</posx>
+                                <posx>70</posx>
                                 <posy>122</posy>
                                 <width>515</width>
                                 <aligny>top</aligny>
@@ -445,7 +444,7 @@
                                 <label>$VAR[DetailsRow3]$VAR[DetailsRow4,[COLOR=SeparatorColor] › [/COLOR]]</label>
                             </control>
                             <control type="textbox">
-                                <posx>0</posx>
+                                <posx>70</posx>
                                 <posy>177</posy>
                                 <height>205</height>
                                 <width>515</width>
@@ -461,16 +460,16 @@
             <control type="button">
                 <posx>0</posx>
                 <posy>0</posy>
-                <width>150</width>
+                <width>90</width>
                 <height>1080</height>
                 <texturefocus>-</texturefocus>
                 <texturenofocus>-</texturenofocus>
                 <onclick>Control.Move(58,-1)</onclick>
             </control>
             <control type="button">
-                <posx>545</posx>
+                <right>0</right>
                 <posy>0</posy>
-                <width>1375</width>
+                <width>150</width>
                 <height>1080</height>
                 <texturefocus>-</texturefocus>
                 <texturenofocus>-</texturenofocus>
@@ -488,16 +487,15 @@
         <control type="group">
             <visible>Control.IsVisible(57)</visible>
             <include>Facade_Fade</include>
-            <control type="fixedlist" id="57">
+            <control type="list" id="57">
                 <visible>$EXP[ContentIsEpisode]</visible>
-                <posx>-740</posx>
+                <posx>0</posx>
                 <posy>0</posy>
-                <width>2660</width>
+                <width>1920</width>
                 <height>1080</height>
                 <onleft>300</onleft>
                 <onback>300</onback>
-                <movement>0</movement>
-                <focusposition>1</focusposition>
+                <preloaditems>4</preloaditems>
                 <orientation>horizontal</orientation>
                 <onleft>57</onleft>
                 <onright>57</onright>
@@ -508,7 +506,7 @@
                 <itemlayout height="1080" width="810">
                     <include content="ThumbsImages">
                         <param name="visible" value="true"/>
-                        <param name="x" value="0"/>
+                        <param name="x" value="70"/>
                         <param name="y" value="70"/>
                         <param name="width" value="800"/>
                         <param name="height" value="450"/>
@@ -520,7 +518,7 @@
                         <param name="borderdiffuse" value="BorderUnfocusedColor"/>
                     </include>
                     <include content="WatchedRecOverlay">
-                        <param name="x" value="743"/>
+                        <param name="x" value="813"/>
                         <param name="y" value="71"/>
                         <param name="width" value="50"/>
                         <param name="height" value="50"/>
@@ -531,7 +529,7 @@
                         <include content="ProgressBar">
                             <param name="id" value="0"/>
                             <param name="visible" value="Integer.IsGreater(ListItem.PercentPlayed,0)"/>
-                            <param name="x" value="1"/>
+                            <param name="x" value="71"/>
                             <param name="y" value="0"/>
                             <param name="width" value="796"/>
                             <param name="info" value="ListItem.PercentPlayed"/>
@@ -541,7 +539,7 @@
                             <param name="direction" value="horizontal"/>
                         </include>
                         <control type="label">
-                            <posx>0</posx>
+                            <posx>70</posx>
                             <posy>30</posy>
                             <width>780</width>
                             <height>50</height>
@@ -551,7 +549,7 @@
                             <label>$VAR[DetailsTitle]</label>
                         </control>
                         <control type="label">
-                            <posx>0</posx>
+                            <posx>70</posx>
                             <posy>80</posy>
                             <width>780</width>
                             <height>50</height>
@@ -567,7 +565,7 @@
                         <include>ButtonFocusAnimation</include>
                         <include content="ThumbsImages">
                             <param name="visible" value="true"/>
-                            <param name="x" value="0"/>
+                            <param name="x" value="70"/>
                             <param name="y" value="70"/>
                             <param name="width" value="800"/>
                             <param name="height" value="450"/>
@@ -579,7 +577,7 @@
                             <param name="borderdiffuse" value="$VAR[Picked.Theme.Color]"/>
                         </include>
                         <include content="WatchedRecOverlay">
-                            <param name="x" value="743"/>
+                            <param name="x" value="813"/>
                             <param name="y" value="71"/>
                             <param name="width" value="50"/>
                             <param name="height" value="50"/>
@@ -590,7 +588,7 @@
                             <include content="ProgressBar">
                                 <param name="id" value="0"/>
                                 <param name="visible" value="Integer.IsGreater(ListItem.PercentPlayed,0)"/>
-                                <param name="x" value="1"/>
+                                <param name="x" value="71"/>
                                 <param name="y" value="0"/>
                                 <param name="width" value="796"/>
                                 <param name="info" value="ListItem.PercentPlayed"/>
@@ -600,13 +598,13 @@
                                 <param name="direction" value="horizontal"/>
                             </include>
                             <include content="FocusedIndicatorVertical">
-                                <param name="x" value="-12"/>
+                                <param name="x" value="58"/>
                                 <param name="y" value="30"/>
                                 <param name="height" value="50"/>
                                 <param name="visible" value="true"/>
                             </include>
                             <control type="label">
-                                <posx>0</posx>
+                                <posx>70</posx>
                                 <posy>30</posy>
                                 <width>780</width>
                                 <height>50</height>
@@ -616,7 +614,7 @@
                                 <label>$VAR[DetailsTitle]</label>
                             </control>
                             <control type="label">
-                                <posx>0</posx>
+                                <posx>70</posx>
                                 <posy>80</posy>
                                 <width>780</width>
                                 <height>50</height>
@@ -626,7 +624,7 @@
                                 <label>$VAR[DetailsRow1]$VAR[DetailsRow2,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow3,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow4,[COLOR=SeparatorColor] › [/COLOR]]</label>
                             </control>
                             <control type="textbox">
-                                <posx>0</posx>
+                                <posx>70</posx>
                                 <posy>135</posy>
                                 <height>170</height>
                                 <width>780</width>
@@ -636,7 +634,7 @@
                                 <include>myautoscroll</include>
                             </control>
                             <include content="Codecs">
-                                <param name="x" value="-5"/>
+                                <param name="x" value="65"/>
                                 <param name="y" value="340"/>
                                 <param name="width" value="240"/>
                             </include>
@@ -647,16 +645,16 @@
             <control type="button">
                 <posx>0</posx>
                 <posy>0</posy>
-                <width>150</width>
+                <width>90</width>
                 <height>1080</height>
                 <texturefocus>-</texturefocus>
                 <texturenofocus>-</texturenofocus>
                 <onclick>Control.Move(57,1)</onclick>
             </control>
             <control type="button">
-                <posx>810</posx>
+                <right>0</right>
                 <posy>0</posy>
-                <width>1460</width>
+                <width>150</width>
                 <height>1080</height>
                 <texturefocus>-</texturefocus>
                 <texturenofocus>-</texturenofocus>
@@ -676,15 +674,14 @@
         <control type="group">
             <visible>Control.IsVisible(58)</visible>
             <include>Facade_Fade</include>
-            <control type="fixedlist" id="58">
-                <posx>-475</posx>
+            <control type="list" id="58">
+                <posx>0</posx>
                 <posy>0</posy>
-                <width>2395</width>
+                <width>1920</width>
                 <height>1080</height>
                 <onleft>300</onleft>
                 <onback>300</onback>
-                <movement>0</movement>
-                <focusposition>1</focusposition>
+                <preloaditems>4</preloaditems>
                 <orientation>horizontal</orientation>
                 <onleft>58</onleft>
                 <onright>58</onright>
@@ -695,7 +692,7 @@
                 <itemlayout height="1080" width="545">
                     <include content="ThumbsImages">
                         <param name="visible" value="true"/>
-                        <param name="x" value="0"/>
+                        <param name="x" value="70"/>
                         <param name="y" value="70"/>
                         <param name="width" value="535"/>
                         <param name="height" value="402"/>
@@ -707,7 +704,7 @@
                         <param name="borderdiffuse" value="BorderUnfocusedColor"/>
                     </include>
                     <include content="WatchedRecOverlay">
-                        <param name="x" value="478"/>
+                        <param name="x" value="548"/>
                         <param name="y" value="71"/>
                         <param name="width" value="50"/>
                         <param name="height" value="50"/>
@@ -718,7 +715,7 @@
                         <include content="ProgressBar">
                             <param name="id" value="0"/>
                             <param name="visible" value="Integer.IsGreater(ListItem.Progress,0)"/>
-                            <param name="x" value="1"/>
+                            <param name="x" value="71"/>
                             <param name="y" value="0"/>
                             <param name="width" value="531"/>
                             <param name="info" value="ListItem.Progress"/>
@@ -728,7 +725,7 @@
                             <param name="direction" value="horizontal"/>
                         </include>
                         <control type="label">
-                            <posx>0</posx>
+                            <posx>70</posx>
                             <posy>30</posy>
                             <width>515</width>
                             <aligny>top</aligny>
@@ -738,7 +735,7 @@
                             <label>$VAR[DetailsTitle]</label>
                         </control>
                         <control type="label">
-                            <posx>0</posx>
+                            <posx>70</posx>
                             <posy>80</posy>
                             <width>515</width>
                             <aligny>top</aligny>
@@ -748,7 +745,7 @@
                             <label>$VAR[DetailsRow1]$VAR[DetailsRow2,[COLOR=SeparatorColor] › [/COLOR]]</label>
                         </control>
                         <control type="label">
-                            <posx>0</posx>
+                            <posx>70</posx>
                             <posy>122</posy>
                             <width>515</width>
                             <aligny>top</aligny>
@@ -758,7 +755,7 @@
                             <label>$VAR[DetailsRow3]</label>
                         </control>
                         <control type="label">
-                            <posx>0</posx>
+                            <posx>70</posx>
                             <posy>164</posy>
                             <width>515</width>
                             <aligny>top</aligny>
@@ -774,7 +771,7 @@
                         <include>ButtonFocusAnimation</include>
                         <include content="ThumbsImages">
                             <param name="visible" value="true"/>
-                            <param name="x" value="0"/>
+                            <param name="x" value="70"/>
                             <param name="y" value="70"/>
                             <param name="width" value="535"/>
                             <param name="height" value="402"/>
@@ -786,7 +783,7 @@
                             <param name="borderdiffuse" value="$VAR[Picked.Theme.Color]"/>
                         </include>
                         <include content="WatchedRecOverlay">
-                            <param name="x" value="478"/>
+                            <param name="x" value="548"/>
                             <param name="y" value="71"/>
                             <param name="width" value="50"/>
                             <param name="height" value="50"/>
@@ -797,7 +794,7 @@
                             <include content="ProgressBar">
                                 <param name="id" value="0"/>
                                 <param name="visible" value="Integer.IsGreater(ListItem.Progress,0)"/>
-                                <param name="x" value="1"/>
+                                <param name="x" value="71"/>
                                 <param name="y" value="0"/>
                                 <param name="width" value="531"/>
                                 <param name="info" value="ListItem.Progress"/>
@@ -807,13 +804,13 @@
                                 <param name="direction" value="horizontal"/>
                             </include>
                             <include content="FocusedIndicatorVertical">
-                                <param name="x" value="-12"/>
+                                <param name="x" value="58"/>
                                 <param name="y" value="30"/>
                                 <param name="height" value="50"/>
                                 <param name="visible" value="true"/>
                             </include>
                             <control type="label">
-                                <posx>0</posx>
+                                <posx>70</posx>
                                 <posy>30</posy>
                                 <width>515</width>
                                 <aligny>top</aligny>
@@ -823,7 +820,7 @@
                                 <label>$VAR[DetailsTitle]</label>
                             </control>
                             <control type="label">
-                                <posx>0</posx>
+                                <posx>70</posx>
                                 <posy>80</posy>
                                 <width>515</width>
                                 <aligny>top</aligny>
@@ -833,7 +830,7 @@
                                 <label>$VAR[DetailsRow1]$VAR[DetailsRow2,[COLOR=SeparatorColor] › [/COLOR]]</label>
                             </control>
                             <control type="label">
-                                <posx>0</posx>
+                                <posx>70</posx>
                                 <posy>122</posy>
                                 <width>515</width>
                                 <aligny>top</aligny>
@@ -843,7 +840,7 @@
                                 <label>$VAR[DetailsRow3]</label>
                             </control>
                             <control type="label">
-                                <posx>0</posx>
+                                <posx>70</posx>
                                 <posy>164</posy>
                                 <width>515</width>
                                 <aligny>top</aligny>
@@ -853,7 +850,7 @@
                                 <label>$VAR[DetailsRow4]</label>
                             </control>
                             <control type="textbox">
-                                <posx>0</posx>
+                                <posx>70</posx>
                                 <posy>219</posy>
                                 <height>330</height>
                                 <width>515</width>
@@ -869,16 +866,16 @@
             <control type="button">
                 <posx>0</posx>
                 <posy>0</posy>
-                <width>150</width>
+                <width>90</width>
                 <height>1080</height>
                 <texturefocus>-</texturefocus>
                 <texturenofocus>-</texturenofocus>
                 <onclick>Control.Move(58,-1)</onclick>
             </control>
             <control type="button">
-                <posx>545</posx>
+                <right>0</right>
                 <posy>0</posy>
-                <width>1375</width>
+                <width>150</width>
                 <height>1080</height>
                 <texturefocus>-</texturefocus>
                 <texturenofocus>-</texturenofocus>

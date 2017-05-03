@@ -68,7 +68,7 @@
                             <param name="width" value="230"/>
                             <param name="height" value="230"/>
                             <param name="aspectratio" value="keep"/>
-                            <param name="align" value="right"/>
+                            <param name="align" value="left"/>
                             <param name="aligny" value="top"/>
                             <param name="flipy" value="false"/>
                             <param name="texturediffuse" value="ThumbsUnfocusedColor"/>
@@ -106,7 +106,7 @@
                                 <param name="width" value="230"/>
                                 <param name="height" value="230"/>
                                 <param name="aspectratio" value="keep"/>
-                                <param name="align" value="right"/>
+                                <param name="align" value="left"/>
                                 <param name="aligny" value="top"/>
                                 <param name="flipy" value="false"/>
                                 <param name="texturediffuse" value="ThumbsFocusedColor"/>

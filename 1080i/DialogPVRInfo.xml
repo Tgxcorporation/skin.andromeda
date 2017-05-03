@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window type="dialog">
-    <defaultcontrol always="true">9009</defaultcontrol>
+    <defaultcontrol always="true">9000</defaultcontrol>
     <controls>
         <include>DimBG</include>
         <control type="group">
@@ -15,6 +15,7 @@
             </control>
             <include>WindowClosingButton</include>
             <control type="group">
+                <include>LeftMenuHasFocusAnimation</include>
                 <include>DialogOpenClose</include>
                 <include content="ThumbsImages">
                     <param name="visible" value="true"/>
@@ -202,11 +203,11 @@
                             <visible>!Skin.HasSetting(plexbmc)</visible>
                         </item>
                         <!--<item>-->
-                            <!--<label>$LOCALIZE[573]:</label>-->
-                            <!--<label2>$INFO[ListItem.Path]</label2>-->
-                            <!--<onclick>Dialog.Close(movieinformation)</onclick>-->
-                            <!--<onclick>ActivateWindow(Videos,$INFO[ListItem.Path],return)</onclick>-->
-                            <!--<visible>!Skin.HasSetting(plexbmc)</visible>-->
+                        <!--<label>$LOCALIZE[573]:</label>-->
+                        <!--<label2>$INFO[ListItem.Path]</label2>-->
+                        <!--<onclick>Dialog.Close(movieinformation)</onclick>-->
+                        <!--<onclick>ActivateWindow(Videos,$INFO[ListItem.Path],return)</onclick>-->
+                        <!--<visible>!Skin.HasSetting(plexbmc)</visible>-->
                         <!--</item>-->
                         <item>
                             <label>$LOCALIZE[567]:</label>
@@ -238,56 +239,63 @@
                     <label>$VAR[Plots]</label>
                     <include>myautoscroll</include>
                 </control>
-                <!-- SIDE MENU -->
-                <control type="group">
-                    <include>LeftMenu</include>
-                    <control type="grouplist" id="9000">
-                        <ondown>9000</ondown>
+            </control>
+            <!-- SIDE MENU -->
+            <control type="group">
+                <include>LeftMenu</include>
+                <control type="grouplist" id="9000">
+                    <ondown>9000</ondown>
+                    <onright>9009</onright>
+                    <include>LeftMenuButtonGroup</include>
+                    <control type="button" id="122">
+                        <label>Extended Info</label>
+                        <visible>System.HasAddon(script.extendedinfo)</visible>
+                        <onclick>Action(Close)</onclick>
+                        <onclick>dialog.close(all,true)</onclick>
+                        <onclick>RunScript(script.extendedinfo,info=extendedinfo,name=$INFO[ListItem.Title])</onclick>
+                        <include>LeftMenuButton</include>
                         <onright>9009</onright>
-                        <include>LeftMenuButtonGroup</include>
-                        <control type="button" id="122">
-                            <label>Extended Info</label>
-                            <visible>System.HasAddon(script.extendedinfo)</visible>
-                            <onclick>Action(Close)</onclick>
-                            <onclick>dialog.close(all,true)</onclick>
-                            <onclick>RunScript(script.extendedinfo,info=extendedinfo,name=$INFO[ListItem.Title])</onclick>
-                            <include>LeftMenuButton</include>
-                        </control>
-                        <control type="button" id="4">
-                            <description>Find similar</description>
-                            <include>LeftMenuButton</include>
-                            <label>19003</label>
-                            <visible>Window.IsActive(PVRGuideInfo)</visible>
-                        </control>
-                        <control type="button" id="5">
-                            <description>Switch to Channel</description>
-                            <include>LeftMenuButton</include>
-                            <label>19165</label>
-                            <visible>Window.IsActive(PVRGuideInfo)</visible>
-                        </control>
-                        <control type="button" id="8">
-                            <description>Play recording</description>
-                            <include>LeftMenuButton</include>
-                            <label>19687</label>
-                            <visible>Window.IsActive(PVRGuideInfo) | Window.IsActive(PVRRecordingInfo)</visible>
-                        </control>
-                        <control type="button" id="6">
-                            <description>Record</description>
-                            <include>LeftMenuButton</include>
-                            <label>-</label>
-                            <visible>Window.IsActive(PVRGuideInfo)</visible>
-                        </control>
-                        <control type="button" id="9">
-                            <description>Add Timer</description>
-                            <include>LeftMenuButton</include>
-                            <label>$LOCALIZE[19061]</label>
-                            <visible>Window.IsActive(PVRGuideInfo)</visible>
-                        </control>
-                        <control type="button" id="7">
-                            <description>OK</description>
-                            <include>LeftMenuButton</include>
-                            <label>186</label>
-                        </control>
+                    </control>
+                    <control type="button" id="4">
+                        <description>Find similar</description>
+                        <include>LeftMenuButton</include>
+                        <label>19003</label>
+                        <visible>Window.IsActive(PVRGuideInfo)</visible>
+                        <onright>9009</onright>
+                    </control>
+                    <control type="button" id="5">
+                        <description>Switch to Channel</description>
+                        <include>LeftMenuButton</include>
+                        <label>19165</label>
+                        <visible>Window.IsActive(PVRGuideInfo)</visible>
+                        <onright>9009</onright>
+                    </control>
+                    <control type="button" id="8">
+                        <description>Play recording</description>
+                        <include>LeftMenuButton</include>
+                        <label>19687</label>
+                        <visible>Window.IsActive(PVRGuideInfo) | Window.IsActive(PVRRecordingInfo)</visible>
+                        <onright>9009</onright>
+                    </control>
+                    <control type="button" id="6">
+                        <description>Record</description>
+                        <include>LeftMenuButton</include>
+                        <label>-</label>
+                        <visible>Window.IsActive(PVRGuideInfo)</visible>
+                        <onright>9009</onright>
+                    </control>
+                    <control type="button" id="9">
+                        <description>Add Timer</description>
+                        <include>LeftMenuButton</include>
+                        <label>$LOCALIZE[19061]</label>
+                        <visible>Window.IsActive(PVRGuideInfo)</visible>
+                        <onright>9009</onright>
+                    </control>
+                    <control type="button" id="7">
+                        <description>OK</description>
+                        <include>LeftMenuButton</include>
+                        <label>186</label>
+                        <onright>9009</onright>
                     </control>
                 </control>
             </control>
