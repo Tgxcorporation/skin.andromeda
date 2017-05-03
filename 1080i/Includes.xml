@@ -767,7 +767,7 @@
                 <width>2</width>
                 <height>1080</height>
                 <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-                <texture border="1">common/line_white_vertical.png</texture>
+                <texture border="1">common/line_gray_vertical.png</texture>
             </control>
             <control type="button" id="8999">
                 <description>Fake button for mouse control</description>
