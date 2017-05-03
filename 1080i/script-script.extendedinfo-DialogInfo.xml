@@ -1181,16 +1181,6 @@
                         <onclick>SetFocus(750)</onclick>
                     </control>
                 </control>
-                <control type="group">
-                    <animation effect="slide" tween="circle" easing="inout" time="150" start="0,0" end="1920,0" condition="$EXP[LeftMenuHasFocus]">Conditional</animation>
-                    <posx>-1700</posx>
-                    <include content="DialogMenuScroller">
-                        <param name="y" value="60"/>
-                        <param name="height" value="960"/>
-                        <param name="onright" value="150"/>
-                        <param name="onleft" value="9000"/>
-                    </include>
-                </control>
             </control>
         </control>
     </controls>
