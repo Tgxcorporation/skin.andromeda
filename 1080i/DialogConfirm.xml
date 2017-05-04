@@ -15,6 +15,10 @@
                     <param name="y" value="0"/>
                     <param name="width" value="1920"/>
                     <param name="info" value="System.Progressbar"/>
+                    <param name="endRotation" value="0"/>
+                    <param name="centerRotation" value="auto"/>
+                    <param name="visiblefocus" value="true"/>
+                    <param name="direction" value="horizontal"/>
                 </include>
                 <control type="label" id="1">
                     <posx>100</posx>
