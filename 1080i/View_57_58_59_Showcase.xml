@@ -204,10 +204,10 @@
                                 <param name="visiblefocus" value="true"/>
                                 <param name="direction" value="horizontal"/>
                             </include>
-                            <include content="FocusedIndicatorVertical">
-                                <param name="x" value="58"/>
-                                <param name="y" value="30"/>
-                                <param name="height" value="50"/>
+                            <include content="FocusedIndicatorHorizontal">
+                                <param name="x" value="71"/>
+                                <param name="y" value="21"/>
+                                <param name="width" value="387"/>
                                 <param name="visible" value="true"/>
                             </include>
                             <control type="label">
@@ -407,10 +407,10 @@
                                 <param name="visiblefocus" value="true"/>
                                 <param name="direction" value="horizontal"/>
                             </include>
-                            <include content="FocusedIndicatorVertical">
-                                <param name="x" value="58"/>
-                                <param name="y" value="30"/>
-                                <param name="height" value="50"/>
+                            <include content="FocusedIndicatorHorizontal">
+                                <param name="x" value="71"/>
+                                <param name="y" value="21"/>
+                                <param name="width" value="532"/>
                                 <param name="visible" value="true"/>
                             </include>
                             <control type="label">
@@ -597,10 +597,10 @@
                                 <param name="visiblefocus" value="true"/>
                                 <param name="direction" value="horizontal"/>
                             </include>
-                            <include content="FocusedIndicatorVertical">
-                                <param name="x" value="58"/>
-                                <param name="y" value="30"/>
-                                <param name="height" value="50"/>
+                            <include content="FocusedIndicatorHorizontal">
+                                <param name="x" value="71"/>
+                                <param name="y" value="21"/>
+                                <param name="width" value="797"/>
                                 <param name="visible" value="true"/>
                             </include>
                             <control type="label">
@@ -803,10 +803,10 @@
                                 <param name="visiblefocus" value="true"/>
                                 <param name="direction" value="horizontal"/>
                             </include>
-                            <include content="FocusedIndicatorVertical">
-                                <param name="x" value="58"/>
-                                <param name="y" value="30"/>
-                                <param name="height" value="50"/>
+                            <include content="FocusedIndicatorHorizontal">
+                                <param name="x" value="71"/>
+                                <param name="y" value="21"/>
+                                <param name="width" value="532"/>
                                 <param name="visible" value="true"/>
                             </include>
                             <control type="label">

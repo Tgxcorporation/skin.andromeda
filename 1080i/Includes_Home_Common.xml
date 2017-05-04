@@ -376,10 +376,10 @@
                         <param name="visiblefocus" value="control.hasfocus($PARAM[id])"/>
                         <param name="direction" value="horizontal"/>
                     </include>
-                    <include content="FocusedIndicatorVertical">
-                        <param name="x" value="58"/>
-                        <param name="y" value="30"/>
-                        <param name="height" value="50"/>
+                    <include content="FocusedIndicatorHorizontal">
+                        <param name="x" value="71"/>
+                        <param name="y" value="21"/>
+                        <param name="width" value="312"/>
                         <param name="visible" value="control.hasfocus($PARAM[id])"/>
                     </include>
                     <control type="label">
@@ -556,10 +556,10 @@
                         <param name="visiblefocus" value="control.hasfocus($PARAM[id])"/>
                         <param name="direction" value="horizontal"/>
                     </include>
-                    <include content="FocusedIndicatorVertical">
-                        <param name="x" value="58"/>
-                        <param name="y" value="30"/>
-                        <param name="height" value="50"/>
+                    <include content="FocusedIndicatorHorizontal">
+                        <param name="x" value="71"/>
+                        <param name="y" value="21"/>
+                        <param name="width" value="380"/>
                         <param name="visible" value="control.hasfocus($PARAM[id])"/>
                     </include>
                     <control type="label">
@@ -736,10 +736,10 @@
                         <param name="visiblefocus" value="control.hasfocus($PARAM[id])"/>
                         <param name="direction" value="horizontal"/>
                     </include>
-                    <include content="FocusedIndicatorVertical">
-                        <param name="x" value="58"/>
-                        <param name="y" value="30"/>
-                        <param name="height" value="50"/>
+                    <include content="FocusedIndicatorHorizontal">
+                        <param name="x" value="71"/>
+                        <param name="y" value="21"/>
+                        <param name="width" value="492"/>
                         <param name="visible" value="control.hasfocus($PARAM[id])"/>
                     </include>
                     <control type="label">
@@ -916,10 +916,10 @@
                         <param name="visiblefocus" value="control.hasfocus($PARAM[id])"/>
                         <param name="direction" value="horizontal"/>
                     </include>
-                    <include content="FocusedIndicatorVertical">
-                        <param name="x" value="58"/>
-                        <param name="y" value="30"/>
-                        <param name="height" value="50"/>
+                    <include content="FocusedIndicatorHorizontal">
+                        <param name="x" value="71"/>
+                        <param name="y" value="21"/>
+                        <param name="width" value="426"/>
                         <param name="visible" value="control.hasfocus($PARAM[id])"/>
                     </include>
                     <control type="label">
