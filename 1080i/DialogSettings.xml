@@ -23,7 +23,7 @@
                     <posx>80</posx>
                     <posy>180</posy>
                     <width>1760</width>
-                    <height>720</height>
+                    <height>600</height>
                     <itemgap>0</itemgap>
                     <pagecontrol>60</pagecontrol>
                     <onup>5</onup>
@@ -34,7 +34,7 @@
                 <control type="scrollbar" id="60">
                     <posx>1870</posx>
                     <posy>180</posy>
-                    <height>720</height>
+                    <height>600</height>
                     <onleft>5</onleft>
                     <onright>5</onright>
                     <include>VerticalScroller</include>
@@ -83,7 +83,7 @@
                 </control>
                 <control type="grouplist" id="9001">
                     <posx>80</posx>
-                    <posy>900</posy>
+                    <posy>840</posy>
                     <width>1920</width>
                     <height>180</height>
                     <itemgap>0</itemgap>
