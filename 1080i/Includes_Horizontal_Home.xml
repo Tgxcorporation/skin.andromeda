@@ -41,7 +41,7 @@
                     <posy>15</posy>
                     <control type="label">
                         <include>WindowTitle</include>
-                        <label>$VAR[HomeTitles]</label>
+                        <label>KODI</label>
                     </control>
                     <control type="label">
                         <include>WindowTitleSub</include>

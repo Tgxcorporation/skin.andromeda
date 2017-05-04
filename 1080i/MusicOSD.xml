@@ -99,7 +99,6 @@
                 <control type="button" id="556">
                     <include>TopBarButton</include>
                     <label></label>
-                    <!--<label2>$VAR[MusicPlayingFanartLabel2]</label2>-->
                     <onclick>Skin.ToggleSetting(MusicPlayingFanart)</onclick>
                 </control>
                 <control type="button" id="555">
