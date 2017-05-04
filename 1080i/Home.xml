@@ -9,11 +9,11 @@
         <!--DUMMY BUTTON-->
         <control type="button" id="378432">
             <visible>[
-                [Control.isvisible(700011)|Control.isvisible(700012)|Control.isvisible(700013)|Control.isvisible(700014)|Control.isvisible(700015)|
-                Control.isvisible(700021)|Control.isvisible(700022)|Control.isvisible(700023)|Control.isvisible(700024)|Control.isvisible(700025)|
-                Control.isvisible(700031)|Control.isvisible(700032)|Control.isvisible(700033)|Control.isvisible(700034)|Control.isvisible(700045)|
-                Control.isvisible(700041)|Control.isvisible(700042)|Control.isvisible(700043)|Control.isvisible(700044)|Control.isvisible(700045)|
-                Control.isvisible(700051)|Control.isvisible(700052)|Control.isvisible(700053)|Control.isvisible(700054)|Control.isvisible(700055)]|
+                [Control.isvisible(700011)|Control.isvisible(700012)|Control.isvisible(700013)|Control.isvisible(700014)|
+                Control.isvisible(700021)|Control.isvisible(700022)|Control.isvisible(700023)|Control.isvisible(700024)|
+                Control.isvisible(700031)|Control.isvisible(700032)|Control.isvisible(700033)|Control.isvisible(700034)|
+                Control.isvisible(700041)|Control.isvisible(700042)|Control.isvisible(700043)|Control.isvisible(700044)|
+                Control.isvisible(700051)|Control.isvisible(700052)|Control.isvisible(700053)|Control.isvisible(700054)]|
                 [Skin.HasSetting(plexbmc)+[
                 [[Integer.IsGreater(Container(900).NumItems,0)]+String.IsEqual(Container(300).ListItem.Property(type),photo)]|
                 [[Integer.IsGreater(Container(901).NumItems,0)]+String.IsEqual(Container(300).ListItem.Label,$LOCALIZE[31010])]|
@@ -40,22 +40,18 @@
                 control.hasfocus(700012)|
                 control.hasfocus(700013)|
                 control.hasfocus(700014)|
-                control.hasfocus(700015)|
                 control.hasfocus(700021)|
                 control.hasfocus(700022)|
                 control.hasfocus(700023)|
                 control.hasfocus(700024)|
-                control.hasfocus(700025)|
                 control.hasfocus(700031)|
                 control.hasfocus(700032)|
                 control.hasfocus(700033)|
                 control.hasfocus(700034)|
-                control.hasfocus(700035)|
                 control.hasfocus(700041)|
                 control.hasfocus(700042)|
                 control.hasfocus(700043)|
                 control.hasfocus(700044)|
-                control.hasfocus(700045)|
                 control.hasfocus(700051)|
                 control.hasfocus(700052)|
                 control.hasfocus(700053)|

@@ -475,27 +475,22 @@
         <value condition="Control.HasFocus(700012)">$INFO[Container(700012).ListItem.Art(fanart)]</value>
         <value condition="Control.HasFocus(700013)">$INFO[Container(700013).ListItem.Art(fanart)]</value>
         <value condition="Control.HasFocus(700014)">$INFO[Container(700014).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(700015)">$INFO[Container(700015).ListItem.Art(fanart)]</value>
         <value condition="Control.HasFocus(700021)">$INFO[Container(700021).ListItem.Art(fanart)]</value>
         <value condition="Control.HasFocus(700022)">$INFO[Container(700022).ListItem.Art(fanart)]</value>
         <value condition="Control.HasFocus(700023)">$INFO[Container(700023).ListItem.Art(fanart)]</value>
         <value condition="Control.HasFocus(700024)">$INFO[Container(700024).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(700025)">$INFO[Container(700025).ListItem.Art(fanart)]</value>
         <value condition="Control.HasFocus(700031)">$INFO[Container(700031).ListItem.Art(fanart)]</value>
         <value condition="Control.HasFocus(700032)">$INFO[Container(700032).ListItem.Art(fanart)]</value>
         <value condition="Control.HasFocus(700033)">$INFO[Container(700033).ListItem.Art(fanart)]</value>
         <value condition="Control.HasFocus(700034)">$INFO[Container(700034).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(700035)">$INFO[Container(700035).ListItem.Art(fanart)]</value>
         <value condition="Control.HasFocus(700041)">$INFO[Container(700041).ListItem.Art(fanart)]</value>
         <value condition="Control.HasFocus(700042)">$INFO[Container(700042).ListItem.Art(fanart)]</value>
         <value condition="Control.HasFocus(700043)">$INFO[Container(700043).ListItem.Art(fanart)]</value>
         <value condition="Control.HasFocus(700044)">$INFO[Container(700044).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(700045)">$INFO[Container(700045).ListItem.Art(fanart)]</value>
         <value condition="Control.HasFocus(700051)">$INFO[Container(700051).ListItem.Art(fanart)]</value>
         <value condition="Control.HasFocus(700052)">$INFO[Container(700052).ListItem.Art(fanart)]</value>
         <value condition="Control.HasFocus(700053)">$INFO[Container(700053).ListItem.Art(fanart)]</value>
         <value condition="Control.HasFocus(700054)">$INFO[Container(700054).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(700055)">$INFO[Container(700055).ListItem.Art(fanart)]</value>
     </variable>
     <variable name="SkinShortcutBackgroundDescription">
         <value condition="Skin.HasSetting(plexbmc)+!String.IsEqual(Container(211).ListItem.Property(uuid),)+!String.IsEmpty(Container(211).ListItem.ActualIcon)">$INFO[Container(211).ListItem.ActualIcon]</value>

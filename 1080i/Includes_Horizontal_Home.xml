@@ -168,7 +168,8 @@
                         <height>60</height>
                         <onleft>300</onleft>
                         <onright>300</onright>
-                        <ondown>900</ondown>
+                        <ondown condition="Skin.HasSetting(plexbmc)">900</ondown>
+                        <ondown condition="!Skin.HasSetting(plexbmc)">700011</ondown>
                         <!--<onup condition="control.isvisible(378432)">7010</onup>-->
                         <onup>9001</onup>
                         <pagecontrol>-</pagecontrol>
