@@ -1383,6 +1383,9 @@
             <visible>!Skin.HasSetting(plexbmc)+Skin.HasSetting(EnableCdArt)</visible>
             <visible>$PARAM[visible]</visible>
             <include>Icon_Fade</include>
+            <animation type="Focus" reversible="false">
+                <effect type="fade" start="0" end="100" time="150" delay="50"/>
+            </animation>
             <control type="image">
                 <posx>$PARAM[x]</posx>
                 <posy>$PARAM[y]</posy>
