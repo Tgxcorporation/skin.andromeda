@@ -173,7 +173,7 @@
                         <!--<onup condition="control.isvisible(378432)">7010</onup>-->
                         <onup>9001</onup>
                         <pagecontrol>-</pagecontrol>
-                        <preloaditems>4</preloaditems>
+                        <!--<preloaditems>4</preloaditems>-->
                         <orientation>horizontal</orientation>
                         <itemlayout height="60" width="384">
                             <control type="label">
