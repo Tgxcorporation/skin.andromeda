@@ -1478,7 +1478,7 @@
         </include>
         <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
             <param name="title" value="$INFO[Container(300).ListItem.Property(widgetName.4)]"/>
-            <param name="ondown" value="700011"/>
+            <param name="ondown" value="700054"/>
             <param name="onup" value="700053"/>
             <param name="height" value="547"/>
             <param name="gfxType" value="Channel"/>
