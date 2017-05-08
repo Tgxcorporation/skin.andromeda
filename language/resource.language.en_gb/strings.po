@@ -414,6 +414,14 @@ msgctxt "#31114"
 msgid "Multi Image"
 msgstr ""
 
+msgctxt "#31115"
+msgid "Aspect ratio"
+msgstr ""
+
+msgctxt "#31116"
+msgid "Disable widget limit"
+msgstr ""
+
 #empty strings from id 31115 to 31131
 
 msgctxt "#31132"

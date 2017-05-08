@@ -37,9 +37,9 @@
                     <param name="labelTitle" value="$PARAM[labelTitle]"/>
                     <param name="labelSubTitle" value="$PARAM[labelSubTitle]"/>
                 </include>
-                <content target="$PARAM[target]">$PARAM[content]</content>
+                <content limit="$VAR[WidgetLimit]" sortby="$PARAM[sortby]" sortorder="$PARAM[sortdirection]" target="$PARAM[target]" >$PARAM[content]</content>
             </control>
-            <include content="Widget_NavButtons_$PARAM[gfxType]">
+            <include content="Widget_NavButtons_$PARAM[aspect]">
                 <param name="id" value="$PARAM[id]"/>
                 <param name="height" value="$PARAM[height]"/>
             </include>
@@ -1108,17 +1108,12 @@
             <param name="gfxType" value="Poster"/>
             <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath)]"/>
             <param name="id" value="700011"/>
-            <param name="visibility" value="[String.StartsWith(Container(300).ListItem.Property(widgetType),season)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType),actor)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType),director)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType),set)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType),video)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType),movie)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType),tvshow)|
-                    [String.StartsWith(Container(300).ListItem.Property(widgetType),musicvideo)+String.IsEqual(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]]"/>
+            <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(widgetAspect),$LOCALIZE[20021])"/>
             <param name="labelTitle" value="$INFO[ListItem.TVShowTitle,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Label]"/>
             <param name="labelSubTitle" value="$INFO[ListItem.Rating,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year]$INFO[ListItem.Duration,[COLOR=SeparatorColor] › [/COLOR], $LOCALIZE[31297]]"/>
             <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget)]"/>
+            <param name="sortby" value="$INFO[Container(300).ListItem.Property(widgetSortBy)]"/>
+            <param name="sortdirection" value="$INFO[Container(300).ListItem.Property(widgetSortDirection)]"/>
         </include>
         <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
             <param name="title" value="$INFO[Container(300).ListItem.Property(widgetName)]"/>
@@ -1128,11 +1123,12 @@
             <param name="gfxType" value="Episode"/>
             <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath)]"/>
             <param name="id" value="700012"/>
-            <param name="visibility" value="[String.StartsWith(Container(300).ListItem.Property(widgetType),episode)|
-                    [String.StartsWith(Container(300).ListItem.Property(widgetType),musicvideo)+!String.IsEqual(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]]"/>
+            <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(widgetAspect),$LOCALIZE[20359])"/>
             <param name="labelTitle" value="$INFO[ListItem.TVShowTitle,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Label]"/>
             <param name="labelSubTitle" value="$INFO[ListItem.Rating,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration,, $LOCALIZE[31297]]"/>
             <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget)]"/>
+            <param name="sortby" value="$INFO[Container(300).ListItem.Property(widgetSortBy)]"/>
+            <param name="sortdirection" value="$INFO[Container(300).ListItem.Property(widgetSortDirection)]"/>
         </include>
         <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
             <param name="title" value="$INFO[Container(300).ListItem.Property(widgetName)]"/>
@@ -1142,26 +1138,12 @@
             <param name="gfxType" value="Square"/>
             <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath)]"/>
             <param name="id" value="700013"/>
-            <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(widgetType),audio)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType),album)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType),song)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType),genre)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType),year)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType),playlist)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType),plugin)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType),studio)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType),tag)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType),countr)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType),role)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType),image)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType),artist)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType),file)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType),picture)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType),addon)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType),program)"/>
+            <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(widgetAspect),$LOCALIZE[21371])"/>
             <param name="labelTitle" value="$INFO[ListItem.Label]"/>
             <param name="labelSubTitle" value="$INFO[ListItem.Artist]$INFO[ListItem.Rating,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration,[COLOR=SeparatorColor] › [/COLOR], $LOCALIZE[31297]]"/>
             <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget)]"/>
+            <param name="sortby" value="$INFO[Container(300).ListItem.Property(widgetSortBy)]"/>
+            <param name="sortdirection" value="$INFO[Container(300).ListItem.Property(widgetSortDirection)]"/>
         </include>
         <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
             <param name="title" value="$INFO[Container(300).ListItem.Property(widgetName)]"/>
@@ -1171,11 +1153,12 @@
             <param name="gfxType" value="Channel"/>
             <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath)]"/>
             <param name="id" value="700014"/>
-            <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(widgetType),tv)|
-                    String.IsEqual(Container(300).ListItem.Property(widgetType),radio)"/>
+            <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(widgetAspect),$LOCALIZE[19029])"/>
             <param name="labelTitle" value="$INFO[ListItem.Label]"/>
             <param name="labelSubTitle" value="$INFO[ListItem.Label2,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration]"/>
             <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget)]"/>
+            <param name="sortby" value="$INFO[Container(300).ListItem.Property(widgetSortBy)]"/>
+            <param name="sortdirection" value="$INFO[Container(300).ListItem.Property(widgetSortDirection)]"/>
         </include>
         <!--WIDGET 2-->
         <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
@@ -1186,17 +1169,12 @@
             <param name="gfxType" value="Poster"/>
             <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.1)]"/>
             <param name="id" value="700021"/>
-            <param name="visibility" value="String.StartsWith(Container(300).ListItem.Property(widgetType.1),season)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.1),actor)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.1),director)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.1),set)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.1),video)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.1),movie)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.1),tvshow)|
-                    [String.StartsWith(Container(300).ListItem.Property(widgetType.1),musicvideo)+String.IsEqual(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]"/>
+            <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(widgetAspect.1),$LOCALIZE[20021])"/>
             <param name="labelTitle" value="$INFO[ListItem.TVShowTitle,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Label]"/>
             <param name="labelSubTitle" value="$INFO[ListItem.Rating,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year]$INFO[ListItem.Duration,[COLOR=SeparatorColor] › [/COLOR], $LOCALIZE[31297]]"/>
             <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.1)]"/>
+            <param name="sortby" value="$INFO[Container(300).ListItem.Property(widgetSortBy.1)]"/>
+            <param name="sortdirection" value="$INFO[Container(300).ListItem.Property(widgetSortDirection.1)]"/>
         </include>
         <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
             <param name="title" value="$INFO[Container(300).ListItem.Property(widgetName.1)]"/>
@@ -1206,11 +1184,12 @@
             <param name="gfxType" value="Episode"/>
             <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.1)]"/>
             <param name="id" value="700022"/>
-            <param name="visibility" value="String.StartsWith(Container(300).ListItem.Property(widgetType.1),episode)|
-                    [String.StartsWith(Container(300).ListItem.Property(widgetType.1),musicvideo)+!String.IsEqual(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]"/>
+            <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(widgetAspect.1),$LOCALIZE[20359])"/>
             <param name="labelTitle" value="$INFO[ListItem.TVShowTitle,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Label]"/>
             <param name="labelSubTitle" value="$INFO[ListItem.Rating,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration,, $LOCALIZE[31297]]"/>
             <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.1)]"/>
+            <param name="sortby" value="$INFO[Container(300).ListItem.Property(widgetSortBy.1)]"/>
+            <param name="sortdirection" value="$INFO[Container(300).ListItem.Property(widgetSortDirection.1)]"/>
         </include>
         <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
             <param name="title" value="$INFO[Container(300).ListItem.Property(widgetName.1)]"/>
@@ -1220,26 +1199,12 @@
             <param name="gfxType" value="Square"/>
             <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.1)]"/>
             <param name="id" value="700023"/>
-            <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(widgetType.1),audio)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.1),album)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.1),song)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.1),genre)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.1),year)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.1),playlist)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.1),plugin)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.1),studio)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.1),tag)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.1),countr)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.1),role)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.1),image)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.1),artist)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.1),file)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.1),picture)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.1),addon)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.1),program)"/>
+            <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(widgetAspect.1),$LOCALIZE[21371])"/>
             <param name="labelTitle" value="$INFO[ListItem.Label]"/>
             <param name="labelSubTitle" value="$INFO[ListItem.Artist]$INFO[ListItem.Rating,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration,[COLOR=SeparatorColor] › [/COLOR], $LOCALIZE[31297]]"/>
             <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.1)]"/>
+            <param name="sortby" value="$INFO[Container(300).ListItem.Property(widgetSortBy.1)]"/>
+            <param name="sortdirection" value="$INFO[Container(300).ListItem.Property(widgetSortDirection.1)]"/>
         </include>
         <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
             <param name="title" value="$INFO[Container(300).ListItem.Property(widgetName.1)]"/>
@@ -1249,11 +1214,12 @@
             <param name="gfxType" value="Channel"/>
             <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.1)]"/>
             <param name="id" value="700024"/>
-            <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(widgetType.1),tv)|
-                    String.IsEqual(Container(300).ListItem.Property(widgetType.1),radio)"/>
+            <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(widgetAspect.1),$LOCALIZE[19029])"/>
             <param name="labelTitle" value="$INFO[ListItem.Label]"/>
             <param name="labelSubTitle" value="$INFO[ListItem.Label2,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration]"/>
             <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.1)]"/>
+            <param name="sortby" value="$INFO[Container(300).ListItem.Property(widgetSortBy.1)]"/>
+            <param name="sortdirection" value="$INFO[Container(300).ListItem.Property(widgetSortDirection.1)]"/>
         </include>
         <!--WIDGET 3-->
         <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
@@ -1264,17 +1230,12 @@
             <param name="gfxType" value="Poster"/>
             <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.2)]"/>
             <param name="id" value="700031"/>
-            <param name="visibility" value="String.StartsWith(Container(300).ListItem.Property(widgetType.2),season)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.2),actor)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.2),director)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.2),set)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.2),video)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.2),movie)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.2),tvshow)|
-                    [String.StartsWith(Container(300).ListItem.Property(widgetType.2),musicvideo)+String.IsEqual(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]"/>
+            <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(widgetAspect.2),$LOCALIZE[20021])"/>
             <param name="labelTitle" value="$INFO[ListItem.TVShowTitle,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Label]"/>
             <param name="labelSubTitle" value="$INFO[ListItem.Rating,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year]$INFO[ListItem.Duration,[COLOR=SeparatorColor] › [/COLOR], $LOCALIZE[31297]]"/>
             <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.2)]"/>
+            <param name="sortby" value="$INFO[Container(300).ListItem.Property(widgetSortBy.2)]"/>
+            <param name="sortdirection" value="$INFO[Container(300).ListItem.Property(widgetSortDirection.2)]"/>
         </include>
         <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
             <param name="title" value="$INFO[Container(300).ListItem.Property(widgetName.2)]"/>
@@ -1284,11 +1245,12 @@
             <param name="gfxType" value="Episode"/>
             <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.2)]"/>
             <param name="id" value="700032"/>
-            <param name="visibility" value="String.StartsWith(Container(300).ListItem.Property(widgetType.2),episode)|
-                    [String.StartsWith(Container(300).ListItem.Property(widgetType.2),musicvideo)+!String.IsEqual(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]"/>
+            <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(widgetAspect.2),$LOCALIZE[20359])"/>
             <param name="labelTitle" value="$INFO[ListItem.TVShowTitle,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Label]"/>
             <param name="labelSubTitle" value="$INFO[ListItem.Rating,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration,, $LOCALIZE[31297]]"/>
             <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.2)]"/>
+            <param name="sortby" value="$INFO[Container(300).ListItem.Property(widgetSortBy.2)]"/>
+            <param name="sortdirection" value="$INFO[Container(300).ListItem.Property(widgetSortDirection.2)]"/>
         </include>
         <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
             <param name="title" value="$INFO[Container(300).ListItem.Property(widgetName.2)]"/>
@@ -1298,26 +1260,12 @@
             <param name="gfxType" value="Square"/>
             <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.2)]"/>
             <param name="id" value="700033"/>
-            <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(widgetType.2),audio)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.2),album)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.2),song)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.2),genre)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.2),year)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.2),playlist)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.2),plugin)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.2),studio)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.2),tag)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.2),countr)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.2),role)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.2),image)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.2),artist)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.2),file)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.2),picture)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.2),addon)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.2),program)"/>
+            <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(widgetAspect.2),$LOCALIZE[21371])"/>
             <param name="labelTitle" value="$INFO[ListItem.Label]"/>
             <param name="labelSubTitle" value="$INFO[ListItem.Artist]$INFO[ListItem.Rating,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration,[COLOR=SeparatorColor] › [/COLOR], $LOCALIZE[31297]]"/>
             <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.2)]"/>
+            <param name="sortby" value="$INFO[Container(300).ListItem.Property(widgetSortBy.2)]"/>
+            <param name="sortdirection" value="$INFO[Container(300).ListItem.Property(widgetSortDirection.2)]"/>
         </include>
         <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
             <param name="title" value="$INFO[Container(300).ListItem.Property(widgetName.2)]"/>
@@ -1327,10 +1275,11 @@
             <param name="gfxType" value="Channel"/>
             <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.2)]"/>
             <param name="id" value="700034"/>
-            <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(widgetType.2),tv)|
-                    String.IsEqual(Container(300).ListItem.Property(widgetType.2),radio)"/>
+            <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(widgetAspect.2),$LOCALIZE[19029])"/>
             <param name="labelTitle" value="$INFO[ListItem.Label]"/>
             <param name="labelSubTitle" value="$INFO[ListItem.Label2,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration]"/>
+            <param name="sortby" value="$INFO[Container(300).ListItem.Property(widgetSortBy.2)]"/>
+            <param name="sortdirection" value="$INFO[Container(300).ListItem.Property(widgetSortDirection.2)]"/>
             <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.2)]"/>
         </include>
         <!--WIDGET 4-->
@@ -1342,17 +1291,12 @@
             <param name="gfxType" value="Poster"/>
             <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.3)]"/>
             <param name="id" value="700041"/>
-            <param name="visibility" value="String.StartsWith(Container(300).ListItem.Property(widgetType.3),season)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.3),actor)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.3),director)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.3),set)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.3),video)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.3),movie)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.3),tvshow)|
-                    [String.StartsWith(Container(300).ListItem.Property(widgetType.3),musicvideo)+String.IsEqual(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]"/>
+            <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(widgetAspect.3),$LOCALIZE[20021])"/>
             <param name="labelTitle" value="$INFO[ListItem.TVShowTitle,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Label]"/>
             <param name="labelSubTitle" value="$INFO[ListItem.Rating,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year]$INFO[ListItem.Duration,[COLOR=SeparatorColor] › [/COLOR], $LOCALIZE[31297]]"/>
             <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.3)]"/>
+            <param name="sortby" value="$INFO[Container(300).ListItem.Property(widgetSortBy.3)]"/>
+            <param name="sortdirection" value="$INFO[Container(300).ListItem.Property(widgetSortDirection.3)]"/>
         </include>
         <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
             <param name="title" value="$INFO[Container(300).ListItem.Property(widgetName.3)]"/>
@@ -1362,11 +1306,12 @@
             <param name="gfxType" value="Episode"/>
             <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.3)]"/>
             <param name="id" value="700042"/>
-            <param name="visibility" value="String.StartsWith(Container(300).ListItem.Property(widgetType.3),episode)|
-                    [String.StartsWith(Container(300).ListItem.Property(widgetType.3),musicvideo)+!String.IsEqual(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]"/>
+            <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(widgetAspect.3),$LOCALIZE[20359])"/>
             <param name="labelTitle" value="$INFO[ListItem.TVShowTitle,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Label]"/>
             <param name="labelSubTitle" value="$INFO[ListItem.Rating,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration,, $LOCALIZE[31297]]"/>
             <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.3)]"/>
+            <param name="sortby" value="$INFO[Container(300).ListItem.Property(widgetSortBy.3)]"/>
+            <param name="sortdirection" value="$INFO[Container(300).ListItem.Property(widgetSortDirection.3)]"/>
         </include>
         <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
             <param name="title" value="$INFO[Container(300).ListItem.Property(widgetName.3)]"/>
@@ -1376,26 +1321,12 @@
             <param name="gfxType" value="Square"/>
             <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.3)]"/>
             <param name="id" value="700043"/>
-            <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(widgetType.3),audio)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.3),album)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.3),song)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.3),genre)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.3),year)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.3),playlist)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.3),plugin)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.3),studio)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.3),tag)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.3),countr)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.3),role)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.3),image)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.3),artist)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.3),file)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.3),picture)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.3),addon)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.3),program)"/>
+            <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(widgetAspect.3),$LOCALIZE[21371])"/>
             <param name="labelTitle" value="$INFO[ListItem.Label]"/>
             <param name="labelSubTitle" value="$INFO[ListItem.Artist]$INFO[ListItem.Rating,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration,[COLOR=SeparatorColor] › [/COLOR], $LOCALIZE[31297]]"/>
             <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.3)]"/>
+            <param name="sortby" value="$INFO[Container(300).ListItem.Property(widgetSortBy.3)]"/>
+            <param name="sortdirection" value="$INFO[Container(300).ListItem.Property(widgetSortDirection.3)]"/>
         </include>
         <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
             <param name="title" value="$INFO[Container(300).ListItem.Property(widgetName.3)]"/>
@@ -1405,11 +1336,12 @@
             <param name="gfxType" value="Channel"/>
             <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.3)]"/>
             <param name="id" value="700044"/>
-            <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(widgetType.3),tv)|
-                    String.IsEqual(Container(300).ListItem.Property(widgetType.3),radio)"/>
+            <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(widgetAspect.3),$LOCALIZE[19029])"/>
             <param name="labelTitle" value="$INFO[ListItem.Label]"/>
             <param name="labelSubTitle" value="$INFO[ListItem.Label2,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration]"/>
             <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.3)]"/>
+            <param name="sortby" value="$INFO[Container(300).ListItem.Property(widgetSortBy.3)]"/>
+            <param name="sortdirection" value="$INFO[Container(300).ListItem.Property(widgetSortDirection.3)]"/>
         </include>
         <!--WIDGET 5-->
         <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
@@ -1420,17 +1352,12 @@
             <param name="gfxType" value="Poster"/>
             <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.4)]"/>
             <param name="id" value="700051"/>
-            <param name="visibility" value="String.StartsWith(Container(300).ListItem.Property(widgetType.4),season)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.4),actor)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.4),director)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.4),set)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.4),video)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.4),movie)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.4),tvshow)|
-                    [String.StartsWith(Container(300).ListItem.Property(widgetType.4),musicvideo)+String.IsEqual(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]"/>
+            <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(widgetAspect.4),$LOCALIZE[20021])"/>
             <param name="labelTitle" value="$INFO[ListItem.TVShowTitle,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Label]"/>
             <param name="labelSubTitle" value="$INFO[ListItem.Rating,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year]$INFO[ListItem.Duration,[COLOR=SeparatorColor] › [/COLOR], $LOCALIZE[31297]]"/>
             <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.4)]"/>
+            <param name="sortby" value="$INFO[Container(300).ListItem.Property(widgetSortBy.4)]"/>
+            <param name="sortdirection" value="$INFO[Container(300).ListItem.Property(widgetSortDirection.4)]"/>
         </include>
         <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
             <param name="title" value="$INFO[Container(300).ListItem.Property(widgetName.4)]"/>
@@ -1440,11 +1367,12 @@
             <param name="gfxType" value="Episode"/>
             <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.4)]"/>
             <param name="id" value="700052"/>
-            <param name="visibility" value="String.StartsWith(Container(300).ListItem.Property(widgetType.4),episode)|
-                    [String.StartsWith(Container(300).ListItem.Property(widgetType.4),musicvideo)+!String.IsEqual(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]"/>
+            <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(widgetAspect.4),$LOCALIZE[20359])"/>
             <param name="labelTitle" value="$INFO[ListItem.TVShowTitle,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Label]"/>
             <param name="labelSubTitle" value="$INFO[ListItem.Rating,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration,, $LOCALIZE[31297]]"/>
             <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.4)]"/>
+            <param name="sortby" value="$INFO[Container(300).ListItem.Property(widgetSortBy.4)]"/>
+            <param name="sortdirection" value="$INFO[Container(300).ListItem.Property(widgetSortDirection.4)]"/>
         </include>
         <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
             <param name="title" value="$INFO[Container(300).ListItem.Property(widgetName.4)]"/>
@@ -1454,27 +1382,13 @@
             <param name="gfxType" value="Square"/>
             <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.4)]"/>
             <param name="id" value="700053"/>
-            <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(widgetType.4),audio)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.4),album)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.4),song)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.4),genre)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.4),year)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.4),playlist)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.4),plugin)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.4),studio)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.4),tag)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.4),countr)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.4),role)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.4),image)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.4),artist)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.4),file)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.4),picture)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.4),addon)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.4),program)"/>
+            <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(widgetAspect.4),$LOCALIZE[21371])"/>
             <param name="labelTitle" value="$INFO[Container(700053).ListItem.Label]"/>
             <param name="labelTitle" value="$INFO[ListItem.Label]"/>
             <param name="labelSubTitle" value="$INFO[ListItem.Rating,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration,, $LOCALIZE[31297]]"/>
             <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.4)]"/>
+            <param name="sortby" value="$INFO[Container(300).ListItem.Property(widgetSortBy.4)]"/>
+            <param name="sortdirection" value="$INFO[Container(300).ListItem.Property(widgetSortDirection.4)]"/>
         </include>
         <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
             <param name="title" value="$INFO[Container(300).ListItem.Property(widgetName.4)]"/>
@@ -1484,11 +1398,12 @@
             <param name="gfxType" value="Channel"/>
             <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.4)]"/>
             <param name="id" value="700054"/>
-            <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(widgetType.4),tv)|
-                    String.IsEqual(Container(300).ListItem.Property(widgetType.4),radio)"/>
+            <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(widgetAspect.4),$LOCALIZE[19029])"/>
             <param name="labelTitle" value="$INFO[ListItem.Label]"/>
             <param name="labelSubTitle" value="$INFO[ListItem.Label2,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration]"/>
             <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.4)]"/>
+            <param name="sortby" value="$INFO[Container(300).ListItem.Property(widgetSortBy.4)]"/>
+            <param name="sortdirection" value="$INFO[Container(300).ListItem.Property(widgetSortDirection.4)]"/>
         </include>
     </include>
 </includes>
