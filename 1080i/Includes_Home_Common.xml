@@ -254,7 +254,7 @@
                 <include content="ProgressBar">
                     <param name="id" value="0"/>
                     <param name="visible" value="Integer.IsGreater(ListItem.PercentPlayed,0)"/>
-                    <param name="x" value="71"/>
+                    <param name="x" value="70"/>
                     <param name="y" value="0"/>
                     <param name="width" value="314"/>
                     <param name="info" value="ListItem.PercentPlayed"/>
@@ -266,7 +266,7 @@
                 <include content="ProgressBar">
                     <param name="id" value="0"/>
                     <param name="visible" value="Integer.IsGreater(ListItem.Progress,0)"/>
-                    <param name="x" value="71"/>
+                    <param name="x" value="70"/>
                     <param name="y" value="0"/>
                     <param name="width" value="314"/>
                     <param name="info" value="ListItem.Progress"/>
@@ -278,7 +278,7 @@
                 <include content="ProgressBar">
                     <param name="id" value="0"/>
                     <param name="visible" value="Integer.IsGreater(ListItem.Property(Progress),0)"/>
-                    <param name="x" value="71"/>
+                    <param name="x" value="70"/>
                     <param name="y" value="0"/>
                     <param name="width" value="314"/>
                     <param name="info" value="ListItem.Property(Progress)"/>
@@ -343,7 +343,7 @@
                     <include content="ProgressBar">
                         <param name="id" value="0"/>
                         <param name="visible" value="Integer.IsGreater(ListItem.PercentPlayed,0)"/>
-                        <param name="x" value="71"/>
+                        <param name="x" value="70"/>
                         <param name="y" value="0"/>
                         <param name="width" value="314"/>
                         <param name="info" value="ListItem.PercentPlayed"/>
@@ -355,7 +355,7 @@
                     <include content="ProgressBar">
                         <param name="id" value="0"/>
                         <param name="visible" value="Integer.IsGreater(ListItem.Progress,0)"/>
-                        <param name="x" value="71"/>
+                        <param name="x" value="70"/>
                         <param name="y" value="0"/>
                         <param name="width" value="314"/>
                         <param name="info" value="ListItem.Progress"/>
@@ -367,7 +367,7 @@
                     <include content="ProgressBar">
                         <param name="id" value="0"/>
                         <param name="visible" value="Integer.IsGreater(ListItem.Property(Progress),0)"/>
-                        <param name="x" value="71"/>
+                        <param name="x" value="70"/>
                         <param name="y" value="0"/>
                         <param name="width" value="314"/>
                         <param name="info" value="ListItem.Property(Progress)"/>
@@ -377,9 +377,9 @@
                         <param name="direction" value="horizontal"/>
                     </include>
                     <include content="FocusedIndicatorHorizontal">
-                        <param name="x" value="71"/>
+                        <param name="x" value="70"/>
                         <param name="y" value="21"/>
-                        <param name="width" value="312"/>
+                        <param name="width" value="315"/>
                         <param name="visible" value="control.hasfocus($PARAM[id])"/>
                     </include>
                     <control type="label">
@@ -458,7 +458,7 @@
                 <include content="ProgressBar">
                     <param name="id" value="0"/>
                     <param name="visible" value="Integer.IsGreater(ListItem.PercentPlayed,0)"/>
-                    <param name="x" value="71"/>
+                    <param name="x" value="70"/>
                     <param name="y" value="0"/>
                     <param name="width" value="382"/>
                     <param name="info" value="ListItem.PercentPlayed"/>
@@ -470,7 +470,7 @@
                 <include content="ProgressBar">
                     <param name="id" value="0"/>
                     <param name="visible" value="Integer.IsGreater(ListItem.Progress,0)"/>
-                    <param name="x" value="71"/>
+                    <param name="x" value="70"/>
                     <param name="y" value="0"/>
                     <param name="width" value="382"/>
                     <param name="info" value="ListItem.Progress"/>
@@ -535,7 +535,7 @@
                     <include content="ProgressBar">
                         <param name="id" value="0"/>
                         <param name="visible" value="Integer.IsGreater(ListItem.PercentPlayed,0)"/>
-                        <param name="x" value="71"/>
+                        <param name="x" value="70"/>
                         <param name="y" value="0"/>
                         <param name="width" value="382"/>
                         <param name="info" value="ListItem.PercentPlayed"/>
@@ -547,7 +547,7 @@
                     <include content="ProgressBar">
                         <param name="id" value="0"/>
                         <param name="visible" value="Integer.IsGreater(ListItem.Progress,0)"/>
-                        <param name="x" value="71"/>
+                        <param name="x" value="70"/>
                         <param name="y" value="0"/>
                         <param name="width" value="382"/>
                         <param name="info" value="ListItem.Progress"/>
@@ -557,9 +557,9 @@
                         <param name="direction" value="horizontal"/>
                     </include>
                     <include content="FocusedIndicatorHorizontal">
-                        <param name="x" value="71"/>
+                        <param name="x" value="70"/>
                         <param name="y" value="21"/>
-                        <param name="width" value="380"/>
+                        <param name="width" value="383"/>
                         <param name="visible" value="control.hasfocus($PARAM[id])"/>
                     </include>
                     <control type="label">
@@ -638,7 +638,7 @@
                 <include content="ProgressBar">
                     <param name="id" value="0"/>
                     <param name="visible" value="Integer.IsGreater(ListItem.PercentPlayed,0)"/>
-                    <param name="x" value="71"/>
+                    <param name="x" value="70"/>
                     <param name="y" value="0"/>
                     <param name="width" value="494"/>
                     <param name="info" value="ListItem.PercentPlayed"/>
@@ -650,7 +650,7 @@
                 <include content="ProgressBar">
                     <param name="id" value="0"/>
                     <param name="visible" value="Integer.IsGreater(ListItem.Progress,0)"/>
-                    <param name="x" value="71"/>
+                    <param name="x" value="70"/>
                     <param name="y" value="0"/>
                     <param name="width" value="494"/>
                     <param name="info" value="ListItem.Progress"/>
@@ -715,7 +715,7 @@
                     <include content="ProgressBar">
                         <param name="id" value="0"/>
                         <param name="visible" value="Integer.IsGreater(ListItem.PercentPlayed,0)"/>
-                        <param name="x" value="71"/>
+                        <param name="x" value="70"/>
                         <param name="y" value="0"/>
                         <param name="width" value="494"/>
                         <param name="info" value="ListItem.PercentPlayed"/>
@@ -727,7 +727,7 @@
                     <include content="ProgressBar">
                         <param name="id" value="0"/>
                         <param name="visible" value="Integer.IsGreater(ListItem.Progress,0)"/>
-                        <param name="x" value="71"/>
+                        <param name="x" value="70"/>
                         <param name="y" value="0"/>
                         <param name="width" value="494"/>
                         <param name="info" value="ListItem.Progress"/>
@@ -737,9 +737,9 @@
                         <param name="direction" value="horizontal"/>
                     </include>
                     <include content="FocusedIndicatorHorizontal">
-                        <param name="x" value="71"/>
+                        <param name="x" value="70"/>
                         <param name="y" value="21"/>
-                        <param name="width" value="492"/>
+                        <param name="width" value="495"/>
                         <param name="visible" value="control.hasfocus($PARAM[id])"/>
                     </include>
                     <control type="label">
@@ -818,7 +818,7 @@
                 <include content="ProgressBar">
                     <param name="id" value="0"/>
                     <param name="visible" value="Integer.IsGreater(ListItem.PercentPlayed,0)"/>
-                    <param name="x" value="71"/>
+                    <param name="x" value="70"/>
                     <param name="y" value="0"/>
                     <param name="width" value="428"/>
                     <param name="info" value="ListItem.PercentPlayed"/>
@@ -830,7 +830,7 @@
                 <include content="ProgressBar">
                     <param name="id" value="0"/>
                     <param name="visible" value="Integer.IsGreater(ListItem.Progress,0)"/>
-                    <param name="x" value="71"/>
+                    <param name="x" value="70"/>
                     <param name="y" value="0"/>
                     <param name="width" value="428"/>
                     <param name="info" value="ListItem.Progress"/>
@@ -895,7 +895,7 @@
                     <include content="ProgressBar">
                         <param name="id" value="0"/>
                         <param name="visible" value="Integer.IsGreater(ListItem.PercentPlayed,0)"/>
-                        <param name="x" value="71"/>
+                        <param name="x" value="70"/>
                         <param name="y" value="0"/>
                         <param name="width" value="428"/>
                         <param name="info" value="ListItem.PercentPlayed"/>
@@ -907,7 +907,7 @@
                     <include content="ProgressBar">
                         <param name="id" value="0"/>
                         <param name="visible" value="Integer.IsGreater(ListItem.Progress,0)"/>
-                        <param name="x" value="71"/>
+                        <param name="x" value="70"/>
                         <param name="y" value="0"/>
                         <param name="width" value="428"/>
                         <param name="info" value="ListItem.Progress"/>
@@ -917,9 +917,9 @@
                         <param name="direction" value="horizontal"/>
                     </include>
                     <include content="FocusedIndicatorHorizontal">
-                        <param name="x" value="71"/>
+                        <param name="x" value="70"/>
                         <param name="y" value="21"/>
-                        <param name="width" value="426"/>
+                        <param name="width" value="429"/>
                         <param name="visible" value="control.hasfocus($PARAM[id])"/>
                     </include>
                     <control type="label">

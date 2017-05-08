@@ -31,9 +31,9 @@
                 <include content="ProgressBar">
                     <param name="id" value="0"/>
                     <param name="visible" value="Integer.IsGreater(ListItem.PercentPlayed,0)"/>
-                    <param name="x" value="71"/>
+                    <param name="x" value="70"/>
                     <param name="y" value="689"/>
-                    <param name="width" value="425"/>
+                    <param name="width" value="424"/>
                     <param name="info" value="ListItem.PercentPlayed"/>
                     <param name="endRotation" value="0"/>
                     <param name="centerRotation" value="auto"/>
@@ -83,9 +83,9 @@
                 <include content="ProgressBar">
                     <param name="id" value="0"/>
                     <param name="visible" value="Integer.IsGreater(ListItem.PercentPlayed,0)"/>
-                    <param name="x" value="71"/>
+                    <param name="x" value="70"/>
                     <param name="y" value="308"/>
-                    <param name="width" value="425"/>
+                    <param name="width" value="424"/>
                     <param name="info" value="ListItem.PercentPlayed"/>
                     <param name="endRotation" value="0"/>
                     <param name="centerRotation" value="auto"/>
@@ -134,9 +134,9 @@
                 <include content="ProgressBar">
                     <param name="id" value="0"/>
                     <param name="visible" value="Integer.IsGreater(ListItem.Progress,0)"/>
-                    <param name="x" value="71"/>
+                    <param name="x" value="70"/>
                     <param name="y" value="388"/>
-                    <param name="width" value="425"/>
+                    <param name="width" value="424"/>
                     <param name="info" value="ListItem.Progress"/>
                     <param name="endRotation" value="0"/>
                     <param name="centerRotation" value="auto"/>
@@ -188,9 +188,9 @@
                 <include content="ProgressBar">
                     <param name="id" value="0"/>
                     <param name="visible" value="Integer.IsGreater(ListItem.PercentPlayed,0)"/>
-                    <param name="x" value="71"/>
+                    <param name="x" value="70"/>
                     <param name="y" value="494"/>
-                    <param name="width" value="425"/>
+                    <param name="width" value="424"/>
                     <param name="info" value="ListItem.PercentPlayed"/>
                     <param name="endRotation" value="0"/>
                     <param name="centerRotation" value="auto"/>

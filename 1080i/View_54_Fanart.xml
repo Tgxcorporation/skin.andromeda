@@ -40,9 +40,9 @@
             <include content="ProgressBar">
                 <param name="id" value="0"/>
                 <param name="visible" value="Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)"/>
-                <param name="x" value="71"/>
+                <param name="x" value="70"/>
                 <param name="y" value="846"/>
-                <param name="width" value="1406"/>
+                <param name="width" value="1409"/>
                 <param name="info" value="ListItem.Progress"/>
                 <param name="endRotation" value="0"/>
                 <param name="centerRotation" value="auto"/>
@@ -52,9 +52,9 @@
             <include content="ProgressBar">
                 <param name="id" value="0"/>
                 <param name="visible" value="Integer.IsGreater(ListItem.PercentPlayed,0)"/>
-                <param name="x" value="71"/>
+                <param name="x" value="70"/>
                 <param name="y" value="846"/>
-                <param name="width" value="1406"/>
+                <param name="width" value="1409"/>
                 <param name="info" value="ListItem.PercentPlayed"/>
                 <param name="endRotation" value="0"/>
                 <param name="centerRotation" value="auto"/>
@@ -118,9 +118,9 @@
                 <include content="ProgressBar">
                     <param name="id" value="0"/>
                     <param name="visible" value="Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)"/>
-                    <param name="x" value="71"/>
+                    <param name="x" value="70"/>
                     <param name="y" value="846"/>
-                    <param name="width" value="1406"/>
+                    <param name="width" value="1409"/>
                     <param name="info" value="ListItem.Progress"/>
                     <param name="endRotation" value="0"/>
                     <param name="centerRotation" value="auto"/>
@@ -130,9 +130,9 @@
                 <include content="ProgressBar">
                     <param name="id" value="0"/>
                     <param name="visible" value="Integer.IsGreater(ListItem.PercentPlayed,0)"/>
-                    <param name="x" value="71"/>
+                    <param name="x" value="70"/>
                     <param name="y" value="846"/>
-                    <param name="width" value="1406"/>
+                    <param name="width" value="1409"/>
                     <param name="info" value="ListItem.PercentPlayed"/>
                     <param name="endRotation" value="0"/>
                     <param name="centerRotation" value="auto"/>

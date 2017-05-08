@@ -24,11 +24,11 @@
                         <param name="id" value="0"/>
                         <param name="visible" value="Integer.IsGreater(ListItem.PercentPlayed,0)"/>
                         <param name="x" value="288"/>
-                        <param name="y" value="11"/>
-                        <param name="width" value="317"/>
+                        <param name="y" value="10"/>
+                        <param name="width" value="320"/>
                         <param name="info" value="ListItem.PercentPlayed"/>
                         <param name="endRotation" value="-90"/>
-                        <param name="centerRotation" value="288,11"/>
+                        <param name="centerRotation" value="288,10"/>
                         <param name="visiblefocus" value="false"/>
                         <param name="direction" value="vertical"/>
                     </include>
@@ -104,11 +104,11 @@
                         <param name="id" value="0"/>
                         <param name="visible" value="Integer.IsGreater(ListItem.PercentPlayed,0)"/>
                         <param name="x" value="646"/>
-                        <param name="y" value="11"/>
-                        <param name="width" value="317"/>
+                        <param name="y" value="10"/>
+                        <param name="width" value="320"/>
                         <param name="info" value="ListItem.PercentPlayed"/>
                         <param name="endRotation" value="-90"/>
-                        <param name="centerRotation" value="646,11"/>
+                        <param name="centerRotation" value="646,10"/>
                         <param name="visiblefocus" value="false"/>
                         <param name="direction" value="vertical"/>
                     </include>
@@ -161,11 +161,11 @@
                         <param name="id" value="0"/>
                         <param name="visible" value="Integer.IsGreater(ListItem.PercentPlayed,0)"/>
                         <param name="x" value="398"/>
-                        <param name="y" value="11"/>
-                        <param name="width" value="317"/>
+                        <param name="y" value="10"/>
+                        <param name="width" value="320"/>
                         <param name="info" value="ListItem.PercentPlayed"/>
                         <param name="endRotation" value="-90"/>
-                        <param name="centerRotation" value="398,11"/>
+                        <param name="centerRotation" value="398,10"/>
                         <param name="visiblefocus" value="false"/>
                         <param name="direction" value="vertical"/>
                     </include>
@@ -241,11 +241,11 @@
                         <param name="id" value="0"/>
                         <param name="visible" value="Integer.IsGreater(ListItem.Progress,0)"/>
                         <param name="x" value="503"/>
-                        <param name="y" value="11"/>
-                        <param name="width" value="317"/>
+                        <param name="y" value="10"/>
+                        <param name="width" value="320"/>
                         <param name="info" value="ListItem.Progress"/>
                         <param name="endRotation" value="-90"/>
-                        <param name="centerRotation" value="503,11"/>
+                        <param name="centerRotation" value="503,10"/>
                         <param name="visiblefocus" value="false"/>
                         <param name="direction" value="vertical"/>
                     </include>
@@ -311,11 +311,11 @@
                             <param name="id" value="0"/>
                             <param name="visible" value="Integer.IsGreater(ListItem.PercentPlayed,0)"/>
                             <param name="x" value="288"/>
-                            <param name="y" value="11"/>
-                            <param name="width" value="317"/>
+                            <param name="y" value="10"/>
+                            <param name="width" value="320"/>
                             <param name="info" value="ListItem.PercentPlayed"/>
                             <param name="endRotation" value="-90"/>
-                            <param name="centerRotation" value="288,11"/>
+                            <param name="centerRotation" value="288,10"/>
                             <param name="visiblefocus" value="true"/>
                             <param name="direction" value="vertical"/>
                         </include>
@@ -432,11 +432,11 @@
                             <param name="id" value="0"/>
                             <param name="visible" value="Integer.IsGreater(ListItem.PercentPlayed,0)"/>
                             <param name="x" value="646"/>
-                            <param name="y" value="11"/>
-                            <param name="width" value="317"/>
+                            <param name="y" value="10"/>
+                            <param name="width" value="320"/>
                             <param name="info" value="ListItem.PercentPlayed"/>
                             <param name="endRotation" value="-90"/>
-                            <param name="centerRotation" value="646,11"/>
+                            <param name="centerRotation" value="646,10"/>
                             <param name="visiblefocus" value="true"/>
                             <param name="direction" value="vertical"/>
                         </include>
@@ -523,11 +523,11 @@
                                 <param name="id" value="0"/>
                                 <param name="visible" value="Integer.IsGreater(ListItem.PercentPlayed,0)"/>
                                 <param name="x" value="398"/>
-                                <param name="y" value="11"/>
-                                <param name="width" value="317"/>
+                                <param name="y" value="10"/>
+                                <param name="width" value="320"/>
                                 <param name="info" value="ListItem.PercentPlayed"/>
                                 <param name="endRotation" value="-90"/>
-                                <param name="centerRotation" value="398,11"/>
+                                <param name="centerRotation" value="398,10"/>
                                 <param name="visiblefocus" value="true"/>
                                 <param name="direction" value="vertical"/>
                             </include>
@@ -642,11 +642,11 @@
                                 <param name="id" value="0"/>
                                 <param name="visible" value="Integer.IsGreater(ListItem.Progress,0)"/>
                                 <param name="x" value="503"/>
-                                <param name="y" value="11"/>
-                                <param name="width" value="317"/>
+                                <param name="y" value="10"/>
+                                <param name="width" value="320"/>
                                 <param name="info" value="ListItem.Progress"/>
                                 <param name="endRotation" value="-90"/>
-                                <param name="centerRotation" value="503,11"/>
+                                <param name="centerRotation" value="503,10"/>
                                 <param name="visiblefocus" value="true"/>
                                 <param name="direction" value="vertical"/>
                             </include>

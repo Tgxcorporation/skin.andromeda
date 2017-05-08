@@ -92,7 +92,6 @@
                 <viewtype label="31098">Strip</viewtype>
                 <pagecontrol>609</pagecontrol>
                 <itemlayout height="1080" width="400">
-                    <!-- CDART VIDEO -->
                     <include content="ThumbsImages">
                         <param name="visible" value="true"/>
                         <param name="x" value="70"/>
@@ -118,9 +117,9 @@
                         <include content="ProgressBar">
                             <param name="id" value="0"/>
                             <param name="visible" value="Integer.IsGreater(ListItem.PercentPlayed,0)"/>
-                            <param name="x" value="71"/>
+                            <param name="x" value="70"/>
                             <param name="y" value="0"/>
-                            <param name="width" value="304"/>
+                            <param name="width" value="389"/>
                             <param name="info" value="ListItem.PercentPlayed"/>
                             <param name="endRotation" value="0"/>
                             <param name="centerRotation" value="auto"/>
@@ -195,9 +194,9 @@
                             <include content="ProgressBar">
                                 <param name="id" value="0"/>
                                 <param name="visible" value="Integer.IsGreater(ListItem.PercentPlayed,0)"/>
-                                <param name="x" value="71"/>
+                                <param name="x" value="70"/>
                                 <param name="y" value="0"/>
-                                <param name="width" value="304"/>
+                                <param name="width" value="389"/>
                                 <param name="info" value="ListItem.PercentPlayed"/>
                                 <param name="endRotation" value="0"/>
                                 <param name="centerRotation" value="auto"/>
@@ -205,9 +204,9 @@
                                 <param name="direction" value="horizontal"/>
                             </include>
                             <include content="FocusedIndicatorHorizontal">
-                                <param name="x" value="71"/>
+                                <param name="x" value="70"/>
                                 <param name="y" value="21"/>
-                                <param name="width" value="387"/>
+                                <param name="width" value="390"/>
                                 <param name="visible" value="true"/>
                             </include>
                             <control type="label">
@@ -321,9 +320,9 @@
                         <include content="ProgressBar">
                             <param name="id" value="0"/>
                             <param name="visible" value="Integer.IsGreater(ListItem.PercentPlayed,0)"/>
-                            <param name="x" value="71"/>
+                            <param name="x" value="70"/>
                             <param name="y" value="0"/>
-                            <param name="width" value="531"/>
+                            <param name="width" value="534"/>
                             <param name="info" value="ListItem.PercentPlayed"/>
                             <param name="endRotation" value="0"/>
                             <param name="centerRotation" value="auto"/>
@@ -398,9 +397,9 @@
                             <include content="ProgressBar">
                                 <param name="id" value="0"/>
                                 <param name="visible" value="Integer.IsGreater(ListItem.PercentPlayed,0)"/>
-                                <param name="x" value="71"/>
+                                <param name="x" value="70"/>
                                 <param name="y" value="0"/>
-                                <param name="width" value="531"/>
+                                <param name="width" value="534"/>
                                 <param name="info" value="ListItem.PercentPlayed"/>
                                 <param name="endRotation" value="0"/>
                                 <param name="centerRotation" value="auto"/>
@@ -408,9 +407,9 @@
                                 <param name="direction" value="horizontal"/>
                             </include>
                             <include content="FocusedIndicatorHorizontal">
-                                <param name="x" value="71"/>
+                                <param name="x" value="70"/>
                                 <param name="y" value="21"/>
-                                <param name="width" value="532"/>
+                                <param name="width" value="535"/>
                                 <param name="visible" value="true"/>
                             </include>
                             <control type="label">
@@ -529,9 +528,9 @@
                         <include content="ProgressBar">
                             <param name="id" value="0"/>
                             <param name="visible" value="Integer.IsGreater(ListItem.PercentPlayed,0)"/>
-                            <param name="x" value="71"/>
+                            <param name="x" value="70"/>
                             <param name="y" value="0"/>
-                            <param name="width" value="796"/>
+                            <param name="width" value="799"/>
                             <param name="info" value="ListItem.PercentPlayed"/>
                             <param name="endRotation" value="0"/>
                             <param name="centerRotation" value="auto"/>
@@ -588,9 +587,9 @@
                             <include content="ProgressBar">
                                 <param name="id" value="0"/>
                                 <param name="visible" value="Integer.IsGreater(ListItem.PercentPlayed,0)"/>
-                                <param name="x" value="71"/>
+                                <param name="x" value="70"/>
                                 <param name="y" value="0"/>
-                                <param name="width" value="796"/>
+                                <param name="width" value="799"/>
                                 <param name="info" value="ListItem.PercentPlayed"/>
                                 <param name="endRotation" value="0"/>
                                 <param name="centerRotation" value="auto"/>
@@ -598,9 +597,9 @@
                                 <param name="direction" value="horizontal"/>
                             </include>
                             <include content="FocusedIndicatorHorizontal">
-                                <param name="x" value="71"/>
+                                <param name="x" value="70"/>
                                 <param name="y" value="21"/>
-                                <param name="width" value="797"/>
+                                <param name="width" value="800"/>
                                 <param name="visible" value="true"/>
                             </include>
                             <control type="label">
@@ -715,9 +714,9 @@
                         <include content="ProgressBar">
                             <param name="id" value="0"/>
                             <param name="visible" value="Integer.IsGreater(ListItem.Progress,0)"/>
-                            <param name="x" value="71"/>
+                            <param name="x" value="70"/>
                             <param name="y" value="0"/>
-                            <param name="width" value="531"/>
+                            <param name="width" value="534"/>
                             <param name="info" value="ListItem.Progress"/>
                             <param name="endRotation" value="0"/>
                             <param name="centerRotation" value="auto"/>
@@ -794,9 +793,9 @@
                             <include content="ProgressBar">
                                 <param name="id" value="0"/>
                                 <param name="visible" value="Integer.IsGreater(ListItem.Progress,0)"/>
-                                <param name="x" value="71"/>
+                                <param name="x" value="70"/>
                                 <param name="y" value="0"/>
-                                <param name="width" value="531"/>
+                                <param name="width" value="534"/>
                                 <param name="info" value="ListItem.Progress"/>
                                 <param name="endRotation" value="0"/>
                                 <param name="centerRotation" value="auto"/>
@@ -804,9 +803,9 @@
                                 <param name="direction" value="horizontal"/>
                             </include>
                             <include content="FocusedIndicatorHorizontal">
-                                <param name="x" value="71"/>
+                                <param name="x" value="70"/>
                                 <param name="y" value="21"/>
-                                <param name="width" value="532"/>
+                                <param name="width" value="535"/>
                                 <param name="visible" value="true"/>
                             </include>
                             <control type="label">

@@ -488,16 +488,16 @@
                     <param name="visiblefocus" value="true"/>
                     <param name="direction" value="horizontal"/>
                 </include>
-                <include content="ProgressBar">
-                    <param name="id" value="0"/>
-                    <param name="visible" value="PVR.IsTimeshift"/>
-                    <param name="x" value="1277"/>
-                    <param name="y" value="832"/>
-                    <param name="width" value="573"/>
-                    <param name="info" value="PVR.TimeshiftProgress"/>
-                    <param name="visiblefocus" value="true"/>
-                    <param name="direction" value="horizontal"/>
-                </include>
+                <!--<include content="ProgressBar">-->
+                    <!--<param name="id" value="0"/>-->
+                    <!--<param name="visible" value="PVR.IsTimeshift"/>-->
+                    <!--<param name="x" value="1277"/>-->
+                    <!--<param name="y" value="832"/>-->
+                    <!--<param name="width" value="573"/>-->
+                    <!--<param name="info" value="PVR.TimeshiftProgress"/>-->
+                    <!--<param name="visiblefocus" value="true"/>-->
+                    <!--<param name="direction" value="horizontal"/>-->
+                <!--</include>-->
                 <control type="label">
                     <include>Icon_Fade</include>
                     <posx>1305</posx>
