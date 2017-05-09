@@ -9,7 +9,7 @@
         <font>InfoDetailsFont</font>
         <shadowcolor>ShadowColor</shadowcolor>
         <textcolor>NoFocusedColor</textcolor>
-        <focusedcolor>$VAR[Picked.Theme.Color]</focusedcolor>
+        <focusedcolor>$VAR[Picked.HighLight.Color]</focusedcolor>
         <selectedcolor>SelectedColor</selectedcolor>
         <disabledcolor>DisabledColor</disabledcolor>
         <scroll>false</scroll>
@@ -26,7 +26,7 @@
         <textoffsetx>0</textoffsetx>
         <shadowcolor>ShadowColor</shadowcolor>
         <textcolor>NoFocusedColor</textcolor>
-        <focusedcolor>$VAR[Picked.Theme.Color]</focusedcolor>
+        <focusedcolor>$VAR[Picked.HighLight.Color]</focusedcolor>
         <selectedcolor>SelectedColor</selectedcolor>
         <disabledcolor>DisabledColor</disabledcolor>
         <scrollout>false</scrollout>
@@ -37,7 +37,7 @@
         <font>InfoPlotFont</font>
         <shadowcolor>ShadowColor</shadowcolor>
         <textcolor>NoFocusedColor</textcolor>
-        <focusedcolor>$VAR[Picked.Theme.Color]</focusedcolor>
+        <focusedcolor>$VAR[Picked.HighLight.Color]</focusedcolor>
         <selectedcolor>SelectedColor</selectedcolor>
         <disabledcolor>DisabledColor</disabledcolor>
         <pagecontrol>61</pagecontrol>
@@ -56,7 +56,6 @@
         <fadetime>250</fadetime>
     </default>
     <default type="button">
-        <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
         <posx>0</posx>
         <posy>0</posy>
         <width>450</width>
@@ -67,15 +66,14 @@
         <textoffsetx>20</textoffsetx>
         <shadowcolor>ShadowColor</shadowcolor>
         <textcolor>NoFocusedColor</textcolor>
-        <focusedcolor>$VAR[Picked.Theme.Color]</focusedcolor>
+        <focusedcolor>$VAR[Picked.HighLight.Color]</focusedcolor>
         <selectedcolor>SelectedColor</selectedcolor>
         <disabledcolor>DisabledColor</disabledcolor>
-        <texturefocus border="3,2,1,2">buttons/buttonFO.png</texturefocus>
+        <texturefocus border="3,2,1,2" colordiffuse="$VAR[Picked.HighLight.Color]">buttons/buttonFO.png</texturefocus>
         <texturenofocus>-</texturenofocus>
         <pulseonselect>false</pulseonselect>
     </default>
     <default type="edit">
-        <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
         <posx>0</posx>
         <posy>0</posy>
         <width>390</width>
@@ -86,14 +84,13 @@
         <textoffsetx>20</textoffsetx>
         <shadowcolor>ShadowColor</shadowcolor>
         <textcolor>NoFocusedColor</textcolor>
-        <focusedcolor>$VAR[Picked.Theme.Color]</focusedcolor>
+        <focusedcolor>$VAR[Picked.HighLight.Color]</focusedcolor>
         <selectedcolor>SelectedColor</selectedcolor>
         <disabledcolor>DisabledColor</disabledcolor>
-        <texturefocus border="25,1,25,2">buttons/editFO.png</texturefocus>
+        <texturefocus border="25,1,25,2" colordiffuse="$VAR[Picked.HighLight.Color]">buttons/editFO.png</texturefocus>
         <texturenofocus border="25,1,25,2">buttons/editNF.png</texturenofocus>
     </default>
     <default type="togglebutton">
-        <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
         <posx>0</posx>
         <posy>0</posy>
         <width>450</width>
@@ -104,18 +101,17 @@
         <textoffsetx>20</textoffsetx>
         <shadowcolor>ShadowColor</shadowcolor>
         <textcolor>NoFocusedColor</textcolor>
-        <focusedcolor>$VAR[Picked.Theme.Color]</focusedcolor>
+        <focusedcolor>$VAR[Picked.HighLight.Color]</focusedcolor>
         <selectedcolor>SelectedColor</selectedcolor>
         <altselectedcolor>AltSelectedColor</altselectedcolor>
         <disabledcolor>DisabledColor</disabledcolor>
-        <texturefocus border="3,2,1,2">buttons/buttonFO.png</texturefocus>
+        <texturefocus border="3,2,1,2" colordiffuse="$VAR[Picked.HighLight.Color]">buttons/buttonFO.png</texturefocus>
         <texturenofocus>-</texturenofocus>
-        <alttexturefocus border="3,2,1,2">buttons/buttonFO.png</alttexturefocus>
+        <alttexturefocus border="3,2,1,2" colordiffuse="$VAR[Picked.HighLight.Color]">buttons/buttonFO.png</alttexturefocus>
         <alttexturenofocus>-</alttexturenofocus>
         <pulseonselect>false</pulseonselect>
     </default>
     <default type="radiobutton">
-        <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
         <posx>0</posx>
         <posy>0</posy>
         <height>60</height>
@@ -124,43 +120,42 @@
         <font>ButtonFont</font>
         <shadowcolor>ShadowColor</shadowcolor>
         <textcolor>NoFocusedColor</textcolor>
-        <focusedcolor>$VAR[Picked.Theme.Color]</focusedcolor>
+        <focusedcolor>$VAR[Picked.HighLight.Color]</focusedcolor>
         <selectedcolor>SelectedColor</selectedcolor>
         <disabledcolor>DisabledColor</disabledcolor>
         <radioposx>546</radioposx>
         <radioposy>1</radioposy>
         <radiowidth>60</radiowidth>
         <radioheight>60</radioheight>
-        <texturefocus border="3,2,1,2">buttons/buttonFO.png</texturefocus>
+        <texturefocus border="3,2,1,2" colordiffuse="$VAR[Picked.HighLight.Color]">buttons/buttonFO.png</texturefocus>
         <texturenofocus>-</texturenofocus>
         <textureradiooffnofocus border="1">buttons/RadioOffNF.png</textureradiooffnofocus>
         <textureradioonnofocus border="1">buttons/RadioOnNF.png</textureradioonnofocus>
-        <textureradioofffocus border="1">buttons/RadioOffFO.png</textureradioofffocus>
-        <textureradioonfocus border="1">buttons/RadioOnFO.png</textureradioonfocus>
+        <textureradioofffocus border="1" colordiffuse="$VAR[Picked.HighLight.Color]">buttons/RadioOffFO.png</textureradioofffocus>
+        <textureradioonfocus border="1" colordiffuse="$VAR[Picked.HighLight.Color]">buttons/RadioOnFO.png</textureradioonfocus>
         <textureradioondisabled colordiffuse="90ffffff" border="1">buttons/RadioOnNF.png</textureradioondisabled>
         <textureradiooffdisabled colordiffuse="90ffffff" border="1">buttons/RadioOffNF.png</textureradiooffdisabled>
         <textoffsetx>20</textoffsetx>
         <pulseonselect>false</pulseonselect>
     </default>
     <default type="spincontrol">
-        <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
         <posx>0</posx>
         <posy>0</posy>
         <height>90</height>
-        <textureupfocus border="1">buttons/SpinUpFO.png</textureupfocus>
+        <textureupfocus border="1" colordiffuse="$VAR[Picked.HighLight.Color]">buttons/SpinUpFO.png</textureupfocus>
         <textureup border="1">buttons/SpinUpNF.png</textureup>
-        <texturedownfocus border="1">buttons/SpinDownFO.png</texturedownfocus>
+        <texturedownfocus border="1" colordiffuse="$VAR[Picked.HighLight.Color]">buttons/SpinDownFO.png</texturedownfocus>
         <texturedown border="1">buttons/SpinDownNF.png</texturedown>
         <textureupdisabled colordiffuse="90ffffff" border="1">buttons/SpinUpNF.png</textureupdisabled>
         <texturedowndisabled colordiffuse="90ffffff" border="1">buttons/SpinDownNF.png</texturedowndisabled>
-        <texturefocus border="3,2,1,2">buttons/buttonFO.png</texturefocus>
+        <texturefocus border="3,2,1,2" colordiffuse="$VAR[Picked.HighLight.Color]">buttons/buttonFO.png</texturefocus>
         <texturenofocus>-</texturenofocus>
         <spinwidth>60</spinwidth>
         <spinheight>60</spinheight>
         <font>ButtonFont</font>
         <shadowcolor>ShadowColor</shadowcolor>
         <textcolor>NoFocusedColor</textcolor>
-        <focusedcolor>$VAR[Picked.Theme.Color]</focusedcolor>
+        <focusedcolor>$VAR[Picked.HighLight.Color]</focusedcolor>
         <selectedcolor>SelectedColor</selectedcolor>
         <disabledcolor>DisabledColor</disabledcolor>
         <textoffsetx>20</textoffsetx>
@@ -170,25 +165,24 @@
         <pulseonselect>false</pulseonselect>
     </default>
     <default type="spincontrolex">
-        <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
         <posx>0</posx>
         <posy>0</posy>
         <height>90</height>
         <font>ButtonFont</font>
-        <textureupfocus border="1">buttons/SpinUpFO.png</textureupfocus>
+        <textureupfocus border="1" colordiffuse="$VAR[Picked.HighLight.Color]">buttons/SpinUpFO.png</textureupfocus>
         <textureup border="1">buttons/SpinUpNF.png</textureup>
-        <texturedownfocus border="1">buttons/SpinDownFO.png</texturedownfocus>
+        <texturedownfocus border="1" colordiffuse="$VAR[Picked.HighLight.Color]">buttons/SpinDownFO.png</texturedownfocus>
         <texturedown border="1">buttons/SpinDownNF.png</texturedown>
         <textureupdisabled colordiffuse="90ffffff" border="1">buttons/SpinUpNF.png</textureupdisabled>
         <texturedowndisabled colordiffuse="90ffffff" border="1">buttons/SpinDownNF.png</texturedowndisabled>
-        <texturefocus border="3,2,1,2">buttons/buttonFO.png</texturefocus>
+        <texturefocus border="3,2,1,2" colordiffuse="$VAR[Picked.HighLight.Color]">buttons/buttonFO.png</texturefocus>
         <texturenofocus>-</texturenofocus>
         <spinposx>-1</spinposx>
         <spinwidth>50</spinwidth>
         <spinheight>60</spinheight>
         <shadowcolor>ShadowColor</shadowcolor>
         <textcolor>NoFocusedColor</textcolor>
-        <focusedcolor>$VAR[Picked.Theme.Color]</focusedcolor>
+        <focusedcolor>$VAR[Picked.HighLight.Color]</focusedcolor>
         <selectedcolor>SelectedColor</selectedcolor>
         <disabledcolor>DisabledColor</disabledcolor>
         <textoffsetx>20</textoffsetx>
@@ -198,7 +192,6 @@
         <pulseonselect>false</pulseonselect>
     </default>
     <default type="slider">
-        <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
         <align>left</align>
         <aligny>center</aligny>
         <visible>true</visible>
@@ -207,13 +200,12 @@
         <sliderheight>50</sliderheight>
         <texturesliderbar border="14">buttons/SliderBG.png</texturesliderbar>
         <textureslidernib>buttons/SliderNibNF.png</textureslidernib>
-        <textureslidernibfocus>buttons/SliderNibFO.png</textureslidernibfocus>
+        <textureslidernibfocus colordiffuse="$VAR[Picked.HighLight.Color]">buttons/SliderNibFO.png</textureslidernibfocus>
         <textoffsetx>20</textoffsetx>
         <pulseonselect>false</pulseonselect>
         <orientation>horizontal</orientation>
     </default>
     <default type="sliderex">
-        <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
         <align>left</align>
         <aligny>center</aligny>
         <height>50</height>
@@ -221,19 +213,18 @@
         <sliderheight>50</sliderheight>
         <texturesliderbar border="14">buttons/SliderBG.png</texturesliderbar>
         <textureslidernib>buttons/SliderNibNF.png</textureslidernib>
-        <textureslidernibfocus>buttons/SliderNibFO.png</textureslidernibfocus>
-        <texturefocus border="3,2,1,2">buttons/buttonFO.png</texturefocus>
+        <textureslidernibfocus colordiffuse="$VAR[Picked.HighLight.Color]">buttons/SliderNibFO.png</textureslidernibfocus>
+        <texturefocus border="3,2,1,2" colordiffuse="$VAR[Picked.HighLight.Color]">buttons/buttonFO.png</texturefocus>
         <texturenofocus>-</texturenofocus>
         <font>ButtonFont</font>
         <textcolor>NoFocusedColor</textcolor>
-        <focusedcolor>$VAR[Picked.Theme.Color]</focusedcolor>
+        <focusedcolor>$VAR[Picked.HighLight.Color]</focusedcolor>
         <selectedcolor>SelectedColor</selectedcolor>
         <disabledcolor>DisabledColor</disabledcolor>
         <pulseonselect>false</pulseonselect>
         <textoffsetx>20</textoffsetx>
     </default>
     <default type="scrollbar">
-        <!--<colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>-->
         <posx>0</posx>
         <posy>0</posy>
         <width>54</width>

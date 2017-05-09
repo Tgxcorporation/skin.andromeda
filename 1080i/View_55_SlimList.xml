@@ -236,7 +236,7 @@
                         <param name="aligny" value="center"/>
                         <param name="flipy" value="false"/>
                         <param name="texturediffuse" value="ThumbsFocusedColor"/>
-                        <param name="borderdiffuse" value="$VAR[Picked.Theme.Color]"/>
+                        <param name="borderdiffuse" value="$VAR[Picked.HighLight.Color]"/>
                     </include>
                     <include content="ProgressBar">
                         <param name="id" value="0"/>
@@ -303,7 +303,7 @@
                         <param name="aligny" value="center"/>
                         <param name="flipy" value="false"/>
                         <param name="texturediffuse" value="ThumbsFocusedColor"/>
-                        <param name="borderdiffuse" value="$VAR[Picked.Theme.Color]"/>
+                        <param name="borderdiffuse" value="$VAR[Picked.HighLight.Color]"/>
                     </include>
                     <include content="ProgressBar">
                         <param name="id" value="0"/>
@@ -372,7 +372,7 @@
                             <param name="aligny" value="top"/>
                             <param name="flipy" value="false"/>
                             <param name="texturediffuse" value="ThumbsFocusedColor"/>
-                            <param name="borderdiffuse" value="$VAR[Picked.Theme.Color]"/>
+                            <param name="borderdiffuse" value="$VAR[Picked.HighLight.Color]"/>
                         </include>
                         <include content="ProgressBar">
                             <param name="id" value="0"/>
@@ -437,7 +437,7 @@
                             <param name="aligny" value="center"/>
                             <param name="flipy" value="false"/>
                             <param name="texturediffuse" value="ThumbsFocusedColor"/>
-                            <param name="borderdiffuse" value="$VAR[Picked.Theme.Color]"/>
+                            <param name="borderdiffuse" value="$VAR[Picked.HighLight.Color]"/>
                         </include>
                         <include content="ProgressBar">
                             <param name="id" value="0"/>

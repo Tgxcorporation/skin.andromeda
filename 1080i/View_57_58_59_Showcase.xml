@@ -180,7 +180,7 @@
                             <param name="aligny" value="center"/>
                             <param name="flipy" value="false"/>
                             <param name="texturediffuse" value="ThumbsFocusedColor"/>
-                            <param name="borderdiffuse" value="$VAR[Picked.Theme.Color]"/>
+                            <param name="borderdiffuse" value="$VAR[Picked.HighLight.Color]"/>
                         </include>
                         <include content="WatchedRecOverlay">
                             <param name="x" value="403"/>
@@ -383,7 +383,7 @@
                             <param name="aligny" value="center"/>
                             <param name="flipy" value="false"/>
                             <param name="texturediffuse" value="ThumbsFocusedColor"/>
-                            <param name="borderdiffuse" value="$VAR[Picked.Theme.Color]"/>
+                            <param name="borderdiffuse" value="$VAR[Picked.HighLight.Color]"/>
                         </include>
                         <include content="WatchedRecOverlay">
                             <param name="x" value="548"/>
@@ -573,7 +573,7 @@
                             <param name="aligny" value="center"/>
                             <param name="flipy" value="false"/>
                             <param name="texturediffuse" value="ThumbsFocusedColor"/>
-                            <param name="borderdiffuse" value="$VAR[Picked.Theme.Color]"/>
+                            <param name="borderdiffuse" value="$VAR[Picked.HighLight.Color]"/>
                         </include>
                         <include content="WatchedRecOverlay">
                             <param name="x" value="813"/>
@@ -779,7 +779,7 @@
                             <param name="aligny" value="center"/>
                             <param name="flipy" value="false"/>
                             <param name="texturediffuse" value="ThumbsFocusedColor"/>
-                            <param name="borderdiffuse" value="$VAR[Picked.Theme.Color]"/>
+                            <param name="borderdiffuse" value="$VAR[Picked.HighLight.Color]"/>
                         </include>
                         <include content="WatchedRecOverlay">
                             <param name="x" value="548"/>

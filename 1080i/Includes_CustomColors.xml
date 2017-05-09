@@ -6,7 +6,7 @@
 
     <!-- MAINCOLOR -->
     <include name="TextColor_MainColor">
-        <textcolor>$VAR[Picked.Theme.Color]</textcolor>
+        <textcolor>$VAR[Picked.HighLight.Color]</textcolor>
     </include>
     <!-- ALTERNATECOLOR -->
     <include name="TextColor_AlternateColor">
@@ -15,6 +15,6 @@
     <!-- MIDCOLOR -->
     <include name="TextColor_MidColor">
         <animation effect="fade" start="75" end="75" time="0" reversible="false" condition="true">Conditional</animation>
-        <textcolor>$VAR[Picked.Theme.Color]</textcolor>
+        <!--<textcolor>$VAR[Picked.HighLight.Color]</textcolor>-->
     </include>
 </includes>

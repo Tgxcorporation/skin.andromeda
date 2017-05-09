@@ -72,7 +72,7 @@
                         <posy>200</posy>
                         <width>460</width>
                         <height>690</height>
-                        <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                        <colordiffuse>$VAR[Picked.HighLight.Color]</colordiffuse>
                         <texture>defaultVideoBig.png</texture>
                         <aspectratio aligny="top">keep</aspectratio>
                         <include>ThumbBorder</include>
@@ -640,7 +640,7 @@
                         <posy>200</posy>
                         <width>460</width>
                         <height>690</height>
-                        <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                        <colordiffuse>$VAR[Picked.HighLight.Color]</colordiffuse>
                         <texture>defaultArtistBig.png</texture>
                         <aspectratio aligny="top">keep</aspectratio>
                         <include>ThumbBorder</include>
@@ -720,7 +720,7 @@
                                     <param name="aligny" value="center"/>
                                     <param name="flipy" value="false"/>
                                     <param name="texturediffuse" value="ThumbsFocusedColor"/>
-                                    <param name="borderdiffuse" value="$VAR[Picked.Theme.Color]"/>
+                                    <param name="borderdiffuse" value="$VAR[Picked.HighLight.Color]"/>
                                 </include>
                                 <include content="FocusedIndicatorVertical">
                                     <param name="x" value="93"/>
@@ -779,7 +779,7 @@
                         <posy>200</posy>
                         <width>460</width>
                         <height>690</height>
-                        <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                        <colordiffuse>$VAR[Picked.HighLight.Color]</colordiffuse>
                         <texture>defaultArtistBig.png</texture>
                         <aspectratio aligny="top">keep</aspectratio>
                         <include>ThumbBorder</include>
@@ -859,7 +859,7 @@
                                     <param name="aligny" value="center"/>
                                     <param name="flipy" value="false"/>
                                     <param name="texturediffuse" value="ThumbsFocusedColor"/>
-                                    <param name="borderdiffuse" value="$VAR[Picked.Theme.Color]"/>
+                                    <param name="borderdiffuse" value="$VAR[Picked.HighLight.Color]"/>
                                 </include>
                                 <include content="FocusedIndicatorVertical">
                                     <param name="x" value="93"/>
@@ -918,7 +918,7 @@
                         <posy>200</posy>
                         <width>460</width>
                         <height>690</height>
-                        <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                        <colordiffuse>$VAR[Picked.HighLight.Color]</colordiffuse>
                         <texture>defaultVideoBig.png</texture>
                         <aspectratio aligny="top">keep</aspectratio>
                         <include>ThumbBorder</include>
@@ -989,7 +989,7 @@
                                 <width>50</width>
                                 <height>50</height>
                                 <include>NoFocusedIcon</include>
-                                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                                <!--<colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>-->
                                 <texture>OverlayWatched.png</texture>
                                 <aspectratio aligny="center">keep</aspectratio>
                                 <visible>!String.IsEmpty(ListItem.Property(DBID))</visible>
@@ -1009,7 +1009,7 @@
                                     <param name="aligny" value="center"/>
                                     <param name="flipy" value="false"/>
                                     <param name="texturediffuse" value="ThumbsFocusedColor"/>
-                                    <param name="borderdiffuse" value="$VAR[Picked.Theme.Color]"/>
+                                    <param name="borderdiffuse" value="$VAR[Picked.HighLight.Color]"/>
                                 </include>
                                 <include content="FocusedIndicatorVertical">
                                     <param name="x" value="93"/>
@@ -1041,7 +1041,7 @@
                                     <posy>67</posy>
                                     <width>50</width>
                                     <height>50</height>
-                                    <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                                    <colordiffuse>$VAR[Picked.HighLight.Color]</colordiffuse>
                                     <texture>OverlayWatched.png</texture>
                                     <aspectratio aligny="center">keep</aspectratio>
                                     <visible>!String.IsEmpty(ListItem.Property(DBID))</visible>
@@ -1078,7 +1078,7 @@
                         <posy>200</posy>
                         <width>460</width>
                         <height>690</height>
-                        <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                        <colordiffuse>$VAR[Picked.HighLight.Color]</colordiffuse>
                         <texture>defaultVideoBig.png</texture>
                         <aspectratio aligny="top">keep</aspectratio>
                         <include>ThumbBorder</include>
@@ -1160,7 +1160,7 @@
                                 <width>50</width>
                                 <height>50</height>
                                 <include>NoFocusedIcon</include>
-                                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                                <!--<colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>-->
                                 <texture>OverlayWatched.png</texture>
                                 <aspectratio aligny="center">keep</aspectratio>
                                 <visible>!String.IsEmpty(ListItem.Property(DBID))</visible>
@@ -1180,7 +1180,7 @@
                                     <param name="aligny" value="center"/>
                                     <param name="flipy" value="false"/>
                                     <param name="texturediffuse" value="ThumbsFocusedColor"/>
-                                    <param name="borderdiffuse" value="$VAR[Picked.Theme.Color]"/>
+                                    <param name="borderdiffuse" value="$VAR[Picked.HighLight.Color]"/>
                                 </include>
                                 <include content="FocusedIndicatorVertical">
                                     <param name="x" value="93"/>
@@ -1212,7 +1212,7 @@
                                     <posy>67</posy>
                                     <width>50</width>
                                     <height>50</height>
-                                    <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                                    <colordiffuse>$VAR[Picked.HighLight.Color]</colordiffuse>
                                     <texture>OverlayWatched.png</texture>
                                     <aspectratio aligny="center">keep</aspectratio>
                                     <visible>!String.IsEmpty(ListItem.Property(DBID))</visible>
@@ -1249,7 +1249,7 @@
                         <posy>200</posy>
                         <width>460</width>
                         <height>690</height>
-                        <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                        <colordiffuse>$VAR[Picked.HighLight.Color]</colordiffuse>
                         <texture>defaultVideoBig.png</texture>
                         <aspectratio aligny="top">keep</aspectratio>
                         <include>ThumbBorder</include>
@@ -1329,7 +1329,7 @@
                                     <param name="aligny" value="center"/>
                                     <param name="flipy" value="false"/>
                                     <param name="texturediffuse" value="ThumbsFocusedColor"/>
-                                    <param name="borderdiffuse" value="$VAR[Picked.Theme.Color]"/>
+                                    <param name="borderdiffuse" value="$VAR[Picked.HighLight.Color]"/>
                                 </include>
                                 <include content="FocusedIndicatorVertical">
                                     <param name="x" value="166"/>
@@ -1390,7 +1390,7 @@
                         <posy>200</posy>
                         <width>460</width>
                         <height>690</height>
-                        <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                        <colordiffuse>$VAR[Picked.HighLight.Color]</colordiffuse>
                         <texture>defaultVideoBig.png</texture>
                         <aspectratio aligny="top">keep</aspectratio>
                         <include>ThumbBorder</include>
@@ -1461,7 +1461,7 @@
                                     <param name="aligny" value="center"/>
                                     <param name="flipy" value="false"/>
                                     <param name="texturediffuse" value="ThumbsFocusedColor"/>
-                                    <param name="borderdiffuse" value="$VAR[Picked.Theme.Color]"/>
+                                    <param name="borderdiffuse" value="$VAR[Picked.HighLight.Color]"/>
                                 </include>
                                 <include content="FocusedIndicatorVertical">
                                     <param name="x" value="166"/>
@@ -1571,7 +1571,7 @@
                                     <param name="aligny" value="center"/>
                                     <param name="flipy" value="false"/>
                                     <param name="texturediffuse" value="ThumbsFocusedColor"/>
-                                    <param name="borderdiffuse" value="$VAR[Picked.Theme.Color]"/>
+                                    <param name="borderdiffuse" value="$VAR[Picked.HighLight.Color]"/>
                                 </include>
                                 <include content="FocusedIndicatorVertical">
                                     <param name="x" value="166"/>
@@ -1681,7 +1681,7 @@
                                     <param name="aligny" value="center"/>
                                     <param name="flipy" value="false"/>
                                     <param name="texturediffuse" value="ThumbsFocusedColor"/>
-                                    <param name="borderdiffuse" value="$VAR[Picked.Theme.Color]"/>
+                                    <param name="borderdiffuse" value="$VAR[Picked.HighLight.Color]"/>
                                 </include>
                                 <include content="FocusedIndicatorVertical">
                                     <param name="x" value="166"/>
@@ -1785,7 +1785,7 @@
                                     <height>110</height>
                                     <texture>$INFO[ListItem.Property(iso_3166_1),resource://resource.images.languageflags.colour/,.png]</texture>
                                     <aspectratio>scale</aspectratio>
-                                    <bordertexture border="2" colordiffuse="$VAR[Picked.Theme.Color]">common/frame_focus.png</bordertexture>
+                                    <bordertexture border="2" colordiffuse="$VAR[Picked.HighLight.Color]">common/frame_focus.png</bordertexture>
                                     <bordersize>2</bordersize>
                                 </control>
                                 <include content="FocusedIndicatorVertical">
@@ -1836,7 +1836,7 @@
                         <posy>200</posy>
                         <width>460</width>
                         <height>690</height>
-                        <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                        <colordiffuse>$VAR[Picked.HighLight.Color]</colordiffuse>
                         <texture>defaultVideoBig.png</texture>
                         <aspectratio aligny="top">keep</aspectratio>
                         <include>ThumbBorder</include>
@@ -1933,7 +1933,7 @@
                         <posy>200</posy>
                         <width>460</width>
                         <height>690</height>
-                        <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                        <colordiffuse>$VAR[Picked.HighLight.Color]</colordiffuse>
                         <texture>defaultVideoBig.png</texture>
                         <aspectratio aligny="top">keep</aspectratio>
                         <include>ThumbBorder</include>
@@ -2052,7 +2052,7 @@
                         <posy>200</posy>
                         <width>460</width>
                         <height>690</height>
-                        <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                        <colordiffuse>$VAR[Picked.HighLight.Color]</colordiffuse>
                         <texture>defaultVideoBig.png</texture>
                         <aspectratio aligny="top">keep</aspectratio>
                         <include>ThumbBorder</include>
@@ -2149,7 +2149,7 @@
                         <posy>200</posy>
                         <width>460</width>
                         <height>690</height>
-                        <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                        <colordiffuse>$VAR[Picked.HighLight.Color]</colordiffuse>
                         <texture>defaultPictureBig.png</texture>
                         <aspectratio aligny="top">keep</aspectratio>
                         <include>ThumbBorder</include>
@@ -2210,7 +2210,7 @@
                                 <param name="aligny" value="center"/>
                                 <param name="flipy" value="false"/>
                                 <param name="texturediffuse" value="ThumbsFocusedColor"/>
-                                <param name="borderdiffuse" value="$VAR[Picked.Theme.Color]"/>
+                                <param name="borderdiffuse" value="$VAR[Picked.HighLight.Color]"/>
                             </include>
                         </focusedlayout>
                     </control>
@@ -2243,7 +2243,7 @@
                         <posy>200</posy>
                         <width>460</width>
                         <height>690</height>
-                        <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                        <colordiffuse>$VAR[Picked.HighLight.Color]</colordiffuse>
                         <texture>defaultVideoBig.png</texture>
                         <aspectratio aligny="top">keep</aspectratio>
                         <include>ThumbBorder</include>
@@ -2303,7 +2303,7 @@
                                 <param name="aligny" value="center"/>
                                 <param name="flipy" value="false"/>
                                 <param name="texturediffuse" value="ThumbsFocusedColor"/>
-                                <param name="borderdiffuse" value="$VAR[Picked.Theme.Color]"/>
+                                <param name="borderdiffuse" value="$VAR[Picked.HighLight.Color]"/>
                             </include>
                         </focusedlayout>
                     </control>
@@ -2336,7 +2336,7 @@
                         <posy>200</posy>
                         <width>460</width>
                         <height>690</height>
-                        <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                        <colordiffuse>$VAR[Picked.HighLight.Color]</colordiffuse>
                         <texture>defaultVideoBig.png</texture>
                         <aspectratio aligny="top">keep</aspectratio>
                         <include>ThumbBorder</include>
@@ -2394,7 +2394,7 @@
                                 <width>50</width>
                                 <height>50</height>
                                 <include>NoFocusedIcon</include>
-                                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                                <!--<colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>-->
                                 <texture>OverlayWatched.png</texture>
                                 <aspectratio aligny="center">keep</aspectratio>
                                 <visible>!String.IsEmpty(ListItem.Property(account))</visible>
@@ -2433,7 +2433,7 @@
                                     <posy>67</posy>
                                     <width>50</width>
                                     <height>50</height>
-                                    <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                                    <colordiffuse>$VAR[Picked.HighLight.Color]</colordiffuse>
                                     <texture>OverlayWatched.png</texture>
                                     <aspectratio aligny="center">keep</aspectratio>
                                     <visible>!String.IsEmpty(ListItem.Property(account))</visible>
@@ -2470,7 +2470,7 @@
                         <posy>200</posy>
                         <width>460</width>
                         <height>690</height>
-                        <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                        <colordiffuse>$VAR[Picked.HighLight.Color]</colordiffuse>
                         <texture>defaultVideoBig.png</texture>
                         <aspectratio aligny="top">keep</aspectratio>
                         <include>ThumbBorder</include>
@@ -2541,7 +2541,7 @@
                                     <param name="aligny" value="center"/>
                                     <param name="flipy" value="false"/>
                                     <param name="texturediffuse" value="ThumbsFocusedColor"/>
-                                    <param name="borderdiffuse" value="$VAR[Picked.Theme.Color]"/>
+                                    <param name="borderdiffuse" value="$VAR[Picked.HighLight.Color]"/>
                                 </include>
                                 <include content="FocusedIndicatorVertical">
                                     <param name="x" value="93"/>

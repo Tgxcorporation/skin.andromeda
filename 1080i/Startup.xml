@@ -61,7 +61,7 @@
                 <posy>0</posy>
                 <width>1920</width>
                 <height>1080</height>
-                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                <colordiffuse>$VAR[Picked.HighLight.Color]</colordiffuse>
                 <texture>startup.png</texture>
             </control>
             <control type="label">

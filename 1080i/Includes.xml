@@ -475,7 +475,7 @@
                     <posy>832</posy>
                     <width>573</width>
                     <height>2</height>
-                    <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                    <colordiffuse>$VAR[Picked.HighLight.Color]</colordiffuse>
                     <texture border="2,0,2,0">common/line_gray_horizontal.png</texture>
                 </control>
                 <include content="ProgressBar">
@@ -766,7 +766,7 @@
                 <posy>0</posy>
                 <width>2</width>
                 <height>1080</height>
-                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                <colordiffuse>$VAR[Picked.HighLight.Color]</colordiffuse>
                 <texture border="1">common/line_gray_vertical.png</texture>
             </control>
             <control type="button" id="8999">
@@ -868,8 +868,8 @@
         <textcolor>NoFocusedColor</textcolor>
         <textureradiooffnofocus border="1">buttons/RadioOffNFsmall.png</textureradiooffnofocus>
         <textureradioonnofocus border="1">buttons/RadioOnNFsmall.png</textureradioonnofocus>
-        <textureradioofffocus border="1">buttons/RadioOffFOsmall.png</textureradioofffocus>
-        <textureradioonfocus border="1">buttons/RadioOnFOsmall.png</textureradioonfocus>
+        <textureradioofffocus border="1" colordiffuse="$VAR[Picked.HighLight.Color]">buttons/RadioOffFOsmall.png</textureradioofffocus>
+        <textureradioonfocus border="1" colordiffuse="$VAR[Picked.HighLight.Color]">buttons/RadioOnFOsmall.png</textureradioonfocus>
         <textureradioondisabled colordiffuse="90ffffff" border="1">buttons/RadioOnNFsmall.png</textureradioondisabled>
         <textureradiooffdisabled colordiffuse="90ffffff" border="1">buttons/RadioOffNFsmall.png</textureradiooffdisabled>
     </include>
@@ -906,7 +906,7 @@
             <effect type="fade" start="10" end="100" time="100"/>
         </animation>
         <texturesliderbackground>-</texturesliderbackground>
-        <texturesliderbarfocus colordiffuse="$VAR[Picked.Theme.Color]" border="10">buttons/Scrollbar_Vertical_Focus.png</texturesliderbarfocus>
+        <texturesliderbarfocus colordiffuse="$VAR[Picked.HighLight.Color]" border="10">buttons/Scrollbar_Vertical_Focus.png</texturesliderbarfocus>
         <texturesliderbar border="10">buttons/Scrollbar_Vertical_NoFocus.png</texturesliderbar>
         <textureslidernib>-</textureslidernib>
         <textureslidernibfocus>-</textureslidernibfocus>
@@ -915,12 +915,12 @@
         <width>50</width>
     </include>
     <include name="HorizontalScroller">
-        <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+        <!--<colordiffuse>$VAR[Picked.HighLight.Color]</colordiffuse>-->
         <animation type="Focus" reversible="false">
             <effect type="fade" start="10" end="100" time="100"/>
         </animation>
         <texturesliderbackground>-</texturesliderbackground>
-        <texturesliderbarfocus border="10">buttons/Scrollbar_Horizontal_Focus.png</texturesliderbarfocus>
+        <texturesliderbarfocus colordiffuse="$VAR[Picked.HighLight.Color]" border="10">buttons/Scrollbar_Horizontal_Focus.png</texturesliderbarfocus>
         <texturesliderbar border="10">buttons/Scrollbar_Horizontal_NoFocus.png</texturesliderbar>
         <textureslidernib>-</textureslidernib>
         <textureslidernibfocus>-</textureslidernibfocus>
@@ -947,7 +947,7 @@
                 <shadowcolor>ShadowColor</shadowcolor>
                 <font>WindowTitleSubFont</font>
                 <titlecolor>AlternateColor</titlecolor>
-                <headlinecolor>$VAR[Picked.Theme.Color]</headlinecolor>
+                <headlinecolor>$VAR[Picked.HighLight.Color]</headlinecolor>
                 <include>TextColor_MainColor</include>
             </control>
         </control>
@@ -1011,7 +1011,7 @@
                 <posy>0</posy>
                 <height>60</height>
                 <width>50</width>
-                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                <!--<colordiffuse>$VAR[Picked.HighLight.Color]</colordiffuse>-->
                 <aspectratio align="right" aligny="center">keep</aspectratio>
                 <texture>buttons/RadioOffNF.png</texture>
             </control>
@@ -1021,7 +1021,7 @@
                 <posy>0</posy>
                 <height>60</height>
                 <width>50</width>
-                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                <!--<colordiffuse>$VAR[Picked.HighLight.Color]</colordiffuse>-->
                 <aspectratio align="right" aligny="center">keep</aspectratio>
                 <texture>buttons/RadioOnNF.png</texture>
             </control>
@@ -1082,7 +1082,7 @@
                     <posy>0</posy>
                     <height>60</height>
                     <width>50</width>
-                    <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                    <colordiffuse>$VAR[Picked.HighLight.Color]</colordiffuse>
                     <aspectratio align="right" aligny="center">keep</aspectratio>
                     <texture>buttons/RadioOffFO.png</texture>
                 </control>
@@ -1092,7 +1092,7 @@
                     <posy>0</posy>
                     <height>60</height>
                     <width>50</width>
-                    <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                    <colordiffuse>$VAR[Picked.HighLight.Color]</colordiffuse>
                     <aspectratio align="right" aligny="center">keep</aspectratio>
                     <texture>buttons/RadioOnFO.png</texture>
                 </control>
@@ -1103,7 +1103,7 @@
     <!--<colordiffuse>ddffffff</colordiffuse>-->
     <!--</include>-->
     <include name="ThumbBorder">
-        <bordertexture border="2" colordiffuse="$VAR[Picked.Theme.Color]">common/frame_focus.png</bordertexture>
+        <bordertexture border="2" colordiffuse="$VAR[Picked.HighLight.Color]">common/frame_focus.png</bordertexture>
         <bordersize>2</bordersize>
     </include>
     <include name="ThumbsImages">
@@ -1124,7 +1124,7 @@
                 <posy>$PARAM[y]</posy>
                 <width>$PARAM[width]</width>
                 <height>$PARAM[height]</height>
-                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                <colordiffuse>$VAR[Picked.HighLight.Color]</colordiffuse>
                 <aspectratio align="$PARAM[align]" aligny="top">keep</aspectratio>
                 <texture colordiffuse="$PARAM[texturediffuse]">$VAR[ThumbsExceptions]</texture>
                 <bordertexture border="2" colordiffuse="$PARAM[borderdiffuse]">common/frame_focus.png</bordertexture>
@@ -1177,7 +1177,7 @@
                 <posy>$PARAM[y]</posy>
                 <width>$PARAM[width]</width>
                 <height>$PARAM[height]</height>
-                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                <colordiffuse>$VAR[Picked.HighLight.Color]</colordiffuse>
                 <aspectratio align="$PARAM[align]" aligny="top">keep</aspectratio>
                 <texture colordiffuse="$PARAM[texturediffuse]">$VAR[ThumbsMissing]</texture>
                 <bordertexture border="2" colordiffuse="$PARAM[borderdiffuse]">common/frame_focus.png</bordertexture>
@@ -1203,7 +1203,7 @@
                 <posy>$PARAM[y]</posy>
                 <width>$PARAM[width]</width>
                 <height>$PARAM[height]</height>
-                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                <colordiffuse>$VAR[Picked.HighLight.Color]</colordiffuse>
                 <aspectratio align="$PARAM[align]" aligny="$PARAM[aligny]">$PARAM[aspectratio]</aspectratio>
                 <texture colordiffuse="$PARAM[texturediffuse]">$VAR[ThumbsExceptions]</texture>
             </control>
@@ -1252,7 +1252,7 @@
                 <posy>$PARAM[y]</posy>
                 <width>$PARAM[width]</width>
                 <height>$PARAM[height]</height>
-                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                <colordiffuse>$VAR[Picked.HighLight.Color]</colordiffuse>
                 <aspectratio align="$PARAM[align]" aligny="$PARAM[aligny]">$PARAM[aspectratio]</aspectratio>
                 <texture colordiffuse="$PARAM[texturediffuse]">$VAR[ThumbsMissing]</texture>
             </control>
@@ -1408,7 +1408,7 @@
             <width>$PARAM[width]</width>
             <texturebg>common/osd_progress_dummy.png</texturebg>
             <lefttexture>-</lefttexture>
-            <midtexture colordiffuse="$VAR[Picked.Theme.Color]" border="1,1,1,1">OSD/osd_progress_$PARAM[direction]$PARAM[gfx]_focus.png</midtexture>
+            <midtexture colordiffuse="$VAR[Picked.HighLight.Color]" border="1,1,1,1">OSD/osd_progress_$PARAM[direction]$PARAM[gfx]_focus.png</midtexture>
             <righttexture>-</righttexture>
             <overlaytexture>-</overlaytexture>
             <info>$PARAM[info]</info>
@@ -1672,7 +1672,7 @@
             <posy>$PARAM[y]</posy>
             <width>2</width>
             <height>$PARAM[height]</height>
-            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+            <colordiffuse>$VAR[Picked.HighLight.Color]</colordiffuse>
             <texture border="0,2,0,2">common/line_white_vertical.png</texture>
         </control>
     </include>
@@ -1683,7 +1683,7 @@
             <posy>$PARAM[y]</posy>
             <height>2</height>
             <width>$PARAM[width]</width>
-            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+            <colordiffuse>$VAR[Picked.HighLight.Color]</colordiffuse>
             <texture border="2,0,2,0">common/line_white_horizontal.png</texture>
         </control>
     </include>
@@ -1705,7 +1705,7 @@
                 <posy>-1</posy>
                 <width>1920</width>
                 <height>2</height>
-                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                <colordiffuse>$VAR[Picked.HighLight.Color]</colordiffuse>
                 <texture border="2,0,2,0">common/line_gray_horizontal.png</texture>
             </control>
         </control>
@@ -1734,6 +1734,100 @@
             <height>1080</height>
             <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
             <texture>common/overlay_dialog_gradient.png</texture>
+        </control>
+    </include>
+    <include name="SkinSettingsHighLightColor">
+        <control type="group">
+            <posx>930</posx>
+            <posy>180</posy>
+            <include content="ThumbsImages">
+                <param name="visible" value="true"/>
+                <param name="x" value="70"/>
+                <param name="y" value="10"/>
+                <param name="width" value="321"/>
+                <param name="height" value="321"/>
+                <param name="aspectratio" value="keep"/>
+                <param name="align" value="center"/>
+                <param name="aligny" value="top"/>
+                <param name="flipy" value="false"/>
+                <param name="texturediffuse" value="ThumbsFocusedColor"/>
+                <param name="borderdiffuse" value="$PARAM[color]"/>
+            </include>
+            <control type="group">
+                <control type="image">
+                    <visible>$PARAM[visible]</visible>
+                    <posx>440</posx>
+                    <posy>30</posy>
+                    <width>2</width>
+                    <height>57</height>
+                    <colordiffuse>$PARAM[color]</colordiffuse>
+                    <texture border="0,2,0,2">common/line_white_vertical.png</texture>
+                </control>
+                <control type="label">
+                    <posx>460</posx>
+                    <posy>30</posy>
+                    <height>50</height>
+                    <width>430</width>
+                    <font>FacadeListTitleFont</font>
+                    <textcolor>$PARAM[color]</textcolor>
+                    <label>Lorem ipsum dolor sit amet</label>
+                </control>
+                <control type="label">
+                    <posx>460</posx>
+                    <posy>80</posy>
+                    <height>50</height>
+                    <width>430</width>
+                    <font>FacadeListSubTitleFont</font>
+                    <textcolor>$PARAM[color]</textcolor>
+                    <label>Donec ut arcu in purus elementum sodales sit amet et ligula</label>
+                </control>
+                <control type="textbox">
+                    <posx>460</posx>
+                    <posy>135</posy>
+                    <height>170</height>
+                    <width>430</width>
+                    <font>FacadeListSubTitleFont</font>
+                    <textcolor>$PARAM[color]</textcolor>
+                    <label>Pellentesque pretium pellentesque est, quis consectetur quam auctor quis. Donec lobortis tincidunt turpis nec ultricies. Duis magna dolor, tempus euismod nibh a, hendrerit accumsan ligula. Curabitur sodales et ex eget pellentesque. Etiam rhoncus est sit amet dolor accumsan vestibulum. Sed quis congue magna, quis tincidunt nulla. Praesent a libero id felis vestibulum gravida non in lorem. Nunc volutpat arcu at fringilla maximus.</label>
+                </control>
+            </control>
+        </control>
+        <control type="group">
+            <posx>930</posx>
+            <posy>510</posy>
+            <include content="ThumbsImages">
+                <param name="visible" value="true"/>
+                <param name="x" value="70"/>
+                <param name="y" value="10"/>
+                <param name="width" value="321"/>
+                <param name="height" value="321"/>
+                <param name="aspectratio" value="keep"/>
+                <param name="align" value="center"/>
+                <param name="aligny" value="top"/>
+                <param name="flipy" value="false"/>
+                <param name="texturediffuse" value="ThumbsUnfocusedColor"/>
+                <param name="borderdiffuse" value="BorderUnfocusedColor"/>
+            </include>
+            <control type="group">
+                <control type="label">
+                    <posx>460</posx>
+                    <posy>30</posy>
+                    <height>50</height>
+                    <width>430</width>
+                    <font>FacadeListTitleFont</font>
+                    <textcolor>NoFocusedColor</textcolor>
+                    <label>Lorem ipsum dolor sit amet</label>
+                </control>
+                <control type="label">
+                    <posx>460</posx>
+                    <posy>80</posy>
+                    <height>50</height>
+                    <width>430</width>
+                    <font>FacadeListSubTitleFont</font>
+                    <textcolor>NoFocusedColor</textcolor>
+                    <label>Donec ut arcu in purus elementum sodales sit amet et ligula</label>
+                </control>
+            </control>
         </control>
     </include>
 </includes>

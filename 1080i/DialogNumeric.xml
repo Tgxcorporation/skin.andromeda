@@ -19,7 +19,7 @@
                     <scroll>true</scroll>
                 </control>
                 <control type="image">
-                    <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                    <colordiffuse>$VAR[Picked.HighLight.Color]</colordiffuse>
                     <posx>80</posx>
                     <posy>330</posy>
                     <width>520</width>

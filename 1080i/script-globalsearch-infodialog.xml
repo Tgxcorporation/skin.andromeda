@@ -833,7 +833,7 @@
                         <posy>0</posy>
                         <width>380</width>
                         <height>570</height>
-                        <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                        <colordiffuse>$VAR[Picked.HighLight.Color]</colordiffuse>
                         <texture>defaultIconBig.png</texture>
                         <aspectratio aligny="top">keep</aspectratio>
                     </control>

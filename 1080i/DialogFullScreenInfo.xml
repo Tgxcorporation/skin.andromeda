@@ -42,7 +42,7 @@
                 <posy>600</posy>
                 <width>1920</width>
                 <height>2</height>
-                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                <colordiffuse>$VAR[Picked.HighLight.Color]</colordiffuse>
                 <texture border="2,0,2,0">common/line_gray_horizontal.png</texture>
             </control>
             <control type="group">
@@ -64,9 +64,9 @@
                     <width>321</width>
                     <height>321</height>
                     <aspectratio aligny="top">keep</aspectratio>
-                    <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                    <colordiffuse>$VAR[Picked.HighLight.Color]</colordiffuse>
                     <texture>defaultVideoBig.png</texture>
-                    <bordertexture border="2" colordiffuse="$VAR[Picked.Theme.Color]">common/frame_focus.png</bordertexture>
+                    <bordertexture border="2" colordiffuse="$VAR[Picked.HighLight.Color]">common/frame_focus.png</bordertexture>
                     <bordersize>2</bordersize>
                 </control>
                 <control type="image">
@@ -78,7 +78,7 @@
                     <height>321</height>
                     <aspectratio aligny="top">scale</aspectratio>
                     <texture background="true">$INFO[VideoPlayer.Cover]</texture>
-                    <bordertexture border="2" colordiffuse="$VAR[Picked.Theme.Color]">common/frame_focus.png</bordertexture>
+                    <bordertexture border="2" colordiffuse="$VAR[Picked.HighLight.Color]">common/frame_focus.png</bordertexture>
                     <bordersize>2</bordersize>
                 </control>
                 <control type="image">
@@ -89,7 +89,7 @@
                     <height>180</height>
                     <aspectratio>scale</aspectratio>
                     <texture background="true">$INFO[VideoPlayer.Cover]</texture>
-                    <bordertexture border="2" colordiffuse="$VAR[Picked.Theme.Color]">common/frame_focus.png</bordertexture>
+                    <bordertexture border="2" colordiffuse="$VAR[Picked.HighLight.Color]">common/frame_focus.png</bordertexture>
                     <bordersize>2</bordersize>
                 </control>
                 <control type="image">
@@ -100,7 +100,7 @@
                     <height>241</height>
                     <aspectratio>scale</aspectratio>
                     <texture background="true">$INFO[VideoPlayer.Cover]</texture>
-                    <bordertexture border="2" colordiffuse="$VAR[Picked.Theme.Color]">common/frame_focus.png</bordertexture>
+                    <bordertexture border="2" colordiffuse="$VAR[Picked.HighLight.Color]">common/frame_focus.png</bordertexture>
                     <bordersize>2</bordersize>
                 </control>
                 <control type="image">
@@ -111,7 +111,7 @@
                     <height>321</height>
                     <aspectratio aligny="top">keep</aspectratio>
                     <texture background="true">$INFO[VideoPlayer.Cover]</texture>
-                    <bordertexture border="2" colordiffuse="$VAR[Picked.Theme.Color]">common/frame_focus.png</bordertexture>
+                    <bordertexture border="2" colordiffuse="$VAR[Picked.HighLight.Color]">common/frame_focus.png</bordertexture>
                     <bordersize>2</bordersize>
                 </control>
                 <control type="label">

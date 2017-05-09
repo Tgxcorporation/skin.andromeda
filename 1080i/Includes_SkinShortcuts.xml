@@ -28,7 +28,7 @@
             <width>1290</width>
             <height>825</height>
             <texture>common/TransparentDot.png</texture>
-            <bordertexture border="2" colordiffuse="$VAR[Picked.Theme.Color]">common/frame_focus.png</bordertexture>
+            <bordertexture border="2" colordiffuse="$VAR[Picked.HighLight.Color]">common/frame_focus.png</bordertexture>
             <bordersize>2</bordersize>
         </control>
         <control type="image">
@@ -45,7 +45,7 @@
             <posy>310</posy>
             <width>1286</width>
             <height>2</height>
-            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+            <colordiffuse>$VAR[Picked.HighLight.Color]</colordiffuse>
             <texture border="2,0,2,0">common/line_white_horizontal.png</texture>
         </control>
     </include>

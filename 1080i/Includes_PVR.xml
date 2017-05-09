@@ -151,7 +151,7 @@
                 <posy>-1</posy>
                 <width>1920</width>
                 <height>2</height>
-                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                <colordiffuse>$VAR[Picked.HighLight.Color]</colordiffuse>
                 <texture border="2,0,2,0">common/line_white_horizontal.png</texture>
             </control>
             <control type="label">
@@ -250,7 +250,7 @@
                             <param name="aligny" value="center"/>
                             <param name="flipy" value="false"/>
                             <param name="texturediffuse" value="ThumbsFocusedColor"/>
-                            <param name="borderdiffuse" value="$VAR[Picked.Theme.Color]"/>
+                            <param name="borderdiffuse" value="$VAR[Picked.HighLight.Color]"/>
                         </include>
                         <include content="WatchedRecOverlay">
                             <param name="x" value="169"/>
@@ -336,7 +336,7 @@
                 <posy>-1</posy>
                 <width>1920</width>
                 <height>2</height>
-                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                <colordiffuse>$VAR[Picked.HighLight.Color]</colordiffuse>
                 <texture border="2,0,2,0">common/line_white_horizontal.png</texture>
             </control>
             <control type="label">
@@ -435,7 +435,7 @@
                             <param name="aligny" value="center"/>
                             <param name="flipy" value="false"/>
                             <param name="texturediffuse" value="ThumbsFocusedColor"/>
-                            <param name="borderdiffuse" value="$VAR[Picked.Theme.Color]"/>
+                            <param name="borderdiffuse" value="$VAR[Picked.HighLight.Color]"/>
                         </include>
                         <include content="WatchedRecOverlay">
                             <param name="x" value="169"/>

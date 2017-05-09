@@ -531,7 +531,18 @@
         <value condition="Skin.HasSetting(Theme.Color.lilac)">LilacColor</value>
         <value condition="Skin.HasSetting(Theme.Color.indigo)">IndigoColor</value>
         <value condition="Skin.HasSetting(Theme.Color.titanium)">TitaniumColor</value>
-        <value condition="!String.IsEmpty(Skin.String(PickedColor))">$INFO[Skin.String(PickedColor)]</value>
+        <value condition="!String.IsEmpty(Skin.String(PickedThemeColor))">$INFO[Skin.String(PickedThemeColor)]</value>
+        <value>WhiteColor</value>
+    </variable>
+    <variable name="Picked.HighLight.Color">
+        <value condition="Skin.HasSetting(HighLight.Color.sweep)">$VAR[ColorSweep]</value>
+        <value condition="Skin.HasSetting(HighLight.Color.green)">GreenColor</value>
+        <value condition="Skin.HasSetting(HighLight.Color.amber)">AmberColor</value>
+        <value condition="Skin.HasSetting(HighLight.Color.fuchsia)">FuchsiaColor</value>
+        <value condition="Skin.HasSetting(HighLight.Color.lilac)">LilacColor</value>
+        <value condition="Skin.HasSetting(HighLight.Color.indigo)">IndigoColor</value>
+        <value condition="Skin.HasSetting(HighLight.Color.titanium)">TitaniumColor</value>
+        <value condition="!String.IsEmpty(Skin.String(PickedHighLightColor))">$INFO[Skin.String(PickedHighLightColor)]</value>
         <value>WhiteColor</value>
     </variable>
     <variable name="SkinSettings.RandomBackground.Art">

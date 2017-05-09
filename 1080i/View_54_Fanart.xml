@@ -71,9 +71,9 @@
                     <posy>55</posy>
                     <width>1410</width>
                     <height>793</height>
-                    <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-                    <texture colordiffuse="$VAR[Picked.Theme.Color]">defaultFolderBackEpisode.png</texture>
-                    <bordertexture border="2" colordiffuse="$VAR[Picked.Theme.Color]">common/frame_focus.png</bordertexture>
+                    <colordiffuse>$VAR[Picked.HighLight.Color]</colordiffuse>
+                    <texture colordiffuse="$VAR[Picked.HighLight.Color]">defaultFolderBackEpisode.png</texture>
+                    <bordertexture border="2" colordiffuse="$VAR[Picked.HighLight.Color]">common/frame_focus.png</bordertexture>
                     <bordersize>2</bordersize>
                 </control>
                 <control type="image">
@@ -84,7 +84,7 @@
                     <height>793</height>
                     <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                     <texture>special://skin/backgrounds/default/background.png</texture>
-                    <bordertexture border="2" colordiffuse="$VAR[Picked.Theme.Color]">common/frame_focus.png</bordertexture>
+                    <bordertexture border="2" colordiffuse="$VAR[Picked.HighLight.Color]">common/frame_focus.png</bordertexture>
                     <bordersize>2</bordersize>
                 </control>
                 <control type="multiimage">

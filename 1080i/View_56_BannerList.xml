@@ -53,7 +53,7 @@
                     <param name="align" value="center"/>
                     <param name="aligny" value="center"/>
                     <param name="texturediffuse" value="ThumbsFocusedColor"/>
-                    <param name="borderdiffuse" value="$VAR[Picked.Theme.Color]"/>
+                    <param name="borderdiffuse" value="$VAR[Picked.HighLight.Color]"/>
                 </include>
                 <include content="WatchedRecOverlay">
                     <param name="x" value="753"/>

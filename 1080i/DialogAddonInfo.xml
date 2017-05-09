@@ -44,7 +44,7 @@
                         <param name="aligny" value="top"/>
                         <param name="flipy" value="false"/>
                         <param name="texturediffuse" value="ThumbsFocusedColor"/>
-                        <param name="borderdiffuse" value="$VAR[Picked.Theme.Color]"/>
+                        <param name="borderdiffuse" value="$VAR[Picked.HighLight.Color]"/>
                     </include>
                     <control type="label">
                         <posx>660</posx>
@@ -172,7 +172,7 @@
                         <param name="aligny" value="top"/>
                         <param name="flipy" value="false"/>
                         <param name="texturediffuse" value="ThumbsFocusedColor"/>
-                        <param name="borderdiffuse" value="$VAR[Picked.Theme.Color]"/>
+                        <param name="borderdiffuse" value="$VAR[Picked.HighLight.Color]"/>
                     </include>
                     <control type="label">
                         <posx>660</posx>
@@ -238,7 +238,7 @@
                         <param name="aligny" value="top"/>
                         <param name="flipy" value="false"/>
                         <param name="texturediffuse" value="ThumbsFocusedColor"/>
-                        <param name="borderdiffuse" value="$VAR[Picked.Theme.Color]"/>
+                        <param name="borderdiffuse" value="$VAR[Picked.HighLight.Color]"/>
                     </include>
                     <control type="label">
                         <posx>660</posx>
@@ -296,7 +296,7 @@
                                 <param name="aligny" value="top"/>
                                 <param name="flipy" value="false"/>
                                 <param name="texturediffuse" value="ThumbsFocusedColor"/>
-                                <param name="borderdiffuse" value="$VAR[Picked.Theme.Color]"/>
+                                <param name="borderdiffuse" value="$VAR[Picked.HighLight.Color]"/>
                             </include>
                         </focusedlayout>
                     </control>

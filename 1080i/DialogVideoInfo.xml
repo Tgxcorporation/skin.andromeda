@@ -63,7 +63,7 @@
                         <param name="aligny" value="top"/>
                         <param name="flipy" value="false"/>
                         <param name="texturediffuse" value="ThumbsFocusedColor"/>
-                        <param name="borderdiffuse" value="$VAR[Picked.Theme.Color]"/>
+                        <param name="borderdiffuse" value="$VAR[Picked.HighLight.Color]"/>
                     </include>
                     <include content="StudioArt">
                         <param name="x" value="120"/>
@@ -790,7 +790,7 @@
                         <posy>200</posy>
                         <width>460</width>
                         <height>690</height>
-                        <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                        <colordiffuse>$VAR[Picked.HighLight.Color]</colordiffuse>
                         <texture>defaultArtistBig.png</texture>
                         <aspectratio aligny="top">keep</aspectratio>
                         <include>ThumbBorder</include>
@@ -872,7 +872,7 @@
                                     <param name="aligny" value="center"/>
                                     <param name="flipy" value="false"/>
                                     <param name="texturediffuse" value="ThumbsFocusedColor"/>
-                                    <param name="borderdiffuse" value="$VAR[Picked.Theme.Color]"/>
+                                    <param name="borderdiffuse" value="$VAR[Picked.HighLight.Color]"/>
                                 </include>
                                 <include content="FocusedIndicatorVertical">
                                     <param name="x" value="93"/>

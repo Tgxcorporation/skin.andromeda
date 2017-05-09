@@ -28,7 +28,7 @@
                     <posx>80</posx>
                     <posy>180</posy>
                     <width>380</width>
-                    <height>480</height>
+                    <height>540</height>
                     <onup>505051</onup>
                     <onright>9110</onright>
                     <ondown>9000</ondown>
@@ -98,6 +98,11 @@
                         <!--BACKGROUNDS-->
                         <item id="4">
                             <label>[CAPITALIZE]$LOCALIZE[33069][/CAPITALIZE]</label>
+                            <onclick>noop</onclick>
+                        </item>
+                        <!--HIGHLIGHTED COLORS-->
+                        <item id="11">
+                            <label>[CAPITALIZE]$LOCALIZE[31037][/CAPITALIZE]</label>
                             <onclick>noop</onclick>
                         </item>
                         <!--THEMES-->
@@ -201,16 +206,16 @@
                                     <onclick>Skin.ToggleSetting(AutoScroll)</onclick>
                                 </item>
                                 <!--<item id="6">-->
-                                    <!--<visible>Skin.HasSetting(ManualScroll)</visible>-->
-                                    <!--<label>$LOCALIZE[31026]</label>-->
-                                    <!--<label2>$LOCALIZE[107]</label2>-->
-                                    <!--<onclick>Skin.ToggleSetting(ManualScroll)</onclick>-->
+                                <!--<visible>Skin.HasSetting(ManualScroll)</visible>-->
+                                <!--<label>$LOCALIZE[31026]</label>-->
+                                <!--<label2>$LOCALIZE[107]</label2>-->
+                                <!--<onclick>Skin.ToggleSetting(ManualScroll)</onclick>-->
                                 <!--</item>-->
                                 <!--<item id="6">-->
-                                    <!--<visible>!Skin.HasSetting(ManualScroll)</visible>-->
-                                    <!--<label>$LOCALIZE[31026]</label>-->
-                                    <!--<label2>$LOCALIZE[106]</label2>-->
-                                    <!--<onclick>Skin.ToggleSetting(ManualScroll)</onclick>-->
+                                <!--<visible>!Skin.HasSetting(ManualScroll)</visible>-->
+                                <!--<label>$LOCALIZE[31026]</label>-->
+                                <!--<label2>$LOCALIZE[106]</label2>-->
+                                <!--<onclick>Skin.ToggleSetting(ManualScroll)</onclick>-->
                                 <!--</item>-->
                                 <!--<item id="18">-->
                                 <!--<visible>Skin.HasSetting(WindowClosingIcon)</visible>-->
@@ -1211,7 +1216,7 @@
                                 <width>820</width>
                                 <height>461</height>
                                 <texture>common/TransparentDot.png</texture>
-                                <bordertexture border="2" colordiffuse="$VAR[Picked.Theme.Color]">common/frame_focus.png</bordertexture>
+                                <bordertexture border="2" colordiffuse="$VAR[Picked.HighLight.Color]">common/frame_focus.png</bordertexture>
                                 <bordersize>2</bordersize>
                             </control>
                             <control type="label">
@@ -1546,6 +1551,267 @@
                             </content>
                         </control>
 
+                        <!--9000 HIGHLIGHTS -->
+                        <control type="group">
+                            <visible>Container(9000).HasFocus(11)</visible>
+                            <include>Icon_Fade</include>
+                            <control type="radiobutton" id="852801">
+                                <include>ButtonFocusAnimation</include>
+                                <posx>530</posx>
+                                <posy>180</posy>
+                                <width>380</width>
+                                <label>$LOCALIZE[31521]</label>
+                                <radioposx>0</radioposx>
+                                <include>SkinSettingsButton</include>
+                                <onright>852801</onright>
+                                <onleft>9000</onleft>
+                                <ondown>852802</ondown>
+                                <onup>852805</onup>
+                                <onclick>Skin.Reset(HighLight.Color.sweep)</onclick>
+                                <onclick>Skin.Reset(HighLight.Color.green)</onclick>
+                                <onclick>Skin.Reset(HighLight.Color.amber)</onclick>
+                                <onclick>Skin.Reset(HighLight.Color.fuchsia)</onclick>
+                                <onclick>Skin.Reset(HighLight.Color.lilac)</onclick>
+                                <onclick>Skin.Reset(HighLight.Color.indigo)</onclick>
+                                <onclick>Skin.Reset(HighLight.Color.titanium)</onclick>
+                                <onclick>Skin.Reset(HighLight.Color.custom)</onclick>
+                                <onclick>Skin.ToggleSetting(HighLight.Color.green)</onclick>
+                                <selected>Skin.HasSetting(HighLight.Color.green)</selected>
+                                <onclick>ReloadSkin()</onclick>
+                            </control>
+                            <!-- amber -->
+                            <control type="radiobutton" id="852802">
+                                <include>ButtonFocusAnimation</include>
+                                <posx>530</posx>
+                                <posy>240</posy>
+                                <width>380</width>
+                                <label>$LOCALIZE[31522]</label>
+                                <radioposx>0</radioposx>
+                                <include>SkinSettingsButton</include>
+                                <onright>852802</onright>
+                                <onleft>9000</onleft>
+                                <ondown>852803</ondown>
+                                <onup>852801</onup>
+                                <onclick>Skin.Reset(HighLight.Color.sweep)</onclick>
+                                <onclick>Skin.Reset(HighLight.Color.green)</onclick>
+                                <onclick>Skin.Reset(HighLight.Color.amber)</onclick>
+                                <onclick>Skin.Reset(HighLight.Color.fuchsia)</onclick>
+                                <onclick>Skin.Reset(HighLight.Color.indigo)</onclick>
+                                <onclick>Skin.Reset(HighLight.Color.lilac)</onclick>
+                                <onclick>Skin.Reset(HighLight.Color.titanium)</onclick>
+                                <onclick>Skin.Reset(HighLight.Color.custom)</onclick>
+                                <onclick>Skin.ToggleSetting(HighLight.Color.amber)</onclick>
+                                <selected>Skin.HasSetting(HighLight.Color.amber)</selected>
+                                <onclick>ReloadSkin()</onclick>
+                            </control>
+                            <!-- fuchsia -->
+                            <control type="radiobutton" id="852803">
+                                <include>ButtonFocusAnimation</include>
+                                <posx>530</posx>
+                                <posy>300</posy>
+                                <width>380</width>
+                                <label>$LOCALIZE[31523]</label>
+                                <radioposx>0</radioposx>
+                                <include>SkinSettingsButton</include>
+                                <onright>852803</onright>
+                                <onleft>9000</onleft>
+                                <ondown>852808</ondown>
+                                <onup>852802</onup>
+                                <onclick>Skin.Reset(HighLight.Color.sweep)</onclick>
+                                <onclick>Skin.Reset(HighLight.Color.green)</onclick>
+                                <onclick>Skin.Reset(HighLight.Color.amber)</onclick>
+                                <onclick>Skin.Reset(HighLight.Color.fuchsia)</onclick>
+                                <onclick>Skin.Reset(HighLight.Color.lilac)</onclick>
+                                <onclick>Skin.Reset(HighLight.Color.indigo)</onclick>
+                                <onclick>Skin.Reset(HighLight.Color.titanium)</onclick>
+                                <onclick>Skin.Reset(HighLight.Color.custom)</onclick>
+                                <onclick>Skin.ToggleSetting(HighLight.Color.fuchsia)</onclick>
+                                <selected>Skin.HasSetting(HighLight.Color.fuchsia)</selected>
+                                <onclick>ReloadSkin()</onclick>
+                            </control>
+                            <!-- lilac -->
+                            <control type="radiobutton" id="852808">
+                                <include>ButtonFocusAnimation</include>
+                                <posx>530</posx>
+                                <posy>360</posy>
+                                <width>380</width>
+                                <label>$LOCALIZE[31526]</label>
+                                <radioposx>0</radioposx>
+                                <include>SkinSettingsButton</include>
+                                <onright>852803</onright>
+                                <onleft>9000</onleft>
+                                <ondown>852804</ondown>
+                                <onup>852803</onup>
+                                <onclick>Skin.Reset(HighLight.Color.sweep)</onclick>
+                                <onclick>Skin.Reset(HighLight.Color.green)</onclick>
+                                <onclick>Skin.Reset(HighLight.Color.amber)</onclick>
+                                <onclick>Skin.Reset(HighLight.Color.fuchsia)</onclick>
+                                <onclick>Skin.Reset(HighLight.Color.lilac)</onclick>
+                                <onclick>Skin.Reset(HighLight.Color.indigo)</onclick>
+                                <onclick>Skin.Reset(HighLight.Color.titanium)</onclick>
+                                <onclick>Skin.Reset(HighLight.Color.custom)</onclick>
+                                <onclick>Skin.ToggleSetting(HighLight.Color.lilac)</onclick>
+                                <selected>Skin.HasSetting(HighLight.Color.lilac)</selected>
+                                <onclick>ReloadSkin()</onclick>
+                            </control>
+                            <!-- indigo -->
+                            <control type="radiobutton" id="852804">
+                                <include>ButtonFocusAnimation</include>
+                                <posx>530</posx>
+                                <posy>420</posy>
+                                <width>380</width>
+                                <label>$LOCALIZE[31524]</label>
+                                <radioposx>0</radioposx>
+                                <include>SkinSettingsButton</include>
+                                <onright>852804</onright>
+                                <onleft>9000</onleft>
+                                <ondown>852805</ondown>
+                                <onup>852808</onup>
+                                <onclick>Skin.Reset(HighLight.Color.sweep)</onclick>
+                                <onclick>Skin.Reset(HighLight.Color.green)</onclick>
+                                <onclick>Skin.Reset(HighLight.Color.amber)</onclick>
+                                <onclick>Skin.Reset(HighLight.Color.fuchsia)</onclick>
+                                <onclick>Skin.Reset(HighLight.Color.lilac)</onclick>
+                                <onclick>Skin.Reset(HighLight.Color.indigo)</onclick>
+                                <onclick>Skin.Reset(HighLight.Color.titanium)</onclick>
+                                <onclick>Skin.Reset(HighLight.Color.custom)</onclick>
+                                <onclick>Skin.ToggleSetting(HighLight.Color.indigo)</onclick>
+                                <selected>Skin.HasSetting(HighLight.Color.indigo)</selected>
+                                <onclick>ReloadSkin()</onclick>
+                            </control>
+                            <!-- titanium -->
+                            <control type="radiobutton" id="852805">
+                                <include>ButtonFocusAnimation</include>
+                                <posx>530</posx>
+                                <posy>480</posy>
+                                <width>380</width>
+                                <label>$LOCALIZE[31525]</label>
+                                <radioposx>0</radioposx>
+                                <include>SkinSettingsButton</include>
+                                <onright>852805</onright>
+                                <onleft>9000</onleft>
+                                <ondown>852806</ondown>
+                                <onup>852804</onup>
+                                <onclick>Skin.Reset(HighLight.Color.sweep)</onclick>
+                                <onclick>Skin.Reset(HighLight.Color.green)</onclick>
+                                <onclick>Skin.Reset(HighLight.Color.amber)</onclick>
+                                <onclick>Skin.Reset(HighLight.Color.fuchsia)</onclick>
+                                <onclick>Skin.Reset(HighLight.Color.lilac)</onclick>
+                                <onclick>Skin.Reset(HighLight.Color.indigo)</onclick>
+                                <onclick>Skin.Reset(HighLight.Color.titanium)</onclick>
+                                <onclick>Skin.Reset(HighLight.Color.custom)</onclick>
+                                <onclick>Skin.ToggleSetting(HighLight.Color.titanium)</onclick>
+                                <selected>[Skin.HasSetting(HighLight.Color.titanium)|![Skin.HasSetting(HighLight.Color.amber)|Skin.HasSetting(HighLight.Color.fuchsia)|Skin.HasSetting(HighLight.Color.lilac)|Skin.HasSetting(HighLight.Color.indigo)|Skin.HasSetting(HighLight.Color.titanium)|Skin.HasSetting(HighLight.Color.custom)|Skin.HasSetting(HighLight.Color.sweep)]]</selected>
+                                <onclick>ReloadSkin()</onclick>
+                            </control>
+                            <!--custom-->
+                            <control type="radiobutton" id="852806">
+                                <include>ButtonFocusAnimation</include>
+                                <posx>530</posx>
+                                <posy>540</posy>
+                                <width>380</width>
+                                <label>$LOCALIZE[31070]</label>
+                                <radioposx>0</radioposx>
+                                <include>SkinSettingsButton</include>
+                                <onright>852806</onright>
+                                <onleft>9000</onleft>
+                                <ondown>852807</ondown>
+                                <onup>852805</onup>
+                                <onclick>Skin.Reset(HighLight.Color.sweep)</onclick>
+                                <onclick>Skin.Reset(HighLight.Color.green)</onclick>
+                                <onclick>Skin.Reset(HighLight.Color.amber)</onclick>
+                                <onclick>Skin.Reset(HighLight.Color.fuchsia)</onclick>
+                                <onclick>Skin.Reset(HighLight.Color.lilac)</onclick>
+                                <onclick>Skin.Reset(HighLight.Color.indigo)</onclick>
+                                <onclick>Skin.Reset(HighLight.Color.titanium)</onclick>
+                                <onclick>Skin.Reset(HighLight.Color.custom)</onclick>
+                                <onclick>Skin.ToggleSetting(HighLight.Color.custom)</onclick>
+                                <selected>Skin.HasSetting(HighLight.Color.custom)</selected>
+                                <onclick>RunScript(script.skin.helper.colorpicker,skinstring=PickedHighLightColor)</onclick>
+                                <onclick>ReloadSkin()</onclick>
+                            </control>
+                            <!-- sweep -->
+                            <control type="radiobutton" id="852807">
+                                <include>ButtonFocusAnimation</include>
+                                <posx>530</posx>
+                                <posy>600</posy>
+                                <width>380</width>
+                                <label>$LOCALIZE[31047]</label>
+                                <radioposx>0</radioposx>
+                                <include>SkinSettingsButton</include>
+                                <onright>852807</onright>
+                                <onleft>9000</onleft>
+                                <ondown>852801</ondown>
+                                <onup>852806</onup>
+                                <onclick>Skin.Reset(HighLight.Color.sweep)</onclick>
+                                <onclick>Skin.Reset(HighLight.Color.green)</onclick>
+                                <onclick>Skin.Reset(HighLight.Color.amber)</onclick>
+                                <onclick>Skin.Reset(HighLight.Color.fuchsia)</onclick>
+                                <onclick>Skin.Reset(HighLight.Color.lilac)</onclick>
+                                <onclick>Skin.Reset(HighLight.Color.indigo)</onclick>
+                                <onclick>Skin.Reset(HighLight.Color.titanium)</onclick>
+                                <onclick>Skin.Reset(HighLight.Color.custom)</onclick>
+                                <onclick>Skin.ToggleSetting(HighLight.Color.sweep)</onclick>
+                                <selected>Skin.HasSetting(HighLight.Color.sweep)</selected>
+                                <onclick>ReloadSkin()</onclick>
+                            </control>
+                            <control type="group">
+                                <visible>control.hasfocus(852801)</visible>
+                                <include>Icon_Fade</include>
+                                <include content="SkinSettingsHighLightColor">
+                                    <param name="color" value="GreenColor"/>
+                                </include>
+                            </control>
+                            <control type="group">
+                                <visible>control.hasfocus(852802)</visible>
+                                <include>Icon_Fade</include>
+                                <include content="SkinSettingsHighLightColor">
+                                    <param name="color" value="AmberColor"/>
+                                </include>
+                            </control>
+                            <control type="group">
+                                <visible>control.hasfocus(852803)</visible>
+                                <include>Icon_Fade</include>
+                                <include content="SkinSettingsHighLightColor">
+                                    <param name="color" value="FuchsiaColor"/>
+                                </include>
+                            </control>
+                            <control type="group">
+                                <visible>control.hasfocus(852808)</visible>
+                                <include>Icon_Fade</include>
+                                <include content="SkinSettingsHighLightColor">
+                                    <param name="color" value="LilacColor"/>
+                                </include>
+                            </control>
+                            <control type="group">
+                                <visible>control.hasfocus(852804)</visible>
+                                <include>Icon_Fade</include>
+                                <include content="SkinSettingsHighLightColor">
+                                    <param name="color" value="IndigoColor"/>
+                                </include>
+                            </control>
+                            <control type="group">
+                                <visible>control.hasfocus(852805)</visible>
+                                <include>Icon_Fade</include>
+                                <include content="SkinSettingsHighLightColor">
+                                    <param name="color" value="TitaniumColor"/>
+                                </include>
+                            </control>
+                            <control type="group">
+                                <visible>control.hasfocus(852806)</visible>
+                                <include>Icon_Fade</include>
+                                <include content="SkinSettingsHighLightColor">
+                                    <param name="color" value="$INFO[Skin.String(PickedHighLightColor)]"/>
+                                </include>
+                            </control>
+                            <control type="group">
+                                <visible>control.hasfocus(852807)</visible>
+                                <include>Icon_Fade</include>
+                                <include content="SkinSettingsHighLightColor">
+                                    <param name="color" value="$VAR[ColorSweep]"/>
+                                </include>
+                            </control>
+                        </control>
                         <!-- THEMES -->
                         <control type="group">
                             <visible>Container(9000).Hasfocus(13)</visible>
@@ -1723,7 +1989,7 @@
                                 <onclick>Skin.Reset(Theme.Color.custom)</onclick>
                                 <onclick>Skin.ToggleSetting(Theme.Color.custom)</onclick>
                                 <selected>Skin.HasSetting(Theme.Color.custom)</selected>
-                                <onclick>RunScript(script.skin.helper.colorpicker,skinstring=PickedColor)</onclick>
+                                <onclick>RunScript(script.skin.helper.colorpicker,skinstring=PickedThemeColor)</onclick>
                                 <onclick>ReloadSkin()</onclick>
                             </control>
                             <!-- sweep -->
@@ -1769,7 +2035,7 @@
                                     <width>820</width>
                                     <height>461</height>
                                     <texture>common/TransparentDot.png</texture>
-                                    <bordertexture border="2" colordiffuse="$VAR[Picked.Theme.Color]">common/frame_focus.png</bordertexture>
+                                    <bordertexture border="2" colordiffuse="$VAR[Picked.HighLight.Color]">common/frame_focus.png</bordertexture>
                                     <bordersize>2</bordersize>
                                 </control>
                                 <control type="label">
@@ -1802,7 +2068,7 @@
                                     <width>820</width>
                                     <height>461</height>
                                     <texture>common/TransparentDot.png</texture>
-                                    <bordertexture border="2" colordiffuse="$VAR[Picked.Theme.Color]">common/frame_focus.png</bordertexture>
+                                    <bordertexture border="2" colordiffuse="$VAR[Picked.HighLight.Color]">common/frame_focus.png</bordertexture>
                                     <bordersize>2</bordersize>
                                 </control>
                                 <control type="label">
@@ -1835,7 +2101,7 @@
                                     <width>820</width>
                                     <height>461</height>
                                     <texture>common/TransparentDot.png</texture>
-                                    <bordertexture border="2" colordiffuse="$VAR[Picked.Theme.Color]">common/frame_focus.png</bordertexture>
+                                    <bordertexture border="2" colordiffuse="$VAR[Picked.HighLight.Color]">common/frame_focus.png</bordertexture>
                                     <bordersize>2</bordersize>
                                 </control>
                                 <control type="label">
@@ -1868,7 +2134,7 @@
                                     <width>820</width>
                                     <height>461</height>
                                     <texture>common/TransparentDot.png</texture>
-                                    <bordertexture border="2" colordiffuse="$VAR[Picked.Theme.Color]">common/frame_focus.png</bordertexture>
+                                    <bordertexture border="2" colordiffuse="$VAR[Picked.HighLight.Color]">common/frame_focus.png</bordertexture>
                                     <bordersize>2</bordersize>
                                 </control>
                                 <control type="label">
@@ -1901,7 +2167,7 @@
                                     <width>820</width>
                                     <height>461</height>
                                     <texture>common/TransparentDot.png</texture>
-                                    <bordertexture border="2" colordiffuse="$VAR[Picked.Theme.Color]">common/frame_focus.png</bordertexture>
+                                    <bordertexture border="2" colordiffuse="$VAR[Picked.HighLight.Color]">common/frame_focus.png</bordertexture>
                                     <bordersize>2</bordersize>
                                 </control>
                                 <control type="label">
@@ -1934,7 +2200,7 @@
                                     <width>820</width>
                                     <height>461</height>
                                     <texture>common/TransparentDot.png</texture>
-                                    <bordertexture border="2" colordiffuse="$VAR[Picked.Theme.Color]">common/frame_focus.png</bordertexture>
+                                    <bordertexture border="2" colordiffuse="$VAR[Picked.HighLight.Color]">common/frame_focus.png</bordertexture>
                                     <bordersize>2</bordersize>
                                 </control>
                                 <control type="label">
@@ -1957,7 +2223,7 @@
                                     <posy>190</posy>
                                     <width>820</width>
                                     <height>461</height>
-                                    <colordiffuse>$INFO[Skin.String(PickedColor)]</colordiffuse>
+                                    <colordiffuse>$INFO[Skin.String(PickedThemeColor)]</colordiffuse>
                                     <aspectratio>scale</aspectratio>
                                     <texture>special://skin/backgrounds/default/background.png</texture>
                                 </control>
@@ -1967,7 +2233,7 @@
                                     <width>820</width>
                                     <height>461</height>
                                     <texture>common/TransparentDot.png</texture>
-                                    <bordertexture border="2" colordiffuse="$VAR[Picked.Theme.Color]">common/frame_focus.png</bordertexture>
+                                    <bordertexture border="2" colordiffuse="$VAR[Picked.HighLight.Color]">common/frame_focus.png</bordertexture>
                                     <bordersize>2</bordersize>
                                 </control>
                                 <control type="label">
@@ -2000,7 +2266,7 @@
                                     <width>820</width>
                                     <height>461</height>
                                     <texture>common/TransparentDot.png</texture>
-                                    <bordertexture border="2" colordiffuse="$VAR[Picked.Theme.Color]">common/frame_focus.png</bordertexture>
+                                    <bordertexture border="2" colordiffuse="$VAR[Picked.HighLight.Color]">common/frame_focus.png</bordertexture>
                                     <bordersize>2</bordersize>
                                 </control>
                                 <control type="label">
