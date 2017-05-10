@@ -1288,13 +1288,16 @@
     </include>
     <include name="WindowClosingButton">
         <control type="button">
+            <visible>window.isvisible(Pointer.xml)</visible>
             <description>Fake button for mouse control</description>
             <posx>1280</posx>
             <posy>0</posy>
-            <width>1920</width>
+            <width>640</width>
             <height>40</height>
-            <label>-</label>
-            <font>-</font>
+            <label></label>
+            <align>right</align>
+            <textoffsetx>0</textoffsetx>
+            <font>DialogMatFont</font>
             <texturenofocus>-</texturenofocus>
             <texturefocus>-</texturefocus>
             <visible>true</visible>
