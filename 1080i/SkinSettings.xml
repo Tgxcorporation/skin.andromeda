@@ -1800,9 +1800,18 @@
                             <control type="group">
                                 <visible>control.hasfocus(852806)</visible>
                                 <include>Icon_Fade</include>
-                                <include content="SkinSettingsHighLightColor">
-                                    <param name="color" value="$INFO[Skin.String(PickedHighLightColor)]"/>
-                                </include>
+                                <control type="group">
+                                    <visible>!String.IsEmpty(Skin.String(PickedHighLightColor))</visible>
+                                    <include content="SkinSettingsHighLightColor">
+                                        <param name="color" value="$INFO[Skin.String(PickedHighLightColor)]"/>
+                                    </include>
+                                </control>
+                                <control type="group">
+                                    <visible>String.IsEmpty(Skin.String(PickedHighLightColor))</visible>
+                                    <include content="SkinSettingsHighLightColor">
+                                        <param name="color" value="TitaniumColor"/>
+                                    </include>
+                                </control>
                             </control>
                             <control type="group">
                                 <visible>control.hasfocus(852807)</visible>

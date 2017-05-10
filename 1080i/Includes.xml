@@ -1744,8 +1744,8 @@
                 <param name="visible" value="true"/>
                 <param name="x" value="70"/>
                 <param name="y" value="10"/>
-                <param name="width" value="321"/>
-                <param name="height" value="321"/>
+                <param name="width" value="150"/>
+                <param name="height" value="150"/>
                 <param name="aspectratio" value="keep"/>
                 <param name="align" value="center"/>
                 <param name="aligny" value="top"/>
@@ -1756,7 +1756,7 @@
             <control type="group">
                 <control type="image">
                     <visible>$PARAM[visible]</visible>
-                    <posx>440</posx>
+                    <posx>270</posx>
                     <posy>30</posy>
                     <width>2</width>
                     <height>57</height>
@@ -1764,43 +1764,34 @@
                     <texture border="0,2,0,2">common/line_white_vertical.png</texture>
                 </control>
                 <control type="label">
-                    <posx>460</posx>
+                    <posx>290</posx>
                     <posy>30</posy>
                     <height>50</height>
-                    <width>430</width>
+                    <width>600</width>
                     <font>FacadeListTitleFont</font>
                     <textcolor>$PARAM[color]</textcolor>
                     <label>Lorem ipsum dolor sit amet</label>
                 </control>
                 <control type="label">
-                    <posx>460</posx>
+                    <posx>290</posx>
                     <posy>80</posy>
                     <height>50</height>
-                    <width>430</width>
+                    <width>600</width>
                     <font>FacadeListSubTitleFont</font>
                     <textcolor>$PARAM[color]</textcolor>
                     <label>Donec ut arcu in purus elementum sodales sit amet et ligula</label>
-                </control>
-                <control type="textbox">
-                    <posx>460</posx>
-                    <posy>135</posy>
-                    <height>170</height>
-                    <width>430</width>
-                    <font>FacadeListSubTitleFont</font>
-                    <textcolor>$PARAM[color]</textcolor>
-                    <label>Pellentesque pretium pellentesque est, quis consectetur quam auctor quis. Donec lobortis tincidunt turpis nec ultricies. Duis magna dolor, tempus euismod nibh a, hendrerit accumsan ligula. Curabitur sodales et ex eget pellentesque. Etiam rhoncus est sit amet dolor accumsan vestibulum. Sed quis congue magna, quis tincidunt nulla. Praesent a libero id felis vestibulum gravida non in lorem. Nunc volutpat arcu at fringilla maximus.</label>
                 </control>
             </control>
         </control>
         <control type="group">
             <posx>930</posx>
-            <posy>510</posy>
+            <posy>340</posy>
             <include content="ThumbsImages">
                 <param name="visible" value="true"/>
                 <param name="x" value="70"/>
                 <param name="y" value="10"/>
-                <param name="width" value="321"/>
-                <param name="height" value="321"/>
+                <param name="width" value="150"/>
+                <param name="height" value="150"/>
                 <param name="aspectratio" value="keep"/>
                 <param name="align" value="center"/>
                 <param name="aligny" value="top"/>
@@ -1810,19 +1801,93 @@
             </include>
             <control type="group">
                 <control type="label">
-                    <posx>460</posx>
+                    <posx>290</posx>
                     <posy>30</posy>
                     <height>50</height>
-                    <width>430</width>
+                    <width>600</width>
                     <font>FacadeListTitleFont</font>
                     <textcolor>NoFocusedColor</textcolor>
                     <label>Lorem ipsum dolor sit amet</label>
                 </control>
                 <control type="label">
-                    <posx>460</posx>
+                    <posx>290</posx>
                     <posy>80</posy>
                     <height>50</height>
-                    <width>430</width>
+                    <width>600</width>
+                    <font>FacadeListSubTitleFont</font>
+                    <textcolor>NoFocusedColor</textcolor>
+                    <label>Donec ut arcu in purus elementum sodales sit amet et ligula</label>
+                </control>
+            </control>
+        </control>
+        <control type="group">
+            <posx>930</posx>
+            <posy>500</posy>
+            <include content="ThumbsImages">
+                <param name="visible" value="true"/>
+                <param name="x" value="70"/>
+                <param name="y" value="10"/>
+                <param name="width" value="150"/>
+                <param name="height" value="150"/>
+                <param name="aspectratio" value="keep"/>
+                <param name="align" value="center"/>
+                <param name="aligny" value="top"/>
+                <param name="flipy" value="false"/>
+                <param name="texturediffuse" value="ThumbsUnfocusedColor"/>
+                <param name="borderdiffuse" value="BorderUnfocusedColor"/>
+            </include>
+            <control type="group">
+                <control type="label">
+                    <posx>290</posx>
+                    <posy>30</posy>
+                    <height>50</height>
+                    <width>600</width>
+                    <font>FacadeListTitleFont</font>
+                    <textcolor>NoFocusedColor</textcolor>
+                    <label>Lorem ipsum dolor sit amet</label>
+                </control>
+                <control type="label">
+                    <posx>290</posx>
+                    <posy>80</posy>
+                    <height>50</height>
+                    <width>600</width>
+                    <font>FacadeListSubTitleFont</font>
+                    <textcolor>NoFocusedColor</textcolor>
+                    <label>Donec ut arcu in purus elementum sodales sit amet et ligula</label>
+                </control>
+            </control>
+        </control>
+        <control type="group">
+            <posx>930</posx>
+            <posy>660</posy>
+            <include content="ThumbsImages">
+                <param name="visible" value="true"/>
+                <param name="x" value="70"/>
+                <param name="y" value="10"/>
+                <param name="width" value="150"/>
+                <param name="height" value="150"/>
+                <param name="aspectratio" value="keep"/>
+                <param name="align" value="center"/>
+                <param name="aligny" value="top"/>
+                <param name="flipy" value="false"/>
+                <param name="texturediffuse" value="ThumbsUnfocusedColor"/>
+                <param name="borderdiffuse" value="BorderUnfocusedColor"/>
+            </include>
+            <control type="group">
+                <control type="label">
+                    <posx>290</posx>
+                    <posy>30</posy>
+                    <height>50</height>
+                    <width>600</width>
+                    <font>FacadeListTitleFont</font>
+                    <textcolor>NoFocusedColor</textcolor>
+                    <label>Lorem ipsum dolor sit amet</label>
+                </control>
+                <control type="label">
+                    <posx>290</posx>
+                    <posy>80</posy>
+                    <height>50</height>
+                    <width>600</width>
                     <font>FacadeListSubTitleFont</font>
                     <textcolor>NoFocusedColor</textcolor>
                     <label>Donec ut arcu in purus elementum sodales sit amet et ligula</label>
