@@ -75,17 +75,17 @@
                 <include content="ProgressBar">
                     <param name="id" value="0"/>
                     <param name="visible" value="Integer.IsGreater(ListItem.PercentPlayed,0)"/>
-                    <param name="x" value="646"/>
+                    <param name="x" value="342"/>
                     <param name="y" value="10"/>
                     <param name="width" value="149"/>
                     <param name="info" value="ListItem.PercentPlayed"/>
                     <param name="endRotation" value="-90"/>
-                    <param name="centerRotation" value="646,10"/>
+                    <param name="centerRotation" value="342,10"/>
                     <param name="visiblefocus" value="false"/>
                     <param name="direction" value="vertical"/>
                 </include>
                 <include content="WatchedRecOverlay">
-                    <param name="x" value="583"/>
+                    <param name="x" value="279"/>
                     <param name="y" value="12"/>
                     <param name="width" value="50"/>
                     <param name="height" value="50"/>
