@@ -1899,4 +1899,7 @@
             </control>
         </control>
     </include>
+    <include name="NullHeightWidget">
+        <height>0</height>
+    </include>
 </includes>
