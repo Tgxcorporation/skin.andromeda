@@ -2,7 +2,7 @@
 <includes>
     <include name="CustomWidget">
         <control type="group">
-            <include>OpenClose</include>
+            <include>OpenCloseVisible</include>
             <visible>$PARAM[visibility]</visible>
             <height>$PARAM[height]</height>
             <control type="label">
@@ -183,7 +183,7 @@
     </include>
     <include name="Widget">
         <control type="group">
-            <include>OpenClose</include>
+            <include>OpenCloseVisible</include>
             <visible>$PARAM[visibility]</visible>
             <height>$PARAM[height]</height>
             <control type="label">

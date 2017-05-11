@@ -117,7 +117,7 @@
                     <width>auto</width>
                     <height>90</height>
                     <font>OSDSubFontMat</font>
-                    <include>TextColor_MidColor</include>
+                    <include>TextColor_MainColor</include>
                     <label></label>
                 </control>
                 <control type="label">
@@ -145,7 +145,7 @@
                     <width>auto</width>
                     <height>90</height>
                     <font>OSDSubFontMat</font>
-                    <include>TextColor_MidColor</include>
+                    <include>TextColor_MainColor</include>
                     <label></label>
                 </control>
                 <control type="label">
@@ -180,7 +180,7 @@
                     <width>auto</width>
                     <height>90</height>
                     <font>OSDSubFontMat</font>
-                    <include>TextColor_MidColor</include>
+                    <include>TextColor_MainColor</include>
                     <label></label>
                 </control>
             </control>
@@ -208,7 +208,7 @@
                     <width>auto</width>
                     <height>90</height>
                     <font>OSDSubFontMat</font>
-                    <include>TextColor_MidColor</include>
+                    <include>TextColor_MainColor</include>
                     <label></label>
                 </control>
             </control>

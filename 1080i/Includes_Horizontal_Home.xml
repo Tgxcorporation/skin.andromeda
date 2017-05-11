@@ -5,13 +5,14 @@
             <pagecontrol>60</pagecontrol>
             <itemgap>0</itemgap>
             <control type="group">
+                <include>OpenCloseOverlay</include>
                 <height>0</height>
                 <control type="image">
                     <include>OverlayTransparency</include>
                     <posx>0</posx>
                     <posy>330</posy>
                     <width>1920</width>
-                    <height>4000</height>
+                    <height>3500</height>
                     <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                     <texture border="10">common/overlay_dialog_gradient.png</texture>
                 </control>
