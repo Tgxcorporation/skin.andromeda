@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<template>
+
+    <other include="widget">
+        <!-- We're going to use this template for all widgets with a widgetPath element -->
+        <condition tag="property" attribute="name|widgetPath" />
+        <property name="mainmenuid" tag="mainmenuid" />
+
+        <property name="height" tag="property" attribute="name|widgetAspect" value="31117">697</property>
+        <property name="height" tag="property" attribute="name|widgetAspect" value="31119">505</property>
+        <property name="height" tag="property" attribute="name|widgetAspect" value="31118">608</property>
+        <property name="height" tag="property" attribute="name|widgetAspect" value="31120">547</property>
+
+        <property name="gfxType" tag="property" attribute="name|widgetAspect" value="31117">Poster</property>
+        <property name="gfxType" tag="property" attribute="name|widgetAspect" value="31119">Episode</property>
+        <property name="gfxType" tag="property" attribute="name|widgetAspect" value="31118">Square</property>
+        <property name="gfxType" tag="property" attribute="name|widgetAspect" value="31120">Channel</property>
+
+        <property name="labelTitle" tag="property" attribute="name|widgetAspect" value="31117">$INFO[ListItem.TVShowTitle,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Label]</property>
+        <property name="labelTitle" tag="property" attribute="name|widgetAspect" value="31119">$INFO[ListItem.TVShowTitle,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Label]</property>
+        <property name="labelTitle" tag="property" attribute="name|widgetAspect" value="31118">$INFO[ListItem.Label]</property>
+        <property name="labelTitle" tag="property" attribute="name|widgetAspect" value="31120">$INFO[ListItem.Label]</property>
+
+        <property name="labelSubTitle" tag="property" attribute="name|widgetAspect" value="31117">$INFO[ListItem.Rating,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year]$INFO[ListItem.Duration,[COLOR=SeparatorColor] › [/COLOR], $LOCALIZE[31297]]</property>
+        <property name="labelSubTitle" tag="property" attribute="name|widgetAspect" value="31119">$INFO[ListItem.Rating,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration,, $LOCALIZE[31297]]</property>
+        <property name="labelSubTitle" tag="property" attribute="name|widgetAspect" value="31118">$INFO[ListItem.Artist]$INFO[ListItem.Rating,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration,[COLOR=SeparatorColor] › [/COLOR], $LOCALIZE[31297]]</property>
+        <property name="labelSubTitle" tag="property" attribute="name|widgetAspect" value="31120">$INFO[ListItem.Label2,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration]</property>
+
+        <property name="title" tag="property" attribute="name|widgetName" />
+        <property name="sortby" tag="property" attribute="name|widgetSortBy" />
+        <property name="sortdirection" tag="property" attribute="name|widgetSortDirection" />
+        <property name="target" tag="property" attribute="name|widgetTarget" />
+        <property name="content" tag="property" attribute="name|widgetPath" />
+
+        <controls>
+            <control type="group">
+                <include>OpenCloseVisible</include>
+                <skinshortcuts>visibility</skinshortcuts>
+                <height>$SKINSHORTCUTS[height]</height>
+                <control type="label">
+                    <visible>control.hasfocus(70001$SKINSHORTCUTS[mainmenuid])</visible>
+                    <posx>TextMargin</posx>
+                    <posy>45</posy>
+                    <height>40</height>
+                    <width>1920</width>
+                    <font>FacadeListMainFont</font>
+                    <include>TextColor_MainColor</include>
+                    <scroll>false</scroll>
+                    <label>$SKINSHORTCUTS[title]</label>
+                </control>
+                <control type="label">
+                    <visible>!control.hasfocus(70001$SKINSHORTCUTS[mainmenuid])</visible>
+                    <posx>TextMargin</posx>
+                    <posy>45</posy>
+                    <height>40</height>
+                    <width>1920</width>
+                    <font>FacadeListMainFont</font>
+                    <include>TextColor_AlternateColor</include>
+                    <scroll>false</scroll>
+                    <label>$SKINSHORTCUTS[title]</label>
+                </control>
+                <control type="image">
+                    <visible>!Integer.IsGreater(Container(70001$SKINSHORTCUTS[mainmenuid]).NumItems,0)</visible>
+                    <posx>70</posx>
+                    <posy>97</posy>
+                    <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
+                    <aspectratio align="center" aligny="center">keep</aspectratio>
+                    <colordiffuse>ThumbsUnfocusedColor</colordiffuse>
+                    <texture>defaultEmptyBig.png</texture>
+                    <fadetime>300</fadetime>
+                </control>
+                <control type="image">
+                    <visible>!Integer.IsGreater(Container(70001$SKINSHORTCUTS[mainmenuid]).NumItems,0)</visible>
+                    <posx>70</posx>
+                    <posy>97</posy>
+                    <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
+                    <colordiffuse>ThumbsUnfocusedColor</colordiffuse>
+                    <texture border="2">common/TransparentDot.png</texture>
+                    <bordertexture border="2" colordiffuse="BorderUnfocusedColor">common/frame_focus.png</bordertexture>
+                    <bordersize>2</bordersize>
+                    <fadetime>300</fadetime>
+                </control>
+                <include content="Widget_Empty_$SKINSHORTCUTS[gfxType]">
+                    <param name="id" value="70001$SKINSHORTCUTS[mainmenuid]"/>
+                </include>
+                <control type="list" id="70001$SKINSHORTCUTS[mainmenuid]">
+                    <skinshortcuts>visibility</skinshortcuts>
+                    <onright>70001$SKINSHORTCUTS[mainmenuid]</onright>
+                    <onup>300</onup>
+                    <ondown>70002$SKINSHORTCUTS[mainmenuid]</ondown>
+                    <onleft>70001$SKINSHORTCUTS[mainmenuid]</onleft>
+                    <include content="Widget_$SKINSHORTCUTS[gfxType]">
+                        <param name="id" value="70001$SKINSHORTCUTS[mainmenuid]"/>
+                        <param name="labelTitle" value="$SKINSHORTCUTS[labelTitle]"/>
+                        <param name="labelSubTitle" value="$SKINSHORTCUTS[labelSubTitle]"/>
+                    </include>
+                    <content limit="$VAR[WidgetLimit]" sortby="$SKINSHORTCUTS[sortby]" sortorder="$SKINSHORTCUTS[sortdirection]" target="$SKINSHORTCUTS[target]" >$SKINSHORTCUTS[content]</content>
+                </control>
+                <include content="Widget_NavButtons_$SKINSHORTCUTS[gfxType]">
+                    <param name="id" value="70001$SKINSHORTCUTS[mainmenuid]"/>
+                    <param name="height" value="$SKINSHORTCUTS[height]"/>
+                </include>
+            </control>
+        </controls>
+    </other>
+    <other include="widget.1">
+        <!-- We're going to use this template for all widgets with a widgetPath element -->
+        <condition tag="property" attribute="name|widgetPath.1" />
+        <property name="mainmenuid" tag="mainmenuid" />
+
+        <property name="height" tag="property" attribute="name|widgetAspect.1" value="31117">697</property>
+        <property name="height" tag="property" attribute="name|widgetAspect.1" value="31119">505</property>
+        <property name="height" tag="property" attribute="name|widgetAspect.1" value="31118">608</property>
+        <property name="height" tag="property" attribute="name|widgetAspect.1" value="31120">547</property>
+
+        <property name="gfxType" tag="property" attribute="name|widgetAspect.1" value="31117">Poster</property>
+        <property name="gfxType" tag="property" attribute="name|widgetAspect.1" value="31119">Episode</property>
+        <property name="gfxType" tag="property" attribute="name|widgetAspect.1" value="31118">Square</property>
+        <property name="gfxType" tag="property" attribute="name|widgetAspect.1" value="31120">Channel</property>
+
+        <property name="labelTitle" tag="property" attribute="name|widgetAspect.1" value="31117">$INFO[ListItem.TVShowTitle,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Label]</property>
+        <property name="labelTitle" tag="property" attribute="name|widgetAspect.1" value="31119">$INFO[ListItem.TVShowTitle,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Label]</property>
+        <property name="labelTitle" tag="property" attribute="name|widgetAspect.1" value="31118">$INFO[ListItem.Label]</property>
+        <property name="labelTitle" tag="property" attribute="name|widgetAspect.1" value="31120">$INFO[ListItem.Label]</property>
+
+        <property name="labelSubTitle" tag="property" attribute="name|widgetAspect.1" value="31117">$INFO[ListItem.Rating,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year]$INFO[ListItem.Duration,[COLOR=SeparatorColor] › [/COLOR], $LOCALIZE[31297]]</property>
+        <property name="labelSubTitle" tag="property" attribute="name|widgetAspect.1" value="31119">$INFO[ListItem.Rating,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration,, $LOCALIZE[31297]]</property>
+        <property name="labelSubTitle" tag="property" attribute="name|widgetAspect.1" value="31118">$INFO[ListItem.Artist]$INFO[ListItem.Rating,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration,[COLOR=SeparatorColor] › [/COLOR], $LOCALIZE[31297]]</property>
+        <property name="labelSubTitle" tag="property" attribute="name|widgetAspect.1" value="31120">$INFO[ListItem.Label2,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration]</property>
+
+        <property name="title" tag="property" attribute="name|widgetName.1" />
+        <property name="sortby" tag="property" attribute="name|widgetSortBy.1" />
+        <property name="sortdirection" tag="property" attribute="name|widgetSortDirection.1" />
+        <property name="target" tag="property" attribute="name|widgetTarget.1" />
+        <property name="content" tag="property" attribute="name|widgetPath.1" />
+
+        <controls>
+            <control type="group">
+                <include>OpenCloseVisible</include>
+                <skinshortcuts>visibility</skinshortcuts>
+                <height>$SKINSHORTCUTS[height]</height>
+                <control type="label">
+                    <visible>control.hasfocus(70002$SKINSHORTCUTS[mainmenuid])</visible>
+                    <posx>TextMargin</posx>
+                    <posy>45</posy>
+                    <height>40</height>
+                    <width>1920</width>
+                    <font>FacadeListMainFont</font>
+                    <include>TextColor_MainColor</include>
+                    <scroll>false</scroll>
+                    <label>$SKINSHORTCUTS[title]</label>
+                </control>
+                <control type="label">
+                    <visible>!control.hasfocus(70002$SKINSHORTCUTS[mainmenuid])</visible>
+                    <posx>TextMargin</posx>
+                    <posy>45</posy>
+                    <height>40</height>
+                    <width>1920</width>
+                    <font>FacadeListMainFont</font>
+                    <include>TextColor_AlternateColor</include>
+                    <scroll>false</scroll>
+                    <label>$SKINSHORTCUTS[title]</label>
+                </control>
+                <control type="list" id="70002$SKINSHORTCUTS[mainmenuid]">
+                    <onright>70002$SKINSHORTCUTS[mainmenuid]</onright>
+                    <onup>70001$SKINSHORTCUTS[mainmenuid]</onup>
+                    <ondown>70003$SKINSHORTCUTS[mainmenuid]</ondown>
+                    <onleft>70002$SKINSHORTCUTS[mainmenuid]</onleft>
+                    <include content="Widget_$SKINSHORTCUTS[gfxType]">
+                        <param name="id" value="70002$SKINSHORTCUTS[mainmenuid]"/>
+                        <param name="labelTitle" value="$SKINSHORTCUTS[labelTitle]"/>
+                        <param name="labelSubTitle" value="$SKINSHORTCUTS[labelSubTitle]"/>
+                    </include>
+                    <content limit="$VAR[WidgetLimit]" sortby="$SKINSHORTCUTS[sortby]" sortorder="$SKINSHORTCUTS[sortdirection]" target="$SKINSHORTCUTS[target]" >$SKINSHORTCUTS[content]</content>
+                </control>
+                <include content="Widget_NavButtons_$SKINSHORTCUTS[gfxType]">
+                    <param name="id" value="70002$SKINSHORTCUTS[mainmenuid]"/>
+                    <param name="height" value="$SKINSHORTCUTS[height]"/>
+                </include>
+                <control type="image">
+                    <visible>!Integer.IsGreater(Container(70002$SKINSHORTCUTS[mainmenuid]).NumItems,0)</visible>
+                    <posx>70</posx>
+                    <posy>97</posy>
+                    <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
+                    <aspectratio align="center" aligny="center">keep</aspectratio>
+                    <colordiffuse>ThumbsUnfocusedColor</colordiffuse>
+                    <texture>defaultEmptyBig.png</texture>
+                </control>
+                <control type="image">
+                    <visible>!Integer.IsGreater(Container(70002$SKINSHORTCUTS[mainmenuid]).NumItems,0)</visible>
+                    <posx>70</posx>
+                    <posy>97</posy>
+                    <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
+                    <colordiffuse>ThumbsUnfocusedColor</colordiffuse>
+                    <texture border="2">common/TransparentDot.png</texture>
+                    <bordertexture border="2" colordiffuse="BorderUnfocusedColor">common/frame_focus.png</bordertexture>
+                    <bordersize>2</bordersize>
+                </control>
+                <include content="Widget_Empty_$SKINSHORTCUTS[gfxType]">
+                    <param name="id" value="70002$SKINSHORTCUTS[mainmenuid]"/>
+                </include>
+            </control>
+        </controls>
+    </other>
+    <other include="widget.2">
+        <!-- We're going to use this template for all widgets with a widgetPath element -->
+        <condition tag="property" attribute="name|widgetPath.2" />
+        <property name="mainmenuid" tag="mainmenuid" />
+
+        <property name="height" tag="property" attribute="name|widgetAspect.2" value="31117">697</property>
+        <property name="height" tag="property" attribute="name|widgetAspect.2" value="31119">505</property>
+        <property name="height" tag="property" attribute="name|widgetAspect.2" value="31118">608</property>
+        <property name="height" tag="property" attribute="name|widgetAspect.2" value="31120">547</property>
+
+        <property name="gfxType" tag="property" attribute="name|widgetAspect.2" value="31117">Poster</property>
+        <property name="gfxType" tag="property" attribute="name|widgetAspect.2" value="31119">Episode</property>
+        <property name="gfxType" tag="property" attribute="name|widgetAspect.2" value="31118">Square</property>
+        <property name="gfxType" tag="property" attribute="name|widgetAspect.2" value="31120">Channel</property>
+
+        <property name="labelTitle" tag="property" attribute="name|widgetAspect.2" value="31117">$INFO[ListItem.TVShowTitle,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Label]</property>
+        <property name="labelTitle" tag="property" attribute="name|widgetAspect.2" value="31119">$INFO[ListItem.TVShowTitle,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Label]</property>
+        <property name="labelTitle" tag="property" attribute="name|widgetAspect.2" value="31118">$INFO[ListItem.Label]</property>
+        <property name="labelTitle" tag="property" attribute="name|widgetAspect.2" value="31120">$INFO[ListItem.Label]</property>
+
+        <property name="labelSubTitle" tag="property" attribute="name|widgetAspect.2" value="31117">$INFO[ListItem.Rating,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year]$INFO[ListItem.Duration,[COLOR=SeparatorColor] › [/COLOR], $LOCALIZE[31297]]</property>
+        <property name="labelSubTitle" tag="property" attribute="name|widgetAspect.2" value="31119">$INFO[ListItem.Rating,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration,, $LOCALIZE[31297]]</property>
+        <property name="labelSubTitle" tag="property" attribute="name|widgetAspect.2" value="31118">$INFO[ListItem.Artist]$INFO[ListItem.Rating,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration,[COLOR=SeparatorColor] › [/COLOR], $LOCALIZE[31297]]</property>
+        <property name="labelSubTitle" tag="property" attribute="name|widgetAspect.2" value="31120">$INFO[ListItem.Label2,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration]</property>
+
+        <property name="title" tag="property" attribute="name|widgetName.2" />
+        <property name="sortby" tag="property" attribute="name|widgetSortBy.2" />
+        <property name="sortdirection" tag="property" attribute="name|widgetSortDirection.2" />
+        <property name="target" tag="property" attribute="name|widgetTarget.2" />
+        <property name="content" tag="property" attribute="name|widgetPath.2" />
+
+        <controls>
+            <control type="group">
+                <include>OpenCloseVisible</include>
+                <skinshortcuts>visibility</skinshortcuts>
+                <height>$SKINSHORTCUTS[height]</height>
+                <control type="label">
+                    <visible>control.hasfocus(70003$SKINSHORTCUTS[mainmenuid])</visible>
+                    <posx>TextMargin</posx>
+                    <posy>45</posy>
+                    <height>40</height>
+                    <width>1920</width>
+                    <font>FacadeListMainFont</font>
+                    <include>TextColor_MainColor</include>
+                    <scroll>false</scroll>
+                    <label>$SKINSHORTCUTS[title]</label>
+                </control>
+                <control type="label">
+                    <visible>!control.hasfocus(70003$SKINSHORTCUTS[mainmenuid])</visible>
+                    <posx>TextMargin</posx>
+                    <posy>45</posy>
+                    <height>40</height>
+                    <width>1920</width>
+                    <font>FacadeListMainFont</font>
+                    <include>TextColor_AlternateColor</include>
+                    <scroll>false</scroll>
+                    <label>$SKINSHORTCUTS[title]</label>
+                </control>
+                <control type="list" id="70003$SKINSHORTCUTS[mainmenuid]">
+                    <onright>70003$SKINSHORTCUTS[mainmenuid]</onright>
+                    <onup>70002$SKINSHORTCUTS[mainmenuid]</onup>
+                    <ondown>70004$SKINSHORTCUTS[mainmenuid]</ondown>
+                    <onleft>70003$SKINSHORTCUTS[mainmenuid]</onleft>
+                    <include content="Widget_$SKINSHORTCUTS[gfxType]">
+                        <param name="id" value="70003$SKINSHORTCUTS[mainmenuid]"/>
+                        <param name="labelTitle" value="$SKINSHORTCUTS[labelTitle]"/>
+                        <param name="labelSubTitle" value="$SKINSHORTCUTS[labelSubTitle]"/>
+                    </include>
+                    <content limit="$VAR[WidgetLimit]" sortby="$SKINSHORTCUTS[sortby]" sortorder="$SKINSHORTCUTS[sortdirection]" target="$SKINSHORTCUTS[target]" >$SKINSHORTCUTS[content]</content>
+                </control>
+                <include content="Widget_NavButtons_$SKINSHORTCUTS[gfxType]">
+                    <param name="id" value="70003$SKINSHORTCUTS[mainmenuid]"/>
+                    <param name="height" value="$SKINSHORTCUTS[height]"/>
+                </include>
+                <control type="image">
+                    <visible>!Integer.IsGreater(Container(70003$SKINSHORTCUTS[mainmenuid]).NumItems,0)</visible>
+                    <posx>70</posx>
+                    <posy>97</posy>
+                    <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
+                    <aspectratio align="center" aligny="center">keep</aspectratio>
+                    <colordiffuse>ThumbsUnfocusedColor</colordiffuse>
+                    <texture>defaultEmptyBig.png</texture>
+                </control>
+                <control type="image">
+                    <visible>!Integer.IsGreater(Container(70003$SKINSHORTCUTS[mainmenuid]).NumItems,0)</visible>
+                    <posx>70</posx>
+                    <posy>97</posy>
+                    <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
+                    <colordiffuse>ThumbsUnfocusedColor</colordiffuse>
+                    <texture border="2">common/TransparentDot.png</texture>
+                    <bordertexture border="2" colordiffuse="BorderUnfocusedColor">common/frame_focus.png</bordertexture>
+                    <bordersize>2</bordersize>
+                </control>
+                <include content="Widget_Empty_$SKINSHORTCUTS[gfxType]">
+                    <param name="id" value="70003$SKINSHORTCUTS[mainmenuid]"/>
+                </include>
+            </control>
+        </controls>
+    </other>
+    <other include="widget.3">
+        <!-- We're going to use this template for all widgets with a widgetPath element -->
+        <condition tag="property" attribute="name|widgetPath.3" />
+        <property name="mainmenuid" tag="mainmenuid" />
+
+        <property name="height" tag="property" attribute="name|widgetAspect.3" value="31117">697</property>
+        <property name="height" tag="property" attribute="name|widgetAspect.3" value="31119">505</property>
+        <property name="height" tag="property" attribute="name|widgetAspect.3" value="31118">608</property>
+        <property name="height" tag="property" attribute="name|widgetAspect.3" value="31120">547</property>
+
+        <property name="gfxType" tag="property" attribute="name|widgetAspect.3" value="31117">Poster</property>
+        <property name="gfxType" tag="property" attribute="name|widgetAspect.3" value="31119">Episode</property>
+        <property name="gfxType" tag="property" attribute="name|widgetAspect.3" value="31118">Square</property>
+        <property name="gfxType" tag="property" attribute="name|widgetAspect.3" value="31120">Channel</property>
+
+        <property name="labelTitle" tag="property" attribute="name|widgetAspect.3" value="31117">$INFO[ListItem.TVShowTitle,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Label]</property>
+        <property name="labelTitle" tag="property" attribute="name|widgetAspect.3" value="31119">$INFO[ListItem.TVShowTitle,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Label]</property>
+        <property name="labelTitle" tag="property" attribute="name|widgetAspect.3" value="31118">$INFO[ListItem.Label]</property>
+        <property name="labelTitle" tag="property" attribute="name|widgetAspect.3" value="31120">$INFO[ListItem.Label]</property>
+
+        <property name="labelSubTitle" tag="property" attribute="name|widgetAspect.3" value="31117">$INFO[ListItem.Rating,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year]$INFO[ListItem.Duration,[COLOR=SeparatorColor] › [/COLOR], $LOCALIZE[31297]]</property>
+        <property name="labelSubTitle" tag="property" attribute="name|widgetAspect.3" value="31119">$INFO[ListItem.Rating,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration,, $LOCALIZE[31297]]</property>
+        <property name="labelSubTitle" tag="property" attribute="name|widgetAspect.3" value="31118">$INFO[ListItem.Artist]$INFO[ListItem.Rating,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration,[COLOR=SeparatorColor] › [/COLOR], $LOCALIZE[31297]]</property>
+        <property name="labelSubTitle" tag="property" attribute="name|widgetAspect.3" value="31120">$INFO[ListItem.Label2,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration]</property>
+
+        <property name="title" tag="property" attribute="name|widgetName.3" />
+        <property name="sortby" tag="property" attribute="name|widgetSortBy.3" />
+        <property name="sortdirection" tag="property" attribute="name|widgetSortDirection.3" />
+        <property name="target" tag="property" attribute="name|widgetTarget.3" />
+        <property name="content" tag="property" attribute="name|widgetPath.3" />
+
+        <controls>
+            <control type="group">
+                <include>OpenCloseVisible</include>
+                <skinshortcuts>visibility</skinshortcuts>
+                <height>$SKINSHORTCUTS[height]</height>
+                <control type="label">
+                    <visible>control.hasfocus(70004$SKINSHORTCUTS[mainmenuid])</visible>
+                    <posx>TextMargin</posx>
+                    <posy>45</posy>
+                    <height>40</height>
+                    <width>1920</width>
+                    <font>FacadeListMainFont</font>
+                    <include>TextColor_MainColor</include>
+                    <scroll>false</scroll>
+                    <label>$SKINSHORTCUTS[title]</label>
+                </control>
+                <control type="label">
+                    <visible>!control.hasfocus(70004$SKINSHORTCUTS[mainmenuid])</visible>
+                    <posx>TextMargin</posx>
+                    <posy>45</posy>
+                    <height>40</height>
+                    <width>1920</width>
+                    <font>FacadeListMainFont</font>
+                    <include>TextColor_AlternateColor</include>
+                    <scroll>false</scroll>
+                    <label>$SKINSHORTCUTS[title]</label>
+                </control>
+                <control type="list" id="70004$SKINSHORTCUTS[mainmenuid]">
+                    <onright>70004$SKINSHORTCUTS[mainmenuid]</onright>
+                    <onup>70003$SKINSHORTCUTS[mainmenuid]</onup>
+                    <ondown>70005$SKINSHORTCUTS[mainmenuid]</ondown>
+                    <onleft>70004$SKINSHORTCUTS[mainmenuid]</onleft>
+                    <include content="Widget_$SKINSHORTCUTS[gfxType]">
+                        <param name="id" value="70004$SKINSHORTCUTS[mainmenuid]"/>
+                        <param name="labelTitle" value="$SKINSHORTCUTS[labelTitle]"/>
+                        <param name="labelSubTitle" value="$SKINSHORTCUTS[labelSubTitle]"/>
+                    </include>
+                    <content limit="$VAR[WidgetLimit]" sortby="$SKINSHORTCUTS[sortby]" sortorder="$SKINSHORTCUTS[sortdirection]" target="$SKINSHORTCUTS[target]" >$SKINSHORTCUTS[content]</content>
+                </control>
+                <include content="Widget_NavButtons_$SKINSHORTCUTS[gfxType]">
+                    <param name="id" value="70004$SKINSHORTCUTS[mainmenuid]"/>
+                    <param name="height" value="$SKINSHORTCUTS[height]"/>
+                </include>
+                <control type="image">
+                    <visible>!Integer.IsGreater(Container(70004$SKINSHORTCUTS[mainmenuid]).NumItems,0)</visible>
+                    <posx>70</posx>
+                    <posy>97</posy>
+                    <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
+                    <aspectratio align="center" aligny="center">keep</aspectratio>
+                    <colordiffuse>ThumbsUnfocusedColor</colordiffuse>
+                    <texture>defaultEmptyBig.png</texture>
+                </control>
+                <control type="image">
+                    <visible>!Integer.IsGreater(Container(70004$SKINSHORTCUTS[mainmenuid]).NumItems,0)</visible>
+                    <posx>70</posx>
+                    <posy>97</posy>
+                    <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
+                    <colordiffuse>ThumbsUnfocusedColor</colordiffuse>
+                    <texture border="2">common/TransparentDot.png</texture>
+                    <bordertexture border="2" colordiffuse="BorderUnfocusedColor">common/frame_focus.png</bordertexture>
+                    <bordersize>2</bordersize>
+                </control>
+                <include content="Widget_Empty_$SKINSHORTCUTS[gfxType]">
+                    <param name="id" value="70004$SKINSHORTCUTS[mainmenuid]"/>
+                </include>
+            </control>
+        </controls>
+    </other>
+    <other include="widget.4">
+        <!-- We're going to use this template for all widgets with a widgetPath element -->
+        <condition tag="property" attribute="name|widgetPath.4" />
+        <property name="mainmenuid" tag="mainmenuid" />
+
+        <property name="height" tag="property" attribute="name|widgetAspect.4" value="31117">697</property>
+        <property name="height" tag="property" attribute="name|widgetAspect.4" value="31119">505</property>
+        <property name="height" tag="property" attribute="name|widgetAspect.4" value="31118">608</property>
+        <property name="height" tag="property" attribute="name|widgetAspect.4" value="31120">547</property>
+
+        <property name="gfxType" tag="property" attribute="name|widgetAspect.4" value="31117">Poster</property>
+        <property name="gfxType" tag="property" attribute="name|widgetAspect.4" value="31119">Episode</property>
+        <property name="gfxType" tag="property" attribute="name|widgetAspect.4" value="31118">Square</property>
+        <property name="gfxType" tag="property" attribute="name|widgetAspect.4" value="31120">Channel</property>
+
+        <property name="labelTitle" tag="property" attribute="name|widgetAspect.4" value="31117">$INFO[ListItem.TVShowTitle,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Label]</property>
+        <property name="labelTitle" tag="property" attribute="name|widgetAspect.4" value="31119">$INFO[ListItem.TVShowTitle,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Label]</property>
+        <property name="labelTitle" tag="property" attribute="name|widgetAspect.4" value="31118">$INFO[ListItem.Label]</property>
+        <property name="labelTitle" tag="property" attribute="name|widgetAspect.4" value="31120">$INFO[ListItem.Label]</property>
+
+        <property name="labelSubTitle" tag="property" attribute="name|widgetAspect.4" value="31117">$INFO[ListItem.Rating,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year]$INFO[ListItem.Duration,[COLOR=SeparatorColor] › [/COLOR], $LOCALIZE[31297]]</property>
+        <property name="labelSubTitle" tag="property" attribute="name|widgetAspect.4" value="31119">$INFO[ListItem.Rating,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration,, $LOCALIZE[31297]]</property>
+        <property name="labelSubTitle" tag="property" attribute="name|widgetAspect.4" value="31118">$INFO[ListItem.Artist]$INFO[ListItem.Rating,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration,[COLOR=SeparatorColor] › [/COLOR], $LOCALIZE[31297]]</property>
+        <property name="labelSubTitle" tag="property" attribute="name|widgetAspect.4" value="31120">$INFO[ListItem.Label2,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration]</property>
+
+        <property name="title" tag="property" attribute="name|widgetName.4" />
+        <property name="sortby" tag="property" attribute="name|widgetSortBy.4" />
+        <property name="sortdirection" tag="property" attribute="name|widgetSortDirection.4" />
+        <property name="target" tag="property" attribute="name|widgetTarget.4" />
+        <property name="content" tag="property" attribute="name|widgetPath.4" />
+
+        <controls>
+            <control type="group">
+                <include>OpenCloseVisible</include>
+                <skinshortcuts>visibility</skinshortcuts>
+                <height>$SKINSHORTCUTS[height]</height>
+                <control type="label">
+                    <visible>control.hasfocus(70005$SKINSHORTCUTS[mainmenuid])</visible>
+                    <posx>TextMargin</posx>
+                    <posy>45</posy>
+                    <height>40</height>
+                    <width>1920</width>
+                    <font>FacadeListMainFont</font>
+                    <include>TextColor_MainColor</include>
+                    <scroll>false</scroll>
+                    <label>$SKINSHORTCUTS[title]</label>
+                </control>
+                <control type="label">
+                    <visible>!control.hasfocus(70005$SKINSHORTCUTS[mainmenuid])</visible>
+                    <posx>TextMargin</posx>
+                    <posy>45</posy>
+                    <height>40</height>
+                    <width>1920</width>
+                    <font>FacadeListMainFont</font>
+                    <include>TextColor_AlternateColor</include>
+                    <scroll>false</scroll>
+                    <label>$SKINSHORTCUTS[title]</label>
+                </control>
+                <control type="list" id="70005$SKINSHORTCUTS[mainmenuid]">
+                    <onright>70005$SKINSHORTCUTS[mainmenuid]</onright>
+                    <onup>70004$SKINSHORTCUTS[mainmenuid]</onup>
+                    <ondown>70005$SKINSHORTCUTS[mainmenuid]</ondown>
+                    <onleft>70005$SKINSHORTCUTS[mainmenuid]</onleft>
+                    <include content="Widget_$SKINSHORTCUTS[gfxType]">
+                        <param name="id" value="70005$SKINSHORTCUTS[mainmenuid]"/>
+                        <param name="labelTitle" value="$SKINSHORTCUTS[labelTitle]"/>
+                        <param name="labelSubTitle" value="$SKINSHORTCUTS[labelSubTitle]"/>
+                    </include>
+                    <content limit="$VAR[WidgetLimit]" sortby="$SKINSHORTCUTS[sortby]" sortorder="$SKINSHORTCUTS[sortdirection]" target="$SKINSHORTCUTS[target]" >$SKINSHORTCUTS[content]</content>
+                </control>
+                <include content="Widget_NavButtons_$SKINSHORTCUTS[gfxType]">
+                    <param name="id" value="70005$SKINSHORTCUTS[mainmenuid]"/>
+                    <param name="height" value="$SKINSHORTCUTS[height]"/>
+                </include>
+                <control type="image">
+                    <visible>!Integer.IsGreater(Container(70005$SKINSHORTCUTS[mainmenuid]).NumItems,0)</visible>
+                    <posx>70</posx>
+                    <posy>97</posy>
+                    <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
+                    <aspectratio align="center" aligny="center">keep</aspectratio>
+                    <colordiffuse>ThumbsUnfocusedColor</colordiffuse>
+                    <texture>defaultEmptyBig.png</texture>
+                </control>
+                <control type="image">
+                    <visible>!Integer.IsGreater(Container(70005$SKINSHORTCUTS[mainmenuid]).NumItems,0)</visible>
+                    <posx>70</posx>
+                    <posy>97</posy>
+                    <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
+                    <colordiffuse>ThumbsUnfocusedColor</colordiffuse>
+                    <texture border="2">common/TransparentDot.png</texture>
+                    <bordertexture border="2" colordiffuse="BorderUnfocusedColor">common/frame_focus.png</bordertexture>
+                    <bordersize>2</bordersize>
+                </control>
+                <include content="Widget_Empty_$SKINSHORTCUTS[gfxType]">
+                    <param name="id" value="70005$SKINSHORTCUTS[mainmenuid]"/>
+                </include>
+            </control>
+        </controls>
+    </other>
+</template>

@@ -47,7 +47,7 @@
         <autoscroll delay="5000" time="2500" repeat="10000">!Skin.HasSetting(AutoScroll)</autoscroll>
     </default>
     <default type="image">
-        <fadetime>250</fadetime>
+        <fadetime>0</fadetime>
         <align>center</align>
         <aligny>center</aligny>
         <aspectratio>stretch</aspectratio>
