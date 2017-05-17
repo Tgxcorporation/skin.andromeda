@@ -38,7 +38,7 @@
                         <height>840</height>
                         <onleft>20</onleft>
                         <onright>60</onright>
-                        <onup>505051</onup>
+                        <onup>20</onup>
                         <ondown>20</ondown>
                         <pagecontrol>60</pagecontrol>
                         <itemlayout height="60" width="910">
@@ -201,13 +201,12 @@
                         <posy>180</posy>
                         <height>840</height>
                         <include>VerticalScroller</include>
-                        <onright>61</onright>
+                        <onright>505051</onright>
                         <onleft>21</onleft>
                     </control>
                 </control>
             </control>
         </control>
-        <include>FooterInfo</include>
         <include>NowPlaying</include>
         <include>TopBar</include>
     </controls>

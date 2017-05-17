@@ -271,7 +271,7 @@
             <height>750</height>
             <include>VerticalScroller</include>
             <onleft>700</onleft>
-            <onright>505050</onright>
+            <onright>60</onright>
         </control>
     </include>
 </includes>

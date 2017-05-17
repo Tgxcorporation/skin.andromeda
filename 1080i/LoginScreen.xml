@@ -31,7 +31,7 @@
                     <height>960</height>
                     <onleft>11</onleft>
                     <onright>60</onright>
-                    <onup>505051</onup>
+                    <onup>52</onup>
                     <ondown>52</ondown>
                     <pagecontrol>60</pagecontrol>
                     <itemlayout width="1720" height="240">
@@ -117,7 +117,7 @@
                     <posy>180</posy>
                     <height>960</height>
                     <onleft>52</onleft>
-                    <onright>52</onright>
+                    <onright>505051</onright>
                     <include>VerticalScroller</include>
                 </control>
             </control>

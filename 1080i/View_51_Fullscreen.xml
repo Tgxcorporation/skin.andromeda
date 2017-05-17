@@ -1,5 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
+    <include name="Info_51_Fullscreen">
+        <control type="group">
+            <visible>Control.IsVisible(51)</visible>
+            <include>Facade_Fade</include>
+            <control type="image">
+                <animation effect="slide" start="0,0" end="0,100" time="150" delay="0" tween="circle" easing="inout" condition="control.hasfocus(505051)|controlGroup(9900).Hasfocus">Conditional</animation>
+                <!--<include>OverlayTransparency</include>-->
+                <posx>0</posx>
+                <posy>866</posy>
+                <width>1920</width>
+                <height>215</height>
+                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                <texture border="10">common/overlay_dialog_gradient.png</texture>
+            </control>
+            <control type="image">
+                <animation effect="slide" start="0,0" end="0,100" time="150" delay="0" tween="circle" easing="inout" condition="control.hasfocus(505051)|controlGroup(9900).Hasfocus">Conditional</animation>
+                <posx>0</posx>x
+                <posy>865</posy>
+                <width>1920</width>
+                <height>2</height>
+                <colordiffuse>$VAR[Picked.HighLight.Color]</colordiffuse>
+                <texture border="2,0,2,0">common/line_white_horizontal.png</texture>
+            </control>
+            <include>InfoData</include>
+        </control>
+    </include>
     <include name="View_51_Fullscreen">
         <control type="group">
             <visible>Control.IsVisible(51)</visible>

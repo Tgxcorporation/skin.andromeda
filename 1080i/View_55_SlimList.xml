@@ -503,7 +503,7 @@
                 <pagecontrol>60</pagecontrol>
                 <onleft>9000</onleft>
                 <onright>60</onright>
-                <onup>505051</onup>
+                <onup>55</onup>
                 <ondown>55</ondown>
                 <preloaditems>4</preloaditems>
                 <include>SlimList_Layout</include>
@@ -514,7 +514,7 @@
                 <height>1080</height>
                 <include>VerticalScroller</include>
                 <onleft>55</onleft>
-                <onright>505050</onright>
+                <onright>505051</onright>
             </control>
         </control>
     </include>
@@ -532,7 +532,7 @@
                     <pagecontrol>60</pagecontrol>
                     <onleft>9000</onleft>
                     <onright>60</onright>
-                    <onup>505051</onup>
+                    <onup>50</onup>
                     <ondown>50</ondown>
                     <preloaditems>4</preloaditems>
                     <include>SlimList_Layout</include>
@@ -597,7 +597,7 @@
                 <height>1080</height>
                 <include>VerticalScroller</include>
                 <onleft>50</onleft>
-                <onright>505050</onright>
+                <onright>505051</onright>
             </control>
         </control>
     </include>

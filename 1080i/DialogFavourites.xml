@@ -10,7 +10,6 @@
             <include>Header</include>
             <include>FacadeOverlay</include>
             <control type="group">
-                <include>FanartHasFocusAnimation</include>
                 <include>LeftMenuHasFocusAnimation</include>
                 <include>OpenClose</include>
                 <control type="group">
@@ -23,7 +22,7 @@
                         <pagecontrol>60</pagecontrol>
                         <onleft>9000</onleft>
                         <onright>60</onright>
-                        <onup>505051</onup>
+                        <onup>450</onup>
                         <ondown>450</ondown>
                         <preloaditems>4</preloaditems>
                         <itemlayout height="331" width="1920">
@@ -142,12 +141,11 @@
                         <height>1080</height>
                         <include>VerticalScroller</include>
                         <onleft>450</onleft>
-                        <onright>60</onright>
+                        <onright>505051</onright>
                     </control>
                 </control>
             </control>
         </control>
-        <include>FooterInfo</include>
         <include>NowPlaying</include>
         <include>TopBar</include>
     </controls>

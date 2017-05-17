@@ -13,12 +13,12 @@
             <include>Header</include>
             <include>FacadeOverlay</include>
             <control type="group">
-                <include>FanartHasFocusAnimation</include>
                 <include>LeftMenuHasFocusAnimation</include>
                 <include>OpenClose</include>
                 <control type="group">
                     <include>View_50_BigList</include>
                     <include>View_51_Fullscreen</include>
+                    <include>Info_51_Fullscreen</include>
                     <include>View_52_FixedList</include>
                     <include>Info_52_FixedList</include>
                     <include>View_55_SlimList</include>
@@ -30,7 +30,6 @@
                 </control>
             </control>
         </control>
-        <include>FooterInfo</include>
         <!-- SIDE MENU -->
         <control type="group">
             <visible>!Skin.HasSetting(EnableKioskMode)</visible>

@@ -71,12 +71,10 @@
         </control>
         <include>Player_Show</include>
         <include>OverlayFull</include>
-        <include>FooterInfo</include>
         <control type="group">
             <include>Icon_Fade</include>
             <control type="group">
                 <include>LeftMenuHasFocusAnimation</include>
-                <include>FanartHasFocusAnimation</include>
                 <include>OpenClose</include>
                 <control type="image">
                     <posx>0</posx>

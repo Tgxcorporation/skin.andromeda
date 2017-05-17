@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
     <include name="InfoData">
+        <control type="label">
+            <posx>70</posx>
+            <posy>895</posy>
+            <height>50</height>
+            <width>1410</width>
+            <font>FacadeListTitleFont</font>
+            <include>TextColor_MainColor</include>
+            <scroll>true</scroll>
+            <label>$VAR[DetailsTitle]</label>
+        </control>
         <control type="group">
             <posy>775</posy>
             <visible>!String.IsEqual(ListItem.Label,..)</visible>
@@ -20,16 +30,6 @@
                 <param name="height" value="50"/>
                 <param name="color" value="Main"/>
             </include>
-            <control type="label">
-                <posx>70</posx>
-                <posy>120</posy>
-                <height>50</height>
-                <width>1410</width>
-                <font>FacadeListTitleFont</font>
-                <include>TextColor_MainColor</include>
-                <scroll>true</scroll>
-                <label>$VAR[DetailsTitle]</label>
-            </control>
             <control type="label">
                 <posx>70</posx>
                 <posy>178</posy>
@@ -55,20 +55,6 @@
                 <param name="y" value="125"/>
                 <param name="width" value="240"/>
             </include>
-        </control>
-    </include>
-    <include name="FooterInfo">
-        <control type="group">
-            <include condition="Skin.HasSetting(plexbmc)">PlexbmcFixTrick</include>
-            <control type="group">
-                <include>OpenClose</include>
-                <control type="group">
-                    <include>LeftMenuHasFocusAnimation</include>
-                    <include>Facade_Fade</include>
-                    <visible>Control.hasfocus(505050)|Control.isvisible(51)</visible>
-                    <include>InfoData</include>
-                </control>
-            </control>
         </control>
     </include>
     <include name="View_57_58_59_Showcase">

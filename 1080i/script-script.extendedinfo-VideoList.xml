@@ -20,7 +20,6 @@
             <include>Header</include>
             <include>FacadeOverlay</include>
             <control type="group">
-                <include>FanartHasFocusAnimation</include>
                 <include>LeftMenuHasFocusAnimation</include>
                 <include>OpenClose</include>
                 <control type="group">
@@ -33,7 +32,7 @@
                         <pagecontrol>60</pagecontrol>
                         <onleft>9000</onleft>
                         <onright>60</onright>
-                        <onup>505051</onup>
+                        <onup>500</onup>
                         <ondown>600</ondown>
                         <preloaditems>4</preloaditems>
                         <itemlayout height="331" width="1920">
@@ -156,7 +155,7 @@
                         <height>1080</height>
                         <include>VerticalScroller</include>
                         <onleft>500</onleft>
-                        <onright>505050</onright>
+                        <onright>505051</onright>
                     </control>
                 </control>
             </control>
@@ -165,7 +164,7 @@
             <include>OpenClose</include>
             <control type="group">
                 <include>Facade_Fade</include>
-                <visible>Control.hasfocus(505050)|Control.isvisible(54)</visible>
+                <visible>Control.isvisible(54)</visible>
                 <control type="group">
                     <posy>775</posy>
                     <visible>!String.IsEqual(ListItem.Label,..)</visible>

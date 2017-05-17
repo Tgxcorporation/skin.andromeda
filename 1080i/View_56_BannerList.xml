@@ -104,7 +104,7 @@
                 <height>1080</height>
                 <onleft>9000</onleft>
                 <onright>60</onright>
-                <onup>505051</onup>
+                <onup>56</onup>
                 <ondown>56</ondown>
                 <pagecontrol>60</pagecontrol>
                 <preloaditems>4</preloaditems>
@@ -116,7 +116,7 @@
                 <height>1080</height>
                 <include>VerticalScroller</include>
                 <onleft>56</onleft>
-                <onright>505050</onright>
+                <onright>505051</onright>
             </control>
         </control>
     </include>

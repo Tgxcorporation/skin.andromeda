@@ -102,9 +102,7 @@
             </control>
         </control>
         <include>OverlayFull</include>
-        <include>FooterInfo</include>
         <control type="group" id="49">
-            <include>FanartHasFocusAnimation</include>
             <include>OpenClose</include>
             <!--<control type="label" id="11">-->
             <!--<posx>960</posx>-->
@@ -255,7 +253,7 @@
                         <height>600</height>
                         <include>VerticalScroller</include>
                         <onleft>50</onleft>
-                        <onright>505050</onright>
+                        <onright>505051</onright>
                     </control>
                     <control type="group">
                         <posx>1010</posx>

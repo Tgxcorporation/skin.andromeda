@@ -12,7 +12,6 @@
             <include>Header</include>
             <include>FacadeOverlay</include>
             <control type="group">
-                <include>FanartHasFocusAnimation</include>
                 <include>LeftMenuHasFocusAnimation</include>
                 <include>OpenClose</include>
                 <control type="panel" id="50">
@@ -21,7 +20,7 @@
                     <width>1920</width>
                     <height>1080</height>
                     <pagecontrol>60</pagecontrol>
-                    <onup>505051</onup>
+                    <onup>50</onup>
                     <onleft>9000</onleft>
                     <onright>60</onright>
                     <itemlayout height="110" width="1920">
@@ -111,7 +110,7 @@
                     <height>1080</height>
                     <include>VerticalScroller</include>
                     <onleft>50</onleft>
-                    <onright>60</onright>
+                    <onright>505051</onright>
                 </control>
             </control>
         </control>

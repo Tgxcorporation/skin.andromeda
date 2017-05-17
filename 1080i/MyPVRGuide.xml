@@ -7,13 +7,11 @@
         <include>Fanart_Art</include>
         <include>Player_Show</include>
         <include>OverlayFull</include>
-        <include>FooterInfo</include>
         <control type="group" id="505052">
             <include>FacadeFocusAnimation</include>
             <include>Header</include>
             <include>FacadeOverlay</include>
             <control type="group">
-                <include>FanartHasFocusAnimation</include>
                 <include>LeftMenuHasFocusAnimation</include>
                 <include>OpenClose</include>
                 <control type="group" id="50">
@@ -32,7 +30,7 @@
                             <rulerunit>6</rulerunit>
                             <onleft>9000</onleft>
                             <onright>60</onright>
-                            <onup>505051</onup>
+                            <onup>10</onup>
                             <ondown>10</ondown>
                             <progresstexture border="1,1,1,1">OSD/osd_progress_chaching.png</progresstexture>
                             <rulerlayout height="150" width="60">
@@ -197,7 +195,7 @@
                             <height>580</height>
                             <include>VerticalScroller</include>
                             <onleft>10</onleft>
-                            <onright>10</onright>
+                            <onright>505051</onright>
                         </control>
                         <!-- INFO -->
                         <control type="group">
@@ -248,7 +246,7 @@
                             <pagecontrol>76</pagecontrol>
                             <onleft>9000</onleft>
                             <onright>76</onright>
-                            <onup>505051</onup>
+                            <onup>11</onup>
                             <ondown>11</ondown>
                             <preloaditems>4</preloaditems>
                             <include>BigList_Layout</include>
@@ -259,7 +257,7 @@
                             <height>1080</height>
                             <include>VerticalScroller</include>
                             <onleft>11</onleft>
-                            <onright>505050</onright>
+                            <onright>505051</onright>
                         </control>
                         <include>Info_50_BigList</include>
                     </control>
@@ -276,7 +274,7 @@
                             <pagecontrol>76</pagecontrol>
                             <onleft>9000</onleft>
                             <onright>76</onright>
-                            <onup>505051</onup>
+                            <onup>12</onup>
                             <ondown>12</ondown>
                             <preloaditems>4</preloaditems>
                             <include>BigList_Layout</include>
@@ -287,7 +285,7 @@
                             <height>1080</height>
                             <include>VerticalScroller</include>
                             <onleft>12</onleft>
-                            <onright>505050</onright>
+                            <onright>505051</onright>
                         </control>
                         <include>Info_50_BigList</include>
                     </control>
@@ -304,7 +302,7 @@
                             <pagecontrol>75</pagecontrol>
                             <onleft>9000</onleft>
                             <onright>75</onright>
-                            <onup>505051</onup>
+                            <onup>13</onup>
                             <ondown>13</ondown>
                             <preloaditems>4</preloaditems>
                             <include>BigList_Layout</include>
@@ -315,7 +313,7 @@
                             <height>180</height>
                             <include>VerticalScroller</include>
                             <onleft>13</onleft>
-                            <onright>505050</onright>
+                            <onright>505051</onright>
                         </control>
                         <include>Info_50_BigList</include>
                     </control>

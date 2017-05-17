@@ -288,7 +288,7 @@
                 <pagecontrol>60</pagecontrol>
                 <onleft>9000</onleft>
                 <onright>60</onright>
-                <onup>505051</onup>
+                <onup>52</onup>
                 <ondown>52</ondown>
                 <preloaditems>4</preloaditems>
                 <include>FixedList_Layout</include>
@@ -299,7 +299,7 @@
                 <height>1080</height>
                 <include>VerticalScroller</include>
                 <onleft>52</onleft>
-                <onright>505050</onright>
+                <onright>505051</onright>
             </control>
         </control>
     </include>

@@ -369,6 +369,8 @@
     </include>
     <include name="OverlayFull">
         <control type="image">
+            <visible>!Control.IsVisible(51)</visible>
+            <include>Icon_Fade</include>
             <include>OverlayTransparency</include>
             <posx>0</posx>
             <posy>0</posy>
@@ -404,30 +406,6 @@
         </control>
     </include>
     <include name="NowPlaying">
-        <control type="button" id="505050">
-            <visible>!window.isactive(home)+!Skin.HasSetting(DisableFanart)</visible>
-            <posx>1920</posx>
-            <posy>0</posy>
-            <width>100</width>
-            <height>100</height>
-            <texturefocus>-</texturefocus>
-            <texturenofocus>-</texturenofocus>
-            <onleft condition="Control.isvisible(500)">500</onleft>
-            <onleft condition="Control.isvisible(570)">570</onleft>
-            <onright condition="!window.isactive(MyWeather.xml)">50</onright>
-            <onleft condition="!window.isactive(MyWeather.xml)">50</onleft>
-            <onup condition="!window.isactive(MyWeather.xml)">50</onup>
-            <ondown condition="!window.isactive(MyWeather.xml)">50</ondown>
-            <onright condition="window.isactive(MyWeather.xml)">49</onright>
-            <onleft condition="window.isactive(MyWeather.xml)">49</onleft>
-            <onup condition="window.isactive(MyWeather.xml)">49</onup>
-            <ondown condition="window.isactive(MyWeather.xml)">49</ondown>
-            <!-- <onclick>SendClick(10025,50)</onclick> -->
-            <onclick condition="!window.isactive(MyWeather.xml)">Control.SetFocus(50)</onclick>
-            <onclick condition="window.isactive(MyWeather.xml)">Control.SetFocus(49)</onclick>
-            <!-- <onup>Control.Move(50,-1)</onup>
-            <ondown>Control.Move(50,1)</ondown> -->
-        </control>
         <control type="button" id="505051">
             <visible>!window.isactive(home)</visible>
             <posx>0</posx>
@@ -438,6 +416,7 @@
             <texturenofocus>-</texturenofocus>
             <onup>9900</onup>
             <onleft>9900</onleft>
+            <onright>9900</onright>
             <ondown condition="Window.IsActive(script-script.extendedinfo-VideoList.xml)">500</ondown>
             <ondown condition="Window.IsActive(LoginScreen.xml)">52</ondown>
             <ondown condition="Window.IsActive(EventLog.xml)">570</ondown>
@@ -489,14 +468,14 @@
                     <param name="direction" value="horizontal"/>
                 </include>
                 <!--<include content="ProgressBar">-->
-                    <!--<param name="id" value="0"/>-->
-                    <!--<param name="visible" value="PVR.IsTimeshift"/>-->
-                    <!--<param name="x" value="1277"/>-->
-                    <!--<param name="y" value="832"/>-->
-                    <!--<param name="width" value="573"/>-->
-                    <!--<param name="info" value="PVR.TimeshiftProgress"/>-->
-                    <!--<param name="visiblefocus" value="true"/>-->
-                    <!--<param name="direction" value="horizontal"/>-->
+                <!--<param name="id" value="0"/>-->
+                <!--<param name="visible" value="PVR.IsTimeshift"/>-->
+                <!--<param name="x" value="1277"/>-->
+                <!--<param name="y" value="832"/>-->
+                <!--<param name="width" value="573"/>-->
+                <!--<param name="info" value="PVR.TimeshiftProgress"/>-->
+                <!--<param name="visiblefocus" value="true"/>-->
+                <!--<param name="direction" value="horizontal"/>-->
                 <!--</include>-->
                 <control type="label">
                     <include>Icon_Fade</include>
@@ -688,7 +667,6 @@
         <control type="multiimage">
             <include>KenBurns</include>
             <include>Icon_Fade</include>
-            <!--<visible>![control.isvisible(53)+!control.hasfocus(505050)]</visible>-->
             <posx>0</posx>
             <posy>0</posy>
             <width>1920</width>
@@ -712,7 +690,6 @@
         <control type="multiimage">
             <include>KenBurns</include>
             <include>Icon_Fade</include>
-            <!--<visible>![control.isvisible(53)+!control.hasfocus(505050)]</visible>-->
             <posx>0</posx>
             <posy>0</posy>
             <width>1920</width>
@@ -842,7 +819,8 @@
         <orientation>vertical</orientation>
         <pagecontrol>9060</pagecontrol>
         <onright>9060</onright>
-        <onup>9900</onup>
+        <onup>505051</onup>
+        <onleft>505051</onleft>
         <align>center</align>
     </include>
     <include name="SettingsButton">
@@ -930,27 +908,6 @@
     </include>
     <include name="myautoscroll">
         <autoscroll delay="5000" time="2500" repeat="10000">true</autoscroll>
-    </include>
-    <include name="rssTicker">
-        <control type="group">
-            <visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
-            <control type="rss">
-                <include>RssVisibleFadeEffect</include>
-                <visible>[control.isvisible(300)|control.isvisible(50)|control.isvisible(52)|control.isvisible(56)|control.isvisible(5050)|window.isvisible(DialogFavourites.xml)]+![control.hasfocus(505050)|control.isvisible(10)]</visible>
-                <!--<animation effect="slide" time="0" start="0,0" end="0,-15" condition="!window.isvisible(home)+control.isvisible(5050)">Conditional</animation>-->
-                <!--<animation effect="slide" time="0" start="0,0" end="0,-10" condition="!window.isvisible(home)+[control.isvisible(50)|control.isvisible(52)|control.isvisible(56)|window.isvisible(DialogFavourites.xml)]">Conditional</animation>-->
-                <posx>0</posx>
-                <posy>1038</posy>
-                <width>1920</width>
-                <font>rss</font>
-                <urlset>1</urlset>
-                <shadowcolor>ShadowColor</shadowcolor>
-                <font>WindowTitleSubFont</font>
-                <titlecolor>AlternateColor</titlecolor>
-                <headlinecolor>$VAR[Picked.HighLight.Color]</headlinecolor>
-                <include>TextColor_MainColor</include>
-            </control>
-        </control>
     </include>
     <include name="SkinSettingsButton">
         <width>380</width>
@@ -1694,27 +1651,40 @@
     <include name="FacadeOverlay">
         <control type="group">
             <include>OpenCloseOverlay</include>
-            <visible>![control.hasfocus(505050)]</visible>
-            <control type="image">
-                <include>OverlayTransparency</include>
-                <posx>0</posx>
-                <posy>0</posy>
-                <width>1920</width>
-                <height>1080</height>
-                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-                <texture border="10">common/overlay_dialog_gradient.png</texture>
-            </control>
-            <control type="image">
-                <posx>0</posx>x
-                <posy>-1</posy>
-                <width>1920</width>
-                <height>2</height>
-                <colordiffuse>$VAR[Picked.HighLight.Color]</colordiffuse>
-                <texture border="2,0,2,0">common/line_gray_horizontal.png</texture>
+            <control type="group">
+                <visible>!control.isvisible(51)</visible>
+                <control type="image">
+                    <include>OverlayTransparency</include>
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>1920</width>
+                    <height>1080</height>
+                    <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                    <texture border="10">common/overlay_dialog_gradient.png</texture>
+                </control>
+                <control type="image">
+                    <posx>0</posx>x
+                    <posy>-1</posy>
+                    <width>1920</width>
+                    <height>2</height>
+                    <colordiffuse>$VAR[Picked.HighLight.Color]</colordiffuse>
+                    <texture border="2,0,2,0">common/line_gray_horizontal.png</texture>
+                </control>
             </control>
         </control>
     </include>
     <include name="Header">
+        <control type="group">
+            <animation effect="fade" start="0" end="100" time="150" condition="control.isvisible(51)+control.hasfocus(505051)">Conditional</animation>
+            <control type="image">
+                <posx>0</posx>
+                <posy>-387</posy>
+                <width>1920</width>
+                <height>387</height>
+                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                <texture border="3">common/overlay_topbar_gradient.png</texture>
+            </control>
+        </control>
         <control type="group">
             <include>OpenClose</include>
             <posy>-171</posy>

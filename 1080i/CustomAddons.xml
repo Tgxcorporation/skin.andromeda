@@ -10,7 +10,6 @@
             <include>Header</include>
             <include>FacadeOverlay</include>
             <control type="group">
-                <include>FanartHasFocusAnimation</include>
                 <include>LeftMenuHasFocusAnimation</include>
                 <include>OpenClose</include>
                 <control type="group">
@@ -18,7 +17,6 @@
                 </control>
             </control>
         </control>
-        <include>FooterInfo</include>
         <include>NowPlaying</include>
         <include>TopBar</include>
     </controls>

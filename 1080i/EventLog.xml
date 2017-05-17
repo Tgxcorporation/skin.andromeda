@@ -14,7 +14,6 @@
             <include>Header</include>
             <include>FacadeOverlay</include>
             <control type="group">
-                <include>FanartHasFocusAnimation</include>
                 <include>LeftMenuHasFocusAnimation</include>
                 <include>OpenClose</include>
                 <control type="list" id="570">
@@ -24,7 +23,7 @@
                     <height>1080</height>
                     <onleft>9000</onleft>
                     <onright>60</onright>
-                    <onup>505051</onup>
+                    <onup>570</onup>
                     <ondown>570</ondown>
                     <viewtype label="535">list</viewtype>
                     <pagecontrol>60</pagecontrol>
@@ -112,11 +111,10 @@
                     <height>1080</height>
                     <include>VerticalScroller</include>
                     <onleft>570</onleft>
-                    <onright>505050</onright>
+                    <onright>505051</onright>
                 </control>
             </control>
         </control>
-        <include>FooterInfo</include>
         <!-- SIDE MENU -->
         <control type="group">
             <visible>!Skin.HasSetting(EnableKioskMode)</visible>
