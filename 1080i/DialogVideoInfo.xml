@@ -3,6 +3,8 @@
     <onload condition="System.HasAddon(script.videoextras)">RunScript(script.videoextras,check,"$INFO[ListItem.FilenameAndPath]")</onload>
     <defaultcontrol always="true">9000</defaultcontrol>
     <controls>
+        <include>Fanart_Art</include>
+        <include>Player_Show</include>
         <include>DimBG</include>
         <control type="group">
             <control type="image">

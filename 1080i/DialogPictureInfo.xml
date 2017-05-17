@@ -2,6 +2,8 @@
 <window>
     <defaultcontrol always="true">5</defaultcontrol>
     <controls>
+        <include>Fanart_Art</include>
+        <include>Player_Show</include>
         <include>DimBG</include>
         <control type="group">
         <include>DialogOverlay</include>

@@ -34,51 +34,54 @@
     <include file="View_5050_CardList.xml"/>
     <include file="script-skinshortcuts-includes.xml"/>
     <include name="Player_Show">
-        <control type="image">
-            <visible>Player.HasVideo + !Skin.HasSetting(Show_Player) + !Window.IsVisible(script-Actors-DialogVideoInfo.xml)</visible>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>1920</width>
-            <height>1080</height>
-            <texture>common/BlackDot.png</texture>
-        </control>
-        <control type="multiimage">
-            <visible>[Player.HasAudio + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))] + [!Skin.HasSetting(Show_Player)|window.isactive(visualisation)] + Skin.HasSetting(MusicPlayingFanart) + !String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow))</visible>
-            <include>KenBurns</include>
-            <include>Dimensions_Fullscreen</include>
-            <imagepath background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
-            <aspectratio aligny="top">scale</aspectratio>
-            <timeperimage>14000</timeperimage>
-            <fadetime>400</fadetime>
-            <randomize>true</randomize>
-            <animation effect="fade" start="0" end="100" time="150">Visible</animation>
-            <animation effect="fade" start="100" end="0" time="150">Hidden</animation>
-        </control>
-        <control type="image">
-            <visible>[Player.HasAudio + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))] + [!Skin.HasSetting(Show_Player)|window.isactive(visualisation)] + Skin.HasSetting(MusicPlayingFanart) + String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow))</visible>
-            <include>Dimensions_Fullscreen</include>
-            <include>KenBurns</include>
-            <fadetime>400</fadetime>
-            <aspectratio>scale</aspectratio>
-            <texture background="true">$INFO[MusicPlayer.Property(Fanart_Image)]</texture>
-            <animation effect="fade" start="0" end="100" time="150">Visible</animation>
-            <animation effect="fade" start="100" end="0" time="150">Hidden</animation>
-        </control>
-        <control type="visualisation">
-            <visible>!SlideShow.IsActive</visible>
-            <visible>[Player.HasAudio + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))] + [!Skin.HasSetting(Show_Player)|window.isactive(visualisation)]</visible>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>1920</width>
-            <height>1080</height>
-        </control>
-        <control type="videowindow">
-            <visible>!SlideShow.IsActive</visible>
-            <visible>Player.HasVideo + !Skin.HasSetting(Show_Player) + !Window.IsVisible(script-Actors-DialogVideoInfo.xml)</visible>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>1920</width>
-            <height>1080</height>
+        <control type="group">
+            <include>VisibleFadeEffect</include>
+            <control type="image">
+                <visible>Player.HasVideo + !Skin.HasSetting(Show_Player) + !Window.IsVisible(script-Actors-DialogVideoInfo.xml)</visible>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>1920</width>
+                <height>1080</height>
+                <texture>common/BlackDot.png</texture>
+            </control>
+            <control type="multiimage">
+                <visible>[Player.HasAudio + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))] + [!Skin.HasSetting(Show_Player)|window.isactive(visualisation)] + Skin.HasSetting(MusicPlayingFanart) + !String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow))</visible>
+                <include>KenBurns</include>
+                <include>Dimensions_Fullscreen</include>
+                <imagepath background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
+                <aspectratio aligny="top">scale</aspectratio>
+                <timeperimage>14000</timeperimage>
+                <fadetime>400</fadetime>
+                <randomize>true</randomize>
+                <animation effect="fade" start="0" end="100" time="150">Visible</animation>
+                <animation effect="fade" start="100" end="0" time="150">Hidden</animation>
+            </control>
+            <control type="image">
+                <visible>[Player.HasAudio + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))] + [!Skin.HasSetting(Show_Player)|window.isactive(visualisation)] + Skin.HasSetting(MusicPlayingFanart) + String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow))</visible>
+                <include>Dimensions_Fullscreen</include>
+                <include>KenBurns</include>
+                <fadetime>400</fadetime>
+                <aspectratio>scale</aspectratio>
+                <texture background="true">$INFO[MusicPlayer.Property(Fanart_Image)]</texture>
+                <animation effect="fade" start="0" end="100" time="150">Visible</animation>
+                <animation effect="fade" start="100" end="0" time="150">Hidden</animation>
+            </control>
+            <control type="visualisation">
+                <visible>!SlideShow.IsActive</visible>
+                <visible>[Player.HasAudio + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))] + [!Skin.HasSetting(Show_Player)|window.isactive(visualisation)]</visible>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>1920</width>
+                <height>1080</height>
+            </control>
+            <control type="videowindow">
+                <visible>!SlideShow.IsActive</visible>
+                <visible>Player.HasVideo + !Skin.HasSetting(Show_Player) + !Window.IsVisible(script-Actors-DialogVideoInfo.xml)</visible>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>1920</width>
+                <height>1080</height>
+            </control>
         </control>
     </include>
     <include name="HiddenButton">
@@ -679,28 +682,31 @@
         </control>
     </include>
     <include name="Fanart_Art">
-        <control type="image">
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>1920</width>
-            <height>1080</height>
-            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-            <texture>special://skin/backgrounds/default/background.png</texture>
+        <control type="group">
+            <include>VisibleFadeEffect</include>
+            <control type="image">
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>1920</width>
+                <height>1080</height>
+                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                <texture>special://skin/backgrounds/default/background.png</texture>
+            </control>
+            <control type="multiimage">
+                <include>KenBurns</include>
+                <include>Icon_Fade</include>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>1920</width>
+                <height>1080</height>
+                <timeperimage>9000</timeperimage>
+                <randomize>true</randomize>
+                <fadetime>400</fadetime>
+                <aspectratio aligny="top">scale</aspectratio>
+                <imagepath background="true">$VAR[Fanart.Art]</imagepath>
+            </control>
+            <include condition="!Skin.HasSetting(DisableFanart)+Skin.HasSetting(EnableExtraFanart)">Fanart_Art_Extra</include>
         </control>
-        <control type="multiimage">
-            <include>KenBurns</include>
-            <include>Icon_Fade</include>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>1920</width>
-            <height>1080</height>
-            <timeperimage>9000</timeperimage>
-            <randomize>true</randomize>
-            <fadetime>400</fadetime>
-            <aspectratio aligny="top">scale</aspectratio>
-            <imagepath background="true">$VAR[Fanart.Art]</imagepath>
-        </control>
-        <include condition="!Skin.HasSetting(DisableFanart)+Skin.HasSetting(EnableExtraFanart)">Fanart_Art_Extra</include>
     </include>
     <constant name="TextMargin">70</constant>
     <constant name="TextMarginR">70r</constant>

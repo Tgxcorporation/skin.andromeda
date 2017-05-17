@@ -2,6 +2,8 @@
 <window type="dialog">
     <defaultcontrol always="true">9000</defaultcontrol>
     <controls>
+        <include>Fanart_Art</include>
+        <include>Player_Show</include>
         <include>DimBG</include>
         <control type="group">
             <control type="image">
