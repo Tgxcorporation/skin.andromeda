@@ -5,7 +5,7 @@
     <controls>
         <control type="group">
             <include>TopBarOSDOpenClose</include>
-            <visible>![Skin.HasSetting(DisableOSDInfoOnPause)+Player.Paused]</visible>
+            <visible>![Skin.HasSetting(DisableOSDOnPause)+Player.Paused]</visible>
             <visible>![
                 Window.IsVisible(DialogSelect.xml) |
                 Window.IsVisible(SliderDialog) |
