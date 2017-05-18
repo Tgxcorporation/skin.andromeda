@@ -1057,25 +1057,28 @@
     </variable>
     <variable name="VideoCdArt">
         <value condition="Window.IsActive(script-script.extendedinfo-DialogInfo.xml)+!String.IsEmpty(Window.Property(DiscArt))">$INFO[Window.Property(DiscArt)]</value>
-        <value condition="Window.IsActive(script-script.extendedinfo-DialogInfo.xml)+String.IsEmpty(Window.Property(DiscArt))">common/cdart.png</value>
-        <value condition="Window.IsActive(script-script.extendedinfo-DialogInfo.xml)+String.IsEmpty(Window.Property(DiscArt))">$INFO[Window.Property(Poster)]</value>
+        <value condition="Window.IsActive(script-script.extendedinfo-DialogInfo.xml)+String.IsEmpty(Window.Property(DiscArt))+!Skin.HasSetting(DisableEmptyCdArt)">common/cdart.png</value>
+        <value condition="Window.IsActive(script-script.extendedinfo-DialogInfo.xml)+String.IsEmpty(Window.Property(DiscArt))+Skin.HasSetting(DisableEmptyCdArt)">common/TransparentDot.png</value>
+        <value condition="Window.IsActive(script-script.extendedinfo-DialogInfo.xml)+String.IsEmpty(Window.Property(DiscArt))+Skin.HasSetting(EnableFakeCdArt)">$INFO[Window.Property(Poster)]</value>
         <value condition="!String.IsEmpty(ListItem.Art(discart))">$INFO[ListItem.Art(discart)]</value>
-        <!--<value>$INFO[ListItem.Art(poster)]</value>-->
-        <value>common/cdart.png</value>
+        <value condition="Skin.HasSetting(EnableFakeCdArt)">$INFO[ListItem.Art(poster)]</value>
+        <value condition="!Skin.HasSetting(DisableEmptyCdArt)">common/cdart.png</value>
     </variable>
     <variable name="MusicCdArt">
-        <!--<value condition="!Skin.HasSetting(plexbmc)+!ListItem.IsParentFolder+Skin.HasSetting(EnableCdArt)+!String.IsEmpty(ListItem.Thumb)+[Container.content(songs)|Container.content(albums)]">http://localhost:52307/getmusicart&amp;artist=$INFO[Listitem.Artist]&amp;track=$INFO[Listitem.Title]&amp;album=$INFO[Listitem.Album]&amp;type=discart&amp;fallback=$INFO[ListItem.Thumb]</value>-->
-        <value condition="!Skin.HasSetting(plexbmc)+!ListItem.IsParentFolder+Skin.HasSetting(EnableCdArt)+!String.IsEmpty(ListItem.Thumb)+[Container.content(songs)|Container.content(albums)]">http://localhost:52307/getmusicart&amp;artist=$INFO[Listitem.Artist]&amp;track=$INFO[Listitem.Title]&amp;album=$INFO[Listitem.Album]&amp;type=discart&amp;fallback=common/cdart.png</value>
+        <value condition="Skin.HasSetting(EnableFakeCdArt)+!Skin.HasSetting(plexbmc)+!ListItem.IsParentFolder+Skin.HasSetting(EnableCdArt)+!String.IsEmpty(ListItem.Thumb)+[Container.content(songs)|Container.content(albums)]">http://localhost:52307/getmusicart&amp;artist=$INFO[Listitem.Artist]&amp;track=$INFO[Listitem.Title]&amp;album=$INFO[Listitem.Album]&amp;type=discart&amp;fallback=$INFO[ListItem.Thumb]</value>
+        <value condition="!Skin.HasSetting(DisableEmptyCdArt)+!Skin.HasSetting(plexbmc)+!ListItem.IsParentFolder+Skin.HasSetting(EnableCdArt)+!String.IsEmpty(ListItem.Thumb)+[Container.content(songs)|Container.content(albums)]">http://localhost:52307/getmusicart&amp;artist=$INFO[Listitem.Artist]&amp;track=$INFO[Listitem.Title]&amp;album=$INFO[Listitem.Album]&amp;type=discart&amp;fallback=common/cdart.png</value>
+        <value condition="Skin.HasSetting(DisableEmptyCdArt)+!Skin.HasSetting(plexbmc)+!ListItem.IsParentFolder+Skin.HasSetting(EnableCdArt)+!String.IsEmpty(ListItem.Thumb)+[Container.content(songs)|Container.content(albums)]">http://localhost:52307/getmusicart&amp;artist=$INFO[Listitem.Artist]&amp;track=$INFO[Listitem.Title]&amp;album=$INFO[Listitem.Album]&amp;type=discart&amp;fallback=common/TransparentDot.png</value>
     </variable>
     <variable name="VideoPlayerCdArt">
         <value condition="!String.IsEmpty(Player.Art(discart))">$INFO[Player.Art(discart)]</value>
         <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.Player.Art.DiscArt))">$INFO[Window(Home).Property(SkinHelper.Player.Art.DiscArt)]</value>
-        <value>common/cdart.png</value>
+        <value condition="Skin.HasSetting(EnableFakeCdArt)">$INFO[Player.Art(thumb)]</value>
+        <value condition="!Skin.HasSetting(DisableEmptyCdArt)">common/cdart.png</value>
     </variable>
     <variable name="MusicPlayerCdArt">
         <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.Player.Art.DiscArt))">$INFO[Window(Home).Property(SkinHelper.Player.Art.DiscArt)]</value>
-        <!--<value>$INFO[Player.Art(thumb)]</value>-->
-        <value>common/cdart.png</value>
+        <value condition="Skin.HasSetting(EnableFakeCdArt)">$INFO[Player.Art(thumb)]</value>
+        <value condition="!Skin.HasSetting(DisableEmptyCdArt)">common/cdart.png</value>
     </variable>
     <variable name="DefaultStudioArt">
         <value condition="Skin.HasSetting(EnableStudioArt) + !String.IsEmpty(Skin.String(LabelArt.name)) + [Window.IsActive(MusicVisualisation.xml)]">$INFO[Skin.String(LabelArt.path)]/$INFO[MusicPlayer.Property(Album_Label)].png</value>

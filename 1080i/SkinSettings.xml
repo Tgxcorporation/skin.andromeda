@@ -687,6 +687,34 @@
                                     <label2>$LOCALIZE[106]</label2>
                                     <onclick>Skin.ToggleSetting(EnableCdArt)</onclick>
                                 </item>
+                                <item id="22">
+                                    <visible>Skin.HasSetting(DisableEmptyCdArt)+Skin.HasSetting(EnableCdArt)</visible>
+                                    <label> - $LOCALIZE[31076]</label>
+                                    <label2>$LOCALIZE[107]</label2>
+                                    <onclick>Skin.ToggleSetting(DisableEmptyCdArt)</onclick>
+                                    <onclick>Skin.Reset(EnableFakeCdArt)</onclick>
+                                </item>
+                                <item id="22">
+                                    <visible>!Skin.HasSetting(DisableEmptyCdArt)+Skin.HasSetting(EnableCdArt)</visible>
+                                    <label> - $LOCALIZE[31076]</label>
+                                    <label2>$LOCALIZE[106]</label2>
+                                    <onclick>Skin.ToggleSetting(DisableEmptyCdArt)</onclick>
+                                    <onclick>Skin.Reset(EnableFakeCdArt)</onclick>
+                                </item>
+                                <item id="28">
+                                    <visible>Skin.HasSetting(EnableFakeCdArt)+Skin.HasSetting(EnableCdArt)</visible>
+                                    <label> - $LOCALIZE[31077]</label>
+                                    <label2>$LOCALIZE[107]</label2>
+                                    <onclick>Skin.ToggleSetting(EnableFakeCdArt)</onclick>
+                                    <onclick>Skin.Reset(DisableEmptyCdArt)</onclick>
+                                </item>
+                                <item id="28">
+                                    <visible>!Skin.HasSetting(EnableFakeCdArt)+Skin.HasSetting(EnableCdArt)</visible>
+                                    <label> - $LOCALIZE[31077]</label>
+                                    <label2>$LOCALIZE[106]</label2>
+                                    <onclick>Skin.ToggleSetting(EnableFakeCdArt)</onclick>
+                                    <onclick>Skin.Reset(DisableEmptyCdArt)</onclick>
+                                </item>
                                 <item id="23">
                                     <visible>Skin.HasSetting(EnableExtraFanart)</visible>
                                     <label>$LOCALIZE[31041]</label>

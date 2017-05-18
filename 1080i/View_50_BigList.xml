@@ -505,7 +505,6 @@
                         </include>
                         <control type="group">
                             <animation effect="slide" time="0" start="0,0" end="95,0" condition="$EXP[CdArtAudioIsEnabled]">Conditional</animation>
-                            <!-- CDART AUDIO -->
                             <include content="ThumbsImages">
                                 <param name="visible" value="true"/>
                                 <param name="x" value="70"/>

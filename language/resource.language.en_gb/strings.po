@@ -321,7 +321,15 @@ msgctxt "#31075"
 msgid "Enable Studio/Album Label Art"
 msgstr ""
 
-#empty strings from id 31076 to 31077
+msgctxt "#31076"
+msgid "Disable empty CdArt"
+msgstr ""
+
+msgctxt "#31077"
+msgid "Enable fake CdArt"
+msgstr ""
+
+#empty strings from id 31077 to 31077
 
 msgctxt "#31078"
 msgid "Select Studio Artwork"
