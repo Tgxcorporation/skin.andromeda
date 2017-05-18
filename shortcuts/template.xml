@@ -61,30 +61,6 @@
                     <scroll>false</scroll>
                     <label>$SKINSHORTCUTS[title]</label>
                 </control>
-                <control type="image">
-                    <visible>!Integer.IsGreater(Container(70001$SKINSHORTCUTS[mainmenuid]).NumItems,0)</visible>
-                    <posx>70</posx>
-                    <posy>97</posy>
-                    <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
-                    <aspectratio align="center" aligny="center">keep</aspectratio>
-                    <colordiffuse>ThumbsUnfocusedColor</colordiffuse>
-                    <texture>defaultEmptyBig.png</texture>
-                    <fadetime>300</fadetime>
-                </control>
-                <control type="image">
-                    <visible>!Integer.IsGreater(Container(70001$SKINSHORTCUTS[mainmenuid]).NumItems,0)</visible>
-                    <posx>70</posx>
-                    <posy>97</posy>
-                    <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
-                    <colordiffuse>ThumbsUnfocusedColor</colordiffuse>
-                    <texture border="2">common/TransparentDot.png</texture>
-                    <bordertexture border="2" colordiffuse="BorderUnfocusedColor">common/frame_focus.png</bordertexture>
-                    <bordersize>2</bordersize>
-                    <fadetime>300</fadetime>
-                </control>
-                <include content="Widget_Empty_$SKINSHORTCUTS[gfxType]">
-                    <param name="id" value="70001$SKINSHORTCUTS[mainmenuid]"/>
-                </include>
                 <control type="list" id="70001$SKINSHORTCUTS[mainmenuid]">
                     <skinshortcuts>visibility</skinshortcuts>
                     <onright>70001$SKINSHORTCUTS[mainmenuid]</onright>
@@ -101,6 +77,50 @@
                 <include content="Widget_NavButtons_$SKINSHORTCUTS[gfxType]">
                     <param name="id" value="70001$SKINSHORTCUTS[mainmenuid]"/>
                     <param name="height" value="$SKINSHORTCUTS[height]"/>
+                </include>
+                <control type="image" id="1">
+                    <visible>Container(70001$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
+                    <animation effect="rotate" center="auto" start="360" end="0" time="1500" loop="true" tween="circle" easing="inout" condition="true">Conditional</animation>
+                    <posx>70</posx>
+                    <posy>97</posy>
+                    <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
+                    <aspectratio align="center" aligny="center">keep</aspectratio>
+                    <colordiffuse>ThumbsUnfocusedColor</colordiffuse>
+                    <texture>OSD/loading.png</texture>
+                </control>
+                <control type="image" id="1">
+                    <visible>Container(70001$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
+                    <animation effect="rotate" center="auto" start="360" end="0" time="750" loop="true" tween="sine" easing="in" condition="true">Conditional</animation>
+                    <posx>70</posx>
+                    <posy>97</posy>
+                    <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
+                    <aspectratio align="center" aligny="center">keep</aspectratio>
+                    <colordiffuse>ThumbsUnfocusedColor</colordiffuse>
+                    <texture>OSD/loading.png</texture>
+                </control>
+                <control type="image">
+                    <visible>!Integer.IsGreater(Container(70001$SKINSHORTCUTS[mainmenuid]).NumItems,0)+!Container(70001$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
+                    <posx>70</posx>
+                    <posy>97</posy>
+                    <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
+                    <aspectratio align="center" aligny="center">keep</aspectratio>
+                    <colordiffuse>ThumbsUnfocusedColor</colordiffuse>
+                    <texture>defaultEmptyBig.png</texture>
+                    <fadetime>300</fadetime>
+                </control>
+                <control type="image">
+                    <visible>!Integer.IsGreater(Container(70001$SKINSHORTCUTS[mainmenuid]).NumItems,0)|Container(70001$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
+                    <posx>70</posx>
+                    <posy>97</posy>
+                    <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
+                    <colordiffuse>ThumbsUnfocusedColor</colordiffuse>
+                    <texture border="2">common/TransparentDot.png</texture>
+                    <bordertexture border="2" colordiffuse="BorderUnfocusedColor">common/frame_focus.png</bordertexture>
+                    <bordersize>2</bordersize>
+                    <fadetime>300</fadetime>
+                </control>
+                <include content="Widget_Empty_$SKINSHORTCUTS[gfxType]">
+                    <param name="id" value="70001$SKINSHORTCUTS[mainmenuid]"/>
                 </include>
             </control>
         </controls>
@@ -179,8 +199,28 @@
                     <param name="id" value="70002$SKINSHORTCUTS[mainmenuid]"/>
                     <param name="height" value="$SKINSHORTCUTS[height]"/>
                 </include>
+                <control type="image" id="1">
+                    <visible>Container(70002$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
+                    <animation effect="rotate" center="auto" start="360" end="0" time="1500" loop="true" tween="circle" easing="inout" condition="true">Conditional</animation>
+                    <posx>70</posx>
+                    <posy>97</posy>
+                    <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
+                    <aspectratio align="center" aligny="center">keep</aspectratio>
+                    <colordiffuse>ThumbsUnfocusedColor</colordiffuse>
+                    <texture>OSD/loading.png</texture>
+                </control>
+                <control type="image" id="1">
+                    <visible>Container(70002$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
+                    <animation effect="rotate" center="auto" start="360" end="0" time="750" loop="true" tween="sine" easing="in" condition="true">Conditional</animation>
+                    <posx>70</posx>
+                    <posy>97</posy>
+                    <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
+                    <aspectratio align="center" aligny="center">keep</aspectratio>
+                    <colordiffuse>ThumbsUnfocusedColor</colordiffuse>
+                    <texture>OSD/loading.png</texture>
+                </control>
                 <control type="image">
-                    <visible>!Integer.IsGreater(Container(70002$SKINSHORTCUTS[mainmenuid]).NumItems,0)</visible>
+                    <visible>!Integer.IsGreater(Container(70002$SKINSHORTCUTS[mainmenuid]).NumItems,0)+!Container(70002$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
                     <posx>70</posx>
                     <posy>97</posy>
                     <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
@@ -189,7 +229,7 @@
                     <texture>defaultEmptyBig.png</texture>
                 </control>
                 <control type="image">
-                    <visible>!Integer.IsGreater(Container(70002$SKINSHORTCUTS[mainmenuid]).NumItems,0)</visible>
+                    <visible>!Integer.IsGreater(Container(70002$SKINSHORTCUTS[mainmenuid]).NumItems,0)|Container(70002$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
                     <posx>70</posx>
                     <posy>97</posy>
                     <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
@@ -278,8 +318,28 @@
                     <param name="id" value="70003$SKINSHORTCUTS[mainmenuid]"/>
                     <param name="height" value="$SKINSHORTCUTS[height]"/>
                 </include>
+                <control type="image" id="1">
+                    <visible>Container(70003$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
+                    <animation effect="rotate" center="auto" start="360" end="0" time="1500" loop="true" tween="circle" easing="inout" condition="true">Conditional</animation>
+                    <posx>70</posx>
+                    <posy>97</posy>
+                    <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
+                    <aspectratio align="center" aligny="center">keep</aspectratio>
+                    <colordiffuse>ThumbsUnfocusedColor</colordiffuse>
+                    <texture>OSD/loading.png</texture>
+                </control>
+                <control type="image" id="1">
+                    <visible>Container(70003$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
+                    <animation effect="rotate" center="auto" start="360" end="0" time="750" loop="true" tween="sine" easing="in" condition="true">Conditional</animation>
+                    <posx>70</posx>
+                    <posy>97</posy>
+                    <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
+                    <aspectratio align="center" aligny="center">keep</aspectratio>
+                    <colordiffuse>ThumbsUnfocusedColor</colordiffuse>
+                    <texture>OSD/loading.png</texture>
+                </control>
                 <control type="image">
-                    <visible>!Integer.IsGreater(Container(70003$SKINSHORTCUTS[mainmenuid]).NumItems,0)</visible>
+                    <visible>!Integer.IsGreater(Container(70003$SKINSHORTCUTS[mainmenuid]).NumItems,0)+!Container(70003$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
                     <posx>70</posx>
                     <posy>97</posy>
                     <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
@@ -288,7 +348,7 @@
                     <texture>defaultEmptyBig.png</texture>
                 </control>
                 <control type="image">
-                    <visible>!Integer.IsGreater(Container(70003$SKINSHORTCUTS[mainmenuid]).NumItems,0)</visible>
+                    <visible>!Integer.IsGreater(Container(70003$SKINSHORTCUTS[mainmenuid]).NumItems,0)|Container(70003$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
                     <posx>70</posx>
                     <posy>97</posy>
                     <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
@@ -377,8 +437,28 @@
                     <param name="id" value="70004$SKINSHORTCUTS[mainmenuid]"/>
                     <param name="height" value="$SKINSHORTCUTS[height]"/>
                 </include>
+                <control type="image" id="1">
+                    <visible>Container(70004$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
+                    <animation effect="rotate" center="auto" start="360" end="0" time="1500" loop="true" tween="circle" easing="inout" condition="true">Conditional</animation>
+                    <posx>70</posx>
+                    <posy>97</posy>
+                    <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
+                    <aspectratio align="center" aligny="center">keep</aspectratio>
+                    <colordiffuse>ThumbsUnfocusedColor</colordiffuse>
+                    <texture>OSD/loading.png</texture>
+                </control>
+                <control type="image" id="1">
+                    <visible>Container(70004$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
+                    <animation effect="rotate" center="auto" start="360" end="0" time="750" loop="true" tween="sine" easing="in" condition="true">Conditional</animation>
+                    <posx>70</posx>
+                    <posy>97</posy>
+                    <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
+                    <aspectratio align="center" aligny="center">keep</aspectratio>
+                    <colordiffuse>ThumbsUnfocusedColor</colordiffuse>
+                    <texture>OSD/loading.png</texture>
+                </control>
                 <control type="image">
-                    <visible>!Integer.IsGreater(Container(70004$SKINSHORTCUTS[mainmenuid]).NumItems,0)</visible>
+                    <visible>!Integer.IsGreater(Container(70004$SKINSHORTCUTS[mainmenuid]).NumItems,0)+!Container(70004$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
                     <posx>70</posx>
                     <posy>97</posy>
                     <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
@@ -387,7 +467,7 @@
                     <texture>defaultEmptyBig.png</texture>
                 </control>
                 <control type="image">
-                    <visible>!Integer.IsGreater(Container(70004$SKINSHORTCUTS[mainmenuid]).NumItems,0)</visible>
+                    <visible>!Integer.IsGreater(Container(70004$SKINSHORTCUTS[mainmenuid]).NumItems,0)|Container(70004$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
                     <posx>70</posx>
                     <posy>97</posy>
                     <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
@@ -476,8 +556,28 @@
                     <param name="id" value="70005$SKINSHORTCUTS[mainmenuid]"/>
                     <param name="height" value="$SKINSHORTCUTS[height]"/>
                 </include>
+                <control type="image" id="1">
+                    <visible>Container(70005$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
+                    <animation effect="rotate" center="auto" start="360" end="0" time="1500" loop="true" tween="circle" easing="inout" condition="true">Conditional</animation>
+                    <posx>70</posx>
+                    <posy>97</posy>
+                    <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
+                    <aspectratio align="center" aligny="center">keep</aspectratio>
+                    <colordiffuse>ThumbsUnfocusedColor</colordiffuse>
+                    <texture>OSD/loading.png</texture>
+                </control>
+                <control type="image" id="1">
+                    <visible>Container(70005$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
+                    <animation effect="rotate" center="auto" start="360" end="0" time="750" loop="true" tween="sine" easing="in" condition="true">Conditional</animation>
+                    <posx>70</posx>
+                    <posy>97</posy>
+                    <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
+                    <aspectratio align="center" aligny="center">keep</aspectratio>
+                    <colordiffuse>ThumbsUnfocusedColor</colordiffuse>
+                    <texture>OSD/loading.png</texture>
+                </control>
                 <control type="image">
-                    <visible>!Integer.IsGreater(Container(70005$SKINSHORTCUTS[mainmenuid]).NumItems,0)</visible>
+                    <visible>!Integer.IsGreater(Container(70005$SKINSHORTCUTS[mainmenuid]).NumItems,0)+!Container(70005$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
                     <posx>70</posx>
                     <posy>97</posy>
                     <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
@@ -486,7 +586,7 @@
                     <texture>defaultEmptyBig.png</texture>
                 </control>
                 <control type="image">
-                    <visible>!Integer.IsGreater(Container(70005$SKINSHORTCUTS[mainmenuid]).NumItems,0)</visible>
+                    <visible>!Integer.IsGreater(Container(70005$SKINSHORTCUTS[mainmenuid]).NumItems,0)|Container(70005$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
                     <posx>70</posx>
                     <posy>97</posy>
                     <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
