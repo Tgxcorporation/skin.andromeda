@@ -332,17 +332,17 @@
     <propertydefault labelID="24001" property="widgetType.2">addon</propertydefault>
     <propertydefault labelID="24001" property="widgetPath.2">addons://sources/executable/</propertydefault>
     <propertydefault labelID="24001" property="widgetName.2">1043</propertydefault>
-    <propertydefault labelID="24001" property="widgetAspect.1">31118</propertydefault>
-    <propertydefault labelID="24001" property="widgetSortBy.1">lastused</propertydefault>
-    <propertydefault labelID="24001" property="widgetSortDirection.1">descending</propertydefault>
+    <propertydefault labelID="24001" property="widgetAspect.2">31118</propertydefault>
+    <propertydefault labelID="24001" property="widgetSortBy.2">lastused</propertydefault>
+    <propertydefault labelID="24001" property="widgetSortDirection.2">descending</propertydefault>
     <propertydefault labelID="24001" property="widget.3">pictureaddons</propertydefault>
     <propertydefault labelID="24001" property="widgetTarget.3">pictures</propertydefault>
     <propertydefault labelID="24001" property="widgetType.3">addon</propertydefault>
     <propertydefault labelID="24001" property="widgetPath.3">addons://sources/image/</propertydefault>
     <propertydefault labelID="24001" property="widgetName.3">1039</propertydefault>
-    <propertydefault labelID="24001" property="widgetAspect.1">31118</propertydefault>
-    <propertydefault labelID="24001" property="widgetSortBy.1">lastused</propertydefault>
-    <propertydefault labelID="24001" property="widgetSortDirection.1">descending</propertydefault>
+    <propertydefault labelID="24001" property="widgetAspect.3">31118</propertydefault>
+    <propertydefault labelID="24001" property="widgetSortBy.3">lastused</propertydefault>
+    <propertydefault labelID="24001" property="widgetSortDirection.3">descending</propertydefault>
 
     <propertydefault labelID="livetv" property="widget.1">tvchannels</propertydefault>
     <propertydefault labelID="livetv" property="widgetTarget.1">pvr</propertydefault>
