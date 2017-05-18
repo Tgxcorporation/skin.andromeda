@@ -352,10 +352,10 @@
                         <include>ButtonFocusAnimation</include>
                         <include content="DiscArt">
                             <param name="visible" value="!ListItem.IsParentFolder+!String.IsEmpty(ListItem.Thumb)+[Container.content(songs)|Container.content(albums)]"/>
-                            <param name="x" value="347"/>
-                            <param name="y" value="80"/>
-                            <param name="width" value="515"/>
-                            <param name="height" value="515"/>
+                            <param name="x" value="377"/>
+                            <param name="y" value="110"/>
+                            <param name="width" value="455"/>
+                            <param name="height" value="455"/>
                             <param name="texture" value="$VAR[MusicCdArt]"/>
                         </include>
                         <include content="ThumbsImages">
