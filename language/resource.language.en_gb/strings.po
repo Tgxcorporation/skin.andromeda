@@ -547,6 +547,10 @@ msgctxt "#31357"
 msgid "Local subtitle available"
 msgstr ""
 
+msgctxt "#31358"
+msgid "Hide codec info"
+msgstr ""
+
 #empty strings from id 31358 to 31389
 #Skin Fontsets
 

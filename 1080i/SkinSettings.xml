@@ -151,6 +151,18 @@
                                     <label2>$LOCALIZE[106]</label2>
                                     <onclick>Skin.ToggleSetting(Hide_Watched_Marks)</onclick>
                                 </item>
+                                <item id="1">
+                                    <visible>Skin.HasSetting(Hide_Codec_Info)</visible>
+                                    <label>$LOCALIZE[31358]</label>
+                                    <label2>$LOCALIZE[107]</label2>
+                                    <onclick>Skin.ToggleSetting(Hide_Codec_Info)</onclick>
+                                </item>
+                                <item id="1">
+                                    <visible>!Skin.HasSetting(Hide_Codec_Info)</visible>
+                                    <label>$LOCALIZE[31358]</label>
+                                    <label2>$LOCALIZE[106]</label2>
+                                    <onclick>Skin.ToggleSetting(Hide_Codec_Info)</onclick>
+                                </item>
                                 <!--<item id="1">-->
                                 <!--<visible>Skin.HasSetting(Hide_Unwatched_Marks)</visible>-->
                                 <!--<label>$LOCALIZE[31980]</label>-->
