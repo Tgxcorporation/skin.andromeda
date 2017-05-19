@@ -548,7 +548,7 @@ msgid "Local subtitle available"
 msgstr ""
 
 msgctxt "#31358"
-msgid "Hide codec info"
+msgid "Disable codec info"
 msgstr ""
 
 #empty strings from id 31358 to 31389
