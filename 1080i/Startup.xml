@@ -27,7 +27,7 @@
         <include>Fanart_Art</include>
         <!--CUSTOM STARTUP IMAGE-->
         <control type="image">
-            <visible>String.IsEqual(Skin.String(startup-screentype),image)+!String.IsEmpty(Skin.String(startup-imagepath))</visible>
+            <visible>String.IsEqual(Skin.String(startup-screentype),image)</visible>
             <include>KenBurns</include>
             <include>VisibleFadeEffect</include>
             <posx>0</posx>
@@ -53,7 +53,7 @@
         </control>
         <include>OverlayFull</include>
         <control type="group">
-            <visible>![String.IsEqual(Skin.String(startup-screentype),image)+!String.IsEmpty(Skin.String(startup-imagepath))] +
+            <visible>![String.IsEqual(Skin.String(startup-screentype),image)] +
                 ![String.IsEqual(Skin.String(startup-screentype),multiimage)+!String.IsEmpty(Skin.String(startup-multiimagepath))]</visible>
             <include>VisibleFadeEffect</include>
             <control type="image">
