@@ -329,8 +329,6 @@ msgctxt "#31077"
 msgid "Enable fake CdArt"
 msgstr ""
 
-#empty strings from id 31077 to 31077
-
 msgctxt "#31078"
 msgid "Select Studio Artwork"
 msgstr ""
@@ -371,7 +369,11 @@ msgctxt "#31087"
 msgid "Reset weather view"
 msgstr ""
 
-#empty strings from id 31087 to 31089
+msgctxt "#31088"
+msgid "Disable default startup logo"
+msgstr ""
+
+#empty strings from id 31089 to 31089
 #Viewtype
 
 msgctxt "#31090"
