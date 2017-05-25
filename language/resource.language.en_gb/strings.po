@@ -506,7 +506,11 @@ msgctxt "#31303"
 msgid "Volume Up"
 msgstr ""
 
-#empty strings from id 31304 to 31308
+msgctxt "#31304"
+msgid "Unmute"
+msgstr ""
+
+#empty strings from id 31305 to 31308
 
 msgctxt "#31309"
 msgid "Memory Used:"
