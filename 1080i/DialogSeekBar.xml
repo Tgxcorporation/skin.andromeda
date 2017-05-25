@@ -93,7 +93,7 @@
                 <param name="id" value="0"/>
                 <param name="visible" value="PVR.IsTimeShift + !Player.ChannelPreviewActive"/>
                 <param name="x" value="0"/>
-                <param name="y" value="1073"/>
+                <param name="y" value="985"/>
                 <param name="width" value="1920"/>
                 <param name="info" value="PVR.TimeshiftProgress"/>
                 <param name="visiblefocus" value="true"/>
