@@ -67,8 +67,6 @@
                 <posy>0</posy>
                 <width>1920</width>
                 <height>1080</height>
-                <onleft>300</onleft>
-                <onback>300</onback>
                 <orientation>horizontal</orientation>
                 <onleft>59</onleft>
                 <onright>59</onright>
@@ -270,8 +268,6 @@
                 <posy>0</posy>
                 <width>1920</width>
                 <height>1080</height>
-                <onleft>300</onleft>
-                <onback>300</onback>
                 <preloaditems>4</preloaditems>
                 <orientation>horizontal</orientation>
                 <onleft>58</onleft>
@@ -478,8 +474,6 @@
                 <posy>0</posy>
                 <width>1920</width>
                 <height>1080</height>
-                <onleft>300</onleft>
-                <onback>300</onback>
                 <preloaditems>4</preloaditems>
                 <orientation>horizontal</orientation>
                 <onleft>57</onleft>
@@ -664,8 +658,6 @@
                 <posy>0</posy>
                 <width>1920</width>
                 <height>1080</height>
-                <onleft>300</onleft>
-                <onback>300</onback>
                 <preloaditems>4</preloaditems>
                 <orientation>horizontal</orientation>
                 <onleft>58</onleft>
