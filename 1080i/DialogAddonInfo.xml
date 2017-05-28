@@ -199,7 +199,7 @@
                         <posx>660</posx>
                         <posy>190</posy>
                         <width>600</width>
-                        <height>1180</height>
+                        <height>890</height>
                         <label fallback="416">$INFO[ListItem.AddonNews]</label>
                         <font>InfoPlotFont</font>
                         <include>TextColor_MainColor</include>
@@ -208,7 +208,7 @@
                     <control type="scrollbar" id="8070">
                         <posx>1870</posx>
                         <posy>190</posy>
-                        <height>685</height>
+                        <height>890</height>
                         <include>VerticalScroller</include>
                         <onleft>9000</onleft>
                         <onright>7060</onright>
