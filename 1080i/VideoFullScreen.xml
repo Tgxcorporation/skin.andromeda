@@ -1,12 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
-    <animation effect="fade" time="150">WindowClose</animation>
     <onunload>Dialog.close(all,true)</onunload>
     <controls>
         <control type="group" id="0">
             <include>DimBG</include>
             <control type="group">
-                <include>DialogOverlay</include>
+                <control type="image">
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>1920</width>
+                    <height>350</height>
+                    <colordiffuse>bbffffff</colordiffuse>
+                    <texture border="1">common/BlackDot.png</texture>
+                </control>
+                <control type="image">
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>1920</width>
+                    <height>350</height>
+                    <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                    <texture border="10">common/overlay_topbar_gradient.png</texture>
+                </control>
                 <include>OSDOpenClose</include>
                 <control type="label" id="10">
                     <left>100</left>
