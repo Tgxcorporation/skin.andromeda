@@ -383,14 +383,15 @@
     </include>
     <include name="FacadeFocusAnimation">
         <animation type="Conditional" reversible="true"
-                   condition="!ControlGroup(9000).HasFocus+
+                   condition="[[Control.isvisible(50)+Container(50).Row(0)]|[Control.isvisible(52)+Container(52).Row(0)]|[Control.isvisible(55)+Container(55).Row(0)]|[Control.isvisible(56)+Container(56).Row(0)]]|
+                   [!ControlGroup(9000).HasFocus+
                    !Control.HasFocus(8999)+![
                    ControlGroup(505052).HasFocus+
                    !ControlGroup(9900).HasFocus+
                    !ControlGroup(9901).HasFocus+
                    !Control.HasFocus(8997)+
                    !Control.HasFocus(505051)
-                   ]">
+                   ]]">
             <effect type="slide" start="0,0" end="0,186" time="150" delay="0" tween="circle" easing="inout"/>
         </animation>
     </include>
