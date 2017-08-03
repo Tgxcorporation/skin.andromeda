@@ -16,7 +16,7 @@
             <visible>!String.IsEqual(ListItem.Label,..)</visible>
             <include content="ClearArtLogo">
                 <param name="x" value="70"/>
-                <param name="y" value="-40"/>
+                <param name="y" value="-60"/>
                 <param name="width" value="1920"/>
                 <param name="height" value="150"/>
                 <param name="visible" value="true"/>
