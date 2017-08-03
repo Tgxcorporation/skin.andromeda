@@ -811,7 +811,11 @@ msgctxt "#31910"
 msgid "Maps"
 msgstr ""
 
-#empty strings from id 31911 to 31930
+#empty strings from id 31910 to 31930
+
+msgctxt "#31930"
+msgid "Disable upward navigation to top bar in list views"
+msgstr ""
 
 msgctxt "#31931"
 msgid "On Deck"

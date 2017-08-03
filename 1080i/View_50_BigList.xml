@@ -712,7 +712,8 @@
                 <pagecontrol>60</pagecontrol>
                 <onleft>9000</onleft>
                 <onright>60</onright>
-                <onup>50</onup>
+                <onup condition="Skin.HasSetting(DisableUpNavListViews)">50</onup>
+                <onup>9900</onup>
                 <ondown>50</ondown>
                 <preloaditems>4</preloaditems>
                 <include>BigList_Layout</include>
@@ -769,7 +770,8 @@
                     <pagecontrol>60</pagecontrol>
                     <onleft>9000</onleft>
                     <onright>60</onright>
-                    <onup>51</onup>
+                    <onup condition="Skin.HasSetting(DisableUpNavListViews)">51</onup>
+                    <onup>9900</onup>
                     <ondown>51</ondown>
                     <preloaditems>4</preloaditems>
                     <include>BigList_Layout</include>
@@ -817,7 +819,8 @@
                     <pagecontrol>60</pagecontrol>
                     <onleft>9000</onleft>
                     <onright>60</onright>
-                    <onup>50</onup>
+                    <onup condition="Skin.HasSetting(DisableUpNavListViews)">50</onup>
+                    <onup>9900</onup>
                     <ondown>50</ondown>
                     <preloaditems>4</preloaditems>
                     <include>BigList_Layout</include>

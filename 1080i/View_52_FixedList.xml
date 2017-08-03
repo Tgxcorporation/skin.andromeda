@@ -288,7 +288,8 @@
                 <pagecontrol>60</pagecontrol>
                 <onleft>9000</onleft>
                 <onright>60</onright>
-                <onup>52</onup>
+                <onup condition="Skin.HasSetting(DisableUpNavListViews)">52</onup>
+                <onup>9900</onup>
                 <ondown>52</ondown>
                 <preloaditems>4</preloaditems>
                 <include>FixedList_Layout</include>

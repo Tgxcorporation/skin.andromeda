@@ -31,7 +31,8 @@
                     <height>960</height>
                     <onleft>11</onleft>
                     <onright>60</onright>
-                    <onup>52</onup>
+                    <onup condition="Skin.HasSetting(DisableUpNavListViews)">52</onup>
+                    <onup>9900</onup>
                     <ondown>52</ondown>
                     <pagecontrol>60</pagecontrol>
                     <itemlayout width="1720" height="240">
