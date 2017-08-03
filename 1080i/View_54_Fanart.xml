@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
     <include name="Fanart_Layout">
-        <itemlayout height="1080" width="1420">
+        <itemlayout height="1080" width="1390">
             <control type="image">
                 <visible>String.IsEqual(ListItem.Label,..)</visible>
                 <posx>70</posx>
-                <posy>55</posy>
-                <width>1410</width>
-                <height>793</height>
+                <posy>70</posy>
+                <width>1380</width>
+                <height>778</height>
                 <colordiffuse>ff999999</colordiffuse>
                 <texture colordiffuse="ff999999">defaultFolderBackEpisode.png</texture>
                 <bordertexture border="2" colordiffuse="ff999999">common/frame_focus.png</bordertexture>
@@ -16,9 +16,9 @@
             <control type="image">
                 <visible>!String.IsEqual(ListItem.Label,..)</visible>
                 <posx>70</posx>
-                <posy>55</posy>
-                <width>1410</width>
-                <height>793</height>
+                <posy>70</posy>
+                <width>1380</width>
+                <height>778</height>
                 <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                 <texture>special://skin/backgrounds/default/background.png</texture>
                 <bordertexture border="2" colordiffuse="ff999999">common/frame_focus.png</bordertexture>
@@ -27,9 +27,9 @@
             <control type="multiimage">
                 <visible>!String.IsEqual(ListItem.Label,..)</visible>
                 <posx>72</posx>
-                <posy>57</posy>
-                <width>1406</width>
-                <height>789</height>
+                <posy>72</posy>
+                <width>1376</width>
+                <height>774</height>
                 <timeperimage>9000</timeperimage>
                 <randomize>true</randomize>
                 <fadetime>400</fadetime>
@@ -62,15 +62,15 @@
                 <param name="direction" value="horizontal"/>
             </include>
         </itemlayout>
-        <focusedlayout height="1080" width="1420">
+        <focusedlayout height="1080" width="1390">
             <control type="group">
                 <include>ListFocusAnimation</include>
                 <control type="image">
                     <visible>String.IsEqual(ListItem.Label,..)</visible>
                     <posx>70</posx>
-                    <posy>55</posy>
-                    <width>1410</width>
-                    <height>793</height>
+                    <posy>70</posy>
+                    <width>1380</width>
+                    <height>778</height>
                     <colordiffuse>$VAR[Picked.HighLight.Color]</colordiffuse>
                     <texture colordiffuse="$VAR[Picked.HighLight.Color]">defaultFolderBackEpisode.png</texture>
                     <bordertexture border="2" colordiffuse="$VAR[Picked.HighLight.Color]">common/frame_focus.png</bordertexture>
@@ -79,9 +79,9 @@
                 <control type="image">
                     <visible>!String.IsEqual(ListItem.Label,..)</visible>
                     <posx>70</posx>
-                    <posy>55</posy>
-                    <width>1410</width>
-                    <height>793</height>
+                    <posy>70</posy>
+                    <width>1380</width>
+                    <height>778</height>
                     <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                     <texture>special://skin/backgrounds/default/background.png</texture>
                     <bordertexture border="2" colordiffuse="$VAR[Picked.HighLight.Color]">common/frame_focus.png</bordertexture>
@@ -90,9 +90,9 @@
                 <control type="multiimage">
                     <visible>!String.IsEqual(ListItem.Label,..)</visible>
                     <posx>72</posx>
-                    <posy>57</posy>
-                    <width>1406</width>
-                    <height>789</height>
+                    <posy>72</posy>
+                    <width>1376</width>
+                    <height>774</height>
                     <timeperimage>9000</timeperimage>
                     <randomize>true</randomize>
                     <fadetime>400</fadetime>
