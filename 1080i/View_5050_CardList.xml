@@ -321,6 +321,18 @@
                         <param name="visiblefocus" value="true"/>
                         <param name="direction" value="horizontal"/>
                     </include>
+                    <include content="ProgressBar">
+                        <param name="id" value="0"/>
+                        <param name="visible" value="Integer.IsGreater(ListItem.PercentPlayed,0)"/>
+                        <param name="x" value="71"/>
+                        <param name="y" value="570"/>
+                        <param name="width" value="491"/>
+                        <param name="info" value="ListItem.PercentPlayed"/>
+                        <param name="endRotation" value="0"/>
+                        <param name="centerRotation" value="auto"/>
+                        <param name="visiblefocus" value="true"/>
+                        <param name="direction" value="horizontal"/>
+                    </include>
                     <control type="label">
                         <posx>645</posx>
                         <posy>190</posy>

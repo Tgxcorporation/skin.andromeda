@@ -39,7 +39,7 @@
             </control>
             <include content="ProgressBar">
                 <param name="id" value="0"/>
-                <param name="visible" value="Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)"/>
+                <param name="visible" value="Integer.IsGreater(ListItem.Progress,0)+[Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)]"/>
                 <param name="x" value="0"/>
                 <param name="y" value="865"/>
                 <param name="width" value="1920"/>

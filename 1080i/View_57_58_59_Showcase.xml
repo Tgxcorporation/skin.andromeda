@@ -701,6 +701,18 @@
                             <param name="visiblefocus" value="false"/>
                             <param name="direction" value="horizontal"/>
                         </include>
+                        <include content="ProgressBar">
+                            <param name="id" value="0"/>
+                            <param name="visible" value="Integer.IsGreater(ListItem.PercentPlayed,0)"/>
+                            <param name="x" value="70"/>
+                            <param name="y" value="0"/>
+                            <param name="width" value="534"/>
+                            <param name="info" value="ListItem.PercentPlayed"/>
+                            <param name="endRotation" value="0"/>
+                            <param name="centerRotation" value="auto"/>
+                            <param name="visiblefocus" value="false"/>
+                            <param name="direction" value="horizontal"/>
+                        </include>
                         <control type="label">
                             <posx>70</posx>
                             <posy>30</posy>
@@ -775,6 +787,18 @@
                                 <param name="y" value="0"/>
                                 <param name="width" value="534"/>
                                 <param name="info" value="ListItem.Progress"/>
+                                <param name="endRotation" value="0"/>
+                                <param name="centerRotation" value="auto"/>
+                                <param name="visiblefocus" value="true"/>
+                                <param name="direction" value="horizontal"/>
+                            </include>
+                            <include content="ProgressBar">
+                                <param name="id" value="0"/>
+                                <param name="visible" value="Integer.IsGreater(ListItem.PercentPlayed,0)"/>
+                                <param name="x" value="70"/>
+                                <param name="y" value="0"/>
+                                <param name="width" value="534"/>
+                                <param name="info" value="ListItem.PercentPlayed"/>
                                 <param name="endRotation" value="0"/>
                                 <param name="centerRotation" value="auto"/>
                                 <param name="visiblefocus" value="true"/>
