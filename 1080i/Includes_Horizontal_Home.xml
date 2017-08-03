@@ -264,7 +264,7 @@
                                     <height>60</height>
                                     <font>MainMenuFont</font>
                                     <scroll>false</scroll>
-                                    <include>TextColor_AlternateColor</include>
+                                    <include>TextColor_MainColor</include>
                                     <label>$INFO[ListItem.Label]</label>
                                 </control>
                             </control>
