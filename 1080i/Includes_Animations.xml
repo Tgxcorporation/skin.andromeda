@@ -383,7 +383,18 @@
     </include>
     <include name="FacadeFocusAnimation">
         <animation type="Conditional" reversible="true"
-                   condition="[[Control.isvisible(50)+Container(50).Row(0)]|[Control.isvisible(52)+Container(52).Row(0)]|[Control.isvisible(55)+Container(55).Row(0)]|[Control.isvisible(56)+Container(56).Row(0)]]|
+                   condition="[
+                   [Control.isvisible(50)+Container(50).Row(0)]|
+                   [Control.isvisible(52)+Container(52).Row(0)]|
+                   [Control.isvisible(55)+Container(55).Row(0)]|
+                   [Control.isvisible(56)+Container(56).Row(0)]|
+                   [Window.IsVisible(DialogFavourites.xml)+Control.isvisible(450)+Container(450).Row(0)]|
+                   [Window.IsVisible(script-script.extendedinfo-VideoList.xml)+Control.isvisible(500)+Container(500).Row(0)]|
+                   [Window.IsVisible(EventLog.xml)+Control.isvisible(570)+Container(570).Row(0)]|
+                   [Window.IsVisible(FileManager.xml)+[[Control.isvisible(20)+Container(20).Row(0)]|[Control.isvisible(21)+Container(21).Row(0)]]]|
+                   [Window.IsVisible(MyPVRGuide.xml)+[[Control.isvisible(10)+Container(10).Row(0)]|[Control.isvisible(11)+Container(11).Row(0)]|[Control.isvisible(12)+Container(12).Row(0)]|[Control.isvisible(13)+Container(13).Row(0)]]]
+                   ]
+                   |
                    [!ControlGroup(9000).HasFocus+
                    !Control.HasFocus(8999)+![
                    ControlGroup(505052).HasFocus+
