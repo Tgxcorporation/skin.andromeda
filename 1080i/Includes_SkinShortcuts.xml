@@ -129,6 +129,7 @@
                 <label>$INFO[ListItem.Label]</label>
             </control>
             <control type="label">
+                <animation effect="fade" start="85" end="85" time="0" reversible="false" condition="true">Conditional</animation>
                 <visible>!control.hasfocus(211)</visible>
                 <posx>TextMargin</posx>
                 <posy>20</posy>
@@ -136,7 +137,7 @@
                 <height>60</height>
                 <font>MainMenuFont</font>
                 <scroll>true</scroll>
-                <include>TextColor_AlternateColor</include>
+                <include>TextColor_MainColor</include>
                 <label>$INFO[ListItem.Label]</label>
             </control>
             <control type="label">
@@ -173,15 +174,13 @@
                 <onclick>SendClick(312)</onclick>
             </control>
             <control type="group" id="40400">
-                <height>115</height>
+                <height>145</height>
                 <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName))</visible>
                 <control type="button" id="40410">
                     <posy>0</posy>
-                    <label>$LOCALIZE[31115][COLOR=SeparatorColor] › [/COLOR]$VAR[WidgetAspectLabel]</label>
+                    <label>$ADDON[script.skinshortcuts 32025]</label>
                     <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
-                    <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName),settings)</enable>
-                    <onclick>SetProperty(chooseProperty,widgetAspect)</onclick>
-                    <onclick>SendClick(404)</onclick>
+                    <onclick>RunScript(script.skin.helper.service,action=setskinshortcutsproperty,header=$ADDON[script.skinshortcuts 32025][COLOR=SeparatorColor] › [/COLOR]$ADDON[script.skinshortcuts 32099] 1,property=widgetName)</onclick>
                     <width>1150</width>
                     <textwidth>1100</textwidth>
                     <align>left</align>
@@ -193,10 +192,10 @@
                 </control>
                 <control type="button" id="40420">
                     <posy>30</posy>
-                    <label>$LOCALIZE[580][COLOR=SeparatorColor] › [/COLOR]$VAR[WidgetSortByLabel]</label>
+                    <label>$LOCALIZE[31115][COLOR=SeparatorColor] › [/COLOR]$VAR[WidgetAspectLabel]</label>
                     <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
-                    <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName),settings) + !String.IsEqual(Container(211).ListItem.Property(widgetName),Playlists)</enable>
-                    <onclick>SetProperty(chooseProperty,widgetSortBy)</onclick>
+                    <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName),settings)</enable>
+                    <onclick>SetProperty(chooseProperty,widgetAspect)</onclick>
                     <onclick>SendClick(404)</onclick>
                     <width>1150</width>
                     <textwidth>1100</textwidth>
@@ -209,6 +208,22 @@
                 </control>
                 <control type="button" id="40430">
                     <posy>60</posy>
+                    <label>$LOCALIZE[580][COLOR=SeparatorColor] › [/COLOR]$VAR[WidgetSortByLabel]</label>
+                    <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
+                    <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName),settings) + !String.IsEqual(Container(211).ListItem.Property(widgetName),Playlists)</enable>
+                    <onclick>SetProperty(chooseProperty,widgetSortBy)</onclick>
+                    <onclick>SendClick(404)</onclick>
+                    <width>1150</width>
+                    <textwidth>1100</textwidth>
+                    <align>left</align>
+                    <font>DonationFont</font>
+                    <height>33</height>
+                    <include>DialogMenuButton</include>
+                    <onup>40420</onup>
+                    <ondown>40440</ondown>
+                </control>
+                <control type="button" id="40440">
+                    <posy>90</posy>
                     <label>$LOCALIZE[581][COLOR=SeparatorColor] › [/COLOR]$VAR[WidgetSortDirectionLabel]</label>
                     <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
                     <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName),settings) + !String.IsEqual(Container(211).ListItem.Property(widgetName),Playlists)</enable>
@@ -220,7 +235,7 @@
                     <font>DonationFont</font>
                     <height>33</height>
                     <include>DialogMenuButton</include>
-                    <onup>40420</onup>
+                    <onup>40430</onup>
                     <ondown>31201</ondown>
                 </control>
             </control>
@@ -234,14 +249,12 @@
                 <onclick>SendClick(312)</onclick>
             </control>
             <control type="group" id="40401">
-                <height>115</height>
+                <height>145</height>
                 <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.1))</visible>
                 <control type="button" id="40411">
                     <posy>0</posy>
-                    <label>$LOCALIZE[31115][COLOR=SeparatorColor] › [/COLOR]$VAR[WidgetAspectLabel.1]</label>
-                    <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName.1),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName.1),settings)</enable>
-                    <onclick>SetProperty(chooseProperty,widgetAspect.1)</onclick>
-                    <onclick>SendClick(404)</onclick>
+                    <label>$ADDON[script.skinshortcuts 32025]</label>
+                    <onclick>RunScript(script.skin.helper.service,action=setskinshortcutsproperty,header=$ADDON[script.skinshortcuts 32025][COLOR=SeparatorColor] › [/COLOR]$ADDON[script.skinshortcuts 32099] 2,property=widgetName.1)</onclick>
                     <width>1150</width>
                     <textwidth>1100</textwidth>
                     <align>left</align>
@@ -253,9 +266,9 @@
                 </control>
                 <control type="button" id="40421">
                     <posy>30</posy>
-                    <label>$LOCALIZE[580][COLOR=SeparatorColor] › [/COLOR]$VAR[WidgetSortByLabel.1]</label>
-                    <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName.1),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName.1),settings) + !String.IsEqual(Container(211).ListItem.Property(widgetName.1),Playlists)</enable>
-                    <onclick>SetProperty(chooseProperty,widgetSortBy.1)</onclick>
+                    <label>$LOCALIZE[31115][COLOR=SeparatorColor] › [/COLOR]$VAR[WidgetAspectLabel.1]</label>
+                    <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName.1),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName.1),settings)</enable>
+                    <onclick>SetProperty(chooseProperty,widgetAspect.1)</onclick>
                     <onclick>SendClick(404)</onclick>
                     <width>1150</width>
                     <textwidth>1100</textwidth>
@@ -268,6 +281,21 @@
                 </control>
                 <control type="button" id="40431">
                     <posy>60</posy>
+                    <label>$LOCALIZE[580][COLOR=SeparatorColor] › [/COLOR]$VAR[WidgetSortByLabel.1]</label>
+                    <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName.1),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName.1),settings) + !String.IsEqual(Container(211).ListItem.Property(widgetName.1),Playlists)</enable>
+                    <onclick>SetProperty(chooseProperty,widgetSortBy.1)</onclick>
+                    <onclick>SendClick(404)</onclick>
+                    <width>1150</width>
+                    <textwidth>1100</textwidth>
+                    <align>left</align>
+                    <font>DonationFont</font>
+                    <height>33</height>
+                    <include>DialogMenuButton</include>
+                    <onup>40421</onup>
+                    <ondown>40441</ondown>
+                </control>
+                <control type="button" id="40441">
+                    <posy>90</posy>
                     <label>$LOCALIZE[581][COLOR=SeparatorColor] › [/COLOR]$VAR[WidgetSortDirectionLabel.1]</label>
                     <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName.1),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName.1),settings) + !String.IsEqual(Container(211).ListItem.Property(widgetName.1),Playlists)</enable>
                     <onclick>SetProperty(chooseProperty,widgetSortDirection.1)</onclick>
@@ -278,7 +306,7 @@
                     <font>DonationFont</font>
                     <height>33</height>
                     <include>DialogMenuButton</include>
-                    <onup>40421</onup>
+                    <onup>40431</onup>
                     <ondown>31202</ondown>
                 </control>
             </control>
@@ -292,14 +320,12 @@
                 <onclick>SendClick(312)</onclick>
             </control>
             <control type="group" id="40402">
-                <height>115</height>
+                <height>145</height>
                 <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.2))</visible>
                 <control type="button" id="40412">
                     <posy>0</posy>
-                    <label>$LOCALIZE[31115][COLOR=SeparatorColor] › [/COLOR]$VAR[WidgetAspectLabel.2]</label>
-                    <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName.2),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName.2å),settings)</enable>
-                    <onclick>SetProperty(chooseProperty,widgetAspect.2)</onclick>
-                    <onclick>SendClick(404)</onclick>
+                    <label>$ADDON[script.skinshortcuts 32025]</label>
+                    <onclick>RunScript(script.skin.helper.service,action=setskinshortcutsproperty,header=$ADDON[script.skinshortcuts 32025][COLOR=SeparatorColor] › [/COLOR]$ADDON[script.skinshortcuts 32099] 3,property=widgetName.2)</onclick>
                     <width>1150</width>
                     <textwidth>1100</textwidth>
                     <align>left</align>
@@ -311,9 +337,9 @@
                 </control>
                 <control type="button" id="40422">
                     <posy>30</posy>
-                    <label>$LOCALIZE[580][COLOR=SeparatorColor] › [/COLOR]$VAR[WidgetSortByLabel.2]</label>
-                    <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName.2),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName.2),settings) + !String.IsEqual(Container(211).ListItem.Property(widgetName.2),Playlists)</enable>
-                    <onclick>SetProperty(chooseProperty,widgetSortBy.2)</onclick>
+                    <label>$LOCALIZE[31115][COLOR=SeparatorColor] › [/COLOR]$VAR[WidgetAspectLabel.2]</label>
+                    <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName.2),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName.2å),settings)</enable>
+                    <onclick>SetProperty(chooseProperty,widgetAspect.2)</onclick>
                     <onclick>SendClick(404)</onclick>
                     <width>1150</width>
                     <textwidth>1100</textwidth>
@@ -326,6 +352,21 @@
                 </control>
                 <control type="button" id="40432">
                     <posy>60</posy>
+                    <label>$LOCALIZE[580][COLOR=SeparatorColor] › [/COLOR]$VAR[WidgetSortByLabel.2]</label>
+                    <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName.2),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName.2),settings) + !String.IsEqual(Container(211).ListItem.Property(widgetName.2),Playlists)</enable>
+                    <onclick>SetProperty(chooseProperty,widgetSortBy.2)</onclick>
+                    <onclick>SendClick(404)</onclick>
+                    <width>1150</width>
+                    <textwidth>1100</textwidth>
+                    <align>left</align>
+                    <font>DonationFont</font>
+                    <height>33</height>
+                    <include>DialogMenuButton</include>
+                    <onup>40422</onup>
+                    <ondown>40442</ondown>
+                </control>
+                <control type="button" id="40442">
+                    <posy>90</posy>
                     <label>$LOCALIZE[581][COLOR=SeparatorColor] › [/COLOR]$VAR[WidgetSortDirectionLabel.2]</label>
                     <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName.2),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName.2),settings) + !String.IsEqual(Container(211).ListItem.Property(widgetName.2),Playlists)</enable>
                     <onclick>SetProperty(chooseProperty,widgetSortDirection.2)</onclick>
@@ -336,7 +377,7 @@
                     <font>DonationFont</font>
                     <height>33</height>
                     <include>DialogMenuButton</include>
-                    <onup>40422</onup>
+                    <onup>40432</onup>
                     <ondown>31203</ondown>
                 </control>
             </control>
@@ -350,14 +391,12 @@
                 <onclick>SendClick(312)</onclick>
             </control>
             <control type="group" id="40403">
-                <height>115</height>
+                <height>145</height>
                 <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.3))</visible>
                 <control type="button" id="40413">
                     <posy>0</posy>
-                    <label>$LOCALIZE[31115][COLOR=SeparatorColor] › [/COLOR]$VAR[WidgetAspectLabel.3]</label>
-                    <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName.3),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName.3),settings)</enable>
-                    <onclick>SetProperty(chooseProperty,widgetAspect.3)</onclick>
-                    <onclick>SendClick(404)</onclick>
+                    <label>$ADDON[script.skinshortcuts 32025]</label>
+                    <onclick>RunScript(script.skin.helper.service,action=setskinshortcutsproperty,header=$ADDON[script.skinshortcuts 32025][COLOR=SeparatorColor] › [/COLOR]$ADDON[script.skinshortcuts 32099] 4,property=widgetName.3)</onclick>
                     <width>1150</width>
                     <textwidth>1100</textwidth>
                     <align>left</align>
@@ -369,9 +408,9 @@
                 </control>
                 <control type="button" id="40423">
                     <posy>30</posy>
-                    <label>$LOCALIZE[580][COLOR=SeparatorColor] › [/COLOR]$VAR[WidgetSortByLabel.3]</label>
-                    <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName.3),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName.3),settings) + !String.IsEqual(Container(211).ListItem.Property(widgetName.3),Playlists)</enable>
-                    <onclick>SetProperty(chooseProperty,widgetSortBy.3)</onclick>
+                    <label>$LOCALIZE[31115][COLOR=SeparatorColor] › [/COLOR]$VAR[WidgetAspectLabel.3]</label>
+                    <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName.3),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName.3),settings)</enable>
+                    <onclick>SetProperty(chooseProperty,widgetAspect.3)</onclick>
                     <onclick>SendClick(404)</onclick>
                     <width>1150</width>
                     <textwidth>1100</textwidth>
@@ -384,6 +423,21 @@
                 </control>
                 <control type="button" id="40433">
                     <posy>60</posy>
+                    <label>$LOCALIZE[580][COLOR=SeparatorColor] › [/COLOR]$VAR[WidgetSortByLabel.3]</label>
+                    <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName.3),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName.3),settings) + !String.IsEqual(Container(211).ListItem.Property(widgetName.3),Playlists)</enable>
+                    <onclick>SetProperty(chooseProperty,widgetSortBy.3)</onclick>
+                    <onclick>SendClick(404)</onclick>
+                    <width>1150</width>
+                    <textwidth>1100</textwidth>
+                    <align>left</align>
+                    <font>DonationFont</font>
+                    <height>33</height>
+                    <include>DialogMenuButton</include>
+                    <onup>40423</onup>
+                    <ondown>40443</ondown>
+                </control>
+                <control type="button" id="40443">
+                    <posy>90</posy>
                     <label>$LOCALIZE[581][COLOR=SeparatorColor] › [/COLOR]$VAR[WidgetSortDirectionLabel.3]</label>
                     <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName.3),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName.3),settings) + !String.IsEqual(Container(211).ListItem.Property(widgetName.3),Playlists)</enable>
                     <onclick>SetProperty(chooseProperty,widgetSortDirection.3)</onclick>
@@ -394,7 +448,7 @@
                     <font>DonationFont</font>
                     <height>33</height>
                     <include>DialogMenuButton</include>
-                    <onup>40423</onup>
+                    <onup>40433</onup>
                     <ondown>31204</ondown>
                 </control>
             </control>
@@ -408,14 +462,12 @@
                 <onclick>SendClick(312)</onclick>
             </control>
             <control type="group" id="40404">
-                <height>115</height>
+                <height>145</height>
                 <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.4))</visible>
                 <control type="button" id="40414">
                     <posy>0</posy>
-                    <label>$LOCALIZE[31115][COLOR=SeparatorColor] › [/COLOR]$VAR[WidgetAspectLabel.4]</label>
-                    <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName.4),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName.4),settings)</enable>
-                    <onclick>SetProperty(chooseProperty,widgetAspect.4)</onclick>
-                    <onclick>SendClick(404)</onclick>
+                    <label>$ADDON[script.skinshortcuts 32025]</label>
+                    <onclick>RunScript(script.skin.helper.service,action=setskinshortcutsproperty,header=$ADDON[script.skinshortcuts 32025][COLOR=SeparatorColor] › [/COLOR]$ADDON[script.skinshortcuts 32099] 5,property=widgetName.4)</onclick>
                     <width>1150</width>
                     <textwidth>1100</textwidth>
                     <align>left</align>
@@ -427,9 +479,9 @@
                 </control>
                 <control type="button" id="40424">
                     <posy>30</posy>
-                    <label>$LOCALIZE[580][COLOR=SeparatorColor] › [/COLOR]$VAR[WidgetSortByLabel.4]</label>
-                    <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName.4),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName.4),settings) + !String.IsEqual(Container(211).ListItem.Property(widgetName.4),Playlists)</enable>
-                    <onclick>SetProperty(chooseProperty,widgetSortBy.4)</onclick>
+                    <label>$LOCALIZE[31115][COLOR=SeparatorColor] › [/COLOR]$VAR[WidgetAspectLabel.4]</label>
+                    <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName.4),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName.4),settings)</enable>
+                    <onclick>SetProperty(chooseProperty,widgetAspect.4)</onclick>
                     <onclick>SendClick(404)</onclick>
                     <width>1150</width>
                     <textwidth>1100</textwidth>
@@ -442,6 +494,21 @@
                 </control>
                 <control type="button" id="40434">
                     <posy>60</posy>
+                    <label>$LOCALIZE[580][COLOR=SeparatorColor] › [/COLOR]$VAR[WidgetSortByLabel.4]</label>
+                    <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName.4),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName.4),settings) + !String.IsEqual(Container(211).ListItem.Property(widgetName.4),Playlists)</enable>
+                    <onclick>SetProperty(chooseProperty,widgetSortBy.4)</onclick>
+                    <onclick>SendClick(404)</onclick>
+                    <width>1150</width>
+                    <textwidth>1100</textwidth>
+                    <align>left</align>
+                    <font>DonationFont</font>
+                    <height>33</height>
+                    <include>DialogMenuButton</include>
+                    <onup>40424</onup>
+                    <ondown>40444</ondown>
+                </control>
+                <control type="button" id="40444">
+                    <posy>90</posy>
                     <label>$LOCALIZE[581][COLOR=SeparatorColor] › [/COLOR]$VAR[WidgetSortDirectionLabel.4]</label>
                     <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName.4),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName.4),settings) + !String.IsEqual(Container(211).ListItem.Property(widgetName.4),Playlists)</enable>
                     <onclick>SetProperty(chooseProperty,widgetSortDirection.4)</onclick>
@@ -452,7 +519,7 @@
                     <font>DonationFont</font>
                     <height>33</height>
                     <include>DialogMenuButton</include>
-                    <onup>40424</onup>
+                    <onup>40434</onup>
                     <ondown>40434</ondown>
                 </control>
             </control>
