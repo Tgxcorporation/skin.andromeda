@@ -4,7 +4,10 @@
     <controls>
         <include>DimBG</include>
         <control type="group">
-            <include>DialogOverlay</include>
+            <control type="group">
+                <visible>!VideoPlayer.IsFullscreen</visible>
+                <include>DialogOverlay</include>
+            </control>
             <include>WindowClosingButton</include>
             <control type="group">
                 <include>DialogOpenClose</include>
