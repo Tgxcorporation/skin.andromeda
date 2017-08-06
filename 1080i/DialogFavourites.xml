@@ -23,7 +23,7 @@
                         <onleft>9000</onleft>
                         <onright>60</onright>
                         <onup condition="Skin.HasSetting(DisableUpNavListViews)">450</onup>
-                        <onup>9900</onup>
+                        <onup>505051</onup>
                         <ondown>450</ondown>
                         <preloaditems>4</preloaditems>
                         <itemlayout height="331" width="1920">

@@ -528,7 +528,7 @@
                 <onleft>9000</onleft>
                 <onright>60</onright>
                 <onup condition="Skin.HasSetting(DisableUpNavListViews)">55</onup>
-                <onup>9900</onup>
+                <onup>505051</onup>
                 <ondown>55</ondown>
                 <preloaditems>4</preloaditems>
                 <include>SlimList_Layout</include>
@@ -558,7 +558,7 @@
                     <onleft>9000</onleft>
                     <onright>60</onright>
                     <onup condition="Skin.HasSetting(DisableUpNavListViews)">50</onup>
-                    <onup>9900</onup>
+                    <onup>505051</onup>
                     <ondown>50</ondown>
                     <preloaditems>4</preloaditems>
                     <include>SlimList_Layout</include>

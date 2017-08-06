@@ -39,7 +39,7 @@
                         <onleft>20</onleft>
                         <onright>60</onright>
                         <onup condition="Skin.HasSetting(DisableUpNavListViews)">20</onup>
-                        <onup>9900</onup>
+                        <onup>505051</onup>
                         <ondown>20</ondown>
                         <pagecontrol>60</pagecontrol>
                         <itemlayout height="60" width="910">
@@ -137,7 +137,7 @@
                         <onleft>60</onleft>
                         <onright>61</onright>
                         <onup condition="Skin.HasSetting(DisableUpNavListViews)">21</onup>
-                        <onup>9900</onup>
+                        <onup>505051</onup>
                         <ondown>21</ondown>
                         <pagecontrol>61</pagecontrol>
                         <itemlayout height="60" width="910">

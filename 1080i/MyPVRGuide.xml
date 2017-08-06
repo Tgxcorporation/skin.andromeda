@@ -31,7 +31,7 @@
                             <onleft>9000</onleft>
                             <onright>60</onright>
                             <onup condition="Skin.HasSetting(DisableUpNavListViews)">10</onup>
-                            <onup>9900</onup>
+                            <onup>505051</onup>
                             <ondown>10</ondown>
                             <progresstexture border="1,1,1,1">OSD/osd_progress_chaching.png</progresstexture>
                             <rulerlayout height="150" width="60">
@@ -248,7 +248,7 @@
                             <onleft>9000</onleft>
                             <onright>76</onright>
                             <onup condition="Skin.HasSetting(DisableUpNavListViews)">11</onup>
-                            <onup>9900</onup>
+                            <onup>505051</onup>
                             <ondown>11</ondown>
                             <preloaditems>4</preloaditems>
                             <include>BigList_Layout</include>
@@ -277,7 +277,7 @@
                             <onleft>9000</onleft>
                             <onright>76</onright>
                             <onup condition="Skin.HasSetting(DisableUpNavListViews)">12</onup>
-                            <onup>9900</onup>
+                            <onup>505051</onup>
                             <ondown>12</ondown>
                             <preloaditems>4</preloaditems>
                             <include>BigList_Layout</include>
@@ -306,7 +306,7 @@
                             <onleft>9000</onleft>
                             <onright>75</onright>
                             <onup condition="Skin.HasSetting(DisableUpNavListViews)">13</onup>
-                            <onup>9900</onup>
+                            <onup>505051</onup>
                             <ondown>13</ondown>
                             <preloaditems>4</preloaditems>
                             <include>BigList_Layout</include>
