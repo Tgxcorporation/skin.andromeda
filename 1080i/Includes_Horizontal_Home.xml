@@ -22,7 +22,7 @@
                     <posy>330</posy>
                     <width>1920</width>
                     <height>2</height>
-                    <colordiffuse>$VAR[Picked.HighLight.Color]</colordiffuse>
+                    <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                     <texture border="2,0,2,0">common/line_gray_horizontal.png</texture>
                 </control>
                 <control type="image">

@@ -8,7 +8,7 @@
             <control type="label">
                 <visible>control.hasfocus($PARAM[id])</visible>
                 <posx>TextMargin</posx>
-                <posy>45</posy>
+                <posy>30</posy>
                 <height>40</height>
                 <width>1920</width>
                 <font>FacadeListMainFont</font>
@@ -19,7 +19,7 @@
             <control type="label">
                 <visible>!control.hasfocus($PARAM[id])</visible>
                 <posx>TextMargin</posx>
-                <posy>45</posy>
+                <posy>30</posy>
                 <height>40</height>
                 <width>1920</width>
                 <font>FacadeListMainFont</font>
@@ -46,7 +46,7 @@
             <control type="image">
                 <visible>!Integer.IsGreater(Container($PARAM[id]).NumItems,0)</visible>
                 <posx>70</posx>
-                <posy>97</posy>
+                <posy>82</posy>
                 <include>Widget_Empty_$PARAM[gfxType]</include>
                 <aspectratio align="center" aligny="center">keep</aspectratio>
                 <colordiffuse>ThumbsUnfocusedColor</colordiffuse>
@@ -55,7 +55,7 @@
             <control type="image">
                 <visible>!Integer.IsGreater(Container($PARAM[id]).NumItems,0)</visible>
                 <posx>70</posx>
-                <posy>97</posy>
+                <posy>82</posy>
                 <include>Widget_Empty_$PARAM[gfxType]</include>
                 <colordiffuse>ThumbsUnfocusedColor</colordiffuse>
                 <texture border="2">common/TransparentDot.png</texture>
@@ -227,7 +227,7 @@
             <control type="label">
                 <visible>control.hasfocus($PARAM[id])</visible>
                 <posx>TextMargin</posx>
-                <posy>45</posy>
+                <posy>30</posy>
                 <height>40</height>
                 <width>1920</width>
                 <font>FacadeListMainFont</font>
@@ -238,7 +238,7 @@
             <control type="label">
                 <visible>!control.hasfocus($PARAM[id])</visible>
                 <posx>TextMargin</posx>
-                <posy>45</posy>
+                <posy>30</posy>
                 <height>40</height>
                 <width>1920</width>
                 <font>FacadeListMainFont</font>
@@ -266,7 +266,7 @@
     </include>
     <include name="Widget_Poster">
         <posx>0</posx>
-        <posy>97</posy>
+        <posy>82</posy>
         <width>1920</width>
         <height>600</height>
         <onleft>300</onleft>
@@ -470,7 +470,7 @@
     </include>
     <include name="Widget_Square">
         <posx>0</posx>
-        <posy>97</posy>
+        <posy>82</posy>
         <width>1920</width>
         <height>511</height>
         <onleft>300</onleft>
@@ -650,7 +650,7 @@
     </include>
     <include name="Widget_Episode">
         <posx>0</posx>
-        <posy>97</posy>
+        <posy>82</posy>
         <width>1920</width>
         <height>408</height>
         <onleft>300</onleft>
@@ -830,7 +830,7 @@
     </include>
     <include name="Widget_Channel">
         <posx>0</posx>
-        <posy>97</posy>
+        <posy>82</posy>
         <width>1920</width>
         <height>450</height>
         <onleft>300</onleft>

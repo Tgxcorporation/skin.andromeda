@@ -42,7 +42,7 @@
                 <control type="label">
                     <visible>control.hasfocus(70001$SKINSHORTCUTS[mainmenuid])</visible>
                     <posx>TextMargin</posx>
-                    <posy>45</posy>
+                    <posy>30</posy>
                     <height>40</height>
                     <width>1920</width>
                     <font>FacadeListMainFont</font>
@@ -53,7 +53,7 @@
                 <control type="label">
                     <visible>!control.hasfocus(70001$SKINSHORTCUTS[mainmenuid])</visible>
                     <posx>TextMargin</posx>
-                    <posy>45</posy>
+                    <posy>30</posy>
                     <height>40</height>
                     <width>1920</width>
                     <font>FacadeListMainFont</font>
@@ -82,7 +82,7 @@
                     <visible>Container(70001$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
                     <animation effect="rotate" center="auto" start="360" end="0" time="1500" loop="true" tween="circle" easing="inout" condition="true">Conditional</animation>
                     <posx>70</posx>
-                    <posy>97</posy>
+                    <posy>82</posy>
                     <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
                     <aspectratio align="center" aligny="center">keep</aspectratio>
                     <colordiffuse>ThumbsUnfocusedColor</colordiffuse>
@@ -92,7 +92,7 @@
                     <visible>Container(70001$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
                     <animation effect="rotate" center="auto" start="360" end="0" time="750" loop="true" tween="sine" easing="in" condition="true">Conditional</animation>
                     <posx>70</posx>
-                    <posy>97</posy>
+                    <posy>82</posy>
                     <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
                     <aspectratio align="center" aligny="center">keep</aspectratio>
                     <colordiffuse>ThumbsUnfocusedColor</colordiffuse>
@@ -101,7 +101,7 @@
                 <control type="image">
                     <visible>!Integer.IsGreater(Container(70001$SKINSHORTCUTS[mainmenuid]).NumItems,0)+!Container(70001$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
                     <posx>70</posx>
-                    <posy>97</posy>
+                    <posy>82</posy>
                     <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
                     <aspectratio align="center" aligny="center">keep</aspectratio>
                     <colordiffuse>ThumbsUnfocusedColor</colordiffuse>
@@ -111,7 +111,7 @@
                 <control type="image">
                     <visible>!Integer.IsGreater(Container(70001$SKINSHORTCUTS[mainmenuid]).NumItems,0)|Container(70001$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
                     <posx>70</posx>
-                    <posy>97</posy>
+                    <posy>82</posy>
                     <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
                     <colordiffuse>ThumbsUnfocusedColor</colordiffuse>
                     <texture border="2">common/TransparentDot.png</texture>
@@ -164,7 +164,7 @@
                 <control type="label">
                     <visible>control.hasfocus(70002$SKINSHORTCUTS[mainmenuid])</visible>
                     <posx>TextMargin</posx>
-                    <posy>45</posy>
+                    <posy>30</posy>
                     <height>40</height>
                     <width>1920</width>
                     <font>FacadeListMainFont</font>
@@ -175,7 +175,7 @@
                 <control type="label">
                     <visible>!control.hasfocus(70002$SKINSHORTCUTS[mainmenuid])</visible>
                     <posx>TextMargin</posx>
-                    <posy>45</posy>
+                    <posy>30</posy>
                     <height>40</height>
                     <width>1920</width>
                     <font>FacadeListMainFont</font>
@@ -203,7 +203,7 @@
                     <visible>Container(70002$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
                     <animation effect="rotate" center="auto" start="360" end="0" time="1500" loop="true" tween="circle" easing="inout" condition="true">Conditional</animation>
                     <posx>70</posx>
-                    <posy>97</posy>
+                    <posy>82</posy>
                     <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
                     <aspectratio align="center" aligny="center">keep</aspectratio>
                     <colordiffuse>ThumbsUnfocusedColor</colordiffuse>
@@ -213,7 +213,7 @@
                     <visible>Container(70002$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
                     <animation effect="rotate" center="auto" start="360" end="0" time="750" loop="true" tween="sine" easing="in" condition="true">Conditional</animation>
                     <posx>70</posx>
-                    <posy>97</posy>
+                    <posy>82</posy>
                     <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
                     <aspectratio align="center" aligny="center">keep</aspectratio>
                     <colordiffuse>ThumbsUnfocusedColor</colordiffuse>
@@ -222,7 +222,7 @@
                 <control type="image">
                     <visible>!Integer.IsGreater(Container(70002$SKINSHORTCUTS[mainmenuid]).NumItems,0)+!Container(70002$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
                     <posx>70</posx>
-                    <posy>97</posy>
+                    <posy>82</posy>
                     <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
                     <aspectratio align="center" aligny="center">keep</aspectratio>
                     <colordiffuse>ThumbsUnfocusedColor</colordiffuse>
@@ -231,7 +231,7 @@
                 <control type="image">
                     <visible>!Integer.IsGreater(Container(70002$SKINSHORTCUTS[mainmenuid]).NumItems,0)|Container(70002$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
                     <posx>70</posx>
-                    <posy>97</posy>
+                    <posy>82</posy>
                     <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
                     <colordiffuse>ThumbsUnfocusedColor</colordiffuse>
                     <texture border="2">common/TransparentDot.png</texture>
@@ -283,7 +283,7 @@
                 <control type="label">
                     <visible>control.hasfocus(70003$SKINSHORTCUTS[mainmenuid])</visible>
                     <posx>TextMargin</posx>
-                    <posy>45</posy>
+                    <posy>30</posy>
                     <height>40</height>
                     <width>1920</width>
                     <font>FacadeListMainFont</font>
@@ -294,7 +294,7 @@
                 <control type="label">
                     <visible>!control.hasfocus(70003$SKINSHORTCUTS[mainmenuid])</visible>
                     <posx>TextMargin</posx>
-                    <posy>45</posy>
+                    <posy>30</posy>
                     <height>40</height>
                     <width>1920</width>
                     <font>FacadeListMainFont</font>
@@ -322,7 +322,7 @@
                     <visible>Container(70003$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
                     <animation effect="rotate" center="auto" start="360" end="0" time="1500" loop="true" tween="circle" easing="inout" condition="true">Conditional</animation>
                     <posx>70</posx>
-                    <posy>97</posy>
+                    <posy>82</posy>
                     <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
                     <aspectratio align="center" aligny="center">keep</aspectratio>
                     <colordiffuse>ThumbsUnfocusedColor</colordiffuse>
@@ -332,7 +332,7 @@
                     <visible>Container(70003$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
                     <animation effect="rotate" center="auto" start="360" end="0" time="750" loop="true" tween="sine" easing="in" condition="true">Conditional</animation>
                     <posx>70</posx>
-                    <posy>97</posy>
+                    <posy>82</posy>
                     <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
                     <aspectratio align="center" aligny="center">keep</aspectratio>
                     <colordiffuse>ThumbsUnfocusedColor</colordiffuse>
@@ -341,7 +341,7 @@
                 <control type="image">
                     <visible>!Integer.IsGreater(Container(70003$SKINSHORTCUTS[mainmenuid]).NumItems,0)+!Container(70003$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
                     <posx>70</posx>
-                    <posy>97</posy>
+                    <posy>82</posy>
                     <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
                     <aspectratio align="center" aligny="center">keep</aspectratio>
                     <colordiffuse>ThumbsUnfocusedColor</colordiffuse>
@@ -350,7 +350,7 @@
                 <control type="image">
                     <visible>!Integer.IsGreater(Container(70003$SKINSHORTCUTS[mainmenuid]).NumItems,0)|Container(70003$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
                     <posx>70</posx>
-                    <posy>97</posy>
+                    <posy>82</posy>
                     <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
                     <colordiffuse>ThumbsUnfocusedColor</colordiffuse>
                     <texture border="2">common/TransparentDot.png</texture>
@@ -402,7 +402,7 @@
                 <control type="label">
                     <visible>control.hasfocus(70004$SKINSHORTCUTS[mainmenuid])</visible>
                     <posx>TextMargin</posx>
-                    <posy>45</posy>
+                    <posy>30</posy>
                     <height>40</height>
                     <width>1920</width>
                     <font>FacadeListMainFont</font>
@@ -413,7 +413,7 @@
                 <control type="label">
                     <visible>!control.hasfocus(70004$SKINSHORTCUTS[mainmenuid])</visible>
                     <posx>TextMargin</posx>
-                    <posy>45</posy>
+                    <posy>30</posy>
                     <height>40</height>
                     <width>1920</width>
                     <font>FacadeListMainFont</font>
@@ -441,7 +441,7 @@
                     <visible>Container(70004$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
                     <animation effect="rotate" center="auto" start="360" end="0" time="1500" loop="true" tween="circle" easing="inout" condition="true">Conditional</animation>
                     <posx>70</posx>
-                    <posy>97</posy>
+                    <posy>82</posy>
                     <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
                     <aspectratio align="center" aligny="center">keep</aspectratio>
                     <colordiffuse>ThumbsUnfocusedColor</colordiffuse>
@@ -451,7 +451,7 @@
                     <visible>Container(70004$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
                     <animation effect="rotate" center="auto" start="360" end="0" time="750" loop="true" tween="sine" easing="in" condition="true">Conditional</animation>
                     <posx>70</posx>
-                    <posy>97</posy>
+                    <posy>82</posy>
                     <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
                     <aspectratio align="center" aligny="center">keep</aspectratio>
                     <colordiffuse>ThumbsUnfocusedColor</colordiffuse>
@@ -460,7 +460,7 @@
                 <control type="image">
                     <visible>!Integer.IsGreater(Container(70004$SKINSHORTCUTS[mainmenuid]).NumItems,0)+!Container(70004$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
                     <posx>70</posx>
-                    <posy>97</posy>
+                    <posy>82</posy>
                     <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
                     <aspectratio align="center" aligny="center">keep</aspectratio>
                     <colordiffuse>ThumbsUnfocusedColor</colordiffuse>
@@ -469,7 +469,7 @@
                 <control type="image">
                     <visible>!Integer.IsGreater(Container(70004$SKINSHORTCUTS[mainmenuid]).NumItems,0)|Container(70004$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
                     <posx>70</posx>
-                    <posy>97</posy>
+                    <posy>82</posy>
                     <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
                     <colordiffuse>ThumbsUnfocusedColor</colordiffuse>
                     <texture border="2">common/TransparentDot.png</texture>
@@ -521,7 +521,7 @@
                 <control type="label">
                     <visible>control.hasfocus(70005$SKINSHORTCUTS[mainmenuid])</visible>
                     <posx>TextMargin</posx>
-                    <posy>45</posy>
+                    <posy>30</posy>
                     <height>40</height>
                     <width>1920</width>
                     <font>FacadeListMainFont</font>
@@ -532,7 +532,7 @@
                 <control type="label">
                     <visible>!control.hasfocus(70005$SKINSHORTCUTS[mainmenuid])</visible>
                     <posx>TextMargin</posx>
-                    <posy>45</posy>
+                    <posy>30</posy>
                     <height>40</height>
                     <width>1920</width>
                     <font>FacadeListMainFont</font>
@@ -560,7 +560,7 @@
                     <visible>Container(70005$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
                     <animation effect="rotate" center="auto" start="360" end="0" time="1500" loop="true" tween="circle" easing="inout" condition="true">Conditional</animation>
                     <posx>70</posx>
-                    <posy>97</posy>
+                    <posy>82</posy>
                     <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
                     <aspectratio align="center" aligny="center">keep</aspectratio>
                     <colordiffuse>ThumbsUnfocusedColor</colordiffuse>
@@ -570,7 +570,7 @@
                     <visible>Container(70005$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
                     <animation effect="rotate" center="auto" start="360" end="0" time="750" loop="true" tween="sine" easing="in" condition="true">Conditional</animation>
                     <posx>70</posx>
-                    <posy>97</posy>
+                    <posy>82</posy>
                     <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
                     <aspectratio align="center" aligny="center">keep</aspectratio>
                     <colordiffuse>ThumbsUnfocusedColor</colordiffuse>
@@ -579,7 +579,7 @@
                 <control type="image">
                     <visible>!Integer.IsGreater(Container(70005$SKINSHORTCUTS[mainmenuid]).NumItems,0)+!Container(70005$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
                     <posx>70</posx>
-                    <posy>97</posy>
+                    <posy>82</posy>
                     <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
                     <aspectratio align="center" aligny="center">keep</aspectratio>
                     <colordiffuse>ThumbsUnfocusedColor</colordiffuse>
@@ -588,7 +588,7 @@
                 <control type="image">
                     <visible>!Integer.IsGreater(Container(70005$SKINSHORTCUTS[mainmenuid]).NumItems,0)|Container(70005$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
                     <posx>70</posx>
-                    <posy>97</posy>
+                    <posy>82</posy>
                     <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
                     <colordiffuse>ThumbsUnfocusedColor</colordiffuse>
                     <texture border="2">common/TransparentDot.png</texture>
