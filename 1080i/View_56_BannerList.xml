@@ -104,7 +104,8 @@
                 <height>1080</height>
                 <onleft>9000</onleft>
                 <onright>60</onright>
-                <onup>56</onup>
+                <onup condition="Skin.HasSetting(DisableUpNavListViews)">56</onup>
+                <onup>505051</onup>
                 <ondown>56</ondown>
                 <pagecontrol>60</pagecontrol>
                 <preloaditems>4</preloaditems>
