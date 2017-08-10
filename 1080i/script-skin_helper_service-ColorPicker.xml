@@ -19,52 +19,68 @@
                     <scroll>true</scroll>
                     <include>TextColor_MainColor</include>
                 </control>
-                <control type="grouplist" id="9000">
+                <control type="button" id="3030">
+                    <!--current color name-->
+                    <visible>!String.IsEmpty(Window.Property(palettename))</visible>
                     <posx>80</posx>
                     <posy>160</posy>
-                    <height>800</height>
-                    <include>DialogMenuButtonGroup</include>
-                    <ondown>3110</ondown>
-                    <onleft>3110</onleft>
-                    <!--current color name-->
-                    <control type="button" id="3030">
-                        <visible>!String.IsEmpty(Window.Property(palettename))</visible>
-                        <onright>3110</onright>
-                        <label>$ADDON[script.skin.helper.colorpicker 32141]: $INFO[Window.Property(palettename)]</label>
-                        <include>DialogMenuButton</include>
-                    </control>
-                    <control type="label" id="7895">
-                        <height>20</height>
-                        <width>480</width>
-                        <label>-</label>
-                    </control>
-                    <!-- color preview-->
-                    <control type="image" id="7896">
-                        <animation effect="slide" start="0,0" end="20,0" time="0" condition="true">conditional</animation>
-                        <posx>0</posx>
-                        <width>380</width>
-                        <height>86</height>
-                        <texture>common/WhiteDot.png</texture>
-                        <colordiffuse>$INFO[Window.Property(colorstring)]</colordiffuse>
-                        <include>DialogMenuButton</include>
-                    </control>
-                    <control type="label" id="7897">
-                        <height>20</height>
-                        <width>480</width>
-                        <label>-</label>
-                    </control>
+                    <ondown>3010</ondown>
+                    <label>$ADDON[script.skin.helper.colorpicker 32141]: $INFO[Window.Property(palettename)]</label>
+                    <width>1480</width>
+                    <include>DialogMenuButton</include>
+                </control>
+                <control type="button" id="3010">
                     <!-- edit manual -->
-                    <control type="button" id="3010">
-                        <onleft>3110</onleft>
-                        <label>$ADDON[script.skin.helper.colorpicker 32012]</label>
-                        <label2>$INFO[Window.Property(colorstring)]</label2>
+                    <posx>80</posx>
+                    <posy>240</posy>
+                    <onup>3030</onup>
+                    <ondown>3015</ondown>
+                    <label>$ADDON[script.skin.helper.colorpicker 32012]</label>
+                    <label2>$INFO[Window.Property(colorstring)]</label2>
+                    <include>DialogMenuButton</include>
+                </control>
+                <control type="image" id="7896">
+                    <!-- color preview-->
+                    <posx>500</posx>
+                    <posy>240</posy>
+                    <width>300</width>
+                    <height>60</height>
+                    <texture>common/WhiteDot.png</texture>
+                    <colordiffuse>$INFO[Window.Property(colorstring)]</colordiffuse>
+                    <include>DialogMenuButton</include>
+                </control>
+                <control type="group" id="3016">
+                    <!-- label opacity-->
+                    <include content="FocusedIndicatorVertical">
+                        <param name="x" value="80"/>
+                        <param name="y" value="315"/>
+                        <param name="height" value="60"/>
+                        <param name="visible" value="control.hasfocus(3015)"/>
+                    </include>
+                    <control type="label">
+                        <visible>control.hasfocus(3015)</visible>
+                        <posx>80</posx>
+                        <posy>320</posy>
+                        <include>TextColor_MainColor</include>
+                        <label>$ADDON[script.skin.helper.colorpicker 32049]: $INFO[Control.Getlabel(3015)]</label>
                         <include>DialogMenuButton</include>
                     </control>
-                    <!--<control type="label" id="7898">-->
-                        <!--<include>TextColor_MainColor</include>-->
-                        <!--<label>$INFO[Window.Property(colorname)]</label>-->
-                        <!--<include>DialogMenuButton</include>-->
-                    <!--</control>-->
+                    <control type="label">
+                        <visible>!control.hasfocus(3015)</visible>
+                        <posx>80</posx>
+                        <posy>320</posy>
+                        <label>$ADDON[script.skin.helper.colorpicker 32049]: $INFO[Control.Getlabel(3015)]</label>
+                        <include>DialogMenuButton</include>
+                    </control>
+                </control>
+                <control type="slider" id="3015">
+                    <!-- opacity slider -->
+                    <posx>500</posx>
+                    <posy>320</posy>
+                    <onup>3010</onup>
+                    <ondown>3110</ondown>
+                    <width>300</width>
+                    <include>DialogMenuButton</include>
                 </control>
             </control>
             <control type="panel" id="3110">
@@ -72,42 +88,110 @@
                 <posx>100</posx>
                 <posy>460</posy>
                 <width>1720</width>
-                <height>430</height>
+                <height>450</height>
                 <orientation>vertical</orientation>
                 <onleft>3012</onleft>
                 <onright>60</onright>
-                <onup>9000</onup>
+                <onup>3015</onup>
                 <ondown>3012</ondown>
                 <preloaditems>4</preloaditems>
                 <pagecontrol>60</pagecontrol>
-                <itemlayout height="86" width="86">
+                <itemlayout height="50" width="55" condition="!StringCompare(Window.Property(palettename),basic) + !StringCompare(Window.Property(palettename),material-design)">
                     <control type="image">
                         <posx>0</posx>
                         <posy>0</posy>
-                        <width>86</width>
-                        <height>86</height>
+                        <width>55</width>
+                        <height>50</height>
                         <texture>$INFO[ListItem.Icon]</texture>
                     </control>
                 </itemlayout>
-                <focusedlayout height="86" width="86">
+                <focusedlayout height="50" width="55" condition="!StringCompare(Window.Property(palettename),basic) + !StringCompare(Window.Property(palettename),material-design)">
                     <control type="image">
                         <posx>0</posx>
                         <posy>0</posy>
-                        <width>86</width>
-                        <height>86</height>
+                        <width>55</width>
+                        <height>50</height>
                         <texture>$INFO[ListItem.Icon]</texture>
                     </control>
                     <control type="image">
-                        <posx>32</posx>
-                        <posy>32</posy>
+                        <posx>14</posx>
+                        <posy>14</posy>
                         <width>22</width>
                         <height>22</height>
                         <texture>common/BlackDot.png</texture>
                         <aspectratio>stretch</aspectratio>
                     </control>
                     <control type="image">
-                        <posx>33</posx>
-                        <posy>33</posy>
+                        <posx>14</posx>
+                        <posy>15</posy>
+                        <width>20</width>
+                        <height>20</height>
+                        <texture>common/WhiteDot.png</texture>
+                        <aspectratio>stretch</aspectratio>
+                    </control>
+                </focusedlayout>
+                <itemlayout height="50" width="122" condition="StringCompare(Window.Property(palettename),basic)">
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>122</width>
+                        <height>50</height>
+                        <texture>$INFO[ListItem.Icon]</texture>
+                    </control>
+                </itemlayout>
+                <focusedlayout height="50" width="122" condition="StringCompare(Window.Property(palettename),basic)">
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>122</width>
+                        <height>50</height>
+                        <texture>$INFO[ListItem.Icon]</texture>
+                    </control>
+                    <control type="image">
+                        <posx>50</posx>
+                        <posy>14</posy>
+                        <width>22</width>
+                        <height>22</height>
+                        <texture>common/BlackDot.png</texture>
+                        <aspectratio>stretch</aspectratio>
+                    </control>
+                    <control type="image">
+                        <posx>51</posx>
+                        <posy>15</posy>
+                        <width>20</width>
+                        <height>20</height>
+                        <texture>common/WhiteDot.png</texture>
+                        <aspectratio>stretch</aspectratio>
+                    </control>
+                </focusedlayout>
+                <itemlayout height="50" width="122" condition="StringCompare(Window.Property(palettename),material-design)">
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>122</width>
+                        <height>50</height>
+                        <texture>$INFO[ListItem.Icon]</texture>
+                    </control>
+                </itemlayout>
+                <focusedlayout height="50" width="122" condition="StringCompare(Window.Property(palettename),material-design)">
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>122</width>
+                        <height>50</height>
+                        <texture>$INFO[ListItem.Icon]</texture>
+                    </control>
+                    <control type="image">
+                        <posx>50</posx>
+                        <posy>14</posy>
+                        <width>22</width>
+                        <height>22</height>
+                        <texture>common/BlackDot.png</texture>
+                        <aspectratio>stretch</aspectratio>
+                    </control>
+                    <control type="image">
+                        <posx>51</posx>
+                        <posy>15</posy>
                         <width>20</width>
                         <height>20</height>
                         <texture>common/WhiteDot.png</texture>
