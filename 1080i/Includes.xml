@@ -142,6 +142,15 @@
             <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
             <texture border="3">common/overlay_topbar_gradient.png</texture>
         </control>
+        <control type="image">
+            <include>TopBarVisibleFadeEffectOverlay</include>
+            <posx>0</posx>
+            <posy>185</posy>
+            <width>1920</width>
+            <height>2</height>
+            <colordiffuse>$VAR[Picked.HighLight.Color]</colordiffuse>
+            <texture border="2,0,2,0">common/line_white_horizontal.png</texture>
+        </control>
         <control type="button" id="8998">
             <include>TopBarVisibleFadeEffect</include>
             <description>Fake button for mouse control</description>
@@ -1709,6 +1718,14 @@
                 <height>387</height>
                 <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                 <texture border="3">common/overlay_topbar_gradient.png</texture>
+            </control>
+            <control type="image">
+                <posx>0</posx>
+                <posy>-2</posy>
+                <width>1920</width>
+                <height>2</height>
+                <colordiffuse>$VAR[Picked.HighLight.Color]</colordiffuse>
+                <texture border="2,0,2,0">common/line_white_horizontal.png</texture>
             </control>
         </control>
         <control type="group">
