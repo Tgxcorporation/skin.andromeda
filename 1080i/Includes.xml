@@ -136,9 +136,9 @@
         <control type="image">
             <include>TopBarVisibleFadeEffectOverlay</include>
             <posx>0</posx>
-            <posy>-200</posy>
+            <posy>0</posy>
             <width>1920</width>
-            <height>387</height>
+            <height>187</height>
             <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
             <texture border="3">common/overlay_topbar_gradient.png</texture>
         </control>
@@ -786,6 +786,7 @@
             <include>DimBG</include>
             <control type="image">
                 <animation effect="slide" tween="circle" easing="inout" time="150" start="0,0" end="1920,0" condition="$EXP[LeftMenuHasFocus]">Conditional</animation>
+                <include>OverlayTransparencyLeftMenu</include>
                 <posx>-1920</posx>
                 <posy>0</posy>
                 <width>658</width>
@@ -1733,10 +1734,11 @@
         <control type="group">
             <animation effect="fade" start="0" end="100" time="150" condition="control.isvisible(51)+control.hasfocus(505051)">Conditional</animation>
             <control type="image">
+                <include>OverlayTransparencyHeader</include>
                 <posx>0</posx>
-                <posy>-387</posy>
+                <posy>-186</posy>
                 <width>1920</width>
-                <height>387</height>
+                <height>186</height>
                 <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                 <texture border="3">common/overlay_topbar_gradient.png</texture>
             </control>
@@ -1767,6 +1769,7 @@
     <include name="DialogOverlay">
         <control type="image">
             <include>DialogOpenCloseOverlay</include>
+            <include>OverlayTransparencyDialog</include>
             <posx>0</posx>
             <posy>0</posy>
             <width>1920</width>
@@ -1936,5 +1939,109 @@
     </include>
     <include name="NullHeightWidget">
         <height>0</height>
+    </include>
+    <include name="SkinResetOverlayTransparency">
+        <onclick>Skin.Reset(OverlayTransparency00)</onclick>
+        <onclick>Skin.Reset(OverlayTransparency10)</onclick>
+        <onclick>Skin.Reset(OverlayTransparency20)</onclick>
+        <onclick>Skin.Reset(OverlayTransparency30)</onclick>
+        <onclick>Skin.Reset(OverlayTransparency40)</onclick>
+        <onclick>Skin.Reset(OverlayTransparency50)</onclick>
+        <onclick>Skin.Reset(OverlayTransparency60)</onclick>
+        <onclick>Skin.Reset(OverlayTransparency70)</onclick>
+        <onclick>Skin.Reset(OverlayTransparency80)</onclick>
+        <onclick>Skin.Reset(OverlayTransparency90)</onclick>
+        <onclick>Skin.Reset(OverlayTransparency100)</onclick>
+    </include>
+    <include name="SkinResetOverlayTransparencyWhite">
+        <onclick>Skin.Reset(OverlayTransparencyWhite00)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyWhite10)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyWhite20)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyWhite30)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyWhite40)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyWhite50)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyWhite60)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyWhite70)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyWhite80)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyWhite90)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyWhite100)</onclick>
+    </include>
+    <include name="SkinResetOverlayTransparencyBlack">
+        <onclick>Skin.Reset(OverlayTransparencyBlack00)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyBlack10)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyBlack20)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyBlack30)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyBlack40)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyBlack50)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyBlack60)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyBlack70)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyBlack80)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyBlack90)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyBlack100)</onclick>
+    </include>
+    <include name="SkinResetOverlayTransparencyHeader">
+        <onclick>Skin.Reset(OverlayTransparencyHeader00)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyHeader10)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyHeader20)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyHeader30)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyHeader40)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyHeader50)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyHeader60)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyHeader70)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyHeader80)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyHeader90)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyHeader100)</onclick>
+    </include>
+    <include name="SkinResetOverlayTransparencyLeftMenu">
+        <onclick>Skin.Reset(OverlayTransparencyLeftMenu00)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyLeftMenu10)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyLeftMenu20)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyLeftMenu30)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyLeftMenu40)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyLeftMenu50)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyLeftMenu60)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyLeftMenu70)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyLeftMenu80)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyLeftMenu90)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyLeftMenu100)</onclick>
+    </include>
+    <include name="SkinResetOverlayTransparencyDialog">
+        <onclick>Skin.Reset(OverlayTransparencyDialog00)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyDialog10)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyDialog20)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyDialog30)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyDialog40)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyDialog50)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyDialog60)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyDialog70)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyDialog80)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyDialog90)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyDialog100)</onclick>
+    </include>
+    <include name="SkinResetOverlayTransparencyTopbar">
+        <onclick>Skin.Reset(OverlayTransparencyTopbar00)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyTopbar10)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyTopbar20)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyTopbar30)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyTopbar40)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyTopbar50)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyTopbar60)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyTopbar70)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyTopbar80)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyTopbar90)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyTopbar100)</onclick>
+    </include>
+    <include name="SkinResetOverlayTransparencyOSD">
+        <onclick>Skin.Reset(OverlayTransparencyOSD00)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyOSD10)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyOSD20)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyOSD30)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyOSD40)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyOSD50)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyOSD60)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyOSD70)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyOSD80)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyOSD90)</onclick>
+        <onclick>Skin.Reset(OverlayTransparencyOSD100)</onclick>
     </include>
 </includes>

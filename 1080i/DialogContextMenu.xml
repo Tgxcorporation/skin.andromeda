@@ -5,6 +5,7 @@
         <include>DimBG</include>
         <control type="image">
             <include>DialogOpenCloseOverlay</include>
+            <include>OverlayTransparencyDialog</include>
             <posx>0</posx>
             <posy>-660</posy>
             <width>1920</width>

@@ -31,8 +31,9 @@
             </visible>
             <control type="image">
                 <include>TopBarOSDVisibleFadeEffectOverlay</include>
+                <include>OverlayTransparencyOSD</include>
                 <posx>0</posx>
-                <top>995</top>
+                <posy>995</posy>
                 <width>1920</width>
                 <height>290</height>
                 <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
@@ -245,16 +246,7 @@
                 <include>OpenCloseOverlay</include>
                 <!--<include>WindowClosingButton</include>-->
                 <control type="image">
-                    <include>OverlayTransparency</include>
-                    <posx>0</posx>
-                    <bottom>85</bottom>
-                    <width>1920</width>
-                    <height>395</height>
-                    <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-                    <texture>common/overlay.png</texture>
-                </control>
-                <control type="image">
-                    <include>OverlayTransparency</include>
+                    <include>OverlayTransparencyOSD</include>
                     <posx>0</posx>
                     <bottom>85</bottom>
                     <width>1920</width>

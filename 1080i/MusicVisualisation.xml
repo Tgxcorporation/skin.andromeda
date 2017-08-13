@@ -30,7 +30,7 @@
                         <texture>common/overlay.png</texture>
                     </control>
                     <control type="image">
-                        <include>OverlayTransparency</include>
+                        <include>OverlayTransparencyOSD</include>
                         <posx>0</posx>
                         <bottom>85</bottom>
                         <width>1920</width>

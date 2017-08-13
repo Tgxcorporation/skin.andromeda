@@ -8,6 +8,7 @@
         <control type="group">
             <control type="image">
                 <!--<include>OpenCloseOverlay</include>-->
+                <include>OverlayTransparencyDialog</include>
                 <posx>0</posx>
                 <posy>0</posy>
                 <width>1920</width>

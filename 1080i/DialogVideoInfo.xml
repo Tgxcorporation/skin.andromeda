@@ -9,6 +9,7 @@
         <control type="group">
             <control type="image">
                 <include>DialogOpenCloseOverlay</include>
+                <include>OverlayTransparencyDialog</include>
                 <posx>-960</posx>
                 <posy>0</posy>
                 <width>2880</width>

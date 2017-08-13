@@ -811,7 +811,27 @@ msgctxt "#31910"
 msgid "Maps"
 msgstr ""
 
-#empty strings from id 31910 to 31928
+#empty strings from id 31910 to 31923
+
+msgctxt "#31923"
+msgid "OSD overlay transparency"
+msgstr ""
+
+msgctxt "#31924"
+msgid "Topbar overlay transparency"
+msgstr ""
+
+msgctxt "#31925"
+msgid "Left menu overlay transparency"
+msgstr ""
+
+msgctxt "#31926"
+msgid "Dialog overlay transparency"
+msgstr ""
+
+msgctxt "#31927"
+msgid "Header overlay transparency"
+msgstr ""
 
 msgctxt "#31928"
 msgid "White overlay transparency"

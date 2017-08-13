@@ -35,14 +35,7 @@
                 <texturesliderbar>common/osd_progress_dummy_50.png</texturesliderbar>
             </control>
             <control type="image">
-                <posx>0</posx>
-                <posy>0</posy>
-                <width>1920</width>
-                <height>187</height>
-                <colordiffuse>bbffffff</colordiffuse>
-                <texture border="1">common/BlackDot.png</texture>
-            </control>
-            <control type="image">
+                <include>OverlayTransparencyOSD</include>
                 <posx>0</posx>
                 <posy>0</posy>
                 <width>1920</width>

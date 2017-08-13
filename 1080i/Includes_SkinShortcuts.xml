@@ -23,6 +23,7 @@
             <texture>common/overlay.png</texture>
         </control>
         <control type="image">
+            <include>OverlayTransparencyHeader</include>
             <posx>532</posx>
             <posy>192</posy>
             <width>1286</width>

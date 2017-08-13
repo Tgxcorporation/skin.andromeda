@@ -14,6 +14,7 @@
                        |[Container(53).content(episodes)+[Container(53).Row(3)]]]]">conditional</animation>
             <control type="image">
                 <!--<include>OverlayTransparency</include>-->
+                <include>OverlayTransparency</include>
                 <posx>0</posx>
                 <posy>866</posy>
                 <width>1920</width>
