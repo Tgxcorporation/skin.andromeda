@@ -135,6 +135,7 @@
         </control>
         <control type="image">
             <include>TopBarVisibleFadeEffectOverlay</include>
+            <include>OverlayTransparencyTopbar</include>
             <posx>0</posx>
             <posy>0</posy>
             <width>1920</width>

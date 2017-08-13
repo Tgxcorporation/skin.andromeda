@@ -354,7 +354,8 @@
     <include name="OverlayTransparency">
         <animation effect="fade" start="90" end="90" time="0" reversible="false" condition="skin.hassetting(OverlayTransparency90)">Conditional</animation>
         <animation effect="fade" start="80" end="80" time="0" reversible="false" condition="skin.hassetting(OverlayTransparency80)">Conditional</animation>
-        <animation effect="fade" start="70" end="70" time="0" reversible="false" condition="skin.hassetting(OverlayTransparency70)|[
+        <animation effect="fade" start="70" end="70" time="0" reversible="false" condition="skin.hassetting(OverlayTransparency70)">Conditional</animation>
+        <animation effect="fade" start="60" end="60" time="0" reversible="false" condition="skin.hassetting(OverlayTransparency60)|[
                                     !Skin.HasSetting(OverlayTransparency00)+
                                     !Skin.HasSetting(OverlayTransparency10)+
                                     !Skin.HasSetting(OverlayTransparency20)+
@@ -367,7 +368,6 @@
                                     !Skin.HasSetting(OverlayTransparency90)+
                                     !Skin.HasSetting(OverlayTransparency100)
                                     ]">Conditional</animation>
-        <animation effect="fade" start="60" end="60" time="0" reversible="false" condition="skin.hassetting(OverlayTransparency60)">Conditional</animation>
         <animation effect="fade" start="50" end="50" time="0" reversible="false" condition="skin.hassetting(OverlayTransparency50)">Conditional</animation>
         <animation effect="fade" start="40" end="40" time="0" reversible="false" condition="skin.hassetting(OverlayTransparency40)">Conditional</animation>
         <animation effect="fade" start="30" end="30" time="0" reversible="false" condition="skin.hassetting(OverlayTransparency30)">Conditional</animation>
@@ -425,15 +425,7 @@
     </include>
     <include name="OverlayTransparencyHeader">
         <animation effect="fade" start="90" end="90" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyHeader90)">Conditional</animation>
-        <animation effect="fade" start="80" end="80" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyHeader80)">Conditional</animation>
-        <animation effect="fade" start="70" end="70" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyHeader70)">Conditional</animation>
-        <animation effect="fade" start="60" end="60" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyHeader60)">Conditional</animation>
-        <animation effect="fade" start="50" end="50" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyHeader50)">Conditional</animation>
-        <animation effect="fade" start="40" end="40" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyHeader40)">Conditional</animation>
-        <animation effect="fade" start="30" end="30" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyHeader30)">Conditional</animation>
-        <animation effect="fade" start="20" end="20" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyHeader20)">Conditional</animation>
-        <animation effect="fade" start="10" end="10" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyHeader10)">Conditional</animation>
-        <animation effect="fade" start="0" end="0" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyHeader00)|[
+        <animation effect="fade" start="80" end="80" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyHeader80)|[
                                     !Skin.HasSetting(OverlayTransparencyHeader00)+
                                     !Skin.HasSetting(OverlayTransparencyHeader10)+
                                     !Skin.HasSetting(OverlayTransparencyHeader20)+
@@ -446,18 +438,21 @@
                                     !Skin.HasSetting(OverlayTransparencyHeader90)+
                                     !Skin.HasSetting(OverlayTransparencyHeader100)
                                     ]">Conditional</animation>
+        <animation effect="fade" start="70" end="70" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyHeader70)">Conditional</animation>
+        <animation effect="fade" start="60" end="60" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyHeader60)">Conditional</animation>
+        <animation effect="fade" start="50" end="50" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyHeader50)">Conditional</animation>
+        <animation effect="fade" start="40" end="40" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyHeader40)">Conditional</animation>
+        <animation effect="fade" start="30" end="30" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyHeader30)">Conditional</animation>
+        <animation effect="fade" start="20" end="20" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyHeader20)">Conditional</animation>
+        <animation effect="fade" start="10" end="10" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyHeader10)">Conditional</animation>
+        <animation effect="fade" start="0" end="0" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyHeader00)">Conditional</animation>
     </include>
     <include name="OverlayTransparencyTopbar">
         <animation effect="fade" start="90" end="90" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyTopbar90)">Conditional</animation>
         <animation effect="fade" start="80" end="80" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyTopbar80)">Conditional</animation>
         <animation effect="fade" start="70" end="70" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyTopbar70)">Conditional</animation>
         <animation effect="fade" start="60" end="60" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyTopbar60)">Conditional</animation>
-        <animation effect="fade" start="50" end="50" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyTopbar50)">Conditional</animation>
-        <animation effect="fade" start="40" end="40" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyTopbar40)">Conditional</animation>
-        <animation effect="fade" start="30" end="30" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyTopbar30)">Conditional</animation>
-        <animation effect="fade" start="20" end="20" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyTopbar20)">Conditional</animation>
-        <animation effect="fade" start="10" end="10" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyTopbar10)">Conditional</animation>
-        <animation effect="fade" start="0" end="0" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyTopbar00)|[
+        <animation effect="fade" start="50" end="50" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyTopbar50)|[
                                     !Skin.HasSetting(OverlayTransparencyTopbar00)+
                                     !Skin.HasSetting(OverlayTransparencyTopbar10)+
                                     !Skin.HasSetting(OverlayTransparencyTopbar20)+
@@ -470,18 +465,15 @@
                                     !Skin.HasSetting(OverlayTransparencyTopbar90)+
                                     !Skin.HasSetting(OverlayTransparencyTopbar100)
                                     ]">Conditional</animation>
+        <animation effect="fade" start="40" end="40" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyTopbar40)">Conditional</animation>
+        <animation effect="fade" start="30" end="30" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyTopbar30)">Conditional</animation>
+        <animation effect="fade" start="20" end="20" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyTopbar20)">Conditional</animation>
+        <animation effect="fade" start="10" end="10" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyTopbar10)">Conditional</animation>
+        <animation effect="fade" start="0" end="0" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyTopbar00)">Conditional</animation>
     </include>
     <include name="OverlayTransparencyLeftMenu">
         <animation effect="fade" start="90" end="90" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyLeftMenu90)">Conditional</animation>
-        <animation effect="fade" start="80" end="80" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyLeftMenu80)">Conditional</animation>
-        <animation effect="fade" start="70" end="70" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyLeftMenu70)">Conditional</animation>
-        <animation effect="fade" start="60" end="60" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyLeftMenu60)">Conditional</animation>
-        <animation effect="fade" start="50" end="50" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyLeftMenu50)">Conditional</animation>
-        <animation effect="fade" start="40" end="40" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyLeftMenu40)">Conditional</animation>
-        <animation effect="fade" start="30" end="30" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyLeftMenu30)">Conditional</animation>
-        <animation effect="fade" start="20" end="20" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyLeftMenu20)">Conditional</animation>
-        <animation effect="fade" start="10" end="10" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyLeftMenu10)">Conditional</animation>
-        <animation effect="fade" start="0" end="0" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyLeftMenu00)|[
+        <animation effect="fade" start="80" end="80" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyLeftMenu80)|[
                                     !Skin.HasSetting(OverlayTransparencyLeftMenu00)+
                                     !Skin.HasSetting(OverlayTransparencyLeftMenu10)+
                                     !Skin.HasSetting(OverlayTransparencyLeftMenu20)+
@@ -494,18 +486,17 @@
                                     !Skin.HasSetting(OverlayTransparencyLeftMenu90)+
                                     !Skin.HasSetting(OverlayTransparencyLeftMenu100)
                                     ]">Conditional</animation>
+        <animation effect="fade" start="70" end="70" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyLeftMenu70)">Conditional</animation>
+        <animation effect="fade" start="60" end="60" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyLeftMenu60)">Conditional</animation>
+        <animation effect="fade" start="50" end="50" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyLeftMenu50)">Conditional</animation>
+        <animation effect="fade" start="40" end="40" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyLeftMenu40)">Conditional</animation>
+        <animation effect="fade" start="30" end="30" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyLeftMenu30)">Conditional</animation>
+        <animation effect="fade" start="20" end="20" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyLeftMenu20)">Conditional</animation>
+        <animation effect="fade" start="10" end="10" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyLeftMenu10)">Conditional</animation>
+        <animation effect="fade" start="0" end="0" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyLeftMenu00)">Conditional</animation>
     </include>
     <include name="OverlayTransparencyDialog">
-        <animation effect="fade" start="90" end="90" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyDialog90)">Conditional</animation>
-        <animation effect="fade" start="80" end="80" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyDialog80)">Conditional</animation>
-        <animation effect="fade" start="70" end="70" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyDialog70)">Conditional</animation>
-        <animation effect="fade" start="60" end="60" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyDialog60)">Conditional</animation>
-        <animation effect="fade" start="50" end="50" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyDialog50)">Conditional</animation>
-        <animation effect="fade" start="40" end="40" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyDialog40)">Conditional</animation>
-        <animation effect="fade" start="30" end="30" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyDialog30)">Conditional</animation>
-        <animation effect="fade" start="20" end="20" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyDialog20)">Conditional</animation>
-        <animation effect="fade" start="10" end="10" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyDialog10)">Conditional</animation>
-        <animation effect="fade" start="0" end="0" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyDialog00)|[
+        <animation effect="fade" start="90" end="90" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyDialog90)|[
                                     !Skin.HasSetting(OverlayTransparencyDialog00)+
                                     !Skin.HasSetting(OverlayTransparencyDialog10)+
                                     !Skin.HasSetting(OverlayTransparencyDialog20)+
@@ -518,18 +509,19 @@
                                     !Skin.HasSetting(OverlayTransparencyDialog90)+
                                     !Skin.HasSetting(OverlayTransparencyDialog100)
                                     ]">Conditional</animation>
+        <animation effect="fade" start="80" end="80" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyDialog80)">Conditional</animation>
+        <animation effect="fade" start="70" end="70" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyDialog70)">Conditional</animation>
+        <animation effect="fade" start="60" end="60" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyDialog60)">Conditional</animation>
+        <animation effect="fade" start="50" end="50" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyDialog50)">Conditional</animation>
+        <animation effect="fade" start="40" end="40" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyDialog40)">Conditional</animation>
+        <animation effect="fade" start="30" end="30" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyDialog30)">Conditional</animation>
+        <animation effect="fade" start="20" end="20" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyDialog20)">Conditional</animation>
+        <animation effect="fade" start="10" end="10" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyDialog10)">Conditional</animation>
+        <animation effect="fade" start="0" end="0" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyDialog00)">Conditional</animation>
     </include>
     <include name="OverlayTransparencyOSD">
         <animation effect="fade" start="90" end="90" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyOSD90)">Conditional</animation>
-        <animation effect="fade" start="80" end="80" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyOSD80)">Conditional</animation>
-        <animation effect="fade" start="70" end="70" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyOSD70)">Conditional</animation>
-        <animation effect="fade" start="60" end="60" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyOSD60)">Conditional</animation>
-        <animation effect="fade" start="50" end="50" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyOSD50)">Conditional</animation>
-        <animation effect="fade" start="40" end="40" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyOSD40)">Conditional</animation>
-        <animation effect="fade" start="30" end="30" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyOSD30)">Conditional</animation>
-        <animation effect="fade" start="20" end="20" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyOSD20)">Conditional</animation>
-        <animation effect="fade" start="10" end="10" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyOSD10)">Conditional</animation>
-        <animation effect="fade" start="0" end="0" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyOSD00)|[
+        <animation effect="fade" start="80" end="80" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyOSD80)|[
                                     !Skin.HasSetting(OverlayTransparencyOSD00)+
                                     !Skin.HasSetting(OverlayTransparencyOSD10)+
                                     !Skin.HasSetting(OverlayTransparencyOSD20)+
@@ -542,6 +534,14 @@
                                     !Skin.HasSetting(OverlayTransparencyOSD90)+
                                     !Skin.HasSetting(OverlayTransparencyOSD100)
                                     ]">Conditional</animation>
+        <animation effect="fade" start="70" end="70" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyOSD70)">Conditional</animation>
+        <animation effect="fade" start="60" end="60" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyOSD60)">Conditional</animation>
+        <animation effect="fade" start="50" end="50" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyOSD50)">Conditional</animation>
+        <animation effect="fade" start="40" end="40" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyOSD40)">Conditional</animation>
+        <animation effect="fade" start="30" end="30" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyOSD30)">Conditional</animation>
+        <animation effect="fade" start="20" end="20" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyOSD20)">Conditional</animation>
+        <animation effect="fade" start="10" end="10" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyOSD10)">Conditional</animation>
+        <animation effect="fade" start="0" end="0" time="0" reversible="false" condition="skin.hassetting(OverlayTransparencyOSD00)">Conditional</animation>
     </include>
     <include name="NoFocusedIcon">
         <animation effect="fade" start="100" end="50" time="100" reversible="false" condition="true">Conditional</animation>
