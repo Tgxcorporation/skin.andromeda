@@ -8,6 +8,14 @@
                 <include>OpenCloseOverlay</include>
                 <height>0</height>
                 <control type="image">
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>1920</width>
+                    <height>332</height>
+                    <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                    <texture border="3">common/overlay_topbar_gradient.png</texture>
+                </control>
+                <control type="image">
                     <include>OverlayTransparency</include>
                     <posx>0</posx>
                     <posy>330</posy>

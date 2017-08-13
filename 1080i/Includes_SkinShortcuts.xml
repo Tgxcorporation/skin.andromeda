@@ -23,6 +23,14 @@
             <texture>common/overlay.png</texture>
         </control>
         <control type="image">
+            <posx>532</posx>
+            <posy>192</posy>
+            <width>1286</width>
+            <height>121</height>
+            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+            <texture border="3">common/overlay_topbar_gradient.png</texture>
+        </control>
+        <control type="image">
             <posx>530</posx>
             <posy>190</posy>
             <width>1290</width>
