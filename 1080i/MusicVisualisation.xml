@@ -21,15 +21,6 @@
                     <include>OSDOpenClose</include>
                     <include>OSDFade</include>
                     <control type="image">
-                        <include>OverlayTransparency</include>
-                        <posx>0</posx>
-                        <bottom>85</bottom>
-                        <width>1920</width>
-                        <height>395</height>
-                        <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-                        <texture>common/overlay.png</texture>
-                    </control>
-                    <control type="image">
                         <include>OverlayTransparencyOSD</include>
                         <posx>0</posx>
                         <bottom>85</bottom>

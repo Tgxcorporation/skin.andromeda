@@ -232,9 +232,9 @@
             </control>
         </itemlayout>
         <focusedlayout height="160" width="1920">
-            <!--POSTERS-->
             <control type="group">
                 <include>ListFocusAnimation</include>
+                <!--POSTERS-->
                 <control type="group">
                     <visible>$EXP[ContentIsPoster]</visible>
                     <include content="ThumbsImages">
@@ -370,144 +370,138 @@
                 </control>
                 <!--SQUARES-->
                 <control type="group">
-                    <include>ListFocusAnimation</include>
-                    <control type="group">
-                        <visible>$EXP[ContentIsSquare]</visible>
-                        <include content="ThumbsImages">
-                            <param name="visible" value="true"/>
-                            <param name="x" value="70"/>
-                            <param name="y" value="10"/>
-                            <param name="width" value="150"/>
-                            <param name="height" value="150"/>
-                            <param name="aspectratio" value="keep"/>
-                            <param name="align" value="center"/>
-                            <param name="aligny" value="top"/>
-                            <param name="flipy" value="false"/>
-                            <param name="texturediffuse" value="ThumbsFocusedColor"/>
-                            <param name="borderdiffuse" value="$VAR[Picked.HighLight.Color]"/>
-                        </include>
-                        <include content="ProgressBar">
-                            <param name="id" value="0"/>
-                            <param name="visible" value="Integer.IsGreater(ListItem.PercentPlayed,0)"/>
-                            <param name="x" value="226"/>
-                            <param name="y" value="10"/>
-                            <param name="width" value="149"/>
-                            <param name="info" value="ListItem.PercentPlayed"/>
-                            <param name="endRotation" value="-90"/>
-                            <param name="centerRotation" value="226,10"/>
-                            <param name="visiblefocus" value="true"/>
-                            <param name="direction" value="vertical"/>
-                        </include>
-                        <include content="WatchedRecOverlay">
-                            <param name="x" value="163"/>
-                            <param name="y" value="12"/>
-                            <param name="width" value="50"/>
-                            <param name="height" value="50"/>
-                            <param name="color" value="Main"/>
-                        </include>
-                        <include content="FocusedIndicatorVertical">
-                            <param name="x" value="270"/>
-                            <param name="y" value="35"/>
-                            <param name="height" value="57"/>
-                            <param name="visible" value="true"/>
-                        </include>
-                        <control type="label">
-                            <posx>290</posx>
-                            <posy>35</posy>
-                            <height>50</height>
-                            <width>1560</width>
-                            <font>FacadeListTitleFont</font>
-                            <include>TextColor_MainColor</include>
-                            <scroll>true</scroll>
-                            <label>$VAR[DetailsTitle]</label>
-                        </control>
-                        <control type="label">
-                            <posx>290</posx>
-                            <posy>85</posy>
-                            <height>50</height>
-                            <width>1560</width>
-                            <font>FacadeListSubTitleFont</font>
-                            <include>TextColor_MainColor</include>
-                            <scroll>true</scroll>
-                            <label>$VAR[DetailsRow1]$VAR[DetailsRow2,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow3,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow4,[COLOR=SeparatorColor] › [/COLOR]]</label>
-                        </control>
+                    <visible>$EXP[ContentIsSquare]</visible>
+                    <include content="ThumbsImages">
+                        <param name="visible" value="true"/>
+                        <param name="x" value="70"/>
+                        <param name="y" value="10"/>
+                        <param name="width" value="150"/>
+                        <param name="height" value="150"/>
+                        <param name="aspectratio" value="keep"/>
+                        <param name="align" value="center"/>
+                        <param name="aligny" value="top"/>
+                        <param name="flipy" value="false"/>
+                        <param name="texturediffuse" value="ThumbsFocusedColor"/>
+                        <param name="borderdiffuse" value="$VAR[Picked.HighLight.Color]"/>
+                    </include>
+                    <include content="ProgressBar">
+                        <param name="id" value="0"/>
+                        <param name="visible" value="Integer.IsGreater(ListItem.PercentPlayed,0)"/>
+                        <param name="x" value="226"/>
+                        <param name="y" value="10"/>
+                        <param name="width" value="149"/>
+                        <param name="info" value="ListItem.PercentPlayed"/>
+                        <param name="endRotation" value="-90"/>
+                        <param name="centerRotation" value="226,10"/>
+                        <param name="visiblefocus" value="true"/>
+                        <param name="direction" value="vertical"/>
+                    </include>
+                    <include content="WatchedRecOverlay">
+                        <param name="x" value="163"/>
+                        <param name="y" value="12"/>
+                        <param name="width" value="50"/>
+                        <param name="height" value="50"/>
+                        <param name="color" value="Main"/>
+                    </include>
+                    <include content="FocusedIndicatorVertical">
+                        <param name="x" value="270"/>
+                        <param name="y" value="35"/>
+                        <param name="height" value="57"/>
+                        <param name="visible" value="true"/>
+                    </include>
+                    <control type="label">
+                        <posx>290</posx>
+                        <posy>35</posy>
+                        <height>50</height>
+                        <width>1560</width>
+                        <font>FacadeListTitleFont</font>
+                        <include>TextColor_MainColor</include>
+                        <scroll>true</scroll>
+                        <label>$VAR[DetailsTitle]</label>
+                    </control>
+                    <control type="label">
+                        <posx>290</posx>
+                        <posy>85</posy>
+                        <height>50</height>
+                        <width>1560</width>
+                        <font>FacadeListSubTitleFont</font>
+                        <include>TextColor_MainColor</include>
+                        <scroll>true</scroll>
+                        <label>$VAR[DetailsRow1]$VAR[DetailsRow2,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow3,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow4,[COLOR=SeparatorColor] › [/COLOR]]</label>
                     </control>
                 </control>
                 <!--CHANNELS-->
                 <control type="group">
-                    <include>ListFocusAnimation</include>
-                    <control type="group">
-                        <visible>$EXP[ContentIsChannel]</visible>
-                        <include content="ThumbsImages">
-                            <param name="visible" value="true"/>
-                            <param name="x" value="70"/>
-                            <param name="y" value="10"/>
-                            <param name="width" value="200"/>
-                            <param name="height" value="150"/>
-                            <param name="aspectratio" value="scale"/>
-                            <param name="align" value="center"/>
-                            <param name="aligny" value="center"/>
-                            <param name="flipy" value="false"/>
-                            <param name="texturediffuse" value="ThumbsFocusedColor"/>
-                            <param name="borderdiffuse" value="$VAR[Picked.HighLight.Color]"/>
-                        </include>
-                        <include content="ProgressBar">
-                            <param name="id" value="0"/>
-                            <param name="visible" value="Integer.IsGreater(ListItem.Progress,0)"/>
-                            <param name="x" value="276"/>
-                            <param name="y" value="10"/>
-                            <param name="width" value="149"/>
-                            <param name="info" value="ListItem.Progress"/>
-                            <param name="endRotation" value="-90"/>
-                            <param name="centerRotation" value="276,10"/>
-                            <param name="visiblefocus" value="true"/>
-                            <param name="direction" value="vertical"/>
-                        </include>
-                        <include content="ProgressBar">
-                            <param name="id" value="0"/>
-                            <param name="visible" value="Integer.IsGreater(ListItem.PercentPlayed,0)"/>
-                            <param name="x" value="276"/>
-                            <param name="y" value="10"/>
-                            <param name="width" value="149"/>
-                            <param name="info" value="ListItem.PercentPlayed"/>
-                            <param name="endRotation" value="-90"/>
-                            <param name="centerRotation" value="276,10"/>
-                            <param name="visiblefocus" value="true"/>
-                            <param name="direction" value="vertical"/>
-                        </include>
-                        <include content="WatchedRecOverlay">
-                            <param name="x" value="213"/>
-                            <param name="y" value="12"/>
-                            <param name="width" value="50"/>
-                            <param name="height" value="50"/>
-                            <param name="color" value="Main"/>
-                        </include>
-                        <include content="FocusedIndicatorVertical">
-                            <param name="x" value="320"/>
-                            <param name="y" value="35"/>
-                            <param name="height" value="57"/>
-                            <param name="visible" value="true"/>
-                        </include>
-                        <control type="label">
-                            <posx>340</posx>
-                            <posy>35</posy>
-                            <height>50</height>
-                            <width>1510</width>
-                            <font>FacadeListTitleFont</font>
-                            <include>TextColor_MainColor</include>
-                            <scroll>true</scroll>
-                            <label>$VAR[DetailsTitle]</label>
-                        </control>
-                        <control type="label">
-                            <posx>340</posx>
-                            <posy>85</posy>
-                            <height>50</height>
-                            <width>1510</width>
-                            <font>FacadeListSubTitleFont</font>
-                            <include>TextColor_MainColor</include>
-                            <scroll>true</scroll>
-                            <label>$VAR[DetailsRow1]$VAR[DetailsRow2,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow3,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow4,[COLOR=SeparatorColor] › [/COLOR]]</label>
-                        </control>
+                    <visible>$EXP[ContentIsChannel]</visible>
+                    <include content="ThumbsImages">
+                        <param name="visible" value="true"/>
+                        <param name="x" value="70"/>
+                        <param name="y" value="10"/>
+                        <param name="width" value="200"/>
+                        <param name="height" value="150"/>
+                        <param name="aspectratio" value="scale"/>
+                        <param name="align" value="center"/>
+                        <param name="aligny" value="center"/>
+                        <param name="flipy" value="false"/>
+                        <param name="texturediffuse" value="ThumbsFocusedColor"/>
+                        <param name="borderdiffuse" value="$VAR[Picked.HighLight.Color]"/>
+                    </include>
+                    <include content="ProgressBar">
+                        <param name="id" value="0"/>
+                        <param name="visible" value="Integer.IsGreater(ListItem.Progress,0)"/>
+                        <param name="x" value="276"/>
+                        <param name="y" value="10"/>
+                        <param name="width" value="149"/>
+                        <param name="info" value="ListItem.Progress"/>
+                        <param name="endRotation" value="-90"/>
+                        <param name="centerRotation" value="276,10"/>
+                        <param name="visiblefocus" value="true"/>
+                        <param name="direction" value="vertical"/>
+                    </include>
+                    <include content="ProgressBar">
+                        <param name="id" value="0"/>
+                        <param name="visible" value="Integer.IsGreater(ListItem.PercentPlayed,0)"/>
+                        <param name="x" value="276"/>
+                        <param name="y" value="10"/>
+                        <param name="width" value="149"/>
+                        <param name="info" value="ListItem.PercentPlayed"/>
+                        <param name="endRotation" value="-90"/>
+                        <param name="centerRotation" value="276,10"/>
+                        <param name="visiblefocus" value="true"/>
+                        <param name="direction" value="vertical"/>
+                    </include>
+                    <include content="WatchedRecOverlay">
+                        <param name="x" value="213"/>
+                        <param name="y" value="12"/>
+                        <param name="width" value="50"/>
+                        <param name="height" value="50"/>
+                        <param name="color" value="Main"/>
+                    </include>
+                    <include content="FocusedIndicatorVertical">
+                        <param name="x" value="320"/>
+                        <param name="y" value="35"/>
+                        <param name="height" value="57"/>
+                        <param name="visible" value="true"/>
+                    </include>
+                    <control type="label">
+                        <posx>340</posx>
+                        <posy>35</posy>
+                        <height>50</height>
+                        <width>1510</width>
+                        <font>FacadeListTitleFont</font>
+                        <include>TextColor_MainColor</include>
+                        <scroll>true</scroll>
+                        <label>$VAR[DetailsTitle]</label>
+                    </control>
+                    <control type="label">
+                        <posx>340</posx>
+                        <posy>85</posy>
+                        <height>50</height>
+                        <width>1510</width>
+                        <font>FacadeListSubTitleFont</font>
+                        <include>TextColor_MainColor</include>
+                        <scroll>true</scroll>
+                        <label>$VAR[DetailsRow1]$VAR[DetailsRow2,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow3,[COLOR=SeparatorColor] › [/COLOR]]$VAR[DetailsRow4,[COLOR=SeparatorColor] › [/COLOR]]</label>
                     </control>
                 </control>
             </control>

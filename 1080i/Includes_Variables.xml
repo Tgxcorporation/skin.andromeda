@@ -373,7 +373,7 @@
         <value condition="Window.IsVisible(MyMusicPlaylistEditor.xml)|Window.IsVisible(SmartPlaylistEditor.xml)|Window.IsVisible(MusicVisualization.xml)|Window.IsVisible(MyMusicSongs.xml)|Window.IsVisible(MyMusicNav.xml)|Window.IsVisible(MyPlaylist.xml)|Window.IsVisible(MyMusicPlaylistEditor.xml)">$VAR[Music.Art]</value>
         <value condition="!String.IsEmpty(Window.Property(IsRadio))">$VAR[Radio.Art]</value>
         <value condition="Window.IsVisible(DialogContentSettings.xml)|Window.IsVisible(DialogPVRChannelManager.xml)|Window.IsVisible(MyPVRChannels.xml)|Window.IsVisible(MyPVRGuide.xml)|Window.IsVisible(MyPVRRecordings.xml)|Window.IsVisible(MyPVRSearch.xml)|Window.IsVisible(MyPVRTimers.xml)">$VAR[Tv.Art]</value>
-        <value condition="Window.IsVisible(CustomPlexHomeSettings.xml)|Window.IsVisible(CustomStartupWindow.xml)">$VAR[Settings.Art]</value>
+        <value condition="Window.IsVisible(CustomPlexHomeSettings.xml)|Window.IsVisible(CustomStartupWindow.xml)|Window.IsVisible(CustomTransparency.xml)">$VAR[Settings.Art]</value>
         <value condition="Window.IsVisible(Startup.xml)">$VAR[Default.Art]</value>
         <value condition="Window.IsVisible(MyWeather.xml)">$VAR[Weather.Art]</value>
         <value>$VAR[Default.Art]</value>
