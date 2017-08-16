@@ -811,7 +811,11 @@ msgctxt "#31910"
 msgid "Maps"
 msgstr ""
 
-#empty strings from id 31910 to 31919
+#empty strings from id 31910 to 31918
+
+msgctxt "#31918"
+msgid "Disable header animation while scrolling in list views"
+msgstr ""
 
 msgctxt "#31919"
 msgid "Enable additional highlight frame on thumbs"
