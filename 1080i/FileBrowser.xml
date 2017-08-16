@@ -41,11 +41,12 @@
                     <itemlayout width="1720" height="120">
                         <include content="ThumbsImages">
                             <param name="visible" value="true"/>
+                            <param name="visibleFrameHighlight" value="false"/>
                             <param name="x" value="0"/>
                             <param name="y" value="5"/>
                             <param name="width" value="110"/>
                             <param name="height" value="110"/>
-                            <param name="aspectratio" value="keep"/>
+                            <param name="aspectratio" value="scale"/>
                             <param name="align" value="center"/>
                             <param name="aligny" value="center"/>
                             <param name="flipy" value="false"/>
@@ -68,11 +69,12 @@
                             <include>ButtonWideFocusAnimation</include>
                             <include content="ThumbsImages">
                                 <param name="visible" value="true"/>
+                                <param name="visibleFrameHighlight" value="false"/>
                                 <param name="x" value="0"/>
                                 <param name="y" value="5"/>
                                 <param name="width" value="110"/>
                                 <param name="height" value="110"/>
-                                <param name="aspectratio" value="keep"/>
+                                <param name="aspectratio" value="scale"/>
                                 <param name="align" value="center"/>
                                 <param name="aligny" value="center"/>
                                 <param name="flipy" value="false"/>

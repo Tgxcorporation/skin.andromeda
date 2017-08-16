@@ -17,6 +17,7 @@
                 </include>
                 <include content="ThumbsImages">
                     <param name="visible" value="true"/>
+                    <param name="visibleFrameHighlight" value="false"/>
                     <param name="x" value="70"/>
                     <param name="y" value="70"/>
                     <param name="width" value="425"/>
@@ -69,6 +70,7 @@
                 <visible>$EXP[ContentIsEpisode]</visible>
                 <include content="ThumbsImages">
                     <param name="visible" value="true"/>
+                    <param name="visibleFrameHighlight" value="false"/>
                     <param name="x" value="70"/>
                     <param name="y" value="70"/>
                     <param name="width" value="425"/>
@@ -120,6 +122,7 @@
                 <visible>$EXP[ContentIsChannel]</visible>
                 <include content="ThumbsImages">
                     <param name="visible" value="true"/>
+                    <param name="visibleFrameHighlight" value="false"/>
                     <param name="x" value="70"/>
                     <param name="y" value="70"/>
                     <param name="width" value="425"/>
@@ -186,6 +189,7 @@
                 </include>
                 <include content="ThumbsImages">
                     <param name="visible" value="true"/>
+                    <param name="visibleFrameHighlight" value="false"/>
                     <param name="x" value="70"/>
                     <param name="y" value="70"/>
                     <param name="width" value="425"/>

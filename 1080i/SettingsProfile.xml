@@ -34,11 +34,12 @@
                     <itemlayout width="1720" height="240">
                         <include content="ThumbsImages">
                             <param name="visible" value="!String.IsEqual(ListItem.Label,$LOCALIZE[20058])"/>
+                            <param name="visibleFrameHighlight" value="false"/>
                             <param name="x" value="0"/>
                             <param name="y" value="5"/>
                             <param name="width" value="230"/>
                             <param name="height" value="230"/>
-                            <param name="aspectratio" value="keep"/>
+                            <param name="aspectratio" value="scale"/>
                             <param name="align" value="right"/>
                             <param name="aligny" value="top"/>
                             <param name="flipy" value="false"/>
@@ -69,11 +70,12 @@
                             <include>ButtonWideFocusAnimation</include>
                             <include content="ThumbsImages">
                                 <param name="visible" value="!String.IsEqual(ListItem.Label,$LOCALIZE[20058])"/>
+                                <param name="visibleFrameHighlight" value="true"/>
                                 <param name="x" value="0"/>
                                 <param name="y" value="5"/>
                                 <param name="width" value="230"/>
                                 <param name="height" value="230"/>
-                                <param name="aspectratio" value="keep"/>
+                                <param name="aspectratio" value="scale"/>
                                 <param name="align" value="right"/>
                                 <param name="aligny" value="top"/>
                                 <param name="flipy" value="false"/>

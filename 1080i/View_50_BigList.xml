@@ -9,6 +9,7 @@
                     <animation effect="slide" time="0" start="0,0" end="95,0" condition="$EXP[CdArtVideoIsEnabled]">Conditional</animation>
                     <include content="ThumbsImages">
                         <param name="visible" value="true"/>
+                        <param name="visibleFrameHighlight" value="false"/>
                         <param name="x" value="70"/>
                         <param name="y" value="10"/>
                         <param name="width" value="212"/>
@@ -89,6 +90,7 @@
                 <control type="group">
                     <include content="ThumbsImages">
                         <param name="visible" value="true"/>
+                        <param name="visibleFrameHighlight" value="false"/>
                         <param name="x" value="70"/>
                         <param name="y" value="10"/>
                         <param name="width" value="570"/>
@@ -146,6 +148,7 @@
                     <animation effect="slide" time="0" start="0,0" end="95,0" condition="$EXP[CdArtAudioIsEnabled]">Conditional</animation>
                     <include content="ThumbsImages">
                         <param name="visible" value="true"/>
+                        <param name="visibleFrameHighlight" value="false"/>
                         <param name="x" value="70"/>
                         <param name="y" value="10"/>
                         <param name="width" value="321"/>
@@ -226,6 +229,7 @@
                 <control type="group">
                     <include content="ThumbsImages">
                         <param name="visible" value="true"/>
+                        <param name="visibleFrameHighlight" value="false"/>
                         <param name="x" value="70"/>
                         <param name="y" value="10"/>
                         <param name="width" value="426"/>
@@ -308,6 +312,7 @@
                         <animation effect="slide" time="0" start="0,0" end="95,0" condition="$EXP[CdArtVideoIsEnabled]">Conditional</animation>
                         <include content="ThumbsImages">
                             <param name="visible" value="true"/>
+                            <param name="visibleFrameHighlight" value="true"/>
                             <param name="x" value="70"/>
                             <param name="y" value="10"/>
                             <param name="width" value="212"/>
@@ -429,6 +434,7 @@
                     <control type="group">
                         <include content="ThumbsImages">
                             <param name="visible" value="true"/>
+                            <param name="visibleFrameHighlight" value="true"/>
                             <param name="x" value="70"/>
                             <param name="y" value="10"/>
                             <param name="width" value="570"/>
@@ -517,6 +523,7 @@
                         <animation effect="slide" time="0" start="0,0" end="95,0" condition="$EXP[CdArtAudioIsEnabled]">Conditional</animation>
                         <include content="ThumbsImages">
                             <param name="visible" value="true"/>
+                            <param name="visibleFrameHighlight" value="true"/>
                             <param name="x" value="70"/>
                             <param name="y" value="10"/>
                             <param name="width" value="321"/>
@@ -633,6 +640,7 @@
                     <control type="group">
                         <include content="ThumbsImages">
                             <param name="visible" value="true"/>
+                            <param name="visibleFrameHighlight" value="true"/>
                             <param name="x" value="70"/>
                             <param name="y" value="10"/>
                             <param name="width" value="426"/>

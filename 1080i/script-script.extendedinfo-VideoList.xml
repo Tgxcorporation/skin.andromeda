@@ -39,6 +39,7 @@
                         <itemlayout height="331" width="1920">
                             <include content="ThumbsImages">
                                 <param name="visible" value="true"/>
+                                <param name="visibleFrameHighlight" value="false"/>
                                 <param name="x" value="70"/>
                                 <param name="y" value="10"/>
                                 <param name="width" value="212"/>
@@ -81,6 +82,7 @@
                             <control type="group">
                                 <include content="ThumbsImages">
                                     <param name="visible" value="true"/>
+                                    <param name="visibleFrameHighlight" value="true"/>
                                     <param name="x" value="70"/>
                                     <param name="y" value="10"/>
                                     <param name="width" value="212"/>

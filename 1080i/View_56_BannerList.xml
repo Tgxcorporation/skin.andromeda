@@ -4,6 +4,7 @@
         <itemlayout height="160" width="1920">
             <include content="BannersImages">
                 <param name="visible" value="![Container.Content(episodes)|Container.Content(seasons)]"/>
+                <param name="visibleFrameHighlight" value="false"/>
                 <param name="x" value="70"/>
                 <param name="y" value="10"/>
                 <param name="width" value="810"/>
@@ -15,7 +16,7 @@
                 <param name="borderdiffuse" value="BorderUnfocusedColor"/>
             </include>
             <include content="WatchedRecOverlay">
-                <param name="x" value="753"/>
+                <param name="x" value="823"/>
                 <param name="y" value="11"/>
                 <param name="width" value="50"/>
                 <param name="height" value="150"/>
@@ -45,6 +46,7 @@
                 <include>ListFocusAnimation</include>
                 <include content="BannersImages">
                     <param name="visible" value="![Container.Content(episodes)|Container.Content(seasons)]"/>
+                    <param name="visibleFrameHighlight" value="![Container.Content(episodes)|Container.Content(seasons)]"/>
                     <param name="x" value="70"/>
                     <param name="y" value="10"/>
                     <param name="width" value="810"/>
@@ -56,7 +58,7 @@
                     <param name="borderdiffuse" value="$VAR[Picked.HighLight.Color]"/>
                 </include>
                 <include content="WatchedRecOverlay">
-                    <param name="x" value="753"/>
+                    <param name="x" value="823"/>
                     <param name="y" value="11"/>
                     <param name="width" value="50"/>
                     <param name="height" value="150"/>

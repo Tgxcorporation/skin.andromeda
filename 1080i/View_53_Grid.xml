@@ -123,6 +123,7 @@
                 <itemlayout condition="[Window.IsActive(MyPVRChannels.xml)|Window.IsActive(MyPVRRecordings.xml)|Window.IsActive(MyPVRSearch.xml)|Window.IsActive(MyPVRTimers.xml)]" height="180" width="240">
                     <include content="ThumbsImages">
                         <param name="visible" value="true"/>
+                        <param name="visibleFrameHighlight" value="false"/>
                         <param name="x" value="0"/>
                         <param name="y" value="0"/>
                         <param name="width" value="240"/>
@@ -147,6 +148,7 @@
                         <include>ButtonFocusAnimation</include>
                         <include content="ThumbsImages">
                             <param name="visible" value="true"/>
+                            <param name="visibleFrameHighlight" value="true"/>
                             <param name="x" value="0"/>
                             <param name="y" value="0"/>
                             <param name="width" value="240"/>
@@ -170,6 +172,7 @@
                 <itemlayout condition="[Container.Content(TVShows)|Container.Content(movies)|Container.Content(sets)|Container.Content(seasons)] + Skin.HasSetting(53_UseBanners)" height="180" width="960">
                     <include content="BannersImages">
                         <param name="visible" value="true"/>
+                        <param name="visibleFrameHighlight" value="false"/>
                         <param name="x" value="0"/>
                         <param name="y" value="0"/>
                         <param name="width" value="960"/>
@@ -194,6 +197,7 @@
                         <include>ButtonFocusAnimation</include>
                         <include content="BannersImages">
                             <param name="visible" value="true"/>
+                            <param name="visibleFrameHighlight" value="true"/>
                             <param name="x" value="0"/>
                             <param name="y" value="0"/>
                             <param name="width" value="960"/>
@@ -217,6 +221,7 @@
                 <itemlayout condition="!Skin.HasSetting(53_BigGrid) + !Skin.HasSetting(53_UseBanners) + [Container.content(actors) | Container.Content(musicvideos) | container.content(movies) | container.content(TVshows) | container.content(seasons)|Container.Content(sets)]" height="192" width="128">
                     <include content="ThumbsImages">
                         <param name="visible" value="true"/>
+                        <param name="visibleFrameHighlight" value="false"/>
                         <param name="x" value="0"/>
                         <param name="y" value="0"/>
                         <param name="width" value="128"/>
@@ -241,6 +246,7 @@
                         <include>ButtonFocusAnimation</include>
                         <include content="ThumbsImages">
                             <param name="visible" value="true"/>
+                            <param name="visibleFrameHighlight" value="true"/>
                             <param name="x" value="0"/>
                             <param name="y" value="0"/>
                             <param name="width" value="128"/>
@@ -264,6 +270,7 @@
                 <itemlayout condition="Skin.HasSetting(53_BigGrid) + !Skin.HasSetting(53_UseBanners) + [Container.content(actors) | Container.Content(musicvideos) | container.content(movies) | container.content(TVshows) | container.content(seasons)|Container.Content(sets)]" height="288" width="192">
                     <include content="ThumbsImages">
                         <param name="visible" value="true"/>
+                        <param name="visibleFrameHighlight" value="false"/>
                         <param name="x" value="0"/>
                         <param name="y" value="0"/>
                         <param name="width" value="192"/>
@@ -288,6 +295,7 @@
                         <include>ButtonFocusAnimation</include>
                         <include content="ThumbsImages">
                             <param name="visible" value="true"/>
+                            <param name="visibleFrameHighlight" value="true"/>
                             <param name="x" value="0"/>
                             <param name="y" value="0"/>
                             <param name="width" value="192"/>
@@ -311,6 +319,7 @@
                 <itemlayout height="270" width="480" condition="container.content(episodes)">
                     <include content="ThumbsImages">
                         <param name="visible" value="true"/>
+                        <param name="visibleFrameHighlight" value="false"/>
                         <param name="x" value="0"/>
                         <param name="y" value="0"/>
                         <param name="width" value="480"/>
@@ -335,6 +344,7 @@
                         <include>ButtonFocusAnimation</include>
                         <include content="ThumbsImages">
                             <param name="visible" value="true"/>
+                            <param name="visibleFrameHighlight" value="true"/>
                             <param name="x" value="0"/>
                             <param name="y" value="0"/>
                             <param name="width" value="480"/>
@@ -358,6 +368,7 @@
                 <itemlayout condition="!Skin.HasSetting(53_BigGrid) + ![container.content(episodes) | Container.Content(musicvideos) | container.content(movies) | container.content(TVshows) | container.content(seasons)|Container.Content(sets)]" height="180" width="175">
                     <include content="ThumbsImages">
                         <param name="visible" value="true"/>
+                        <param name="visibleFrameHighlight" value="false"/>
                         <param name="x" value="0"/>
                         <param name="y" value="0"/>
                         <param name="width" value="175"/>
@@ -382,6 +393,7 @@
                         <include>ButtonFocusAnimation</include>
                         <include content="ThumbsImages">
                             <param name="visible" value="true"/>
+                            <param name="visibleFrameHighlight" value="true"/>
                             <param name="x" value="0"/>
                             <param name="y" value="0"/>
                             <param name="width" value="175"/>
@@ -405,6 +417,7 @@
                 <itemlayout condition="Skin.HasSetting(53_BigGrid) + ![container.content(episodes) | Container.Content(musicvideos) | container.content(movies) | container.content(TVshows) | container.content(seasons)|Container.Content(sets)]" height="270" width="275">
                     <include content="ThumbsImages">
                         <param name="visible" value="true"/>
+                        <param name="visibleFrameHighlight" value="false"/>
                         <param name="x" value="0"/>
                         <param name="y" value="0"/>
                         <param name="width" value="275"/>
@@ -429,6 +442,7 @@
                         <include>ButtonFocusAnimation</include>
                         <include content="ThumbsImages">
                             <param name="visible" value="true"/>
+                            <param name="visibleFrameHighlight" value="true"/>
                             <param name="x" value="0"/>
                             <param name="y" value="0"/>
                             <param name="width" value="275"/>

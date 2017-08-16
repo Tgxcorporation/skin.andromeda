@@ -78,6 +78,7 @@
                 <itemlayout height="1080" width="400">
                     <include content="ThumbsImages">
                         <param name="visible" value="true"/>
+                        <param name="visibleFrameHighlight" value="false"/>
                         <param name="x" value="70"/>
                         <param name="y" value="70"/>
                         <param name="width" value="390"/>
@@ -155,6 +156,7 @@
                         </include>
                         <include content="ThumbsImages">
                             <param name="visible" value="true"/>
+                            <param name="visibleFrameHighlight" value="true"/>
                             <param name="x" value="70"/>
                             <param name="y" value="70"/>
                             <param name="width" value="390"/>
@@ -279,6 +281,7 @@
                 <itemlayout height="1080" width="545">
                     <include content="ThumbsImages">
                         <param name="visible" value="true"/>
+                        <param name="visibleFrameHighlight" value="false"/>
                         <param name="x" value="70"/>
                         <param name="y" value="70"/>
                         <param name="width" value="535"/>
@@ -356,6 +359,7 @@
                         </include>
                         <include content="ThumbsImages">
                             <param name="visible" value="true"/>
+                            <param name="visibleFrameHighlight" value="true"/>
                             <param name="x" value="70"/>
                             <param name="y" value="70"/>
                             <param name="width" value="535"/>
@@ -485,6 +489,7 @@
                 <itemlayout height="1080" width="810">
                     <include content="ThumbsImages">
                         <param name="visible" value="true"/>
+                        <param name="visibleFrameHighlight" value="false"/>
                         <param name="x" value="70"/>
                         <param name="y" value="70"/>
                         <param name="width" value="800"/>
@@ -544,6 +549,7 @@
                         <include>ButtonFocusAnimation</include>
                         <include content="ThumbsImages">
                             <param name="visible" value="true"/>
+                            <param name="visibleFrameHighlight" value="true"/>
                             <param name="x" value="70"/>
                             <param name="y" value="70"/>
                             <param name="width" value="800"/>
@@ -669,6 +675,7 @@
                 <itemlayout height="1080" width="545">
                     <include content="ThumbsImages">
                         <param name="visible" value="true"/>
+                        <param name="visibleFrameHighlight" value="false"/>
                         <param name="x" value="70"/>
                         <param name="y" value="70"/>
                         <param name="width" value="535"/>
@@ -760,6 +767,7 @@
                         <include>ButtonFocusAnimation</include>
                         <include content="ThumbsImages">
                             <param name="visible" value="true"/>
+                            <param name="visibleFrameHighlight" value="true"/>
                             <param name="x" value="70"/>
                             <param name="y" value="70"/>
                             <param name="width" value="535"/>

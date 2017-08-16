@@ -31,6 +31,7 @@
                     <itemlayout height="100" width="910">
                         <include content="ThumbsImages">
                             <param name="visible" value="true"/>
+                            <param name="visibleFrameHighlight" value="false"/>
                             <param name="x" value="70"/>
                             <param name="y" value="10"/>
                             <param name="width" value="90"/>
@@ -66,6 +67,7 @@
                             <include>ButtonWideFocusAnimation</include>
                             <include content="ThumbsImages">
                                 <param name="visible" value="true"/>
+                                <param name="visibleFrameHighlight" value="true"/>
                                 <param name="x" value="70"/>
                                 <param name="y" value="10"/>
                                 <param name="width" value="90"/>

@@ -20,6 +20,7 @@
                     </include>
                     <include content="ThumbsImages">
                         <param name="visible" value="true"/>
+                        <param name="visibleFrameHighlight" value="false"/>
                         <param name="x" value="70"/>
                         <param name="y" value="200"/>
                         <param name="width" value="460"/>
@@ -109,6 +110,7 @@
                     <posy>60</posy>
                     <include content="ThumbsImages">
                         <param name="visible" value="true"/>
+                        <param name="visibleFrameHighlight" value="false"/>
                         <param name="x" value="70"/>
                         <param name="y" value="200"/>
                         <param name="width" value="660"/>
@@ -207,6 +209,7 @@
                     </include>
                     <include content="ThumbsImages">
                         <param name="visible" value="true"/>
+                        <param name="visibleFrameHighlight" value="false"/>
                         <param name="x" value="70"/>
                         <param name="y" value="200"/>
                         <param name="width" value="495"/>
@@ -291,6 +294,7 @@
                     <posy>153</posy>
                     <include content="ThumbsImages">
                         <param name="visible" value="true"/>
+                        <param name="visibleFrameHighlight" value="false"/>
                         <param name="x" value="70"/>
                         <param name="y" value="200"/>
                         <param name="width" value="495"/>

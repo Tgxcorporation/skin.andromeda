@@ -38,6 +38,7 @@
                     </include>
                     <include content="ThumbsImages">
                         <param name="visible" value="true"/>
+                        <param name="visibleFrameHighlight" value="false"/>
                         <param name="x" value="120"/>
                         <param name="y" value="200"/>
                         <param name="width" value="460"/>
@@ -166,6 +167,7 @@
                     </include>
                     <include content="ThumbsImages">
                         <param name="visible" value="true"/>
+                        <param name="visibleFrameHighlight" value="false"/>
                         <param name="x" value="120"/>
                         <param name="y" value="200"/>
                         <param name="width" value="460"/>
@@ -232,6 +234,7 @@
                     </include>
                     <include content="ThumbsImages">
                         <param name="visible" value="true"/>
+                        <param name="visibleFrameHighlight" value="false"/>
                         <param name="x" value="120"/>
                         <param name="y" value="200"/>
                         <param name="width" value="460"/>
@@ -275,6 +278,7 @@
                         <itemlayout height="170" width="292">
                             <include content="ThumbsImages">
                                 <param name="visible" value="true"/>
+                                <param name="visibleFrameHighlight" value="false"/>
                                 <param name="x" value="0"/>
                                 <param name="y" value="0"/>
                                 <param name="width" value="285"/>
@@ -290,6 +294,7 @@
                         <focusedlayout height="170" width="292">
                             <include content="ThumbsImages">
                                 <param name="visible" value="true"/>
+                                <param name="visibleFrameHighlight" value="true"/>
                                 <param name="x" value="0"/>
                                 <param name="y" value="0"/>
                                 <param name="width" value="285"/>

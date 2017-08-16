@@ -29,6 +29,7 @@
                             <include>NoFocusedIcon</include>
                             <include content="ThumbsImages">
                                 <param name="visible" value="true"/>
+                                <param name="visibleFrameHighlight" value="false"/>
                                 <param name="x" value="TextMargin"/>
                                 <param name="y" value="10"/>
                                 <param name="width" value="100"/>
@@ -65,6 +66,7 @@
                             <include>ButtonFocusAnimation</include>
                             <include content="ThumbsImages">
                                 <param name="visible" value="true"/>
+                                <param name="visibleFrameHighlight" value="true"/>
                                 <param name="x" value="TextMargin"/>
                                 <param name="y" value="10"/>
                                 <param name="width" value="100"/>

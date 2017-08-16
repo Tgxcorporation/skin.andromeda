@@ -83,6 +83,7 @@
                     </control>
                     <include content="ThumbsImages">
                         <param name="visible" value="true"/>
+                        <param name="visibleFrameHighlight" value="false"/>
                         <param name="x" value="80"/>
                         <param name="y" value="480"/>
                         <param name="width" value="825"/>
@@ -191,6 +192,7 @@
                         <itemlayout width="845" height="100">
                             <include content="ThumbsImages">
                                 <param name="visible" value="true"/>
+                                <param name="visibleFrameHighlight" value="false"/>
                                 <param name="x" value="20"/>
                                 <param name="y" value="0"/>
                                 <param name="width" value="120"/>
@@ -226,6 +228,7 @@
                                 <include>ButtonFocusAnimation</include>
                                 <include content="ThumbsImages">
                                     <param name="visible" value="true"/>
+                                    <param name="visibleFrameHighlight" value="true"/>
                                     <param name="x" value="20"/>
                                     <param name="y" value="0"/>
                                     <param name="width" value="120"/>

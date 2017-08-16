@@ -44,6 +44,7 @@
                                 <include>NoFocusedIcon</include>
                                 <include content="ThumbsImages">
                                     <param name="visible" value="true"/>
+                                    <param name="visibleFrameHighlight" value="false"/>
                                     <param name="x" value="100"/>
                                     <param name="y" value="0"/>
                                     <param name="width" value="100"/>
@@ -80,6 +81,7 @@
                                 <include>ButtonFocusAnimation</include>
                                 <include content="ThumbsImages">
                                     <param name="visible" value="true"/>
+                                    <param name="visibleFrameHighlight" value="true"/>
                                     <param name="x" value="100"/>
                                     <param name="y" value="0"/>
                                     <param name="width" value="100"/>
@@ -165,6 +167,7 @@
                                 <include>NoFocusedIcon</include>
                                 <include content="ThumbsImages">
                                     <param name="visible" value="true"/>
+                                    <param name="visibleFrameHighlight" value="false"/>
                                     <param name="x" value="70"/>
                                     <param name="y" value="0"/>
                                     <param name="width" value="100"/>
@@ -201,6 +204,7 @@
                                 <include>ButtonFocusAnimation</include>
                                 <include content="ThumbsImages">
                                     <param name="visible" value="true"/>
+                                    <param name="visibleFrameHighlight" value="true"/>
                                     <param name="x" value="70"/>
                                     <param name="y" value="0"/>
                                     <param name="width" value="100"/>

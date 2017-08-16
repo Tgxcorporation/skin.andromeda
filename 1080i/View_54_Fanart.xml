@@ -10,7 +10,7 @@
                 <height>778</height>
                 <colordiffuse>ff999999</colordiffuse>
                 <texture colordiffuse="ff999999">defaultFolderBackEpisode.png</texture>
-                <bordertexture border="2" colordiffuse="ff999999">common/frame_focus.png</bordertexture>
+                <bordertexture border="2" colordiffuse="BorderUnfocusedColor">common/frame_focus.png</bordertexture>
                 <bordersize>2</bordersize>
             </control>
             <control type="image">
@@ -21,7 +21,7 @@
                 <height>778</height>
                 <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                 <texture>special://skin/backgrounds/default/background.png</texture>
-                <bordertexture border="2" colordiffuse="ff999999">common/frame_focus.png</bordertexture>
+                <bordertexture border="2" colordiffuse="BorderUnfocusedColor">common/frame_focus.png</bordertexture>
                 <bordersize>2</bordersize>
             </control>
             <control type="multiimage">
@@ -34,7 +34,7 @@
                 <randomize>true</randomize>
                 <fadetime>400</fadetime>
                 <aspectratio aligny="top">scale</aspectratio>
-                <colordiffuse>ff999999</colordiffuse>
+                <colordiffuse>ThumbsUnfocusedColor</colordiffuse>
                 <imagepath background="true">$VAR[Fanart.Art]</imagepath>
             </control>
             <include content="ProgressBar">
@@ -98,6 +98,18 @@
                     <fadetime>400</fadetime>
                     <aspectratio aligny="top">scale</aspectratio>
                     <imagepath background="true">$VAR[Fanart.Art]</imagepath>
+                </control>
+                <control type="image">
+                    <visible>Skin.HasSetting(EnableFrameHighlight)</visible>
+                    <include>Icon_Fade</include>
+                    <posx>70</posx>
+                    <posy>70</posy>
+                    <width>1380</width>
+                    <height>778</height>
+                    <aspectratio>scale</aspectratio>
+                    <texture background="true" colordiffuse="00ffffff">$VAR[Fanart.Art]</texture>
+                    <bordertexture border="2,50,2,50" colordiffuse="$VAR[Picked.HighLight.Color]">common/frame_highlight.png</bordertexture>
+                    <bordersize>2,50,2,50</bordersize>
                 </control>
                 <include content="ClearArtLogo">
                     <param name="x" value="82"/>

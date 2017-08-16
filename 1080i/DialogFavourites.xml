@@ -30,11 +30,12 @@
                             <control type="group">
                                 <include content="ThumbsImages">
                                     <param name="visible" value="true"/>
+                                    <param name="visibleFrameHighlight" value="false"/>
                                     <param name="x" value="70"/>
                                     <param name="y" value="10"/>
                                     <param name="width" value="321"/>
                                     <param name="height" value="321"/>
-                                    <param name="aspectratio" value="keep"/>
+                                    <param name="aspectratio" value="scale"/>
                                     <param name="align" value="center"/>
                                     <param name="aligny" value="top"/>
                                     <param name="flipy" value="false"/>
@@ -86,11 +87,12 @@
                                 <control type="group">
                                     <include content="ThumbsImages">
                                         <param name="visible" value="true"/>
+                                        <param name="visibleFrameHighlight" value="true"/>
                                         <param name="x" value="70"/>
                                         <param name="y" value="10"/>
                                         <param name="width" value="321"/>
                                         <param name="height" value="321"/>
-                                        <param name="aspectratio" value="keep"/>
+                                        <param name="aspectratio" value="scale"/>
                                         <param name="align" value="center"/>
                                         <param name="aligny" value="top"/>
                                         <param name="flipy" value="false"/>

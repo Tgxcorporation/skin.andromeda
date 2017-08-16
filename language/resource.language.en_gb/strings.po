@@ -811,7 +811,11 @@ msgctxt "#31910"
 msgid "Maps"
 msgstr ""
 
-#empty strings from id 31910 to 31920
+#empty strings from id 31910 to 31919
+
+msgctxt "#31919"
+msgid "Enable additional highlight frame on thumbs"
+msgstr ""
 
 msgctxt "#31920"
 msgid "Reset transparency settings to default"

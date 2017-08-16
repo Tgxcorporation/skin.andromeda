@@ -1148,6 +1148,19 @@
                 <bordertexture border="2" colordiffuse="$PARAM[borderdiffuse]">common/frame_focus.png</bordertexture>
                 <bordersize>2</bordersize>
             </control>
+            <control type="image">
+                <visible>Skin.HasSetting(EnableFrameHighlight)</visible>
+                <visible>$PARAM[visibleFrameHighlight]</visible>
+                <include>Icon_Fade</include>
+                <posx>$PARAM[x]</posx>
+                <posy>$PARAM[y]</posy>
+                <width>$PARAM[width]</width>
+                <height>$PARAM[height]</height>
+                <aspectratio align="$PARAM[align]" aligny="$PARAM[aligny]">scale</aspectratio>
+                <texture background="true" flipx="$PARAM[flipx]" colordiffuse="00ffffff">$VAR[ThumbsExceptions]</texture>
+                <bordertexture border="2,50,2,50" colordiffuse="$PARAM[borderdiffuse]">common/frame_highlight.png</bordertexture>
+                <bordersize>2,50,2,50</bordersize>
+            </control>
             <!--NORMAL-->
             <control type="image">
                 <visible>[
@@ -1169,6 +1182,19 @@
                 <texture background="true" flipx="$PARAM[flipx]" colordiffuse="$PARAM[texturediffuse]">$VAR[Thumbs]</texture>
                 <bordertexture border="2" colordiffuse="$PARAM[borderdiffuse]">common/frame_focus.png</bordertexture>
                 <bordersize>2</bordersize>
+            </control>
+            <control type="image">
+                <visible>Skin.HasSetting(EnableFrameHighlight)</visible>
+                <visible>$PARAM[visibleFrameHighlight]</visible>
+                <include>Icon_Fade</include>
+                <posx>$PARAM[x]</posx>
+                <posy>$PARAM[y]</posy>
+                <width>$PARAM[width]</width>
+                <height>$PARAM[height]</height>
+                <aspectratio align="$PARAM[align]" aligny="$PARAM[aligny]">scale</aspectratio>
+                <texture background="true" flipx="$PARAM[flipx]" colordiffuse="00ffffff">$VAR[Thumbs]</texture>
+                <bordertexture border="2,50,2,50" colordiffuse="$PARAM[borderdiffuse]">common/frame_highlight.png</bordertexture>
+                <bordersize>2,50,2,50</bordersize>
             </control>
             <!--MISSING THUMBS-->
             <control type="image">
@@ -1200,6 +1226,19 @@
                 <texture colordiffuse="$PARAM[texturediffuse]">$VAR[ThumbsMissing]</texture>
                 <bordertexture border="2" colordiffuse="$PARAM[borderdiffuse]">common/frame_focus.png</bordertexture>
                 <bordersize>2</bordersize>
+            </control>
+            <control type="image">
+                <visible>Skin.HasSetting(EnableFrameHighlight)</visible>
+                <visible>$PARAM[visibleFrameHighlight]</visible>
+                <include>Icon_Fade</include>
+                <posx>$PARAM[x]</posx>
+                <posy>$PARAM[y]</posy>
+                <width>$PARAM[width]</width>
+                <height>$PARAM[height]</height>
+                <aspectratio align="$PARAM[align]" aligny="$PARAM[aligny]">scale</aspectratio>
+                <texture background="true" flipx="$PARAM[flipx]" colordiffuse="00ffffff">$VAR[ThumbsMissing]</texture>
+                <bordertexture border="2,50,2,50" colordiffuse="$PARAM[borderdiffuse]">common/frame_highlight.png</bordertexture>
+                <bordersize>2,50,2,50</bordersize>
             </control>
         </control>
     </include>
@@ -1301,6 +1340,19 @@
                 <texture colordiffuse="$PARAM[texturediffuse]" background="true">$VAR[Banners]</texture>
                 <bordertexture border="2" colordiffuse="$PARAM[borderdiffuse]">common/frame_focus.png</bordertexture>
                 <bordersize>2</bordersize>
+            </control>
+            <control type="image">
+                <visible>Skin.HasSetting(EnableFrameHighlight)</visible>
+                <visible>$PARAM[visibleFrameHighlight]</visible>
+                <include>Icon_Fade</include>
+                <posx>$PARAM[x]</posx>
+                <posy>$PARAM[y]</posy>
+                <width>$PARAM[width]</width>
+                <height>$PARAM[height]</height>
+                <aspectratio align="$PARAM[align]" aligny="$PARAM[aligny]">scale</aspectratio>
+                <texture background="true" flipx="$PARAM[flipx]" colordiffuse="00ffffff">$VAR[Banners]</texture>
+                <bordertexture border="2,50,2,50" colordiffuse="$PARAM[borderdiffuse]">common/frame_highlight.png</bordertexture>
+                <bordersize>2,50,2,50</bordersize>
             </control>
         </control>
     </include>
@@ -1788,6 +1840,7 @@
             <posy>180</posy>
             <include content="ThumbsImages">
                 <param name="visible" value="true"/>
+                <param name="visibleFrameHighlight" value="true"/>
                 <param name="x" value="70"/>
                 <param name="y" value="10"/>
                 <param name="width" value="150"/>
@@ -1834,6 +1887,7 @@
             <posy>340</posy>
             <include content="ThumbsImages">
                 <param name="visible" value="true"/>
+                <param name="visibleFrameHighlight" value="false"/>
                 <param name="x" value="70"/>
                 <param name="y" value="10"/>
                 <param name="width" value="150"/>
@@ -1871,6 +1925,7 @@
             <posy>500</posy>
             <include content="ThumbsImages">
                 <param name="visible" value="true"/>
+                <param name="visibleFrameHighlight" value="false"/>
                 <param name="x" value="70"/>
                 <param name="y" value="10"/>
                 <param name="width" value="150"/>
@@ -1908,6 +1963,7 @@
             <posy>660</posy>
             <include content="ThumbsImages">
                 <param name="visible" value="true"/>
+                <param name="visibleFrameHighlight" value="false"/>
                 <param name="x" value="70"/>
                 <param name="y" value="10"/>
                 <param name="width" value="150"/>
