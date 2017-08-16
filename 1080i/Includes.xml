@@ -7,7 +7,7 @@
     _1118 Custom_FullscreenMusic * start fullscreen audio playback
     _1119 CustomAddons * browse addons united under the same roof
     _1120 CustomStartupWindow.xml * define startup window
-    _1121 CustomTransparency.xml * manage transparency levels
+    _1121 CustomTransparencyOverlay.xml * manage transparency levels
 
    -->
     <include file="Includes_Variables.xml"/>
@@ -132,7 +132,7 @@
             <width>1920</width>
             <height>1080</height>
             <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-            <texture border="10">common/overlay_dialog.png</texture>
+            <texture border="3">common/overlay_dialog.png</texture>
         </control>
         <control type="image">
             <include>TopBarVisibleFadeEffectOverlay</include>

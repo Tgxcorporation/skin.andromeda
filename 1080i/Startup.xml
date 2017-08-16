@@ -52,6 +52,7 @@
             <imagepath background="true">$INFO[Skin.String(startup-multiimagepath)]</imagepath>
         </control>
         <include>OverlayFull</include>
+        <include>FacadeOverlay</include>
         <control type="group">
             <visible>!Skin.HasSetting(DisableDefaultSplash)</visible>
             <visible>![String.IsEqual(Skin.String(startup-screentype),image)+!String.IsEmpty(Skin.String(startup-imagepath))] +

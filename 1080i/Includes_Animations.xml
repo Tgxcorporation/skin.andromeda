@@ -574,6 +574,12 @@
             <effect type="slide" start="0,0" end="0,186" time="150" delay="0" tween="circle" easing="inout"/>
         </animation>
     </include>
+    <include name="FacadeFocusCustomTransparencyOverlayAnimation">
+        <animation type="Conditional" reversible="true"
+                   condition="control.hasfocus(8998)|control.hasfocus(8997)">
+            <effect type="slide" start="0,0" end="0,186" time="150" delay="0" tween="circle" easing="inout"/>
+        </animation>
+    </include>
     <include name="unfocusAnimation">
         <animation effect="fade" start="100" end="50" time="0" condition="true">Conditional</animation>
     </include>

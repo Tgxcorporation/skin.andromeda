@@ -1,37 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window type="window" id="1121">
-    <defaultcontrol always="true">50</defaultcontrol>
+    <defaultcontrol always="true">9007</defaultcontrol>
     <controls>
         <include>Fanart_Art</include>
         <include>Player_Show</include>
         <control type="image">
+            <include>FacadeFocusCustomTransparencyOverlayAnimation</include>
             <include>OverlayTransparency</include>
             <posx>0</posx>
-            <posy>0</posy>
+            <posy>-186</posy>
             <width>1920</width>
-            <height>850</height>
+            <height>1036</height>
             <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
             <texture>common/overlay.png</texture>
         </control>
         <control type="image">
             <include>OverlayTransparencyWhite</include>
+            <include>FacadeFocusCustomTransparencyOverlayAnimation</include>
             <posx>0</posx>
-            <posy>0</posy>
+            <posy>-186</posy>
             <width>1920</width>
-            <height>850</height>
+            <height>1036</height>
             <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
             <texture>common/WhiteDot.png</texture>
         </control>
         <control type="image">
             <include>OverlayTransparencyBlack</include>
+            <include>FacadeFocusCustomTransparencyOverlayAnimation</include>
             <posx>0</posx>
-            <posy>0</posy>
+            <posy>-186</posy>
             <width>1920</width>
-            <height>850</height>
+            <height>1036</height>
             <texture>common/BlackDot.png</texture>
         </control>
         <control type="group">
             <include>OpenClose</include>
+            <include>FacadeFocusCustomTransparencyOverlayAnimation</include>
             <control type="group">
                 <animation effect="slide" tween="circle" easing="inout" time="150" start="0,0" end="660,0" condition="true">Conditional</animation>
                 <control type="image">
@@ -54,7 +58,12 @@
                 <control type="group">
                     <posy>15</posy>
                     <control type="label">
-                        <include>WindowTitle</include>
+                        <posx>TextMargin</posx>
+                        <posy>23</posy>
+                        <width>1200</width>
+                        <aligny>top</aligny>
+                        <font>WindowTitleFont</font>
+                        <include>TextColor_AlternateColor</include>
                         <label>$LOCALIZE[31921]</label>
                     </control>
                     <control type="panel" id="9003">
@@ -62,7 +71,8 @@
                         <posy>86</posy>
                         <width>1200</width>
                         <height>60</height>
-                        <ondown>50</ondown>
+                        <onup>8997</onup>
+                        <ondown>9007</ondown>
                         <onleft>9000</onleft>
                         <itemlayout width="1340" height="60">
                             <control type="label">
@@ -202,7 +212,7 @@
                     <width>1920</width>
                     <height>665</height>
                     <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-                    <texture border="10">common/overlay_dialog_gradient.png</texture>
+                    <texture border="5">$VAR[Picked.Overlay]</texture>
                 </control>
                 <control type="image">
                     <posx>0</posx>x
@@ -217,7 +227,7 @@
                 <height>1080</height>
                 <animation effect="slide" tween="circle" easing="inout" time="150" start="0,0" end="660,186" condition="true">Conditional</animation>
                 <include>Facade_Fade</include>
-                <control type="panel" id="50">
+                <control type="panel" id="9007">
                     <posx>0</posx>
                     <posy>0</posy>
                     <width>1920</width>
@@ -225,24 +235,11 @@
                     <pagecontrol>60</pagecontrol>
                     <onleft>9000</onleft>
                     <onup>9003</onup>
-                    <ondown>9006</ondown>
+                    <ondown>9101</ondown>
                     <preloaditems>4</preloaditems>
-                    <itemlayout height="160" width="1920">
-                        <include content="ThumbsImages">
-                            <param name="visible" value="true"/>
-                            <param name="x" value="70"/>
-                            <param name="y" value="10"/>
-                            <param name="width" value="150"/>
-                            <param name="height" value="150"/>
-                            <param name="aspectratio" value="keep"/>
-                            <param name="align" value="center"/>
-                            <param name="aligny" value="top"/>
-                            <param name="flipy" value="false"/>
-                            <param name="texturediffuse" value="ThumbsUnfocusedColor"/>
-                            <param name="borderdiffuse" value="BorderUnfocusedColor"/>
-                        </include>
+                    <itemlayout height="80" width="1920">
                         <control type="label">
-                            <posx>290</posx>
+                            <posx>70</posx>
                             <posy>35</posy>
                             <height>50</height>
                             <width>1560</width>
@@ -251,30 +248,17 @@
                             <label>$INFO[ListItem.Label]: $INFO[ListItem.Label2]</label>
                         </control>
                     </itemlayout>
-                    <focusedlayout height="160" width="1920">
+                    <focusedlayout height="80" width="1920">
                         <control type="group">
                             <include>ListFocusAnimation</include>
-                            <include content="ThumbsImages">
-                                <param name="visible" value="true"/>
-                                <param name="x" value="70"/>
-                                <param name="y" value="10"/>
-                                <param name="width" value="150"/>
-                                <param name="height" value="150"/>
-                                <param name="aspectratio" value="keep"/>
-                                <param name="align" value="center"/>
-                                <param name="aligny" value="top"/>
-                                <param name="flipy" value="false"/>
-                                <param name="texturediffuse" value="ThumbsFocusedColor"/>
-                                <param name="borderdiffuse" value="$VAR[Picked.HighLight.Color]"/>
-                            </include>
                             <include content="FocusedIndicatorVertical">
-                                <param name="x" value="270"/>
+                                <param name="x" value="50"/>
                                 <param name="y" value="35"/>
                                 <param name="height" value="45"/>
                                 <param name="visible" value="true"/>
                             </include>
                             <control type="label">
-                                <posx>290</posx>
+                                <posx>70</posx>
                                 <posy>35</posy>
                                 <height>50</height>
                                 <width>1560</width>
@@ -391,7 +375,6 @@
                                 !Skin.HasSetting(OverlayTransparencyWhite90)+
                                 !Skin.HasSetting(OverlayTransparencyWhite100)
                                 ]</visible>
-                            <visible>Skin.HasSetting(OverlayTransparencyWhite00)</visible>
                             <label>$LOCALIZE[31928]</label>
                             <label2>0%</label2>
                             <include>SkinResetOverlayTransparencyWhite</include>
@@ -559,6 +542,33 @@
                         </item>
                     </content>
                 </control>
+                <!--RESET-->
+                <control type="group">
+                   <!-- default -->
+                    <control type="button" id="9101">
+                        <posx>50</posx>
+                        <posy>400</posy>
+                        <label>$LOCALIZE[31920]</label>
+                        <include>ListFocusAnimation</include>
+                        <width>1500</width>
+                        <height>45</height>
+                        <radioposx>10</radioposx>
+                        <radioposy>-5</radioposy>
+                        <textwidth>1100</textwidth>
+                        <font>WindowTitleSubFont</font>
+                        <include>LeftMenuButton</include>
+                        <onleft>9000</onleft>
+                        <ondown>9006</ondown>
+                        <onup>9007</onup>
+                        <include>SkinResetOverlayTransparencyHeader</include>
+                        <include>SkinResetOverlayTransparency</include>
+                        <include>SkinResetOverlayTransparencyWhite</include>
+                        <include>SkinResetOverlayTransparencyBlack</include>
+                        <include>SkinResetOverlayTransparencyLeftMenu</include>
+                        <include>SkinResetOverlayTransparencyOSD</include>
+                        <include>SkinResetOverlayTransparencyDialog</include>
+                    </control>
+                </control>
             </control>
             <!-- SIDE MENU -->
             <control type="group">
@@ -594,7 +604,7 @@
                     <itemgap>0</itemgap>
                     <orientation>vertical</orientation>
                     <pagecontrol>9060</pagecontrol>
-                    <onright>50</onright>
+                    <onright>9007</onright>
                     <align>center</align>
                     <ondown>9005</ondown>
                     <control type="panel" id="9004">
@@ -917,7 +927,7 @@
                     <width>580</width>
                     <height>60</height>
                     <onleft>9000</onleft>
-                    <onup>50</onup>
+                    <onup>9101</onup>
                     <ondown>9005</ondown>
                     <itemlayout width="580" height="60">
                         <control type="label">
@@ -1048,5 +1058,60 @@
             <include>WindowClosingButton</include>
         </control>
         <include>NowPlaying</include>
+        <!--<control type="image">-->
+            <!--<include>TopBarVisibleFadeEffectOverlay</include>-->
+            <!--<posx>0</posx>-->
+            <!--<posy>0</posy>-->
+            <!--<width>1920</width>-->
+            <!--<height>1080</height>-->
+            <!--<colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>-->
+            <!--<texture border="3">common/overlay_dialog.png</texture>-->
+        <!--</control>-->
+        <!--<control type="image">-->
+            <!--<include>TopBarVisibleFadeEffectOverlay</include>-->
+            <!--<include>OverlayTransparencyTopbar</include>-->
+            <!--<posx>0</posx>-->
+            <!--<posy>0</posy>-->
+            <!--<width>1920</width>-->
+            <!--<height>187</height>-->
+            <!--<colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>-->
+            <!--<texture border="3">common/overlay_topbar_gradient.png</texture>-->
+        <!--</control>-->
+        <!--<control type="image">-->
+            <!--<include>TopBarVisibleFadeEffectOverlay</include>-->
+            <!--<posx>0</posx>-->
+            <!--<posy>185</posy>-->
+            <!--<width>1920</width>-->
+            <!--<height>2</height>-->
+            <!--<colordiffuse>$VAR[Picked.HighLight.Color]</colordiffuse>-->
+            <!--<texture border="2,0,2,0">common/line_white_horizontal.png</texture>-->
+        <!--</control>-->
+        <!--<control type="button" id="8998">-->
+            <!--<include>TopBarVisibleFadeEffect</include>-->
+            <!--<description>Fake button for mouse control</description>-->
+            <!--<posx>-1920</posx>-->
+            <!--<posy>0</posy>-->
+            <!--<width>1130</width>-->
+            <!--<height>210</height>-->
+            <!--<label>-</label>-->
+            <!--<font>-</font>-->
+            <!--<texturenofocus>-</texturenofocus>-->
+            <!--<texturefocus>-</texturefocus>-->
+            <!--<visible>true</visible>-->
+            <!--<onfocus>SetFocus(9900)</onfocus>-->
+        <!--</control>-->
+        <!--<control type="button" id="8997">-->
+            <!--<description>Fake button for mouse control</description>-->
+            <!--<posx>0</posx>-->
+            <!--<posy>0</posy>-->
+            <!--<width>50</width>-->
+            <!--<height>186</height>-->
+            <!--<label>-</label>-->
+            <!--<font>-</font>-->
+            <!--<texturenofocus>-</texturenofocus>-->
+            <!--<texturefocus>-</texturefocus>-->
+            <!--<visible>true</visible>-->
+            <!--<onfocus>SetFocus(9900)</onfocus>-->
+        <!--</control>-->
     </controls>
 </window>

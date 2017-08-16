@@ -811,7 +811,11 @@ msgctxt "#31910"
 msgid "Maps"
 msgstr ""
 
-#empty strings from id 31910 to 31921
+#empty strings from id 31910 to 31920
+
+msgctxt "#31920"
+msgid "Reset transparency settings to default"
+msgstr ""
 
 msgctxt "#31921"
 msgid "Transparency management"
