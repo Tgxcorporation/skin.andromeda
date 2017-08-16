@@ -13,7 +13,7 @@
                 <width>1920</width>
                 <height>215</height>
                 <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-                <texture border="10">common/overlay_dialog_gradient.png</texture>
+                <texture border="5">common/overlay_dialog_gradient.png</texture>
             </control>
             <control type="image">
                 <animation effect="slide" start="0,0" end="0,100" time="150" delay="0" tween="circle" easing="inout" condition="control.hasfocus(505051)|controlGroup(9900).Hasfocus">Conditional</animation>

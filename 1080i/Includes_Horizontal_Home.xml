@@ -23,7 +23,7 @@
                     <width>1920</width>
                     <height>3500</height>
                     <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-                    <texture border="10">common/overlay_dialog_gradient.png</texture>
+                    <texture border="5">common/overlay_dialog_gradient.png</texture>
                 </control>
                 <control type="image">
                     <visible>!control.isvisible(378433)</visible>

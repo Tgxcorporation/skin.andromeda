@@ -20,7 +20,7 @@
                 <width>1920</width>
                 <height>215</height>
                 <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-                <texture border="10">common/overlay_dialog_gradient.png</texture>
+                <texture border="5">common/overlay_dialog_gradient.png</texture>
             </control>
             <control type="image">
                 <posx>0</posx>x

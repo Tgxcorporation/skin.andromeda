@@ -47,7 +47,7 @@
             <width>1286</width>
             <height>743</height>
             <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-            <texture border="10">common/overlay_dialog_gradient.png</texture>
+            <texture border="5">common/overlay_dialog_gradient.png</texture>
         </control>
         <control type="image">
             <posx>532</posx>
