@@ -1137,7 +1137,6 @@
                     [String.IsEqual(ListItem.Icon,)+[Window.IsActive(DialogPVRGuideOSD.xml)|Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)|Window.IsActive(MyPVRGuide.xml)|Window.IsActive(MyPVRRecordings.xml)|Window.IsActive(MyPVRSearch.xml)|Window.IsActive(MyPVRTimers.xml)]]|
                     [ListItem.IsParentFolder]
                     ]</visible>
-                <include>Icon_Fade</include>
                 <posx>$PARAM[x]</posx>
                 <posy>$PARAM[y]</posy>
                 <width>$PARAM[width]</width>
@@ -1151,7 +1150,6 @@
             <control type="image">
                 <visible>Skin.HasSetting(EnableFrameHighlight)</visible>
                 <visible>$PARAM[visibleFrameHighlight]</visible>
-                <include>Icon_Fade</include>
                 <posx>$PARAM[x]</posx>
                 <posy>$PARAM[y]</posy>
                 <width>$PARAM[width]</width>
@@ -1173,7 +1171,6 @@
                     [!String.IsEmpty(ListItem.thumb)+!String.StartsWith(ListItem.thumb,Default)]|
                     [!String.IsEmpty(ListItem.Art(thumb))+!String.StartsWith(ListItem.Art(thumb),Default)]
                     ]</visible>
-                <include>Icon_Fade</include>
                 <posx>$PARAM[x]</posx>
                 <posy>$PARAM[y]</posy>
                 <width>$PARAM[width]</width>
@@ -1186,7 +1183,6 @@
             <control type="image">
                 <visible>Skin.HasSetting(EnableFrameHighlight)</visible>
                 <visible>$PARAM[visibleFrameHighlight]</visible>
-                <include>Icon_Fade</include>
                 <posx>$PARAM[x]</posx>
                 <posy>$PARAM[y]</posy>
                 <width>$PARAM[width]</width>
@@ -1216,7 +1212,6 @@
                     [!String.IsEmpty(ListItem.thumb)+!String.StartsWith(ListItem.thumb,Default)]|
                     [!String.IsEmpty(ListItem.Art(thumb))+!String.StartsWith(ListItem.Art(thumb),Default)]
                     ]</visible>
-                <include>Icon_Fade</include>
                 <posx>$PARAM[x]</posx>
                 <posy>$PARAM[y]</posy>
                 <width>$PARAM[width]</width>
@@ -1230,7 +1225,6 @@
             <control type="image">
                 <visible>Skin.HasSetting(EnableFrameHighlight)</visible>
                 <visible>$PARAM[visibleFrameHighlight]</visible>
-                <include>Icon_Fade</include>
                 <posx>$PARAM[x]</posx>
                 <posy>$PARAM[y]</posy>
                 <width>$PARAM[width]</width>
@@ -1255,7 +1249,6 @@
                     [String.IsEqual(ListItem.Icon,)+[Window.IsActive(DialogPVRGuideOSD.xml)|Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)|Window.IsActive(MyPVRGuide.xml)|Window.IsActive(MyPVRRecordings.xml)|Window.IsActive(MyPVRSearch.xml)|Window.IsActive(MyPVRTimers.xml)]]|
                     [ListItem.IsParentFolder]
                     ]</visible>
-                <include>Icon_Fade</include>
                 <posx>$PARAM[x]</posx>
                 <posy>$PARAM[y]</posy>
                 <width>$PARAM[width]</width>
@@ -1276,7 +1269,6 @@
                     [!String.IsEmpty(ListItem.thumb)+!String.StartsWith(ListItem.thumb,Default)]|
                     [!String.IsEmpty(ListItem.Art(thumb))+!String.StartsWith(ListItem.Art(thumb),Default)]
                     ]</visible>
-                <include>Icon_Fade</include>
                 <posx>$PARAM[x]</posx>
                 <posy>$PARAM[y]</posy>
                 <width>$PARAM[width]</width>
@@ -1304,7 +1296,6 @@
                     [!String.IsEmpty(ListItem.thumb)+!String.StartsWith(ListItem.thumb,Default)]|
                     [!String.IsEmpty(ListItem.Art(thumb))+!String.StartsWith(ListItem.Art(thumb),Default)]
                     ]</visible>
-                <include>Icon_Fade</include>
                 <posx>$PARAM[x]</posx>
                 <posy>$PARAM[y]</posy>
                 <width>$PARAM[width]</width>
@@ -1344,7 +1335,6 @@
             <control type="image">
                 <visible>Skin.HasSetting(EnableFrameHighlight)</visible>
                 <visible>$PARAM[visibleFrameHighlight]</visible>
-                <include>Icon_Fade</include>
                 <posx>$PARAM[x]</posx>
                 <posy>$PARAM[y]</posy>
                 <width>$PARAM[width]</width>
