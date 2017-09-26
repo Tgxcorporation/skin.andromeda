@@ -2,6 +2,7 @@
 <window>
     <defaultcontrol always="true">50</defaultcontrol>
     <views>50,52,55,58,5050,53,54,51</views>
+    <onload condition="Skin.HasSetting(StopPlaybackOnMenu)">PlayerControl(stop)</onload>
     <controls>
         <include>Fanart_Art</include>
         <control type="multiimage">

@@ -3,6 +3,7 @@
     <defaultcontrol>10</defaultcontrol>
     <menucontrol>9000</menucontrol>
     <views>10,11,12,13</views>
+    <onload condition="Skin.HasSetting(StopPlaybackOnMenu)">PlayerControl(stop)</onload>
     <controls>
         <include>Fanart_Art</include>
         <include>Player_Show</include>
