@@ -124,7 +124,7 @@
                 </control>
                 <control type="group">
                     <control type="group" id="9110">
-                        <!-- SKIN SETTINGS-->
+                        <!-- GENERAL-->
                         <control type="panel" id="9001">
                             <visible>Container(9000).HasFocus(1)</visible>
                             <include>Icon_Fade</include>
@@ -1414,6 +1414,18 @@
                                     <label>$LOCALIZE[31045]</label>
                                     <label2>-</label2>
                                     <onclick>ActivateWindow(1115)</onclick>
+                                </item>
+                                <item id="60">
+                                    <visible>Skin.HasSetting(VerticalHome)</visible>
+                                    <label>$LOCALIZE[31994]</label>
+                                    <label2>$LOCALIZE[107]</label2>
+                                    <onclick>Skin.ToggleSetting(VerticalHome)</onclick>
+                                </item>
+                                <item id="60">
+                                    <visible>!Skin.HasSetting(VerticalHome)</visible>
+                                    <label>$LOCALIZE[31994]</label>
+                                    <label2>$LOCALIZE[106]</label2>
+                                    <onclick>Skin.ToggleSetting(VerticalHome)</onclick>
                                 </item>
                                 <item id="61">
                                     <visible>Skin.HasSetting(Home_DefaultBG)</visible>

@@ -19,6 +19,7 @@
     <include file="Includes_Home_Common.xml"/>
     <include file="Includes_Home_Common_Plexbmc.xml"/>
     <include file="Includes_Horizontal_Home.xml"/>
+    <include file="Includes_Vertical_Home.xml"/>
     <include file="Includes_Shelf_Plexbmc_Contents.xml"/>
     <include file="Includes_PVR.xml"/>
     <include file="Includes_Weather.xml"/>
@@ -839,9 +840,9 @@
     </include>
     <include name="LeftMenuScroller">
         <control type="scrollbar" id="9060">
-            <animation effect="slide" tween="circle" easing="inout" time="150" start="0,0" end="0,-800" condition="$EXP[LeftMenuHasFocus]">Conditional</animation>
+            <animation effect="slide" tween="circle" easing="inout" time="150" start="0,0" end="660,0" condition="$EXP[LeftMenuHasFocus]">Conditional</animation>
             <include>OpenClose</include>
-            <posx>0</posx>
+            <posx>-51</posx>
             <posy>120</posy>
             <height>800</height>
             <include>VerticalScroller</include>
@@ -882,6 +883,7 @@
         <pagecontrol>9060</pagecontrol>
         <onright>9060</onright>
         <onup>505051</onup>
+        <onleft>505051</onleft>
         <onleft>505051</onleft>
         <align>center</align>
     </include>
@@ -1503,12 +1505,17 @@
             <height>$PARAM[height]</height>
             <width>$PARAM[width]</width>
             <onclick>noop</onclick>
-            <label>-</label>
-            <font>-</font>
-            <texturenofocus>-</texturenofocus>
-            <texturefocus>-</texturefocus>
+            <include>DummyButtonInclude</include>
             <onfocus>$PARAM[onfocus]</onfocus>
         </control>
+    </include>
+    <include name="DummyButtonInclude">
+        <label>-</label>
+        <font>-</font>
+        <!--<texturenofocus>common/BlackDotT.png</texturenofocus>-->
+        <!--<texturefocus>common/BlackDot.png</texturefocus>-->
+        <texturenofocus>-</texturenofocus>
+        <texturefocus>-</texturefocus>
     </include>
     <include name="TextboxAlignment">
         <align>justify</align>

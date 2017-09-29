@@ -55,7 +55,7 @@
                     </control>
                     <control type="label">
                         <include>WindowTitleSub</include>
-                        <label>$VAR[Widget700011Visibility]$VAR[HomeSubTitles]</label>
+                        <label>$VAR[HomeSubTitles]</label>
                     </control>
                     <include>Time</include>
                 </control>

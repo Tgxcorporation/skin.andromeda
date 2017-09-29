@@ -10,6 +10,8 @@
         <!--DUMMY BUTTON-->
         <control type="button" id="378433">
             <visible>[
+                control.hasfocus(60)|
+                control.hasfocus(899900)|
                 control.hasfocus(212)|
                 control.hasfocus(311)|
                 control.hasfocus(312)|
@@ -50,7 +52,8 @@
         <include>Fanart_Art</include>
         <include>Player_Show</include>
         <include>OverlayFull</include>
-        <include>Horizontal_Home_Layout</include>
+        <include condition="Skin.HasSetting(VerticalHome)">Vertical_Home_Layout</include>
+        <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Home_Layout</include>
         <include>NowPlaying</include>
         <include>TopBar</include>
     </controls>

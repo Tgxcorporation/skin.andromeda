@@ -62,10 +62,11 @@
                     <label>$SKINSHORTCUTS[title]</label>
                 </control>
                 <control type="list" id="70001$SKINSHORTCUTS[mainmenuid]">
-                    <skinshortcuts>visibility</skinshortcuts>
+                    <!--<skinshortcuts>visibility</skinshortcuts>-->
                     <onright>70001$SKINSHORTCUTS[mainmenuid]</onright>
                     <onup>300</onup>
                     <ondown>70002$SKINSHORTCUTS[mainmenuid]</ondown>
+                    <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
                     <onleft>70001$SKINSHORTCUTS[mainmenuid]</onleft>
                     <include content="Widget_$SKINSHORTCUTS[gfxType]">
                         <param name="id" value="70001$SKINSHORTCUTS[mainmenuid]"/>
@@ -187,6 +188,7 @@
                     <onright>70002$SKINSHORTCUTS[mainmenuid]</onright>
                     <onup>70001$SKINSHORTCUTS[mainmenuid]</onup>
                     <ondown>70003$SKINSHORTCUTS[mainmenuid]</ondown>
+                    <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
                     <onleft>70002$SKINSHORTCUTS[mainmenuid]</onleft>
                     <include content="Widget_$SKINSHORTCUTS[gfxType]">
                         <param name="id" value="70002$SKINSHORTCUTS[mainmenuid]"/>
@@ -306,6 +308,7 @@
                     <onright>70003$SKINSHORTCUTS[mainmenuid]</onright>
                     <onup>70002$SKINSHORTCUTS[mainmenuid]</onup>
                     <ondown>70004$SKINSHORTCUTS[mainmenuid]</ondown>
+                    <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
                     <onleft>70003$SKINSHORTCUTS[mainmenuid]</onleft>
                     <include content="Widget_$SKINSHORTCUTS[gfxType]">
                         <param name="id" value="70003$SKINSHORTCUTS[mainmenuid]"/>
@@ -425,6 +428,7 @@
                     <onright>70004$SKINSHORTCUTS[mainmenuid]</onright>
                     <onup>70003$SKINSHORTCUTS[mainmenuid]</onup>
                     <ondown>70005$SKINSHORTCUTS[mainmenuid]</ondown>
+                    <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
                     <onleft>70004$SKINSHORTCUTS[mainmenuid]</onleft>
                     <include content="Widget_$SKINSHORTCUTS[gfxType]">
                         <param name="id" value="70004$SKINSHORTCUTS[mainmenuid]"/>
@@ -544,6 +548,7 @@
                     <onright>70005$SKINSHORTCUTS[mainmenuid]</onright>
                     <onup>70004$SKINSHORTCUTS[mainmenuid]</onup>
                     <ondown>70005$SKINSHORTCUTS[mainmenuid]</ondown>
+                    <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
                     <onleft>70005$SKINSHORTCUTS[mainmenuid]</onleft>
                     <include content="Widget_$SKINSHORTCUTS[gfxType]">
                         <param name="id" value="70005$SKINSHORTCUTS[mainmenuid]"/>

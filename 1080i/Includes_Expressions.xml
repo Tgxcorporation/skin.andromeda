@@ -60,4 +60,10 @@
     <expression name="LeftMenuHasFocus">
         control.isvisible(9000)+[ControlGroup(9000).HasFocus()|Control.HasFocus(8999)|Control.HasFocus(9060)]
     </expression>
+    <expression name="LeftHomeMenuHasFocus">
+        [Control.HasFocus(300)|Control.HasFocus(9001)|Control.HasFocus(8999)|Control.HasFocus(9060)]
+    </expression>
+    <expression name="LeftHomeSubMenuHasFocus">
+        [Control.HasFocus(9001)|Control.HasFocus(89990)|Control.HasFocus(9061)]
+    </expression>
 </includes>
