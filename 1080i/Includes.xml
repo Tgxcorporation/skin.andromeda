@@ -229,7 +229,8 @@
             <ondown condition="Window.isactive(CustomStartupWindow.xml)">9001</ondown>
             <ondown condition="window.isactive(FileManager.xml)">20</ondown>
             <ondown condition="Window.IsActive(DialogMediaSource.xml)|Window.IsActive(FileBrowser.xml)">9001</ondown>
-            <ondown condition="Window.IsActive(Home.xml)">9001</ondown>
+            <ondown condition="Window.IsActive(Home.xml)+!Skin.HasSetting(VerticalHome)">9001</ondown>
+            <ondown condition="Window.IsActive(Home.xml)+Skin.HasSetting(VerticalHome)">300</ondown>
             <ondown condition="Window.IsActive(DialogContentSettings.xml)">21</ondown>
             <ondown condition="Window.IsActive(SettingsCategory.xml)">3</ondown>
             <ondown condition="Window.IsActive(DialogAddonSettings.xml)">9</ondown>
