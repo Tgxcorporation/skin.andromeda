@@ -266,7 +266,7 @@
         <orientation>horizontal</orientation>
         <preloaditems>4</preloaditems>
         <itemlayout height="600" width="325">
-            <include content="ThumbsImages">
+            <include content="WidgetImages">
                 <param name="visible" value="true"/>
                 <param name="visibleFrameHighlight" value="false"/>
                 <param name="x" value="70"/>
@@ -343,7 +343,7 @@
         <focusedlayout height="600" width="325">
             <control type="group">
                 <include>ButtonFocusAnimation</include>
-                <include content="ThumbsImages">
+                <include content="WidgetImages">
                     <param name="visible" value="control.hasfocus($PARAM[id])"/>
                     <param name="visibleFrameHighlight" value="control.hasfocus($PARAM[id])"/>
                     <param name="x" value="70"/>
@@ -357,7 +357,7 @@
                     <param name="texturediffuse" value="ThumbsFocusedColor"/>
                     <param name="borderdiffuse" value="$VAR[Picked.HighLight.Color]"/>
                 </include>
-                <include content="ThumbsImages">
+                <include content="WidgetImages">
                     <param name="visible" value="!control.hasfocus($PARAM[id])"/>
                     <param name="visibleFrameHighlight" value="false"/>
                     <param name="x" value="70"/>
@@ -473,7 +473,7 @@
         <preloaditems>4</preloaditems>
         <orientation>horizontal</orientation>
         <itemlayout height="511" width="393">
-            <include content="ThumbsImages">
+            <include content="WidgetImages">
                 <param name="visible" value="true"/>
                 <param name="visibleFrameHighlight" value="false"/>
                 <param name="x" value="70"/>
@@ -538,7 +538,7 @@
         <focusedlayout height="511" width="393">
             <control type="group">
                 <include>ButtonFocusAnimation</include>
-                <include content="ThumbsImages">
+                <include content="WidgetImages">
                     <param name="visible" value="control.hasfocus($PARAM[id])"/>
                     <param name="visibleFrameHighlight" value="control.hasfocus($PARAM[id])"/>
                     <param name="x" value="70"/>
@@ -552,7 +552,7 @@
                     <param name="texturediffuse" value="ThumbsFocusedColor"/>
                     <param name="borderdiffuse" value="$VAR[Picked.HighLight.Color]"/>
                 </include>
-                <include content="ThumbsImages">
+                <include content="WidgetImages">
                     <param name="visible" value="!control.hasfocus($PARAM[id])"/>
                     <param name="visibleFrameHighlight" value="false"/>
                     <param name="x" value="70"/>
@@ -656,7 +656,7 @@
         <preloaditems>4</preloaditems>
         <orientation>horizontal</orientation>
         <itemlayout height="408" width="505">
-            <include content="ThumbsImages">
+            <include content="WidgetImages">
                 <param name="visible" value="true"/>
                 <param name="visibleFrameHighlight" value="false"/>
                 <param name="x" value="70"/>
@@ -721,7 +721,7 @@
         <focusedlayout height="408" width="505">
             <control type="group">
                 <include>ButtonFocusAnimation</include>
-                <include content="ThumbsImages">
+                <include content="WidgetImages">
                     <param name="visible" value="control.hasfocus($PARAM[id])"/>
                     <param name="visibleFrameHighlight" value="control.hasfocus($PARAM[id])"/>
                     <param name="x" value="70"/>
@@ -735,7 +735,7 @@
                     <param name="texturediffuse" value="ThumbsFocusedColor"/>
                     <param name="borderdiffuse" value="$VAR[Picked.HighLight.Color]"/>
                 </include>
-                <include content="ThumbsImages">
+                <include content="WidgetImages">
                     <param name="visible" value="!control.hasfocus($PARAM[id])"/>
                     <param name="visibleFrameHighlight" value="false"/>
                     <param name="x" value="70"/>
@@ -839,7 +839,7 @@
         <preloaditems>4</preloaditems>
         <orientation>horizontal</orientation>
         <itemlayout height="450" width="439">
-            <include content="ThumbsImages">
+            <include content="WidgetImages">
                 <param name="visible" value="true"/>
                 <param name="visibleFrameHighlight" value="false"/>
                 <param name="x" value="70"/>
@@ -904,7 +904,7 @@
         <focusedlayout height="450" width="439">
             <control type="group">
                 <include>ButtonFocusAnimation</include>
-                <include content="ThumbsImages">
+                <include content="WidgetImages">
                     <param name="visible" value="control.hasfocus($PARAM[id])"/>
                     <param name="visibleFrameHighlight" value="control.hasfocus($PARAM[id])"/>
                     <param name="x" value="70"/>
@@ -918,7 +918,7 @@
                     <param name="texturediffuse" value="ThumbsFocusedColor"/>
                     <param name="borderdiffuse" value="$VAR[Picked.HighLight.Color]"/>
                 </include>
-                <include content="ThumbsImages">
+                <include content="WidgetImages">
                     <param name="visible" value="!control.hasfocus($PARAM[id])"/>
                     <param name="visibleFrameHighlight" value="false"/>
                     <param name="x" value="70"/>

@@ -1240,6 +1240,34 @@
             </control>
         </control>
     </include>
+    <include name="WidgetImages">
+        <control type="group">
+            <visible>$PARAM[visible]</visible>
+            <!--NORMAL-->
+            <control type="image">
+                <posx>$PARAM[x]</posx>
+                <posy>$PARAM[y]</posy>
+                <width>$PARAM[width]</width>
+                <height>$PARAM[height]</height>
+                <aspectratio align="$PARAM[align]" aligny="$PARAM[aligny]">$PARAM[aspectratio]</aspectratio>
+                <texture background="true" flipx="$PARAM[flipx]" colordiffuse="$PARAM[texturediffuse]" fallback="defaultWidgetBig.png">$VAR[Thumbs]</texture>
+                <bordertexture border="2" colordiffuse="$PARAM[borderdiffuse]">common/frame_focus.png</bordertexture>
+                <bordersize>2</bordersize>
+            </control>
+            <control type="image">
+                <visible>Skin.HasSetting(EnableFrameHighlight)</visible>
+                <visible>$PARAM[visibleFrameHighlight]</visible>
+                <posx>$PARAM[x]</posx>
+                <posy>$PARAM[y]</posy>
+                <width>$PARAM[width]</width>
+                <height>$PARAM[height]</height>
+                <aspectratio align="$PARAM[align]" aligny="$PARAM[aligny]">scale</aspectratio>
+                <texture background="true" flipx="$PARAM[flipx]" colordiffuse="00ffffff" fallback="defaultWidgetBig.png">$VAR[Thumbs]</texture>
+                <bordertexture border="2,50,2,50" colordiffuse="$PARAM[borderdiffuse]">common/frame_highlight.png</bordertexture>
+                <bordersize>2,50,2,50</bordersize>
+            </control>
+        </control>
+    </include>
     <include name="ThumbsImagesSmall">
         <control type="group">
             <visible>$PARAM[visible]</visible>
