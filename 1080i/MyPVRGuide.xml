@@ -62,7 +62,7 @@
                                     <posy>0</posy>
                                     <width>70</width>
                                     <height>75</height>
-                                    <texture background="true" fallback="defaultChannelTvBig.png">$INFO[ListItem.Icon]</texture>
+                                    <texture background="true" fallback="defaultChannelTvBig_43.png">$INFO[ListItem.Icon]</texture>
                                     <colordiffuse>ThumbsUnfocusedColor</colordiffuse>
                                     <aspectratio>keep</aspectratio>
                                     <bordertexture border="2" colordiffuse="BorderUnfocusedColor">common/frame_focus.png</bordertexture>
@@ -74,7 +74,7 @@
                                     <posy>0</posy>
                                     <width>70</width>
                                     <height>75</height>
-                                    <texture background="true" fallback="DefaultRadioBig.png">$INFO[ListItem.Icon]</texture>
+                                    <texture background="true" fallback="defaultChannelRadioBig_43.png">$INFO[ListItem.Icon]</texture>
                                     <colordiffuse>ThumbsUnfocusedColor</colordiffuse>
                                     <aspectratio>keep</aspectratio>
                                     <bordertexture border="2" colordiffuse="BorderUnfocusedColor">common/frame_focus.png</bordertexture>
@@ -101,7 +101,7 @@
                                         <posy>0</posy>
                                         <width>70</width>
                                         <height>75</height>
-                                        <texture background="true" fallback="defaultChannelTvBig.png">$INFO[ListItem.Icon]</texture>
+                                        <texture background="true" fallback="defaultChannelTvBig_43.png">$INFO[ListItem.Icon]</texture>
                                         <colordiffuse>ThumbsFocusedColor</colordiffuse>
                                         <aspectratio>keep</aspectratio>
                                         <bordertexture border="2" colordiffuse="$VAR[Picked.HighLight.Color]">common/frame_focus.png</bordertexture>
@@ -113,7 +113,7 @@
                                         <posy>0</posy>
                                         <width>70</width>
                                         <height>75</height>
-                                        <texture background="true" fallback="DefaultRadioBig.png">$INFO[ListItem.Icon]</texture>
+                                        <texture background="true" fallback="defaultChannelRadioBig_43.png">$INFO[ListItem.Icon]</texture>
                                         <colordiffuse>ThumbsFocusedColor</colordiffuse>
                                         <aspectratio>keep</aspectratio>
                                         <bordertexture border="2" colordiffuse="$VAR[Picked.HighLight.Color]">common/frame_focus.png</bordertexture>

@@ -61,7 +61,10 @@
         <value condition="[Container.content(Genres)]">defaultGenreBig.png</value>
         <value condition="[Container.content(Playlists)]">defaultPlaylistBig.png</value>
         <value condition="[Container.content(movies)|Container.content(musicvideos)|Container.content(tvshows)|Container.content(episodes)|Container.Content(Seasons)]">defaultVideoBig.png</value>
-        <value condition="[Container.content(LiveTV)]">defaultChannelTvBig.png</value>
+        <value condition="String.IsEmpty(Window.Property(IsRadio))+[Container.content(LiveTV)]">defaultChannelTvBig_43.png</value>
+        <value condition="!String.IsEmpty(Window.Property(IsRadio))+[Container.content(LiveTV)]">defaultChannelRadioBig_43.png</value>
+        <value condition="String.IsEmpty(Window.Property(IsRadio))+[Window.IsActive(DialogPVRGuideOSD.xml)|Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)|Window.IsActive(MyPVRGuide.xml)|Window.IsActive(MyPVRRecordings.xml)|Window.IsActive(MyPVRSearch.xml)|Window.IsActive(MyPVRTimers.xml)]">defaultChannelTvBig_43.png</value>
+        <value condition="!String.IsEmpty(Window.Property(IsRadio))+[Window.IsActive(DialogPVRGuideOSD.xml)|Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)|Window.IsActive(MyPVRGuide.xml)|Window.IsActive(MyPVRRecordings.xml)|Window.IsActive(MyPVRSearch.xml)|Window.IsActive(MyPVRTimers.xml)]">defaultChannelRadioBig_43.png</value>
         <value condition="[Container.content(Addons)|Container.content(plugins)]">defaultExtensionBig.png</value>
         <value condition="[Container.content(Artists)|Container.content(Actors)|Container.content(directors)]">defaultArtistBig.png</value>
         <value condition="[Container.content(Albums)|Container.content(songs)]">defaultAudioBig.png</value>
