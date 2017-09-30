@@ -1,14 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
     <include name="Vertical_Home_Layout">
-        <control type="button" id="899900">
-            <description>Fake button for mouse control</description>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>1920</width>
-            <height>1080</height>
-            <include>DummyButtonInclude</include>
-            <!--<onfocus>SetFocus(700)</onfocus>-->
+        <control type="group">
+            <include>OpenCloseOverlay</include>
+            <control type="button" id="899900">
+                <description>Fake button for mouse control</description>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>1920</width>
+                <height>1080</height>
+                <onup>700</onup>
+                <ondown>700</ondown>
+                <onleft>300</onleft>
+                <onright>60</onright>
+                <include>DummyButtonInclude</include>
+                <!--<onfocus>SetFocus(700)</onfocus>-->
+            </control>
+            <control type="image">
+                <include>OverlayTransparency</include>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>1920</width>
+                <height>1080</height>
+                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                <texture border="5">common/overlay_dialog_gradient.png</texture>
+            </control>
         </control>
         <control type="grouplist" id="700">
             <posx>0</posx>
@@ -16,27 +32,13 @@
             <animation effect="slide" tween="circle" easing="inout" time="150" start="0,0" end="660,0" condition="$EXP[LeftHomeSubMenuHasFocus]">Conditional</animation>
             <pagecontrol>60</pagecontrol>
             <itemgap>0</itemgap>
-            <control type="group">
-                <include>OpenCloseOverlay</include>
-                <height>0</height>
-                <height>0</height>
-                <control type="image">
-                    <include>OverlayTransparency</include>
-                    <posx>0</posx>
-                    <posy>0</posy>
-                    <width>1920</width>
-                    <height>3500</height>
-                    <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-                    <texture border="5">common/overlay_dialog_gradient.png</texture>
-                </control>
-            </control>
             <include>WidgetsCollection</include>
         </control>
         <control type="scrollbar" id="60">
             <include>OpenClose</include>
             <posx>1870</posx>
-            <posy>330</posy>
-            <height>750</height>
+            <posy>0</posy>
+            <height>1080</height>
             <include>VerticalScroller</include>
             <onleft>700</onleft>
             <onright>60</onright>
@@ -284,7 +286,7 @@
                     <description>Fake button for mouse control</description>
                     <posx>0</posx>
                     <posy>0</posy>
-                    <width>30</width>
+                    <width>15</width>
                     <height>1080</height>
                     <include>DummyButtonInclude</include>
                     <onfocus>SetFocus(9001)</onfocus>

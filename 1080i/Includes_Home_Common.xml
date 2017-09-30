@@ -87,10 +87,8 @@
         <control type="button">
             <posx>0</posx>
             <posy>20</posy>
-            <width>73</width>
+            <width>140</width>
             <height>$PARAM[height]</height>
-            <texturefocus>-</texturefocus>
-            <texturenofocus>-</texturenofocus>
             <include>TextColor_AlternateColor</include>
             <font>FacadeListMainFontMat</font>
             <textoffsetx>10</textoffsetx>
@@ -99,14 +97,13 @@
             <aligny>top</aligny>
             <!--<label></label>-->
             <onclick>Control.Move($PARAM[id],-1)</onclick>
+            <include>DummyButtonInclude</include>
         </control>
         <control type="button">
             <posx>1770</posx>
             <posy>20</posy>
             <width>150</width>
             <height>$PARAM[height]</height>
-            <texturefocus>-</texturefocus>
-            <texturenofocus>-</texturenofocus>
             <include>TextColor_AlternateColor</include>
             <font>FacadeListMainFontMat</font>
             <textoffsetx>10</textoffsetx>
@@ -115,16 +112,15 @@
             <aligny>top</aligny>
             <!--<label></label>-->
             <onclick>Control.Move($PARAM[id],1)</onclick>
+            <include>DummyButtonInclude</include>
         </control>
     </include>
     <include name="Widget_NavButtons_Square">
         <control type="button">
             <posx>0</posx>
             <posy>20</posy>
-            <width>73</width>
+            <width>140</width>
             <height>$PARAM[height]</height>
-            <texturefocus>-</texturefocus>
-            <texturenofocus>-</texturenofocus>
             <include>TextColor_AlternateColor</include>
             <font>FacadeListMainFontMat</font>
             <textoffsetx>10</textoffsetx>
@@ -133,14 +129,13 @@
             <aligny>top</aligny>
             <!--<label></label>-->
             <onclick>Control.Move($PARAM[id],-1)</onclick>
+            <include>DummyButtonInclude</include>
         </control>
         <control type="button">
             <posx>1770</posx>
             <posy>20</posy>
             <width>150</width>
             <height>$PARAM[height]</height>
-            <texturefocus>-</texturefocus>
-            <texturenofocus>-</texturenofocus>
             <include>TextColor_AlternateColor</include>
             <font>FacadeListMainFontMat</font>
             <textoffsetx>10</textoffsetx>
@@ -149,16 +144,15 @@
             <aligny>top</aligny>
             <!--<label></label>-->
             <onclick>Control.Move($PARAM[id],1)</onclick>
+            <include>DummyButtonInclude</include>
         </control>
     </include>
     <include name="Widget_NavButtons_Episode">
         <control type="button">
             <posx>0</posx>
             <posy>20</posy>
-            <width>73</width>
+            <width>140</width>
             <height>$PARAM[height]</height>
-            <texturefocus>-</texturefocus>
-            <texturenofocus>-</texturenofocus>
             <include>TextColor_AlternateColor</include>
             <font>FacadeListMainFontMat</font>
             <textoffsetx>10</textoffsetx>
@@ -167,14 +161,13 @@
             <aligny>top</aligny>
             <!--<label></label>-->
             <onclick>Control.Move($PARAM[id],-1)</onclick>
+            <include>DummyButtonInclude</include>
         </control>
         <control type="button">
             <posx>1770</posx>
             <posy>20</posy>
             <width>150</width>
             <height>$PARAM[height]</height>
-            <texturefocus>-</texturefocus>
-            <texturenofocus>-</texturenofocus>
             <include>TextColor_AlternateColor</include>
             <font>FacadeListMainFontMat</font>
             <textoffsetx>10</textoffsetx>
@@ -183,16 +176,15 @@
             <aligny>top</aligny>
             <!--<label></label>-->
             <onclick>Control.Move($PARAM[id],1)</onclick>
+            <include>DummyButtonInclude</include>
         </control>
     </include>
     <include name="Widget_NavButtons_Channel">
         <control type="button">
             <posx>0</posx>
             <posy>20</posy>
-            <width>73</width>
+            <width>140</width>
             <height>$PARAM[height]</height>
-            <texturefocus>-</texturefocus>
-            <texturenofocus>-</texturenofocus>
             <include>TextColor_AlternateColor</include>
             <font>FacadeListMainFontMat</font>
             <textoffsetx>10</textoffsetx>
@@ -201,14 +193,13 @@
             <aligny>top</aligny>
             <!--<label></label>-->
             <onclick>Control.Move($PARAM[id],-1)</onclick>
+            <include>DummyButtonInclude</include>
         </control>
         <control type="button">
             <posx>1770</posx>
             <posy>20</posy>
             <width>150</width>
             <height>$PARAM[height]</height>
-            <texturefocus>-</texturefocus>
-            <texturenofocus>-</texturenofocus>
             <include>TextColor_AlternateColor</include>
             <font>FacadeListMainFontMat</font>
             <textoffsetx>10</textoffsetx>
@@ -217,6 +208,7 @@
             <aligny>top</aligny>
             <!--<label></label>-->
             <onclick>Control.Move($PARAM[id],1)</onclick>
+            <include>DummyButtonInclude</include>
         </control>
     </include>
     <include name="Widget">
