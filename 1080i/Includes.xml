@@ -1131,126 +1131,13 @@
     <include name="ThumbsImages">
         <control type="group">
             <visible>$PARAM[visible]</visible>
-            <!--EXCEPTIONS-->
-            <control type="image">
-                <visible>[
-                    [window.IsActive(LoginScreen.xml)+String.IsEqual(ListItem.Thumb,DefaultUser.png)]|
-                    [window.IsActive(CustomAddons.xml)]|
-                    [String.IsEqual(ListItem.thumb,special://home/addons/plugin.video.plexbmc/resources/thumb.png)]|
-                    [String.IsEqual(ListItem.Icon,)+!String.IsEmpty(Window.Property(IsRadio))]|
-                    [String.IsEqual(ListItem.Icon,)+[Window.IsActive(DialogPVRGuideOSD.xml)|Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)|Window.IsActive(MyPVRGuide.xml)|Window.IsActive(MyPVRRecordings.xml)|Window.IsActive(MyPVRSearch.xml)|Window.IsActive(MyPVRTimers.xml)]]|
-                    [ListItem.IsParentFolder]
-                    ]</visible>
-                <posx>$PARAM[x]</posx>
-                <posy>$PARAM[y]</posy>
-                <width>$PARAM[width]</width>
-                <height>$PARAM[height]</height>
-                <colordiffuse>$VAR[Picked.HighLight.Color]</colordiffuse>
-                <aspectratio align="$PARAM[align]" aligny="top">keep</aspectratio>
-                <texture colordiffuse="$PARAM[texturediffuse]">$VAR[ThumbsExceptions]</texture>
-                <bordertexture border="2" colordiffuse="$PARAM[borderdiffuse]">common/frame_focus.png</bordertexture>
-                <bordersize>2</bordersize>
-            </control>
-            <control type="image">
-                <visible>Skin.HasSetting(EnableFrameHighlight)</visible>
-                <visible>$PARAM[visibleFrameHighlight]</visible>
-                <posx>$PARAM[x]</posx>
-                <posy>$PARAM[y]</posy>
-                <width>$PARAM[width]</width>
-                <height>$PARAM[height]</height>
-                <aspectratio align="$PARAM[align]" aligny="$PARAM[aligny]">scale</aspectratio>
-                <texture background="true" flipx="$PARAM[flipx]" colordiffuse="00ffffff">$VAR[ThumbsExceptions]</texture>
-                <bordertexture border="2,50,2,50" colordiffuse="$PARAM[borderdiffuse]">common/frame_highlight.png</bordertexture>
-                <bordersize>2,50,2,50</bordersize>
-            </control>
-            <!--NORMAL-->
-            <control type="image">
-                <visible>[
-                    [Window.IsVisible(DialogMusicInfo.xml)+Control.hasfocus(50)+String.IsEqual(ListItem.DBType,artist)]|
-                    [Window.IsVisible(script-script.extendedinfo-VideoList.xml)]|
-                    [Skin.hassetting(plexbmc) + Container.Content(episodes) + !String.IsEmpty(ListItem.thumb) + !String.StartsWith(ListItem.thumb,Default)]|
-                    [!String.IsEmpty(ListItem.Art(poster))+!String.StartsWith(ListItem.Art(poster),Default)]|
-                    [!String.IsEmpty(ListItem.Icon)+!String.StartsWith(ListItem.Icon,Default)]|
-                    [!String.IsEmpty(ListItem.Property(Icon))+!String.StartsWith(ListItem.Property(Icon),Default)]|
-                    [!String.IsEmpty(ListItem.thumb)+!String.StartsWith(ListItem.thumb,Default)]|
-                    [!String.IsEmpty(ListItem.Art(thumb))+!String.StartsWith(ListItem.Art(thumb),Default)]
-                    ]</visible>
-                <posx>$PARAM[x]</posx>
-                <posy>$PARAM[y]</posy>
-                <width>$PARAM[width]</width>
-                <height>$PARAM[height]</height>
-                <aspectratio align="$PARAM[align]" aligny="$PARAM[aligny]">$PARAM[aspectratio]</aspectratio>
-                <texture background="true" flipx="$PARAM[flipx]" colordiffuse="$PARAM[texturediffuse]">$VAR[Thumbs]</texture>
-                <bordertexture border="2" colordiffuse="$PARAM[borderdiffuse]">common/frame_focus.png</bordertexture>
-                <bordersize>2</bordersize>
-            </control>
-            <control type="image">
-                <visible>Skin.HasSetting(EnableFrameHighlight)</visible>
-                <visible>$PARAM[visibleFrameHighlight]</visible>
-                <posx>$PARAM[x]</posx>
-                <posy>$PARAM[y]</posy>
-                <width>$PARAM[width]</width>
-                <height>$PARAM[height]</height>
-                <aspectratio align="$PARAM[align]" aligny="$PARAM[aligny]">scale</aspectratio>
-                <texture background="true" flipx="$PARAM[flipx]" colordiffuse="00ffffff">$VAR[Thumbs]</texture>
-                <bordertexture border="2,50,2,50" colordiffuse="$PARAM[borderdiffuse]">common/frame_highlight.png</bordertexture>
-                <bordersize>2,50,2,50</bordersize>
-            </control>
-            <!--MISSING THUMBS-->
-            <control type="image">
-                <visible>![
-                    [window.IsActive(LoginScreen.xml)+String.IsEqual(ListItem.Thumb,DefaultUser.png)]|
-                    [window.IsActive(CustomAddons.xml)]|
-                    [String.IsEqual(ListItem.thumb,special://home/addons/plugin.video.plexbmc/resources/thumb.png)]|
-                    [String.IsEqual(ListItem.Icon,)+!String.IsEmpty(Window.Property(IsRadio))]|
-                    [String.IsEqual(ListItem.Icon,)+[Window.IsActive(DialogPVRGuideOSD.xml)|Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)|Window.IsActive(MyPVRGuide.xml)|Window.IsActive(MyPVRRecordings.xml)|Window.IsActive(MyPVRSearch.xml)|Window.IsActive(MyPVRTimers.xml)]]|
-                    [ListItem.IsParentFolder]
-                    ]
-                    +
-                    ![
-                    [Window.IsVisible(DialogMusicInfo.xml)+Control.hasfocus(50)+String.IsEqual(ListItem.DBType,artist)]|
-                    [Window.IsVisible(script-script.extendedinfo-VideoList.xml)]|
-                    [!String.IsEmpty(ListItem.Art(poster))+!String.StartsWith(ListItem.Art(poster),Default)]|
-                    [!String.IsEmpty(ListItem.Icon)+!String.StartsWith(ListItem.Icon,Default)]|
-                    [!String.IsEmpty(ListItem.Property(Icon))+!String.StartsWith(ListItem.Property(Icon),Default)]|
-                    [!String.IsEmpty(ListItem.thumb)+!String.StartsWith(ListItem.thumb,Default)]|
-                    [!String.IsEmpty(ListItem.Art(thumb))+!String.StartsWith(ListItem.Art(thumb),Default)]
-                    ]</visible>
-                <posx>$PARAM[x]</posx>
-                <posy>$PARAM[y]</posy>
-                <width>$PARAM[width]</width>
-                <height>$PARAM[height]</height>
-                <colordiffuse>$VAR[Picked.HighLight.Color]</colordiffuse>
-                <aspectratio align="$PARAM[align]" aligny="top">keep</aspectratio>
-                <texture colordiffuse="$PARAM[texturediffuse]">$VAR[ThumbsMissing]</texture>
-                <bordertexture border="2" colordiffuse="$PARAM[borderdiffuse]">common/frame_focus.png</bordertexture>
-                <bordersize>2</bordersize>
-            </control>
-            <control type="image">
-                <visible>Skin.HasSetting(EnableFrameHighlight)</visible>
-                <visible>$PARAM[visibleFrameHighlight]</visible>
-                <posx>$PARAM[x]</posx>
-                <posy>$PARAM[y]</posy>
-                <width>$PARAM[width]</width>
-                <height>$PARAM[height]</height>
-                <aspectratio align="$PARAM[align]" aligny="$PARAM[aligny]">scale</aspectratio>
-                <texture background="true" flipx="$PARAM[flipx]" colordiffuse="00ffffff">$VAR[ThumbsMissing]</texture>
-                <bordertexture border="2,50,2,50" colordiffuse="$PARAM[borderdiffuse]">common/frame_highlight.png</bordertexture>
-                <bordersize>2,50,2,50</bordersize>
-            </control>
-        </control>
-    </include>
-    <include name="WidgetImages">
-        <control type="group">
-            <visible>$PARAM[visible]</visible>
-            <!--NORMAL-->
             <control type="image">
                 <posx>$PARAM[x]</posx>
                 <posy>$PARAM[y]</posy>
                 <width>$PARAM[width]</width>
                 <height>$PARAM[height]</height>
                 <aspectratio align="$PARAM[align]" aligny="$PARAM[aligny]">$PARAM[aspectratio]</aspectratio>
-                <texture background="true" flipx="$PARAM[flipx]" colordiffuse="$PARAM[texturediffuse]" fallback="defaultWidgetBig.png">$VAR[Thumbs]</texture>
+                <texture background="true" flipx="$PARAM[flipx]" colordiffuse="$PARAM[texturediffuse]" fallback="$PARAM[fallback]">$PARAM[texture]</texture>
                 <bordertexture border="2" colordiffuse="$PARAM[borderdiffuse]">common/frame_focus.png</bordertexture>
                 <bordersize>2</bordersize>
             </control>
@@ -1262,8 +1149,8 @@
                 <width>$PARAM[width]</width>
                 <height>$PARAM[height]</height>
                 <aspectratio align="$PARAM[align]" aligny="$PARAM[aligny]">scale</aspectratio>
-                <texture background="true" flipx="$PARAM[flipx]" colordiffuse="00ffffff" fallback="defaultWidgetBig.png">$VAR[Thumbs]</texture>
-                <bordertexture border="2,50,2,50" colordiffuse="$PARAM[borderdiffuse]">common/frame_highlight.png</bordertexture>
+                <texture background="true" flipx="$PARAM[flipx]" colordiffuse="00ffffff" fallback="$PARAM[fallback]">$PARAM[texture]</texture>
+                <bordertexture border="2,45,2,45" colordiffuse="$PARAM[borderdiffuse]">common/frame_highlight.png</bordertexture>
                 <bordersize>2,50,2,50</bordersize>
             </control>
         </control>
@@ -1335,46 +1222,6 @@
                 <colordiffuse>$VAR[Picked.HighLight.Color]</colordiffuse>
                 <aspectratio align="$PARAM[align]" aligny="$PARAM[aligny]">$PARAM[aspectratio]</aspectratio>
                 <texture colordiffuse="$PARAM[texturediffuse]">$VAR[ThumbsMissing]</texture>
-            </control>
-        </control>
-    </include>
-    <include name="BannersImages">
-        <control type="group">
-            <visible>$PARAM[visible]</visible>
-            <control type="image">
-                <visible>ListItem.IsParentFolder+[Container.Content(TVShows)|Container.Content(movies)|Container.Content(seasons)]</visible>
-                <posx>$PARAM[x]</posx>
-                <posy>$PARAM[y]</posy>
-                <width>$PARAM[width]</width>
-                <height>$PARAM[height]</height>
-                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-                <aspectratio align="$PARAM[align]" aligny="$PARAM[aligny]">$PARAM[aspectratio]</aspectratio>
-                <texture colordiffuse="$PARAM[texturediffuse]">defaultFolderBackBanner.png</texture>
-                <bordertexture border="2" colordiffuse="$PARAM[borderdiffuse]">common/frame_focus.png</bordertexture>
-                <bordersize>2</bordersize>
-            </control>
-            <control type="image">
-                <visible>![ListItem.IsParentFolder+[Container.Content(TVShows)|Container.Content(movies)|Container.Content(seasons)]]</visible>
-                <posx>$PARAM[x]</posx>
-                <posy>$PARAM[y]</posy>
-                <width>$PARAM[width]</width>
-                <height>$PARAM[height]</height>
-                <aspectratio align="$PARAM[align]" aligny="$PARAM[aligny]">$PARAM[aspectratio]</aspectratio>
-                <texture colordiffuse="$PARAM[texturediffuse]" background="true">$VAR[Banners]</texture>
-                <bordertexture border="2" colordiffuse="$PARAM[borderdiffuse]">common/frame_focus.png</bordertexture>
-                <bordersize>2</bordersize>
-            </control>
-            <control type="image">
-                <visible>Skin.HasSetting(EnableFrameHighlight)</visible>
-                <visible>$PARAM[visibleFrameHighlight]</visible>
-                <posx>$PARAM[x]</posx>
-                <posy>$PARAM[y]</posy>
-                <width>$PARAM[width]</width>
-                <height>$PARAM[height]</height>
-                <aspectratio align="$PARAM[align]" aligny="$PARAM[aligny]">scale</aspectratio>
-                <texture background="true" flipx="$PARAM[flipx]" colordiffuse="00ffffff">$VAR[Banners]</texture>
-                <bordertexture border="2,50,2,50" colordiffuse="$PARAM[borderdiffuse]">common/frame_highlight.png</bordertexture>
-                <bordersize>2,50,2,50</bordersize>
             </control>
         </control>
     </include>
@@ -1876,6 +1723,8 @@
                 <param name="align" value="center"/>
                 <param name="aligny" value="top"/>
                 <param name="flipy" value="false"/>
+                <param name="texture" value="$VAR[Thumbs]"/>
+                <param name="fallback" value="DefaultFile.png"/>
                 <param name="texturediffuse" value="ThumbsFocusedColor"/>
                 <param name="borderdiffuse" value="$PARAM[color]"/>
             </include>
@@ -1923,6 +1772,8 @@
                 <param name="align" value="center"/>
                 <param name="aligny" value="top"/>
                 <param name="flipy" value="false"/>
+                <param name="texture" value="$VAR[Thumbs]"/>
+                <param name="fallback" value="DefaultFile.png"/>
                 <param name="texturediffuse" value="ThumbsUnfocusedColor"/>
                 <param name="borderdiffuse" value="BorderUnfocusedColor"/>
             </include>
@@ -1961,6 +1812,8 @@
                 <param name="align" value="center"/>
                 <param name="aligny" value="top"/>
                 <param name="flipy" value="false"/>
+                <param name="texture" value="$VAR[Thumbs]"/>
+                <param name="fallback" value="DefaultFile.png"/>
                 <param name="texturediffuse" value="ThumbsUnfocusedColor"/>
                 <param name="borderdiffuse" value="BorderUnfocusedColor"/>
             </include>
@@ -1999,6 +1852,8 @@
                 <param name="align" value="center"/>
                 <param name="aligny" value="top"/>
                 <param name="flipy" value="false"/>
+                <param name="texture" value="$VAR[Thumbs]"/>
+                <param name="fallback" value="DefaultFile.png"/>
                 <param name="texturediffuse" value="ThumbsUnfocusedColor"/>
                 <param name="borderdiffuse" value="BorderUnfocusedColor"/>
             </include>

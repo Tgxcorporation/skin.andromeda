@@ -2,7 +2,7 @@
 <includes>
     <include name="BannerList_Layout">
         <itemlayout height="160" width="1920">
-            <include content="BannersImages">
+            <include content="ThumbsImages">
                 <param name="visible" value="![Container.Content(episodes)|Container.Content(seasons)]"/>
                 <param name="visibleFrameHighlight" value="false"/>
                 <param name="x" value="70"/>
@@ -12,6 +12,8 @@
                 <param name="aspectratio" value="scale"/>
                 <param name="align" value="center"/>
                 <param name="aligny" value="center"/>
+                <param name="texture" value="$VAR[ThumbsBanners]"/>
+                <param name="fallback" value="defaultBannerCover.png"/>
                 <param name="texturediffuse" value="ThumbsUnfocusedColor"/>
                 <param name="borderdiffuse" value="BorderUnfocusedColor"/>
             </include>
@@ -44,7 +46,7 @@
         <focusedlayout height="160" width="1920">
             <control type="group">
                 <include>ListFocusAnimation</include>
-                <include content="BannersImages">
+                <include content="ThumbsImages">
                     <param name="visible" value="![Container.Content(episodes)|Container.Content(seasons)]"/>
                     <param name="visibleFrameHighlight" value="![Container.Content(episodes)|Container.Content(seasons)]"/>
                     <param name="x" value="70"/>
@@ -54,6 +56,8 @@
                     <param name="aspectratio" value="scale"/>
                     <param name="align" value="center"/>
                     <param name="aligny" value="center"/>
+                    <param name="texture" value="$VAR[ThumbsBanners]"/>
+                    <param name="fallback" value="defaultBannerCover.png"/>
                     <param name="texturediffuse" value="ThumbsFocusedColor"/>
                     <param name="borderdiffuse" value="$VAR[Picked.HighLight.Color]"/>
                 </include>

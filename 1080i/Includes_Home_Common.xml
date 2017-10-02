@@ -266,7 +266,7 @@
         <orientation>horizontal</orientation>
         <preloaditems>4</preloaditems>
         <itemlayout height="600" width="325">
-            <include content="WidgetImages">
+            <include content="ThumbsImages">
                 <param name="visible" value="true"/>
                 <param name="visibleFrameHighlight" value="false"/>
                 <param name="x" value="70"/>
@@ -277,6 +277,8 @@
                 <param name="align" value="center"/>
                 <param name="aligny" value="center"/>
                 <param name="flipy" value="false"/>
+                <param name="texture" value="$VAR[Thumbs]"/>
+                <param name="fallback" value="DefaultVideoCover.png"/>
                 <param name="texturediffuse" value="ThumbsUnfocusedColor"/>
                 <param name="borderdiffuse" value="BorderUnfocusedColor"/>
             </include>
@@ -343,7 +345,7 @@
         <focusedlayout height="600" width="325">
             <control type="group">
                 <include>ButtonFocusAnimation</include>
-                <include content="WidgetImages">
+                <include content="ThumbsImages">
                     <param name="visible" value="control.hasfocus($PARAM[id])"/>
                     <param name="visibleFrameHighlight" value="control.hasfocus($PARAM[id])"/>
                     <param name="x" value="70"/>
@@ -354,10 +356,12 @@
                     <param name="align" value="center"/>
                     <param name="aligny" value="center"/>
                     <param name="flipy" value="false"/>
+                    <param name="texture" value="$VAR[Thumbs]"/>
+                    <param name="fallback" value="DefaultVideoCover.png"/>
                     <param name="texturediffuse" value="ThumbsFocusedColor"/>
                     <param name="borderdiffuse" value="$VAR[Picked.HighLight.Color]"/>
                 </include>
-                <include content="WidgetImages">
+                <include content="ThumbsImages">
                     <param name="visible" value="!control.hasfocus($PARAM[id])"/>
                     <param name="visibleFrameHighlight" value="false"/>
                     <param name="x" value="70"/>
@@ -368,6 +372,8 @@
                     <param name="align" value="center"/>
                     <param name="aligny" value="center"/>
                     <param name="flipy" value="false"/>
+                    <param name="texture" value="$VAR[Thumbs]"/>
+                    <param name="fallback" value="DefaultVideoCover.png"/>
                     <param name="texturediffuse" value="ThumbsUnfocusedColor"/>
                     <param name="borderdiffuse" value="BorderUnfocusedColor"/>
                 </include>
@@ -473,7 +479,7 @@
         <preloaditems>4</preloaditems>
         <orientation>horizontal</orientation>
         <itemlayout height="511" width="393">
-            <include content="WidgetImages">
+            <include content="ThumbsImages">
                 <param name="visible" value="true"/>
                 <param name="visibleFrameHighlight" value="false"/>
                 <param name="x" value="70"/>
@@ -484,6 +490,8 @@
                 <param name="align" value="center"/>
                 <param name="aligny" value="center"/>
                 <param name="flipy" value="false"/>
+                <param name="texture" value="$VAR[Thumbs]"/>
+                <param name="fallback" value="DefaultFile.png"/>
                 <param name="texturediffuse" value="ThumbsUnfocusedColor"/>
                 <param name="borderdiffuse" value="BorderUnfocusedColor"/>
             </include>
@@ -538,7 +546,7 @@
         <focusedlayout height="511" width="393">
             <control type="group">
                 <include>ButtonFocusAnimation</include>
-                <include content="WidgetImages">
+                <include content="ThumbsImages">
                     <param name="visible" value="control.hasfocus($PARAM[id])"/>
                     <param name="visibleFrameHighlight" value="control.hasfocus($PARAM[id])"/>
                     <param name="x" value="70"/>
@@ -549,10 +557,12 @@
                     <param name="align" value="center"/>
                     <param name="aligny" value="center"/>
                     <param name="flipy" value="false"/>
+                    <param name="texture" value="$VAR[Thumbs]"/>
+                    <param name="fallback" value="DefaultFile.png"/>
                     <param name="texturediffuse" value="ThumbsFocusedColor"/>
                     <param name="borderdiffuse" value="$VAR[Picked.HighLight.Color]"/>
                 </include>
-                <include content="WidgetImages">
+                <include content="ThumbsImages">
                     <param name="visible" value="!control.hasfocus($PARAM[id])"/>
                     <param name="visibleFrameHighlight" value="false"/>
                     <param name="x" value="70"/>
@@ -563,6 +573,8 @@
                     <param name="align" value="center"/>
                     <param name="aligny" value="center"/>
                     <param name="flipy" value="false"/>
+                    <param name="texture" value="$VAR[Thumbs]"/>
+                    <param name="fallback" value="DefaultFile.png"/>
                     <param name="texturediffuse" value="ThumbsUnfocusedColor"/>
                     <param name="borderdiffuse" value="BorderUnfocusedColor"/>
                 </include>
@@ -656,7 +668,7 @@
         <preloaditems>4</preloaditems>
         <orientation>horizontal</orientation>
         <itemlayout height="408" width="505">
-            <include content="WidgetImages">
+            <include content="ThumbsImages">
                 <param name="visible" value="true"/>
                 <param name="visibleFrameHighlight" value="false"/>
                 <param name="x" value="70"/>
@@ -667,6 +679,8 @@
                 <param name="align" value="center"/>
                 <param name="aligny" value="center"/>
                 <param name="flipy" value="false"/>
+                <param name="texture" value="$VAR[Thumbs]"/>
+                <param name="fallback" value="defaultVideoCoverEpisode.png"/>
                 <param name="texturediffuse" value="ThumbsUnfocusedColor"/>
                 <param name="borderdiffuse" value="BorderUnfocusedColor"/>
             </include>
@@ -721,7 +735,7 @@
         <focusedlayout height="408" width="505">
             <control type="group">
                 <include>ButtonFocusAnimation</include>
-                <include content="WidgetImages">
+                <include content="ThumbsImages">
                     <param name="visible" value="control.hasfocus($PARAM[id])"/>
                     <param name="visibleFrameHighlight" value="control.hasfocus($PARAM[id])"/>
                     <param name="x" value="70"/>
@@ -732,10 +746,12 @@
                     <param name="align" value="center"/>
                     <param name="aligny" value="center"/>
                     <param name="flipy" value="false"/>
+                    <param name="texture" value="$VAR[Thumbs]"/>
+                    <param name="fallback" value="defaultVideoCoverEpisode.png"/>
                     <param name="texturediffuse" value="ThumbsFocusedColor"/>
                     <param name="borderdiffuse" value="$VAR[Picked.HighLight.Color]"/>
                 </include>
-                <include content="WidgetImages">
+                <include content="ThumbsImages">
                     <param name="visible" value="!control.hasfocus($PARAM[id])"/>
                     <param name="visibleFrameHighlight" value="false"/>
                     <param name="x" value="70"/>
@@ -746,6 +762,8 @@
                     <param name="align" value="center"/>
                     <param name="aligny" value="center"/>
                     <param name="flipy" value="false"/>
+                    <param name="texture" value="$VAR[Thumbs]"/>
+                    <param name="fallback" value="defaultVideoCoverEpisode.png"/>
                     <param name="texturediffuse" value="ThumbsUnfocusedColor"/>
                     <param name="borderdiffuse" value="BorderUnfocusedColor"/>
                 </include>
@@ -839,7 +857,7 @@
         <preloaditems>4</preloaditems>
         <orientation>horizontal</orientation>
         <itemlayout height="450" width="439">
-            <include content="WidgetImages">
+            <include content="ThumbsImages">
                 <param name="visible" value="true"/>
                 <param name="visibleFrameHighlight" value="false"/>
                 <param name="x" value="70"/>
@@ -850,6 +868,8 @@
                 <param name="align" value="center"/>
                 <param name="aligny" value="center"/>
                 <param name="flipy" value="false"/>
+                <param name="texture" value="$VAR[ThumbsPvr]"/>
+                <param name="fallback" value="defaultChannel.png"/>
                 <param name="texturediffuse" value="ThumbsUnfocusedColor"/>
                 <param name="borderdiffuse" value="BorderUnfocusedColor"/>
             </include>
@@ -904,7 +924,7 @@
         <focusedlayout height="450" width="439">
             <control type="group">
                 <include>ButtonFocusAnimation</include>
-                <include content="WidgetImages">
+                <include content="ThumbsImages">
                     <param name="visible" value="control.hasfocus($PARAM[id])"/>
                     <param name="visibleFrameHighlight" value="control.hasfocus($PARAM[id])"/>
                     <param name="x" value="70"/>
@@ -915,10 +935,12 @@
                     <param name="align" value="center"/>
                     <param name="aligny" value="center"/>
                     <param name="flipy" value="false"/>
+                    <param name="texture" value="$VAR[ThumbsPvr]"/>
+                    <param name="fallback" value="defaultChannel.png"/>
                     <param name="texturediffuse" value="ThumbsFocusedColor"/>
                     <param name="borderdiffuse" value="$VAR[Picked.HighLight.Color]"/>
                 </include>
-                <include content="WidgetImages">
+                <include content="ThumbsImages">
                     <param name="visible" value="!control.hasfocus($PARAM[id])"/>
                     <param name="visibleFrameHighlight" value="false"/>
                     <param name="x" value="70"/>
@@ -929,6 +951,8 @@
                     <param name="align" value="center"/>
                     <param name="aligny" value="center"/>
                     <param name="flipy" value="false"/>
+                    <param name="texture" value="$VAR[ThumbsPvr]"/>
+                    <param name="fallback" value="defaultChannel.png"/>
                     <param name="texturediffuse" value="ThumbsUnfocusedColor"/>
                     <param name="borderdiffuse" value="BorderUnfocusedColor"/>
                 </include>

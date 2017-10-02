@@ -87,6 +87,8 @@
                         <param name="align" value="center"/>
                         <param name="aligny" value="center"/>
                         <param name="flipy" value="false"/>
+                        <param name="texture" value="$VAR[Thumbs]"/>
+                        <param name="fallback" value="DefaultVideoCover.png"/>
                         <param name="texturediffuse" value="ThumbsUnfocusedColor"/>
                         <param name="borderdiffuse" value="BorderUnfocusedColor"/>
                     </include>
@@ -165,6 +167,8 @@
                             <param name="align" value="center"/>
                             <param name="aligny" value="center"/>
                             <param name="flipy" value="false"/>
+                            <param name="texture" value="$VAR[Thumbs]"/>
+                            <param name="fallback" value="DefaultVideoCover.png"/>
                             <param name="texturediffuse" value="ThumbsFocusedColor"/>
                             <param name="borderdiffuse" value="$VAR[Picked.HighLight.Color]"/>
                         </include>
@@ -290,6 +294,8 @@
                         <param name="align" value="center"/>
                         <param name="aligny" value="center"/>
                         <param name="flipy" value="false"/>
+                        <param name="texture" value="$VAR[Thumbs]"/>
+                        <param name="fallback" value="DefaultFile.png"/>
                         <param name="texturediffuse" value="ThumbsUnfocusedColor"/>
                         <param name="borderdiffuse" value="BorderUnfocusedColor"/>
                     </include>
@@ -368,6 +374,8 @@
                             <param name="align" value="center"/>
                             <param name="aligny" value="center"/>
                             <param name="flipy" value="false"/>
+                            <param name="texture" value="$VAR[Thumbs]"/>
+                            <param name="fallback" value="DefaultFile.png"/>
                             <param name="texturediffuse" value="ThumbsFocusedColor"/>
                             <param name="borderdiffuse" value="$VAR[Picked.HighLight.Color]"/>
                         </include>
@@ -498,6 +506,8 @@
                         <param name="align" value="center"/>
                         <param name="aligny" value="center"/>
                         <param name="flipy" value="false"/>
+                        <param name="texture" value="$VAR[Thumbs]"/>
+                        <param name="fallback" value="defaultVideoCoverEpisode.png"/>
                         <param name="texturediffuse" value="ThumbsUnfocusedColor"/>
                         <param name="borderdiffuse" value="BorderUnfocusedColor"/>
                     </include>
@@ -558,6 +568,8 @@
                             <param name="align" value="center"/>
                             <param name="aligny" value="center"/>
                             <param name="flipy" value="false"/>
+                            <param name="texture" value="$VAR[Thumbs]"/>
+                            <param name="fallback" value="defaultVideoCoverEpisode.png"/>
                             <param name="texturediffuse" value="ThumbsFocusedColor"/>
                             <param name="borderdiffuse" value="$VAR[Picked.HighLight.Color]"/>
                         </include>
@@ -684,6 +696,8 @@
                         <param name="align" value="center"/>
                         <param name="aligny" value="center"/>
                         <param name="flipy" value="false"/>
+                        <param name="texture" value="$VAR[ThumbsPvr]"/>
+                        <param name="fallback" value="defaultChannel.png"/>
                         <param name="texturediffuse" value="ThumbsUnfocusedColor"/>
                         <param name="borderdiffuse" value="BorderUnfocusedColor"/>
                     </include>
@@ -776,6 +790,8 @@
                             <param name="align" value="center"/>
                             <param name="aligny" value="center"/>
                             <param name="flipy" value="false"/>
+                            <param name="texture" value="$VAR[ThumbsPvr]"/>
+                            <param name="fallback" value="defaultChannel.png"/>
                             <param name="texturediffuse" value="ThumbsFocusedColor"/>
                             <param name="borderdiffuse" value="$VAR[Picked.HighLight.Color]"/>
                         </include>
