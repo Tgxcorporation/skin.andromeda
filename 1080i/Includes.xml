@@ -133,7 +133,7 @@
             <width>1920</width>
             <height>1080</height>
             <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-            <texture border="3">common/overlay_dialog.png</texture>
+            <texture border="3">common/overlay_topbar_screen.png</texture>
         </control>
         <control type="image">
             <include>TopBarVisibleFadeEffectOverlay</include>

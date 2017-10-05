@@ -2,7 +2,9 @@
 <includes>
     <include name="Vertical_Home_Layout">
         <control type="group" id="505052">
-            <include>FacadeFocusAnimation</include>
+            <!--<animation type="Conditional" reversible="true" condition="ControlGroup(9900).HasFocus|ControlGroup(9901).HasFocus|Control.HasFocus(8997)">-->
+                <!--<effect type="slide" start="0,0" end="0,186" time="150" delay="0" tween="circle" easing="inout"/>-->
+            <!--</animation>-->
             <control type="group">
                 <include>OpenCloseOverlay</include>
                 <control type="button" id="899900">
