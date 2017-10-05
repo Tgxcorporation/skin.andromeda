@@ -49,7 +49,7 @@
                                     <param name="y" value="0"/>
                                     <param name="width" value="100"/>
                                     <param name="height" value="100"/>
-                                    <param name="aspectratio" value="keep"/>
+                                    <param name="aspectratio" value="scale"/>
                                     <param name="align" value="center"/>
                                     <param name="aligny" value="top"/>
                                     <param name="flipy" value="false"/>
@@ -88,7 +88,7 @@
                                     <param name="y" value="0"/>
                                     <param name="width" value="100"/>
                                     <param name="height" value="100"/>
-                                    <param name="aspectratio" value="keep"/>
+                                    <param name="aspectratio" value="scale"/>
                                     <param name="align" value="center"/>
                                     <param name="aligny" value="top"/>
                                     <param name="flipy" value="false"/>
@@ -176,7 +176,7 @@
                                     <param name="y" value="0"/>
                                     <param name="width" value="100"/>
                                     <param name="height" value="100"/>
-                                    <param name="aspectratio" value="keep"/>
+                                    <param name="aspectratio" value="scale"/>
                                     <param name="align" value="center"/>
                                     <param name="aligny" value="top"/>
                                     <param name="flipy" value="false"/>
@@ -215,7 +215,7 @@
                                     <param name="y" value="0"/>
                                     <param name="width" value="100"/>
                                     <param name="height" value="100"/>
-                                    <param name="aspectratio" value="keep"/>
+                                    <param name="aspectratio" value="scale"/>
                                     <param name="align" value="center"/>
                                     <param name="aligny" value="top"/>
                                     <param name="flipy" value="false"/>

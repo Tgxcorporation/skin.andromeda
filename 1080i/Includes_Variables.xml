@@ -19,52 +19,10 @@
         <value condition="!String.IsEmpty(ListItem.Label2)+Window.IsVisible(AddonBrowser.xml)"></value>
         <!--<value condition="Window.IsVisible(script-script.extendedinfo-VideoList.xml)+!String.IsEmpty(ListItem.Property(DBID))">OverlayUnwatched.png</value>-->
     </variable>
-
-    <variable name="ThumbsExceptions">
-        <value condition="window.IsActive(LoginScreen.xml)+String.IsEqual(ListItem.Thumb,DefaultUser.png)">defaultArtistBig.png</value>
-        <value condition="window.IsActive(CustomAddons.xml)">defaultExtensionBig.png</value>
-        <value condition="String.IsEqual(ListItem.thumb,special://home/addons/plugin.video.plexbmc/resources/thumb.png)">defaultAudioBig.png</value>
-        <!--<value condition="[Window.IsActive(MyPVRRecordings.xml)|Window.IsActive(MyPVRSearch.xml)|Window.IsActive(MyPVRTimers.xml)]+!String.StartsWith(ListItem.Icon,Default)+[control.isvisible(58)|control.isvisible(53)]">$INFO[ListItem.Icon]</value>-->
-        <!--<value condition="[Window.IsActive(MyPVRRecordings.xml)|Window.IsActive(MyPVRSearch.xml)|Window.IsActive(MyPVRTimers.xml)]+!String.StartsWith(ListItem.Icon,Default)">common/TransparentDot.png</value>-->
-        <!--<value condition="[Window.IsActive(DialogPVRGuideOSD.xml)|Window.IsActive(DialogPVRChannelsOSD.xml)]+String.IsEmpty(ListItem.Icon)">defaultChannelTvBig.png</value>-->
-        <!--<value condition="[Window.IsActive(DialogPVRGuideOSD.xml)|Window.IsActive(DialogPVRChannelsOSD.xml)]+!String.IsEmpty(ListItem.Icon)">common/TransparentDot.png</value>-->
-        <value condition="!ListItem.IsParentFolder+String.IsEqual(ListItem.Icon,)+!String.IsEmpty(Window.Property(IsRadio))">defaultRadioBig.png</value>
-        <value condition="!String.IsEmpty(Window.Property(IsRadio))+!ListItem.IsParentFolder+String.IsEqual(ListItem.Icon,)+[Window.IsActive(DialogPVRGuideOSD.xml)|Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)|Window.IsActive(MyPVRGuide.xml)|Window.IsActive(MyPVRRecordings.xml)|Window.IsActive(MyPVRSearch.xml)|Window.IsActive(MyPVRTimers.xml)]">defaultChannelRadioBig_43.png</value>
-        <value condition="String.IsEmpty(Window.Property(IsRadio))+!ListItem.IsParentFolder+String.IsEqual(ListItem.Icon,)+[Window.IsActive(DialogPVRGuideOSD.xml)|Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)|Window.IsActive(MyPVRGuide.xml)|Window.IsActive(MyPVRRecordings.xml)|Window.IsActive(MyPVRSearch.xml)|Window.IsActive(MyPVRTimers.xml)]">defaultChannelTvBig_43.png</value>
-        <value condition="ListItem.IsParentFolder">$VAR[ThumbsFolderBack]</value>
-    </variable>
-    <variable name="ThumbsMissing">
-        <value condition="window.IsActive(SettingsProfile.xml)">defaultArtistBig.png</value>
-        <value condition="[Window.IsActive(DialogPVRChannelManager.xml)|Window.IsActive(DialogPVRGroupManager.xml)]+String.IsEmpty(Window.Property(IsRadio))">defaultChannelTvBig.png</value>
-        <value condition="[Window.IsActive(DialogPVRChannelManager.xml)|Window.IsActive(DialogPVRGroupManager.xml)]+!String.IsEmpty(Window.Property(IsRadio))">defaultRadioBig.png</value>
-        <value condition="[Window.IsActive(DialogPVRInfo.xml)]">defaultChannelTvBig_Wide.png</value>
-        <value condition="[Window.IsActive(script-script.extendedinfo-DialogVideoInfo.xml)]+[control.hasfocus(751)|ControlGroup(7500).HasFocus|control.hasfocus(1001)|ControlGroup(10000).HasFocus]">defaultArtistBig.png</value>
-        <value condition="[Window.IsActive(DialogVideoInfo.xml)]+[control.hasfocus(50)|control.hasfocus(9012)]">defaultArtistBig.png</value>
-        <value condition="[Window.IsActive(DialogAddonInfo.xml)]+[control.hasfocus(50)|control.hasfocus(756)]">defaultPictureBig.png</value>
-        <value condition="[Container.content(files)]">defaultHardDiskBig.png</value>
-        <value condition="[Container.content(years)]">defaultYearBig.png</value>
-        <value condition="[Window.IsActive(MyPics.xml)]">defaultPictureBig.png</value>
-        <value condition="[Window.IsActive(script-videoextras-main.xml)]">defaultVideoBig.png</value>
-        <value condition="[Container.content(studios)] + !String.IsEmpty(Skin.String(StudioArt.name))">$INFO[Skin.String(StudioArt.path)]/$INFO[ListItem.Label].png</value>
-        <value condition="[Container.content(studios)]">resource://resource.images.studios.white/$INFO[ListItem.Label].png</value>
-        <!--<value condition="[Container.content(Genres)]">resource://resource.images.moviegenreicons.white/$INFO[ListItem.Label].png</value>-->
-        <value condition="[Container.content(Genres)]">defaultGenreBig.png</value>
-        <value condition="[Container.content(Playlists)]">defaultPlaylistBig.png</value>
-        <value condition="[Container.content(movies)|Container.content(musicvideos)|Container.content(tvshows)|Container.content(episodes)|Container.Content(Seasons)]">defaultVideoBig.png</value>
-        <value condition="String.IsEmpty(Window.Property(IsRadio))+[Container.content(LiveTV)]">defaultChannelTvBig_43.png</value>
-        <value condition="!String.IsEmpty(Window.Property(IsRadio))+[Container.content(LiveTV)]">defaultChannelRadioBig_43.png</value>
-        <value condition="String.IsEmpty(Window.Property(IsRadio))+[Window.IsActive(DialogPVRGuideOSD.xml)|Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)|Window.IsActive(MyPVRGuide.xml)|Window.IsActive(MyPVRRecordings.xml)|Window.IsActive(MyPVRSearch.xml)|Window.IsActive(MyPVRTimers.xml)]">defaultChannelTvBig_43.png</value>
-        <value condition="!String.IsEmpty(Window.Property(IsRadio))+[Window.IsActive(DialogPVRGuideOSD.xml)|Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)|Window.IsActive(MyPVRGuide.xml)|Window.IsActive(MyPVRRecordings.xml)|Window.IsActive(MyPVRSearch.xml)|Window.IsActive(MyPVRTimers.xml)]">defaultChannelRadioBig_43.png</value>
-        <value condition="[Container.content(Addons)|Container.content(plugins)]">defaultExtensionBig.png</value>
-        <value condition="[Container.content(Artists)|Container.content(Actors)|Container.content(directors)]">defaultArtistBig.png</value>
-        <value condition="[Container.content(Albums)|Container.content(songs)]">defaultAudioBig.png</value>
-        <value condition="ListItem.IsFolder">defaultFolderBig.png</value>
-        <value>defaultIconBig.png</value>
-    </variable>
-
     <variable name="ThumbsFolderBack">
-        <value condition="[Container.content(episodes)|Window.IsActive(MyPics.xml)|Window.IsActive(MyPlaylist.xml)|[container.content(movies)+String.IsEqual(Container.FolderName,$LOCALIZE[19017])]]">defaultFolderBackEpisode.png</value>
-        <value condition="[Container.content(actors)|Container.content(movies)|Container.content(musicvideos)|Container.content(tvshows)|Container.Content(Seasons)|Container.Content(sets)]">DefaultFolderBackPoster.png</value>
+        <value condition="[Container.content(actors)|Container.Content(musicvideos)|[container.content(movies)+!String.IsEqual(Container.FolderName,$LOCALIZE[19017])]|container.content(TVshows)|container.content(seasons)|Container.Content(sets)]">DefaultFolderBackPoster.png</value>
+        <value condition="[Window.IsActive(MyPVRChannels.xml)|Window.IsActive(MyPVRGuide.xml)|Window.IsActive(MyPVRTimers.xml)|Window.IsActive(MyPVRRecordings.xml)|Window.IsActive(MyPVRSearch.xml)]">defaultFolderBackChannel.png</value>
+        <value condition="[Container.content(episodes)|[container.content(movies)+String.IsEqual(Container.FolderName,$LOCALIZE[19017])]]">defaultFolderBackEpisode.png</value>
         <value>DefaultFolderBack.png</value>
     </variable>
     <variable name="Thumbs">

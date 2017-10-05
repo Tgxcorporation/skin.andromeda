@@ -45,7 +45,7 @@
                         <itemlayout height="60" width="910">
                             <control type="group">
                                 <include>NoFocusedIcon</include>
-                                <include content="ThumbsImagesSmall">
+                                <include content="ThumbsImages">
                                     <param name="visible" value="true"/>
                                     <param name="x" value="60"/>
                                     <param name="y" value="0"/>
@@ -55,6 +55,10 @@
                                     <param name="align" value="center"/>
                                     <param name="aligny" value="center"/>
                                     <param name="flipy" value="false"/>
+                                    <param name="texture" value="$VAR[Thumbs]"/>
+                                    <param name="fallback" value="DefaultFile.png"/>
+                                    <param name="texturediffuse" value="ThumbsUnfocusedColor"/>
+                                    <param name="borderdiffuse" value="00ffffff"/>
                                 </include>
                             </control>
                             <control type="label">
@@ -76,7 +80,7 @@
                                     <param name="height" value="60"/>
                                     <param name="visible" value="true"/>
                                 </include>
-                                <include content="ThumbsImagesSmall">
+                                <include content="ThumbsImages">
                                     <param name="visible" value="true"/>
                                     <param name="x" value="60"/>
                                     <param name="y" value="0"/>
@@ -86,6 +90,10 @@
                                     <param name="align" value="center"/>
                                     <param name="aligny" value="center"/>
                                     <param name="flipy" value="false"/>
+                                    <param name="texture" value="$VAR[Thumbs]"/>
+                                    <param name="fallback" value="DefaultFile.png"/>
+                                    <param name="texturediffuse" value="ThumbsFocusedColor"/>
+                                    <param name="borderdiffuse" value="00ffffff"/>
                                 </include>
                                 <control type="label">
                                     <posx>128</posx>
@@ -143,7 +151,7 @@
                         <itemlayout height="60" width="910">
                             <control type="group">
                                 <include>NoFocusedIcon</include>
-                                <include content="ThumbsImagesSmall">
+                                <include content="ThumbsImages">
                                     <param name="visible" value="true"/>
                                     <param name="x" value="60"/>
                                     <param name="y" value="0"/>
@@ -153,6 +161,10 @@
                                     <param name="align" value="center"/>
                                     <param name="aligny" value="center"/>
                                     <param name="flipy" value="false"/>
+                                    <param name="texture" value="$VAR[Thumbs]"/>
+                                    <param name="fallback" value="DefaultFile.png"/>
+                                    <param name="texturediffuse" value="ThumbsUnfocusedColor"/>
+                                    <param name="borderdiffuse" value="00ffffff"/>
                                 </include>
                             </control>
                             <control type="label">
@@ -174,7 +186,7 @@
                                     <param name="height" value="60"/>
                                     <param name="visible" value="true"/>
                                 </include>
-                                <include content="ThumbsImagesSmall">
+                                <include content="ThumbsImages">
                                     <param name="visible" value="true"/>
                                     <param name="x" value="60"/>
                                     <param name="y" value="0"/>
@@ -184,6 +196,10 @@
                                     <param name="align" value="center"/>
                                     <param name="aligny" value="center"/>
                                     <param name="flipy" value="false"/>
+                                    <param name="texture" value="$VAR[Thumbs]"/>
+                                    <param name="fallback" value="DefaultFile.png"/>
+                                    <param name="texturediffuse" value="ThumbsFocusedColor"/>
+                                    <param name="borderdiffuse" value="00ffffff"/>
                                 </include>
                                 <control type="label">
                                     <posx>128</posx>
