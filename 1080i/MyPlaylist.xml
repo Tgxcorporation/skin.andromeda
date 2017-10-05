@@ -21,7 +21,7 @@
                     <width>1920</width>
                     <height>1080</height>
                     <pagecontrol>60</pagecontrol>
-                    <onup condition="Skin.HasSetting(DisableUpNavListViews)">50</onup>
+                    <onup condition="!Skin.HasSetting(EnableUpNavListViews)">50</onup>
                     <onup>505051</onup>
                     <onleft>9000</onleft>
                     <onright>60</onright>

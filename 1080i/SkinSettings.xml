@@ -249,28 +249,28 @@
                                     <onclick>Skin.ToggleSetting(DisableIconViewInfos)</onclick>
                                 </item>
                                 <item id="29">
-                                    <visible>Skin.HasSetting(DisableUpNavListViews)</visible>
+                                    <visible>Skin.HasSetting(EnableUpNavListViews)</visible>
                                     <label>$LOCALIZE[31930]</label>
                                     <label2>$LOCALIZE[107]</label2>
-                                    <onclick>Skin.ToggleSetting(DisableUpNavListViews)</onclick>
+                                    <onclick>Skin.ToggleSetting(EnableUpNavListViews)</onclick>
                                 </item>
                                 <item id="29">
-                                    <visible>!Skin.HasSetting(DisableUpNavListViews)</visible>
+                                    <visible>!Skin.HasSetting(EnableUpNavListViews)</visible>
                                     <label>$LOCALIZE[31930]</label>
                                     <label2>$LOCALIZE[106]</label2>
-                                    <onclick>Skin.ToggleSetting(DisableUpNavListViews)</onclick>
+                                    <onclick>Skin.ToggleSetting(EnableUpNavListViews)</onclick>
                                 </item>
                                 <item id="30">
-                                    <visible>Skin.HasSetting(DisableUpAnimNavListViews)</visible>
+                                    <visible>Skin.HasSetting(EnableUpAnimNavListViews)</visible>
                                     <label>$LOCALIZE[31918]</label>
                                     <label2>$LOCALIZE[107]</label2>
-                                    <onclick>Skin.ToggleSetting(DisableUpAnimNavListViews)</onclick>
+                                    <onclick>Skin.ToggleSetting(EnableUpAnimNavListViews)</onclick>
                                 </item>
                                 <item id="30">
-                                    <visible>!Skin.HasSetting(DisableUpAnimNavListViews)</visible>
+                                    <visible>!Skin.HasSetting(EnableUpAnimNavListViews)</visible>
                                     <label>$LOCALIZE[31918]</label>
                                     <label2>$LOCALIZE[106]</label2>
-                                    <onclick>Skin.ToggleSetting(DisableUpAnimNavListViews)</onclick>
+                                    <onclick>Skin.ToggleSetting(EnableUpAnimNavListViews)</onclick>
                                 </item>
                                 <item id="195">
                                     <visible>!Skin.HasSetting(EnableJustify)</visible>

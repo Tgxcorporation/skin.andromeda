@@ -821,7 +821,7 @@ msgid "Stop playback on return to menu"
 msgstr ""
 
 msgctxt "#31918"
-msgid "Disable header animation while scrolling in list views"
+msgid "Enable header animation while scrolling in list views"
 msgstr ""
 
 msgctxt "#31919"
@@ -869,7 +869,7 @@ msgid "Black overlay transparency"
 msgstr ""
 
 msgctxt "#31930"
-msgid "Disable upward navigation to top bar in list views"
+msgid "Enable upward navigation to top bar in list views"
 msgstr ""
 
 msgctxt "#31931"

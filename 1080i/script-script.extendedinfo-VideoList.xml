@@ -33,7 +33,7 @@
                         <pagecontrol>60</pagecontrol>
                         <onleft>9000</onleft>
                         <onright>60</onright>
-                        <onup condition="Skin.HasSetting(DisableUpNavListViews)">500</onup>
+                        <onup condition="!Skin.HasSetting(EnableUpNavListViews)">500</onup>
                         <onup>9900</onup>
                         <ondown>600</ondown>
                         <preloaditems>4</preloaditems>

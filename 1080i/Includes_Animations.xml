@@ -552,7 +552,7 @@
     <include name="FacadeFocusAnimation">
         <animation type="Conditional" reversible="true"
                    condition="[
-                   !Skin.HasSetting(DisableUpAnimNavListViews)+[
+                   Skin.HasSetting(EnableUpAnimNavListViews)+[
                    [Control.isvisible(50)+Container(50).Row(0)+Container(50).Scrolling]|
                    [Control.isvisible(52)+Container(52).Row(0)+Container(52).Scrolling]|
                    [Control.isvisible(55)+Container(55).Row(0)+Container(55).Scrolling]|

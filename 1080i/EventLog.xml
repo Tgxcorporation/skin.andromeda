@@ -23,7 +23,7 @@
                     <height>1080</height>
                     <onleft>9000</onleft>
                     <onright>60</onright>
-                    <onup condition="Skin.HasSetting(DisableUpNavListViews)">570</onup>
+                    <onup condition="!Skin.HasSetting(EnableUpNavListViews)">570</onup>
                     <onup>505051</onup>
                     <ondown>570</ondown>
                     <viewtype label="535">list</viewtype>
