@@ -75,6 +75,7 @@
                     <animation effect="slide" tween="circle" easing="inout" time="150" start="0,0" end="660,0" condition="$EXP[LeftHomeSubMenuHasFocus]">Conditional</animation>
                     <posy>15</posy>
                     <control type="label">
+                        <include>HeaderVisibleFadeEffect</include>
                         <width>520</width>
                         <scroll>true</scroll>
                         <posx>TextMargin</posx>
@@ -86,6 +87,7 @@
                         <label>KODI</label>
                     </control>
                     <control type="label">
+                        <include>HeaderVisibleFadeEffect</include>
                         <width>520</width>
                         <scroll>true</scroll>
                         <posx>TextMargin</posx>
