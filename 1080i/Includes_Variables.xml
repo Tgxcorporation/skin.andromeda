@@ -20,7 +20,7 @@
         <!--<value condition="Window.IsVisible(script-script.extendedinfo-VideoList.xml)+!String.IsEmpty(ListItem.Property(DBID))">OverlayUnwatched.png</value>-->
     </variable>
     <variable name="ThumbsFolderBack">
-        <value condition="[Container.content(actors)|Container.Content(musicvideos)|[container.content(movies)+!String.IsEqual(Container.FolderName,$LOCALIZE[19017])]|container.content(TVshows)|container.content(seasons)|Container.Content(sets)]">DefaultFolderBackPoster.png</value>
+        <value condition="[Container.content(actors)|Container.Content(musicvideos)|[container.content(movies)+!String.IsEqual(Container.FolderName,$LOCALIZE[19017])]|container.content(TVshows)|container.content(seasons)|Container.Content(sets)]">defaultFolderBackPoster.png</value>
         <value condition="[Window.IsActive(MyPVRChannels.xml)|Window.IsActive(MyPVRGuide.xml)|Window.IsActive(MyPVRTimers.xml)|Window.IsActive(MyPVRRecordings.xml)|Window.IsActive(MyPVRSearch.xml)]">defaultFolderBackChannel.png</value>
         <value condition="[Container.content(episodes)|[container.content(movies)+String.IsEqual(Container.FolderName,$LOCALIZE[19017])]]">defaultFolderBackEpisode.png</value>
         <value>DefaultFolderBack.png</value>
