@@ -72,7 +72,7 @@
                             <param name="align" value="left"/>
                             <param name="aligny" value="top"/>
                             <param name="flipy" value="false"/>
-                            <param name="texture" value="$VAR[Thumbs]"/>
+                            <param name="texture" value="$INFO[Listitem.Icon]"/>
                             <param name="fallback" value="DefaultFile.png"/>
                             <param name="texturediffuse" value="ThumbsUnfocusedColor"/>
                             <param name="borderdiffuse" value="BorderUnfocusedColor"/>
@@ -113,7 +113,7 @@
                                 <param name="align" value="left"/>
                                 <param name="aligny" value="top"/>
                                 <param name="flipy" value="false"/>
-                                <param name="texture" value="$VAR[Thumbs]"/>
+                                <param name="texture" value="$INFO[Listitem.Icon]"/>
                                 <param name="fallback" value="DefaultFile.png"/>
                                 <param name="texturediffuse" value="ThumbsFocusedColor"/>
                                 <param name="borderdiffuse" value="$VAR[Picked.HighLight.Color]"/>
