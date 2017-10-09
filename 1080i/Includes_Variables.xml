@@ -26,7 +26,7 @@
         <value>DefaultFolderBack.png</value>
     </variable>
     <variable name="Thumbs">
-        <value condition="ListItem.IsParentFolder">$VAR[ThumbsFolderBack]</value>
+        <value condition="ListItem.IsParentFolder|String.IsEqual(ListItem.Label,..)">$VAR[ThumbsFolderBack]</value>
         <value condition="Window.IsVisible(DialogMusicInfo.xml)+Control.hasfocus(50)+String.IsEqual(ListItem.DBType,artist)">$INFO[Container(50).ListItem.Thumb]</value>
         <value condition="Window.IsVisible(script-script.extendedinfo-VideoList.xml)">$INFO[ListItem.Icon]</value>
         <value condition="Container.Content(seasons) + String.IsEqual(ListItem.Icon,DefaultFolder.png)">defaultFolderPoster.png</value>
