@@ -335,7 +335,7 @@
                             <posy>190</posy>
                             <height>700</height>
                             <width>600</width>
-                            <onleft>9001</onleft>
+                            <onleft>9900</onleft>
                             <onright>9061</onright>
                             <onup>9900</onup>
                             <viewtype>list</viewtype>

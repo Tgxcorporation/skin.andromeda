@@ -328,6 +328,17 @@
         <value>special://skin/backgrounds/Search.jpg</value>
     </variable>
     <variable name="Fanart.Art">
+        <value condition="Window.IsVisible(script-globalsearch-main.xml)+control.hasfocus(111)">$INFO[Container(111).ListItem.Property(fanart)]</value>
+        <value condition="Window.IsVisible(script-globalsearch-main.xml)+control.hasfocus(229)">$INFO[Container(229).ListItem.Property(fanart)]</value>
+        <value condition="Window.IsVisible(script-globalsearch-main.xml)+control.hasfocus(211)">$INFO[Container(211).ListItem.Property(fanart)]</value>
+        <value condition="Window.IsVisible(script-globalsearch-main.xml)+control.hasfocus(121)">$INFO[Container(121).ListItem.Property(fanart)]</value>
+        <value condition="Window.IsVisible(script-globalsearch-main.xml)+control.hasfocus(131)">$INFO[Container(131).ListItem.Property(fanart)]</value>
+        <value condition="Window.IsVisible(script-globalsearch-main.xml)+control.hasfocus(141)">$INFO[Container(141).ListItem.Property(fanart)]</value>
+        <value condition="Window.IsVisible(script-globalsearch-main.xml)+control.hasfocus(151)">$INFO[Container(151).ListItem.Property(fanart)]</value>
+        <value condition="Window.IsVisible(script-globalsearch-main.xml)+control.hasfocus(161)">$INFO[Container(161).ListItem.Property(fanart)]</value>
+        <value condition="Window.IsVisible(script-globalsearch-main.xml)+control.hasfocus(171)">$INFO[Container(171).ListItem.Property(fanart)]</value>
+        <value condition="Window.IsVisible(script-globalsearch-main.xml)+control.hasfocus(181)">$INFO[Container(181).ListItem.Property(fanart)]</value>
+        <value condition="Window.IsVisible(script-globalsearch-main.xml)+control.hasfocus(231)">$INFO[Container(231).ListItem.Property(fanart)]</value>
         <value condition="Skin.HasSetting(DisableFanart)">$VAR[Default.Art]</value>
         <value condition="!String.IsEmpty(ListItem.Art(fanart)) + !Skin.HasSetting(Home_DefaultBG)">$INFO[ListItem.Art(fanart)]</value>
         <value condition="Window.IsVisible(DialogFavourites.xml)">$VAR[Favourites.Art]</value>

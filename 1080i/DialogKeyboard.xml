@@ -51,6 +51,7 @@
                     <height>60</height>
                     <include>TextColor_MainColor</include>
                     <font>LeftMenuButtonFont</font>
+                    <onup>300</onup>
                     <ondown>9091</ondown>
                 </control>
                 <control type="panel" id="9091">
