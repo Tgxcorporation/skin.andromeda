@@ -236,6 +236,7 @@
             <ondown condition="Window.IsActive(SettingsCategory.xml)">3</ondown>
             <ondown condition="Window.IsActive(DialogAddonSettings.xml)">9</ondown>
             <ondown condition="Window.IsActive(script-XBMC_Lyrics-main.xml)">110</ondown>
+            <ondown condition="Window.IsActive(MyWeather.xml)+Skin.String(WeatherType,Map)">155</ondown>
             <ondown>50</ondown>
             <align>center</align>
             <control type="button" id="1622">

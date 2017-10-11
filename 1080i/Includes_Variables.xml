@@ -52,6 +52,7 @@
     </variable>
     <variable name="GlobalTitles">
         <value condition="Window.isvisible(script-script.extendedinfo-VideoList.xml)">Extended Info</value>
+        <value condition="Window.isvisible(MyWeather.xml)">$LOCALIZE[8] - $INFO[Weather.Location]</value>
         <value condition="Window.isvisible(MyMusicPlaylistEditor.xml)">$LOCALIZE[10503]</value>
         <value condition="Window.isvisible(CustomStartupWindow.xml)">$LOCALIZE[5]</value>
         <value condition="Window.isvisible(LoginScreen.xml)">$LOCALIZE[10029]</value>
@@ -95,6 +96,7 @@
         <value condition="!String.IsEmpty(Container.FolderName)">$INFO[Container.FolderName]</value>
     </variable>
     <variable name="GlobalSubTitles">
+        <value condition="Window.isvisible(MyWeather.xml)">$INFO[Window.Property(WeatherProvider)]$INFO[Window.Property(Updated),     ]</value>
         <value condition="Window.isvisible(script-script.extendedinfo-VideoList.xml)">$INFO[Window.Property(Filter_Label),, - ]$INFO[Window.Property(TotalItems),, $LOCALIZE[31025]]</value>
         <value condition="Window.isvisible(MyMusicPlaylistEditor.xml)">$LOCALIZE[2]</value>
         <value condition="Window.isvisible(LoginScreen.xml)">$LOCALIZE[13200]</value>
