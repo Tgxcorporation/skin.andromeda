@@ -32,7 +32,7 @@
             </control>
             <control type="grouplist" id="700">
                 <posx>0</posx>
-                <animation effect="slide" tween="circle" easing="inout" time="150" start="0,0" end="660,0" condition="!control.isvisible(378433)">Conditional</animation>
+                <animation effect="slide" tween="circle" easing="inout" time="150" start="0,0" end="660,0" condition="!$EXP[HomeWidgetCollectionHasFocus]">Conditional</animation>
                 <animation effect="slide" tween="circle" easing="inout" time="150" start="0,0" end="660,0" condition="$EXP[LeftHomeSubMenuHasFocus]">Conditional</animation>
                 <pagecontrol>60</pagecontrol>
                 <itemgap>0</itemgap>
@@ -48,7 +48,7 @@
                 <onright>60</onright>
             </control>
             <control type="group">
-                <animation effect="slide" tween="circle" easing="inout" time="150" start="0,0" end="-660,0" condition="control.isvisible(378433)">Conditional</animation>
+                <animation effect="slide" tween="circle" easing="inout" time="150" start="0,0" end="-660,0" condition="$EXP[HomeWidgetCollectionHasFocus]">Conditional</animation>
                 <control type="group">
                     <include>OpenClose</include>
                     <animation effect="slide" tween="circle" easing="inout" time="150" start="0,0" end="660,0" condition="$EXP[LeftHomeSubMenuHasFocus]">Conditional</animation>

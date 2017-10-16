@@ -26,7 +26,7 @@
                     <texture border="5">common/overlay_dialog_gradient.png</texture>
                 </control>
                 <control type="image">
-                    <visible>!control.isvisible(378433)</visible>
+                    <visible>!$EXP[HomeWidgetCollectionHasFocus]</visible>
                     <posx>0</posx>
                     <posy>330</posy>
                     <width>1920</width>
@@ -35,7 +35,7 @@
                     <texture border="2,0,2,0">common/line_gray_horizontal.png</texture>
                 </control>
                 <control type="image">
-                    <visible>control.isvisible(378433)</visible>
+                    <visible>$EXP[HomeWidgetCollectionHasFocus]</visible>
                     <posx>0</posx>
                     <posy>330</posy>
                     <width>1920</width>
