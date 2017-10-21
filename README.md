@@ -11,6 +11,7 @@ Minimalist skin optimized for Full HD TV screens.
 
 #### [Download from GitHub](https://github.com/Tgxcorporation/skin.andromeda/wiki/Install-from-GitHub)
 
+&nbsp;
 #### Thanks
 
 [![PayPal Donate](https://github.com/Tgxcorporation/skin.andromeda/blob/master/media/kodi.png?raw=true)](https://kodi.tv)
@@ -23,6 +24,7 @@ All the [Kodi](https://kodi.tv) team and addon developers.
 
 [JetBrains](https://www.jetbrains.com) for providing a free lincese for their wonderfuld IDEs used during the code development of the skin.
 
+&nbsp;
 #### Donations
 If you liked this skin and you want to help a little bit, you can donate here:
 
