@@ -14,13 +14,13 @@ Minimalist skin optimized for Full HD TV screens.
 &nbsp;
 #### Thanks
 
-[![PayPal Donate](https://github.com/Tgxcorporation/skin.andromeda/blob/master/media/kodi.png?raw=true)](https://kodi.tv)
+[![Kodi](https://github.com/Tgxcorporation/skin.andromeda/blob/master/media/kodi.png?raw=true)](https://kodi.tv)
 
 All the [Kodi](https://kodi.tv) team and addon developers.
 
 &nbsp;
 
-&nbsp;&nbsp;[![PayPal Donate](https://github.com/Tgxcorporation/skin.andromeda/blob/master/media/jetbrains.png?raw=true)](https://www.jetbrains.com)
+&nbsp;&nbsp;[![JetBrains](https://github.com/Tgxcorporation/skin.andromeda/blob/master/media/jetbrains.png?raw=true)](https://www.jetbrains.com)
 
 [JetBrains](https://www.jetbrains.com) for providing a free lincese for their wonderfuld IDEs used during the code development of the skin.
 
