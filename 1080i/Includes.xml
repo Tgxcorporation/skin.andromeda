@@ -90,9 +90,7 @@
         <posy>-30</posy>
         <width>1</width>
         <height>1</height>
-        <label>-</label>
-        <texturenofocus>-</texturenofocus>
-        <texturefocus>-</texturefocus>
+        <include>DummyButtonInclude</include>
     </include>
     <include name="DimBG">
         <control type="image">
@@ -120,8 +118,7 @@
         <font>TopbarMatFont</font>
         <textoffsetx>0</textoffsetx>
         <align>center</align>
-        <texturefocus>-</texturefocus>
-        <texturenofocus>-</texturenofocus>
+        <include>DummyButtonInclude</include>
         <alttexturefocus>-</alttexturefocus>
         <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
     </include>
@@ -162,10 +159,7 @@
             <posy>0</posy>
             <width>1130</width>
             <height>210</height>
-            <label>-</label>
-            <font>-</font>
-            <texturenofocus>-</texturenofocus>
-            <texturefocus>-</texturefocus>
+            <include>DummyButtonInclude</include>
             <visible>true</visible>
             <onfocus>SetFocus(9900)</onfocus>
         </control>
@@ -340,10 +334,7 @@
             <posy>0</posy>
             <width>50</width>
             <height>186</height>
-            <label>-</label>
-            <font>-</font>
-            <texturenofocus>-</texturenofocus>
-            <texturefocus>-</texturefocus>
+            <include>DummyButtonInclude</include>
             <visible>true</visible>
             <onfocus>SetFocus(9900)</onfocus>
         </control>
@@ -475,8 +466,7 @@
             <posy>-186</posy>
             <width>1820</width>
             <height>210</height>
-            <texturefocus>-</texturefocus>
-            <texturenofocus>-</texturenofocus>
+            <include>DummyButtonInclude</include>
             <onup>9900</onup>
             <onleft>9900</onleft>
             <onright>9900</onright>
@@ -818,10 +808,7 @@
                 <posy>0</posy>
                 <width>30</width>
                 <height>1080</height>
-                <label>-</label>
-                <font>-</font>
-                <texturenofocus>-</texturenofocus>
-                <texturefocus>-</texturefocus>
+                <include>DummyButtonInclude</include>
                 <visible>true</visible>
                 <onfocus>SetFocus(9000)</onfocus>
             </control>
@@ -832,10 +819,7 @@
                 <posy>0</posy>
                 <width>700</width>
                 <height>1080</height>
-                <label>-</label>
-                <font>-</font>
-                <texturenofocus>-</texturenofocus>
-                <texturefocus>-</texturefocus>
+                <include>DummyButtonInclude</include>
                 <visible>true</visible>
                 <onfocus>SetFocus(9000)</onfocus>
             </control>
@@ -1170,8 +1154,7 @@
             <align>right</align>
             <textoffsetx>0</textoffsetx>
             <font>DialogMatFont</font>
-            <texturenofocus>-</texturenofocus>
-            <texturefocus>-</texturefocus>
+            <include>DummyButtonInclude</include>
             <visible>true</visible>
             <onclick>back</onclick>
             <!--<onfocus>back</onfocus>-->

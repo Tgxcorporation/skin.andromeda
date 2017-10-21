@@ -65,8 +65,7 @@
             <posy>200</posy>
             <width>200</width>
             <height>800</height>
-            <texturefocus>-</texturefocus>
-            <texturenofocus>-</texturenofocus>
+            <include>DummyButtonInclude</include>
             <onclick>Control.Move(5000,1)</onclick>
         </control>
         <control type="button">
@@ -74,8 +73,7 @@
             <posy>200</posy>
             <width>200</width>
             <height>800</height>
-            <texturefocus>-</texturefocus>
-            <texturenofocus>-</texturenofocus>
+            <include>DummyButtonInclude</include>
             <onclick>Control.Move(5000,-1)</onclick>
         </control>
         <include>WindowClosingButton</include>

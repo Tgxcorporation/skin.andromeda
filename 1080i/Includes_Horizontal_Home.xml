@@ -136,8 +136,7 @@
                     <posy>0</posy>
                     <width>70</width>
                     <height>50</height>
-                    <texturefocus>-</texturefocus>
-                    <texturenofocus>-</texturenofocus>
+                    <include>DummyButtonInclude</include>
                     <include>TextColor_AlternateColor</include>
                     <font>FacadeListMainFontMat</font>
                     <textoffsetx>10</textoffsetx>
@@ -153,8 +152,7 @@
                     <posy>0</posy>
                     <width>150</width>
                     <height>50</height>
-                    <texturefocus>-</texturefocus>
-                    <texturenofocus>-</texturenofocus>
+                    <include>DummyButtonInclude</include>
                     <include>TextColor_AlternateColor</include>
                     <font>FacadeListMainFontMat</font>
                     <textoffsetx>10</textoffsetx>
@@ -290,8 +288,7 @@
                         <posy>0</posy>
                         <width>70</width>
                         <height>60</height>
-                        <texturefocus>-</texturefocus>
-                        <texturenofocus>-</texturenofocus>
+                        <include>DummyButtonInclude</include>
                         <include>TextColor_AlternateColor</include>
                         <font>FacadeListMainFontMat</font>
                         <textoffsetx>10</textoffsetx>
@@ -307,8 +304,7 @@
                         <posy>0</posy>
                         <width>150</width>
                         <height>70</height>
-                        <texturefocus>-</texturefocus>
-                        <texturenofocus>-</texturenofocus>
+                        <include>DummyButtonInclude</include>
                         <include>TextColor_AlternateColor</include>
                         <font>FacadeListMainFontMat</font>
                         <textoffsetx>10</textoffsetx>

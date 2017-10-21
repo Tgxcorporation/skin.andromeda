@@ -19,10 +19,7 @@
             <posy>-660</posy>
             <width>300</width>
             <height>2360</height>
-            <label>-</label>
-            <font>-</font>
-            <texturenofocus>-</texturenofocus>
-            <texturefocus>-</texturefocus>
+            <include>DummyButtonInclude</include>
             <visible>true</visible>
             <onfocus>back</onfocus>
         </control>
