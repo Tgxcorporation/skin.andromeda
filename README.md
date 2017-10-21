@@ -17,9 +17,9 @@ Minimalist skin optimized for Full HD TV screens.
 
 All the Kodi/XBMC team and addon developers.
 
-`   `
+&nbsp;
 
-`   `[![PayPal Donate](https://github.com/Tgxcorporation/skin.andromeda/blob/master/media/jetbrains.png?raw=true)](https://www.jetbrains.com)
+&nbsp;&nbsp;[![PayPal Donate](https://github.com/Tgxcorporation/skin.andromeda/blob/master/media/jetbrains.png?raw=true)](https://www.jetbrains.com)
 
 JetBrains for providing a free lincese for their wonderfuld IDEs used during the code development of the skin.
 
