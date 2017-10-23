@@ -67,63 +67,63 @@
                 <ondown>87</ondown>
                 <control type="button" id="306">
                     <visible>MusicPlayer.Content(LiveTV)</visible>
-                    <include>TopBarButton</include>
                     <label></label>
+                    <include>TopBarButton</include>
                     <onclick>ActivateWindow(PVROSDChannels)</onclick>
                     <onclick>Dialog.Close(VideoOSD)</onclick>
                 </control>
                 <control type="button" id="307">
                     <visible>MusicPlayer.Content(LiveTV)</visible>
-                    <include>TopBarButton</include>
                     <label></label>
+                    <include>TopBarButton</include>
                     <onclick>ActivateWindow(PVROSDGuide)</onclick>
                     <onclick>Dialog.Close(VideoOSD)</onclick>
                 </control>
                 <control type="button" id="9">
-                    <include>TopBarButton</include>
                     <label></label>
+                    <include>TopBarButton</include>
                     <onclick>Close</onclick>
                     <onclick condition="String.IsEmpty(Skin.String(LyricPath))">Skin.SetAddon(LyricPath,xbmc.python.lyrics)</onclick>
                     <onclick condition="!String.IsEmpty(Skin.String(LyricPath))">XBMC.RunScript($INFO[Skin.String(LyricPath)])</onclick>
                 </control>
                 <control type="button" id="500">
-                    <include>TopBarButton</include>
                     <label></label>
+                    <include>TopBarButton</include>
                 </control>
                 <control type="button" id="19">
                     <enable>Visualisation.Enabled</enable>
                     <animation effect="fade" start="100" end="50" time="0" condition="!Visualisation.Enabled">Conditional</animation>
-                    <include>TopBarButton</include>
                     <label></label>
+                    <include>TopBarButton</include>
                     <onclick>Addon.Default.OpenSettings(xbmc.player.musicviz)</onclick>
                 </control>
                 <control type="button" id="20">
                     <enable>Visualisation.HasPresets</enable>
                     <animation effect="fade" start="100" end="50" time="0" condition="!Visualisation.HasPresets">Conditional</animation>
-                    <include>TopBarButton</include>
                     <label></label>
+                    <include>TopBarButton</include>
                     <onclick>ActivateWindow(122)</onclick>
                 </control>
                 <control type="button" id="556">
-                    <include>TopBarButton</include>
                     <label></label>
+                    <include>TopBarButton</include>
                     <onclick>Skin.ToggleSetting(MusicPlayingFanart)</onclick>
                 </control>
                 <control type="button" id="555">
-                    <include>TopBarButton</include>
                     <label></label>
+                    <include>TopBarButton</include>
                     <onclick>Close</onclick>
                     <onclick>ActivateWindow(MusicPlaylist)</onclick>
                 </control>
                 <control type="button" id="1624">
-                    <include>TopBarButton</include>
                     <label></label>
+                    <include>TopBarButton</include>
                     <onclick>Dialog.Close(MusicOSD,true)</onclick>
                     <onclick>ActivateWindow(Settings,return)</onclick>
                 </control>
                 <control type="button" id="1626">
-                    <include>TopBarButton</include>
                     <label></label>
+                    <include>TopBarButton</include>
                     <onclick>ActivateWindow(shutdownmenu)</onclick>
                 </control>
             </control>
@@ -139,116 +139,116 @@
                 <onup>87</onup>
                 <ondown>101</ondown>
                 <control type="button" id="1623">
-                    <include>TopBarButton</include>
                     <label></label>
+                    <include>TopBarButton</include>
                     <onclick>Dialog.Close(MusicOSD,true)</onclick>
                     <onclick>fullscreen</onclick>
                 </control>
                 <control type="button" id="704">
-                    <include>TopBarButton</include>
                     <label></label>
+                    <include>TopBarButton</include>
                     <onclick>Dialog.Close(MusicOSD,true)</onclick>
                     <onclick>fullscreen</onclick>
                 </control>
                 <control type="button" id="705">
-                    <include>TopBarButton</include>
                     <label></label>
+                    <include>TopBarButton</include>
                     <onclick>Back</onclick>
                     <onclick>Dialog.Close(all,true)</onclick>
                     <onclick>ActivateWindow(Home)</onclick>
                 </control>
                 <control type="button" id="300">
                     <visible>MusicPlayer.Content(LiveTV)</visible>
-                    <include>TopBarButton</include>
                     <label></label>
+                    <include>TopBarButton</include>
                     <onclick>PlayerControl(Previous)</onclick>
                 </control>
                 <control type="button" id="301">
                     <visible>MusicPlayer.Content(LiveTV)</visible>
-                    <include>TopBarButton</include>
                     <label></label>
+                    <include>TopBarButton</include>
                     <onclick>PlayerControl(Next)</onclick>
                 </control>
                 <control type="button" id="600">
                     <visible>!MusicPlayer.Content(LiveTV)</visible>
-                    <include>TopBarButton</include>
                     <label></label>
+                    <include>TopBarButton</include>
                     <onclick>PlayerControl(Previous)</onclick>
                 </control>
                 <control type="button" id="601">
                     <enable>Player.SeekEnabled</enable>
                     <animation effect="fade" start="100" end="50" time="0" condition="!Player.SeekEnabled">Conditional</animation>
-                    <include>TopBarButton</include>
                     <label></label>
+                    <include>TopBarButton</include>
                     <onclick>PlayerControl(Rewind)</onclick>
                 </control>
                 <control type="button" id="202">
                     <visible>Player.PauseEnabled</visible>
                     <animation effect="fade" start="100" end="50" time="0" condition="!Player.PauseEnabled">Conditional</animation>
-                    <include>TopBarButton</include>
                     <label></label>
+                    <include>TopBarButton</include>
                     <onclick>PlayerControl(Play)</onclick>
                 </control>
                 <control type="button" id="603">
-                    <include>TopBarButton</include>
                     <label></label>
+                    <include>TopBarButton</include>
                     <onclick>PlayerControl(Stop)</onclick>
                 </control>
                 <control type="button" id="699">
                     <description>Repeat</description>
                     <!--<label>$LOCALIZE[486]$INFO[Playlist.Repeat, : ]</label>-->
-                    <include>TopBarButton</include>
                     <label>$VAR[RepeatMusicOSD]</label>
+                    <include>TopBarButton</include>
                     <onclick>PlayerControl(Repeat)</onclick>
                 </control>
                 <control type="button" id="21">
                     <description>Random</description>
                     <!--<label>$LOCALIZE[486]$INFO[Playlist.Repeat, : ]</label>-->
-                    <include>TopBarButton</include>
                     <label>$VAR[RandomMusicOSD]</label>
+                    <include>TopBarButton</include>
                     <onclick>PlayerControl(Random)</onclick>
                 </control>
                 <control type="button" id="353">
                     <enable>Player.CanRecord</enable>
                     <animation effect="fade" start="100" end="50" time="0" condition="!Player.CanRecord">Conditional</animation>
-                    <include>TopBarButton</include>
                     <label></label>
+                    <include>TopBarButton</include>
                     <onclick>PlayerControl(Record)</onclick>
                 </control>
                 <control type="button" id="604">
                     <enable>Player.SeekEnabled</enable>
                     <animation effect="fade" start="100" end="50" time="0" condition="!Player.SeekEnabled">Conditional</animation>
-                    <include>TopBarButton</include>
                     <label></label>
+                    <include>TopBarButton</include>
                     <onclick>PlayerControl(Forward)</onclick>
                 </control>
                 <control type="button" id="605">
                     <visible>!MusicPlayer.Content(LiveTV)</visible>
-                    <include>TopBarButton</include>
                     <label></label>
+                    <include>TopBarButton</include>
                     <onclick>PlayerControl(Next)</onclick>
                 </control>
                 <control type="button" id="1616">
                     <visible>!Player.Muted</visible>
-                    <include>TopBarButton</include>
                     <label></label>
+                    <include>TopBarButton</include>
                     <onclick>Mute</onclick>
                 </control>
                 <control type="button" id="16161">
                     <visible>Player.Muted</visible>
-                    <include>TopBarButton</include>
                     <label></label>
+                    <include>TopBarButton</include>
                     <textcolor>red</textcolor>
                     <onclick>Mute</onclick>
                 </control>
                 <control type="button" id="1618">
-                    <include>TopBarButton</include>
                     <label></label>
+                    <include>TopBarButton</include>
                     <onclick>VolumeDown</onclick>
                 </control>
                 <control type="button" id="1620">
-                    <include>TopBarButton</include>
                     <label></label>
+                    <include>TopBarButton</include>
                     <onclick>VolumeUp</onclick>
                 </control>
             </control>

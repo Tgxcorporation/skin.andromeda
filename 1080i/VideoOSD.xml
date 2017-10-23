@@ -65,93 +65,93 @@
                 <!--***-->
                 <control type="button" id="306">
                     <visible>VideoPlayer.Content(LiveTV)</visible>
-                    <include>TopBarButton</include>
                     <label></label>
+                    <include>TopBarButton</include>
                     <onclick>ActivateWindow(PVROSDChannels)</onclick>
                     <onclick>Dialog.Close(VideoOSD)</onclick>
                 </control>
                 <control type="button" id="307">
                     <visible>VideoPlayer.Content(LiveTV)</visible>
-                    <include>TopBarButton</include>
                     <label></label>
+                    <include>TopBarButton</include>
                     <onclick>ActivateWindow(PVROSDGuide)</onclick>
                     <onclick>Dialog.Close(VideoOSD)</onclick>
                 </control>
                 <control type="button" id="350">
                     <visible>VideoPlayer.Content(LiveTV)</visible>
-                    <include>TopBarButton</include>
                     <label></label>
+                    <include>TopBarButton</include>
                     <onclick>Dialog.Close(VideoOSD)</onclick>
                     <onclick>ActivateWindow(Teletext)</onclick>
                     <!--<onclick>ActivateWindow(Teletext)</onclick>-->
                 </control>
                 <control type="button" id="251">
-                    <include>TopBarButton</include>
                     <label></label>
+                    <include>TopBarButton</include>
                     <onclick>ActivateWindow(OSDVideoSettings)</onclick>
                 </control>
                 <control type="button" id="11105">
-                    <include>TopBarButton</include>
                     <label></label>
+                    <include>TopBarButton</include>
                     <onclick>ActivateWindow(osdcmssettings)</onclick>
                     <visible>System.HasCMS</visible>
                 </control>
                 <control type="button" id="252">
-                    <include>TopBarButton</include>
                     <label></label>
+                    <include>TopBarButton</include>
                     <onclick>ActivateWindow(OSDAudioSettings)</onclick>
                 </control>
                 <control type="button" id="250">
                     <visible>!VideoPlayer.Content(LiveTV)</visible>
-                    <include>TopBarButton</include>
                     <label></label>
+                    <include>TopBarButton</include>
                     <onclick>Close</onclick>
                     <onclick>Dialog.Close(VideoOSD)</onclick>
                     <onclick>ActivateWindow(SubtitleSearch)</onclick>
                 </control>
                 <control type="button" id="253">
                     <visible>!VideoPlayer.Content(LiveTV)</visible>
-                    <include>TopBarButton</include>
                     <label></label>
+                    <include>TopBarButton</include>
                     <onclick>ActivateWindow(VideoBookmarks)</onclick>
                 </control>
                 <control type="button" id="254">
                     <visible>!VideoPlayer.Content(LiveTV)</visible>
                     <visible>VideoPlayer.HasMenu</visible>
                     <animation effect="fade" start="100" end="50" time="0" condition="!VideoPlayer.HasMenu">Conditional</animation>
-                    <include>TopBarButton</include>
                     <label></label>
+                    <include>TopBarButton</include>
                     <onclick>PlayerControl(ShowVideoMenu)</onclick>
                 </control>
                 <control type="button" id="255">
                     <visible>VideoPlayer.IsStereoscopic</visible>
                     <animation effect="fade" start="100" end="50" time="0" condition="!VideoPlayer.IsStereoscopic">Conditional</animation>
-                    <include>TopBarButton</include>
                     <label></label>
+                    <include>TopBarButton</include>
                     <onclick>StereoMode</onclick>
                 </control>
                 <!--****-->
                 <control type="button" id="706">
                     <visible>!VideoPlayer.Content(LiveTV)</visible>
-                    <include>TopBarButton</include>
                     <label></label>
+                    <include>TopBarButton</include>
                     <onclick>Close</onclick>
                     <onclick>ActivateWindow(VideoPlaylist)</onclick>
                 </control>
                 <control type="button" id="707">
-                    <include>TopBarButton</include>
                     <label></label>
+                    <include>TopBarButton</include>
                     <onclick>ActivateWindow(fullscreeninfo)</onclick>
                 </control>
                 <control type="button" id="1624">
-                    <include>TopBarButton</include>
                     <label></label>
+                    <include>TopBarButton</include>
                     <onclick>Dialog.Close(VideoOSD,true)</onclick>
                     <onclick>ActivateWindow(Settings,return)</onclick>
                 </control>
                 <control type="button" id="1626">
-                    <include>TopBarButton</include>
                     <label></label>
+                    <include>TopBarButton</include>
                     <onclick>ActivateWindow(shutdownmenu)</onclick>
                 </control>
             </control>
@@ -168,103 +168,103 @@
                 <ondown>87</ondown>
                 <!--***-->
                 <control type="button" id="1623">
-                    <include>TopBarButton</include>
                     <label></label>
+                    <include>TopBarButton</include>
                     <onclick>Dialog.Close(VideoOSD,true)</onclick>
                     <onclick>fullscreen</onclick>
                 </control>
                 <control type="button" id="704">
-                    <include>TopBarButton</include>
                     <label></label>
+                    <include>TopBarButton</include>
                     <onclick>Dialog.Close(VideoOSD,true)</onclick>
                     <onclick>fullscreen</onclick>
                 </control>
                 <control type="button" id="705">
-                    <include>TopBarButton</include>
                     <label></label>
+                    <include>TopBarButton</include>
                     <onclick>Back</onclick>
                     <onclick>Dialog.Close(all,true)</onclick>
                     <onclick>ActivateWindow(Home)</onclick>
                 </control>
                 <control type="button" id="300">
                     <visible>VideoPlayer.Content(LiveTV)</visible>
-                    <include>TopBarButton</include>
                     <label></label>
+                    <include>TopBarButton</include>
                     <onclick>PlayerControl(Previous)</onclick>
                 </control>
                 <control type="button" id="301">
                     <visible>VideoPlayer.Content(LiveTV)</visible>
-                    <include>TopBarButton</include>
                     <label></label>
+                    <include>TopBarButton</include>
                     <onclick>PlayerControl(Next)</onclick>
                 </control>
                 <control type="button" id="200">
                     <visible>!VideoPlayer.Content(LiveTV)</visible>
-                    <include>TopBarButton</include>
                     <label></label>
+                    <include>TopBarButton</include>
                     <onclick>PlayerControl(Previous)</onclick>
                 </control>
                 <control type="button" id="201">
                     <visible>Player.SeekEnabled</visible>
                     <animation effect="fade" start="100" end="50" time="0" condition="!Player.SeekEnabled">Conditional</animation>
-                    <include>TopBarButton</include>
                     <label></label>
+                    <include>TopBarButton</include>
                     <onclick>PlayerControl(Rewind)</onclick>
                 </control>
                 <control type="button" id="202">
                     <visible>Player.PauseEnabled</visible>
                     <animation effect="fade" start="100" end="50" time="0" condition="!Player.PauseEnabled">Conditional</animation>
-                    <include>TopBarButton</include>
                     <label></label>
+                    <include>TopBarButton</include>
                     <onclick>PlayerControl(Play)</onclick>
                 </control>
                 <control type="button" id="203">
-                    <include>TopBarButton</include>
                     <label></label>
+                    <include>TopBarButton</include>
                     <onclick>PlayerControl(Stop)</onclick>
                 </control>
                 <control type="button" id="353">
                     <visible>VideoPlayer.Content(LiveTV)</visible>
                     <visible>Player.CanRecord</visible>
                     <animation effect="fade" start="100" end="50" time="0" condition="!Player.CanRecord">Conditional</animation>
-                    <include>TopBarButton</include>
                     <label></label>
+                    <include>TopBarButton</include>
                     <onclick>PlayerControl(Record)</onclick>
                 </control>
                 <control type="button" id="204">
                     <visible>Player.SeekEnabled</visible>
                     <animation effect="fade" start="100" end="50" time="0" condition="!Player.SeekEnabled">Conditional</animation>
-                    <include>TopBarButton</include>
                     <label></label>
+                    <include>TopBarButton</include>
                     <onclick>PlayerControl(Forward)</onclick>
                 </control>
                 <control type="button" id="205">
                     <visible>!VideoPlayer.Content(LiveTV)</visible>
-                    <include>TopBarButton</include>
                     <label></label>
+                    <include>TopBarButton</include>
                     <onclick>PlayerControl(Next)</onclick>
                 </control>
                 <control type="button" id="1616">
                     <visible>!Player.Muted</visible>
-                    <include>TopBarButton</include>
                     <label></label>
+                    <include>TopBarButton</include>
                     <onclick>Mute</onclick>
                 </control>
                 <control type="button" id="16161">
                     <visible>Player.Muted</visible>
-                    <include>TopBarButton</include>
                     <label></label>
+                    <include>TopBarButton</include>
                     <textcolor>red</textcolor>
                     <onclick>Mute</onclick>
                 </control>
                 <control type="button" id="1618">
-                    <include>TopBarButton</include>
                     <label></label>
+                    <include>TopBarButton</include>
                     <onclick>VolumeDown</onclick>
                 </control>
                 <control type="button" id="1620">
-                    <include>TopBarButton</include>
                     <label></label>
+                    <include>TopBarButton</include>
                     <onclick>VolumeUp</onclick>
                 </control>
             </control>

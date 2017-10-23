@@ -178,29 +178,29 @@
             <ondown>9900</ondown>
             <align>center</align>
             <control type="button" id="1628">
-                <include>TopBarButton</include>
                 <label></label>
+                <include>TopBarButton</include>
                 <onclick>ActivateWindow(favourites)</onclick>
             </control>
             <control type="button" id="1630">
                 <visible>!Skin.HasSetting(plexbmc) + System.HasAddon(script.globalsearch)</visible>
-                <include>TopBarButton</include>
                 <label></label>
+                <include>TopBarButton</include>
                 <onclick>RunAddOn(script.globalsearch)</onclick>
             </control>
             <control type="button" id="1632">
-                <include>TopBarButton</include>
                 <label></label>
+                <include>TopBarButton</include>
                 <onclick>ActivateWindow(Weather)</onclick>
             </control>
             <control type="button" id="1624">
-                <include>TopBarButton</include>
                 <label></label>
+                <include>TopBarButton</include>
                 <onclick>ActivateWindow(Settings,return)</onclick>
             </control>
             <control type="button" id="1626">
-                <include>TopBarButton</include>
                 <label></label>
+                <include>TopBarButton</include>
                 <onclick>ActivateWindow(shutdownmenu)</onclick>
             </control>
         </control>
@@ -235,84 +235,84 @@
             <align>center</align>
             <control type="button" id="1622">
                 <visible>Player.HasMedia</visible>
-                <include>TopBarButton</include>
                 <label></label>
+                <include>TopBarButton</include>
                 <onclick>fullscreen</onclick>
             </control>
             <control type="button" id="1600">
-                <include>TopBarButton</include>
                 <label></label>
+                <include>TopBarButton</include>
                 <onclick>back</onclick>
             </control>
             <control type="button" id="1602">
-                <include>TopBarButton</include>
                 <label></label>
+                <include>TopBarButton</include>
                 <onclick>Dialog.Close(all,true)</onclick>
                 <onclick>ActivateWindow(home)</onclick>
             </control>
             <control type="button" id="1604">
                 <visible>Player.HasMedia</visible>
-                <include>TopBarButton</include>
                 <label></label>
+                <include>TopBarButton</include>
                 <onclick>PlayerControl(Previous)</onclick>
             </control>
             <control type="button" id="1606">
                 <visible>Player.HasMedia</visible>
-                <include>TopBarButton</include>
                 <label></label>
+                <include>TopBarButton</include>
                 <onclick>PlayerControl(Rewind)</onclick>
             </control>
             <control type="button" id="1608">
                 <visible>Player.HasMedia</visible>
-                <include>TopBarButton</include>
                 <label></label>
+                <include>TopBarButton</include>
                 <onclick>PlayerControl(Play)</onclick>
             </control>
             <control type="button" id="1609">
                 <visible>Player.HasMedia</visible>
-                <include>TopBarButton</include>
                 <label></label>
+                <include>TopBarButton</include>
                 <onclick>PlayerControl(Play)</onclick>
             </control>
             <control type="button" id="1610">
                 <visible>Player.HasMedia</visible>
-                <include>TopBarButton</include>
                 <label></label>
+                <include>TopBarButton</include>
                 <onclick>PlayerControl(Stop)</onclick>
             </control>
             <control type="button" id="1612">
                 <visible>Player.HasMedia</visible>
-                <include>TopBarButton</include>
                 <label></label>
+                <include>TopBarButton</include>
                 <onclick>PlayerControl(Forward)</onclick>
             </control>
             <control type="button" id="1614">
                 <visible>Player.HasMedia</visible>
-                <include>TopBarButton</include>
                 <label></label>
+                <include>TopBarButton</include>
                 <onclick>PlayerControl(Next)</onclick>
             </control>
             <control type="button" id="1616">
                 <visible>!Player.Muted</visible>
-                <include>TopBarButton</include>
                 <label></label>
+                <include>TopBarButton</include>
                 <onclick>Mute</onclick>
             </control>
             <control type="button" id="16161">
                 <visible>Player.Muted</visible>
-                <include>TopBarButton</include>
                 <label></label>
+                <include>TopBarButton</include>
                 <textcolor>red</textcolor>
                 <onclick>Mute</onclick>
             </control>
             <control type="button" id="1618">
-                <include>TopBarButton</include>
                 <label></label>
+                <include>TopBarButton</include>
                 <onclick>VolumeDown</onclick>
             </control>
             <control type="button" id="1620">
-                <include>TopBarButton</include>
                 <label></label>
+                <include>TopBarButton</include>
                 <onclick>VolumeUp</onclick>
             </control>
         </control>
