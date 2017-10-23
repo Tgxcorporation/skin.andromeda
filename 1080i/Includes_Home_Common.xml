@@ -185,6 +185,47 @@
                 </include>
                 <include>$PARAM[content]</include>
             </control>
+            <control type="image" id="1">
+                <visible>Container($PARAM[id]).IsUpdating</visible>
+                <animation effect="rotate" center="auto" start="360" end="0" time="1500" loop="true" tween="circle" easing="inout" condition="true">Conditional</animation>
+                <posx>70</posx>
+                <posy>82</posy>
+                <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
+                <aspectratio align="center" aligny="center">keep</aspectratio>
+                <colordiffuse>ThumbsUnfocusedColor</colordiffuse>
+                <texture>OSD/loading.png</texture>
+            </control>
+            <control type="image" id="1">
+                <visible>Container($PARAM[id]).IsUpdating</visible>
+                <animation effect="rotate" center="auto" start="360" end="0" time="750" loop="true" tween="sine" easing="in" condition="true">Conditional</animation>
+                <posx>70</posx>
+                <posy>82</posy>
+                <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
+                <aspectratio align="center" aligny="center">keep</aspectratio>
+                <colordiffuse>ThumbsUnfocusedColor</colordiffuse>
+                <texture>OSD/loading.png</texture>
+            </control>
+            <control type="image">
+                <visible>!Integer.IsGreater(Container($PARAM[id]).NumItems,0)+!Container($PARAM[id]).IsUpdating</visible>
+                <posx>70</posx>
+                <posy>82</posy>
+                <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
+                <aspectratio align="center" aligny="center">keep</aspectratio>
+                <colordiffuse>ThumbsUnfocusedColor</colordiffuse>
+                <texture>defaultEmptyBig.png</texture>
+                <fadetime>300</fadetime>
+            </control>
+            <control type="image">
+                <visible>!Integer.IsGreater(Container($PARAM[id]).NumItems,0)|Container($PARAM[id]).IsUpdating</visible>
+                <posx>70</posx>
+                <posy>82</posy>
+                <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
+                <colordiffuse>ThumbsUnfocusedColor</colordiffuse>
+                <texture border="2">common/TransparentDot.png</texture>
+                <bordertexture border="2" colordiffuse="BorderUnfocusedColor">common/frame_focus.png</bordertexture>
+                <bordersize>2</bordersize>
+                <fadetime>300</fadetime>
+            </control>
             <include content="Widget_NavButtons_$PARAM[gfxType]">
                 <param name="id" value="$PARAM[id]"/>
                 <param name="height" value="$PARAM[height]"/>
