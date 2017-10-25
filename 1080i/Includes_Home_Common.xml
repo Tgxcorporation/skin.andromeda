@@ -226,10 +226,10 @@
                 <bordersize>2</bordersize>
                 <fadetime>300</fadetime>
             </control>
-            <include content="Widget_NavButtons_$PARAM[gfxType]">
-                <param name="id" value="$PARAM[id]"/>
-                <param name="height" value="$PARAM[height]"/>
-            </include>
+            <!--<include content="Widget_NavButtons_$PARAM[gfxType]">-->
+                <!--<param name="id" value="$PARAM[id]"/>-->
+                <!--<param name="height" value="$PARAM[height]"/>-->
+            <!--</include>-->
         </control>
     </include>
     <include name="Widget_Poster">

@@ -76,10 +76,10 @@
                     </include>
                     <content limit="$VAR[WidgetLimit]" sortby="$SKINSHORTCUTS[sortby]" sortorder="$SKINSHORTCUTS[sortdirection]" target="$SKINSHORTCUTS[target]" >$SKINSHORTCUTS[content]</content>
                 </control>
-                <include content="Widget_NavButtons_$SKINSHORTCUTS[gfxType]">
-                    <param name="id" value="70001$SKINSHORTCUTS[mainmenuid]"/>
-                    <param name="height" value="$SKINSHORTCUTS[height]"/>
-                </include>
+                <!--<include content="Widget_NavButtons_$SKINSHORTCUTS[gfxType]">-->
+                    <!--<param name="id" value="70001$SKINSHORTCUTS[mainmenuid]"/>-->
+                    <!--<param name="height" value="$SKINSHORTCUTS[height]"/>-->
+                <!--</include>-->
                 <control type="image" id="1">
                     <visible>Container(70001$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
                     <animation effect="rotate" center="auto" start="360" end="0" time="1500" loop="true" tween="circle" easing="inout" condition="true">Conditional</animation>
@@ -198,10 +198,10 @@
                     </include>
                     <content limit="$VAR[WidgetLimit]" sortby="$SKINSHORTCUTS[sortby]" sortorder="$SKINSHORTCUTS[sortdirection]" target="$SKINSHORTCUTS[target]" >$SKINSHORTCUTS[content]</content>
                 </control>
-                <include content="Widget_NavButtons_$SKINSHORTCUTS[gfxType]">
-                    <param name="id" value="70002$SKINSHORTCUTS[mainmenuid]"/>
-                    <param name="height" value="$SKINSHORTCUTS[height]"/>
-                </include>
+                <!--<include content="Widget_NavButtons_$SKINSHORTCUTS[gfxType]">-->
+                    <!--<param name="id" value="70002$SKINSHORTCUTS[mainmenuid]"/>-->
+                    <!--<param name="height" value="$SKINSHORTCUTS[height]"/>-->
+                <!--</include>-->
                 <control type="image" id="1">
                     <visible>Container(70002$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
                     <animation effect="rotate" center="auto" start="360" end="0" time="1500" loop="true" tween="circle" easing="inout" condition="true">Conditional</animation>
@@ -319,10 +319,10 @@
                     </include>
                     <content limit="$VAR[WidgetLimit]" sortby="$SKINSHORTCUTS[sortby]" sortorder="$SKINSHORTCUTS[sortdirection]" target="$SKINSHORTCUTS[target]" >$SKINSHORTCUTS[content]</content>
                 </control>
-                <include content="Widget_NavButtons_$SKINSHORTCUTS[gfxType]">
-                    <param name="id" value="70003$SKINSHORTCUTS[mainmenuid]"/>
-                    <param name="height" value="$SKINSHORTCUTS[height]"/>
-                </include>
+                <!--<include content="Widget_NavButtons_$SKINSHORTCUTS[gfxType]">-->
+                    <!--<param name="id" value="70003$SKINSHORTCUTS[mainmenuid]"/>-->
+                    <!--<param name="height" value="$SKINSHORTCUTS[height]"/>-->
+                <!--</include>-->
                 <control type="image" id="1">
                     <visible>Container(70003$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
                     <animation effect="rotate" center="auto" start="360" end="0" time="1500" loop="true" tween="circle" easing="inout" condition="true">Conditional</animation>
@@ -440,10 +440,10 @@
                     </include>
                     <content limit="$VAR[WidgetLimit]" sortby="$SKINSHORTCUTS[sortby]" sortorder="$SKINSHORTCUTS[sortdirection]" target="$SKINSHORTCUTS[target]" >$SKINSHORTCUTS[content]</content>
                 </control>
-                <include content="Widget_NavButtons_$SKINSHORTCUTS[gfxType]">
-                    <param name="id" value="70004$SKINSHORTCUTS[mainmenuid]"/>
-                    <param name="height" value="$SKINSHORTCUTS[height]"/>
-                </include>
+                <!--<include content="Widget_NavButtons_$SKINSHORTCUTS[gfxType]">-->
+                    <!--<param name="id" value="70004$SKINSHORTCUTS[mainmenuid]"/>-->
+                    <!--<param name="height" value="$SKINSHORTCUTS[height]"/>-->
+                <!--</include>-->
                 <control type="image" id="1">
                     <visible>Container(70004$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
                     <animation effect="rotate" center="auto" start="360" end="0" time="1500" loop="true" tween="circle" easing="inout" condition="true">Conditional</animation>
@@ -560,10 +560,10 @@
                     </include>
                     <content limit="$VAR[WidgetLimit]" sortby="$SKINSHORTCUTS[sortby]" sortorder="$SKINSHORTCUTS[sortdirection]" target="$SKINSHORTCUTS[target]" >$SKINSHORTCUTS[content]</content>
                 </control>
-                <include content="Widget_NavButtons_$SKINSHORTCUTS[gfxType]">
-                    <param name="id" value="70005$SKINSHORTCUTS[mainmenuid]"/>
-                    <param name="height" value="$SKINSHORTCUTS[height]"/>
-                </include>
+                <!--<include content="Widget_NavButtons_$SKINSHORTCUTS[gfxType]">-->
+                    <!--<param name="id" value="70005$SKINSHORTCUTS[mainmenuid]"/>-->
+                    <!--<param name="height" value="$SKINSHORTCUTS[height]"/>-->
+                <!--</include>-->
                 <control type="image" id="1">
                     <visible>Container(70005$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
                     <animation effect="rotate" center="auto" start="360" end="0" time="1500" loop="true" tween="circle" easing="inout" condition="true">Conditional</animation>
