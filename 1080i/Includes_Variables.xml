@@ -5,7 +5,7 @@
         <value condition="Player.ChapterCount">$LOCALIZE[21396]: $INFO[Player.Chapter]$INFO[Player.ChapterCount, / ]</value>
     </variable>
     <variable name="Overlay">
-        <value condition="![Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos) | Container.Content(sets) | Container.HasFiles]">-</value>
+        <value condition="!Window.isvisible(Home.xml)+![Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos) | Container.Content(sets) | Container.HasFiles]">-</value>
         <!--<value condition="Skin.HasSetting(plexbmc) + ListItem.property(IsResumable)">overlay_inprogress/$INFO[ListItem.Overlay]</value>-->
         <value condition="Skin.HasSetting(Hide_Watched_Marks)">-</value>
         <value condition="Skin.HasSetting(plexbmc) + String.IsEqual(ListItem.property(overlay),OverlayWatched.png)"></value>
