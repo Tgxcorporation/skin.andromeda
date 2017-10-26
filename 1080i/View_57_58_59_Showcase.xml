@@ -243,7 +243,7 @@
                 <posy>0</posy>
                 <width>90</width>
                 <height>1080</height>
-                <include>DummyButtonInclude</include>
+                <include>HiddenButton</include>
                 <onclick>Control.Move(59,-1)</onclick>
             </control>
             <control type="button">
@@ -251,7 +251,7 @@
                 <posy>0</posy>
                 <width>150</width>
                 <height>1080</height>
-                <include>DummyButtonInclude</include>
+                <include>HiddenButton</include>
                 <onclick>Control.Move(59,1)</onclick>
             </control>
             <control type="scrollbar" id="609">
@@ -453,7 +453,7 @@
                 <posy>0</posy>
                 <width>90</width>
                 <height>1080</height>
-                <include>DummyButtonInclude</include>
+                <include>HiddenButton</include>
                 <onclick>Control.Move(58,-1)</onclick>
             </control>
             <control type="button">
@@ -461,7 +461,7 @@
                 <posy>0</posy>
                 <width>150</width>
                 <height>1080</height>
-                <include>DummyButtonInclude</include>
+                <include>HiddenButton</include>
                 <onclick>Control.Move(58,1)</onclick>
             </control>
             <control type="scrollbar" id="608">
@@ -640,7 +640,7 @@
                 <posy>0</posy>
                 <width>90</width>
                 <height>1080</height>
-                <include>DummyButtonInclude</include>
+                <include>HiddenButton</include>
                 <onclick>Control.Move(57,1)</onclick>
             </control>
             <control type="button">
@@ -648,7 +648,7 @@
                 <posy>0</posy>
                 <width>150</width>
                 <height>1080</height>
-                <include>DummyButtonInclude</include>
+                <include>HiddenButton</include>
                 <onclick>Control.Move(57,-1)</onclick>
             </control>
             <control type="scrollbar" id="607">
@@ -887,7 +887,7 @@
                 <posy>0</posy>
                 <width>90</width>
                 <height>1080</height>
-                <include>DummyButtonInclude</include>
+                <include>HiddenButton</include>
                 <onclick>Control.Move(58,-1)</onclick>
             </control>
             <control type="button">
@@ -895,7 +895,7 @@
                 <posy>0</posy>
                 <width>150</width>
                 <height>1080</height>
-                <include>DummyButtonInclude</include>
+                <include>HiddenButton</include>
                 <onclick>Control.Move(58,1)</onclick>
             </control>
             <control type="scrollbar" id="608">

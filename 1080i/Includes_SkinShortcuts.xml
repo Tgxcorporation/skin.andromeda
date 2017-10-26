@@ -108,23 +108,21 @@
         </control>
     </include>
     <include name="SkinShortcuts_Window_Navigation_Horizontal">
-        <control type="group">
-            <control type="button" id="3010">
-                <posx>490</posx>
-                <posy>210</posy>
-                <width>100</width>
-                <height>100</height>
-                <include>HiddenButton</include>
-                <onclick>Control.Move(211,-1)</onclick>
-            </control>
-            <control type="button" id="3020">
-                <posx>914</posx>
-                <posy>210</posy>
-                <width>906</width>
-                <height>100</height>
-                <include>DummyButtonInclude</include>
-                <onclick>Control.Move(211,1)</onclick>
-            </control>
+        <control type="button" id="3010">
+            <posx>490</posx>
+            <posy>210</posy>
+            <width>100</width>
+            <height>100</height>
+            <include>HiddenButton</include>
+            <onclick>Control.Move(211,-1)</onclick>
+        </control>
+        <control type="button" id="3020">
+            <posx>914</posx>
+            <posy>210</posy>
+            <width>906</width>
+            <height>100</height>
+            <include>HiddenButton</include>
+            <onclick>Control.Move(211,1)</onclick>
         </control>
         <control type="scrollbar" id="260">
             <posx>530</posx>
@@ -142,27 +140,26 @@
             <align>left</align>
             <font>SmallButtonFont</font>
             <include>TextColor_MainColor</include>
+            <scroll>true</scroll>
             <label>$LOCALIZE[31059][COLOR=SeparatorColor] › [/COLOR]$VAR[SkinShortcutBackgroundDescription]</label>
         </control>
     </include>
     <include name="SkinShortcuts_Window_Navigation_Vertical">
-        <control type="group">
-            <control type="button" id="3010">
-                <posx>530</posx>
-                <posy>92</posy>
-                <width>410</width>
-                <height>100</height>
-                <include>DummyButtonInclude</include>
-                <onclick>Control.Move(211,-1)</onclick>
-            </control>
-            <control type="button" id="3020">
-                <posx>530</posx>
-                <posy>273</posy>
-                <width>410</width>
-                <height>740</height>
-                <include>DummyButtonInclude</include>
-                <onclick>Control.Move(211,1)</onclick>
-            </control>
+        <control type="button" id="3010">
+            <posx>530</posx>
+            <posy>92</posy>
+            <width>410</width>
+            <height>100</height>
+            <include>HiddenButton</include>
+            <onclick>Control.Move(211,-1)</onclick>
+        </control>
+        <control type="button" id="3020">
+            <posx>530</posx>
+            <posy>273</posy>
+            <width>410</width>
+            <height>740</height>
+            <include>HiddenButton</include>
+            <onclick>Control.Move(211,1)</onclick>
         </control>
         <control type="scrollbar" id="260">
             <posx>883</posx>
@@ -175,11 +172,12 @@
         <control type="label">
             <posx>1000</posx>
             <bottom>80</bottom>
-            <width>1150</width>
+            <width>750</width>
             <height>50</height>
             <align>left</align>
             <font>SmallButtonFont</font>
             <include>TextColor_MainColor</include>
+            <scroll>true</scroll>
             <label>$LOCALIZE[31059][COLOR=SeparatorColor] › [/COLOR]$VAR[SkinShortcutBackgroundDescription]</label>
         </control>
     </include>
@@ -296,7 +294,7 @@
             <control type="label">
                 <visible>[String.IsEqual(ListItem.Property(hide),True) + Window.IsVisible(CustomPlexHomeSettings.xml)]|[String.IsEqual(ListItem.Property(skinshortcuts-disabled),True) + Window.IsVisible(script-skinshortcuts.xml)]</visible>
                 <posx>50</posx>
-                <posy>-30</posy>
+                <posy>55</posy>
                 <width>304</width>
                 <height>60</height>
                 <font>InfoTitleSubFont</font>
@@ -338,7 +336,7 @@
             <control type="label">
                 <visible>[String.IsEqual(ListItem.Property(hide),True) + Window.IsVisible(CustomPlexHomeSettings.xml)]|[String.IsEqual(ListItem.Property(skinshortcuts-disabled),True) + Window.IsVisible(script-skinshortcuts.xml)]</visible>
                 <posx>50</posx>
-                <posy>-30</posy>
+                <posy>55</posy>
                 <width>304</width>
                 <height>60</height>
                 <font>InfoTitleSubFont</font>

@@ -268,7 +268,7 @@
                             <posy>200</posy>
                             <width>200</width>
                             <height>800</height>
-                            <include>DummyButtonInclude</include>
+                            <include>HiddenButton</include>
                             <onclick>Control.Move(155,1)</onclick>
                             <onfocus>Control.Move(155,1)</onfocus>
                         </control>
@@ -277,7 +277,7 @@
                             <posy>200</posy>
                             <width>200</width>
                             <height>800</height>
-                            <include>DummyButtonInclude</include>
+                            <include>HiddenButton</include>
                             <onclick>Control.Move(155,-1)</onclick>
                             <onfocus>Control.Move(155,-1)</onfocus>
                         </control>

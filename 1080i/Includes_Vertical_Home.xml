@@ -17,7 +17,7 @@
                     <ondown>700</ondown>
                     <onleft>300</onleft>
                     <onright>60</onright>
-                    <include>DummyButtonInclude</include>
+                    <include>HiddenButton</include>
                     <!--<onfocus>SetFocus(700)</onfocus>-->
                 </control>
                 <control type="image">
@@ -130,7 +130,7 @@
                     <posy>0</posy>
                     <width>660</width>
                     <height>1080</height>
-                    <include>DummyButtonInclude</include>
+                    <include>HiddenButton</include>
                     <onfocus>SetFocus(300)</onfocus>
                 </control>
                 <control type="group">
@@ -302,7 +302,7 @@
                         <posy>0</posy>
                         <width>15</width>
                         <height>1080</height>
-                        <include>DummyButtonInclude</include>
+                        <include>HiddenButton</include>
                         <onfocus>SetFocus(9001)</onfocus>
                     </control>
                     <control type="button" id="89990">
@@ -312,7 +312,7 @@
                         <posy>0</posy>
                         <width>660</width>
                         <height>1080</height>
-                        <include>DummyButtonInclude</include>
+                        <include>HiddenButton</include>
                         <onfocus>SetFocus(9001)</onfocus>
                     </control>
                     <control type="group">

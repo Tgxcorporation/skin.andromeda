@@ -140,16 +140,6 @@
                     <include>SkinShortcuts_Widgets</include>
                     <include condition="Skin.HasSetting(VerticalHome)">SkinShortcuts_Window_Navigation_Vertical</include>
                     <include condition="!Skin.HasSetting(VerticalHome)">SkinShortcuts_Window_Navigation_Horizontal</include>
-                    <!--<control type="label">-->
-                        <!--<posx>600</posx>-->
-                        <!--<posy>820</posy>-->
-                        <!--<width>1146</width>-->
-                        <!--<height>50</height>-->
-                        <!--<align>left</align>-->
-                        <!--<font>SmallButtonFont</font>-->
-                        <!--<include>TextColor_MainColor</include>-->
-                        <!--<label>$LOCALIZE[31052][COLOR=SeparatorColor] › [/COLOR]$INFO[Container(211).ListItem.Label]</label>-->
-                    <!--</control>-->
                 </control>
                 <!--SUBMENU-->
                 <control type="group">
