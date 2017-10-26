@@ -117,9 +117,9 @@
             <onclick>Control.Move(211,-1)</onclick>
         </control>
         <control type="button" id="3020">
-            <posx>914</posx>
+            <posx>1720</posx>
             <posy>210</posy>
-            <width>906</width>
+            <width>100</width>
             <height>100</height>
             <include>HiddenButton</include>
             <onclick>Control.Move(211,1)</onclick>
