@@ -227,7 +227,7 @@
                 <control type="group">
                     <include condition="Skin.HasSetting(VerticalHome)">SkinShortcuts_Window_Back_Level_Vertical</include>
                     <include condition="!Skin.HasSetting(VerticalHome)">SkinShortcuts_Window_Back_Level_Horizontal</include>
-                    <control type="fixedlist" id="211">
+                    <control type="list" id="211">
                         <include condition="Skin.HasSetting(VerticalHome)">SkinShortcuts_MainMenu_Vertical</include>
                         <include condition="!Skin.HasSetting(VerticalHome)">SkinShortcuts_MainMenu_Horizontal</include>
                     </control>

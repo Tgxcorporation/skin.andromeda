@@ -132,7 +132,7 @@
                     <include>VisibleFadeEffect</include>
                     <include condition="Skin.HasSetting(VerticalHome)">SkinShortcuts_Window_Back_Level_Vertical</include>
                     <include condition="!Skin.HasSetting(VerticalHome)">SkinShortcuts_Window_Back_Level_Horizontal</include>
-                    <control type="fixedlist" id="211">
+                    <control type="list" id="211">
                         <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
                         <include condition="Skin.HasSetting(VerticalHome)">SkinShortcuts_MainMenu_Vertical</include>
                         <include condition="!Skin.HasSetting(VerticalHome)">SkinShortcuts_MainMenu_Horizontal</include>
