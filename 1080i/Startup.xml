@@ -74,7 +74,7 @@
                 <align>center</align>
                 <font>WindowTitleSubFont</font>
                 <include>TextColor_MidColor</include>
-                <label>$INFO[Window(Home).Property(SkinHelper.skinVersion)]</label>
+                <label>$INFO[Window(Home).Property(SkinHelper.skin_version)]</label>
             </control>
         </control>
     </controls>

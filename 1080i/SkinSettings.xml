@@ -114,13 +114,13 @@
                 </control>
                 <control type="textbox">
                     <posx>100</posx>
-                    <posy>880</posy>
-                    <height>160</height>
+                    <posy>800</posy>
+                    <height>240</height>
                     <width>380</width>
                     <align>left</align>
                     <font>DonationFont</font>
                     <textcolor>NoFocusedColor</textcolor>
-                    <label>$LOCALIZE[31086] [B]massimo@pagani.no.it[/B]</label>
+                    <label>[B]$INFO[Window(Home).Property(SkinHelper.skinTitle)][/B][CR][CR]$LOCALIZE[31086] [B]massimo@pagani.no.it[/B]</label>
                 </control>
                 <control type="group">
                     <control type="group" id="9110">
