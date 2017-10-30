@@ -21,7 +21,7 @@
                 </control>
                 <control type="grouplist" id="9000">
                     <posx>80</posx>
-                    <posy>180</posy>
+                    <posy>440</posy>
                     <height>180</height>
                     <ondown>9002</ondown>
                     <onright>22</onright>
@@ -185,8 +185,6 @@
                         <control type="button" id="19">
                             <width>1290</width>
                             <include>LeftMenuButton</include>
-                            <label>$LOCALIZE[21429]:  $LOCALIZE[21431]</label>
-                            <altlabel>$LOCALIZE[21429]:  $LOCALIZE[21430]</altlabel>
                         </control>
                         <control type="button" id="23">
                             <textwidth>535</textwidth>
