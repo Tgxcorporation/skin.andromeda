@@ -91,14 +91,14 @@
                     <include>TopBarButton</include>
                 </control>
                 <control type="button" id="19">
-                    <enable>Visualisation.Enabled</enable>
+                    <!--<enable>Visualisation.Enabled</enable>-->
                     <animation effect="fade" start="100" end="50" time="0" condition="!Visualisation.Enabled">Conditional</animation>
                     <label></label>
                     <include>TopBarButton</include>
                     <onclick>Addon.Default.OpenSettings(xbmc.player.musicviz)</onclick>
                 </control>
                 <control type="button" id="20">
-                    <enable>Visualisation.HasPresets</enable>
+                    <!--<enable>Visualisation.HasPresets</enable>-->
                     <animation effect="fade" start="100" end="50" time="0" condition="!Visualisation.HasPresets">Conditional</animation>
                     <label></label>
                     <include>TopBarButton</include>
@@ -176,7 +176,7 @@
                     <onclick>PlayerControl(Previous)</onclick>
                 </control>
                 <control type="button" id="601">
-                    <enable>Player.SeekEnabled</enable>
+                    <!--<enable>Player.SeekEnabled</enable>-->
                     <animation effect="fade" start="100" end="50" time="0" condition="!Player.SeekEnabled">Conditional</animation>
                     <label></label>
                     <include>TopBarButton</include>
@@ -209,14 +209,14 @@
                     <onclick>PlayerControl(Random)</onclick>
                 </control>
                 <control type="button" id="353">
-                    <enable>Player.CanRecord</enable>
+                    <!--<enable>Player.CanRecord</enable>-->
                     <animation effect="fade" start="100" end="50" time="0" condition="!Player.CanRecord">Conditional</animation>
                     <label></label>
                     <include>TopBarButton</include>
                     <onclick>PlayerControl(Record)</onclick>
                 </control>
                 <control type="button" id="604">
-                    <enable>Player.SeekEnabled</enable>
+                    <!--<enable>Player.SeekEnabled</enable>-->
                     <animation effect="fade" start="100" end="50" time="0" condition="!Player.SeekEnabled">Conditional</animation>
                     <label></label>
                     <include>TopBarButton</include>
