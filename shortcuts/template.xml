@@ -10,22 +10,22 @@
 
         <property name="height" tag="property" attribute="name|widgetAspect" value="31117">697</property>
         <property name="height" tag="property" attribute="name|widgetAspect" value="31119">505</property>
-        <property name="height" tag="property" attribute="name|widgetAspect" value="31118">608</property>
+        <property name="height" tag="property" attribute="name|widgetAspect" value="31118|Icon - 1:1">608</property>
         <property name="height" tag="property" attribute="name|widgetAspect" value="31120">547</property>
 
         <property name="gfxType" tag="property" attribute="name|widgetAspect" value="31117">Poster</property>
         <property name="gfxType" tag="property" attribute="name|widgetAspect" value="31119">Episode</property>
-        <property name="gfxType" tag="property" attribute="name|widgetAspect" value="31118">Square</property>
+        <property name="gfxType" tag="property" attribute="name|widgetAspect" value="31118|Icon - 1:1">Square</property>
         <property name="gfxType" tag="property" attribute="name|widgetAspect" value="31120">Channel</property>
 
         <property name="labelTitle" tag="property" attribute="name|widgetAspect" value="31117">$INFO[ListItem.TVShowTitle,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Label]</property>
         <property name="labelTitle" tag="property" attribute="name|widgetAspect" value="31119">$INFO[ListItem.TVShowTitle,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Label]</property>
-        <property name="labelTitle" tag="property" attribute="name|widgetAspect" value="31118">$INFO[ListItem.Label]</property>
+        <property name="labelTitle" tag="property" attribute="name|widgetAspect" value="31118|Icon - 1:1">$INFO[ListItem.Label]</property>
         <property name="labelTitle" tag="property" attribute="name|widgetAspect" value="31120">$INFO[ListItem.Label]</property>
 
         <property name="labelSubTitle" tag="property" attribute="name|widgetAspect" value="31117">$INFO[ListItem.Rating,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year]$INFO[ListItem.Duration,[COLOR=SeparatorColor] › [/COLOR], $LOCALIZE[31297]]</property>
         <property name="labelSubTitle" tag="property" attribute="name|widgetAspect" value="31119">$INFO[ListItem.Rating,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration,, $LOCALIZE[31297]]</property>
-        <property name="labelSubTitle" tag="property" attribute="name|widgetAspect" value="31118">$INFO[ListItem.Artist]$INFO[ListItem.Rating,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration,[COLOR=SeparatorColor] › [/COLOR], $LOCALIZE[31297]]</property>
+        <property name="labelSubTitle" tag="property" attribute="name|widgetAspect" value="31118|Icon - 1:1">$INFO[ListItem.Artist]$INFO[ListItem.Rating,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration,[COLOR=SeparatorColor] › [/COLOR], $LOCALIZE[31297]]</property>
         <property name="labelSubTitle" tag="property" attribute="name|widgetAspect" value="31120">$INFO[ListItem.Label2,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration]</property>
 
         <property name="title" tag="property" attribute="name|widgetName" />
@@ -134,22 +134,22 @@
 
         <property name="height" tag="property" attribute="name|widgetAspect.1" value="31117">697</property>
         <property name="height" tag="property" attribute="name|widgetAspect.1" value="31119">505</property>
-        <property name="height" tag="property" attribute="name|widgetAspect.1" value="31118">608</property>
+        <property name="height" tag="property" attribute="name|widgetAspect.1" value="31118|Icon - 1:1">608</property>
         <property name="height" tag="property" attribute="name|widgetAspect.1" value="31120">547</property>
 
         <property name="gfxType" tag="property" attribute="name|widgetAspect.1" value="31117">Poster</property>
         <property name="gfxType" tag="property" attribute="name|widgetAspect.1" value="31119">Episode</property>
-        <property name="gfxType" tag="property" attribute="name|widgetAspect.1" value="31118">Square</property>
+        <property name="gfxType" tag="property" attribute="name|widgetAspect.1" value="31118|Icon - 1:1">Square</property>
         <property name="gfxType" tag="property" attribute="name|widgetAspect.1" value="31120">Channel</property>
 
         <property name="labelTitle" tag="property" attribute="name|widgetAspect.1" value="31117">$INFO[ListItem.TVShowTitle,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Label]</property>
         <property name="labelTitle" tag="property" attribute="name|widgetAspect.1" value="31119">$INFO[ListItem.TVShowTitle,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Label]</property>
-        <property name="labelTitle" tag="property" attribute="name|widgetAspect.1" value="31118">$INFO[ListItem.Label]</property>
+        <property name="labelTitle" tag="property" attribute="name|widgetAspect.1" value="31118|Icon - 1:1">$INFO[ListItem.Label]</property>
         <property name="labelTitle" tag="property" attribute="name|widgetAspect.1" value="31120">$INFO[ListItem.Label]</property>
 
         <property name="labelSubTitle" tag="property" attribute="name|widgetAspect.1" value="31117">$INFO[ListItem.Rating,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year]$INFO[ListItem.Duration,[COLOR=SeparatorColor] › [/COLOR], $LOCALIZE[31297]]</property>
         <property name="labelSubTitle" tag="property" attribute="name|widgetAspect.1" value="31119">$INFO[ListItem.Rating,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration,, $LOCALIZE[31297]]</property>
-        <property name="labelSubTitle" tag="property" attribute="name|widgetAspect.1" value="31118">$INFO[ListItem.Artist]$INFO[ListItem.Rating,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration,[COLOR=SeparatorColor] › [/COLOR], $LOCALIZE[31297]]</property>
+        <property name="labelSubTitle" tag="property" attribute="name|widgetAspect.1" value="31118|Icon - 1:1">$INFO[ListItem.Artist]$INFO[ListItem.Rating,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration,[COLOR=SeparatorColor] › [/COLOR], $LOCALIZE[31297]]</property>
         <property name="labelSubTitle" tag="property" attribute="name|widgetAspect.1" value="31120">$INFO[ListItem.Label2,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration]</property>
 
         <property name="title" tag="property" attribute="name|widgetName.1" />
@@ -254,22 +254,22 @@
 
         <property name="height" tag="property" attribute="name|widgetAspect.2" value="31117">697</property>
         <property name="height" tag="property" attribute="name|widgetAspect.2" value="31119">505</property>
-        <property name="height" tag="property" attribute="name|widgetAspect.2" value="31118">608</property>
+        <property name="height" tag="property" attribute="name|widgetAspect.2" value="31118|Icon - 1:1">608</property>
         <property name="height" tag="property" attribute="name|widgetAspect.2" value="31120">547</property>
 
         <property name="gfxType" tag="property" attribute="name|widgetAspect.2" value="31117">Poster</property>
         <property name="gfxType" tag="property" attribute="name|widgetAspect.2" value="31119">Episode</property>
-        <property name="gfxType" tag="property" attribute="name|widgetAspect.2" value="31118">Square</property>
+        <property name="gfxType" tag="property" attribute="name|widgetAspect.2" value="31118|Icon - 1:1">Square</property>
         <property name="gfxType" tag="property" attribute="name|widgetAspect.2" value="31120">Channel</property>
 
         <property name="labelTitle" tag="property" attribute="name|widgetAspect.2" value="31117">$INFO[ListItem.TVShowTitle,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Label]</property>
         <property name="labelTitle" tag="property" attribute="name|widgetAspect.2" value="31119">$INFO[ListItem.TVShowTitle,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Label]</property>
-        <property name="labelTitle" tag="property" attribute="name|widgetAspect.2" value="31118">$INFO[ListItem.Label]</property>
+        <property name="labelTitle" tag="property" attribute="name|widgetAspect.2" value="31118|Icon - 1:1">$INFO[ListItem.Label]</property>
         <property name="labelTitle" tag="property" attribute="name|widgetAspect.2" value="31120">$INFO[ListItem.Label]</property>
 
         <property name="labelSubTitle" tag="property" attribute="name|widgetAspect.2" value="31117">$INFO[ListItem.Rating,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year]$INFO[ListItem.Duration,[COLOR=SeparatorColor] › [/COLOR], $LOCALIZE[31297]]</property>
         <property name="labelSubTitle" tag="property" attribute="name|widgetAspect.2" value="31119">$INFO[ListItem.Rating,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration,, $LOCALIZE[31297]]</property>
-        <property name="labelSubTitle" tag="property" attribute="name|widgetAspect.2" value="31118">$INFO[ListItem.Artist]$INFO[ListItem.Rating,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration,[COLOR=SeparatorColor] › [/COLOR], $LOCALIZE[31297]]</property>
+        <property name="labelSubTitle" tag="property" attribute="name|widgetAspect.2" value="31118|Icon - 1:1">$INFO[ListItem.Artist]$INFO[ListItem.Rating,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration,[COLOR=SeparatorColor] › [/COLOR], $LOCALIZE[31297]]</property>
         <property name="labelSubTitle" tag="property" attribute="name|widgetAspect.2" value="31120">$INFO[ListItem.Label2,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration]</property>
 
         <property name="title" tag="property" attribute="name|widgetName.2" />
@@ -375,22 +375,22 @@
 
         <property name="height" tag="property" attribute="name|widgetAspect.3" value="31117">697</property>
         <property name="height" tag="property" attribute="name|widgetAspect.3" value="31119">505</property>
-        <property name="height" tag="property" attribute="name|widgetAspect.3" value="31118">608</property>
+        <property name="height" tag="property" attribute="name|widgetAspect.3" value="31118|Icon - 1:1">608</property>
         <property name="height" tag="property" attribute="name|widgetAspect.3" value="31120">547</property>
 
         <property name="gfxType" tag="property" attribute="name|widgetAspect.3" value="31117">Poster</property>
         <property name="gfxType" tag="property" attribute="name|widgetAspect.3" value="31119">Episode</property>
-        <property name="gfxType" tag="property" attribute="name|widgetAspect.3" value="31118">Square</property>
+        <property name="gfxType" tag="property" attribute="name|widgetAspect.3" value="31118|Icon - 1:1">Square</property>
         <property name="gfxType" tag="property" attribute="name|widgetAspect.3" value="31120">Channel</property>
 
         <property name="labelTitle" tag="property" attribute="name|widgetAspect.3" value="31117">$INFO[ListItem.TVShowTitle,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Label]</property>
         <property name="labelTitle" tag="property" attribute="name|widgetAspect.3" value="31119">$INFO[ListItem.TVShowTitle,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Label]</property>
-        <property name="labelTitle" tag="property" attribute="name|widgetAspect.3" value="31118">$INFO[ListItem.Label]</property>
+        <property name="labelTitle" tag="property" attribute="name|widgetAspect.3" value="31118|Icon - 1:1">$INFO[ListItem.Label]</property>
         <property name="labelTitle" tag="property" attribute="name|widgetAspect.3" value="31120">$INFO[ListItem.Label]</property>
 
         <property name="labelSubTitle" tag="property" attribute="name|widgetAspect.3" value="31117">$INFO[ListItem.Rating,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year]$INFO[ListItem.Duration,[COLOR=SeparatorColor] › [/COLOR], $LOCALIZE[31297]]</property>
         <property name="labelSubTitle" tag="property" attribute="name|widgetAspect.3" value="31119">$INFO[ListItem.Rating,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration,, $LOCALIZE[31297]]</property>
-        <property name="labelSubTitle" tag="property" attribute="name|widgetAspect.3" value="31118">$INFO[ListItem.Artist]$INFO[ListItem.Rating,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration,[COLOR=SeparatorColor] › [/COLOR], $LOCALIZE[31297]]</property>
+        <property name="labelSubTitle" tag="property" attribute="name|widgetAspect.3" value="31118|Icon - 1:1">$INFO[ListItem.Artist]$INFO[ListItem.Rating,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration,[COLOR=SeparatorColor] › [/COLOR], $LOCALIZE[31297]]</property>
         <property name="labelSubTitle" tag="property" attribute="name|widgetAspect.3" value="31120">$INFO[ListItem.Label2,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration]</property>
 
         <property name="title" tag="property" attribute="name|widgetName.3" />
@@ -496,22 +496,22 @@
 
         <property name="height" tag="property" attribute="name|widgetAspect.4" value="31117">697</property>
         <property name="height" tag="property" attribute="name|widgetAspect.4" value="31119">505</property>
-        <property name="height" tag="property" attribute="name|widgetAspect.4" value="31118">608</property>
+        <property name="height" tag="property" attribute="name|widgetAspect.4" value="31118|Icon - 1:1">608</property>
         <property name="height" tag="property" attribute="name|widgetAspect.4" value="31120">547</property>
 
         <property name="gfxType" tag="property" attribute="name|widgetAspect.4" value="31117">Poster</property>
         <property name="gfxType" tag="property" attribute="name|widgetAspect.4" value="31119">Episode</property>
-        <property name="gfxType" tag="property" attribute="name|widgetAspect.4" value="31118">Square</property>
+        <property name="gfxType" tag="property" attribute="name|widgetAspect.4" value="31118|Icon - 1:1">Square</property>
         <property name="gfxType" tag="property" attribute="name|widgetAspect.4" value="31120">Channel</property>
 
         <property name="labelTitle" tag="property" attribute="name|widgetAspect.4" value="31117">$INFO[ListItem.TVShowTitle,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Label]</property>
         <property name="labelTitle" tag="property" attribute="name|widgetAspect.4" value="31119">$INFO[ListItem.TVShowTitle,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Label]</property>
-        <property name="labelTitle" tag="property" attribute="name|widgetAspect.4" value="31118">$INFO[ListItem.Label]</property>
+        <property name="labelTitle" tag="property" attribute="name|widgetAspect.4" value="31118|Icon - 1:1">$INFO[ListItem.Label]</property>
         <property name="labelTitle" tag="property" attribute="name|widgetAspect.4" value="31120">$INFO[ListItem.Label]</property>
 
         <property name="labelSubTitle" tag="property" attribute="name|widgetAspect.4" value="31117">$INFO[ListItem.Rating,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year]$INFO[ListItem.Duration,[COLOR=SeparatorColor] › [/COLOR], $LOCALIZE[31297]]</property>
         <property name="labelSubTitle" tag="property" attribute="name|widgetAspect.4" value="31119">$INFO[ListItem.Rating,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration,, $LOCALIZE[31297]]</property>
-        <property name="labelSubTitle" tag="property" attribute="name|widgetAspect.4" value="31118">$INFO[ListItem.Artist]$INFO[ListItem.Rating,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration,[COLOR=SeparatorColor] › [/COLOR], $LOCALIZE[31297]]</property>
+        <property name="labelSubTitle" tag="property" attribute="name|widgetAspect.4" value="31118|Icon - 1:1">$INFO[ListItem.Artist]$INFO[ListItem.Rating,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Year,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration,[COLOR=SeparatorColor] › [/COLOR], $LOCALIZE[31297]]</property>
         <property name="labelSubTitle" tag="property" attribute="name|widgetAspect.4" value="31120">$INFO[ListItem.Label2,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Duration]</property>
 
         <property name="title" tag="property" attribute="name|widgetName.4" />
