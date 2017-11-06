@@ -16,31 +16,14 @@
                 <param name="visiblefocus" value="true"/>
                 <param name="direction" value="horizontal"/>
             </include>
-            <control type="label" id="1">
+            <control type="image" id="1">
                 <visible>Integer.IsGreater(Control.GetLabel(10), 0)</visible>
-                <centerleft>49.7%</centerleft>
-                <centertop>50%</centertop>
-                <width>180</width>
-                <height>180</height>
-                <scroll>true</scroll>
-                <align>center</align>
-                <aligny>center</aligny>
-                <font>NotificationFont</font>
-                <include>TextColor_MainColor</include>
-                <label>$INFO[Control.GetLabel(10)]</label>
-            </control>
-            <control type="label">
-                <visible>!Integer.IsGreater(Control.GetLabel(10), 0)</visible>
                 <centerleft>50%</centerleft>
                 <centertop>50%</centertop>
                 <width>180</width>
                 <height>180</height>
-                <scroll>true</scroll>
-                <align>center</align>
-                <aligny>center</aligny>
-                <font>NotificationFont</font>
-                <include>TextColor_MainColor</include>
-                <label>-</label>
+                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                <texture>OSD/loading_inner.png</texture>
             </control>
             <control type="image" id="1">
                 <centerleft>50%</centerleft>
@@ -57,6 +40,19 @@
                 <height>180</height>
                 <texture>OSD/loading.png</texture>
                 <animation effect="rotate" center="auto" start="360" end="0" time="750" loop="true" tween="sine" easing="in" condition="true">Conditional</animation>
+            </control>
+            <control type="label" id="1">
+                <visible>Integer.IsGreater(Control.GetLabel(10), 0)</visible>
+                <centerleft>49.7%</centerleft>
+                <centertop>50%</centertop>
+                <width>180</width>
+                <height>180</height>
+                <scroll>true</scroll>
+                <align>center</align>
+                <aligny>center</aligny>
+                <font>NotificationFont</font>
+                <include>TextColor_MainColor</include>
+                <label>$INFO[Control.GetLabel(10)]</label>
             </control>
         </control>
     </controls>

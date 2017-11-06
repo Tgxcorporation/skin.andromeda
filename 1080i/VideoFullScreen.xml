@@ -4,8 +4,9 @@
     <controls>
         <control type="group" id="0">
             <include>DimBG</include>
-            <control type="group">
-                <control type="image">
+            <control type="group" id="1">
+                <include>OSDOpenClose</include>
+                <control type="image" id="1">
                     <posx>0</posx>
                     <posy>0</posy>
                     <width>1920</width>
@@ -13,7 +14,7 @@
                     <colordiffuse>bbffffff</colordiffuse>
                     <texture border="1">common/BlackDot.png</texture>
                 </control>
-                <control type="image">
+                <control type="image" id="1">
                     <posx>0</posx>
                     <posy>0</posy>
                     <width>1920</width>
@@ -21,15 +22,14 @@
                     <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                     <texture border="10">common/overlay_topbar_gradient.png</texture>
                 </control>
-                <control type="image">
+                <control type="image" id="1">
                     <posx>0</posx>
-                    <posy>185</posy>
+                    <posy>350</posy>
                     <width>1920</width>
                     <height>2</height>
                     <colordiffuse>$VAR[Picked.HighLight.Color]</colordiffuse>
                     <texture border="2,0,2,0">common/line_white_horizontal.png</texture>
                 </control>
-                <include>OSDOpenClose</include>
                 <control type="label" id="10">
                     <left>100</left>
                     <top>60</top>
@@ -67,6 +67,48 @@
                     <include>TextColor_MainColor</include>
                     <font>NotificationFont</font>
                 </control>
+            </control>
+        </control>
+        <control type="group" id="1">
+            <visible>Player.Caching</visible>
+            <include>OSDVisibleFadeEffect</include>
+            <control type="image" id="1">
+                <visible>Integer.IsGreater(Player.CacheLevel, 0)</visible>
+                <centerleft>50%</centerleft>
+                <centertop>50%</centertop>
+                <width>180</width>
+                <height>180</height>
+                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                <texture>OSD/loading_inner.png</texture>
+            </control>
+            <control type="image" id="1">
+                <centerleft>50%</centerleft>
+                <centertop>50%</centertop>
+                <width>180</width>
+                <height>180</height>
+                <texture>OSD/loading.png</texture>
+                <animation effect="rotate" center="auto" start="360" end="0" time="1500" loop="true" tween="circle" easing="inout" condition="true">Conditional</animation>
+            </control>
+            <control type="image" id="1">
+                <centerleft>50%</centerleft>
+                <centertop>50%</centertop>
+                <width>180</width>
+                <height>180</height>
+                <texture>OSD/loading.png</texture>
+                <animation effect="rotate" center="auto" start="360" end="0" time="750" loop="true" tween="sine" easing="in" condition="true">Conditional</animation>
+            </control>
+            <control type="label" id="1">
+                <visible>Integer.IsGreater(Player.CacheLevel, 0)</visible>
+                <centerleft>50%</centerleft>
+                <centertop>50%</centertop>
+                <width>180</width>
+                <height>180</height>
+                <scroll>true</scroll>
+                <align>center</align>
+                <aligny>center</aligny>
+                <font>NotificationFont</font>
+                <include>TextColor_MainColor</include>
+                <label>$INFO[Player.CacheLevel, ,%]</label>
             </control>
         </control>
     </controls>
