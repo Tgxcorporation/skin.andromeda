@@ -38,7 +38,7 @@
         <control type="group">
             <include>VisibleFadeEffect</include>
             <control type="image">
-                <visible>Player.HasVideo + !Skin.HasSetting(Show_Player) + !Window.IsVisible(script-Actors-DialogVideoInfo.xml)</visible>
+                <visible>Player.HasVideo + !Skin.HasSetting(Show_Player)</visible>
                 <posx>0</posx>
                 <posy>0</posy>
                 <width>1920</width>
@@ -77,7 +77,7 @@
             </control>
             <control type="videowindow">
                 <visible>!SlideShow.IsActive</visible>
-                <visible>Player.HasVideo + !Skin.HasSetting(Show_Player) + !Window.IsVisible(script-Actors-DialogVideoInfo.xml)</visible>
+                <visible>Player.HasVideo + !Skin.HasSetting(Show_Player)</visible>
                 <posx>0</posx>
                 <posy>0</posy>
                 <width>1920</width>
