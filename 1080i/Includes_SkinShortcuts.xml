@@ -732,7 +732,7 @@
             </control>
         </control>
         <control type="scrollbar" id="30060">
-            <include>SkinShortcuts_Widgets_Vertical_Scroller_Position</include>
+            <include condition="Skin.HasSetting(VerticalHome)">SkinShortcuts_Widgets_Vertical_Scroller_Position</include>
             <posx>1769</posx>
             <posy>320</posy>
             <height>605</height>
