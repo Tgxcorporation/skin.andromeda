@@ -209,6 +209,7 @@
             <onleft>9900</onleft>
             <onright>9900</onright>
             <onup>9901</onup>
+            <ondown condition="Window.IsActive(script-globalsearch-main.xml)">9000</ondown>
             <ondown condition="Window.IsActive(script-script.extendedinfo-VideoList.xml)">500</ondown>
             <ondown condition="Window.IsActive(LoginScreen.xml)">52</ondown>
             <ondown condition="Window.IsActive(EventLog.xml)">570</ondown>
