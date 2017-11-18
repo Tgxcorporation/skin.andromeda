@@ -26,7 +26,7 @@
                 Window.IsVisible(visualisation) |
                 [
                 Window.IsVisible(FullScreenVideo) +
-                [Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek | Player.Paused]
+                [Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek | Player.Paused | !String.IsEmpty(PVR.ChannelNumberInput)]
                 ]
             </visible>
             <control type="image">
@@ -228,7 +228,7 @@
                     <label>$VAR[SeekLabel]</label>
                 </control>
             </control>
-            <control type="group">
+            <control type="group" id="38283">
                 <visible>Window.IsVisible(DialogFullscreenInfo.xml) | [Player.Paused+Skin.HasSetting(EnableOSDInfoOnPause)]</visible>
                 <visible>![
                     Window.IsVisible(DialogSelect.xml) |
@@ -426,6 +426,19 @@
             <font>TopbarMatFont</font>
             <include>TextColor_MainColor</include>
             <label></label>
+        </control>
+        <control type="label">
+            <visible>!String.IsEmpty(PVR.ChannelNumberInput)</visible>
+            <include>VisibleFadeEffect</include>
+            <animation effect="slide" start="0,0" end="0,-400" time="0" condition="control.isvisible(38283)">Conditional</animation>
+            <posx>0</posx>
+            <posy>925</posy>
+            <width>1920</width>
+            <height>50</height>
+            <font>InfoTitleFont</font>
+            <include>TextColor_MainColor</include>
+            <align>center</align>
+            <label>[B]$INFO[PVR.ChannelNumberInput][/B]</label>
         </control>
     </controls>
 </window>
