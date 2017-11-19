@@ -65,10 +65,7 @@
         <value condition="Window.IsActive(MyPVRChannels.xml) + !String.IsEmpty(Window.Property(IsRadio))">$LOCALIZE[19024]</value>
         <value condition="Window.IsActive(MyPVRRecordings.xml)">$LOCALIZE[19163]</value>
         <value condition="Window.IsActive(MyPVRSearch.xml)">$LOCALIZE[137]</value>
-        <value condition="Window.IsActive(MyPVRGuide.xml)+Control.IsVisible(10)">$LOCALIZE[19032]</value>
-        <value condition="Window.IsActive(MyPVRGuide.xml)+Control.IsVisible(11)">$LOCALIZE[19030]</value>
-        <value condition="Window.IsActive(MyPVRGuide.xml)+Control.IsVisible(12)">$LOCALIZE[19031]</value>
-        <value condition="Window.IsActive(MyPVRGuide.xml)+Control.IsVisible(13)">$LOCALIZE[19029]$INFO[Container(13).ListItem.ChannelName,[COLOR=SeparatorColor] › [/COLOR]]</value>
+        <value condition="Window.IsActive(MyPVRGuide.xml)">$LOCALIZE[19069]</value>
         <value condition="Window.isactive(RadioTimers) | Window.isactive(TVTimers)">$LOCALIZE[19040]</value>
         <value condition="Window.isactive(RadioTimerRules) | Window.isactive(TVTimerRules)">$LOCALIZE[19138]</value>
         <value condition="Window.IsActive(CustomAddons.xml)">$LOCALIZE[31291]</value>
@@ -99,6 +96,7 @@
         <value condition="Window.isvisible(MyWeather.xml)">$INFO[Window.Property(WeatherProvider)]$INFO[Window.Property(Updated),     ]</value>
         <value condition="Window.isvisible(script-script.extendedinfo-VideoList.xml)">$INFO[Window.Property(Filter_Label),, - ]$INFO[Window.Property(TotalItems),, $LOCALIZE[31025]]</value>
         <value condition="Window.isvisible(MyMusicPlaylistEditor.xml)">$LOCALIZE[2]</value>
+        <value condition="Window.isvisible(MyPVRGuide.xml)">$LOCALIZE[19032]</value>
         <value condition="Window.isvisible(LoginScreen.xml)">$LOCALIZE[13200]</value>
         <value condition="Window.isvisible(SkinSettings.xml)">Andromeda</value>
         <value condition="Window.isvisible(CustomStartupWindow.xml)">$LOCALIZE[512]</value>
@@ -126,9 +124,6 @@
     <variable name="DetailsTitle">
         <value condition="Window.IsVisible(DialogFullScreenInfo.xml)+VideoPlayer.Content(livetv)">$INFO[VideoPlayer.ChannelNumber,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[VideoPlayer.ChannelName]$INFO[VideoPlayer.Title,[COLOR=SeparatorColor] › [/COLOR]]</value>
         <value condition="Window.IsVisible(DialogFullScreenInfo.xml)+!VideoPlayer.Content(livetv)">$INFO[VideoPlayer.TVShowTitle]$INFO[VideoPlayer.Artist,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[VideoPlayer.Album,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[VideoPlayer.Season,[COLOR=SeparatorColor] › [/COLOR]$LOCALIZE[31973],.]$INFO[VideoPlayer.Episode,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[VideoPlayer.Title]</value>
-        <value condition="Window.IsActive(MyPVRGuide.xml)+control.isvisible(13)">$INFO[ListItem.StartTime,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Label]</value>
-        <value condition="Window.IsActive(MyPVRGuide.xml)+control.isvisible(12)">$INFO[ListItem.ChannelNumberLabel,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.ChannelName]</value>
-        <value condition="Window.IsActive(MyPVRGuide.xml)+control.isvisible(11)">$INFO[ListItem.ChannelNumberLabel,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.ChannelName]</value>
         <value condition="[Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)|Window.IsActive(MyPVRRecordings.xml)]">$INFO[ListItem.ChannelNumberLabel,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Label]</value>
         <value condition="[Window.IsActive(DialogPVRChannelGuide.xml)]">$INFO[ListItem.StartTime,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Label]</value>
         <value condition="!String.IsEmpty(ListItem.Label)">$INFO[ListItem.Label]</value>
@@ -136,9 +131,6 @@
     </variable>
     <variable name="DetailsRow1">
         <value condition="Window.IsActive(DialogPVRInfo.xml)">$INFO[ListItem.ChannelNumberLabel,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.ChannelName]</value>
-        <value condition="Window.IsActive(MyPVRGuide.xml)+control.isvisible(13)">$INFO[ListItem.Label]</value>
-        <value condition="Window.IsActive(MyPVRGuide.xml)+control.isvisible(12)">$INFO[ListItem.Label]</value>
-        <value condition="Window.IsActive(MyPVRGuide.xml)+control.isvisible(11)">$INFO[ListItem.Label]</value>
         <value condition="[Window.IsActive(DialogPVRChannelGuide.xml)|Window.IsActive(DialogPVRChannelsOSD.xml)] + Container(11).ListItem.HasEpg">$INFO[ListItem.Title]</value>
         <value condition="[Window.IsActive(MyPVRChannels.xml)] + ListItem.HasEpg">$INFO[ListItem.Title]</value>
         <value condition="![Window.IsActive(DialogPVRChannelGuide.xml)|Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)] + VideoPlayer.IsFullscreen + VideoPlayer.Content(LiveTV)+VideoPlayer.HasEpg">$INFO[VideoPlayer.StartTime,, / ]$INFO[VideoPlayer.EndTime]</value>
@@ -160,9 +152,6 @@
     </variable>
     <variable name="DetailsRow2">
         <value condition="Window.IsActive(DialogPVRInfo.xml)">$INFO[ListItem.StartTime]$INFO[ListItem.EndTime, / ]</value>
-        <value condition="Window.IsActive(MyPVRGuide.xml)+control.isvisible(13)">$INFO[ListItem.StartTime]$INFO[ListItem.EndTime, / ]</value>
-        <value condition="Window.IsActive(MyPVRGuide.xml)+control.isvisible(12)">$INFO[ListItem.StartTime]$INFO[ListItem.EndTime, / ]</value>
-        <value condition="Window.IsActive(MyPVRGuide.xml)+control.isvisible(11)">$INFO[ListItem.StartTime]$INFO[ListItem.EndTime, / ]</value>
         <value condition="[Window.IsActive(DialogPVRChannelGuide.xml)|Window.IsActive(DialogPVRChannelsOSD.xml)] + Container(11).ListItem.HasEpg">$INFO[ListItem.StartTime]$INFO[ListItem.EndTime, / ]</value>
         <value condition="[Window.IsActive(MyPVRChannels.xml)] + ListItem.HasEpg">$INFO[ListItem.StartTime]$INFO[ListItem.EndTime, / ]</value>
         <value condition="![Window.IsActive(DialogPVRChannelGuide.xml)|Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)] + VideoPlayer.IsFullscreen + ![VideoPlayer.Content(LiveTV)+!VideoPlayer.HasEpg]">$INFO[VideoPlayer.Year,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[VideoPlayer.Duration,, $LOCALIZE[31297]]</value>
@@ -187,9 +176,6 @@
     </variable>
     <variable name="DetailsRow3">
         <value condition="Window.IsActive(DialogPVRInfo.xml)">$INFO[ListItem.Genre]</value>
-        <value condition="Window.IsActive(MyPVRGuide.xml)+control.isvisible(13)">$INFO[ListItem.Genre]</value>
-        <value condition="Window.IsActive(MyPVRGuide.xml)+control.isvisible(12)">$INFO[ListItem.Genre]</value>
-        <value condition="Window.IsActive(MyPVRGuide.xml)+control.isvisible(11)">$INFO[ListItem.Genre]</value>
         <value condition="[Window.IsActive(DialogPVRChannelGuide.xml)|Window.IsActive(DialogPVRChannelsOSD.xml)]+control.isvisible(51)">$INFO[ListItem.Title]</value>
         <value condition="[Window.IsActive(MyPVRChannels.xml)]+control.isvisible(51)">$INFO[ListItem.Title]</value>
         <value condition="Window.IsActive(DialogPVRChannelGuide.xml)|Window.IsActive(DialogPVRChannelsOSD.xml)">$INFO[ListItem.Genre]</value>

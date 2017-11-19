@@ -345,8 +345,7 @@
                    [Window.IsVisible(DialogFavourites.xml)+Control.isvisible(450)+Container(450).Row(0)+Container(450).Scrolling]|
                    [Window.IsVisible(script-script.extendedinfo-VideoList.xml)+Control.isvisible(500)+Container(500).Row(0)+Container(500).Scrolling]|
                    [Window.IsVisible(EventLog.xml)+Control.isvisible(570)+Container(570).Row(0)+Container(570).Scrolling]|
-                   [Window.IsVisible(FileManager.xml)+[[Control.isvisible(20)+Container(20).Row(0)+Container(20).Scrolling]|[Control.isvisible(21)+Container(21).Row(0)+Container(21).Scrolling]]]|
-                   [Window.IsVisible(MyPVRGuide.xml)+[[Control.isvisible(10)+Container(10).Row(0)+Container(10).Scrolling]|[Control.isvisible(11)+Container(11).Row(0)+Container(11).Scrolling]|[Control.isvisible(12)+Container(12).Row(0)+Container(12).Scrolling]|[Control.isvisible(13)+Container(13).Row(0)+Container(13).Scrolling]]]
+                   [Window.IsVisible(FileManager.xml)+[[Control.isvisible(20)+Container(20).Row(0)+Container(20).Scrolling]|[Control.isvisible(21)+Container(21).Row(0)+Container(21).Scrolling]]]
                    ]]">
                 <effect type="slide" start="0,0" end="0,186" time="150" delay="0" tween="circle" easing="inout"/>
             </animation>
@@ -1552,7 +1551,7 @@
         <control type="group">
             <include>OpenCloseOverlay</include>
             <control type="group">
-                <visible>!control.isvisible(51)</visible>
+                <visible>![control.isvisible(51)]</visible>
                 <control type="image">
                     <include>OverlayTransparency</include>
                     <posx>0</posx>
