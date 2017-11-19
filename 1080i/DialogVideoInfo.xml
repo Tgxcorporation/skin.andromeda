@@ -818,7 +818,7 @@
                         <height>35</height>
                         <font>InfoTitleSubFont</font>
                         <include>TextColor_MainColor</include>
-                        <label>$LOCALIZE[344][COLOR=SeparatorColor] › [/COLOR]$INFO[Container(50).NumItems] $LOCALIZE[31025]</label>
+                        <label>$LOCALIZE[344][COLOR=SeparatorColor] › [/COLOR]$INFO[Container(50).NumNonFolderItems] $LOCALIZE[31025]</label>
                     </control>
                     <control type="panel" id="50">
                         <posx>660</posx>

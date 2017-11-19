@@ -200,7 +200,7 @@
                         <height>35</height>
                         <font>InfoTitleSubFont</font>
                         <include>TextColor_MainColor</include>
-                        <label>$LOCALIZE[342][COLOR=SeparatorColor] › [/COLOR]$INFO[Container(150).NumItems] $LOCALIZE[31025]</label>
+                        <label>$LOCALIZE[342][COLOR=SeparatorColor] › [/COLOR]$INFO[Container(150).NumNonFolderItems] $LOCALIZE[31025]</label>
                     </control>
                     <control type="panel" id="150">
                         <description>movies list</description>
@@ -367,7 +367,7 @@
                         <height>35</height>
                         <font>InfoTitleSubFont</font>
                         <include>TextColor_MainColor</include>
-                        <label>$LOCALIZE[20343][COLOR=SeparatorColor] › [/COLOR]$INFO[Container(250).NumItems] $LOCALIZE[31025]</label>
+                        <label>$LOCALIZE[20343][COLOR=SeparatorColor] › [/COLOR]$INFO[Container(250).NumNonFolderItems] $LOCALIZE[31025]</label>
                     </control>
                     <control type="panel" id="250">
                         <description>movies list</description>
@@ -534,7 +534,7 @@
                         <height>35</height>
                         <font>InfoTitleSubFont</font>
                         <include>TextColor_MainColor</include>
-                        <label>$ADDON[script.extendedinfo 32122][COLOR=SeparatorColor] › [/COLOR]$INFO[Container(550).NumItems] $LOCALIZE[31025]</label>
+                        <label>$ADDON[script.extendedinfo 32122][COLOR=SeparatorColor] › [/COLOR]$INFO[Container(550).NumNonFolderItems] $LOCALIZE[31025]</label>
                     </control>
                     <control type="panel" id="550">
                         <description>movies list</description>
@@ -701,7 +701,7 @@
                         <height>35</height>
                         <font>InfoTitleSubFont</font>
                         <include>TextColor_MainColor</include>
-                        <label>$ADDON[script.extendedinfo 32123][COLOR=SeparatorColor] › [/COLOR]$INFO[Container(650).NumItems] $LOCALIZE[31025]</label>
+                        <label>$ADDON[script.extendedinfo 32123][COLOR=SeparatorColor] › [/COLOR]$INFO[Container(650).NumNonFolderItems] $LOCALIZE[31025]</label>
                     </control>
                     <control type="panel" id="650">
                         <description>movies list</description>
@@ -868,7 +868,7 @@
                         <height>35</height>
                         <font>InfoTitleSubFont</font>
                         <include>TextColor_MainColor</include>
-                        <label>$ADDON[script.extendedinfo 32118][COLOR=SeparatorColor] › [/COLOR]$INFO[Container(350).NumItems] $LOCALIZE[31025]</label>
+                        <label>$ADDON[script.extendedinfo 32118][COLOR=SeparatorColor] › [/COLOR]$INFO[Container(350).NumNonFolderItems] $LOCALIZE[31025]</label>
                     </control>
                     <control type="panel" id="350">
                         <description>movies list</description>
@@ -996,7 +996,7 @@
                         <height>35</height>
                         <font>InfoTitleSubFont</font>
                         <include>TextColor_MainColor</include>
-                        <label>$LOCALIZE[1][COLOR=SeparatorColor] › [/COLOR]$INFO[Container(450).NumItems] $LOCALIZE[31025]</label>
+                        <label>$LOCALIZE[1][COLOR=SeparatorColor] › [/COLOR]$INFO[Container(450).NumNonFolderItems] $LOCALIZE[31025]</label>
                     </control>
                     <control type="panel" id="450">
                         <posx>660</posx>
@@ -1095,7 +1095,7 @@
                         <height>35</height>
                         <font>InfoTitleSubFont</font>
                         <include>TextColor_MainColor</include>
-                        <label>$LOCALIZE[20445][COLOR=SeparatorColor] › [/COLOR]$INFO[Container(750).NumItems] $LOCALIZE[31025]</label>
+                        <label>$LOCALIZE[20445][COLOR=SeparatorColor] › [/COLOR]$INFO[Container(750).NumNonFolderItems] $LOCALIZE[31025]</label>
                     </control>
                     <control type="panel" id="750">
                         <posx>660</posx>
