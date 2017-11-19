@@ -114,7 +114,7 @@
                 </control>
                 <control type="label" id="14">
                     <description>Default Label</description>
-                    <label>-</label>
+                    <label></label>
                     <textoffsety>25</textoffsety>
                     <aligny>top</aligny>
                     <width>1290</width>

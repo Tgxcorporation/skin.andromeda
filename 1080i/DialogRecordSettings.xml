@@ -13,7 +13,7 @@
                     <posy>0</posy>
                     <width>1720</width>
                     <height>177</height>
-                    <label>-</label>
+                    <label></label>
                     <aligny>center</aligny>
                     <font>InfoTitleFont</font>
                     <scroll>true</scroll>

@@ -157,7 +157,7 @@
                         <onup>505051</onup>
                         <onleft>9001</onleft>
                         <align>center</align>
-                        <pagecontrol>-</pagecontrol>
+                        <pagecontrol></pagecontrol>
                         <!--<preloaditems>4</preloaditems>-->
                         <orientation>vertical</orientation>
                         <itemlayout height="70" width="384">

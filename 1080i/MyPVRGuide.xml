@@ -41,7 +41,7 @@
                                     <height>150</height>
                                     <posx>0</posx>
                                     <posy>0</posy>
-                                    <texture>-</texture>
+                                    <texture></texture>
                                 </control>
                                 <control type="label" id="2">
                                     <posx>70</posx>

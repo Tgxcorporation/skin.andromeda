@@ -31,7 +31,7 @@
                 <width>1920</width>
                 <height>1080</height>
                 <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-                <texture border="5">-</texture>
+                <texture border="5"></texture>
             </control>
             <control type="grouplist" id="996">
                 <posx>100</posx>
@@ -39,7 +39,7 @@
                 <width>760</width>
                 <height>1080</height>
                 <itemgap>0</itemgap>
-                <pagecontrol>-</pagecontrol>
+                <pagecontrol></pagecontrol>
                 <onleft>998</onleft>
                 <control type="button" id="1000">
                     <posx>0</posx>

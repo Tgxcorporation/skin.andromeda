@@ -112,7 +112,7 @@
         <textoffsetx>0</textoffsetx>
         <align>center</align>
         <include>HiddenButton</include>
-        <alttexturefocus>-</alttexturefocus>
+        <alttexturefocus></alttexturefocus>
         <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
     </include>
     <include name="TopBar">
@@ -482,7 +482,7 @@
                 <!--DUMMY-->
                 <visible>[[Player.HasAudio + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))]|Player.HasVideo]</visible>
                 <include>HiddenButton</include>
-                <texture>-</texture>
+                <texture></texture>
             </control>
             <control type="group">
                 <visible>Player.HasMedia+!Window.IsActive(Startup.xml)</visible>
@@ -641,7 +641,7 @@
         <font>ButtonFont</font>
         <radioposx>13</radioposx>
         <radioposy>7</radioposy>
-        <alttexturenofocus>-</alttexturenofocus>
+        <alttexturenofocus></alttexturenofocus>
         <textureradiooffnofocus border="1">buttons/RadioOffNFsmall.png</textureradiooffnofocus>
         <textureradioonnofocus border="1">buttons/RadioOnNFsmall.png</textureradioonnofocus>
         <textureradioofffocus border="1">buttons/RadioOffFOsmall.png</textureradioofffocus>
@@ -928,11 +928,11 @@
         <animation type="Focus" reversible="false">
             <effect type="fade" start="10" end="100" time="100"/>
         </animation>
-        <texturesliderbackground>-</texturesliderbackground>
+        <texturesliderbackground></texturesliderbackground>
         <texturesliderbarfocus colordiffuse="$VAR[Picked.HighLight.Color]" border="10">buttons/Scrollbar_Vertical_Focus.png</texturesliderbarfocus>
         <texturesliderbar border="10">buttons/Scrollbar_Vertical_NoFocus.png</texturesliderbar>
-        <textureslidernib>-</textureslidernib>
-        <textureslidernibfocus>-</textureslidernibfocus>
+        <textureslidernib></textureslidernib>
+        <textureslidernibfocus></textureslidernibfocus>
         <!-- <showonepage>true</showonepage> -->
         <orientation>vertical</orientation>
         <width>50</width>
@@ -942,11 +942,11 @@
         <animation type="Focus" reversible="false">
             <effect type="fade" start="10" end="100" time="100"/>
         </animation>
-        <texturesliderbackground>-</texturesliderbackground>
+        <texturesliderbackground></texturesliderbackground>
         <texturesliderbarfocus colordiffuse="$VAR[Picked.HighLight.Color]" border="10">buttons/Scrollbar_Horizontal_Focus.png</texturesliderbarfocus>
         <texturesliderbar border="10">buttons/Scrollbar_Horizontal_NoFocus.png</texturesliderbar>
-        <textureslidernib>-</textureslidernib>
-        <textureslidernibfocus>-</textureslidernibfocus>
+        <textureslidernib></textureslidernib>
+        <textureslidernibfocus></textureslidernibfocus>
         <!-- <showonepage>true</showonepage> -->
         <orientation>horizontal</orientation>
         <height>50</height>
@@ -1259,10 +1259,10 @@
             <height>8</height>
             <width>$PARAM[width]</width>
             <texturebg>common/osd_progress_dummy.png</texturebg>
-            <lefttexture>-</lefttexture>
+            <lefttexture></lefttexture>
             <midtexture colordiffuse="$VAR[Picked.HighLight.Color]" border="1,1,1,1">OSD/osd_progress_$PARAM[direction]$PARAM[gfx]_focus.png</midtexture>
-            <righttexture>-</righttexture>
-            <overlaytexture>-</overlaytexture>
+            <righttexture></righttexture>
+            <overlaytexture></overlaytexture>
             <info>$PARAM[info]</info>
         </control>
         <control type="progress" id="$PARAM[id]">
@@ -1274,10 +1274,10 @@
             <height>8</height>
             <width>$PARAM[width]</width>
             <texturebg>common/osd_progress_dummy.png</texturebg>
-            <lefttexture>-</lefttexture>
+            <lefttexture></lefttexture>
             <midtexture border="1,1,1,1">OSD/osd_progress_$PARAM[direction]$PARAM[gfx]_nofocus.png</midtexture>
-            <righttexture>-</righttexture>
-            <overlaytexture>-</overlaytexture>
+            <righttexture></righttexture>
+            <overlaytexture></overlaytexture>
             <info>$PARAM[info]</info>
         </control>
     </include>
@@ -1299,12 +1299,12 @@
         <posy>-30</posy>
         <width>1</width>
         <height>1</height>
-        <label>-</label>
-        <font>-</font>
+        <label></label>
+        <font></font>
         <!--<texturenofocus>common/BlackDotT.png</texturenofocus>-->
         <!--<texturefocus>common/BlackDot.png</texturefocus>-->
-        <texturenofocus>-</texturenofocus>
-        <texturefocus>-</texturefocus>
+        <texturenofocus></texturenofocus>
+        <texturefocus></texturefocus>
     </include>
     <include name="TextboxAlignment">
         <align>justify</align>

@@ -70,7 +70,7 @@
         <selectedcolor>SelectedColor</selectedcolor>
         <disabledcolor>DisabledColor</disabledcolor>
         <texturefocus border="3,2,1,2" colordiffuse="$VAR[Picked.HighLight.Color]">buttons/buttonFO.png</texturefocus>
-        <texturenofocus>-</texturenofocus>
+        <texturenofocus></texturenofocus>
         <pulseonselect>false</pulseonselect>
     </default>
     <default type="edit">
@@ -106,9 +106,9 @@
         <altselectedcolor>AltSelectedColor</altselectedcolor>
         <disabledcolor>DisabledColor</disabledcolor>
         <texturefocus border="3,2,1,2" colordiffuse="$VAR[Picked.HighLight.Color]">buttons/buttonFO.png</texturefocus>
-        <texturenofocus>-</texturenofocus>
+        <texturenofocus></texturenofocus>
         <alttexturefocus border="3,2,1,2" colordiffuse="$VAR[Picked.HighLight.Color]">buttons/buttonFO.png</alttexturefocus>
-        <alttexturenofocus>-</alttexturenofocus>
+        <alttexturenofocus></alttexturenofocus>
         <pulseonselect>false</pulseonselect>
     </default>
     <default type="radiobutton">
@@ -128,7 +128,7 @@
         <radiowidth>60</radiowidth>
         <radioheight>60</radioheight>
         <texturefocus border="3,2,1,2" colordiffuse="$VAR[Picked.HighLight.Color]">buttons/buttonFO.png</texturefocus>
-        <texturenofocus>-</texturenofocus>
+        <texturenofocus></texturenofocus>
         <textureradiooffnofocus border="1">buttons/RadioOffNF.png</textureradiooffnofocus>
         <textureradioonnofocus border="1">buttons/RadioOnNF.png</textureradioonnofocus>
         <textureradioofffocus border="1" colordiffuse="$VAR[Picked.HighLight.Color]">buttons/RadioOffFO.png</textureradioofffocus>
@@ -149,7 +149,7 @@
         <textureupdisabled colordiffuse="90ffffff" border="1">buttons/SpinUpNF.png</textureupdisabled>
         <texturedowndisabled colordiffuse="90ffffff" border="1">buttons/SpinDownNF.png</texturedowndisabled>
         <texturefocus border="3,2,1,2" colordiffuse="$VAR[Picked.HighLight.Color]">buttons/buttonFO.png</texturefocus>
-        <texturenofocus>-</texturenofocus>
+        <texturenofocus></texturenofocus>
         <spinwidth>60</spinwidth>
         <spinheight>60</spinheight>
         <font>ButtonFont</font>
@@ -176,7 +176,7 @@
         <textureupdisabled colordiffuse="90ffffff" border="1">buttons/SpinUpNF.png</textureupdisabled>
         <texturedowndisabled colordiffuse="90ffffff" border="1">buttons/SpinDownNF.png</texturedowndisabled>
         <texturefocus border="3,2,1,2" colordiffuse="$VAR[Picked.HighLight.Color]">buttons/buttonFO.png</texturefocus>
-        <texturenofocus>-</texturenofocus>
+        <texturenofocus></texturenofocus>
         <spinposx>-1</spinposx>
         <spinwidth>50</spinwidth>
         <spinheight>60</spinheight>
@@ -215,7 +215,7 @@
         <textureslidernib>buttons/SliderNibNF.png</textureslidernib>
         <textureslidernibfocus colordiffuse="$VAR[Picked.HighLight.Color]">buttons/SliderNibFO.png</textureslidernibfocus>
         <texturefocus border="3,2,1,2" colordiffuse="$VAR[Picked.HighLight.Color]">buttons/buttonFO.png</texturefocus>
-        <texturenofocus>-</texturenofocus>
+        <texturenofocus></texturenofocus>
         <font>ButtonFont</font>
         <textcolor>NoFocusedColor</textcolor>
         <focusedcolor>$VAR[Picked.HighLight.Color]</focusedcolor>

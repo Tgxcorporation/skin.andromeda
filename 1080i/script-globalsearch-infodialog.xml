@@ -59,11 +59,11 @@
                         <include>DialogMenuButton</include>
                     </control>
                     <control type="button" id="192">
-                        <label>-</label>
+                        <label></label>
                         <include>DialogMenuButton</include>
                     </control>
                     <control type="button" id="193">
-                        <label>-</label>
+                        <label></label>
                         <include>DialogMenuButton</include>
                     </control>
                 </control>

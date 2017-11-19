@@ -5,13 +5,13 @@
         <value condition="Player.ChapterCount">$LOCALIZE[21396]: $INFO[Player.Chapter]$INFO[Player.ChapterCount, / ]</value>
     </variable>
     <variable name="Overlay">
-        <value condition="!Window.isvisible(Home.xml)+![Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos) | Container.Content(sets) | Container.HasFiles]">-</value>
+        <value condition="!Window.isvisible(Home.xml)+![Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos) | Container.Content(sets) | Container.HasFiles]"></value>
         <!--<value condition="Skin.HasSetting(plexbmc) + ListItem.property(IsResumable)">overlay_inprogress/$INFO[ListItem.Overlay]</value>-->
-        <value condition="Skin.HasSetting(Hide_Watched_Marks)">-</value>
+        <value condition="Skin.HasSetting(Hide_Watched_Marks)"></value>
         <value condition="Skin.HasSetting(plexbmc) + String.IsEqual(ListItem.property(overlay),OverlayWatched.png)"></value>
         <!--<value condition="Skin.HasSetting(Hide_Unwatched_Marks)"></value>-->
         <!--<value condition="ListItem.IsResumable"></value>-->
-        <value condition="Skin.HasSetting(Hide_Watched_Marks)">-</value>
+        <value condition="Skin.HasSetting(Hide_Watched_Marks)"></value>
         <value condition="String.IsEqual(ListItem.Overlay,OverlayWatched.png)"></value>
         <!--<value condition="String.IsEqual(ListItem.Overlay,OverlayInProgress.png)"></value>-->
         <value condition="String.IsEqual(ListItem.Label2,$LOCALIZE[305])+Window.IsVisible(AddonBrowser.xml)"></value>

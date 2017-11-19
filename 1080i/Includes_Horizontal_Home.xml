@@ -75,7 +75,7 @@
                     <onback>SetFocus(300)</onback>
                     <ondown>300</ondown>
                     <orientation>horizontal</orientation>
-                    <pagecontrol>-</pagecontrol>
+                    <pagecontrol></pagecontrol>
                     <itemlayout height="50" width="384">
                         <control type="label">
                             <posx>TextMargin</posx>
@@ -228,7 +228,7 @@
                         <ondown condition="String.IsEqual(Container(300).ListItem.Property(id),49)">7000149</ondown>
                         <ondown condition="String.IsEqual(Container(300).ListItem.Property(id),50)">7000150</ondown>
                         <onup>9001</onup>
-                        <pagecontrol>-</pagecontrol>
+                        <pagecontrol></pagecontrol>
                         <!--<preloaditems>4</preloaditems>-->
                         <orientation>horizontal</orientation>
                         <itemlayout height="60" width="384">

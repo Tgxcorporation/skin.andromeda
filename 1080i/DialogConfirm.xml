@@ -33,7 +33,7 @@
                     <posx>100</posx>
                     <posy>330</posy>
                     <width>760</width>
-                    <label>-</label>
+                    <label></label>
                     <height>295</height>
                     <font>InfoDetailsFont</font>
                     <include>TextColor_AlternateColor</include>

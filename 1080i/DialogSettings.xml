@@ -23,7 +23,7 @@
                         <posy>0</posy>
                         <width>1720</width>
                         <height>177</height>
-                        <label>-</label>
+                        <label></label>
                         <aligny>center</aligny>
                         <font>InfoTitleFont</font>
                         <scroll>true</scroll>
@@ -82,7 +82,7 @@
                     </control>
                     <control type="label" id="14">
                         <description>Default Label</description>
-                        <label>-</label>
+                        <label></label>
                         <textoffsety>65</textoffsety>
                         <aligny>top</aligny>
                         <width>1760</width>
@@ -106,17 +106,17 @@
                         <control type="button" id="28">
                             <width>1300</width>
                             <include>DialogMenuButton</include>
-                            <label>-</label>
+                            <label></label>
                         </control>
                         <control type="button" id="29">
                             <width>1300</width>
                             <include>DialogMenuButton</include>
-                            <label>-</label>
+                            <label></label>
                         </control>
                         <control type="button" id="30">
                             <width>1300</width>
                             <include>DialogMenuButton</include>
-                            <label>-</label>
+                            <label></label>
                         </control>
                     </control>
                 </control>

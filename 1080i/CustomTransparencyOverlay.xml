@@ -1093,10 +1093,10 @@
             <!--<posy>0</posy>-->
             <!--<width>1130</width>-->
             <!--<height>210</height>-->
-            <!--<label>-</label>-->
-            <!--<font>-</font>-->
-            <!--<texturenofocus>-</texturenofocus>-->
-            <!--<texturefocus>-</texturefocus>-->
+            <!--<label></label>-->
+            <!--<font></font>-->
+            <!--<texturenofocus></texturenofocus>-->
+            <!--<texturefocus></texturefocus>-->
             <!--<visible>true</visible>-->
             <!--<onfocus>SetFocus(9900)</onfocus>-->
         <!--</control>-->
@@ -1106,10 +1106,10 @@
             <!--<posy>0</posy>-->
             <!--<width>50</width>-->
             <!--<height>186</height>-->
-            <!--<label>-</label>-->
-            <!--<font>-</font>-->
-            <!--<texturenofocus>-</texturenofocus>-->
-            <!--<texturefocus>-</texturefocus>-->
+            <!--<label></label>-->
+            <!--<font></font>-->
+            <!--<texturenofocus></texturenofocus>-->
+            <!--<texturefocus></texturefocus>-->
             <!--<visible>true</visible>-->
             <!--<onfocus>SetFocus(9900)</onfocus>-->
         <!--</control>-->

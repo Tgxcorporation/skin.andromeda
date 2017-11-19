@@ -286,7 +286,7 @@
                     <control type="button" id="6">
                         <description>Record</description>
                         <include>LeftMenuButton</include>
-                        <label>-</label>
+                        <label></label>
                         <visible>Window.IsActive(PVRGuideInfo)</visible>
                         <onright>9009</onright>
                     </control>
