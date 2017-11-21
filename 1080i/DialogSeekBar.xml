@@ -427,18 +427,6 @@
             <include>TextColor_MainColor</include>
             <label></label>
         </control>
-        <control type="label">
-            <visible>!String.IsEmpty(PVR.ChannelNumberInput)</visible>
-            <include>VisibleFadeEffect</include>
-            <animation effect="slide" start="0,0" end="0,-400" time="0" condition="control.isvisible(38283)">Conditional</animation>
-            <posx>0</posx>
-            <posy>925</posy>
-            <width>1920</width>
-            <height>50</height>
-            <font>InfoTitleFont</font>
-            <include>TextColor_MainColor</include>
-            <align>center</align>
-            <label>[B]$INFO[PVR.ChannelNumberInput][/B]</label>
-        </control>
+        <include>PVRChannelNumericInput</include>
     </controls>
 </window>
