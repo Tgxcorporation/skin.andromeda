@@ -96,7 +96,7 @@
         <value condition="Window.isvisible(MyWeather.xml)">$INFO[Window.Property(WeatherProvider)]$INFO[Window.Property(Updated),     ]</value>
         <value condition="Window.isvisible(script-script.extendedinfo-VideoList.xml)">$INFO[Window.Property(Filter_Label),, - ]$INFO[Window.Property(TotalItems),, $LOCALIZE[31025]]</value>
         <value condition="Window.isvisible(MyMusicPlaylistEditor.xml)">$LOCALIZE[2]</value>
-        <value condition="Window.isvisible(MyPVRGuide.xml)">$LOCALIZE[19032]</value>
+        <value condition="Window.isvisible(MyPVRGuide.xml)">$INFO[Container.NumItems] $LOCALIZE[31025]</value>
         <value condition="Window.isvisible(LoginScreen.xml)">$LOCALIZE[13200]</value>
         <value condition="Window.isvisible(SkinSettings.xml)">Andromeda</value>
         <value condition="Window.isvisible(CustomStartupWindow.xml)">$LOCALIZE[512]</value>
