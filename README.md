@@ -1,4 +1,4 @@
-## Andromeda skin for Kodi 17 KRYPTON
+## Andromeda skin for Kodi 18 LEIA
 Minimalist skin optimized for Full HD TV screens.
 
 ![](http://imgur.com/S8HUjaw.jpg)
