@@ -16,7 +16,7 @@
                 Window.IsVisible(DialogSubtitles.xml) |
                 Window.IsVisible(DialogAddonSettings.xml)|
                 Window.IsVisible(PVROSDChannels) |
-                Window.IsVisible(PVROSDGuide)
+                Window.IsVisible(pvrchannelguide)
                 ]</visible>
             <include>TopBarOSDVisibleFadeEffectOverlay</include>
             <control type="slider" id="87">
@@ -76,7 +76,7 @@
                     <visible>MusicPlayer.Content(LiveTV)</visible>
                     <label></label>
                     <include>TopBarButton</include>
-                    <onclick>ActivateWindow(PVROSDGuide)</onclick>
+                    <onclick>ActivateWindow(pvrchannelguide)</onclick>
                     <onclick>Dialog.Close(VideoOSD)</onclick>
                 </control>
                 <control type="button" id="9">
