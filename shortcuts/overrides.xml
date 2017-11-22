@@ -18,6 +18,7 @@
     <!--<icon labelID="weather">special://skin/backgrounds/Weather.jpg</icon>-->
     <icon labelID="weather">$VAR[WeatherFanartPath]$INFO[Weather.fanartcode].jpg</icon>
     <icon labelID="programs">special://skin/backgrounds/Addons.jpg</icon>
+    <icon labelID="15016">special://skin/backgrounds/Games.jpg</icon>
     <icon labelID="dvd">special://skin/backgrounds/Dvds.jpg</icon>
     <icon labelID="settings">special://skin/backgrounds/Settings.jpg</icon>
     <icon labelID="1036">special://skin/backgrounds/Favourites.jpg</icon>
@@ -53,6 +54,7 @@
     <backgrounddefault labelID="31972">Clips.Art</backgrounddefault>
     <backgrounddefault labelID="weather">Weather.Art</backgrounddefault>
     <backgrounddefault labelID="programs">Addons.Art</backgrounddefault>
+    <backgrounddefault labelID="15016">Games.Art</backgrounddefault>
     <backgrounddefault labelID="dvd">DVD.Art</backgrounddefault>
     <backgrounddefault labelID="settings">Settings.Art</backgrounddefault>
     <backgrounddefault labelID="1036">Favourites.Art</backgrounddefault>
@@ -163,6 +165,7 @@
     <widgetdefaultnode labelID="31971" group="mainmenu" label="31402" type="musicvideos" path="special://skin/widgetplaylists/recommendedmusicvideos.xsp" target="video">recommendedmusicvideos</widgetdefaultnode>
     <widgetdefaultnode labelID="31972" group="mainmenu" label="31403" type="musicvideos" path="special://skin/widgetplaylists/recommendedmusicvideos.xsp" target="video">recommendedmusicvideos</widgetdefaultnode>
     <widgetdefaultnode labelID="24001" group="mainmenu" label="1037" type="addon" path="addons://sources/video/" target="video">videoaddons</widgetdefaultnode>
+    <widgetdefaultnode labelID="15016" group="mainmenu" label="15016" type="addon" path="addons://sources/game/" target="games">gamesaddons</widgetdefaultnode>
     <widgetdefaultnode labelID="livetv" group="mainmenu" label="19017" type="tv" path="pvr://recordings/tv/active?view=flat" target="pvr">tvrecordings</widgetdefaultnode>
     <widgetdefaultnode labelID="radio" group="mainmenu" label="19017" type="radio" path="pvr://recordings/radio/active?view=flat" target="pvr">radiorecordings</widgetdefaultnode>
 
@@ -184,6 +187,9 @@
     <propertydefault labelID="24001" property="widgetAspect">31118</propertydefault>
     <propertydefault labelID="24001" property="widgetSortBy">lastused</propertydefault>
     <propertydefault labelID="24001" property="widgetSortDirection">descending</propertydefault>
+    <propertydefault labelID="15016" property="widgetAspect">31118</propertydefault>
+    <propertydefault labelID="15016" property="widgetSortBy">lastused</propertydefault>
+    <propertydefault labelID="15016" property="widgetSortDirection">descending</propertydefault>
     <propertydefault labelID="livetv" property="widgetAspect">31120</propertydefault>
     <propertydefault labelID="livetv" property="widgetSortBy">lastplayed</propertydefault>
     <propertydefault labelID="livetv" property="widgetSortDirection">descending</propertydefault>

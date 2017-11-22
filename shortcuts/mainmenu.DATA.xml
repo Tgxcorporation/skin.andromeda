@@ -73,6 +73,14 @@
         <action>ActivateWindow(RadioChannels)</action>
     </shortcut>
     <shortcut>
+        <defaultID>15016</defaultID>
+        <label>15016</label>
+        <label2>Common Shortcut</label2>
+        <icon>DefaultShortcut.png</icon>
+        <thumb></thumb>
+        <action>ActivateWindow(Games,root)</action>
+    </shortcut>
+    <shortcut>
         <visible>!Skin.HasSetting(plexbmc)</visible>
         <defaultID>pictures</defaultID>
         <label>1</label>

@@ -82,12 +82,12 @@
             </control>
             <control type="group">
                 <posx>635</posx>
-                <posy>240</posy>
+                <posy>0</posy>
                 <control type="gamecontroller" id="31">
                     <posx>0</posx>
-                    <posy>100</posy>
+                    <posy>200</posy>
                     <width>650</width>
-                    <height>400</height>
+                    <height>650</height>
                 </control>
             </control>
             <control type="group">

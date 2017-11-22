@@ -21,9 +21,9 @@
                 <include>OpenClose</include>
                 <control type="list" id="50">
                     <posx>100</posx>
-                    <posy>180</posy>
+                    <posy>150</posy>
                     <width>760</width>
-                    <height>720</height>
+                    <height>780</height>
                     <itemgap>0</itemgap>
                     <aligny>top</aligny>
                     <align>center</align>
@@ -108,6 +108,12 @@
                             <label>$LOCALIZE[14204]</label>
                             <onclick>ActivateWindow(PVRSettings)</onclick>
                             <label2></label2>
+                        </item>
+                        <item>
+                            <label>$LOCALIZE[15016]</label>
+                            <visible>System.GetBool(gamesgeneral.enable)</visible>
+                            <onclick>ActivateWindow(GameSettings)</onclick>
+                            <label2></label2>
                         </item>
                         <item>
                             <label>$LOCALIZE[14036]</label>
