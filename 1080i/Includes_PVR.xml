@@ -133,7 +133,7 @@
                     <visible>Window.IsActive(MyPVRRecordings.xml)</visible>
                     <description>Watched Toggle</description>
                     <label>$LOCALIZE[20367]</label>
-                    <label2>$INFO[Container.NumNonFolderItems]</label2>
+                    <label2>$INFO[Container.NumItems]</label2>
                     <include>LeftMenuButton</include>
                 </control>
                 <control type="radiobutton" id="31">
