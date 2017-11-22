@@ -36,7 +36,7 @@
                         <height>35</height>
                         <font>InfoTitleSubFont</font>
                         <include>TextColor_MidColor</include>
-                        <label>$INFO[Container(6).NumNonFolderItems,, $LOCALIZE[31025]]</label>
+                        <label>$INFO[Container(6).NumItems,, $LOCALIZE[31025]]</label>
                     </control>
                     <control type="scrollbar" id="60">
                         <posx>1870</posx>
@@ -177,7 +177,7 @@
                         <height>35</height>
                         <font>InfoTitleSubFont</font>
                         <include>TextColor_MidColor</include>
-                        <label>$INFO[Container(3).NumNonFolderItems,, $LOCALIZE[31025]]</label>
+                        <label>$INFO[Container(3).NumItems,, $LOCALIZE[31025]]</label>
                     </control>
                     <control type="scrollbar" id="61">
                         <posx>1870</posx>

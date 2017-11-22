@@ -101,11 +101,11 @@
         <value condition="Window.isvisible(SkinSettings.xml)">Andromeda</value>
         <value condition="Window.isvisible(CustomStartupWindow.xml)">$LOCALIZE[512]</value>
         <value condition="Window.isvisible(FileManager.xml)">$LOCALIZE[130]</value>
-        <value condition="Window.isvisible(DialogFavourites.xml)">$INFO[Container(450).NumNonFolderItems] $LOCALIZE[31025]</value>
-        <value condition="Window.isvisible(CustomAddons.xml)">$INFO[Container(50).NumNonFolderItems] $LOCALIZE[31025]</value>
+        <value condition="Window.isvisible(DialogFavourites.xml)">$INFO[Container(450).NumItems] $LOCALIZE[31025]</value>
+        <value condition="Window.isvisible(CustomAddons.xml)">$INFO[Container(50).NumItems] $LOCALIZE[31025]</value>
         <value condition="Window.isvisible(SettingsCategory.xml)">$INFO[Control.GetLabel(2)]</value>
         <value condition="Window.isvisible(Settings.xml)">$LOCALIZE[10008]</value>
-        <value>$INFO[Container.NumNonFolderItems] $LOCALIZE[31025]</value>
+        <value>$INFO[Container.NumItems] $LOCALIZE[31025]</value>
     </variable>
     <variable name="HomeSubTitles">
         <value condition="!String.IsEmpty(Container(300).ListItem.Property(uuid))">PleXBMC</value>

@@ -1371,7 +1371,7 @@
                 <height>$PARAM[height]</height>
                 <font>TvGuideChannelFont</font>
                 <include>TextColor_MidColor</include>
-                <label>$INFO[Window(Home).Property(NextAired.$PARAM[id].Wday)] $INFO[Window(Home).Property(NextAired.$PARAM[id].Date)][COLOR=NoFocusedColor]$INFO[Container($PARAM[id]).NumNonFolderItems,   (,)][/COLOR]</label>
+                <label>$INFO[Window(Home).Property(NextAired.$PARAM[id].Wday)] $INFO[Window(Home).Property(NextAired.$PARAM[id].Date)][COLOR=NoFocusedColor]$INFO[Container($PARAM[id]).NumItems,   (,)][/COLOR]</label>
             </control>
         </control>
     </include>

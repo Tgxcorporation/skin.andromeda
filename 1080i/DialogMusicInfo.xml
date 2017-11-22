@@ -496,7 +496,7 @@
                         <height>35</height>
                         <font>InfoTitleSubFont</font>
                         <include>TextColor_MainColor</include>
-                        <label>$LOCALIZE[21888][COLOR=SeparatorColor] › [/COLOR]$INFO[Container(50).NumNonFolderItems] $LOCALIZE[31025]</label>
+                        <label>$LOCALIZE[21888][COLOR=SeparatorColor] › [/COLOR]$INFO[Container(50).NumItems] $LOCALIZE[31025]</label>
                     </control>
                     <control type="label">
                         <visible>String.IsEqual(ListItem.DBType,album)</visible>
@@ -506,7 +506,7 @@
                         <height>35</height>
                         <font>InfoTitleSubFont</font>
                         <include>TextColor_MainColor</include>
-                        <label>$LOCALIZE[182][COLOR=SeparatorColor] › [/COLOR]$INFO[Container(50).NumNonFolderItems] $LOCALIZE[31025]</label>
+                        <label>$LOCALIZE[182][COLOR=SeparatorColor] › [/COLOR]$INFO[Container(50).NumItems] $LOCALIZE[31025]</label>
                     </control>
                     <control type="panel" id="50">
                         <posx>640</posx>
