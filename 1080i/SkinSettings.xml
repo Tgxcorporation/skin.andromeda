@@ -1689,7 +1689,7 @@
                                 <onclick>Skin.Reset(HighLight.Color.titanium)</onclick>
                                 <onclick>Skin.Reset(HighLight.Color.custom)</onclick>
                                 <onclick>Skin.ToggleSetting(HighLight.Color.indigo)</onclick>
-                                <selected>[Skin.HasSetting(Theme.Color.indigo)|![Skin.HasSetting(Theme.Color.amber)|Skin.HasSetting(Theme.Color.fuchsia)|Skin.HasSetting(Theme.Color.lilac)|Skin.HasSetting(Theme.Color.indigo)|Skin.HasSetting(Theme.Color.titanium)|Skin.HasSetting(Theme.Color.custom)|Skin.HasSetting(Theme.Color.sweep)]]</selected>
+                                <selected>[Skin.HasSetting(HighLight.Color.indigo)|![Skin.HasSetting(HighLight.Color.amber)|Skin.HasSetting(HighLight.Color.fuchsia)|Skin.HasSetting(HighLight.Color.lilac)|Skin.HasSetting(HighLight.Color.indigo)|Skin.HasSetting(HighLight.Color.titanium)|Skin.HasSetting(HighLight.Color.custom)|Skin.HasSetting(HighLight.Color.sweep)]]</selected>
                                 <onclick>ReloadSkin()</onclick>
                             </control>
                             <!-- titanium -->
