@@ -1,7 +1,7 @@
 ## Andromeda skin for Kodi 17 KRYPTON
 Minimalist skin optimized for Full HD TV screens. 
 
-![](http://imgur.com/S8HUjaw.jpg)
+![](https://github.com/Tgxcorporation/skin.andromeda/raw/krypton/screenshots/screenshot01.jpg)
 
 #### [Screenshots](https://github.com/Tgxcorporation/skin.andromeda/wiki/Screenshots)
 

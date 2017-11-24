@@ -753,7 +753,7 @@
         <value condition="Skin.HasSetting(Theme.Color.indigo)">IndigoColor</value>
         <value condition="Skin.HasSetting(Theme.Color.titanium)">TitaniumColor</value>
         <value condition="!String.IsEmpty(Skin.String(PickedThemeColor))">$INFO[Skin.String(PickedThemeColor)]</value>
-        <value>WhiteColor</value>
+        <value>IndigoColor</value>
     </variable>
     <variable name="Picked.HighLight.Color">
         <value condition="Skin.HasSetting(HighLight.Color.sweep)">$VAR[ColorSweep]</value>
@@ -764,7 +764,7 @@
         <value condition="Skin.HasSetting(HighLight.Color.indigo)">IndigoColor</value>
         <value condition="Skin.HasSetting(HighLight.Color.titanium)">TitaniumColor</value>
         <value condition="!String.IsEmpty(Skin.String(PickedHighLightColor))">$INFO[Skin.String(PickedHighLightColor)]</value>
-        <value>WhiteColor</value>
+        <value>IndigoColor</value>
     </variable>
     <variable name="SkinSettings.RandomBackground.Art">
         <value condition="Skin.HasSetting(Default.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)+Container(9004).HasFocus(0)">$INFO[Window(Home).Property(SkinHelper.GlobalFanartBackground)]</value>
