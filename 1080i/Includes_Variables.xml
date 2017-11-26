@@ -124,7 +124,7 @@
         <value>$INFO[Container(300).ListItem.Label]</value>
     </variable>
     <variable name="DetailsTitle">
-        <value condition="Window.IsVisible(DialogFullScreenInfo.xml)+VideoPlayer.Content(livetv)">$INFO[VideoPlayer.ChannelNumber,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[VideoPlayer.ChannelName]$INFO[VideoPlayer.Title,[COLOR=SeparatorColor] › [/COLOR]]</value>
+        <value condition="Window.IsVisible(DialogFullScreenInfo.xml)+VideoPlayer.Content(livetv)">$INFO[VideoPlayer.ChannelNumberLabel,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[VideoPlayer.ChannelName]$INFO[VideoPlayer.Title,[COLOR=SeparatorColor] › [/COLOR]]</value>
         <value condition="Window.IsVisible(DialogFullScreenInfo.xml)+!VideoPlayer.Content(livetv)">$INFO[VideoPlayer.TVShowTitle]$INFO[VideoPlayer.Artist,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[VideoPlayer.Album,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[VideoPlayer.Season,[COLOR=SeparatorColor] › [/COLOR]$LOCALIZE[31973],.]$INFO[VideoPlayer.Episode,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[VideoPlayer.Title]</value>
         <value condition="[Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)|Window.IsActive(MyPVRRecordings.xml)]">$INFO[ListItem.ChannelNumberLabel,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Label]</value>
         <value condition="[Window.IsActive(DialogPVRChannelGuide.xml)]">$INFO[ListItem.StartTime,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Label]</value>
@@ -993,9 +993,9 @@
         <value condition="Player.Rewinding">- $VAR[VideoPlayerForwardRewindVar]</value>
         <value condition="Player.IsTempo">$LOCALIZE[224]: $INFO[Player.PlaySpeed]</value>
         <!--<value condition="Player.ChapterCount">$VAR[ChapterLabel]</value>-->
-        <value condition="Player.hasvideo + VideoPlayer.Content(livetv) + Player.ChapterCount">$INFO[VideoPlayer.ChannelNumber,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[VideoPlayer.ChannelName]$INFO[VideoPlayer.Title,[COLOR=SeparatorColor] › [/COLOR]]$INFO[Player.Chapter,[COLOR=SeparatorColor] › [/COLOR]]$INFO[Player.ChapterCount, / ]</value>
+        <value condition="Player.hasvideo + VideoPlayer.Content(livetv) + Player.ChapterCount">$INFO[VideoPlayer.ChannelNumberLabel,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[VideoPlayer.ChannelName]$INFO[VideoPlayer.Title,[COLOR=SeparatorColor] › [/COLOR]]$INFO[Player.Chapter,[COLOR=SeparatorColor] › [/COLOR]]$INFO[Player.ChapterCount, / ]</value>
         <value condition="Player.hasvideo + !VideoPlayer.Content(livetv) + Player.ChapterCount">$INFO[MusicPlayer.Title]$INFO[VideoPlayer.Album,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[VideoPlayer.Season,$LOCALIZE[31973],.]$INFO[VideoPlayer.Episode,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[VideoPlayer.Title]$INFO[Player.Chapter,[COLOR=SeparatorColor] › [/COLOR]]$INFO[Player.ChapterCount, / ]</value>
-        <value condition="Player.hasvideo + VideoPlayer.Content(livetv) + !Player.ChapterCount">$INFO[VideoPlayer.ChannelNumber,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[VideoPlayer.ChannelName]$INFO[VideoPlayer.Title,[COLOR=SeparatorColor] › [/COLOR]]</value>
+        <value condition="Player.hasvideo + VideoPlayer.Content(livetv) + !Player.ChapterCount">$INFO[VideoPlayer.ChannelNumberLabel,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[VideoPlayer.ChannelName]$INFO[VideoPlayer.Title,[COLOR=SeparatorColor] › [/COLOR]]</value>
         <value condition="Player.hasvideo + !VideoPlayer.Content(livetv) + !Player.ChapterCount">$INFO[MusicPlayer.Title]$INFO[VideoPlayer.Album,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[VideoPlayer.Season,$LOCALIZE[31973],.]$INFO[VideoPlayer.Episode,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[VideoPlayer.Title]</value>
         <value condition="Player.HasAudio + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia)) + ![Window.IsActive(MusicOSD.xml)|Window.IsActive(MusicVisualisation.xml)]">$INFO[MusicPlayer.Artist]</value>
         <value condition="Player.HasAudio + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))">$INFO[MusicPlayer.Artist]$INFO[MusicPlayer.Title,[COLOR=SeparatorColor] › [/COLOR]]</value>

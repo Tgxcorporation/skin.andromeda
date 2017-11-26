@@ -71,7 +71,7 @@
                     <content>
                         <item>
                             <label>$LOCALIZE[19029]:</label>
-                            <label2>$INFO[ListItem.ChannelNumber,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.ChannelName]</label2>
+                            <label2>$INFO[ListItem.ChannelNumberLabel,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.ChannelName]</label2>
                             <onclick>noop</onclick>
                             <visible>!String.IsEmpty(ListItem.ChannelName)</visible>
                         </item>

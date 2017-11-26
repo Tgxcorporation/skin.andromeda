@@ -83,7 +83,7 @@
                             <height>75</height>
                             <font>TvGuideChannelFont</font>
                             <textcolor>NoFocusedColor</textcolor>
-                            <label>$INFO[ListItem.ChannelNumber,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.ChannelName]</label>
+                            <label>$INFO[ListItem.ChannelNumberLabel,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.ChannelName]</label>
                             <aligny>center</aligny>
                             <align>left</align>
                             <scroll>false</scroll>
@@ -131,7 +131,7 @@
                                 <aligny>center</aligny>
                                 <align>left</align>
                                 <scroll>true</scroll>
-                                <label>$INFO[ListItem.ChannelNumber,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.ChannelName]</label>
+                                <label>$INFO[ListItem.ChannelNumberLabel,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.ChannelName]</label>
                             </control>
                         </control>
                     </focusedchannellayout>
@@ -208,7 +208,7 @@
                         <font>FacadeListTitleFont</font>
                         <include>TextColor_MainColor</include>
                         <scroll>true</scroll>
-                        <label>$INFO[ListItem.ChannelNumber,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.ChannelName][COLOR=SeparatorColor] › [/COLOR]$VAR[DetailsTitle]</label>
+                        <label>$INFO[ListItem.ChannelNumberLabel,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.ChannelName][COLOR=SeparatorColor] › [/COLOR]$VAR[DetailsTitle]</label>
                     </control>
                     <control type="label">
                         <posx>70</posx>
