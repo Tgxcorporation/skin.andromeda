@@ -40,6 +40,7 @@
                     <height>420</height>
                     <onright>5</onright>
                     <ondown>9001</ondown>
+                    <onleft>9001</onleft>
                     <include>DialogMenuButtonGroup</include>
                 </control>
                 <control type="button" id="10">
