@@ -26,6 +26,7 @@
         <value>DefaultFolderBack.png</value>
     </variable>
     <variable name="Thumbs">
+        <value condition="Skin.HasSetting(WidgetEpisodePoster) + Window.IsVisible(Home.xml) + !String.IsEmpty(ListItem.Art(tvshow.thumb)) + !String.StartsWith(ListItem.Art(tvshow.thumb),Default)">$INFO[ListItem.Art(tvshow.thumb)]</value>
         <value condition="ListItem.IsParentFolder|String.IsEqual(ListItem.Label,..)">$VAR[ThumbsFolderBack]</value>
         <value condition="Window.IsVisible(DialogMusicInfo.xml)+Control.hasfocus(50)+String.IsEqual(ListItem.DBType,artist)">$INFO[Container(50).ListItem.Thumb]</value>
         <value condition="Window.IsVisible(script-script.extendedinfo-VideoList.xml)">$INFO[ListItem.Icon]</value>
