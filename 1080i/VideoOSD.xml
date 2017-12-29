@@ -118,14 +118,14 @@
                 <control type="button" id="254">
                     <visible>!VideoPlayer.Content(LiveTV)</visible>
                     <visible>VideoPlayer.HasMenu</visible>
-                    <animation effect="fade" start="100" end="50" time="0" condition="!VideoPlayer.HasMenu">Conditional</animation>
+                    <!--<animation effect="fade" start="100" end="50" time="0" condition="!VideoPlayer.HasMenu">Conditional</animation>-->
                     <label></label>
                     <include>TopBarButton</include>
                     <onclick>PlayerControl(ShowVideoMenu)</onclick>
                 </control>
                 <control type="button" id="255">
                     <visible>VideoPlayer.IsStereoscopic</visible>
-                    <animation effect="fade" start="100" end="50" time="0" condition="!VideoPlayer.IsStereoscopic">Conditional</animation>
+                    <!--<animation effect="fade" start="100" end="50" time="0" condition="!VideoPlayer.IsStereoscopic">Conditional</animation>-->
                     <label></label>
                     <include>TopBarButton</include>
                     <onclick>StereoMode</onclick>
@@ -206,14 +206,14 @@
                 </control>
                 <control type="button" id="201">
                     <visible>Player.SeekEnabled</visible>
-                    <animation effect="fade" start="100" end="50" time="0" condition="!Player.SeekEnabled">Conditional</animation>
+                    <!--<animation effect="fade" start="100" end="50" time="0" condition="!Player.SeekEnabled">Conditional</animation>-->
                     <label></label>
                     <include>TopBarButton</include>
                     <onclick>PlayerControl(Rewind)</onclick>
                 </control>
                 <control type="button" id="202">
                     <visible>Player.PauseEnabled</visible>
-                    <animation effect="fade" start="100" end="50" time="0" condition="!Player.PauseEnabled">Conditional</animation>
+                    <!--<animation effect="fade" start="100" end="50" time="0" condition="!Player.PauseEnabled">Conditional</animation>-->
                     <label></label>
                     <include>TopBarButton</include>
                     <onclick>PlayerControl(Play)</onclick>
@@ -226,14 +226,14 @@
                 <control type="button" id="353">
                     <visible>VideoPlayer.Content(LiveTV)</visible>
                     <visible>Player.CanRecord</visible>
-                    <animation effect="fade" start="100" end="50" time="0" condition="!Player.CanRecord">Conditional</animation>
+                    <!--<animation effect="fade" start="100" end="50" time="0" condition="!Player.CanRecord">Conditional</animation>-->
                     <label></label>
                     <include>TopBarButton</include>
                     <onclick>PlayerControl(Record)</onclick>
                 </control>
                 <control type="button" id="204">
                     <visible>Player.SeekEnabled</visible>
-                    <animation effect="fade" start="100" end="50" time="0" condition="!Player.SeekEnabled">Conditional</animation>
+                    <!--<animation effect="fade" start="100" end="50" time="0" condition="!Player.SeekEnabled">Conditional</animation>-->
                     <label></label>
                     <include>TopBarButton</include>
                     <onclick>PlayerControl(Forward)</onclick>
