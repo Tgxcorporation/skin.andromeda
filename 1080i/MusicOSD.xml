@@ -209,11 +209,11 @@
                     <onclick>PlayerControl(Random)</onclick>
                 </control>
                 <control type="button" id="353">
-                    <visible>Player.CanRecord</visible>
-                    <!--<animation effect="fade" start="100" end="50" time="0" condition="!Player.CanRecord">Conditional</animation>-->
+                    <visible>PVR.CanRecordPlayingChannel</visible>
+                    <!--<animation effect="fade" start="100" end="50" time="0" condition="!PVR.CanRecordPlayingChannel">Conditional</animation>-->
                     <label></label>
                     <include>TopBarButton</include>
-                    <onclick>PlayerControl(Record)</onclick>
+                    <onclick>PVR.ToggleRecordPlayingChannel</onclick>
                 </control>
                 <control type="button" id="604">
                     <visible>Player.SeekEnabled</visible>
