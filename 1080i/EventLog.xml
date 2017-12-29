@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-    <defaultcontrol always="true">570</defaultcontrol>
+    <defaultcontrol always="true">50</defaultcontrol>
     <menucontrol>9000</menucontrol>
-    <onload condition="!Skin.HasSetting(FirstTimeRun)">ActivateWindow(1112)</onload>
-    <views>570</views>
+    <views>50</views>
     <controls>
         <include>Fanart_Art</include>
         <include>Player_Show</include>
@@ -16,16 +15,16 @@
             <control type="group">
                 <include>LeftMenuHasFocusAnimation</include>
                 <include>OpenClose</include>
-                <control type="list" id="570">
+                <control type="list" id="50">
                     <posx>0</posx>
                     <posy>0</posy>
                     <width>1920</width>
                     <height>1080</height>
                     <onleft>9000</onleft>
                     <onright>60</onright>
-                    <onup condition="!Skin.HasSetting(EnableUpNavListViews)">570</onup>
+                    <onup condition="!Skin.HasSetting(EnableUpNavListViews)">50</onup>
                     <onup>505051</onup>
-                    <ondown>570</ondown>
+                    <ondown>50</ondown>
                     <viewtype label="535">list</viewtype>
                     <pagecontrol>60</pagecontrol>
                     <itemlayout height="100" width="910">
@@ -117,7 +116,7 @@
                     <posy>0</posy>
                     <height>1080</height>
                     <include>VerticalScroller</include>
-                    <onleft>570</onleft>
+                    <onleft>50</onleft>
                     <onright>505051</onright>
                 </control>
             </control>
@@ -129,9 +128,9 @@
             <include>Icon_Fade</include>
             <control type="grouplist" id="9000">
                 <include>LeftMenuButtonGroup</include>
-                <onleft>570</onleft>
+                <onleft>50</onleft>
                 <ondown>9000</ondown>
-                <onback>570</onback>
+                <onback>50</onback>
                 <control type="label" id="200">
                     <include>LeftMenuTitleLabel</include>
                     <label>$LOCALIZE[582]</label>
