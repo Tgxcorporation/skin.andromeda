@@ -210,6 +210,7 @@
             <onleft>9900</onleft>
             <onright>9900</onright>
             <onup>9901</onup>
+            <ondown condition="Window.IsActive(DialogAddonSettings.xml)">3</ondown>
             <ondown condition="Window.IsActive(script-globalsearch-main.xml)">9000</ondown>
             <ondown condition="Window.IsActive(script-script.extendedinfo-VideoList.xml)">500</ondown>
             <ondown condition="Window.IsActive(LoginScreen.xml)">52</ondown>
@@ -222,7 +223,6 @@
             <ondown condition="Window.IsActive(Home.xml)+Skin.HasSetting(VerticalHome)">300</ondown>
             <ondown condition="Window.IsActive(DialogContentSettings.xml)">21</ondown>
             <ondown condition="Window.IsActive(SettingsCategory.xml)">3</ondown>
-            <ondown condition="Window.IsActive(DialogAddonSettings.xml)">9</ondown>
             <ondown condition="Window.IsActive(script-XBMC_Lyrics-main.xml)">110</ondown>
             <ondown condition="Window.IsActive(MyWeather.xml)+Skin.String(WeatherType,Map)">155</ondown>
             <ondown>50</ondown>
@@ -829,10 +829,10 @@
             <onright condition="Window.IsActive(MyWeather.xml)+Skin.String(WeatherType,Map)">155</onright>
             <onright condition="Window.IsActive(script-script.extendedinfo-VideoList.xml)">500</onright>
             <onright>50</onright>
+            <onleft condition="Window.IsActive(DialogAddonSettings.xml)">3</onleft>
             <onleft condition="Window.IsActive(DialogMediaSource.xml)|Window.IsActive(FileBrowser.xml)">9001</onleft>
             <onleft condition="Window.IsActive(DialogContentSettings.xml)">4</onleft>
             <onleft condition="Window.IsActive(SettingsCategory.xml)">3</onleft>
-            <onleft condition="Window.IsActive(DialogAddonSettings.xml)">9</onleft>
             <onleft condition="Window.IsActive(script-skinshortcuts.xml)">9000</onleft>
             <onleft condition="Window.IsActive(SkinSettings.xml)">90000</onleft>
             <onleft>9000</onleft>
