@@ -351,13 +351,16 @@
                             <bordertexture border="2" colordiffuse="$VAR[Picked.HighLight.Color]">common/frame_focus.png</bordertexture>
                             <bordersize>2</bordersize>
                         </control>
-                        <include content="WatchedRecOverlay">
-                            <param name="x" value="335"/>
-                            <param name="y" value="12"/>
-                            <param name="width" value="50"/>
-                            <param name="height" value="50"/>
-                            <param name="color" value="Main"/>
-                        </include>
+                        <control type="image">
+                            <visible>PVR.IsRecordingPlayingChannel</visible>
+                            <posx>346</posx>
+                            <posy>5</posy>
+                            <width>50</width>
+                            <height>50</height>
+                            <texture>pvr/PVR-IsRecording.png</texture>
+                            <aspectratio>keep</aspectratio>
+                            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                        </control>
                     </control>
                     <control type="image">
                         <visible>VideoPlayer.Content(files)</visible>

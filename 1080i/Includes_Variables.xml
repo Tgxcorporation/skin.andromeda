@@ -1180,7 +1180,6 @@
         <value>SW</value>
     </variable>
     <variable name="PVRTimerIcon">
-        <value condition="PVR.IsRecordingPlayingChannel">pvr/PVR-IsRecording.png</value>
         <value condition="ListItem.IsRecording">pvr/PVR-IsRecording.png</value>
         <value condition="ListItem.HasTimerSchedule + ListItem.TimerHasError">pvr/PVR-HasTimerScheduleError.png</value>
         <value condition="ListItem.HasTimer + ListItem.TimerHasError">pvr/PVR-HasTimerError.png</value>

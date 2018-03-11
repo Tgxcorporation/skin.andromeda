@@ -503,11 +503,21 @@
                 </control>
                 <include content="ProgressBar">
                     <param name="id" value="23"/>
-                    <param name="visible" value="true"/>
+                    <param name="visible" value="!VideoPlayer.HasEpg"/>
                     <param name="x" value="1277"/>
                     <param name="y" value="832"/>
                     <param name="width" value="573"/>
                     <param name="info" value="Player.Progress"/>
+                    <param name="visiblefocus" value="true"/>
+                    <param name="direction" value="horizontal"/>
+                </include>
+                <include content="ProgressBar">
+                    <param name="id" value="23"/>
+                    <param name="visible" value="VideoPlayer.HasEpg"/>
+                    <param name="x" value="1277"/>
+                    <param name="y" value="832"/>
+                    <param name="width" value="573"/>
+                    <param name="info" value="PVR.EpgEventProgress"/>
                     <param name="visiblefocus" value="true"/>
                     <param name="direction" value="horizontal"/>
                 </include>
@@ -535,6 +545,7 @@
                     <label>$INFO[Player.Time]</label>
                 </control>
                 <control type="label">
+                    <visible>!VideoPlayer.HasEpg</visible>
                     <include>Icon_Fade</include>
                     <posx>1822</posx>
                     <posy>852</posy>
@@ -546,6 +557,20 @@
                     <include>TextColor_MainColor</include>
                     <font>NowPlayingSubFont</font>
                     <label>$INFO[Player.TimeRemaining]</label>
+                </control>
+                <control type="label">
+                    <visible>VideoPlayer.HasEpg</visible>
+                    <include>Icon_Fade</include>
+                    <posx>1822</posx>
+                    <posy>852</posy>
+                    <height>90</height>
+                    <width>517</width>
+                    <align>right</align>
+                    <aligny>top</aligny>
+                    <scroll>true</scroll>
+                    <include>TextColor_MainColor</include>
+                    <font>NowPlayingSubFont</font>
+                    <label>$INFO[PVR.EpgEventRemainingTime]</label>
                 </control>
                 <control type="label">
                     <visible>Player.hasvideo + VideoPlayer.Content(livetv)</visible>
