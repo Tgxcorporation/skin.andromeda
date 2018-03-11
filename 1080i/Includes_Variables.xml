@@ -159,7 +159,8 @@
         <value condition="Window.IsVisible(DialogPVRInfo.xml)">$INFO[ListItem.StartTime]$INFO[ListItem.EndTime, / ]</value>
         <value condition="[Window.IsVisible(DialogPVRChannelGuide.xml)|Window.IsVisible(DialogPVRChannelsOSD.xml)] + Container(11).ListItem.HasEpg">$INFO[ListItem.StartTime]$INFO[ListItem.EndTime, / ]</value>
         <value condition="[Window.IsVisible(MyPVRChannels.xml)] + ListItem.HasEpg">$INFO[ListItem.StartTime]$INFO[ListItem.EndTime, / ]</value>
-        <value condition="![Window.IsVisible(DialogPVRChannelGuide.xml)|Window.IsVisible(DialogPVRChannelsOSD.xml)|Window.IsVisible(MyPVRChannels.xml)] + VideoPlayer.IsFullscreen + ![VideoPlayer.Content(LiveTV)+!VideoPlayer.HasEpg]">$INFO[VideoPlayer.Year,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[VideoPlayer.Duration,, $LOCALIZE[31297]]</value>
+        <value condition="![Window.IsVisible(DialogPVRChannelGuide.xml)|Window.IsVisible(DialogPVRChannelsOSD.xml)|Window.IsVisible(MyPVRChannels.xml)] + VideoPlayer.IsFullscreen + !VideoPlayer.HasEpg">$INFO[VideoPlayer.Year,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[VideoPlayer.Duration,, $LOCALIZE[31297]]</value>
+        <value condition="![Window.IsVisible(DialogPVRChannelGuide.xml)|Window.IsVisible(DialogPVRChannelsOSD.xml)|Window.IsVisible(MyPVRChannels.xml)] + VideoPlayer.IsFullscreen + VideoPlayer.HasEpg">$INFO[PVR.EpgEventDuration,, $LOCALIZE[31297]]</value>
         <value condition="Window.IsVisible(MusicVisualisation.xml)">$INFO[MusicPlayer.TimeSpeed,, / ]$INFO[MusicPlayer.Duration]</value>
         <value condition="Window.IsVisible(script-script.extendedinfo-VideoList.xml)">$INFO[ListItem.Year]</value>
         <value condition="Window.IsVisible(MyPVRTimers.xml)">$INFO[ListItem.Date]</value>
@@ -1179,6 +1180,7 @@
         <value>SW</value>
     </variable>
     <variable name="PVRTimerIcon">
+        <value condition="PVR.IsRecordingPlayingChannel">pvr/PVR-IsRecording.png</value>
         <value condition="ListItem.IsRecording">pvr/PVR-IsRecording.png</value>
         <value condition="ListItem.HasTimerSchedule + ListItem.TimerHasError">pvr/PVR-HasTimerScheduleError.png</value>
         <value condition="ListItem.HasTimer + ListItem.TimerHasError">pvr/PVR-HasTimerError.png</value>

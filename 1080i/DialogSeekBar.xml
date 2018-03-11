@@ -51,7 +51,7 @@
             <control type="group">
                 <include>TopBarOSDVisibleFadeEffect</include>
                 <control type="slider" id="401">
-                    <visible>Player.Seeking</visible>
+                    <visible>!VideoPlayer.HasEpg</visible>
                     <include>ScrollOffsetLabelVisibleFadeEffect</include>
                     <description>Seek Position</description>
                     <posx>0</posx>
@@ -73,7 +73,7 @@
                 </include>
                 <include content="ProgressBar">
                     <param name="id" value="0"/>
-                    <param name="visible" value="!Player.ChannelPreviewActive"/>
+                    <param name="visible" value="!VideoPlayer.Content(livetv)"/>
                     <param name="x" value="0"/>
                     <param name="y" value="995"/>
                     <param name="width" value="1920"/>
@@ -83,8 +83,8 @@
                     <param name="gfx" value="_chaching"/>
                 </include>
                 <include content="ProgressBar">
-                    <param name="id" value="23"/>
-                    <param name="visible" value="true"/>
+                    <param name="id" value="0"/>
+                    <param name="visible" value="!VideoPlayer.HasEpg"/>
                     <param name="x" value="0"/>
                     <param name="y" value="995"/>
                     <param name="width" value="1920"/>
@@ -94,7 +94,17 @@
                 </include>
                 <include content="ProgressBar">
                     <param name="id" value="0"/>
-                    <param name="visible" value="PVR.IsTimeShift + !Player.ChannelPreviewActive"/>
+                    <param name="visible" value="VideoPlayer.HasEpg"/>
+                    <param name="x" value="0"/>
+                    <param name="y" value="995"/>
+                    <param name="width" value="1920"/>
+                    <param name="info" value="PVR.EpgEventProgress"/>
+                    <param name="visiblefocus" value="true"/>
+                    <param name="direction" value="horizontal"/>
+                </include>
+                <include content="ProgressBar">
+                    <param name="id" value="0"/>
+                    <param name="visible" value="PVR.IsTimeShift + !Player.ChannelPreviewActive + VideoPlayer.Content(livetv)"/>
                     <param name="x" value="0"/>
                     <param name="y" value="985"/>
                     <param name="width" value="1920"/>
@@ -172,11 +182,20 @@
                     <orientation>horizontal</orientation>
                     <usecontrolcoords>true</usecontrolcoords>
                     <control type="label">
+                        <visible>!VideoPlayer.HasEpg</visible>
                         <width>auto</width>
                         <height>90</height>
                         <font>OSDSubFont</font>
                         <include>TextColor_MainColor</include>
                         <label>$INFO[Player.TimeRemaining]</label>
+                    </control>
+                    <control type="label">
+                        <visible>VideoPlayer.HasEpg</visible>
+                        <width>auto</width>
+                        <height>90</height>
+                        <font>OSDSubFont</font>
+                        <include>TextColor_MainColor</include>
+                        <label>$INFO[PVR.EpgEventRemainingTime]</label>
                     </control>
                     <control type="label">
                         <top>6</top>
@@ -200,11 +219,21 @@
                     <orientation>horizontal</orientation>
                     <usecontrolcoords>true</usecontrolcoords>
                     <control type="label">
+                        <visible>!String.isempty(Player.Duration)</visible>
+                        <visible>Player.HasVideo + ![Player.HasGame | VideoPlayer.HasEpg]</visible>
                         <width>auto</width>
                         <height>90</height>
                         <font>OSDSubFont</font>
                         <include>TextColor_MainColor</include>
                         <label>$INFO[Player.FinishTime]</label>
+                    </control>
+                    <control type="label">
+                        <visible>VideoPlayer.HasEpg</visible>
+                        <width>auto</width>
+                        <height>90</height>
+                        <font>OSDSubFont</font>
+                        <include>TextColor_MainColor</include>
+                        <label>$INFO[PVR.EpgEventFinishTime]</label>
                     </control>
                     <control type="label">
                         <top>6</top>
@@ -310,16 +339,25 @@
                         <bordertexture border="2" colordiffuse="$VAR[Picked.HighLight.Color]">common/frame_focus.png</bordertexture>
                         <bordersize>2</bordersize>
                     </control>
-                    <control type="image">
+                    <control type="group">
                         <visible>VideoPlayer.Content(livetv)</visible>
-                        <posx>70</posx>
-                        <posy>10</posy>
-                        <width>321</width>
-                        <height>241</height>
-                        <aspectratio>scale</aspectratio>
-                        <texture background="true">$INFO[VideoPlayer.Cover]</texture>
-                        <bordertexture border="2" colordiffuse="$VAR[Picked.HighLight.Color]">common/frame_focus.png</bordertexture>
-                        <bordersize>2</bordersize>
+                        <control type="image">
+                            <posx>70</posx>
+                            <posy>10</posy>
+                            <width>321</width>
+                            <height>241</height>
+                            <aspectratio>scale</aspectratio>
+                            <texture background="true">$INFO[VideoPlayer.Cover]</texture>
+                            <bordertexture border="2" colordiffuse="$VAR[Picked.HighLight.Color]">common/frame_focus.png</bordertexture>
+                            <bordersize>2</bordersize>
+                        </control>
+                        <include content="WatchedRecOverlay">
+                            <param name="x" value="335"/>
+                            <param name="y" value="12"/>
+                            <param name="width" value="50"/>
+                            <param name="height" value="50"/>
+                            <param name="color" value="Main"/>
+                        </include>
                     </control>
                     <control type="image">
                         <visible>VideoPlayer.Content(files)</visible>

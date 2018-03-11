@@ -20,7 +20,8 @@
                 ]</visible>
             <include>TopBarOSDVisibleFadeEffectOverlay</include>
             <control type="slider" id="87">
-                <description>Seek Slider</description>
+                <visible>Player.SeekEnabled</visible>
+                <visible>!VideoPlayer.HasEpg</visible>
                 <posx>0</posx>
                 <posy>955</posy>
                 <width>1920</width>
@@ -28,6 +29,19 @@
                 <onup>101</onup>
                 <ondown>87</ondown>
                 <action>seek</action>
+                <info>Player.Progress</info>
+                <texturesliderbar>common/osd_progress_dummy_50.png</texturesliderbar>
+            </control>
+            <control type="slider" id="87">
+                <visible>Player.SeekEnabled</visible>
+                <visible>VideoPlayer.HasEpg</visible>
+                <posx>0</posx>
+                <posy>955</posy>
+                <width>1920</width>
+                <height>50</height>
+                <onup>101</onup>
+                <ondown>87</ondown>
+                <info>PVR.EpgEventProgress</info>
                 <texturesliderbar>common/osd_progress_dummy_50.png</texturesliderbar>
             </control>
             <control type="image">
