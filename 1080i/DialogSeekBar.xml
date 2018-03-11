@@ -26,7 +26,7 @@
                 Window.IsVisible(visualisation) |
                 [
                 Window.IsVisible(FullScreenVideo) +
-                [Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek | Player.Paused]
+                [Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek | Player.Paused | Player.ShowInfo]
                 ]
             </visible>
             <control type="image">
@@ -229,7 +229,7 @@
                 </control>
             </control>
             <control type="group">
-                <visible>Window.IsVisible(DialogFullscreenInfo.xml) | [Player.Paused+Skin.HasSetting(EnableOSDInfoOnPause)]</visible>
+                <visible>Window.IsVisible(DialogFullscreenInfo.xml) | [Player.Paused+Skin.HasSetting(EnableOSDInfoOnPause) | [Player.ShowInfo + VideoPlayer.Content(LiveTV) + Window.IsActive(fullscreenvideo)]]</visible>
                 <visible>![
                     Window.IsVisible(DialogSelect.xml) |
                     Window.IsVisible(SliderDialog) |
