@@ -231,8 +231,8 @@
                         <param name="borderdiffuse" value="BorderUnfocusedColor"/>
                     </include>
                     <include content="WatchedRecOverlay">
-                        <param name="x" value="169"/>
-                        <param name="y" value="6"/>
+                        <param name="x" value="161"/>
+                        <param name="y" value="10"/>
                         <param name="width" value="50"/>
                         <param name="height" value="50"/>
                         <param name="color" value="Alternate"/>
@@ -286,8 +286,8 @@
                             <param name="borderdiffuse" value="$VAR[Picked.HighLight.Color]"/>
                         </include>
                         <include content="WatchedRecOverlay">
-                            <param name="x" value="169"/>
-                            <param name="y" value="6"/>
+                            <param name="x" value="161"/>
+                            <param name="y" value="10"/>
                             <param name="width" value="50"/>
                             <param name="height" value="50"/>
                             <param name="color" value="Main"/>
@@ -414,8 +414,8 @@
                         <param name="borderdiffuse" value="BorderUnfocusedColor"/>
                     </include>
                     <include content="WatchedRecOverlay">
-                        <param name="x" value="169"/>
-                        <param name="y" value="6"/>
+                        <param name="x" value="161"/>
+                        <param name="y" value="10"/>
                         <param name="width" value="50"/>
                         <param name="height" value="50"/>
                         <param name="color" value="Alternate"/>
@@ -469,8 +469,8 @@
                             <param name="borderdiffuse" value="$VAR[Picked.HighLight.Color]"/>
                         </include>
                         <include content="WatchedRecOverlay">
-                            <param name="x" value="169"/>
-                            <param name="y" value="6"/>
+                            <param name="x" value="161"/>
+                            <param name="y" value="10"/>
                             <param name="width" value="50"/>
                             <param name="height" value="50"/>
                             <param name="color" value="Main"/>
