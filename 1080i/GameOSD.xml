@@ -9,6 +9,7 @@
                 Window.IsVisible(DialogSelect.xml) |
                 Window.IsVisible(SliderDialog) |
                 Window.IsVisible(OSDVideoSettings) |
+                Window.IsVisible(osdsubtitlesettings) |
                 Window.IsVisible(OSDAudioSettings) |
                 Window.IsVisible(GameViewMode) |
                 Window.IsVisible(GameControllers) |
