@@ -125,14 +125,14 @@
                         <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
                         <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
                         <colordiffuse>ThumbsUnfocusedColor</colordiffuse>
-                        <texturefocus border="2" colordiffuse="$VAR[Picked.Highlight.Color]">common/frame_focus.png</texturefocus>
+                        <texturefocus border="2" colordiffuse="$VAR[Picked.HighLight.Color]">common/frame_focus.png</texturefocus>
                         <texturenofocus border="2">common/frame_focus.png</texturenofocus>
                         <onclick>noop</onclick>
                     </control>
                     <control type="image">
                         <visible>control.hasfocus(70001$SKINSHORTCUTS[mainmenuid])+Skin.HasSetting(EnableFrameHighlight)</visible>
                         <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
-                        <texture border="2,45,2,45" colordiffuse="$VAR[Picked.Highlight.Color]">common/frame_highlight.png</texture>
+                        <texture border="2,45,2,45" colordiffuse="$VAR[Picked.HighLight.Color]">common/frame_highlight.png</texture>
                         <fadetime>300</fadetime>
                     </control>
                     <control type="group">
@@ -272,14 +272,14 @@
                         <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
                         <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
                         <colordiffuse>ThumbsUnfocusedColor</colordiffuse>
-                        <texturefocus border="2" colordiffuse="$VAR[Picked.Highlight.Color]">common/frame_focus.png</texturefocus>
+                        <texturefocus border="2" colordiffuse="$VAR[Picked.HighLight.Color]">common/frame_focus.png</texturefocus>
                         <texturenofocus border="2">common/frame_focus.png</texturenofocus>
                         <onclick>noop</onclick>
                     </control>
                     <control type="image">
                         <visible>control.hasfocus(70002$SKINSHORTCUTS[mainmenuid])+Skin.HasSetting(EnableFrameHighlight)</visible>
                         <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
-                        <texture border="2,45,2,45" colordiffuse="$VAR[Picked.Highlight.Color]">common/frame_highlight.png</texture>
+                        <texture border="2,45,2,45" colordiffuse="$VAR[Picked.HighLight.Color]">common/frame_highlight.png</texture>
                         <fadetime>300</fadetime>
                     </control>
                     <control type="group">
@@ -419,14 +419,14 @@
                         <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
                         <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
                         <colordiffuse>ThumbsUnfocusedColor</colordiffuse>
-                        <texturefocus border="2" colordiffuse="$VAR[Picked.Highlight.Color]">common/frame_focus.png</texturefocus>
+                        <texturefocus border="2" colordiffuse="$VAR[Picked.HighLight.Color]">common/frame_focus.png</texturefocus>
                         <texturenofocus border="2">common/frame_focus.png</texturenofocus>
                         <onclick>noop</onclick>
                     </control>
                     <control type="image">
                         <visible>control.hasfocus(70003$SKINSHORTCUTS[mainmenuid])+Skin.HasSetting(EnableFrameHighlight)</visible>
                         <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
-                        <texture border="2,45,2,45" colordiffuse="$VAR[Picked.Highlight.Color]">common/frame_highlight.png</texture>
+                        <texture border="2,45,2,45" colordiffuse="$VAR[Picked.HighLight.Color]">common/frame_highlight.png</texture>
                         <fadetime>300</fadetime>
                     </control>
                     <control type="group">
@@ -566,14 +566,14 @@
                         <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
                         <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
                         <colordiffuse>ThumbsUnfocusedColor</colordiffuse>
-                        <texturefocus border="2" colordiffuse="$VAR[Picked.Highlight.Color]">common/frame_focus.png</texturefocus>
+                        <texturefocus border="2" colordiffuse="$VAR[Picked.HighLight.Color]">common/frame_focus.png</texturefocus>
                         <texturenofocus border="2">common/frame_focus.png</texturenofocus>
                         <onclick>noop</onclick>
                     </control>
                     <control type="image">
                         <visible>control.hasfocus(70004$SKINSHORTCUTS[mainmenuid])+Skin.HasSetting(EnableFrameHighlight)</visible>
                         <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
-                        <texture border="2,45,2,45" colordiffuse="$VAR[Picked.Highlight.Color]">common/frame_highlight.png</texture>
+                        <texture border="2,45,2,45" colordiffuse="$VAR[Picked.HighLight.Color]">common/frame_highlight.png</texture>
                         <fadetime>300</fadetime>
                     </control>
                     <control type="group">
@@ -713,14 +713,14 @@
                         <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
                         <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
                         <colordiffuse>ThumbsUnfocusedColor</colordiffuse>
-                        <texturefocus border="2" colordiffuse="$VAR[Picked.Highlight.Color]">common/frame_focus.png</texturefocus>
+                        <texturefocus border="2" colordiffuse="$VAR[Picked.HighLight.Color]">common/frame_focus.png</texturefocus>
                         <texturenofocus border="2">common/frame_focus.png</texturenofocus>
                         <onclick>noop</onclick>
                     </control>
                     <control type="image">
                         <visible>control.hasfocus(70005$SKINSHORTCUTS[mainmenuid])+Skin.HasSetting(EnableFrameHighlight)</visible>
                         <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
-                        <texture border="2,45,2,45" colordiffuse="$VAR[Picked.Highlight.Color]">common/frame_highlight.png</texture>
+                        <texture border="2,45,2,45" colordiffuse="$VAR[Picked.HighLight.Color]">common/frame_highlight.png</texture>
                         <fadetime>300</fadetime>
                     </control>
                     <control type="group">
