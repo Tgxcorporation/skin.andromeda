@@ -462,7 +462,11 @@ msgctxt "#31133"
 msgid "Subtitle Add-on"
 msgstr ""
 
-#empty strings from id 31134 to 31290
+msgctxt "#31134"
+msgid "Special Features"
+msgstr ""
+
+#empty strings from id 31135 to 31290
 
 msgctxt "#31291"
 msgid "Add-on manager"
