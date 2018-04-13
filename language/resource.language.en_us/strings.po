@@ -400,6 +400,10 @@ msgctxt "#31133"
 msgid "Subtitle Add-on"
 msgstr "Subtitle Add-on"
 
+msgctxt "#31134"
+msgid "Special Features"
+msgstr ""
+
 msgctxt "#31291"
 msgid "Add-on manager"
 msgstr "Add-on manager"
