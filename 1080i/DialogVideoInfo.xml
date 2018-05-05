@@ -1000,6 +1000,15 @@
                         <onclick condition="String.IsEqual(ListItem.DBType,episode)">RunScript(script.extendedinfo,info=extendedtvinfo,name=$INFO[ListItem.Title])</onclick>
                         <onright>9009</onright>
                     </control>
+                    <control type="togglebutton" id="9146">
+                        <visible>System.HasAddon(plugin.video.specialfeatures)</visible>
+                        <visible>String.IsEqual(Window(home).Property(SpecialFeatures.Visible),true)</visible>
+                        <description>Special Features button</description>
+                        <include>LeftMenuButton</include>
+                        <label>$LOCALIZE[31134]</label>
+                        <onclick>Action(close)</onclick>
+                        <onclick>RunScript(plugin.video.specialfeatures,listitem)</onclick>
+                    </control>
                     <control type="togglebutton" id="10">
                         <description>Fanart</description>
                         <include>LeftMenuButton</include>
