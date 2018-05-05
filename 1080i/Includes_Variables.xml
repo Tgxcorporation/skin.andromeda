@@ -127,8 +127,8 @@
         <value>$INFO[Container(300).ListItem.Label]</value>
     </variable>
     <variable name="DetailsTitle">
-        <value condition="Window.IsVisible(DialogFullScreenInfo.xml)+VideoPlayer.Content(livetv)">$INFO[VideoPlayer.ChannelNumber,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[VideoPlayer.ChannelName]$INFO[VideoPlayer.Title,[COLOR=SeparatorColor] › [/COLOR]]</value>
-        <value condition="Window.IsVisible(DialogFullScreenInfo.xml)+!VideoPlayer.Content(livetv)">$INFO[VideoPlayer.TVShowTitle]$INFO[VideoPlayer.Artist,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[VideoPlayer.Album,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[VideoPlayer.Season,[COLOR=SeparatorColor] › [/COLOR]$LOCALIZE[31973],.]$INFO[VideoPlayer.Episode,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[VideoPlayer.Title]</value>
+        <value condition="[Window.IsVisible(DialogFullScreenInfo.xml) | [Player.Paused+Skin.HasSetting(EnableOSDInfoOnPause) | [Player.ShowInfo + Window.IsActive(fullscreenvideo)]]]+VideoPlayer.Content(livetv)">$INFO[VideoPlayer.ChannelNumberLabel,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[VideoPlayer.ChannelName]$INFO[VideoPlayer.Title,[COLOR=SeparatorColor] › [/COLOR]]</value>
+        <value condition="[Window.IsVisible(DialogFullScreenInfo.xml) | [Player.Paused+Skin.HasSetting(EnableOSDInfoOnPause)]]+!VideoPlayer.Content(livetv)">$INFO[VideoPlayer.TVShowTitle]$INFO[VideoPlayer.Artist,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[VideoPlayer.Album,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[VideoPlayer.Season,[COLOR=SeparatorColor] › [/COLOR]$LOCALIZE[31973],.]$INFO[VideoPlayer.Episode,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[VideoPlayer.Title]</value>
         <value condition="Window.IsVisible(MyPVRGuide.xml)+control.isvisible(13)">$INFO[ListItem.StartTime,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.Label]</value>
         <value condition="Window.IsVisible(MyPVRGuide.xml)+control.isvisible(12)">$INFO[ListItem.ChannelNumberLabel,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.ChannelName]</value>
         <value condition="Window.IsVisible(MyPVRGuide.xml)+control.isvisible(11)">$INFO[ListItem.ChannelNumberLabel,,[COLOR=SeparatorColor] › [/COLOR]]$INFO[ListItem.ChannelName]</value>
@@ -157,7 +157,7 @@
         <value condition="Container.Content(Addons)">$INFO[ListItem.AddonVersion,$LOCALIZE[19114]: ]</value>
         <value condition="Container.Content(Seasons)">$INFO[ListItem.Studio]</value>
         <value condition="!Container.content(Addons) + Window.IsVisible(MyPics.xml)">$INFO[ListItem.Date]</value>
-        <value condition="Window.IsVisible(DialogFullScreenInfo.xml)">$INFO[VideoPlayer.RatingAndVotes]</value>
+        <value condition="[Window.IsVisible(DialogFullScreenInfo.xml) | [Player.Paused+Skin.HasSetting(EnableOSDInfoOnPause) | [Player.ShowInfo + Window.IsActive(fullscreenvideo)]]]">$INFO[VideoPlayer.RatingAndVotes]</value>
         <value condition="String.IsEmpty(ListItem.Rating)+Container.Content(Episodes)+!String.IsEqual(ListItem.Label,..)">0.0</value>
         <value condition="!Integer.IsGreater(ListItem.Rating,0)+!Container.Content(Songs)">$INFO[ListItem.Label2]</value>
     </variable>
