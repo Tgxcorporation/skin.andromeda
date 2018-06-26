@@ -224,6 +224,8 @@
                     <control type="label">
                         <posx>285</posx>
                         <posy>68</posy>
+                        <wrapmultiline>false</wrapmultiline>
+                        <height>40</height>
                         <width>1565</width>
                         <font>FacadeListSubTitleFont</font>
                         <textcolor>NoFocusedColor</textcolor>
@@ -285,6 +287,8 @@
                         <control type="label">
                             <posx>285</posx>
                             <posy>68</posy>
+                            <height>40</height>
+                            <wrapmultiline>false</wrapmultiline>
                             <width>1565</width>
                             <font>FacadeListSubTitleFont</font>
                             <include>TextColor_MainColor</include>
@@ -406,6 +410,8 @@
                     <control type="label">
                         <posx>285</posx>
                         <posy>68</posy>
+                        <wrapmultiline>false</wrapmultiline>
+                        <height>40</height>
                         <width>1565</width>
                         <font>FacadeListSubTitleFont</font>
                         <textcolor>NoFocusedColor</textcolor>
@@ -467,6 +473,8 @@
                         <control type="label">
                             <posx>285</posx>
                             <posy>68</posy>
+                            <wrapmultiline>false</wrapmultiline>
+                            <height>40</height>
                             <width>1565</width>
                             <font>FacadeListSubTitleFont</font>
                             <include>TextColor_MainColor</include>
