@@ -1,4 +1,24 @@
-## Andromeda skin for Kodi 18 LEIA
+Fork to update addons.xml for Kodi 19 Matrix
+
+Install this repo for some of the dependecies:
+
+https://github.com/kodi-community-addons/repository.marcelveldt
+
+And then you might need to still download a few as zips and install them manually (I had to for script.skin.helper.backgrounds)
+
+These are dependencies you need:
+
+script.skin.helper.service (Install from repo)
+script.skin.helper.backgrounds
+script.skin.helper.colorpicker
+script.skin.helper.skinbackup
+
+Github if you need the zips:
+
+https://github.com/kodi-community-addons
+
+
+## Andromeda skin for Kodi 19 Matrix
 Minimalist skin optimized for Full HD TV screens.
 
 ![](https://github.com/Tgxcorporation/skin.andromeda/raw/master/screenshots/screenshot01.jpg)
